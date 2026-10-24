@@ -233,7 +233,7 @@
     "Isotropic NPT is used only for this finite oligomer patch; all Cartesian support force constants must be zero.",
     "No surface affinity, binding free energy, material ranking or interface-equilibrium conclusion."
   ],
-  "resume_from_job": "4bdbdd36b0984e948232ae503e35b10b",
-  "id": "68bdacf68ea34dbc8f4b4c5dcc69a4bc",
-  "created_unix": 1792829739.844957
+  "resume_from_job": "68bdacf68ea34dbc8f4b4c5dcc69a4bc",
+  "id": "5654118d6c7f48129395d353d5cf6387",
+  "created_unix": 1792860662.4142516
 }

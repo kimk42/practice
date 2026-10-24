@@ -1,0 +1,32 @@
+{
+  "blocks": [
+    {
+      "stage": "NPT-density-block-1",
+      "observations": 50,
+      "mean_density_g_cm3": 0.846877663192833,
+      "density_endpoint_change_percent": 0.06151503659586055,
+      "mean_temperature_K": 310.94033548972425,
+      "relative_potential_slope_percent_per_ps": 0.04027951271002969
+    },
+    {
+      "stage": "NPT-density-block-2",
+      "observations": 50,
+      "mean_density_g_cm3": 0.848168853656499,
+      "density_endpoint_change_percent": 0.18557417408868737,
+      "mean_temperature_K": 310.9872036449358,
+      "relative_potential_slope_percent_per_ps": -0.01970486713764026
+    },
+    {
+      "stage": "NPT-density-block-3",
+      "observations": 50,
+      "mean_density_g_cm3": 0.8502347178550222,
+      "density_endpoint_change_percent": 0.4041773569681828,
+      "mean_temperature_K": 310.97777085208736,
+      "relative_potential_slope_percent_per_ps": -0.06510367708515853
+    }
+  ],
+  "screen_passed": true,
+  "equilibrium_established": false,
+  "interpretation": "Descriptive preparation screen only; correlated short samples do not establish bulk or interface equilibrium.",
+  "last_adjacent_density_mean_change_percent": 0.24356756200338836
+}

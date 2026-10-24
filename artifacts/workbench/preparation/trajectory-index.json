@@ -1,16 +1,9 @@
 [
   {
     "path": "trajectories/segment-01.dcd",
-    "dt_ps": 0.001,
-    "context_step_offset": 6000,
-    "context_time_offset_ps": 6.000000000000372,
-    "reason": "source-continuation"
-  },
-  {
-    "path": "trajectories/segment-02.dcd",
     "dt_ps": 0.002,
-    "context_step_offset": 7000,
-    "context_time_offset_ps": 6.900000000000706,
-    "reason": "Ensemble/timestep change; positions and velocities continuous, thermostat/barostat RNG streams restarted"
+    "context_step_offset": 8000,
+    "context_time_offset_ps": 8.900000000000908,
+    "reason": "source-continuation"
   }
 ]
