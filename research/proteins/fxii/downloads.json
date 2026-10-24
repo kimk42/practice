@@ -1,0 +1,29 @@
+[
+  {
+    "name": "8OS5.cif",
+    "source_url": "https://files.rcsb.org/download/8OS5.cif",
+    "state": "reused",
+    "size_bytes": 632426,
+    "sha256": "e2d2491eb3a9a182ec672f48ceb9df3b087f35ccc88dddd112eeced3066f5017"
+  },
+  {
+    "name": "7PRJ.cif",
+    "source_url": "https://files.rcsb.org/download/7PRJ.cif",
+    "state": "reused",
+    "size_bytes": 171772,
+    "sha256": "bad6ab5cba67e62727ee4f777fc851dd2f46422ebcf8c2fa536269c8e6202b73"
+  },
+  {
+    "name": "6X0T.cif",
+    "source_url": "https://files.rcsb.org/download/6X0T.cif",
+    "state": "reused",
+    "size_bytes": 622543,
+    "sha256": "4550adad8cdd27a1d6ca6aa7a13a190e2bd4887cf8c32d5087f360b0b6382f32"
+  },
+  {
+    "name": "AF_AFP00748F1-modelserver.cif",
+    "source_url": "https://models.rcsb.org/v1/AF_AFP00748F1/full?encoding=cif",
+    "state": "unavailable",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]

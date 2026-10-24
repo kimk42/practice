@@ -29,3 +29,5 @@ __pycache__/
 
 # User-provided full article text (PDFs already ignored).
 /research/*-main.txt
+# Retrieved protein coordinates and source API records.
+/research/proteins/fxii/raw/

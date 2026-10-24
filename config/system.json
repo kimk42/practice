@@ -35,8 +35,22 @@
     },
     {
       "name": "Factor XII",
-      "candidate_structure": "8OS5",
-      "scope": "N-terminal domains 1\u20135 only; full protein unresolved"
+      "candidate_structure": null,
+      "scope": "human full-length zymogen target; experimental domain references must not be substituted silently",
+      "experimental_references_downloaded": [
+        "8OS5",
+        "7PRJ",
+        "6X0T"
+      ],
+      "full_length_candidate": {
+        "rcsb_id": "AF_AFP00748F1",
+        "source": "AlphaFoldDB",
+        "residues": 615,
+        "method": "computed, not experimental",
+        "coordinate_download": "blocked at model-server domain; network additions saved as draft"
+      },
+      "reference_sequence": "research/proteins/fxii/P00748-reference.fasta",
+      "sequence_caution": "8OS5 differs from the RCSB P00748 computed-model sequence at mapped precursor207 (referenceA, constructP); review before wild-type modeling"
     }
   ],
   "status": "PC4 and one-site graft chemical geometry validated; GAFF2/AM1-BCC computation and patch packing in progress; no surface MD yet",
