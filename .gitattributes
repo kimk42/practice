@@ -4,3 +4,5 @@
 *.sh text eol=lf
 *.py text eol=lf
 *.mol text eol=lf whitespace=-blank-at-eol
+# Preserve the exact generated force-field audit, including its terminal separator.
+*.frcmod text eol=lf whitespace=-blank-at-eof
