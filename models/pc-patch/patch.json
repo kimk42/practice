@@ -1,0 +1,33 @@
+{
+  "status": "packed starting geometry only; not equilibrated or force-field validated",
+  "substrate": "BPA-PC assumed; actual grade unknown",
+  "pc_oligomer_dp": 4,
+  "free_pc_oligomers": 38,
+  "pc_units_in_graft": 4,
+  "copolymer_repeats": {
+    "CBAA1": 7,
+    "BMA": 2,
+    "BPAA": 1
+  },
+  "packing_target_pc_density_g_cm3": 0.6,
+  "actual_mass_over_assigned_pc_region_g_cm3": 0.5943299029319501,
+  "patch_region_A": [
+    60.0,
+    60.0,
+    30.0
+  ],
+  "atom_count": 5461,
+  "geometry_tolerance_A": 2.0,
+  "graft_position_validation": "fixed graft preserved within0.003A; no double translation",
+  "molecule_order": [
+    "one covalently linked COP10-PC4 graft",
+    "38 free PC4 oligomers"
+  ],
+  "limitations": [
+    "finite OH-ended short oligomers, not bulk molecular weight",
+    "density is a packing target, not equilibrated density",
+    "single fully reacted BPAA in DP10 is a trial graft, not measured conversion",
+    "no interchain crosslinks or protein",
+    "no water or production dynamics yet"
+  ]
+}

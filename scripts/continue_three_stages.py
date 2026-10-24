@@ -65,6 +65,8 @@ def main():
                            'path':active[name],'quantum_progress':quantum_progress(directory,name)}
         packing_ready=(ROOT/'models/pc-patch/patch.json').is_file()
         packing_log=RUN/('pc-patch-long.log' if packing_attempt else 'pc-patch-resumed.log')
+        packing_active=RUN/'workflow-active-packing.json'
+        if packing_active.exists():packing_log=ROOT/json.loads(packing_active.read_text())['log']
         packing_text=packing_log.read_text() if packing_log.exists() else ''
         if not packing_ready and 'Traceback' in packing_text:
             checkpoint=RUN/'pc-packing/packing.restart'

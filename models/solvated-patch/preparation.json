@@ -1,0 +1,20 @@
+{
+  "state": "solvated coordinates prepared; no force-field or energy validation yet",
+  "dry_patch_atoms": 5461,
+  "water_molecules": 7455,
+  "total_atoms": 27826,
+  "box_nm": [
+    6.0,
+    6.0,
+    8.0
+  ],
+  "salt": "not added; ionic strength unspecified",
+  "protein_present": false,
+  "limitations": [
+    "finite short-oligomer low-density initial PC patch",
+    "no equilibrated film density or hydration yet",
+    "GROMACS topology and MD require quantum parameters"
+  ],
+  "source_patch_sha256": "4d8d3a317c8b16a14b71ca2c5372502c581bafb5161045364023cbe4964796ee",
+  "solvated_gro_sha256": "6fe3b137345cbb9f09868c380c54313adad9a0cf372c58bdc488da170a68af9c"
+}

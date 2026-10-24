@@ -68,7 +68,7 @@ def parameter_gate(name):
     match=re.search(r'^\s*\[\s*moleculetype\s*\]',text,re.M|re.I)
     if not match:raise ValueError(name+': missing moleculetype')
     return {'name':name,'folder':folder,'itp':itp,'gro':gro,'mol2':mol2_files[0],
-            'charge':total,'molecule':molecule,'types':types,'body':text[match.start():], 'frcmods':frcmods}
+            'charge':total,'molecule':molecule,'types':types,'atoms':atoms,'body':text[match.start():], 'frcmods':frcmods}
 
 def status(value):
     STATUS.parent.mkdir(parents=True,exist_ok=True)
@@ -98,8 +98,33 @@ def execute(pc,graft,patch):
     xyz=np.array([[float(l[30:38]),float(l[38:46]),float(l[46:54])] for l in records])
     lateral=patch['patch_region_A'][0]/10
     height=max(8.,float(np.ptp(xyz[:,2]))/10+3.)
-    run(['gmx','editconf','-f',str(coords),'-o','dry.gro','-box',str(lateral),str(lateral),str(height),'-c'],out,'box')
-    run(['gmx','solvate','-cp','dry.gro','-cs','spc216.gro','-p','topol.top','-o','solvated.gro'],out,'solvate')
+    prepared=ROOT/'models/solvated-patch/preparation.json'
+    reused=False
+    if prepared.exists():
+        evidence=json.loads(prepared.read_text())
+        wet=prepared.parent/'solvated.gro'
+        if (hashlib.sha256(coords.read_bytes()).hexdigest()==evidence.get('source_patch_sha256')
+            and wet.exists() and hashlib.sha256(wet.read_bytes()).hexdigest()==evidence.get('solvated_gro_sha256')
+            and evidence.get('dry_patch_atoms')==expected):
+            shutil.copy2(wet,out/'solvated.gro')
+            with (out/'topol.top').open('a') as topology:topology.write('SOL '+str(evidence['water_molecules'])+'\n')
+            reused=True
+    if not reused:
+        run(['gmx','editconf','-f',str(coords),'-o','dry.gro','-box',str(lateral),str(lateral),str(height),'-c'],out,'box')
+        run(['gmx','solvate','-cp','dry.gro','-cs','spc216.gro','-p','topol.top','-o','solvated.gro'],out,'solvate')
+    # Graph/element ordering was audited above. Normalize only names/residue IDs
+    # to the actual generated topology; no coordinate, element or charge changes.
+    wet_path=out/'solvated.gro';gro_lines=wet_path.read_text().splitlines()
+    index=2;residue=1
+    for item in [graft]+[pc]*patch['free_pc_oligomers']:
+        for atom in item['atoms']:
+            line=gro_lines[index]
+            gro_lines[index]=f'{residue%100000:5d}{atom[3][:5]:<5}{atom[4][:5]:>5}'+line[15:]
+            index+=1
+        residue+=1
+    if index!=2+expected:raise ValueError('Coordinate naming map length mismatch')
+    wet_path.write_text('\n'.join(gro_lines)+'\n')
+    (out/'coordinate-preparation.json').write_text(json.dumps({'reused_hash_verified_solvation':reused,'solute_atoms_name_mapped_after_graph_audit':expected},indent=2)+'\n')
     (out/'em.mdp').write_text('integrator = steep\nnsteps = 5000\nemtol = 1000\nemstep = 0.005\ncutoff-scheme = Verlet\ncoulombtype = PME\nrcoulomb = 1.0\nrvdw = 1.0\npbc = xyz\n')
     run(['gmx','grompp','-f','em.mdp','-c','solvated.gro','-p','topol.top','-o','em.tpr'],out,'em-prep')
     run(['gmx','mdrun','-deffnm','em','-ntmpi','1','-ntomp','2'],out,'em-run')

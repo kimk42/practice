@@ -1,0 +1,31 @@
+{
+  "scope": "bonded parameter coverage preflight only; no quantum charges or MD topology",
+  "method": "AmberTools antechamber atom typing with no charge calculation; parmchk2 GAFF2",
+  "molecule": "COP10-PC4 one-site graft",
+  "atoms": 445,
+  "charge_calculation_complete": false,
+  "unassigned_revision_flags": [],
+  "analog_penalty_scores": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    6.0,
+    0.0,
+    3.0,
+    8.5,
+    6.0,
+    41.9,
+    6.0,
+    41.9,
+    41.9,
+    49.6
+  ],
+  "maximum_reported_analogy_penalty": 49.6,
+  "forcefield_physically_validated": false,
+  "interpretation": "Standard/general/analog terms were supplied. Nonzero analogy penalties, including aromatic/carbonate impropers, require physical review before quantitative claims. This does not authorize invented constants or replace AM1-BCC.",
+  "frcmod_sha256": "d25e0959cb430a29616c1200be105cb981602e49e96bd07b1f338f5fd376fe73"
+}

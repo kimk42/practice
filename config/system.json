@@ -166,11 +166,21 @@
     "bulk_PC_surface_validated": false,
     "geometry_folder": "models/pc-graft",
     "packing_target_density_g_cm3": 0.6,
-    "packing_status": "resumed from38 recovered PC poses after fixed-graft double-translation correction; actual fixed-placement regression passed; full patch still pending",
+    "packing_status": "passed after checkpoint local polishing with unchanged2A distance requirement; graftpositionvalidated",
     "parameterization_folder": "see runs/workflow-active-parameters.json; current3h attempts under runs/parameterization-long",
     "parameterization_status": "original30-minute attempts timed out; allthree3-hour retries running with unchanged charge method and thresholds",
     "followup_worker": "scripts/continue_three_stages.py supervises parameter audits, solvation, minimization and shortMD; currentstage1 still pending",
     "packing_timeout_seconds": 10800,
-    "parameterization_timeout_seconds": 10800
+    "parameterization_timeout_seconds": 10800,
+    "packed_atoms": 5461,
+    "solvated_atoms": 27826,
+    "water_molecules": 7455,
+    "box_nm": [
+      6,
+      6,
+      8
+    ],
+    "solvation_status": "coordinate preparation and GROMACS reading passed; force-field/energy validation pending",
+    "bonded_coverage": "GAFF2 preflight produced no unassigned-revision flags; analog terms/penalties recorded in models/parameter-audit; quantum charges still pending"
   }
 }

@@ -16,7 +16,7 @@ from rdkit.Chem import Descriptors
 ROOT=Path(__file__).resolve().parents[1]
 
 def main():
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--density',type=float,default=0.6);parser.add_argument('--resume',type=Path);parser.add_argument('--timeout',type=int,default=10800);parser.add_argument('--run-dir',type=Path,default=ROOT/'runs/pc-packing');args=parser.parse_args()
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--density',type=float,default=0.6);parser.add_argument('--resume',type=Path);parser.add_argument('--timeout',type=int,default=10800);parser.add_argument('--run-dir',type=Path,default=ROOT/'runs/pc-packing');parser.add_argument('--local-polish',action='store_true');args=parser.parse_args()
     if not 0.1 <= args.density <= 1.5: parser.error('Choose an explicitly provisional packing density between0.1 and1.5g/cm3')
     out=ROOT/'models/pc-patch';out.mkdir(parents=True,exist_ok=True)
     run=args.run_dir.resolve();run.mkdir(parents=True,exist_ok=True)
@@ -49,12 +49,15 @@ def main():
         restart_path=args.resume.resolve()
         if len(restart_path.read_text().splitlines())!=count:raise ValueError('Restart pose count mismatch')
         restart=f'restart_from {restart_path}\n'
+    heuristic='disable_movebad' if args.local_polish else ''
+    maxit=1000 if args.local_polish else 200
     text=f'''tolerance 2.0
 filetype pdb
 output patch.pdb
 seed 2026
 nloop 200
-maxit 200
+maxit {maxit}
+{heuristic}
 restart_to packing.restart
 {restart}
 structure graft-oriented.pdb
