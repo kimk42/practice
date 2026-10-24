@@ -26,3 +26,6 @@ __pycache__/
 *.cpt
 *.log
 \#*\#
+
+# User-provided full article text (PDFs already ignored).
+/research/*-main.txt

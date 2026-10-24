@@ -1,19 +1,160 @@
 {
-  "substrate": {"material": "polycarbonate", "grade_and_repeat_structure": null},
+  "substrate": {
+    "material": "polycarbonate",
+    "grade_and_repeat_structure": null
+  },
   "coating": {
-    "components": ["CBAA-1", "n-butyl methacrylate", "BPAA"],
-    "user_reported_ratio": [7, 2, 1],
+    "components": [
+      "CBAA-1",
+      "n-butyl methacrylate",
+      "BPAA"
+    ],
+    "user_reported_ratio": [
+      7,
+      2,
+      1
+    ],
     "ratio_basis": "not yet confirmed: molar/mass and feed/incorporated",
     "attachment": "UV immobilization; possible surface attachment and interchain crosslinks",
-    "bpaa_candidate": "N-(4-benzoylphenyl)acrylamide, secondary literature; target synthesis verification pending",
+    "bpaa_candidate": "N-(4-benzoylphenyl)acrylamide; identity confirmed for cited monomer by uploaded primary papers, target batch assumed to use same monomer",
     "degree_of_polymerization": null,
     "coating_thickness_nm": null,
-    "reacted_fraction": null
+    "reacted_fraction": null,
+    "model_repeat_count_ratio": [
+      7,
+      2,
+      1
+    ],
+    "model_ratio_authorization": "User approved building the three-component model with a 7:2:1 repeat-count assumption; experimental feed/incorporated basis still unconfirmed."
   },
   "proteins": [
-    {"name": "fibrinogen", "candidate_structure": "3GHG", "preparation_status": "assembly and missing regions unresolved"},
-    {"name": "Factor XII", "candidate_structure": "8OS5", "scope": "N-terminal domains 1–5 only; full protein unresolved"}
+    {
+      "name": "fibrinogen",
+      "candidate_structure": "3GHG",
+      "preparation_status": "assembly and missing regions unresolved"
+    },
+    {
+      "name": "Factor XII",
+      "candidate_structure": "8OS5",
+      "scope": "N-terminal domains 1\u20135 only; full protein unresolved"
+    }
   ],
-  "status": "chemistry and sequence candidates only; not ready for production MD",
-  "force_field": "CHARMM-compatible route under investigation; no validated coating/PC parameters yet"
+  "status": "connected pre-UV DP10 and DP20 terpolymer geometry prototypes validated; not ready for production MD",
+  "force_field": "CHARMM-compatible route under investigation; no validated coating/PC parameters yet",
+  "literature_reference_conditions": {
+    "transfer_to_target": "Reference only: neither paper validates the user PC-supported 7:2:1 terpolymer. Do not auto-apply molecular weights or crosslink conversion.",
+    "lin2020": {
+      "doi": "10.1021/acsami.0c09457",
+      "system": "CBAA/BPAA binary on PVC",
+      "bpaa_identity_source": "Figure 1; section 4.2",
+      "feed_mol_percent": [
+        80,
+        20
+      ],
+      "incorporated_mol_percent": [
+        81,
+        19
+      ],
+      "Mw_g_mol": 46000,
+      "Mw_over_Mn": 2.1,
+      "polymerization": {
+        "temperature_C": 65,
+        "duration_h": 16,
+        "total_monomer_mol_L": 0.5,
+        "AIBN_mmol_L": 5,
+        "solvent": "ethanol",
+        "N2_purge_min": 30
+      },
+      "coating": {
+        "polymer_wt_percent": 0.5,
+        "contact_min": 10,
+        "drying": "airflow at room temperature",
+        "UV_wavelength_nm": 312,
+        "UV_fluence_mJ_cm2": 600,
+        "prewet": "sterile 1x PBS, pH7.4"
+      },
+      "source": "Table 1, Figure 2c, sections 4.2-4.3; pp41028,41033",
+      "fluorescent_terpolymer": {
+        "name": "PCB-NB",
+        "components": [
+          "CBAA",
+          "BPAA",
+          "Nile blue acrylamide"
+        ],
+        "evidence": "Figure1b p41027, Table1 p41028 and section2.3 p41029",
+        "purpose": "coating stability/retention tracking; not the target 7:2:1 formulation"
+      }
+    },
+    "lin2025": {
+      "doi": "10.1016/j.actbio.2025.07.021",
+      "systems": [
+        "PCB1 CBAA/BPAA on PVC",
+        "PCB2 CBAA/BMA on polysulfone"
+      ],
+      "synthesis_text": {
+        "temperature_C": 65,
+        "duration_h": 24,
+        "N2_purge_min": 30,
+        "solvent": "ethanol"
+      },
+      "PCB1_coating": {
+        "polymer_wt_percent": 0.5,
+        "solvent": "ethanol",
+        "contact_min": 10,
+        "UV_wavelength_nm": 312,
+        "UV_fluence_mJ_cm2": 600
+      },
+      "PCB2": {
+        "feed_mol_percent": [
+          80,
+          20
+        ],
+        "incorporated_mol_percent": [
+          82,
+          18
+        ],
+        "Mw_g_mol": 550000,
+        "Mw_over_Mn": 2.6,
+        "total_monomer_mol_L": 2.0,
+        "AIBN_mmol_L": 5,
+        "coating": "0.5wt% in water, adsorptive attachment; no UV required"
+      },
+      "source": "sections2.1-2.2,3.1-3.2,Table1; pp333-336",
+      "fluorescent_terpolymer": {
+        "name": "PCB2-NB",
+        "components": [
+          "CBAA",
+          "BMA",
+          "Nile blue acrylamide"
+        ],
+        "evidence": "section2.4 pp334-335, Table1 p336, Figure7a p341",
+        "purpose": "coating stability/retention tracking; NB is not BPAA"
+      }
+    }
+  },
+  "prototype": {
+    "builder": "scripts/build_copolymer.py",
+    "components": [
+      "CBAA1",
+      "BMA",
+      "BPAA"
+    ],
+    "dp": 20,
+    "counts": {
+      "CBAA1": 14,
+      "BMA": 4,
+      "BPAA": 2
+    },
+    "seed": 2026,
+    "sequence": "exact-count shuffled head-to-tail",
+    "end_groups": "hydrogen-terminated prototype",
+    "stereochemistry": "seeded random backbone stereochemical tags",
+    "state": "pre-UV isolated chain",
+    "BPAA_reaction_sites": 2,
+    "assigned_crosslinks": 0,
+    "PC_surface_present": false,
+    "production_force_field_present": false,
+    "additional_validated_dp": 10,
+    "outputs": "models/copolymer/"
+  }
 }

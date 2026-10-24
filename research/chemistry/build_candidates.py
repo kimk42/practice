@@ -31,7 +31,7 @@ for name,smiles in specs.items():
  status=AllChem.MMFFOptimizeMolecule(mol,maxIters=2000)
  if status!=0:raise RuntimeError('MMFF did not converge: '+name)
  mol.SetProp('_Name',name+' | chemistry candidate only')
- mol.SetProp('SOURCE', '10.1021/acs.langmuir.8b02540 SI (BMA)' if name.startswith('bma_') else ('10.1080/14686996.2022.2119883 Table 1, citing Lin 2020 (BPAA candidate)' if name.startswith('bpaa_') else '10.1039/d3sc01977b Fig. 1 / Scheme 1; reconstructed connectivity'))
+ mol.SetProp('SOURCE', '10.1021/acs.langmuir.8b02540 SI (BMA)' if name.startswith('bma_') else ('10.1021/acsami.0c09457 Figure 1 and section 4.2 (BPAA identity confirmed; target batch assumed)' if name.startswith('bpaa_') else '10.1039/d3sc01977b Fig. 1 / Scheme 1; reconstructed connectivity'))
  mol.SetProp('STATUS','No production charges, atom types, graft anchor, or validated torsions')
  with Chem.SDWriter(str(out/(name+'.sdf'))) as w:w.write(mol)
  # Normalize the writer timestamp so regeneration does not dirty versioned inputs.

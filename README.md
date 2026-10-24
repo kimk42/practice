@@ -22,6 +22,7 @@ source scripts/activate.sh
 python scripts/fetch_inputs.py
 python research/chemistry/build_candidates.py
 python research/chemistry/sequence_candidates.py
+python scripts/build_copolymer.py --dp 20 --seed 2026
 bash scripts/smoke.sh
 ```
 
@@ -31,8 +32,13 @@ The chemistry script generates monomer/capped-oligomer geometry candidates and v
 
 The water smoke check performs solvation, PME preprocessing, minimization, 100 steps of MD and energy-file validation. Fresh results go in ignored `runs/water-smoke.*`. This only validates GROMACS execution; it does not validate the coating, proteins, adsorption or photochemistry. It uses an Amber water setup solely as an engine check.
 
+## New three-component model
+
+The user approved directly constructing CBAA-1/BMA/BPAA at a 7:2:1 repeat-count ratio. `scripts/build_copolymer.py` builds an actual connected pre-UV chain; the default prototype uses DP20 (14/4/2), hydrogen end groups and seeded random backbone stereochemistry. These are explicit computational assumptions. See models/README.md for outputs and validation. The chemistry uses BPAA, not Nile blue. Identical formulation in a paper is not a prerequisite for building this model.
+
 ## Project map and current limits
 
+- `models/`: actual three-component graph/3D prototypes and assumptions.
 - `config/system.json`: confirmed user target versus unresolved experimental inputs.
 - `research/COATING.md`: current coating evidence and primary/secondary source distinctions.
 - `research/chemistry/MODEL.md`: chemistry definitions, provenance and parameterization gates.
@@ -42,6 +48,6 @@ The water smoke check performs solvation, PME preprocessing, minimization, 100 s
 - `migration-sha256.json`: original research file hashes verified during migration, before documented edits.
 - `runs/`: ignored outputs including preserved earlier setup tests/logs.
 
-BMA is confirmed as n-butyl methacrylate in Lin 2018 SI. A 2022 review citing Lin 2020 identifies BPAA as N-(4-benzoylphenyl)acrylamide; exact target-batch identity still requires its primary synthesis record. Lin 2020 SI describes a CBAA/BPAA binary copolymer on PVC and does not establish the user's 7:2:1 terpolymer or polycarbonate substrate. ACS main text remains blocked by HTTP 403; Figshare SI downloads work.
+BMA is confirmed as n-butyl methacrylate in Lin 2018 SI. Uploaded Lin2020/2025 primary papers directly confirm BPAA as N-(4-benzoylphenyl)acrylamide; candidate connectivity matches. The target batch and its force-field parameters remain unvalidated. The main papers also contain fluorescent ternary copolymers (CBAA/BPAA/Nile blue in Lin2020 Figure1b; CBAA/BMA/Nile blue in Lin2025 Figure7a). An earlier binary-only description was incorrect; see research/PAPER-READTHROUGH.md. Those fluorescent systems do not establish the user's CBAA/BMA/BPAA7:2:1 formulation or polycarbonate substrate. Main texts are now available from user-uploaded PDFs (locally retained, Git-ignored); website access is no longer a blocker for reading these articles. Reference UV312nm/600mJ/cm² and primary synthesis data are recorded in research/COATING.md and config/system.json, separately from target experimental conditions.
 
-Before production: confirm BPAA identity, PC grade, composition basis, molecular weight/DP, film loading/thickness, UV protocol and crosslink constraints; derive compatible unreacted/reacted polymer and PC parameters; validate brush/coating hydration; then prepare each protein assembly including missing residues/glycans/disulfides. 8OS5 is only an N-terminal FXII fragment, not full-length FXII or FXIIa. Fixed-topology classical MD represents a post-UV network, not photochemistry or proteolytic activation. No coating/protein trajectory has been generated.
+Before production: resolve PC grade, molecular weight/DP, film loading/thickness, actual UV protocol and crosslink constraints; retain the user-approved 7:2:1 repeat-count modeling assumption while distinguishing it from measured incorporation; derive compatible unreacted/reacted polymer and PC parameters; validate brush/coating hydration; then prepare each protein assembly including missing residues/glycans/disulfides. 8OS5 is only an N-terminal FXII fragment, not full-length FXII or FXIIa. Fixed-topology classical MD represents a post-UV network, not photochemistry or proteolytic activation. No coating/protein trajectory has been generated.

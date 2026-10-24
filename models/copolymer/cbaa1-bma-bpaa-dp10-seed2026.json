@@ -1,0 +1,2577 @@
+{
+  "name": "cbaa1-bma-bpaa-dp10-seed2026",
+  "dp": 10,
+  "seed": 2026,
+  "counts": {
+    "CBAA1": 7,
+    "BMA": 2,
+    "BPAA": 1
+  },
+  "sequence": [
+    "CBAA1",
+    "CBAA1",
+    "CBAA1",
+    "CBAA1",
+    "BMA",
+    "CBAA1",
+    "BMA",
+    "BPAA",
+    "CBAA1",
+    "CBAA1"
+  ],
+  "atom_count": 313,
+  "formula": "C102H169N15O27",
+  "molar_mass_g_mol": 2037.552000000005,
+  "formal_charge": 0,
+  "monomer_smiles": {
+    "CBAA1": "C=CC(=O)NCCC[N+](C)(C)CC(=O)[O-]",
+    "BMA": "C=C(C)C(=O)OCCCC",
+    "BPAA": "C=CC(=O)Nc1ccc(C(=O)c2ccccc2)cc1"
+  },
+  "polymer_smiles": "CCCCOC(=O)[C@@](C)(C[C@H](C[C@H](C[C@@H](C[C@@H](C)C(=O)NCCC[N+](C)(C)CC(=O)[O-])C(=O)NCCC[N+](C)(C)CC(=O)[O-])C(=O)NCCC[N+](C)(C)CC(=O)[O-])C(=O)NCCC[N+](C)(C)CC(=O)[O-])C[C@@H](C[C@@](C)(C[C@H](C[C@@H](CCC(=O)NCCC[N+](C)(C)CC(=O)[O-])C(=O)NCCC[N+](C)(C)CC(=O)[O-])C(=O)Nc1ccc(C(=O)c2ccccc2)cc1)C(=O)OCCCC)C(=O)NCCC[N+](C)(C)CC(=O)[O-]",
+  "assumptions": [
+    "7:2:1 is the user-approved modeling repeat-count ratio; experimental feed/incorporation basis unresolved",
+    "DP is a computational prototype, not measured chain length",
+    "Exact-count uniformly shuffled sequence; no reactivity-ratio inference",
+    "Random backbone stereochemical tags; real tacticity unmeasured",
+    "Hydrogen-terminated backbone; real initiator/end groups unmodeled",
+    "Isolated unreacted chain; no PC substrate or assigned UV crosslinks"
+  ],
+  "geometry": {
+    "method": "ETKDGv3 then generic MMFF geometry minimization only",
+    "converged": true,
+    "initial_energy_kcal_mol": 929.6048931179848,
+    "final_energy_kcal_mol": 26.660744683256667,
+    "bond_length_range_A": [
+      1.0137439789866225,
+      1.6036614385478483
+    ]
+  },
+  "validated": [
+    "exact repeat counts",
+    "single connected component",
+    "elemental balance",
+    "zwitterion formal charges",
+    "no remaining vinyl C=C",
+    "BPAA aromatic ring count",
+    "head-to-tail backbone links",
+    "BMA alpha-methyl connectivity",
+    "finite coordinates and bond lengths",
+    "SDF graph/stereochemistry round-trip"
+  ],
+  "bpaa_potential_reaction_sites": [
+    {
+      "unit_id": 8,
+      "ketone_C_1based": 105,
+      "ketone_O_1based": 106,
+      "state": "unreacted; attachment partner not assigned"
+    }
+  ],
+  "atom_mapping": [
+    {
+      "atom_index_1based": 1,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "C001",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 2,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "C002",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 3,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "C003",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 4,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "O004",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 5,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "N005",
+      "element": "N",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 6,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "C006",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 7,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "C007",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 8,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "C008",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 9,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "N009",
+      "element": "N",
+      "formal_charge": 1
+    },
+    {
+      "atom_index_1based": 10,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "C010",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 11,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "C011",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 12,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "C012",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 13,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "C013",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 14,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "O014",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 15,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "O015",
+      "element": "O",
+      "formal_charge": -1
+    },
+    {
+      "atom_index_1based": 16,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "C001",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 17,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "C002",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 18,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "C003",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 19,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "O004",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 20,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "N005",
+      "element": "N",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 21,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "C006",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 22,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "C007",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 23,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "C008",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 24,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "N009",
+      "element": "N",
+      "formal_charge": 1
+    },
+    {
+      "atom_index_1based": 25,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "C010",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 26,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "C011",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 27,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "C012",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 28,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "C013",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 29,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "O014",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 30,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "O015",
+      "element": "O",
+      "formal_charge": -1
+    },
+    {
+      "atom_index_1based": 31,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "C001",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 32,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "C002",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 33,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "C003",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 34,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "O004",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 35,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "N005",
+      "element": "N",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 36,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "C006",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 37,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "C007",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 38,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "C008",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 39,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "N009",
+      "element": "N",
+      "formal_charge": 1
+    },
+    {
+      "atom_index_1based": 40,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "C010",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 41,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "C011",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 42,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "C012",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 43,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "C013",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 44,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "O014",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 45,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "O015",
+      "element": "O",
+      "formal_charge": -1
+    },
+    {
+      "atom_index_1based": 46,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "C001",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 47,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "C002",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 48,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "C003",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 49,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "O004",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 50,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "N005",
+      "element": "N",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 51,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "C006",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 52,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "C007",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 53,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "C008",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 54,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "N009",
+      "element": "N",
+      "formal_charge": 1
+    },
+    {
+      "atom_index_1based": 55,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "C010",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 56,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "C011",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 57,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "C012",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 58,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "C013",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 59,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "O014",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 60,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "O015",
+      "element": "O",
+      "formal_charge": -1
+    },
+    {
+      "atom_index_1based": 61,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "C001",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 62,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "C002",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 63,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "C003",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 64,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "C004",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 65,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "O005",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 66,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "O006",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 67,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "C007",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 68,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "C008",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 69,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "C009",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 70,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "C010",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 71,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "C001",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 72,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "C002",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 73,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "C003",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 74,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "O004",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 75,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "N005",
+      "element": "N",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 76,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "C006",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 77,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "C007",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 78,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "C008",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 79,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "N009",
+      "element": "N",
+      "formal_charge": 1
+    },
+    {
+      "atom_index_1based": 80,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "C010",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 81,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "C011",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 82,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "C012",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 83,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "C013",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 84,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "O014",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 85,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "O015",
+      "element": "O",
+      "formal_charge": -1
+    },
+    {
+      "atom_index_1based": 86,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "C001",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 87,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "C002",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 88,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "C003",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 89,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "C004",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 90,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "O005",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 91,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "O006",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 92,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "C007",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 93,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "C008",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 94,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "C009",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 95,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "C010",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 96,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "C001",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 97,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "C002",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 98,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "C003",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 99,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "O004",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 100,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "N005",
+      "element": "N",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 101,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "C006",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 102,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "C007",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 103,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "C008",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 104,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "C009",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 105,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "C010",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 106,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "O011",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 107,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "C012",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 108,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "C013",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 109,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "C014",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 110,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "C015",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 111,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "C016",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 112,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "C017",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 113,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "C018",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 114,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "C019",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 115,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "C001",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 116,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "C002",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 117,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "C003",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 118,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "O004",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 119,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "N005",
+      "element": "N",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 120,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "C006",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 121,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "C007",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 122,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "C008",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 123,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "N009",
+      "element": "N",
+      "formal_charge": 1
+    },
+    {
+      "atom_index_1based": 124,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "C010",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 125,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "C011",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 126,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "C012",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 127,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "C013",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 128,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "O014",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 129,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "O015",
+      "element": "O",
+      "formal_charge": -1
+    },
+    {
+      "atom_index_1based": 130,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "C001",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 131,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "C002",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 132,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "C003",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 133,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "O004",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 134,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "N005",
+      "element": "N",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 135,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "C006",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 136,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "C007",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 137,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "C008",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 138,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "N009",
+      "element": "N",
+      "formal_charge": 1
+    },
+    {
+      "atom_index_1based": 139,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "C010",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 140,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "C011",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 141,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "C012",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 142,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "C013",
+      "element": "C",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 143,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "O014",
+      "element": "O",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 144,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "O015",
+      "element": "O",
+      "formal_charge": -1
+    },
+    {
+      "atom_index_1based": 145,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H016",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 146,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H017",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 147,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H018",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 148,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H019",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 149,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H020",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 150,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H021",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 151,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H022",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 152,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H023",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 153,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H024",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 154,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H025",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 155,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H026",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 156,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H027",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 157,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H028",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 158,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H029",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 159,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H030",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 160,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H031",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 161,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H032",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 162,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H033",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 163,
+      "unit_id": 1,
+      "component": "CBAA1",
+      "pdb_atom_name": "H034",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 164,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "H016",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 165,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "H017",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 166,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "H018",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 167,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "H019",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 168,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "H020",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 169,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "H021",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 170,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "H022",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 171,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "H023",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 172,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "H024",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 173,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "H025",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 174,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "H026",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 175,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "H027",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 176,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "H028",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 177,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "H029",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 178,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "H030",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 179,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "H031",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 180,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "H032",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 181,
+      "unit_id": 2,
+      "component": "CBAA1",
+      "pdb_atom_name": "H033",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 182,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "H016",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 183,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "H017",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 184,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "H018",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 185,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "H019",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 186,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "H020",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 187,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "H021",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 188,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "H022",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 189,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "H023",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 190,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "H024",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 191,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "H025",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 192,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "H026",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 193,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "H027",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 194,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "H028",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 195,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "H029",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 196,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "H030",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 197,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "H031",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 198,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "H032",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 199,
+      "unit_id": 3,
+      "component": "CBAA1",
+      "pdb_atom_name": "H033",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 200,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "H016",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 201,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "H017",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 202,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "H018",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 203,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "H019",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 204,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "H020",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 205,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "H021",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 206,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "H022",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 207,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "H023",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 208,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "H024",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 209,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "H025",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 210,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "H026",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 211,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "H027",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 212,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "H028",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 213,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "H029",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 214,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "H030",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 215,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "H031",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 216,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "H032",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 217,
+      "unit_id": 4,
+      "component": "CBAA1",
+      "pdb_atom_name": "H033",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 218,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "H011",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 219,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "H012",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 220,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "H013",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 221,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "H014",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 222,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "H015",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 223,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "H016",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 224,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "H017",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 225,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "H018",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 226,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "H019",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 227,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "H020",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 228,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "H021",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 229,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "H022",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 230,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "H023",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 231,
+      "unit_id": 5,
+      "component": "BMA",
+      "pdb_atom_name": "H024",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 232,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "H016",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 233,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "H017",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 234,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "H018",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 235,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "H019",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 236,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "H020",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 237,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "H021",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 238,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "H022",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 239,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "H023",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 240,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "H024",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 241,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "H025",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 242,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "H026",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 243,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "H027",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 244,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "H028",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 245,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "H029",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 246,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "H030",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 247,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "H031",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 248,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "H032",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 249,
+      "unit_id": 6,
+      "component": "CBAA1",
+      "pdb_atom_name": "H033",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 250,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "H011",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 251,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "H012",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 252,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "H013",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 253,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "H014",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 254,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "H015",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 255,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "H016",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 256,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "H017",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 257,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "H018",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 258,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "H019",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 259,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "H020",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 260,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "H021",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 261,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "H022",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 262,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "H023",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 263,
+      "unit_id": 7,
+      "component": "BMA",
+      "pdb_atom_name": "H024",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 264,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "H020",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 265,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "H021",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 266,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "H022",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 267,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "H023",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 268,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "H024",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 269,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "H025",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 270,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "H026",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 271,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "H027",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 272,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "H028",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 273,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "H029",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 274,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "H030",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 275,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "H031",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 276,
+      "unit_id": 8,
+      "component": "BPAA",
+      "pdb_atom_name": "H032",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 277,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "H016",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 278,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "H017",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 279,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "H018",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 280,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "H019",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 281,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "H020",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 282,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "H021",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 283,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "H022",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 284,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "H023",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 285,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "H024",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 286,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "H025",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 287,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "H026",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 288,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "H027",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 289,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "H028",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 290,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "H029",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 291,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "H030",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 292,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "H031",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 293,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "H032",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 294,
+      "unit_id": 9,
+      "component": "CBAA1",
+      "pdb_atom_name": "H033",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 295,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H016",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 296,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H017",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 297,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H018",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 298,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H019",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 299,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H020",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 300,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H021",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 301,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H022",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 302,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H023",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 303,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H024",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 304,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H025",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 305,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H026",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 306,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H027",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 307,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H028",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 308,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H029",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 309,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H030",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 310,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H031",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 311,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H032",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 312,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H033",
+      "element": "H",
+      "formal_charge": 0
+    },
+    {
+      "atom_index_1based": 313,
+      "unit_id": 10,
+      "component": "CBAA1",
+      "pdb_atom_name": "H034",
+      "element": "H",
+      "formal_charge": 0
+    }
+  ],
+  "status": "not ready for MD: partial charges, bonded/nonbonded parameters and post-UV network unresolved"
+}

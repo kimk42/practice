@@ -1,0 +1,16 @@
+{
+  "actbio2025-main.pdf": {
+    "source": "user-uploaded paper",
+    "original_filename": "1-s2.0-S1742706125005185-main.pdf",
+    "doi": "10.1016/j.actbio.2025.07.021",
+    "size_bytes": 7400153,
+    "sha256": "8221f8468b071f573bdeee71c30b939b5fce40bdd85efb582841a47396321dd7"
+  },
+  "lin2020-main.pdf": {
+    "source": "user-uploaded paper",
+    "original_filename": "photoreactive Carboxybetaine Copolymers Impart Biocompatibility and Inhibit Plasticizer Leaching on Polyvinyl Chloride.pdf",
+    "doi": "10.1021/acsami.0c09457",
+    "size_bytes": 3451333,
+    "sha256": "53a7b8b9b2699e2610f442dff3dff2b7b9241945b0082637871a4a083aece187"
+  }
+}
