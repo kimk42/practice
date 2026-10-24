@@ -1,0 +1,19 @@
+{
+  "substrate": {"material": "polycarbonate", "grade_and_repeat_structure": null},
+  "coating": {
+    "components": ["CBAA-1", "n-butyl methacrylate", "BPAA"],
+    "user_reported_ratio": [7, 2, 1],
+    "ratio_basis": "not yet confirmed: molar/mass and feed/incorporated",
+    "attachment": "UV immobilization; possible surface attachment and interchain crosslinks",
+    "bpaa_candidate": "N-(4-benzoylphenyl)acrylamide, secondary literature; target synthesis verification pending",
+    "degree_of_polymerization": null,
+    "coating_thickness_nm": null,
+    "reacted_fraction": null
+  },
+  "proteins": [
+    {"name": "fibrinogen", "candidate_structure": "3GHG", "preparation_status": "assembly and missing regions unresolved"},
+    {"name": "Factor XII", "candidate_structure": "8OS5", "scope": "N-terminal domains 1–5 only; full protein unresolved"}
+  ],
+  "status": "chemistry and sequence candidates only; not ready for production MD",
+  "force_field": "CHARMM-compatible route under investigation; no validated coating/PC parameters yet"
+}

@@ -1,0 +1,5 @@
+# Fixed-width molecular formats intentionally contain padded columns.
+*.pdb text eol=lf whitespace=-blank-at-eol
+*.sdf text eol=lf whitespace=-blank-at-eol
+*.sh text eol=lf
+*.py text eol=lf

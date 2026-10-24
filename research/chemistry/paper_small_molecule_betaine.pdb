@@ -1,0 +1,27 @@
+COMPND    paper_small_molecule_betaine | chemistry candidate only
+HETATM    1  C1  UNL     1      -0.595   0.410  -1.371  1.00  0.00           C  
+HETATM    2  N1  UNL     1      -0.363   0.071   0.093  1.00  0.00           N1+
+HETATM    3  C2  UNL     1      -0.527  -1.426   0.301  1.00  0.00           C  
+HETATM    4  C3  UNL     1      -1.288   0.849   0.984  1.00  0.00           C  
+HETATM    5  C4  UNL     1       1.135   0.444   0.442  1.00  0.00           C  
+HETATM    6  C5  UNL     1       2.239  -0.269  -0.387  1.00  0.00           C  
+HETATM    7  O1  UNL     1       2.535   0.315  -1.464  1.00  0.00           O  
+HETATM    8  O2  UNL     1       2.598  -1.383   0.083  1.00  0.00           O1-
+HETATM    9  H1  UNL     1       0.025  -0.235  -1.999  1.00  0.00           H  
+HETATM   10  H2  UNL     1      -1.651   0.231  -1.594  1.00  0.00           H  
+HETATM   11  H3  UNL     1      -0.350   1.464  -1.528  1.00  0.00           H  
+HETATM   12  H4  UNL     1       0.089  -1.966  -0.422  1.00  0.00           H  
+HETATM   13  H5  UNL     1      -1.581  -1.674   0.141  1.00  0.00           H  
+HETATM   14  H6  UNL     1      -0.235  -1.669   1.327  1.00  0.00           H  
+HETATM   15  H7  UNL     1      -1.122   1.917   0.816  1.00  0.00           H  
+HETATM   16  H8  UNL     1      -1.073   0.589   2.025  1.00  0.00           H  
+HETATM   17  H9  UNL     1      -2.319   0.583   0.734  1.00  0.00           H  
+HETATM   18  H10 UNL     1       1.217   1.530   0.313  1.00  0.00           H  
+HETATM   19  H11 UNL     1       1.265   0.219   1.507  1.00  0.00           H  
+CONECT    1    2    9   10   11
+CONECT    2    3    4    5
+CONECT    3   12   13   14
+CONECT    4   15   16   17
+CONECT    5    6   18   19
+CONECT    6    7    7    8
+END

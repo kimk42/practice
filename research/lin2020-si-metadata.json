@@ -1,0 +1,314 @@
+{
+  "files": [
+    {
+      "id": 24550465,
+      "name": "am0c09457_si_001.pdf",
+      "size": 2428982,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/24550465",
+      "supplied_md5": "cf479ebee7683f3bc19c479d12a89936",
+      "computed_md5": "cf479ebee7683f3bc19c479d12a89936",
+      "mimetype": "application/pdf"
+    }
+  ],
+  "folder_structure": {},
+  "authors": [
+    {
+      "id": 462721,
+      "full_name": "Xiaojie Lin",
+      "first_name": "Xiaojie",
+      "last_name": "Lin",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 499606,
+      "full_name": "Kan Wu",
+      "first_name": "Kan",
+      "last_name": "Wu",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 169101,
+      "full_name": "Qiong Zhou",
+      "first_name": "Qiong",
+      "last_name": "Zhou",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 4269136,
+      "full_name": "Priyesh Jain",
+      "first_name": "Priyesh",
+      "last_name": "Jain",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 9332767,
+      "full_name": "Mary O\u2019Kelly Boit",
+      "first_name": "Mary O\u2019Kelly",
+      "last_name": "Boit",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 200859,
+      "full_name": "Bowen Li",
+      "first_name": "Bowen",
+      "last_name": "Li",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1556572,
+      "full_name": "Hsiang-Chieh Hung",
+      "first_name": "Hsiang-Chieh",
+      "last_name": "Hung",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1845334,
+      "full_name": "Sharon A. Creason",
+      "first_name": "Sharon A.",
+      "last_name": "Creason",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 817308,
+      "full_name": "Jonathan Himmelfarb",
+      "first_name": "Jonathan",
+      "last_name": "Himmelfarb",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 2105005,
+      "full_name": "Buddy D. Ratner",
+      "first_name": "Buddy D.",
+      "last_name": "Ratner",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1278993,
+      "full_name": "Shaoyi Jiang",
+      "first_name": "Shaoyi",
+      "last_name": "Jiang",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://acs.figshare.com/articles/journal_contribution/Photoreactive_Carboxybetaine_Copolymers_Impart_Biocompatibility_and_Inhibit_Plasticizer_Leaching_on_Polyvinyl_Chloride/12906763",
+  "download_disabled": false,
+  "description": "Protein\nand cell interactions on implanted, blood-contacting medical\ndevice surfaces can lead to adverse biological reactions. Medical-grade\npoly\u00ad(vinyl chloride) (PVC) materials have been used for decades, particularly\nas blood-contacting tubes and containers. However, there are numerous\nconcerns with their performance including platelet activation, complement\nactivation, and thrombin generation and also leaching of plasticizers,\nparticularly in clinical applications. Here, we report a surface modification\nmethod that can dramatically prevent blood protein adsorption, human\nplatelet activation, and complement activation on commercial medical-grade\nPVC materials under various test conditions. The surface modification\ncan be accomplished through simple dip-coating followed by light illumination\nutilizing biocompatible polymers comprising zwitterionic carboxybetaine\n(CB) moieties and photosensitive cross-linking moieties. This surface\ntreatment can be manufactured routinely at small or large scales and\ncan impart to commercial PVC materials superhydrophilicity and nonfouling\ncapability. Furthermore, the polymer effectively prevented leaching\nof plasticizers out from commercial medical-grade PVC materials. This\ncoating technique is readily applicable to many other polymers and\nmedical devices requiring surfaces that will enhance performance in\nclinical settings.",
+  "funding": null,
+  "funding_list": [],
+  "version": 1,
+  "status": "public",
+  "size": 2428982,
+  "created_date": "2020-09-02T13:06:58Z",
+  "modified_date": "2023-07-03T13:52:58Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 10,
+    "name": "CC BY-NC 4.0",
+    "url": "https://creativecommons.org/licenses/by-nc/4.0/"
+  },
+  "tags": [
+    "leaching",
+    "PVC materials superhydrophilicity",
+    "complement activation",
+    "medical-grade PVC materials",
+    "Photoreactive Carboxybetaine Copoly...",
+    "Inhibit Plasticizer Leaching",
+    "surface modification method",
+    "plasticizer",
+    "CB",
+    "platelet activation",
+    "moietie",
+    "blood-contacting",
+    "Polyvinyl Chloride Protein",
+    "performance",
+    "blood protein adsorption",
+    "device"
+  ],
+  "keywords": [
+    "leaching",
+    "PVC materials superhydrophilicity",
+    "complement activation",
+    "medical-grade PVC materials",
+    "Photoreactive Carboxybetaine Copoly...",
+    "Inhibit Plasticizer Leaching",
+    "surface modification method",
+    "plasticizer",
+    "CB",
+    "platelet activation",
+    "moietie",
+    "blood-contacting",
+    "Polyvinyl Chloride Protein",
+    "performance",
+    "blood protein adsorption",
+    "device"
+  ],
+  "categories": [
+    {
+      "id": 4,
+      "title": "Biochemistry",
+      "parent_id": 38,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 146,
+      "title": "Space Science",
+      "parent_id": 43,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 7,
+      "title": "Medicine",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 12,
+      "title": "Cell Biology",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 14,
+      "title": "Molecular Biology",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 19,
+      "title": "Pharmacology",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 21,
+      "title": "Biotechnology",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 873,
+      "title": "Chemical Sciences not elsewhere classified",
+      "parent_id": 38,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 46,
+      "title": "Immunology",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 734,
+      "title": "Biological Sciences not elsewhere classified",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 64,
+      "title": "Cancer",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 128,
+      "title": "Hematology",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    }
+  ],
+  "references": [
+    "https://doi.org/10.1021/acsami.0c09457"
+  ],
+  "has_linked_file": false,
+  "citation": "Lin, Xiaojie; Wu, Kan; Zhou, Qiong; Jain, Priyesh; Boit, Mary O\u2019Kelly; Li, Bowen; et al. (2020). Photoreactive\nCarboxybetaine Copolymers Impart Biocompatibility\nand Inhibit Plasticizer Leaching on Polyvinyl Chloride. ACS Publications. Journal contribution. https://doi.org/10.1021/acsami.0c09457.s001",
+  "related_materials": [
+    {
+      "id": 108601188,
+      "identifier": "10.1021/acsami.0c09457",
+      "title": "Photoreactive\nCarboxybetaine Copolymers Impart Biocompatibility\nand Inhibit Plasticizer Leaching on Polyvinyl Chloride",
+      "relation": "IsSupplementTo",
+      "identifier_type": "DOI",
+      "is_linkout": true,
+      "link": "https://doi.org/10.1021/acsami.0c09457"
+    }
+  ],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": null,
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 12906763,
+  "title": "Photoreactive\nCarboxybetaine Copolymers Impart Biocompatibility\nand Inhibit Plasticizer Leaching on Polyvinyl Chloride",
+  "doi": "10.1021/acsami.0c09457.s001",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/12906763",
+  "published_date": "2020-09-02T13:06:58Z",
+  "thumb": "https://ndownloader.figshare.com/files/24550465/preview/24550465/thumb.png",
+  "defined_type": 6,
+  "defined_type_name": "journal contribution",
+  "group_id": 2469,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/12906763",
+  "url_public_api": "https://api.figshare.com/v2/articles/12906763",
+  "url_private_html": "https://figshare.com/account/articles/12906763",
+  "url_public_html": "https://acs.figshare.com/articles/journal_contribution/Photoreactive_Carboxybetaine_Copolymers_Impart_Biocompatibility_and_Inhibit_Plasticizer_Leaching_on_Polyvinyl_Chloride/12906763",
+  "timeline": {
+    "posted": "2020-09-02T13:06:58",
+    "publisherPublication": "2020-09-02T00:00:00",
+    "firstOnline": "2020-09-02"
+  },
+  "resource_title": "Photoreactive\nCarboxybetaine Copolymers Impart Biocompatibility\nand Inhibit Plasticizer Leaching on Polyvinyl Chloride",
+  "resource_doi": "10.1021/acsami.0c09457"
+}

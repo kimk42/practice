@@ -1,0 +1,302 @@
+{
+  "files": [
+    {
+      "id": 13204985,
+      "name": "la8b02540_si_001.pdf",
+      "size": 334565,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/13204985",
+      "supplied_md5": "f62725c6849aadc8ed94265175ebd33c",
+      "computed_md5": "f62725c6849aadc8ed94265175ebd33c",
+      "mimetype": "application/pdf"
+    }
+  ],
+  "folder_structure": {},
+  "authors": [
+    {
+      "id": 462721,
+      "full_name": "Xiaojie Lin",
+      "first_name": "Xiaojie",
+      "last_name": "Lin",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 4269136,
+      "full_name": "Priyesh Jain",
+      "first_name": "Priyesh",
+      "last_name": "Jain",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 499606,
+      "full_name": "Kan Wu",
+      "first_name": "Kan",
+      "last_name": "Wu",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 2129446,
+      "full_name": "Daewha Hong",
+      "first_name": "Daewha",
+      "last_name": "Hong",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1556572,
+      "full_name": "Hsiang-Chieh Hung",
+      "first_name": "Hsiang-Chieh",
+      "last_name": "Hung",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 5827712,
+      "full_name": "Mary Beth O\u2019Kelly",
+      "first_name": "Mary Beth",
+      "last_name": "O\u2019Kelly",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 200859,
+      "full_name": "Bowen Li",
+      "first_name": "Bowen",
+      "last_name": "Li",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 2071,
+      "full_name": "Peng Zhang",
+      "first_name": "Peng",
+      "last_name": "Zhang",
+      "is_active": false,
+      "url_name": "Peng_Zhang",
+      "orcid_id": ""
+    },
+    {
+      "id": 2632708,
+      "full_name": "Zhefan Yuan",
+      "first_name": "Zhefan",
+      "last_name": "Yuan",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1278993,
+      "full_name": "Shaoyi Jiang",
+      "first_name": "Shaoyi",
+      "last_name": "Jiang",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://acs.figshare.com/articles/journal_contribution/Ultralow_Fouling_and_Functionalizable_Surface_Chemistry_Based_on_Zwitterionic_Carboxybetaine_Random_Copolymers/7178012",
+  "download_disabled": false,
+  "description": "Here, we report a\nsimple yet effective surface-modification approach\nto imparting hydrophobic surfaces with superhydrophilicity using ultralow\nfouling/functionalizable carboxybetaine (CB) copolymers via a dip-coating\ntechnique. A new series of CB random copolymers with varying amphiphilicities\nwere synthesized and coated on hydrophobic polypropylene (PP) and\npolystyrene (PS) surfaces. The nonfouling capability of each coating\nwas screened by an enzyme-linked immunosorbent assay (ELISA) and further\ncomprehensively assessed against 100% human serum by a Micro BCA protein\nassay kit. The random copolymer containing \u223c30 mol % CB units\nshowed superhydrophilicity with the highest air contact angle of more\nthan 165\u00b0 in DI water and the best nonfouling capability against\n100% human blood serum. Surfaces of a 96-well plate coated with the\noptimal CB random copolymer had a significantly better nonfouling\ncapability than those of a commercial 96-well plate with an ultralow\nattachment surface. The adhesion of mouse embryonic fibroblast cells\n(NIH3T3) was completely inhibited on surfaces coated with CB random\ncopolymers. Furthermore, the optimal nonfouling CB copolymer surface\nwas functionalized with an antigen via covalent bonding where its\nspecific interactions with its antibody were verified. Thus, this\nCB random copolymer is capable of imparting both ultralow fouling\nand functionalizable capabilities to hydrophobic surfaces for blood-contacting\ndevices.",
+  "funding": null,
+  "funding_list": [],
+  "version": 1,
+  "status": "public",
+  "size": 334565,
+  "created_date": "2018-10-08T11:19:31Z",
+  "modified_date": "2023-06-02T15:44:07Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 10,
+    "name": "CC BY-NC 4.0",
+    "url": "https://creativecommons.org/licenses/by-nc/4.0/"
+  },
+  "tags": [
+    "air contact angle",
+    "copolymers",
+    "nonfouling capability",
+    "NIH",
+    "Functionalizable Surface Chemistry",
+    "3T",
+    "PS",
+    "PP",
+    "nonfouling CB copolymer surface",
+    "enzyme-linked immunosorbent assay",
+    "ELISA",
+    "Zwitterionic Carboxybetaine Random Copolymers",
+    "ultralow attachment surface",
+    "DI",
+    "Micro BCA protein assay kit"
+  ],
+  "keywords": [
+    "air contact angle",
+    "copolymers",
+    "nonfouling capability",
+    "NIH",
+    "Functionalizable Surface Chemistry",
+    "3T",
+    "PS",
+    "PP",
+    "nonfouling CB copolymer surface",
+    "enzyme-linked immunosorbent assay",
+    "ELISA",
+    "Zwitterionic Carboxybetaine Random Copolymers",
+    "ultralow attachment surface",
+    "DI",
+    "Micro BCA protein assay kit"
+  ],
+  "categories": [
+    {
+      "id": 4,
+      "title": "Biochemistry",
+      "parent_id": 38,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 146,
+      "title": "Space Science",
+      "parent_id": 43,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 915,
+      "title": "Physical Sciences not elsewhere classified",
+      "parent_id": 6,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 7,
+      "title": "Medicine",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 16,
+      "title": "Physiology",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 21,
+      "title": "Biotechnology",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 873,
+      "title": "Chemical Sciences not elsewhere classified",
+      "parent_id": 38,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 46,
+      "title": "Immunology",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 61,
+      "title": "Developmental Biology",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 64,
+      "title": "Cancer",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 128,
+      "title": "Hematology",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 133,
+      "title": "Plant Biology",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    }
+  ],
+  "references": [
+    "https://doi.org/10.1021/acs.langmuir.8b02540"
+  ],
+  "has_linked_file": false,
+  "citation": "Lin, Xiaojie; Jain, Priyesh; Wu, Kan; Hong, Daewha; Hung, Hsiang-Chieh; O\u2019Kelly, Mary Beth; et al. (2018). Ultralow Fouling and Functionalizable Surface Chemistry\nBased on Zwitterionic Carboxybetaine Random Copolymers. ACS Publications. Journal contribution. https://doi.org/10.1021/acs.langmuir.8b02540.s001",
+  "related_materials": [
+    {
+      "id": 32028491,
+      "identifier": "10.1021/acs.langmuir.8b02540",
+      "title": "Ultralow Fouling and Functionalizable Surface Chemistry\nBased on Zwitterionic Carboxybetaine Random Copolymers",
+      "relation": "IsSupplementTo",
+      "identifier_type": "DOI",
+      "is_linkout": true,
+      "link": "https://doi.org/10.1021/acs.langmuir.8b02540"
+    }
+  ],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": null,
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 7178012,
+  "title": "Ultralow Fouling and Functionalizable Surface Chemistry\nBased on Zwitterionic Carboxybetaine Random Copolymers",
+  "doi": "10.1021/acs.langmuir.8b02540.s001",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/7178012",
+  "published_date": "2018-09-28T00:00:00Z",
+  "thumb": "https://ndownloader.figshare.com/files/13204985/preview/13204985/thumb.png",
+  "defined_type": 6,
+  "defined_type_name": "journal contribution",
+  "group_id": 2526,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/7178012",
+  "url_public_api": "https://api.figshare.com/v2/articles/7178012",
+  "url_private_html": "https://figshare.com/account/articles/7178012",
+  "url_public_html": "https://acs.figshare.com/articles/journal_contribution/Ultralow_Fouling_and_Functionalizable_Surface_Chemistry_Based_on_Zwitterionic_Carboxybetaine_Random_Copolymers/7178012",
+  "timeline": {
+    "posted": "2018-09-28T00:00:00",
+    "firstOnline": "2018-12-27"
+  },
+  "resource_title": "Ultralow Fouling and Functionalizable Surface Chemistry\nBased on Zwitterionic Carboxybetaine Random Copolymers",
+  "resource_doi": "10.1021/acs.langmuir.8b02540"
+}

@@ -1,0 +1,28 @@
+# Local third-party papers, figures, raw searches and coordinate downloads.
+/research/*.pdf
+/research/*.zip
+/research/*.xml
+/research/*.html
+/research/*.jpg
+/research/*.png
+/research/*.pdb
+/research/*.cif
+/research/*-entry.json
+/research/*search*.json
+/research/search-*.json
+/research/lin-related.json
+/research/*-SI.txt
+/research/*-si.txt
+# Generated simulation output and local environments.
+/runs/
+/.venv/
+/.tools/
+__pycache__/
+*.pyc
+*.tpr
+*.xtc
+*.trr
+*.edr
+*.cpt
+*.log
+\#*\#

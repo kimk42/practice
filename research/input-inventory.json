@@ -1,0 +1,20 @@
+{
+  "am0c09457_si_001.pdf": {
+    "source": "https://ndownloader.figshare.com/files/24550465",
+    "sha256": "42830921ed6674677c4b62f77d98d3cb4bbd1bb76ff98d95f7057fd953aba39f",
+    "publisher_md5": "cf479ebee7683f3bc19c479d12a89936"
+  },
+  "la8b02540_si_001.pdf": {
+    "source": "https://ndownloader.figshare.com/files/13204985",
+    "sha256": "8e4b944a2716511dddb192ee6a82b95b0e43450a0efc7fe5e248a61db0ee41a3",
+    "publisher_md5": "f62725c6849aadc8ed94265175ebd33c"
+  },
+  "3GHG.cif": {
+    "source": "https://files.rcsb.org/download/3GHG.cif",
+    "sha256": "d2c5e5758a9a55d67c8186c227e2db596e237aa0d34e1ce7d0215b7b327545d2"
+  },
+  "8OS5.cif": {
+    "source": "https://files.rcsb.org/download/8OS5.cif",
+    "sha256": "e2d2491eb3a9a182ec672f48ceb9df3b087f35ccc88dddd112eeced3066f5017"
+  }
+}

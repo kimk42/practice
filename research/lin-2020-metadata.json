@@ -1,0 +1,378 @@
+{
+  "id": "32876425",
+  "source": "MED",
+  "pmid": "32876425",
+  "doi": "10.1021/acsami.0c09457",
+  "title": "Photoreactive Carboxybetaine Copolymers Impart Biocompatibility and Inhibit Plasticizer Leaching on Polyvinyl Chloride.",
+  "authorString": "Lin X, Wu K, Zhou Q, Jain P, Boit MO, Li B, Hung HC, Creason SA, Himmelfarb J, Ratner BD, Jiang S.",
+  "authorList": {
+    "author": [
+      {
+        "fullName": "Lin X",
+        "lastName": "Lin",
+        "firstName": "Xiaojie",
+        "initials": "X",
+        "authorId": {
+          "type": "ORCID",
+          "value": "0000-0003-2911-3685"
+        },
+        "authorAffiliationDetailsList": {
+          "authorAffiliation": [
+            {
+              "affiliation": "Department of Chemical Engineering, University of Washington, Seattle, Washington 98195, United States."
+            }
+          ]
+        }
+      },
+      {
+        "fullName": "Wu K",
+        "lastName": "Wu",
+        "firstName": "Kan",
+        "initials": "K",
+        "authorId": {
+          "type": "ORCID",
+          "value": "0000-0002-8900-5574"
+        },
+        "authorAffiliationDetailsList": {
+          "authorAffiliation": [
+            {
+              "affiliation": "Department of Chemical Engineering, University of Washington, Seattle, Washington 98195, United States."
+            }
+          ]
+        }
+      },
+      {
+        "fullName": "Zhou Q",
+        "lastName": "Zhou",
+        "firstName": "Qiong",
+        "initials": "Q",
+        "authorAffiliationDetailsList": {
+          "authorAffiliation": [
+            {
+              "affiliation": "Department of Chemical Engineering, University of Washington, Seattle, Washington 98195, United States."
+            }
+          ]
+        }
+      },
+      {
+        "fullName": "Jain P",
+        "lastName": "Jain",
+        "firstName": "Priyesh",
+        "initials": "P",
+        "authorAffiliationDetailsList": {
+          "authorAffiliation": [
+            {
+              "affiliation": "Department of Chemical Engineering, University of Washington, Seattle, Washington 98195, United States."
+            }
+          ]
+        }
+      },
+      {
+        "fullName": "Boit MO",
+        "lastName": "Boit",
+        "firstName": "Mary O'Kelly",
+        "initials": "MO",
+        "authorAffiliationDetailsList": {
+          "authorAffiliation": [
+            {
+              "affiliation": "Department of Chemical Engineering, University of Washington, Seattle, Washington 98195, United States."
+            }
+          ]
+        }
+      },
+      {
+        "fullName": "Li B",
+        "lastName": "Li",
+        "firstName": "Bowen",
+        "initials": "B",
+        "authorId": {
+          "type": "ORCID",
+          "value": "0000-0001-5006-9143"
+        },
+        "authorAffiliationDetailsList": {
+          "authorAffiliation": [
+            {
+              "affiliation": "Department of Chemical Engineering, University of Washington, Seattle, Washington 98195, United States."
+            }
+          ]
+        }
+      },
+      {
+        "fullName": "Hung HC",
+        "lastName": "Hung",
+        "firstName": "Hsiang-Chieh",
+        "initials": "HC",
+        "authorAffiliationDetailsList": {
+          "authorAffiliation": [
+            {
+              "affiliation": "Department of Chemical Engineering, University of Washington, Seattle, Washington 98195, United States."
+            }
+          ]
+        }
+      },
+      {
+        "fullName": "Creason SA",
+        "lastName": "Creason",
+        "firstName": "Sharon A",
+        "initials": "SA",
+        "authorAffiliationDetailsList": {
+          "authorAffiliation": [
+            {
+              "affiliation": "Department of Bioengineering, University of Washington, Seattle, Washington 98195, United States."
+            }
+          ]
+        }
+      },
+      {
+        "fullName": "Himmelfarb J",
+        "lastName": "Himmelfarb",
+        "firstName": "Jonathan",
+        "initials": "J",
+        "authorAffiliationDetailsList": {
+          "authorAffiliation": [
+            {
+              "affiliation": "Department of Medicine, Division of Nephrology, and Kidney Research Institute, University of Washington, Seattle, Washington 98195, United States."
+            }
+          ]
+        }
+      },
+      {
+        "fullName": "Ratner BD",
+        "lastName": "Ratner",
+        "firstName": "Buddy D",
+        "initials": "BD",
+        "authorAffiliationDetailsList": {
+          "authorAffiliation": [
+            {
+              "affiliation": "Department of Chemical Engineering, University of Washington, Seattle, Washington 98195, United States."
+            },
+            {
+              "affiliation": "Department of Bioengineering, University of Washington, Seattle, Washington 98195, United States."
+            }
+          ]
+        }
+      },
+      {
+        "fullName": "Jiang S",
+        "lastName": "Jiang",
+        "firstName": "Shaoyi",
+        "initials": "S",
+        "authorId": {
+          "type": "ORCID",
+          "value": "0000-0001-9863-6899"
+        },
+        "authorAffiliationDetailsList": {
+          "authorAffiliation": [
+            {
+              "affiliation": "Department of Chemical Engineering, University of Washington, Seattle, Washington 98195, United States."
+            },
+            {
+              "affiliation": "Department of Bioengineering, University of Washington, Seattle, Washington 98195, United States."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "authorIdList": {
+    "authorId": [
+      {
+        "type": "ORCID",
+        "value": "0000-0001-5006-9143"
+      },
+      {
+        "type": "ORCID",
+        "value": "0000-0001-9863-6899"
+      },
+      {
+        "type": "ORCID",
+        "value": "0000-0002-8900-5574"
+      },
+      {
+        "type": "ORCID",
+        "value": "0000-0003-2911-3685"
+      }
+    ]
+  },
+  "dataLinksTagsList": {
+    "dataLinkstag": [
+      "altmetrics"
+    ]
+  },
+  "journalInfo": {
+    "issue": "37",
+    "volume": "12",
+    "journalIssueId": 3013135,
+    "dateOfPublication": "2020 Sep",
+    "monthOfPublication": 9,
+    "yearOfPublication": 2020,
+    "journal": {
+      "medlineAbbreviation": "ACS Appl Mater Interfaces",
+      "title": "ACS applied materials & interfaces",
+      "essn": "1944-8252",
+      "issn": "1944-8244",
+      "isoabbreviation": "ACS Appl Mater Interfaces",
+      "nlmid": "101504991"
+    },
+    "printPublicationDate": "2020-09-01"
+  },
+  "pubYear": "2020",
+  "pageInfo": "41026-41037",
+  "abstractText": "Protein and cell interactions on implanted, blood-contacting medical device surfaces can lead to adverse biological reactions. Medical-grade poly(vinyl chloride) (PVC) materials have been used for decades, particularly as blood-contacting tubes and containers. However, there are numerous concerns with their performance including platelet activation, complement activation, and thrombin generation and also leaching of plasticizers, particularly in clinical applications. Here, we report a surface modification method that can dramatically prevent blood protein adsorption, human platelet activation, and complement activation on commercial medical-grade PVC materials under various test conditions. The surface modification can be accomplished through simple dip-coating followed by light illumination utilizing biocompatible polymers comprising zwitterionic carboxybetaine (CB) moieties and photosensitive cross-linking moieties. This surface treatment can be manufactured routinely at small or large scales and can impart to commercial PVC materials superhydrophilicity and nonfouling capability. Furthermore, the polymer effectively prevented leaching of plasticizers out from commercial medical-grade PVC materials. This coating technique is readily applicable to many other polymers and medical devices requiring surfaces that will enhance performance in clinical settings.",
+  "affiliation": "Department of Chemical Engineering, University of Washington, Seattle, Washington 98195, United States.",
+  "publicationStatus": "ppublish",
+  "language": "eng",
+  "pubModel": "Print-Electronic",
+  "pubTypeList": {
+    "pubType": [
+      "Journal Article"
+    ]
+  },
+  "meshHeadingList": {
+    "meshHeading": [
+      {
+        "majorTopic_YN": "N",
+        "descriptorName": "NIH 3T3 Cells"
+      },
+      {
+        "majorTopic_YN": "N",
+        "descriptorName": "Animals"
+      },
+      {
+        "majorTopic_YN": "N",
+        "descriptorName": "Mice"
+      },
+      {
+        "majorTopic_YN": "N",
+        "descriptorName": "Polymers",
+        "meshQualifierList": {
+          "meshQualifier": [
+            {
+              "majorTopic_YN": "N",
+              "abbreviation": "CS",
+              "qualifierName": "chemical synthesis"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "abbreviation": "CH",
+              "qualifierName": "chemistry"
+            }
+          ]
+        }
+      },
+      {
+        "majorTopic_YN": "N",
+        "descriptorName": "Biocompatible Materials",
+        "meshQualifierList": {
+          "meshQualifier": [
+            {
+              "majorTopic_YN": "Y",
+              "abbreviation": "CH",
+              "qualifierName": "chemistry"
+            }
+          ]
+        }
+      },
+      {
+        "majorTopic_YN": "N",
+        "descriptorName": "Plasticizers",
+        "meshQualifierList": {
+          "meshQualifier": [
+            {
+              "majorTopic_YN": "Y",
+              "abbreviation": "CH",
+              "qualifierName": "chemistry"
+            }
+          ]
+        }
+      },
+      {
+        "majorTopic_YN": "N",
+        "descriptorName": "Molecular Structure"
+      },
+      {
+        "majorTopic_YN": "N",
+        "descriptorName": "Adsorption"
+      },
+      {
+        "majorTopic_YN": "N",
+        "descriptorName": "Particle Size"
+      },
+      {
+        "majorTopic_YN": "N",
+        "descriptorName": "Surface Properties"
+      },
+      {
+        "majorTopic_YN": "N",
+        "descriptorName": "Photochemical Processes"
+      }
+    ]
+  },
+  "keywordList": {
+    "keyword": [
+      "surface modification",
+      "Photoreactive",
+      "Carboxybetaine (Cb) Copolymers",
+      "Ultra-low Fouling",
+      "Plasticizer Leaching"
+    ]
+  },
+  "chemicalList": {
+    "chemical": [
+      {
+        "name": "Polymers",
+        "registryNumber": "0"
+      },
+      {
+        "name": "Biocompatible Materials",
+        "registryNumber": "0"
+      },
+      {
+        "name": "Plasticizers",
+        "registryNumber": "0"
+      }
+    ]
+  },
+  "subsetList": {
+    "subset": [
+      {
+        "code": "IM",
+        "name": "Index Medicus"
+      }
+    ]
+  },
+  "fullTextUrlList": {
+    "fullTextUrl": [
+      {
+        "availability": "Subscription required",
+        "availabilityCode": "S",
+        "documentStyle": "doi",
+        "site": "DOI",
+        "url": "https://doi.org/10.1021/acsami.0c09457"
+      }
+    ]
+  },
+  "isOpenAccess": "N",
+  "inEPMC": "N",
+  "inPMC": "N",
+  "citedByCount": 25,
+  "hasReferences": "Y",
+  "hasTextMinedTerms": "Y",
+  "hasDbCrossReferences": "N",
+  "hasPDF": "N",
+  "hasBook": "N",
+  "hasSuppl": "N",
+  "hasLabsLinks": "Y",
+  "hasData": "N",
+  "authMan": "N",
+  "epmcAuthMan": "N",
+  "nihAuthMan": "N",
+  "hasTMAccessionNumbers": "N",
+  "dateOfCompletion": "2021-02-22",
+  "dateOfCreation": "2020-09-03",
+  "dateOfRevision": "2021-02-22",
+  "electronicPublicationDate": "2020-09-02",
+  "firstPublicationDate": "2020-09-02",
+  "firstIndexDate": "2020-09-03",
+  "hasEvaluations": "N"
+}
