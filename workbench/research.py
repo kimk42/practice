@@ -165,7 +165,7 @@ class Campaign:
   # molecular-preparation state before taking over; never rerun or overwrite it.
   while True:
    state=json.loads((self.path/'state.json').read_text())
-   if state['status'] in {'blocked_at_scientific_and_resource_gates','needs_review'}:break
+   if state['status'] in {'blocked_at_scientific_and_resource_gates','needs_review','independent_preparation_done_waiting_for_PE'}:break
    self.state=state;self.state['current_PE_job']=self.pe_job;self.state['stages']['1']={'status':self.manager.get(self.pe_job)['status'],'detail':'Checkpoint continuation is active; original worker interruption is preserved separately.'};self.publish(write_private=False)
    time.sleep(10)
   if state['status']=='needs_review':return
