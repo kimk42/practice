@@ -35,7 +35,7 @@ def main():
     active={n:f'runs/parameterization-optimized/{SUB[n]}' for n in SOURCES}
     if ACTIVE.exists():active=json.loads(ACTIVE.read_text())
     save(ACTIVE,active)
-    attempts={n:int('parameterization-long' in active[n]) for n in SOURCES}
+    attempts={n:int(active[n]!=f'runs/parameterization-optimized/{SUB[n]}') for n in SOURCES}
     processes={}
     packing_process=None
     packing_attempt=int((RUN/'pc-packing-long').exists())

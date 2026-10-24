@@ -58,11 +58,28 @@ def parameter_gate(name):
     mol2_files=list(folder.glob('*bcc*gaff2*.mol2'))
     if len(mol2_files)!=1:raise ValueError(name+': expected one final BCC/GAFF2 mol2')
     source=Chem.MolFromMolFile(str(input_path),removeHs=False)
-    target=Chem.MolFromMol2File(str(mol2_files[0]),sanitize=False,removeHs=False)
-    if target is None:raise ValueError(name+': cannot inspect atom order')
-    def graph(m):
-        return [a.GetAtomicNum() for a in m.GetAtoms()],{tuple(sorted((b.GetBeginAtomIdx(),b.GetEndAtomIdx()))) for b in m.GetBonds()}
-    if graph(source)!=graph(target):raise ValueError(name+': input/topology atom order or connectivity changed')
+    # GAFF atom types such as 'oh' are not SYBYL types: do not feed this
+    # artifact to RDKit's SYBYL MOL2 reader. Read the explicit index graph.
+    mol2_sections={};section=None
+    for line in mol2_files[0].read_text().splitlines():
+        if line.startswith('@<TRIPOS>'):
+            section=line[len('@<TRIPOS>'):];mol2_sections[section]=[]
+        elif section and line.strip():mol2_sections[section].append(line.split())
+    target_atoms=mol2_sections.get('ATOM',[]);target_bonds=mol2_sections.get('BOND',[])
+    numbers={'c':6,'h':1,'n':7,'o':8}
+    if [int(a[0]) for a in target_atoms]!=list(range(1,natoms+1)):
+        raise ValueError(name+': MOL2 atom indexing changed')
+    try:target_elements=[numbers[a[5][0]] for a in target_atoms]
+    except KeyError as error:raise ValueError(name+': unsupported element in GAFF atom typing') from error
+    target_edges={tuple(sorted((int(b[1])-1,int(b[2])-1))) for b in target_bonds}
+    source_elements=[a.GetAtomicNum() for a in source.GetAtoms()]
+    source_edges={tuple(sorted((b.GetBeginAtomIdx(),b.GetEndAtomIdx()))) for b in source.GetBonds()}
+    if source_elements!=target_elements or source_edges!=target_edges:
+        raise ValueError(name+': input/topology atom order or connectivity changed')
+    table=Chem.GetPeriodicTable()
+    for row,atomic_number in zip(atoms,target_elements):
+        if abs(float(row[7])-table.GetAtomicWeight(atomic_number))>0.2:
+            raise ValueError(name+': topology mass and MOL2 element disagree')
     molecule=list(section_rows(text,'moleculetype'))[0][0]
     types={r[0]:r for r in section_rows(text,'atomtypes')}
     match=re.search(r'^\s*\[\s*moleculetype\s*\]',text,re.M|re.I)
