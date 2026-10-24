@@ -1,0 +1,5 @@
+context_step,context_time_ps,additional_time_ps,stage,restraint_scale,minimum_protein_polymer_heavy_nm,contact_residue_count,protein_axis_angle_to_fitted_patch_plane_deg,patch_plane_fit_RMS_height_nm,patch_plane_fit_usable,water_O_within_0_35nm_of_both_groups
+1025,2.049999999999996,0.04999999999999449,prepared-fragment-NVT,1,0.34185001368614387,2,,0.2300935331157601,True,1
+1050,2.0999999999999903,0.09999999999998899,prepared-fragment-NVT,1,0.3897142813638324,2,,0.22973930797742034,True,1
+1075,2.149999999999985,0.14999999999998348,prepared-fragment-NVT,1,0.4092607796511786,2,,0.22958004801757975,True,0
+1100,2.1999999999999793,0.19999999999997797,prepared-fragment-NVT,1,0.39355178410122027,2,,0.22959393965532693,True,0

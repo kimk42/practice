@@ -1,0 +1,9 @@
+{
+  "family": "PVDF",
+  "status": "parameterizing",
+  "atoms": 74,
+  "formula": "C24H26F24",
+  "crystal_validated": false,
+  "surface_validated": false,
+  "adsorption_MD_allowed": false
+}

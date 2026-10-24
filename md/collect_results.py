@@ -105,6 +105,11 @@ if workbench_report.exists():
     body=workbench_report.read_text().split('<body>',1)[-1].rsplit('</body>',1)[0]
     sections.insert(1,'<hr><section id="workbench-preparation">'+body+'</section><hr>')
     sections[0]=sections[0].replace('<nav>','<nav><a href="#workbench-preparation">실행기 기반 준비 계산 최신 상태</a> · ',1)
+research_report=ROOT/'artifacts/research-campaign/report.html'
+if research_report.exists():
+    body=research_report.read_text().split('<body>',1)[-1].rsplit('</body>',1)[0]
+    sections.insert(2,'<hr><section id="research-campaign">'+body+'</section><hr>')
+    sections[0]=sections[0].replace('<nav>','<nav><a href="#research-campaign">실험 입력을 미룬 후속 준비</a> · ',1)
 guide=ROOT/'artifacts/data-guide.md'
 if guide.exists():
     sections.append('<h2>데이터·단위·파일 해설</h2><details open><summary>각 데이터와 지표를 읽는 방법</summary><pre style="white-space:pre-wrap;font-family:inherit">'+html.escape(guide.read_text())+'</pre></details>')
@@ -118,7 +123,7 @@ for dirname in ['artifacts','runs','data','md','environment','tests','schemas','
     if d.exists():
         for p in d.rglob('*'):
             if p.is_file() and OUT not in p.parents and '__pycache__' not in p.parts and p.suffix!='.pyc' and p.name not in {'archive-validation.json','result-archive.json'} and 'cache' not in p.parts and not p.is_symlink() and p.suffix!='.tmp' and p.name!='.active': paths.add(p)
-for name in ['README.md','requirements.txt','package.json','package-lock.json','index.html','app.mjs','simulation.mjs','workbench.mjs','model.mjs','styles.css','.gitignore','.gitattributes']:
+for name in ['README.md','requirements.txt','package.json','package-lock.json','index.html','app.mjs','simulation.mjs','workbench.mjs','campaign.mjs','model.mjs','styles.css','.gitignore','.gitattributes']:
     if (ROOT/name).is_file(): paths.add(ROOT/name)
 paths.add(OUT/'report.html')
 entries=[]

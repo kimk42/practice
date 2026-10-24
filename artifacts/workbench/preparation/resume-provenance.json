@@ -1,0 +1,6 @@
+{
+  "parent_job": "4bdbdd36b0984e948232ae503e35b10b",
+  "valid_parent_context_step": 6100,
+  "parent_trajectories": "/workspace/practice-fibrinogen-pe-md/runs/workbench/4bdbdd36b0984e948232ae503e35b10b/trajectories",
+  "note": "Parent files are preserved; observations after the saved checkpoint are not carried into this resumed lineage."
+}

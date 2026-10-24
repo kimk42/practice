@@ -1,0 +1,1266 @@
+{
+  "replicas": [
+    {
+      "material": "PE",
+      "orientation": "side-0",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PE",
+      "orientation": "side-0",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PE",
+      "orientation": "side-0",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PE",
+      "orientation": "side-90",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PE",
+      "orientation": "side-90",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PE",
+      "orientation": "side-90",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PE",
+      "orientation": "side-180",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PE",
+      "orientation": "side-180",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PE",
+      "orientation": "side-180",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PE",
+      "orientation": "side-270",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PE",
+      "orientation": "side-270",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PE",
+      "orientation": "side-270",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PE",
+      "orientation": "end-plus",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PE",
+      "orientation": "end-plus",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PE",
+      "orientation": "end-plus",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PE",
+      "orientation": "end-minus",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PE",
+      "orientation": "end-minus",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PE",
+      "orientation": "end-minus",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PTFE",
+      "orientation": "side-0",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PTFE",
+      "orientation": "side-0",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PTFE",
+      "orientation": "side-0",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PTFE",
+      "orientation": "side-90",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PTFE",
+      "orientation": "side-90",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PTFE",
+      "orientation": "side-90",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PTFE",
+      "orientation": "side-180",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PTFE",
+      "orientation": "side-180",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PTFE",
+      "orientation": "side-180",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PTFE",
+      "orientation": "side-270",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PTFE",
+      "orientation": "side-270",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PTFE",
+      "orientation": "side-270",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PTFE",
+      "orientation": "end-plus",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PTFE",
+      "orientation": "end-plus",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PTFE",
+      "orientation": "end-plus",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PTFE",
+      "orientation": "end-minus",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PTFE",
+      "orientation": "end-minus",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PTFE",
+      "orientation": "end-minus",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-alpha",
+      "orientation": "side-0",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-alpha",
+      "orientation": "side-0",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-alpha",
+      "orientation": "side-0",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-alpha",
+      "orientation": "side-90",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-alpha",
+      "orientation": "side-90",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-alpha",
+      "orientation": "side-90",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-alpha",
+      "orientation": "side-180",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-alpha",
+      "orientation": "side-180",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-alpha",
+      "orientation": "side-180",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-alpha",
+      "orientation": "side-270",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-alpha",
+      "orientation": "side-270",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-alpha",
+      "orientation": "side-270",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-alpha",
+      "orientation": "end-plus",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-alpha",
+      "orientation": "end-plus",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-alpha",
+      "orientation": "end-plus",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-alpha",
+      "orientation": "end-minus",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-alpha",
+      "orientation": "end-minus",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-alpha",
+      "orientation": "end-minus",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-beta",
+      "orientation": "side-0",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-beta",
+      "orientation": "side-0",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-beta",
+      "orientation": "side-0",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-beta",
+      "orientation": "side-90",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-beta",
+      "orientation": "side-90",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-beta",
+      "orientation": "side-90",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-beta",
+      "orientation": "side-180",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-beta",
+      "orientation": "side-180",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-beta",
+      "orientation": "side-180",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-beta",
+      "orientation": "side-270",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-beta",
+      "orientation": "side-270",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-beta",
+      "orientation": "side-270",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-beta",
+      "orientation": "end-plus",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-beta",
+      "orientation": "end-plus",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-beta",
+      "orientation": "end-plus",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-beta",
+      "orientation": "end-minus",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-beta",
+      "orientation": "end-minus",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-beta",
+      "orientation": "end-minus",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-gamma",
+      "orientation": "side-0",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-gamma",
+      "orientation": "side-0",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-gamma",
+      "orientation": "side-0",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-gamma",
+      "orientation": "side-90",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-gamma",
+      "orientation": "side-90",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-gamma",
+      "orientation": "side-90",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-gamma",
+      "orientation": "side-180",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-gamma",
+      "orientation": "side-180",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-gamma",
+      "orientation": "side-180",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-gamma",
+      "orientation": "side-270",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-gamma",
+      "orientation": "side-270",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-gamma",
+      "orientation": "side-270",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-gamma",
+      "orientation": "end-plus",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-gamma",
+      "orientation": "end-plus",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-gamma",
+      "orientation": "end-plus",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-gamma",
+      "orientation": "end-minus",
+      "seed": 101,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-gamma",
+      "orientation": "end-minus",
+      "seed": 202,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    },
+    {
+      "material": "PVDF-gamma",
+      "orientation": "end-minus",
+      "seed": 303,
+      "temperature_K": 310,
+      "status": "not_executed",
+      "eligible_now": false,
+      "required_gates": [
+        "model_surface_and_water_validation",
+        "prepared_replica_start",
+        "finite_budget_and_benchmark"
+      ],
+      "protein_source": "same observed capped core; these initial rotations are not independently equilibrated structures"
+    }
+  ],
+  "executed_replicas": 0,
+  "experimental_input_required_to_prepare": false
+}

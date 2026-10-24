@@ -1,0 +1,17 @@
+[
+  {
+    "query": "Crystal structures three crystalline forms poly vinylidene fluoride Hasegawa Takahashi Chatani Tadokoro",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "url": "https://api.crossref.org/works?query.bibliographic=Crystal+structures+three+crystalline+forms+poly+vinylidene+fluoride+Hasegawa+Takahashi+Chatani+Tadokoro&rows=3&select=DOI%2Ctitle%2Cauthor%2Cpublished%2CURL"
+  },
+  {
+    "query": "quantum chemistry based force field poly vinylidene fluoride Byutner Smith",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "url": "https://api.crossref.org/works?query.bibliographic=quantum+chemistry+based+force+field+poly+vinylidene+fluoride+Byutner+Smith&rows=3&select=DOI%2Ctitle%2Cauthor%2Cpublished%2CURL"
+  },
+  {
+    "query": "polytetrafluoroethylene force field water interface molecular dynamics",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "url": "https://api.crossref.org/works?query.bibliographic=polytetrafluoroethylene+force+field+water+interface+molecular+dynamics&rows=3&select=DOI%2Ctitle%2Cauthor%2Cpublished%2CURL"
+  }
+]

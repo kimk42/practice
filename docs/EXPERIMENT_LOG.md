@@ -202,3 +202,10 @@ OPENMM_CPU_THREADS=4 .venv/bin/python md/equilibrate_small_pe.py data/pe-protein
 `md/hold_large_pe.py runs/core-pe-low-temperature01/output data/fibrinogen-core-pe-solvated01 runs/core-pe-100K-hold01/output`는 검증된 이전 checkpoint를 같은 System·최종 LangevinMiddle 적분기·CPU 4스레드로 불러온다. 좌표·속도를 이전 XML과 비교해 일치 여부를 검사하고, 새 속도 초기화·최소화·제약 재투영·난수열 재설정을 하지 않는다. 100 K, 1 fs, 마찰5/ps, 기존 위치 억제 및 상자를 그대로 유지하여 추가 2000스텝(2 ps)을 실행한다. Context는 1000→3000스텝, 1→3 ps로 계속된다. CSV의 `step`, `time_ps`는 추가 구간의 상대 값(0→2000, 0→2 ps)이며 State의 시계는 누적 값이다. OpenMM DCDReporter가 저장한 DCD 헤더는 구간 상대 스텝(100→2000)이므로 DCD 시간에 1 ps를 더하면 누적 context 시간이 된다. 원본 헤더를 수정하지 않고 교차 검사에 이 오프셋을 명시한다.
 
 25스텝 관측 및 100스텝 저장을 유지한다. 추가 구간 시작 대비 억제 중원자 이동>0.3 nm 등 보수적인 중단 한계를 적용하며, 이 이동 한계에 걸릴 경우 거부된 상태와 원자 이동 정보를 보존해 국소 구조를 검토한다. 한계 통과와 실제 평형을 혼동하지 않는다. `validate_large_hold.py`는 XML/CSV/DCD, context시계, 속도 연속성, 동일 System 및 적분기 설정을 교차 검사한다. 0.5 ps별 평균·표준편차·기울기는 상관된 짧은 표본의 기술 통계이며 평형 검정이 아니다. 큰 모델의 총 MD는 3 ps이며 작은 γ절편 계의 100 ps와 합산하지 않는다.
+
+## 실험 입력을 미룬 후속 준비와 환경 중단 복구
+
+- 이전 준비 작업 `4bdbdd36b0984e948232ae503e35b10b`는 마지막 관측 6,175스텝 이후 갱신이 없었고, 현 환경에서 기록된 계산·취합 PID가 없었습니다. 수치 실패로 단정하지 않고 `interrupted`로 기록했습니다.
+- 검증된 체크포인트 6,100스텝, Context 시간 6.1 ps에서 새 작업 `68bdacf68ea34dbc8f4b4c5dcc69a4bc`로 재개했습니다. pipeline 시작 3 ps 대비 3.1 ps의 관측 접두부만 이어받았습니다. 이전 6,125–6,175스텝의 관측은 원본에 보존하되 새 계보에 중복 포함하지 않습니다. 위치·속도·제약을 재설정한 새 시작이 아니라 바이너리 체크포인트 연속입니다.
+- PTFE/PVDF 유한 분자 생성·후보 파라미터화, 여섯 dry 코어 배향, 미실행 반복 조건표·PMF 설계, 실제 작은 PE 궤적의 공통 기하 분석을 추가했습니다. 결정 표면·생산 MD·자유에너지 결과로 표시하지 않습니다. [후속 연구 보고서](../artifacts/research-campaign/report.html)의 현재 상태가 기준입니다.
+- 큰 MD의 재개와 취합, 후속 연구 상태 추적은 별도 프로세스이며 클라우드 환경 종료를 넘어 계속된다고 보장하지 않습니다.

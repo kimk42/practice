@@ -28,6 +28,18 @@ def export(job):
  for name in FILES:
   if (job/name).exists():shutil.copy2(job/name,out/name)
   else:(out/name).unlink(missing_ok=True)
+ # Analyze only stopped, stable trajectories; never interpret preparation as production.
+ for name in ['geometry-analysis.json','geometric-observables.csv','geometry-analysis-error.json']:(out/name).unlink(missing_ok=True)
+ state=json.loads((job/'state.json').read_text())
+ if state['status'] in TERMINAL and (job/'trajectory-index.json').exists() and (job/'reference.npy').exists():
+  try:
+   from md.research_metrics import analyze
+   geometry=analyze(job,out)
+   notice='<h2>추가 기하 분석</h2><p>이 작업의 저장된 궤적 '+str(geometry['frames'])+'프레임을 분석했습니다. 각도·접촉·물 근접성은 준비 구간의 기하 지표이며 흡착 세기나 리텐션이 아닙니다.</p>'
+   for name in ['geometry-analysis.json','geometric-observables.csv']:
+    notice+='<p><a download="'+name+'" href="data:application/octet-stream;base64,'+__import__('base64').b64encode((out/name).read_bytes()).decode()+'">'+name+'</a></p>'
+   report=(out/'report.html').read_text();(out/'report.html').write_text(report.replace('</body>',notice+'</body>'))
+  except Exception as e:atomic(out/'geometry-analysis-error.json',{'status':'analysis_failed','error':str(e),'raw_MD_outputs_preserved':True})
  atomic(out/'location.json',{'job_id':job.name,'raw_directory':str(job.relative_to(ROOT)),'report_generated_unix':time.time()})
  return out
 
@@ -60,10 +72,17 @@ def main():
    if s['status'] in TERMINAL and not owned:break
    if not a.wait:raise SystemExit('MD is still running; use --wait to export at termination')
    time.sleep(10)
+  # Give the independent campaign follower a bounded chance to record this same terminal MD state.
+  campaign=ROOT/'artifacts/research-campaign/status.json'
+  for _ in range(12):
+   if not campaign.exists():break
+   research=json.loads(campaign.read_text())
+   if research.get('current_PE_job')!=a.job or research.get('current_PE',{}).get('status')==s['status']:break
+   time.sleep(5)
   atomic(statusfile,{'status':'exporting','MD_status':s['status']});export(job)
   if a.archive:snapshot()
   if a.push:
-   paths=['artifacts/workbench','artifacts/collected-results','docs/result-archive.json']
+   paths=['artifacts/workbench','artifacts/research-campaign','artifacts/collected-results','docs/result-archive.json']
    if a.archive:paths.append('datasets/results-complete.zip')
    subprocess.run(['git','add','--',*paths],cwd=ROOT,check=True)
    subprocess.run([sys.executable,'scripts/check_repository.py'],cwd=ROOT,check=True)

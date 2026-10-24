@@ -1,0 +1,204 @@
+{
+  "status": "dry_rigid_coordinate_candidates_only",
+  "source_coordinate_sha256": "76612e0bb3ddd458ebf08a6f5b43c4f26a99f39b773b5da75dea04d80de3287e",
+  "native_residues": 1913,
+  "reference_plane": "mathematical z=0, no polymer, water or force calculation in these files",
+  "Ca_ions": "four source Ca ions co-rotated with capped observed core; this is a coordinate transform, not Ca binding validation",
+  "placements": [
+    {
+      "id": "side-0",
+      "roll_deg": 0,
+      "pitch_deg": 0,
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "atoms": 30215,
+      "minimum_solute_heavy_z_nm": 0.5,
+      "maximum_bond_length_change_nm": 8.881784197001252e-16,
+      "extent_nm": [
+        45.59441430228351,
+        7.030652845989772,
+        5.8609137159622815
+      ],
+      "sha256": "8bc2e8050f4f8feff9a1da363065a726461e96a1166a218c684e51696455ec1f",
+      "coordinates": "runs/research-campaign01/orientations/side-0.cif"
+    },
+    {
+      "id": "side-90",
+      "roll_deg": 90,
+      "pitch_deg": 0,
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          6.123233995736766e-17
+        ]
+      ],
+      "atoms": 30215,
+      "minimum_solute_heavy_z_nm": 0.5,
+      "maximum_bond_length_change_nm": 8.881784197001252e-16,
+      "extent_nm": [
+        45.59441430228351,
+        5.860913715962282,
+        7.030652845989772
+      ],
+      "sha256": "ff8ae5b550dd1e19c9613167cd8966d485895d030b7ef1927a7ff8ea881c56a8",
+      "coordinates": "runs/research-campaign01/orientations/side-90.cif"
+    },
+    {
+      "id": "side-180",
+      "roll_deg": 180,
+      "pitch_deg": 0,
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          -1.2246467991473532e-16
+        ],
+        [
+          0.0,
+          1.2246467991473532e-16,
+          -1.0
+        ]
+      ],
+      "atoms": 30215,
+      "minimum_solute_heavy_z_nm": 0.5,
+      "maximum_bond_length_change_nm": 9.992007221626409e-16,
+      "extent_nm": [
+        45.59441430228351,
+        7.030652845989772,
+        5.860913715962282
+      ],
+      "sha256": "63a702905bf492d620f841169ede2df8e0ee12e137b61f083605adbfc7672975",
+      "coordinates": "runs/research-campaign01/orientations/side-180.cif"
+    },
+    {
+      "id": "side-270",
+      "roll_deg": 270,
+      "pitch_deg": 0,
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.8369701987210297e-16,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          -1.8369701987210297e-16
+        ]
+      ],
+      "atoms": 30215,
+      "minimum_solute_heavy_z_nm": 0.5,
+      "maximum_bond_length_change_nm": 9.159339953157541e-16,
+      "extent_nm": [
+        45.59441430228351,
+        5.860913715962283,
+        7.030652845989772
+      ],
+      "sha256": "48cefc7fce6c36581500afbd5740eaec01f4d47cf968796fee774f889cf1581c",
+      "coordinates": "runs/research-campaign01/orientations/side-270.cif"
+    },
+    {
+      "id": "end-plus",
+      "roll_deg": 0,
+      "pitch_deg": 90,
+      "rotation_matrix": [
+        [
+          6.123233995736766e-17,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          6.123233995736766e-17
+        ]
+      ],
+      "atoms": 30215,
+      "minimum_solute_heavy_z_nm": 0.5,
+      "maximum_bond_length_change_nm": 7.105427357601002e-15,
+      "extent_nm": [
+        5.860913715962284,
+        7.030652845989772,
+        45.59441430228351
+      ],
+      "sha256": "e2cbf6f25ec262827e9f50316c6351a2d906c33f41d2934a82ade4a0e6af2458",
+      "coordinates": "runs/research-campaign01/orientations/end-plus.cif"
+    },
+    {
+      "id": "end-minus",
+      "roll_deg": 0,
+      "pitch_deg": -90,
+      "rotation_matrix": [
+        [
+          6.123233995736766e-17,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          6.123233995736766e-17
+        ]
+      ],
+      "atoms": 30215,
+      "minimum_solute_heavy_z_nm": 0.5,
+      "maximum_bond_length_change_nm": 7.105427357601002e-15,
+      "extent_nm": [
+        5.860913715962281,
+        7.030652845989772,
+        45.59441430228351
+      ],
+      "sha256": "f9bf47781317d43a4ccd13efcd75637944d1ef058e2fc6b32c45090d2625345b",
+      "coordinates": "runs/research-campaign01/orientations/end-minus.cif"
+    }
+  ],
+  "solvated": false,
+  "MD_steps": 0,
+  "equilibrium_established": false
+}
