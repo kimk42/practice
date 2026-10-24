@@ -1,0 +1,45 @@
+-I: Adding /workspace/tools/ambertools/dat/leap/prep to search path.
+-I: Adding /workspace/tools/ambertools/dat/leap/lib to search path.
+-I: Adding /workspace/tools/ambertools/dat/leap/parm to search path.
+-I: Adding /workspace/tools/ambertools/dat/leap/cmd to search path.
+-f: Source isolated.leap.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: ./isolated.leap
+----- Source: /workspace/tools/ambertools/dat/leap/cmd/leaprc.gaff2
+----- Source of /workspace/tools/ambertools/dat/leap/cmd/leaprc.gaff2 done
+Log file: ./leap.log
+Loading parameters: /workspace/tools/ambertools/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.2.20, March 2021)
+Loading parameters: ./PE.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Remark line goes here
+Loading Mol2 file: ./PE.mol2
+Reading MOLECULE named PEO
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 0 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	PEO	1
+  )
+ (no restraints)
+Writing pdb file: polymer.pdb
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 0; Notes = 0.

@@ -1,0 +1,72 @@
+{
+  "status": "low_temperature_MD_completed_numerical_checks_passed",
+  "atoms": 577890,
+  "steps": 1000,
+  "time_ps": 1,
+  "dt_fs": 1,
+  "initial": {
+    "step": 0,
+    "time_ps": 0.0,
+    "target_K": 10,
+    "temperature_K": 10.0419439184211,
+    "potential_including_position_restraints_kJ_mol": -7245184.0639828835,
+    "kinetic_kJ_mol": 49585.2497193818,
+    "total_energy_kJ_mol": -7195598.814263502,
+    "total_density_g_cm3": 0.846519284469353,
+    "volume_nm3": 6739.600889823218,
+    "max_relative_constraint_error": 3.396083185634914e-08,
+    "protein_CA_RMSD_from_heating_start_A": 4.613125324408087e-14,
+    "max_protein_heavy_shift_from_heating_start_nm": 0.0,
+    "max_PE_carbon_shift_from_heating_start_nm": 0.0,
+    "minimum_native_protein_PE_distance_nm": 0.6142599607420411,
+    "contact_native_residue_count": 0
+  },
+  "final": {
+    "step": 1000,
+    "time_ps": 1.0,
+    "target_K": 100,
+    "temperature_K": 101.0775291424359,
+    "potential_including_position_restraints_kJ_mol": -7895942.064109067,
+    "kinetic_kJ_mol": 499102.0229013395,
+    "total_energy_kJ_mol": -7396840.041207728,
+    "total_density_g_cm3": 0.846519284469353,
+    "volume_nm3": 6739.600889823218,
+    "max_relative_constraint_error": 2.2192273527644512e-07,
+    "protein_CA_RMSD_from_heating_start_A": 0.22387818286076486,
+    "max_protein_heavy_shift_from_heating_start_nm": 0.25240350620915686,
+    "max_PE_carbon_shift_from_heating_start_nm": 0.0851729100915956,
+    "minimum_native_protein_PE_distance_nm": 0.6411644329133949,
+    "contact_native_residue_count": 0
+  },
+  "maximum_recorded_temperature_K": 101.0775291424359,
+  "maximum_recorded_constraint_relative_error": 3.070498326168515e-07,
+  "geometry_after": {
+    "nonexcluded_heavy_pairs_under_0_12nm": 0,
+    "nonexcluded_allatom_pairs_under_0_08nm": 0,
+    "example_heavy_atom_index_pairs": [],
+    "example_allatom_index_pairs": [],
+    "minimum_water_O_solute_heavy_distance_nm": 0.24847167414858776,
+    "policy": "Minimum-image periodic distances. All NonbondedForce exception pairs (including bonded 1-2/1-3/1-4 pairs) excluded from severe-contact counts; thresholds are hard-overlap diagnostics, not all steric clashes."
+  },
+  "DCD_frames": 10,
+  "final_contact_residues": [],
+  "initial_constraint_projection_max_atom_shift_nm": 2.1700059961673462e-07,
+  "elapsed_seconds": 1110.46527505602,
+  "peak_process_RSS_GiB": 4.273532867431641,
+  "equilibrium_established": false,
+  "heating_to_310K_completed": false,
+  "production_ready": false,
+  "limitations": [
+    "One-ps low-temperature diagnostic, not heating completed to 310 K",
+    "Fixed initially underdense box; no pressure or density adjustment",
+    "Observed six-chain core omits unresolved tails and glycans",
+    "Finite C24H50 PE patch, not validated bulk crystal",
+    "No binding/free energy, spontaneous adsorption or PTFE/PVDF comparison"
+  ],
+  "sha256": {
+    "system.xml": "543edc4fc9ccd93349065684f0712c1f7c20d4369a9903bc0d45cc63cc216aa6",
+    "state.xml": "1bafd21344f0074e4dbe114efe4d301646702c1df7059e19296d032522bb793b",
+    "final.cif": "1f87befff1a66760c168ee1685d07f4f351b36b6badfc24e1fa2e64eed76d2d7",
+    "observables.csv": "c0b7b6607946a0b32c2571aa0f5122c6a6b165c23ddf99c8c1b587b5469734b6"
+  }
+}

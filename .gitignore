@@ -1,0 +1,31 @@
+# Local environments, tool installations and credentials
+.venv/
+.tools/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Immutable raw calculations are restored from the separately supplied archive.
+/runs/
+/data/*
+!/data/3ghg-upload/
+!/data/pe-gaff2/
+/data/pe-gaff2/*
+!/data/pe-gaff2/model02/
+!/data/structure-review/
+
+# Keep small, reviewable reports in Git, not raw state or archive payloads.
+/artifacts/**/*.zip
+/artifacts/**/*.dcd
+/artifacts/**/*.chk
+/artifacts/**/*.xml
+/artifacts/**/*.cif
+/artifacts/**/*.prmtop
+/artifacts/**/*.inpcrd
+/artifacts/**/*.tmp
+*.part

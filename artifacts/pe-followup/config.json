@@ -1,0 +1,31 @@
+{
+  "atoms": 43288,
+  "planned_steps": 50000,
+  "planned_time_ps": 100.0,
+  "dt_fs": 2,
+  "temperature_K": 310,
+  "pressure_bar": 1,
+  "threads": 4,
+  "seed": 43,
+  "barostat_frequency": 25,
+  "position_restraints": 0,
+  "input_bundle": "/workspace/practice/data/pe-protein-model04",
+  "input_sha256": {
+    "complex.prmtop": "c630f76e14a4de7ef52abfcda0f75b4af3f517b6e892a85481fb247be60279ea",
+    "complex.inpcrd": "62a370753e3929c7376d2b77d73250f765a53637337d504fc16e75fdbc342b58",
+    "complex.pdb": "859fa958e39fa45400cae6d6e0c82c7b3aa6399980eaa9ad605561221819b023",
+    "build.leap": "233eb1bc2a5c0a4c41329b876ceed41ef1ce786766a5495dc6aec7dd6a78192b"
+  },
+  "source_stage": "/workspace/practice/runs/pe-staged-preparation01/03-restrained-interface-NVT-check",
+  "starting_state_sha256": "1a6385ce971b953836e631a0d1e59c9e3071c5b18c1c7e251cb8c27746e71c58",
+  "source_state_time_ps": 2.0000000000000013,
+  "restart_policy": "Retain source coordinates, box and velocities; change NVT to isotropic NPT, remove position restraints, restart thermostat/barostat random streams. No reminimization or velocity reinitialization. Extension time starts at zero.",
+  "limitations": [
+    "Protein is an uncapped gamma fragment, not the newly prepared capped six-chain core",
+    "Short preparation stages, not established interface equilibrium",
+    "Finite PE oligomer model, no bulk crystal validation",
+    "Neutralizing ions only; no prescribed 150 mM salt",
+    "No binding/adsorption free energy or spontaneous-adsorption claim",
+    "Isotropic NPT is a finite-patch preparation protocol, not a validated macroscopic slab protocol."
+  ]
+}

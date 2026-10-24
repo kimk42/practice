@@ -1,0 +1,25 @@
+{
+  "model": "finite hydrogen-terminated PE oligomer",
+  "formula": "C24H50",
+  "repeat_units": 12,
+  "atoms": 74,
+  "forcefield": "GAFF2",
+  "charge_method": "AM1-BCC (AmberTools antechamber / sqm)",
+  "total_charge_e": 4.390225127881564e-09,
+  "raw_AM1BCC_charge_sum_e": 0.0059999999999999915,
+  "uniform_charge_normalization_per_atom_e": -8.108108108108097e-05,
+  "amberhome": "/workspace/tools/ambertools",
+  "sha256": {
+    "oligomer.sdf": "1d67c7ba8628f661bbf3bad13dfde2b1dcbaac411f170b7af434c672656bec79",
+    "PE.raw.mol2": "0581cfce92de628f60176ac879affe57d9ddbcdc2c3a6caae10a0cd323233d7e",
+    "PE.mol2": "e298169019b0c91f8a66ebe7b4b10a1f97054bbdea13fdf3c0267cb96f64a3ee",
+    "PE.frcmod": "bf922808a85c35c2c11e49229322f906ba4bfc17fa247ee240d7221744a82dd5",
+    "polymer.prmtop": "cb94f46453a4034e39946248eafb64c21bceb1f616dc8116abf3cab68bcfce79",
+    "polymer.inpcrd": "010801da2c13767a6265cb108077532447bbaace2b023188bbbef59b8cab5d98"
+  },
+  "limitations": [
+    "Finite PE oligomer; terminal methyl groups differ from infinite bulk PE",
+    "No claim of validated PE crystallinity, density, surface energy or protein affinity",
+    "UFF used only for initial conformer; MD parameters are GAFF2/AM1-BCC"
+  ]
+}

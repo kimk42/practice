@@ -1,0 +1,9 @@
+{
+  "archive_name": "results-complete.zip",
+  "archive_bytes": 759413919,
+  "archive_sha256": "b59c38939187091b4c2211c503567d77b73575cc2235e6e568ef7c24f7a42e24",
+  "snapshot_files": 390,
+  "large_system_atoms": 577890,
+  "large_system_cumulative_MD_ps": 3,
+  "scope": "Original calculation export before repository cleanup; includes producing code and failed attempts. Not a Git working-tree checksum."
+}

@@ -1,0 +1,7 @@
+openmm==8.4.0
+pdbfixer @ git+https://github.com/openmm/pdbfixer.git@94cfa4c0ca551cdc5f13320f9a658efd59f2b881
+biopython==1.86
+matplotlib==3.11.2
+rdkit==2025.9.1
+scipy==1.16.2
+zstandard==0.25.0

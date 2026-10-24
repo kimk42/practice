@@ -1,0 +1,19 @@
+{
+  "recommendation": "retain uploaded 3GHG as human fibrinogen starting structure; no new file required",
+  "scope": "40 experimental/IHM PDB entries linked to human alpha-chain UniProt P02671 via RCSB group membership, AlphaFold entry excluded",
+  "3GHG": {
+    "resolution_A": 2.9,
+    "uploaded_sha256": "d2c5e5758a9a55d67c8186c227e2db596e237aa0d34e1ce7d0215b7b327545d2",
+    "official_download_matches_upload": true,
+    "note": "Missing regions remain; file choice alone does not solve them"
+  },
+  "1LT9": {
+    "resolution_A": 2.8,
+    "purpose": "optional multi-chain human fragment-D comparator, not full fibrinogen",
+    "gamma_observed_auth_range_chain_C": [
+      96,
+      394
+    ],
+    "note": "Does not resolve gamma C-terminal coordinate absence beyond 394"
+  }
+}

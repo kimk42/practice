@@ -1,0 +1,1369 @@
+{
+  "status": "completed",
+  "system": "actual fibrinogen gamma fragment + finite PE patch + explicit TIP3P water and neutralizing ions",
+  "model_manifest": {
+    "status": "prepared",
+    "protein": "actual 3GHG gamma-chain fragment, source C label sequence 143\u2013394; artificial termini",
+    "protein_source_sha256": "5c3f797e1df4b924d01d04a621896bdc0841b4a767e1c2df536b24ed5df556e1",
+    "polymer": "PE",
+    "polymer_model": "finite C24H50 oligomer patch",
+    "polymer_chains": 48,
+    "patch_layout": {
+      "nx": 2,
+      "ny": 12,
+      "layers": 2,
+      "dx_nm": 3.3854334197740297,
+      "dy_nm": 0.48,
+      "dz_nm": 0.44
+    },
+    "initial_heavy_atom_plane_gap_nm": 0.5,
+    "protein_forcefield": "Amber ff14SB",
+    "polymer_forcefield": "GAFF2 / AM1-BCC",
+    "water_model": "TIP3P explicit water",
+    "ions": "neutralizing Na+/Cl- only; no prescribed bulk salt concentration",
+    "particles": 43288,
+    "residue_counts": {
+      "VAL": 7,
+      "GLN": 11,
+      "ILE": 14,
+      "HIS": 6,
+      "ASP": 21,
+      "THR": 18,
+      "GLY": 28,
+      "LYS": 20,
+      "CYS": 4,
+      "ALA": 16,
+      "ASN": 15,
+      "SER": 14,
+      "LEU": 12,
+      "TYR": 13,
+      "PHE": 16,
+      "PRO": 7,
+      "GLU": 9,
+      "TRP": 10,
+      "ARG": 6,
+      "MET": 5,
+      "PEO": 48,
+      "Na+": 4,
+      "HOH": 11945
+    },
+    "protein_residue_mapping": [
+      {
+        "output_residue": 1,
+        "source_fragment_residue": "1",
+        "template": "VAL"
+      },
+      {
+        "output_residue": 2,
+        "source_fragment_residue": "2",
+        "template": "GLN"
+      },
+      {
+        "output_residue": 3,
+        "source_fragment_residue": "3",
+        "template": "ILE"
+      },
+      {
+        "output_residue": 4,
+        "source_fragment_residue": "4",
+        "template": "HID"
+      },
+      {
+        "output_residue": 5,
+        "source_fragment_residue": "5",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 6,
+        "source_fragment_residue": "6",
+        "template": "ILE"
+      },
+      {
+        "output_residue": 7,
+        "source_fragment_residue": "7",
+        "template": "THR"
+      },
+      {
+        "output_residue": 8,
+        "source_fragment_residue": "8",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 9,
+        "source_fragment_residue": "9",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 10,
+        "source_fragment_residue": "10",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 11,
+        "source_fragment_residue": "11",
+        "template": "CYX"
+      },
+      {
+        "output_residue": 12,
+        "source_fragment_residue": "12",
+        "template": "GLN"
+      },
+      {
+        "output_residue": 13,
+        "source_fragment_residue": "13",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 14,
+        "source_fragment_residue": "14",
+        "template": "ILE"
+      },
+      {
+        "output_residue": 15,
+        "source_fragment_residue": "15",
+        "template": "ALA"
+      },
+      {
+        "output_residue": 16,
+        "source_fragment_residue": "16",
+        "template": "ASN"
+      },
+      {
+        "output_residue": 17,
+        "source_fragment_residue": "17",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 18,
+        "source_fragment_residue": "18",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 19,
+        "source_fragment_residue": "19",
+        "template": "ALA"
+      },
+      {
+        "output_residue": 20,
+        "source_fragment_residue": "20",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 21,
+        "source_fragment_residue": "21",
+        "template": "GLN"
+      },
+      {
+        "output_residue": 22,
+        "source_fragment_residue": "22",
+        "template": "SER"
+      },
+      {
+        "output_residue": 23,
+        "source_fragment_residue": "23",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 24,
+        "source_fragment_residue": "24",
+        "template": "LEU"
+      },
+      {
+        "output_residue": 25,
+        "source_fragment_residue": "25",
+        "template": "TYR"
+      },
+      {
+        "output_residue": 26,
+        "source_fragment_residue": "26",
+        "template": "PHE"
+      },
+      {
+        "output_residue": 27,
+        "source_fragment_residue": "27",
+        "template": "ILE"
+      },
+      {
+        "output_residue": 28,
+        "source_fragment_residue": "28",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 29,
+        "source_fragment_residue": "29",
+        "template": "PRO"
+      },
+      {
+        "output_residue": 30,
+        "source_fragment_residue": "30",
+        "template": "LEU"
+      },
+      {
+        "output_residue": 31,
+        "source_fragment_residue": "31",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 32,
+        "source_fragment_residue": "32",
+        "template": "ALA"
+      },
+      {
+        "output_residue": 33,
+        "source_fragment_residue": "33",
+        "template": "ASN"
+      },
+      {
+        "output_residue": 34,
+        "source_fragment_residue": "34",
+        "template": "GLN"
+      },
+      {
+        "output_residue": 35,
+        "source_fragment_residue": "35",
+        "template": "GLN"
+      },
+      {
+        "output_residue": 36,
+        "source_fragment_residue": "36",
+        "template": "PHE"
+      },
+      {
+        "output_residue": 37,
+        "source_fragment_residue": "37",
+        "template": "LEU"
+      },
+      {
+        "output_residue": 38,
+        "source_fragment_residue": "38",
+        "template": "VAL"
+      },
+      {
+        "output_residue": 39,
+        "source_fragment_residue": "39",
+        "template": "TYR"
+      },
+      {
+        "output_residue": 40,
+        "source_fragment_residue": "40",
+        "template": "CYX"
+      },
+      {
+        "output_residue": 41,
+        "source_fragment_residue": "41",
+        "template": "GLU"
+      },
+      {
+        "output_residue": 42,
+        "source_fragment_residue": "42",
+        "template": "ILE"
+      },
+      {
+        "output_residue": 43,
+        "source_fragment_residue": "43",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 44,
+        "source_fragment_residue": "44",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 45,
+        "source_fragment_residue": "45",
+        "template": "SER"
+      },
+      {
+        "output_residue": 46,
+        "source_fragment_residue": "46",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 47,
+        "source_fragment_residue": "47",
+        "template": "ASN"
+      },
+      {
+        "output_residue": 48,
+        "source_fragment_residue": "48",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 49,
+        "source_fragment_residue": "49",
+        "template": "TRP"
+      },
+      {
+        "output_residue": 50,
+        "source_fragment_residue": "50",
+        "template": "THR"
+      },
+      {
+        "output_residue": 51,
+        "source_fragment_residue": "51",
+        "template": "VAL"
+      },
+      {
+        "output_residue": 52,
+        "source_fragment_residue": "52",
+        "template": "PHE"
+      },
+      {
+        "output_residue": 53,
+        "source_fragment_residue": "53",
+        "template": "GLN"
+      },
+      {
+        "output_residue": 54,
+        "source_fragment_residue": "54",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 55,
+        "source_fragment_residue": "55",
+        "template": "ARG"
+      },
+      {
+        "output_residue": 56,
+        "source_fragment_residue": "56",
+        "template": "LEU"
+      },
+      {
+        "output_residue": 57,
+        "source_fragment_residue": "57",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 58,
+        "source_fragment_residue": "58",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 59,
+        "source_fragment_residue": "59",
+        "template": "SER"
+      },
+      {
+        "output_residue": 60,
+        "source_fragment_residue": "60",
+        "template": "VAL"
+      },
+      {
+        "output_residue": 61,
+        "source_fragment_residue": "61",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 62,
+        "source_fragment_residue": "62",
+        "template": "PHE"
+      },
+      {
+        "output_residue": 63,
+        "source_fragment_residue": "63",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 64,
+        "source_fragment_residue": "64",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 65,
+        "source_fragment_residue": "65",
+        "template": "ASN"
+      },
+      {
+        "output_residue": 66,
+        "source_fragment_residue": "66",
+        "template": "TRP"
+      },
+      {
+        "output_residue": 67,
+        "source_fragment_residue": "67",
+        "template": "ILE"
+      },
+      {
+        "output_residue": 68,
+        "source_fragment_residue": "68",
+        "template": "GLN"
+      },
+      {
+        "output_residue": 69,
+        "source_fragment_residue": "69",
+        "template": "TYR"
+      },
+      {
+        "output_residue": 70,
+        "source_fragment_residue": "70",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 71,
+        "source_fragment_residue": "71",
+        "template": "GLU"
+      },
+      {
+        "output_residue": 72,
+        "source_fragment_residue": "72",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 73,
+        "source_fragment_residue": "73",
+        "template": "PHE"
+      },
+      {
+        "output_residue": 74,
+        "source_fragment_residue": "74",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 75,
+        "source_fragment_residue": "75",
+        "template": "HID"
+      },
+      {
+        "output_residue": 76,
+        "source_fragment_residue": "76",
+        "template": "LEU"
+      },
+      {
+        "output_residue": 77,
+        "source_fragment_residue": "77",
+        "template": "SER"
+      },
+      {
+        "output_residue": 78,
+        "source_fragment_residue": "78",
+        "template": "PRO"
+      },
+      {
+        "output_residue": 79,
+        "source_fragment_residue": "79",
+        "template": "THR"
+      },
+      {
+        "output_residue": 80,
+        "source_fragment_residue": "80",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 81,
+        "source_fragment_residue": "81",
+        "template": "THR"
+      },
+      {
+        "output_residue": 82,
+        "source_fragment_residue": "82",
+        "template": "THR"
+      },
+      {
+        "output_residue": 83,
+        "source_fragment_residue": "83",
+        "template": "GLU"
+      },
+      {
+        "output_residue": 84,
+        "source_fragment_residue": "84",
+        "template": "PHE"
+      },
+      {
+        "output_residue": 85,
+        "source_fragment_residue": "85",
+        "template": "TRP"
+      },
+      {
+        "output_residue": 86,
+        "source_fragment_residue": "86",
+        "template": "LEU"
+      },
+      {
+        "output_residue": 87,
+        "source_fragment_residue": "87",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 88,
+        "source_fragment_residue": "88",
+        "template": "ASN"
+      },
+      {
+        "output_residue": 89,
+        "source_fragment_residue": "89",
+        "template": "GLU"
+      },
+      {
+        "output_residue": 90,
+        "source_fragment_residue": "90",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 91,
+        "source_fragment_residue": "91",
+        "template": "ILE"
+      },
+      {
+        "output_residue": 92,
+        "source_fragment_residue": "92",
+        "template": "HID"
+      },
+      {
+        "output_residue": 93,
+        "source_fragment_residue": "93",
+        "template": "LEU"
+      },
+      {
+        "output_residue": 94,
+        "source_fragment_residue": "94",
+        "template": "ILE"
+      },
+      {
+        "output_residue": 95,
+        "source_fragment_residue": "95",
+        "template": "SER"
+      },
+      {
+        "output_residue": 96,
+        "source_fragment_residue": "96",
+        "template": "THR"
+      },
+      {
+        "output_residue": 97,
+        "source_fragment_residue": "97",
+        "template": "GLN"
+      },
+      {
+        "output_residue": 98,
+        "source_fragment_residue": "98",
+        "template": "SER"
+      },
+      {
+        "output_residue": 99,
+        "source_fragment_residue": "99",
+        "template": "ALA"
+      },
+      {
+        "output_residue": 100,
+        "source_fragment_residue": "100",
+        "template": "ILE"
+      },
+      {
+        "output_residue": 101,
+        "source_fragment_residue": "101",
+        "template": "PRO"
+      },
+      {
+        "output_residue": 102,
+        "source_fragment_residue": "102",
+        "template": "TYR"
+      },
+      {
+        "output_residue": 103,
+        "source_fragment_residue": "103",
+        "template": "ALA"
+      },
+      {
+        "output_residue": 104,
+        "source_fragment_residue": "104",
+        "template": "LEU"
+      },
+      {
+        "output_residue": 105,
+        "source_fragment_residue": "105",
+        "template": "ARG"
+      },
+      {
+        "output_residue": 106,
+        "source_fragment_residue": "106",
+        "template": "VAL"
+      },
+      {
+        "output_residue": 107,
+        "source_fragment_residue": "107",
+        "template": "GLU"
+      },
+      {
+        "output_residue": 108,
+        "source_fragment_residue": "108",
+        "template": "LEU"
+      },
+      {
+        "output_residue": 109,
+        "source_fragment_residue": "109",
+        "template": "GLU"
+      },
+      {
+        "output_residue": 110,
+        "source_fragment_residue": "110",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 111,
+        "source_fragment_residue": "111",
+        "template": "TRP"
+      },
+      {
+        "output_residue": 112,
+        "source_fragment_residue": "112",
+        "template": "ASN"
+      },
+      {
+        "output_residue": 113,
+        "source_fragment_residue": "113",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 114,
+        "source_fragment_residue": "114",
+        "template": "ARG"
+      },
+      {
+        "output_residue": 115,
+        "source_fragment_residue": "115",
+        "template": "THR"
+      },
+      {
+        "output_residue": 116,
+        "source_fragment_residue": "116",
+        "template": "SER"
+      },
+      {
+        "output_residue": 117,
+        "source_fragment_residue": "117",
+        "template": "THR"
+      },
+      {
+        "output_residue": 118,
+        "source_fragment_residue": "118",
+        "template": "ALA"
+      },
+      {
+        "output_residue": 119,
+        "source_fragment_residue": "119",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 120,
+        "source_fragment_residue": "120",
+        "template": "TYR"
+      },
+      {
+        "output_residue": 121,
+        "source_fragment_residue": "121",
+        "template": "ALA"
+      },
+      {
+        "output_residue": 122,
+        "source_fragment_residue": "122",
+        "template": "MET"
+      },
+      {
+        "output_residue": 123,
+        "source_fragment_residue": "123",
+        "template": "PHE"
+      },
+      {
+        "output_residue": 124,
+        "source_fragment_residue": "124",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 125,
+        "source_fragment_residue": "125",
+        "template": "VAL"
+      },
+      {
+        "output_residue": 126,
+        "source_fragment_residue": "126",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 127,
+        "source_fragment_residue": "127",
+        "template": "PRO"
+      },
+      {
+        "output_residue": 128,
+        "source_fragment_residue": "128",
+        "template": "GLU"
+      },
+      {
+        "output_residue": 129,
+        "source_fragment_residue": "129",
+        "template": "ALA"
+      },
+      {
+        "output_residue": 130,
+        "source_fragment_residue": "130",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 131,
+        "source_fragment_residue": "131",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 132,
+        "source_fragment_residue": "132",
+        "template": "TYR"
+      },
+      {
+        "output_residue": 133,
+        "source_fragment_residue": "133",
+        "template": "ARG"
+      },
+      {
+        "output_residue": 134,
+        "source_fragment_residue": "134",
+        "template": "LEU"
+      },
+      {
+        "output_residue": 135,
+        "source_fragment_residue": "135",
+        "template": "THR"
+      },
+      {
+        "output_residue": 136,
+        "source_fragment_residue": "136",
+        "template": "TYR"
+      },
+      {
+        "output_residue": 137,
+        "source_fragment_residue": "137",
+        "template": "ALA"
+      },
+      {
+        "output_residue": 138,
+        "source_fragment_residue": "138",
+        "template": "TYR"
+      },
+      {
+        "output_residue": 139,
+        "source_fragment_residue": "139",
+        "template": "PHE"
+      },
+      {
+        "output_residue": 140,
+        "source_fragment_residue": "140",
+        "template": "ALA"
+      },
+      {
+        "output_residue": 141,
+        "source_fragment_residue": "141",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 142,
+        "source_fragment_residue": "142",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 143,
+        "source_fragment_residue": "143",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 144,
+        "source_fragment_residue": "144",
+        "template": "ALA"
+      },
+      {
+        "output_residue": 145,
+        "source_fragment_residue": "145",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 146,
+        "source_fragment_residue": "146",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 147,
+        "source_fragment_residue": "147",
+        "template": "ALA"
+      },
+      {
+        "output_residue": 148,
+        "source_fragment_residue": "148",
+        "template": "PHE"
+      },
+      {
+        "output_residue": 149,
+        "source_fragment_residue": "149",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 150,
+        "source_fragment_residue": "150",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 151,
+        "source_fragment_residue": "151",
+        "template": "PHE"
+      },
+      {
+        "output_residue": 152,
+        "source_fragment_residue": "152",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 153,
+        "source_fragment_residue": "153",
+        "template": "PHE"
+      },
+      {
+        "output_residue": 154,
+        "source_fragment_residue": "154",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 155,
+        "source_fragment_residue": "155",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 156,
+        "source_fragment_residue": "156",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 157,
+        "source_fragment_residue": "157",
+        "template": "PRO"
+      },
+      {
+        "output_residue": 158,
+        "source_fragment_residue": "158",
+        "template": "SER"
+      },
+      {
+        "output_residue": 159,
+        "source_fragment_residue": "159",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 160,
+        "source_fragment_residue": "160",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 161,
+        "source_fragment_residue": "161",
+        "template": "PHE"
+      },
+      {
+        "output_residue": 162,
+        "source_fragment_residue": "162",
+        "template": "PHE"
+      },
+      {
+        "output_residue": 163,
+        "source_fragment_residue": "163",
+        "template": "THR"
+      },
+      {
+        "output_residue": 164,
+        "source_fragment_residue": "164",
+        "template": "SER"
+      },
+      {
+        "output_residue": 165,
+        "source_fragment_residue": "165",
+        "template": "HID"
+      },
+      {
+        "output_residue": 166,
+        "source_fragment_residue": "166",
+        "template": "ASN"
+      },
+      {
+        "output_residue": 167,
+        "source_fragment_residue": "167",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 168,
+        "source_fragment_residue": "168",
+        "template": "MET"
+      },
+      {
+        "output_residue": 169,
+        "source_fragment_residue": "169",
+        "template": "GLN"
+      },
+      {
+        "output_residue": 170,
+        "source_fragment_residue": "170",
+        "template": "PHE"
+      },
+      {
+        "output_residue": 171,
+        "source_fragment_residue": "171",
+        "template": "SER"
+      },
+      {
+        "output_residue": 172,
+        "source_fragment_residue": "172",
+        "template": "THR"
+      },
+      {
+        "output_residue": 173,
+        "source_fragment_residue": "173",
+        "template": "TRP"
+      },
+      {
+        "output_residue": 174,
+        "source_fragment_residue": "174",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 175,
+        "source_fragment_residue": "175",
+        "template": "ASN"
+      },
+      {
+        "output_residue": 176,
+        "source_fragment_residue": "176",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 177,
+        "source_fragment_residue": "177",
+        "template": "ASN"
+      },
+      {
+        "output_residue": 178,
+        "source_fragment_residue": "178",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 179,
+        "source_fragment_residue": "179",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 180,
+        "source_fragment_residue": "180",
+        "template": "PHE"
+      },
+      {
+        "output_residue": 181,
+        "source_fragment_residue": "181",
+        "template": "GLU"
+      },
+      {
+        "output_residue": 182,
+        "source_fragment_residue": "182",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 183,
+        "source_fragment_residue": "183",
+        "template": "ASN"
+      },
+      {
+        "output_residue": 184,
+        "source_fragment_residue": "184",
+        "template": "CYX"
+      },
+      {
+        "output_residue": 185,
+        "source_fragment_residue": "185",
+        "template": "ALA"
+      },
+      {
+        "output_residue": 186,
+        "source_fragment_residue": "186",
+        "template": "GLU"
+      },
+      {
+        "output_residue": 187,
+        "source_fragment_residue": "187",
+        "template": "GLN"
+      },
+      {
+        "output_residue": 188,
+        "source_fragment_residue": "188",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 189,
+        "source_fragment_residue": "189",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 190,
+        "source_fragment_residue": "190",
+        "template": "SER"
+      },
+      {
+        "output_residue": 191,
+        "source_fragment_residue": "191",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 192,
+        "source_fragment_residue": "192",
+        "template": "TRP"
+      },
+      {
+        "output_residue": 193,
+        "source_fragment_residue": "193",
+        "template": "TRP"
+      },
+      {
+        "output_residue": 194,
+        "source_fragment_residue": "194",
+        "template": "MET"
+      },
+      {
+        "output_residue": 195,
+        "source_fragment_residue": "195",
+        "template": "ASN"
+      },
+      {
+        "output_residue": 196,
+        "source_fragment_residue": "196",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 197,
+        "source_fragment_residue": "197",
+        "template": "CYX"
+      },
+      {
+        "output_residue": 198,
+        "source_fragment_residue": "198",
+        "template": "HID"
+      },
+      {
+        "output_residue": 199,
+        "source_fragment_residue": "199",
+        "template": "ALA"
+      },
+      {
+        "output_residue": 200,
+        "source_fragment_residue": "200",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 201,
+        "source_fragment_residue": "201",
+        "template": "HID"
+      },
+      {
+        "output_residue": 202,
+        "source_fragment_residue": "202",
+        "template": "LEU"
+      },
+      {
+        "output_residue": 203,
+        "source_fragment_residue": "203",
+        "template": "ASN"
+      },
+      {
+        "output_residue": 204,
+        "source_fragment_residue": "204",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 205,
+        "source_fragment_residue": "205",
+        "template": "VAL"
+      },
+      {
+        "output_residue": 206,
+        "source_fragment_residue": "206",
+        "template": "TYR"
+      },
+      {
+        "output_residue": 207,
+        "source_fragment_residue": "207",
+        "template": "TYR"
+      },
+      {
+        "output_residue": 208,
+        "source_fragment_residue": "208",
+        "template": "GLN"
+      },
+      {
+        "output_residue": 209,
+        "source_fragment_residue": "209",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 210,
+        "source_fragment_residue": "210",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 211,
+        "source_fragment_residue": "211",
+        "template": "THR"
+      },
+      {
+        "output_residue": 212,
+        "source_fragment_residue": "212",
+        "template": "TYR"
+      },
+      {
+        "output_residue": 213,
+        "source_fragment_residue": "213",
+        "template": "SER"
+      },
+      {
+        "output_residue": 214,
+        "source_fragment_residue": "214",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 215,
+        "source_fragment_residue": "215",
+        "template": "ALA"
+      },
+      {
+        "output_residue": 216,
+        "source_fragment_residue": "216",
+        "template": "SER"
+      },
+      {
+        "output_residue": 217,
+        "source_fragment_residue": "217",
+        "template": "THR"
+      },
+      {
+        "output_residue": 218,
+        "source_fragment_residue": "218",
+        "template": "PRO"
+      },
+      {
+        "output_residue": 219,
+        "source_fragment_residue": "219",
+        "template": "ASN"
+      },
+      {
+        "output_residue": 220,
+        "source_fragment_residue": "220",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 221,
+        "source_fragment_residue": "221",
+        "template": "TYR"
+      },
+      {
+        "output_residue": 222,
+        "source_fragment_residue": "222",
+        "template": "ASP"
+      },
+      {
+        "output_residue": 223,
+        "source_fragment_residue": "223",
+        "template": "ASN"
+      },
+      {
+        "output_residue": 224,
+        "source_fragment_residue": "224",
+        "template": "GLY"
+      },
+      {
+        "output_residue": 225,
+        "source_fragment_residue": "225",
+        "template": "ILE"
+      },
+      {
+        "output_residue": 226,
+        "source_fragment_residue": "226",
+        "template": "ILE"
+      },
+      {
+        "output_residue": 227,
+        "source_fragment_residue": "227",
+        "template": "TRP"
+      },
+      {
+        "output_residue": 228,
+        "source_fragment_residue": "228",
+        "template": "ALA"
+      },
+      {
+        "output_residue": 229,
+        "source_fragment_residue": "229",
+        "template": "THR"
+      },
+      {
+        "output_residue": 230,
+        "source_fragment_residue": "230",
+        "template": "TRP"
+      },
+      {
+        "output_residue": 231,
+        "source_fragment_residue": "231",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 232,
+        "source_fragment_residue": "232",
+        "template": "THR"
+      },
+      {
+        "output_residue": 233,
+        "source_fragment_residue": "233",
+        "template": "ARG"
+      },
+      {
+        "output_residue": 234,
+        "source_fragment_residue": "234",
+        "template": "TRP"
+      },
+      {
+        "output_residue": 235,
+        "source_fragment_residue": "235",
+        "template": "TYR"
+      },
+      {
+        "output_residue": 236,
+        "source_fragment_residue": "236",
+        "template": "SER"
+      },
+      {
+        "output_residue": 237,
+        "source_fragment_residue": "237",
+        "template": "MET"
+      },
+      {
+        "output_residue": 238,
+        "source_fragment_residue": "238",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 239,
+        "source_fragment_residue": "239",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 240,
+        "source_fragment_residue": "240",
+        "template": "THR"
+      },
+      {
+        "output_residue": 241,
+        "source_fragment_residue": "241",
+        "template": "THR"
+      },
+      {
+        "output_residue": 242,
+        "source_fragment_residue": "242",
+        "template": "MET"
+      },
+      {
+        "output_residue": 243,
+        "source_fragment_residue": "243",
+        "template": "LYS"
+      },
+      {
+        "output_residue": 244,
+        "source_fragment_residue": "244",
+        "template": "ILE"
+      },
+      {
+        "output_residue": 245,
+        "source_fragment_residue": "245",
+        "template": "ILE"
+      },
+      {
+        "output_residue": 246,
+        "source_fragment_residue": "246",
+        "template": "PRO"
+      },
+      {
+        "output_residue": 247,
+        "source_fragment_residue": "247",
+        "template": "PHE"
+      },
+      {
+        "output_residue": 248,
+        "source_fragment_residue": "248",
+        "template": "ASN"
+      },
+      {
+        "output_residue": 249,
+        "source_fragment_residue": "249",
+        "template": "ARG"
+      },
+      {
+        "output_residue": 250,
+        "source_fragment_residue": "250",
+        "template": "LEU"
+      },
+      {
+        "output_residue": 251,
+        "source_fragment_residue": "251",
+        "template": "THR"
+      },
+      {
+        "output_residue": 252,
+        "source_fragment_residue": "252",
+        "template": "ILE"
+      }
+    ],
+    "sha256": {
+      "complex.prmtop": "c630f76e14a4de7ef52abfcda0f75b4af3f517b6e892a85481fb247be60279ea",
+      "complex.inpcrd": "62a370753e3929c7376d2b77d73250f765a53637337d504fc16e75fdbc342b58",
+      "complex.pdb": "859fa958e39fa45400cae6d6e0c82c7b3aa6399980eaa9ad605561221819b023",
+      "build.leap": "233eb1bc2a5c0a4c41329b876ceed41ef1ce786766a5495dc6aec7dd6a78192b"
+    },
+    "polymer_parameters_sha256": {
+      "oligomer.sdf": "1d67c7ba8628f661bbf3bad13dfde2b1dcbaac411f170b7af434c672656bec79",
+      "PE.raw.mol2": "0581cfce92de628f60176ac879affe57d9ddbcdc2c3a6caae10a0cd323233d7e",
+      "PE.mol2": "e298169019b0c91f8a66ebe7b4b10a1f97054bbdea13fdf3c0267cb96f64a3ee",
+      "PE.frcmod": "bf922808a85c35c2c11e49229322f906ba4bfc17fa247ee240d7221744a82dd5",
+      "polymer.prmtop": "cb94f46453a4034e39946248eafb64c21bceb1f616dc8116abf3cab68bcfce79",
+      "polymer.inpcrd": "010801da2c13767a6265cb108077532447bbaace2b023188bbbef59b8cab5d98"
+    },
+    "limitations": [
+      "Finite oligomer patch, not validated crystalline bulk PE",
+      "Finite patch edges and methyl chain ends are present",
+      "No polymer phase or macroscopic crystallinity claim",
+      "Protein is an isolated gamma fragment, not intact fibrinogen",
+      "No adsorption/affinity conclusion from a short pilot"
+    ]
+  },
+  "atoms": 43288,
+  "steps": 1000,
+  "timestep_fs": 1,
+  "temperature_target_K": 310,
+  "platform": "CPU",
+  "threads": 4,
+  "seed": 42,
+  "net_charge_e": 5.103637200983176e-08,
+  "restraint": "1000 kJ/mol/nm^2 on lower-layer PE carbons; upper layer unrestrained",
+  "minimization_max_iterations": 50,
+  "minimization_convergence": "not assessed",
+  "initial_min_distance_nm": 0.5046513846211065,
+  "initial_contact_residues": [],
+  "final_min_distance_nm": 0.4267412249415812,
+  "final_contact_residues": [
+    393
+  ],
+  "final_protein_CA_RMSD_A": 0.9308913048315249,
+  "final_temperature_K": 301.3260793853777,
+  "MD_elapsed_seconds": 104.97019106399966,
+  "limitations": [
+    "Short preparation pilot, not equilibrated adsorption",
+    "Pre-positioned near surface; contact formation does not establish spontaneous adsorption",
+    "Finite PE oligomer model not validated against experimental surface properties",
+    "No binding energy or adsorption free energy computed",
+    "No PTFE/PVDF comparison has been performed"
+  ],
+  "closest_pair": {
+    "protein_residue": "THR",
+    "source_label_sequence_position": 393,
+    "protein_atom": "O",
+    "PE_atom": "C14",
+    "distance_nm_from_PDB": 0.4267263994645747
+  },
+  "boundary_warning": "Observed contact at source gamma residue 393 is adjacent to artificial fragment C-terminus 394; do not generalize to intact fibrinogen."
+}

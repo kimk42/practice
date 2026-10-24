@@ -1,0 +1,33 @@
+{
+  "status": "completed",
+  "executed_steps": 50000,
+  "planned_steps": 50000,
+  "extension_time_ps": 100.0,
+  "planned_time_ps": 100.0,
+  "elapsed_seconds": 6103.461134801968,
+  "estimated_remaining_seconds": 0.0,
+  "last_observation": {
+    "step": 50000,
+    "extension_time_ps": 100.0,
+    "temperature_K": 309.9754990795742,
+    "total_density_g_cm3": 0.9948545722197402,
+    "volume_nm3": 434.10269908787836,
+    "potential_kJ_mol": -492714.4520086397,
+    "min_protein_PE_distance_nm": 0.3250663647357755,
+    "contact_residues": 9,
+    "CA_RMSD_from_extension_start_A": 0.9164034225359194
+  },
+  "contact_residue_source_labels": [
+    264,
+    279,
+    280,
+    281,
+    282,
+    283,
+    389,
+    393,
+    394
+  ],
+  "updated_unix": 1792722393.2843993,
+  "equilibration_established": false
+}

@@ -1,0 +1,37 @@
+{
+  "status": "completed",
+  "config": {
+    "surface": {
+      "polymer": "PVDF",
+      "phase": "beta",
+      "face": "TEST ONLY",
+      "polarization": "plus-normal"
+    },
+    "temperature_K": 310,
+    "timestep_fs": 1,
+    "steps": 1000,
+    "seed": 42
+  },
+  "model_manifest": {
+    "surface": {
+      "polymer": "PVDF",
+      "phase": "beta",
+      "face": "TEST ONLY",
+      "polarization": "plus-normal"
+    },
+    "model_kind": "synthetic two-particle engine smoke test; NOT PVDF or protein",
+    "sha256": {
+      "system.xml": "a4c1acfee86793cf1603539d3163ba64aac7f9ffc0a20e8a7e3c6cc358e2fa37",
+      "coordinates.pdb": "25677712a8746daea9566604abee26c0810e73c5e63e727dba0e217d6283de31"
+    },
+    "protein_source": "NOT APPLICABLE: synthetic two-particle engine test, no polymer/protein/water present; surface metadata exercises input pipeline only",
+    "polymer_forcefield": "NOT APPLICABLE: synthetic two-particle engine test, no polymer/protein/water present; surface metadata exercises input pipeline only",
+    "protein_forcefield": "NOT APPLICABLE: synthetic two-particle engine test, no polymer/protein/water present; surface metadata exercises input pipeline only",
+    "water_model": "NOT APPLICABLE: synthetic two-particle engine test, no polymer/protein/water present; surface metadata exercises input pipeline only",
+    "preparation_notes": "NOT APPLICABLE: synthetic two-particle engine test, no polymer/protein/water present; surface metadata exercises input pipeline only"
+  },
+  "platform": "CPU",
+  "initial_potential_kJ_mol": 0.05000000000000037,
+  "final_potential_kJ_mol": 2.1507747544251963,
+  "interpretation": "Total system potential energy, NOT binding or adsorption free energy."
+}

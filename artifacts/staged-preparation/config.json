@@ -1,0 +1,76 @@
+{
+  "atoms": 43288,
+  "dt_fs": 2,
+  "threads": 4,
+  "seed": 42,
+  "pressure_bar": 1,
+  "npt_barostat_frequency": 25,
+  "stages": [
+    {
+      "name": "01-restrained-NVT-heating",
+      "ensemble": "NVT",
+      "schedule": [
+        [
+          100,
+          250
+        ],
+        [
+          200,
+          250
+        ],
+        [
+          310,
+          500
+        ]
+      ],
+      "k_protein": 1000,
+      "k_lower_PE": 1000,
+      "k_upper_PE": 1000
+    },
+    {
+      "name": "02-unrestrained-NPT-density",
+      "ensemble": "NPT",
+      "schedule": [
+        [
+          310,
+          4000
+        ]
+      ],
+      "k_protein": 0,
+      "k_lower_PE": 0,
+      "k_upper_PE": 0
+    },
+    {
+      "name": "03-restrained-interface-NVT-check",
+      "ensemble": "NVT",
+      "schedule": [
+        [
+          310,
+          1000
+        ]
+      ],
+      "k_protein": 100,
+      "k_lower_PE": 1000,
+      "k_upper_PE": 0
+    }
+  ],
+  "starting_state_sha256": "2d6806b97847f3d57f5645aae224fc6b28812a9c6e427b6f20198a663714c12e",
+  "restart_policy": "Start a new staged preparation from prior coordinates, minimize and initialize velocities at 100 K; do not represent this as continuation of the prior ensemble.",
+  "NPT_policy": "Isotropic NPT for a finite oligomer patch with all Cartesian position restraints disabled; do not apply this unchanged to an infinite slab or membrane.",
+  "minimization_policy": "Restrained, at most 100 iterations per constraint-repair attempt; convergence is not asserted.",
+  "limitations": [
+    "Protein is an uncapped gamma fragment, not the newly prepared capped six-chain core",
+    "Short preparation stages, not established interface equilibrium",
+    "Finite PE oligomer model, no bulk crystal validation",
+    "Neutralizing ions only; no prescribed 150 mM salt",
+    "No binding/adsorption free energy or spontaneous-adsorption claim"
+  ],
+  "input_bundle": "/workspace/practice/data/pe-protein-model04",
+  "input_sha256": {
+    "complex.prmtop": "c630f76e14a4de7ef52abfcda0f75b4af3f517b6e892a85481fb247be60279ea",
+    "complex.inpcrd": "62a370753e3929c7376d2b77d73250f765a53637337d504fc16e75fdbc342b58",
+    "complex.pdb": "859fa958e39fa45400cae6d6e0c82c7b3aa6399980eaa9ad605561221819b023",
+    "build.leap": "233eb1bc2a5c0a4c41329b876ceed41ef1ce786766a5495dc6aec7dd6a78192b"
+  },
+  "friction_per_ps": 1
+}

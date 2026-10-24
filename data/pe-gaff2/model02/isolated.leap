@@ -1,0 +1,6 @@
+source leaprc.gaff2
+loadamberparams PE.frcmod
+PEO = loadmol2 PE.mol2
+saveamberparm PEO polymer.prmtop polymer.inpcrd
+savepdb PEO polymer.pdb
+quit

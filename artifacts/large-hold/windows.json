@@ -1,0 +1,93 @@
+{
+  "windows": [
+    {
+      "hold_start_ps": 0,
+      "hold_end_ps": 0.5,
+      "cumulative_start_ps": 1,
+      "cumulative_end_ps": 1.5,
+      "observations": 20,
+      "temperature_K": {
+        "mean": 102.0797887287482,
+        "standard_deviation": 0.28691513769521076,
+        "slope_per_ps": 1.5840706960184172
+      },
+      "potential_including_position_restraints_kJ_mol": {
+        "mean": -7924107.711701569,
+        "standard_deviation": 15540.072299500305,
+        "slope_per_ps": -107742.8822643803
+      },
+      "protein_CA_RMSD_from_hold_start_A": {
+        "mean": 0.15108792155964437,
+        "standard_deviation": 0.0311051343778757,
+        "slope_per_ps": 0.16506652017940412
+      }
+    },
+    {
+      "hold_start_ps": 0.5,
+      "hold_end_ps": 1.0,
+      "cumulative_start_ps": 1.5,
+      "cumulative_end_ps": 2.0,
+      "observations": 20,
+      "temperature_K": {
+        "mean": 101.85994259766274,
+        "standard_deviation": 0.2386918188115017,
+        "slope_per_ps": -1.3745009456752069
+      },
+      "potential_including_position_restraints_kJ_mol": {
+        "mean": -7974146.913489489,
+        "standard_deviation": 12605.79185485165,
+        "slope_per_ps": -87067.9864021793
+      },
+      "protein_CA_RMSD_from_hold_start_A": {
+        "mean": 0.16197223258437116,
+        "standard_deviation": 0.002124579396891253,
+        "slope_per_ps": 0.012736423690859517
+      }
+    },
+    {
+      "hold_start_ps": 1,
+      "hold_end_ps": 1.5,
+      "cumulative_start_ps": 2,
+      "cumulative_end_ps": 2.5,
+      "observations": 20,
+      "temperature_K": {
+        "mean": 101.58086734391962,
+        "standard_deviation": 0.12989499857022546,
+        "slope_per_ps": -0.6550197306567487
+      },
+      "potential_including_position_restraints_kJ_mol": {
+        "mean": -8009073.546900352,
+        "standard_deviation": 8880.318617376051,
+        "slope_per_ps": -61479.13134455429
+      },
+      "protein_CA_RMSD_from_hold_start_A": {
+        "mean": 0.1672784882978542,
+        "standard_deviation": 0.001328090253692682,
+        "slope_per_ps": 0.008071729194452463
+      }
+    },
+    {
+      "hold_start_ps": 1.5,
+      "hold_end_ps": 2.0,
+      "cumulative_start_ps": 2.5,
+      "cumulative_end_ps": 3.0,
+      "observations": 20,
+      "temperature_K": {
+        "mean": 101.17324739040404,
+        "standard_deviation": 0.15550191405829386,
+        "slope_per_ps": -0.9214233678969883
+      },
+      "potential_including_position_restraints_kJ_mol": {
+        "mean": -8037104.523105474,
+        "standard_deviation": 7383.370702638206,
+        "slope_per_ps": -51161.69253187086
+      },
+      "protein_CA_RMSD_from_hold_start_A": {
+        "mean": 0.16988333123663918,
+        "standard_deviation": 0.0006658580241725915,
+        "slope_per_ps": -0.00024670624247065853
+      }
+    }
+  ],
+  "interpretation": "Descriptive correlated samples; no standard error, significance or equilibrium test."
+}

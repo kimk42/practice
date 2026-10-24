@@ -1,0 +1,7 @@
+{
+  "note": "User-provided original inputs, preserved without modification. FASTA retained for reference; MD inputs derive from observed CIF coordinates.",
+  "sha256": {
+    "rcsb_pdb_3GHG.fasta": "52c7f85711c674ebd57b2b1970e326251783e80eb5a999ead80112dd1f981eb5",
+    "source.cif": "d2c5e5758a9a55d67c8186c227e2db596e237aa0d34e1ce7d0215b7b327545d2"
+  }
+}

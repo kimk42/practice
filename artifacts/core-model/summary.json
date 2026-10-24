@@ -1,0 +1,174 @@
+{
+  "status": "prepared_dry_input_not_adsorption_MD",
+  "core": {
+    "status": "parameterized_observed_core_not_equilibrated",
+    "entry": "3GHG",
+    "assembly": "1",
+    "source_sha256": "d2c5e5758a9a55d67c8186c227e2db596e237aa0d34e1ce7d0215b7b327545d2",
+    "observed_residues": 1913,
+    "atoms": 30215,
+    "caps": {
+      "ACE": 6,
+      "NME": 6
+    },
+    "calcium_ions": 4,
+    "source_disulfides": 25,
+    "source_interchain_disulfides": 15,
+    "net_charge_e": -10.000001051458874,
+    "protein_forcefield": "Amber ff14SB",
+    "calcium_parameters": "Amber TIP3P ion parameters (12-6), no explicit waters in this core bundle",
+    "cap_geometry": [
+      {
+        "chain": "A",
+        "ACE_phi_deg": -135,
+        "ACE_min_other_residue_distance_A": 3.6666743342494175,
+        "N_cap_C_N_bond_A": 1.3289999999999964,
+        "C_cap_C_N_bond_A": 1.335
+      },
+      {
+        "chain": "B",
+        "ACE_phi_deg": 150,
+        "ACE_min_other_residue_distance_A": 4.639041097151739,
+        "N_cap_C_N_bond_A": 1.3290000000000004,
+        "C_cap_C_N_bond_A": 1.3350000000000009
+      },
+      {
+        "chain": "C",
+        "ACE_phi_deg": 165,
+        "ACE_min_other_residue_distance_A": 4.0872905228096,
+        "N_cap_C_N_bond_A": 1.3289999999999993,
+        "C_cap_C_N_bond_A": 1.335
+      },
+      {
+        "chain": "D",
+        "ACE_phi_deg": 90,
+        "ACE_min_other_residue_distance_A": 4.5765866523936545,
+        "N_cap_C_N_bond_A": 1.3289999999999993,
+        "C_cap_C_N_bond_A": 1.3350000000000024
+      },
+      {
+        "chain": "E",
+        "ACE_phi_deg": 165,
+        "ACE_min_other_residue_distance_A": 4.834885716695876,
+        "N_cap_C_N_bond_A": 1.3290000000000013,
+        "C_cap_C_N_bond_A": 1.3350000000000115
+      },
+      {
+        "chain": "F",
+        "ACE_phi_deg": -165,
+        "ACE_min_other_residue_distance_A": 4.048235700311963,
+        "N_cap_C_N_bond_A": 1.3290000000000017,
+        "C_cap_C_N_bond_A": 1.3350000000000004
+      }
+    ],
+    "observed_heavy_atoms_checked": 15384,
+    "max_source_heavy_atom_displacement_A": 0.0,
+    "CA_principal_extent_nm": [
+      45.1655022740102,
+      6.453303222343726,
+      5.2382644333711115
+    ],
+    "rough_explicit_water_box_nm": [
+      49.1655022740102,
+      12.453303222343726,
+      10.23826443337111
+    ],
+    "rough_box_water_molecules_before_solute_exclusion": 209371.63867707495,
+    "missing_policy": "Retain only observed continuous core; all absent terminal regions including long alphaC are omitted, not reconstructed. Neutral ACE/NME caps replace artificial terminal charges.",
+    "protonation": "Standard ff14SB residue states; HIS uses HIE; no site-specific pKa assessment",
+    "glycan_policy": "Deglycosylated approximation: glycans removed from working core only, original retained",
+    "knob_policy": "A/B knob peptides excluded",
+    "limitations": [
+      "Not full-length fibrinogen; long unresolved alphaC and other tails remain absent",
+      "Caps reduce artificial terminal charge but do not reproduce missing segments",
+      "No solvent equilibration, adsorption or binding-energy result",
+      "Glycans and their influence are omitted; calcium treatment is approximate",
+      "New surface dimensions must accommodate entire core, not reuse the small gamma-fragment patch"
+    ]
+  },
+  "local_preparation": {
+    "status": "local_preparation_completed_not_equilibrated",
+    "initial_diagnostic_energy_kJ_mol": 767526.9383998087,
+    "final_diagnostic_energy_kJ_mol": 130334.95322199089,
+    "restrained_observed_heavy_atoms": 15388,
+    "heavy_restraint_k_kJ_mol_nm2": 100000,
+    "max_restrained_atom_displacement_nm": 0.03707005034961499,
+    "free_particles": "generated H and artificial caps; observed heavy atoms strongly restrained, X-H bonds constrained",
+    "cap_charges_e": {
+      "1": 5.487782034352406e-10,
+      "176": 4.163336342344337e-17,
+      "177": 5.487782034352406e-10,
+      "579": 4.163336342344337e-17,
+      "580": 5.487782034352406e-10,
+      "962": 4.163336342344337e-17,
+      "963": 5.487782034352406e-10,
+      "1138": 4.163336342344337e-17,
+      "1139": 5.487782034352406e-10,
+      "1541": 4.163336342344337e-17,
+      "1542": 5.487782034352406e-10,
+      "1925": 4.163336342344337e-17
+    },
+    "nonbonded_pairs_under_1_2A_before": 18,
+    "nonbonded_pairs_under_1_2A_after": 0,
+    "iterations_limit": 100,
+    "convergence": "not assessed; iteration-limited preparation",
+    "setup": "Unsolvated ff14SB with heavy positional restraints and HBonds constraints, nonperiodic 1-nm reaction-field cutoff; diagnostic H/cap preparation only, not a solvent model for MD",
+    "source_prmtop_sha256": "9d5b8a27029ee7d194c25280123f10993649d49121f1b2d6a1bb4fc0c99166b3",
+    "relaxed_inpcrd_sha256": "76612e0bb3ddd458ebf08a6f5b43c4f26a99f39b773b5da75dea04d80de3287e",
+    "interpretation": "No physical binding energy, adsorption, equilibrium, or material ranking is inferred.",
+    "max_XH_relative_constraint_error": 1.8203236415464676e-06,
+    "XH_constraint_count": 14797
+  },
+  "mixed_model": {
+    "status": "parameterized_dry_model_not_MD_ready",
+    "protein_model": "six-chain observed 3GHG core, neutral caps, calcium, no glycans",
+    "source_core": "/workspace/practice/data/fibrinogen-core03",
+    "source_core_prmtop_sha256": "9d5b8a27029ee7d194c25280123f10993649d49121f1b2d6a1bb4fc0c99166b3",
+    "source_relaxed_coordinates_sha256": "76612e0bb3ddd458ebf08a6f5b43c4f26a99f39b773b5da75dea04d80de3287e",
+    "observed_protein_residues": 1913,
+    "protein_caps": 12,
+    "disulfides": 25,
+    "calcium": 4,
+    "polymer": "PE finite C24H50 oligomer patch; not validated bulk crystal",
+    "polymer_chains": 690,
+    "patch_grid": [
+      15,
+      23,
+      2
+    ],
+    "patch_pitch_nm": [
+      3.3854334197740297,
+      0.48,
+      0.44
+    ],
+    "dry_atoms": 81275,
+    "rough_solvation_box_nm": [
+      52.78150129661044,
+      13.04,
+      8.876534799823759
+    ],
+    "rough_upper_box_water_molecules_before_solute_exclusion": 204055.94739765566,
+    "rough_total_atoms_before_solute_exclusion": 693442.842192967,
+    "next_required": [
+      "Solvation and neutralization",
+      "Diagnose remaining local geometry and restrained minimization in explicit solvent",
+      "Pressure/density/interface equilibration",
+      "Repeated orientations and seeds before adsorption interpretation"
+    ],
+    "limitations": [
+      "Not full-length fibrinogen; long unresolved alphaC and other tails remain absent",
+      "Caps reduce artificial terminal charge but do not reproduce missing segments",
+      "No solvent equilibration, adsorption or binding-energy result",
+      "Glycans and their influence are omitted; calcium treatment is approximate",
+      "New surface dimensions must accommodate entire core, not reuse the small gamma-fragment patch",
+      "Dry coordinates and parameter files are not adsorption dynamics or equilibrium results"
+    ],
+    "sha256": {
+      "dry-complex.pdb": "6240c4c210c1542849dc5db74b08c19501922f9501d82990d47db4b8082c3578",
+      "dry.prmtop": "0ff9d5db918680715eecebbc419fd4e8adf6983253c0c24fd790259f0d930007",
+      "dry.inpcrd": "5c77c74c9fe32ae1a5631c6c0c443b193594b58843c7d55619d3ed8f36c48edc",
+      "build.leap": "4cfdc030f8eb342573bae5725fce6e417ab723b5f92c83654353a80e72df80f6"
+    },
+    "dry_net_charge_e": -9.999998022203535
+  }
+}

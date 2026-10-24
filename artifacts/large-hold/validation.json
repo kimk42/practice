@@ -1,0 +1,23 @@
+{
+  "status": "independent_100K_hold_output_checks_passed",
+  "atoms": 577890,
+  "steps": 2000,
+  "time_ps": 2,
+  "cumulative_context_steps": 3000,
+  "cumulative_context_time_ps": 3,
+  "DCD_frames": 20,
+  "DCD_last_segment_local_step": 2000,
+  "DCD_context_step_offset": 1000,
+  "DCD_header_time_is_segment_local": true,
+  "observations": 81,
+  "barostats": 0,
+  "restrained_heavy_atoms": 31974,
+  "source_and_hold_system_XML_identical": true,
+  "initial_coordinates_and_velocities_match_previous_final": true,
+  "maximum_DCD_restart_minimum_image_coordinate_difference_nm": 4.613856074570932e-06,
+  "saved_velocities_finite": true,
+  "final_integrator_target_K": 100,
+  "temperature_equilibrium_established": false,
+  "interface_equilibrium_established": false,
+  "production_ready": false
+}

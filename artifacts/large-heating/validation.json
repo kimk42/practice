@@ -1,0 +1,17 @@
+{
+  "status": "independent_low_temperature_output_checks_passed",
+  "atoms": 577890,
+  "steps": 1000,
+  "time_ps": 1,
+  "DCD_frames": 10,
+  "observations": 41,
+  "barostats": 0,
+  "restrained_heavy_atoms": 31974,
+  "source_and_heating_system_XML_identical": true,
+  "maximum_DCD_restart_minimum_image_coordinate_difference_nm": 4.6010298726855525e-06,
+  "saved_velocities_finite": true,
+  "final_integrator_target_K": 100,
+  "temperature_equilibrium_established": false,
+  "interface_equilibrium_established": false,
+  "production_ready": false
+}

@@ -1,0 +1,9 @@
+* text=auto eol=lf
+# Preserve scientific input/report bytes for the recorded checksums.
+data/** -text
+artifacts/** -text
+*.png binary
+*.zip binary
+# Keep source-code reviews and language statistics focused on maintained code.
+artifacts/** linguist-generated=true
+data/** linguist-vendored=true

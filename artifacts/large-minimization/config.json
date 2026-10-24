@@ -1,0 +1,28 @@
+{
+  "atoms": 577890,
+  "task": "restrained energy minimization only",
+  "source_bundle": "/workspace/practice/data/fibrinogen-core-pe-solvated01",
+  "source_sha256": {
+    "solvated.prmtop": "40471f4ea100bc21d6b2026f028e61b36827f2038aa5a569a9c47065e49323c6",
+    "solvated.inpcrd": "0cc4807cf6ac9a99a5faf95918ea2a77a3ae81daf4788d4d11369e400dc2dbab",
+    "solvate.leap": "9d04b71090dfb57b397095eaa2338affc29568dd4915c386c9f5e435ec3a9696",
+    "solvated.cif": "946f6cc523b5f1ce31baedf12109a26e2c764b5237c7a968f73b960729102c02"
+  },
+  "protein_k_kJ_mol_nm2": 1000,
+  "all_PE_carbon_k_kJ_mol_nm2": 1000,
+  "Ca_and_Na": "unrestrained",
+  "water": "TIP3P rigid water",
+  "constraints": "HBonds; all physical masses retained",
+  "electrostatics": "PME, 1 nm cutoff, Ewald error tolerance 0.0005",
+  "box_policy": "Fixed periodic box; no barostat",
+  "threads": 4,
+  "max_iterations_per_constraint_repair_attempt": 20,
+  "target_minimizer_tolerance_kJ_mol_nm": 10,
+  "wall_budget_seconds": 1800,
+  "MD_steps": 0,
+  "equilibrium_established": false,
+  "production_ready": false,
+  "restart_state": "/workspace/practice/runs/core-pe-minimization02/restart-inspection-state.xml",
+  "restart_sha256": "b9fb18ecfb76c016cceedd5cd295d4f8d422eca654b06416e931a8331c1fee7a",
+  "restart_policy": "Use preserved diagnostic coordinates from prior budget-limited attempt; reapply exact bond constraints before minimization. Position anchors remain the original solvated coordinates."
+}

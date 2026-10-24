@@ -1,0 +1,90 @@
+{
+  "status": "staged_preparation_completed_equilibrium_not_established",
+  "atoms": 43288,
+  "steps": 6000,
+  "time_ps": 12.0,
+  "timestep_fs": 2,
+  "net_charge_e": 5.103637200983176e-08,
+  "stages": [
+    {
+      "name": "01-restrained-NVT-heating",
+      "ensemble": "NVT",
+      "executed_steps": 1000,
+      "end_time_ps": 2.0,
+      "final_temperature_K": 245.11611768390884,
+      "initial_recorded_density_g_cm3": 0.7848550603884691,
+      "final_density_g_cm3": 0.7848550603884691,
+      "initial_recorded_volume_nm3": 550.2532592282063,
+      "final_volume_nm3": 550.2532592282063,
+      "observed_volume_changes": 0,
+      "position_restraints_k": {
+        "k_protein": 1000,
+        "k_lower_PE": 1000,
+        "k_upper_PE": 1000
+      },
+      "equilibration_established": false
+    },
+    {
+      "name": "02-unrestrained-NPT-density",
+      "ensemble": "NPT",
+      "executed_steps": 4000,
+      "end_time_ps": 10.0,
+      "final_temperature_K": 307.35661952569467,
+      "initial_recorded_density_g_cm3": 0.7927398884811938,
+      "final_density_g_cm3": 0.9279416123795566,
+      "initial_recorded_volume_nm3": 544.7802756941138,
+      "final_volume_nm3": 465.40541908994385,
+      "observed_volume_changes": 27,
+      "position_restraints_k": {
+        "k_protein": 0,
+        "k_lower_PE": 0,
+        "k_upper_PE": 0
+      },
+      "equilibration_established": false
+    },
+    {
+      "name": "03-restrained-interface-NVT-check",
+      "ensemble": "NVT",
+      "executed_steps": 1000,
+      "end_time_ps": 12.0,
+      "final_temperature_K": 310.2903576126111,
+      "initial_recorded_density_g_cm3": 0.9279416123795566,
+      "final_density_g_cm3": 0.9279416123795566,
+      "initial_recorded_volume_nm3": 465.40541908994385,
+      "final_volume_nm3": 465.40541908994385,
+      "observed_volume_changes": 0,
+      "position_restraints_k": {
+        "k_protein": 100,
+        "k_lower_PE": 1000,
+        "k_upper_PE": 0
+      },
+      "equilibration_established": false
+    }
+  ],
+  "final_temperature_K": 310.2903576126111,
+  "final_total_density_g_cm3": 0.9279416123795566,
+  "final_volume_nm3": 465.40541908994385,
+  "final_min_distance_nm": 0.35842611821418163,
+  "final_contact_residues": [
+    280,
+    393
+  ],
+  "elapsed_seconds": 677.0893382290378,
+  "equilibration_established": false,
+  "production_ready": false,
+  "next_required": [
+    "Continue NPT until volume/density and energy are stable over adequately long windows",
+    "Check bulk-water and interfacial water structure, PE packing and protein structure",
+    "Extend restrained interface relaxation and release restraints in stages",
+    "Repeat independent orientations/seeds; assess finite patch and artificial-terminal effects"
+  ],
+  "limitations": [
+    "Protein is an uncapped gamma fragment, not the newly prepared capped six-chain core",
+    "Short preparation stages, not established interface equilibrium",
+    "Finite PE oligomer model, no bulk crystal validation",
+    "Neutralizing ions only; no prescribed 150 mM salt",
+    "No binding/adsorption free energy or spontaneous-adsorption claim"
+  ],
+  "descriptive_last_2ps_NPT_density_change_percent": 1.633484107946237,
+  "density_interpretation": "Total mixture density, not a bulk-water-only density measurement; short-window drift does not establish equilibrium."
+}

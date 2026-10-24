@@ -1,0 +1,2 @@
+step,time_ps,potential_kJ_mol,temperature_K,CA_RMSD_from_minimized_A
+100,0.1,-23600.372600165065,216.01836537410594,0.20946553678766316

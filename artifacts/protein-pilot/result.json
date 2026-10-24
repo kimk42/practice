@@ -1,0 +1,52 @@
+{
+  "status": "completed",
+  "source_sha256": "d2c5e5758a9a55d67c8186c227e2db596e237aa0d34e1ce7d0215b7b327545d2",
+  "source_entry": "3GHG",
+  "chain": "C",
+  "label_sequence_range": [
+    143,
+    394
+  ],
+  "output_residue_mapping": {
+    "note": "PDB export renumbers selected fragment from 1; add 142 to obtain source label sequence index",
+    "output_chain": "A",
+    "source_chain": "C"
+  },
+  "residues": 252,
+  "particles": 3897,
+  "protein_forcefield": "Amber14 (OpenMM amber14-all.xml)",
+  "solvent": "GBn2 implicit solvent; solvent dielectric 78.5; no explicit water/ions",
+  "pH_for_hydrogen_addition": 7.4,
+  "added_terminal_atoms": {
+    "A:ILE252": [
+      "OXT"
+    ]
+  },
+  "missing_heavy_atoms": {},
+  "disulfides": [
+    "40:SG-11:SG",
+    "197:SG-184:SG"
+  ],
+  "assumptions": [
+    "Isolated observed gamma-chain fragment, not intact fibrinogen",
+    "Artificial charged peptide termini at fragment boundaries",
+    "Other chains, glycans, calcium and knob peptides excluded",
+    "No polymer, no adsorption prediction",
+    "Hydrogen placement preparation is not guaranteed bitwise reproducible"
+  ],
+  "steps": 100,
+  "timestep_fs": 1,
+  "temperature_K": 310,
+  "platform": "CPU",
+  "threads": 4,
+  "constraints": "none; all bonded terms retained",
+  "seed": 42,
+  "elapsed_MD_seconds": 143.0708181859809,
+  "initial_potential_kJ_mol": -17841.356746340993,
+  "minimized_potential_kJ_mol": -29776.539562090347,
+  "final_potential_kJ_mol": -23600.372600165065,
+  "final_CA_RMSD_from_minimized_A": 0.20946553678766316,
+  "interpretation": "Short protein-only preparation pilot. No adsorption, affinity or equilibrium claim.",
+  "minimization_max_iterations": 25,
+  "minimization_convergence": "not assessed"
+}

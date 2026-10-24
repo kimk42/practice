@@ -1,0 +1,70 @@
+{
+  "status": "restrained_minimization_completed_preliminary_checks_passed",
+  "atoms": 577890,
+  "MD_steps": 0,
+  "disulfides": 25,
+  "net_charge_e": 1.9777964646707034e-06,
+  "before": {
+    "nonexcluded_heavy_pairs_under_0_12nm": 0,
+    "nonexcluded_allatom_pairs_under_0_08nm": 0,
+    "example_heavy_atom_index_pairs": [],
+    "example_allatom_index_pairs": [],
+    "minimum_water_O_solute_heavy_distance_nm": 0.31964766590392385,
+    "policy": "Minimum-image periodic distances. All NonbondedForce exception pairs (including bonded 1-2/1-3/1-4 pairs) excluded from severe-contact counts; thresholds are hard-overlap diagnostics, not all steric clashes."
+  },
+  "after": {
+    "nonexcluded_heavy_pairs_under_0_12nm": 0,
+    "nonexcluded_allatom_pairs_under_0_08nm": 0,
+    "example_heavy_atom_index_pairs": [],
+    "example_allatom_index_pairs": [],
+    "minimum_water_O_solute_heavy_distance_nm": 0.31290287202974254,
+    "policy": "Minimum-image periodic distances. All NonbondedForce exception pairs (including bonded 1-2/1-3/1-4 pairs) excluded from severe-contact counts; thresholds are hard-overlap diagnostics, not all steric clashes."
+  },
+  "raw_input_energy_kJ_mol": -7102572.870459708,
+  "initial_constrained_total_energy_kJ_mol": -7102554.7997859875,
+  "final_total_energy_kJ_mol": -7245184.133056203,
+  "final_forcefield_energy_kJ_mol": -7246035.547609148,
+  "final_position_restraint_energy_kJ_mol": 851.4145529447123,
+  "max_relative_constraint_error": 2.1438032655508865e-06,
+  "max_protein_heavy_displacement_nm": 0.07837353023603259,
+  "max_PE_carbon_displacement_nm": 0.005372161314836255,
+  "recorded_minimizer_callbacks": 100,
+  "last_reported_objective_gradient_RMS_kJ_mol_nm": 59.86406882128079,
+  "convergence": "Not certified; iteration-limited minimization with constraint repair. Gradient includes internal constraint penalty and is not an independent physical-force convergence test.",
+  "elapsed_seconds": 320.05264403799083,
+  "peak_process_RSS_GiB": 5.110378265380859,
+  "box_vectors_nm": [
+    [
+      53.024574900000005,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      13.421440500000001,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      9.4701717
+    ]
+  ],
+  "initial_total_density_g_cm3": 0.846519284469353,
+  "equilibrium_established": false,
+  "production_ready": false,
+  "allow_heating_preparation": true,
+  "limitations": [
+    "Observed six-chain core, not full-length fibrinogen; glycans and long unresolved tails omitted",
+    "Finite oligomer PE patch, not validated bulk crystal",
+    "Soft restraints on protein heavy atoms and all PE carbons; water/H/Ca/Na mobile subject to bond constraints",
+    "Fixed box; minimization cannot establish liquid density, temperature, pressure or interface equilibrium",
+    "No adsorption, binding/free energy, PTFE or PVDF result"
+  ],
+  "sha256": {
+    "system.xml": "543edc4fc9ccd93349065684f0712c1f7c20d4369a9903bc0d45cc63cc216aa6",
+    "state.xml": "770bd07d133393de7e78f1dc8cd9ffb369a356b41feb14352ca0c47c9630c635",
+    "minimized.cif": "6fd56d094b56473e7e440ece69de27e3a6c8cb7f19f3299186975fb76ab912aa",
+    "minimized.inpcrd": "f7eb9dca227c15c310453c39967a417a2c81625031ab8c63a69853f2b7114f37"
+  }
+}

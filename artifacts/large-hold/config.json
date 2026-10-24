@@ -1,0 +1,48 @@
+{
+  "atoms": 577890,
+  "planned_steps": 2000,
+  "time_ps": 2,
+  "dt_fs": 1,
+  "ensemble": "NVT fixed box",
+  "schedule": [
+    {
+      "target_K": 100,
+      "steps": 2000
+    }
+  ],
+  "friction_per_ps": 5,
+  "seed": 45,
+  "threads": 4,
+  "constraint_tolerance": 1e-06,
+  "position_restraint_k_kJ_mol_nm2": 1000,
+  "restrained_heavy_atoms": 31974,
+  "restraint_anchors": "Unchanged original solvated anchors from reviewed minimization; do not reset anchors",
+  "source_run": "/workspace/practice/runs/core-pe-low-temperature01/output",
+  "source_sha256": {
+    "system.xml": "543edc4fc9ccd93349065684f0712c1f7c20d4369a9903bc0d45cc63cc216aa6",
+    "state.xml": "1bafd21344f0074e4dbe114efe4d301646702c1df7059e19296d032522bb793b",
+    "final.cif": "1f87befff1a66760c168ee1685d07f4f351b36b6badfc24e1fa2e64eed76d2d7",
+    "observables.csv": "c0b7b6607946a0b32c2571aa0f5122c6a6b165c23ddf99c8c1b587b5469734b6"
+  },
+  "topology": "/workspace/practice/data/fibrinogen-core-pe-solvated01/solvated.prmtop",
+  "topology_sha256": "40471f4ea100bc21d6b2026f028e61b36827f2038aa5a569a9c47065e49323c6",
+  "restart_policy": "Load the verified previous checkpoint with the same System, final integrator, CPU platform/threads and RNG state. Retain coordinates, velocities, clock, step count, original restraints and box. No minimization, velocity initialization, projection or RNG reset.",
+  "trajectory_interval_steps": 100,
+  "observations_interval_steps": 25,
+  "checkpoint_interval_steps": 100,
+  "equilibrium_established": false,
+  "production_ready": false,
+  "limitations": [
+    "Two-ps 100 K hold, not heating completed to 310 K or established equilibrium",
+    "Fixed initially underdense box; no pressure or density adjustment",
+    "Observed six-chain core omits unresolved tails and glycans",
+    "Finite C24H50 PE patch, not validated bulk crystal",
+    "No binding/free energy, spontaneous adsorption or PTFE/PVDF comparison"
+  ],
+  "starting_checkpoint_sha256": "e10256c6b7da26ce253e73c94bf4eeeeca2c6d787cc8f744a80455ae3e62029d",
+  "starting_integrator_sha256": "85795b2f4fe6c23ec983b003d1ed20106bcf368e263359408117e12db6e5c5a9",
+  "mode": "100K_hold",
+  "starting_context_step": 1000,
+  "starting_context_time_ps": 1.0000000000000007,
+  "checkpoint_XML_coordinates_and_velocities_match": true
+}

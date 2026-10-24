@@ -1,0 +1,50 @@
+{
+  "atoms": 577890,
+  "planned_steps": 1000,
+  "time_ps": 1,
+  "dt_fs": 1,
+  "ensemble": "NVT fixed box",
+  "schedule": [
+    {
+      "target_K": 10,
+      "steps": 200
+    },
+    {
+      "target_K": 50,
+      "steps": 200
+    },
+    {
+      "target_K": 100,
+      "steps": 600
+    }
+  ],
+  "friction_per_ps": 5,
+  "seed": 45,
+  "threads": 4,
+  "constraint_tolerance": 1e-06,
+  "position_restraint_k_kJ_mol_nm2": 1000,
+  "restrained_heavy_atoms": 31974,
+  "restraint_anchors": "Unchanged original solvated anchors from reviewed minimization; do not reset anchors",
+  "source_minimization": "/workspace/practice/runs/core-pe-minimization02/output",
+  "source_sha256": {
+    "system.xml": "543edc4fc9ccd93349065684f0712c1f7c20d4369a9903bc0d45cc63cc216aa6",
+    "state.xml": "770bd07d133393de7e78f1dc8cd9ffb369a356b41feb14352ca0c47c9630c635",
+    "minimized.cif": "6fd56d094b56473e7e440ece69de27e3a6c8cb7f19f3299186975fb76ab912aa",
+    "minimized.inpcrd": "f7eb9dca227c15c310453c39967a417a2c81625031ab8c63a69853f2b7114f37"
+  },
+  "topology": "/workspace/practice/data/fibrinogen-core-pe-solvated01/solvated.prmtop",
+  "topology_sha256": "40471f4ea100bc21d6b2026f028e61b36827f2038aa5a569a9c47065e49323c6",
+  "restart_policy": "Keep reviewed minimization coordinates and periodic box; project bond lengths at 1e-6 and initialize new constrained Maxwell velocities at 10 K, seed45. This is a new MD run, not a checkpoint continuation.",
+  "trajectory_interval_steps": 100,
+  "observations_interval_steps": 25,
+  "checkpoint_interval_steps": 100,
+  "equilibrium_established": false,
+  "production_ready": false,
+  "limitations": [
+    "One-ps low-temperature diagnostic, not heating completed to 310 K",
+    "Fixed initially underdense box; no pressure or density adjustment",
+    "Observed six-chain core omits unresolved tails and glycans",
+    "Finite C24H50 PE patch, not validated bulk crystal",
+    "No binding/free energy, spontaneous adsorption or PTFE/PVDF comparison"
+  ]
+}

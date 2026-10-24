@@ -1,0 +1,2663 @@
+{
+  "data": {
+    "entries": [
+      {
+        "rcsb_id": "1BBR",
+        "struct": {
+          "title": "THE STRUCTURE OF RESIDUES 7-16 OF THE A ALPHA CHAIN OF HUMAN FIBRINOGEN BOUND TO BOVINE THROMBIN AT 2.3 ANGSTROMS RESOLUTION"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.3
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1BBR_5",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "EPSILON-THROMBIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 259
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P00735"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1BBR_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN ALPHA/ALPHA-E CHAIN PRECURSOR"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 11
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1BBR_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "EPSILON-THROMBIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 109
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P00735"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1BBR_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "EPSILON-THROMBIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 150
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P00735"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1BBR_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "EPSILON-THROMBIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 49
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P00735"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "1DM4",
+        "struct": {
+          "title": "SER195ALA MUTANT OF HUMAN THROMBIN COMPLEXED WITH FIBRINOPEPTIDE A (7-16)"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.5
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1DM4_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "PROTEIN (FIBRINOPEPTIDE)"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 11
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1DM4_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "PROTEIN (MUTANT ALPHA THROMBIN:HEAVY CHAIN)"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 260
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P00734"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1DM4_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "PROTEIN (ALPHA THROMBIN:LIGHT CHAIN)"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 35
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P00734"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "1FPH",
+        "struct": {
+          "title": "THE INTERACTION OF THROMBIN WITH FIBRINOGEN: A STRUCTURAL BASIS FOR ITS SPECIFICITY"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.5
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1FPH_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "ALPHA-THROMBIN (SMALL SUBUNIT)"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 36
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P00734"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1FPH_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "ALPHA-THROMBIN (LARGE SUBUNIT)"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 259
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P00734"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1FPH_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "HIRUDIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 12
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P28506"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1FPH_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOPEPTIDE A"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 12
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "1FZA",
+        "struct": {
+          "title": "CRYSTAL STRUCTURE OF FIBRINOGEN FRAGMENT D"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.9
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1FZA_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 319
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1FZA_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 328
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1FZA_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 87
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "1FZB",
+        "struct": {
+          "title": "CRYSTAL STRUCTURE OF CROSSLINKED FRAGMENT D"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.9
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1FZB_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "PEPTIDE LIGAND GPRG"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 4
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "1FZB_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 319
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1FZB_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 328
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1FZB_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 87
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "1FZC",
+        "struct": {
+          "title": "CRYSTAL STRUCTURE OF FRAGMENT DOUBLE-D FROM HUMAN FIBRIN WITH TWO DIFFERENT BOUND LIGANDS"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.3
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1FZC_5",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 4
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "1FZC_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 4
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "1FZC_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 319
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1FZC_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 328
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1FZC_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 87
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "1FZF",
+        "struct": {
+          "title": "CRYSTAL STRUCTURE OF FRAGMENT DOUBLE-D FROM HUMAN FIBRIN WITH THE PEPTIDE LIGAND GLY-HIS-ARG-PRO-AMIDE"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.7
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1FZF_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 4
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1FZF_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 319
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1FZF_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 328
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1FZF_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 87
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "1FZG",
+        "struct": {
+          "title": "CRYSTAL STRUCTURE OF FRAGMENT D FROM HUMAN FIBRINOGEN WITH THE PEPTIDE LIGAND GLY-HIS-ARG-PRO-AMIDE"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.5
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1FZG_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 4
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1FZG_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 319
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1FZG_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 328
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1FZG_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 87
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "1LT9",
+        "struct": {
+          "title": "Crystal Structure of Recombinant Human Fibrinogen Fragment D"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.8
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1LT9_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha/alpha-E chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 66
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1LT9_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen gamma chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 311
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1LT9_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 313
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "1LTJ",
+        "struct": {
+          "title": "Crystal Structure of Recombinant Human Fibrinogen Fragment D with the Peptide Ligands Gly-Pro-Arg-Pro-Amide and Gly-His-Arg-Pro-Amide"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.8
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1LTJ_5",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Gly-His-Arg-Pro"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 4
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "1LTJ_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Gly-Pro-Arg-Pro"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 4
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "1LTJ_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen Gamma chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 311
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1LTJ_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen Beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 313
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1LTJ_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha/alpha-E chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 66
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "1N86",
+        "struct": {
+          "title": "Crystal structure of human D-dimer from cross-linked fibrin complexed with GPR and GHRPLDK peptide ligands."
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            3.2
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1N86_5",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "fibrin beta chain peptide ligand fragment Gly-His-Arg-Pro-Leu-Asp-Lys"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 7
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1N86_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "fibrin alpha chain peptide ligand fragment Gly-Pro-Arg"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 3
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1N86_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrin gamma chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 324
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1N86_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrin beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 328
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1N86_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrin alpha/alpha-E chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 87
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "1N8E",
+        "struct": {
+          "title": "Fragment Double-D from Human Fibrin"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            4.5
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1N8E_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrin gamma chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 324
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1N8E_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrin beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 328
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1N8E_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrin alpha/alpha-E chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 89
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "1RE3",
+        "struct": {
+          "title": "Crystal Structure of Fragment D of BbetaD398A Fibrinogen with the Peptide Ligand Gly-His-Arg-Pro-Amide"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.45
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1RE3_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "GHRP peptide"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 4
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "1RE3_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen gamma chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 311
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1RE3_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 313
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1RE3_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha/alpha-E chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 66
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "1RE4",
+        "struct": {
+          "title": "Crystal Structure of Fragment D of BbetaD398A Fibrinogen"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.7
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1RE4_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen gamma chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 311
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1RE4_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 313
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1RE4_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha/alpha-E chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 66
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "1RF0",
+        "struct": {
+          "title": "Crystal Structure of Fragment D of gammaE132A Fibrinogen"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.81
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1RF0_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen gamma chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 311
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1RF0_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 313
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1RF0_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha/alpha-E chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 66
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "1RF1",
+        "struct": {
+          "title": "Crystal Structure of Fragment D of gammaE132A Fibrinogen with the Peptide Ligand Gly-His-Arg-Pro-amide"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.53
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1RF1_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "GHRP peptide"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 4
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "1RF1_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen gamma chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 311
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1RF1_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 313
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1RF1_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha/alpha-E chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 66
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "1YCP",
+        "struct": {
+          "title": "THE CRYSTAL STRUCTURE OF FIBRINOGEN-AA PEPTIDE 1-23 (F8Y) BOUND TO BOVINE THROMBIN EXPLAINS WHY THE MUTATION OF PHE-8 TO TYROSINE STRONGLY INHIBITS NORMAL CLEAVAGE AT ARGININE-16"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.5
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1YCP_5",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "EPSILON THROMBIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 109
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P00735"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1YCP_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "EPSILON THROMBIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 150
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P00735"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1YCP_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOPEPTIDE A-ALPHA"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 23
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1YCP_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "ALPHA THROMBIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 259
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P00735"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1YCP_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "EPSILON THROMBIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 49
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P00735"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "2A45",
+        "struct": {
+          "title": "Crystal structure of the complex between thrombin and the central \"E\" region of fibrin"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            3.65
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "2A45_5",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen gamma chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 45
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2A45_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 91
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2A45_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 57
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2A45_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Thrombin heavy chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 259
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P00734"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2A45_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Thrombin light chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 36
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P00734"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "2FFD",
+        "struct": {
+          "title": "Fibrinogen Fragment D with \"A\" knob peptide mimic GPRVVE"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.89
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "2FFD_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "GLY-PRO-ARG-VAL-VAL-GLU peptide"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 6
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "2FFD_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen gamma chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 311
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2FFD_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 313
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2FFD_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha/alpha-E Chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 66
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "2H43",
+        "struct": {
+          "title": "Crystal Structure of Human Fragment D Complexed with Ala-His-Arg-Pro-amide"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.7
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "2H43_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "GLY-HIS-ARG-PRO-AMIDE peptide ligand"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 5
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "2H43_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen gamma chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 323
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2H43_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 328
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2H43_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 87
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "2HLO",
+        "struct": {
+          "title": "Crystal Structure of Fragment D-dimer from Human Fibrin Complexed with Gly-hydroxyPro-Arg-Pro-amide"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.6
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "2HLO_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "GLY-HYP-ARG-PRO-AMIDE PEPTIDE LIGAND"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 5
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "2HLO_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Isoform Gamma-A of Fibrinogen gamma chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 324
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2HLO_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 328
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2HLO_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 87
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "2HOD",
+        "struct": {
+          "title": "Crystal Structure of Fragment D from Human Fibrinogen Complexed with Gly-hydroxyPro-Arg-Pro-amide"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.9
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "2HOD_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Gly-hydroxyPro-Arg-Pro-amide peptide ligand"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 5
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "2HOD_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen, gamma polypeptide"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 323
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "Q53Y18"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2HOD_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 328
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2HOD_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 87
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "2HPC",
+        "struct": {
+          "title": "Crystal structure of fragment D from Human Fibrinogen Complexed with Gly-Pro-Arg-Pro-amide."
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.9
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "2HPC_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Gly-Pro-Arg-Pro-amide peptide ligand"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 5
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "2HPC_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen, gamma polypeptide"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 323
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "Q53Y18"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2HPC_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 328
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2HPC_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 87
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "2OYH",
+        "struct": {
+          "title": "Crystal Structure of Fragment D of gammaD298,301A Fibrinogen with the Peptide Ligand Gly-His-Arg-Pro-Amide"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.4
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "2OYH_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "GHRP peptide"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 4
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "2OYH_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen gamma chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 311
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2OYH_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 313
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2OYH_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 66
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "2OYI",
+        "struct": {
+          "title": "Crystal Structure of Fragment D of gammaD298,301A Fibrinogen with the Peptide Ligand Gly-Pro-Arg-Pro-Amide"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.7
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "2OYI_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "GPRP Peptide"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 4
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "2OYI_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen gamma chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 311
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2OYI_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 313
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2OYI_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 66
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "2Q9I",
+        "struct": {
+          "title": "Crystal Structure of D-Dimer from Human Fibrin Complexed with Met-His-Arg-Pro-Tyr-amide."
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.8
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "2Q9I_5",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrin B Knob (MHRPYam)"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 5
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "2Q9I_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrin B Knob (GHRPam)"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 4
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "2Q9I_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen, gamma polypeptide"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 324
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "Q53Y18"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2Q9I_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 328
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2Q9I_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 87
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "2XNX",
+        "struct": {
+          "title": "BC1 fragment of streptococcal M1 protein in complex with human fibrinogen"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            3.3
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "2XNX_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "M PROTEIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 146
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "Q05464",
+                "Q56G63"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2XNX_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN GAMMA CHAIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 319
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2XNX_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN BETA CHAIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 328
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2XNX_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN ALPHA CHAIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 87
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "2XNY",
+        "struct": {
+          "title": "A fragment of streptococcal M1 protein in complex with human fibrinogen"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            7.5
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "2XNY_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "M PROTEIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 102
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "Q56G63"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2XNY_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN GAMMA CHAIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 319
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2XNY_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN BETA CHAIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 328
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2XNY_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN ALPHA CHAIN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 87
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "2Z4E",
+        "struct": {
+          "title": "Crystal Structure of D-Dimer from Human Fibrin Complexed with Gly-His-Arg-Pro-Tyr-amide"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.7
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "2Z4E_5",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrin B knob (pentapeptide)"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 5
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "2Z4E_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrin B knob (tetrapeptide)"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 4
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "2Z4E_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen, gamma polypeptide"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 324
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "Q53Y18"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2Z4E_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 326
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "2Z4E_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 87
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "3AT0",
+        "struct": {
+          "title": "Structural and biochemical characterization of ClfB:ligand interactions"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.5
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "3AT0_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "C-terminal alpha chain peptide"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 16
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "3AT0_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Clumping factor B"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 338
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "Q7A382"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "3E1I",
+        "struct": {
+          "title": "Crystal Structure of BbetaD432A Variant Fibrinogen Fragment D with the Peptide Ligand Gly-His-Arg-Pro-amide"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.3
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "3E1I_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Gly-His-Arg-Pro-amide"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 5
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "3E1I_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen gamma chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 319
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "3E1I_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 328
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "3E1I_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 87
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "3GHG",
+        "struct": {
+          "title": "Crystal Structure of Human Fibrinogen"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.9
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "3GHG_5",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "B knob"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 4
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "3GHG_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "A knob"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 4
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "3GHG_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen gamma chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 411
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "3GHG_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 461
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "3GHG_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 562
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "3H32",
+        "struct": {
+          "title": "Crystal structure of D-dimer from human fibrin complexed with Gly-His-Arg-Pro-Tyr-amide"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            3.6
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "3H32_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrin B knob pentapeptide"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 5
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02676"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "3H32_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen gamma chain, isoform gamma-A"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 317
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "3H32_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 458
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "3H32_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 197
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "3HUS",
+        "struct": {
+          "title": "Crystal structure of recombinant gamma N308K fibrinogen fragment D with the peptide ligand Gly-Pro-Arg-Pro-amide"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            3.04
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "3HUS_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Peptide Ligand Gly-Pro-Arg-Pro-amide"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 4
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "3HUS_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen gamma chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 311
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "3HUS_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 313
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "3HUS_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 66
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "4F27",
+        "struct": {
+          "title": "Crystal structures reveal the multi-ligand binding mechanism of the Staphylococcus aureus ClfB"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            1.917
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "4F27_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Clumping factor B"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 363
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "Q6GDH2"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "4F27_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "peptide from Fibrinogen alpha chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 13
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "5CFA",
+        "struct": {
+          "title": "Crystal structures of Bbp from Staphylococcus aureus with peptide ligand"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            1.45
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "5CFA_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Peptide from Fibrinogen alpha chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 15
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "5CFA_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Bone sialoprotein-binding protein"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 331
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "Q14U76"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "8ZZU",
+        "struct": {
+          "title": "Molecular Architecture of Human Fibrin Clots"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": null
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "8ZZU_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "RGD-containing Alpha Domain Alpha_558-620"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 63
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "8ZZU_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Subunit Alpha_46-219"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 174
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "8ZZU_6",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Interactive Alpha Domain Alpha_432-491"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 60
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "8ZZU_7",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Beta N-term Beta_55-84"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 34
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "8ZZU_5",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Subunit Gamma"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 381
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "8ZZU_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Subunit Beta"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 401
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "8ZZU_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Subunit Alpha_220-249"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 30
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "3BVH",
+        "struct": {
+          "title": "Crystal Structure of Recombinant gammaD364A Fibrinogen Fragment D with the Peptide Ligand Gly-Pro-Arg-Pro-Amide"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.6
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "3BVH_4",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "4-mer peptide GPRP"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 4
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": null
+            }
+          },
+          {
+            "rcsb_id": "3BVH_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen gamma chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 293
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "3BVH_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen beta chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 298
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "3BVH_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "Fibrinogen alpha chain"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 62
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "1FZE",
+        "struct": {
+          "title": "CRYSTAL STRUCTURE OF FRAGMENT DOUBLE-D FROM HUMAN FIBRIN"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            3.0
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1FZE_3",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 319
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02679"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1FZE_2",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 328
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02675"
+              ]
+            }
+          },
+          {
+            "rcsb_id": "1FZE_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 87
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rcsb_id": "1FZD",
+        "struct": {
+          "title": "STRUCTURE OF RECOMBINANT ALPHAEC DOMAIN FROM HUMAN FIBRINOGEN-420"
+        },
+        "rcsb_entry_info": {
+          "resolution_combined": [
+            2.1
+          ]
+        },
+        "polymer_entities": [
+          {
+            "rcsb_id": "1FZD_1",
+            "rcsb_polymer_entity": {
+              "pdbx_description": "FIBRINOGEN-420"
+            },
+            "entity_poly": {
+              "rcsb_sample_sequence_length": 201
+            },
+            "rcsb_polymer_entity_container_identifiers": {
+              "uniprot_ids": [
+                "P02671"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
