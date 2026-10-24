@@ -2,7 +2,7 @@
   "schema_version": 1,
   "campaign": "research-campaign01",
   "created_utc": "2026-10-24T08:14:41.572836+00:00",
-  "status": "preparing",
+  "status": "independent_preparation_done_waiting_for_PE",
   "experimental_inputs": "deferred_by_user",
   "current_PE_job": "68bdacf68ea34dbc8f4b4c5dcc69a4bc",
   "defaults": {
@@ -137,6 +137,181 @@
         "polymer.prmtop": "5daca72c7aca3177b2c50b7478edb3fa40fd510d3ad63c86204a93d31ff24cef",
         "sqm.out": "6165cbf9798cc3014bc76423bda1bd41b8e06bfe9f0f39ba86b4820704ea1684"
       }
+    },
+    "PVDF": {
+      "family": "PVDF",
+      "status": "technical_parameter_checks_passed_physical_validation_pending",
+      "atoms": 74,
+      "formula": "C24H26F24",
+      "crystal_validated": false,
+      "surface_validated": false,
+      "adsorption_MD_allowed": false,
+      "charge_method": "GAFF2 / AM1-BCC candidate only",
+      "charge_normalization": {
+        "raw_charge_sum_e": 0.003999999999999906,
+        "uniform_rounding_correction_per_atom_e": -5.4054054054052786e-05
+      },
+      "checks": [
+        {
+          "candidate": "pvdf-alpha",
+          "formula": "C24H26F24",
+          "initial_torsion_motif_deg": [
+            180,
+            60,
+            180,
+            -60
+          ],
+          "atoms": 74,
+          "net_charge_e": -3.2926685267220535e-09,
+          "finite_potential_kJ_mol": -324.0242639551224,
+          "max_force_kJ_mol_nm": 14014.114670104016,
+          "molecular_point_charge_dipole_D": [
+            -2.0252377645672794,
+            -9.263803111305084,
+            14.801221415728026
+          ],
+          "shared_charge_reference": "charge-reference.sdf",
+          "status": "finite_single_molecule_force_evaluation_only",
+          "crystal_validated": false,
+          "surface_validated": false,
+          "MD_steps": 0
+        },
+        {
+          "candidate": "pvdf-beta",
+          "formula": "C24H26F24",
+          "initial_torsion_motif_deg": [
+            180
+          ],
+          "atoms": 74,
+          "net_charge_e": -3.2926685267220535e-09,
+          "finite_potential_kJ_mol": -848.6002284193808,
+          "max_force_kJ_mol_nm": 5855.783752996272,
+          "molecular_point_charge_dipole_D": [
+            -2.9644788746332433,
+            -22.099688168770616,
+            11.10868378558492
+          ],
+          "shared_charge_reference": "charge-reference.sdf",
+          "status": "finite_single_molecule_force_evaluation_only",
+          "crystal_validated": false,
+          "surface_validated": false,
+          "MD_steps": 0
+        },
+        {
+          "candidate": "pvdf-gamma",
+          "formula": "C24H26F24",
+          "initial_torsion_motif_deg": [
+            180,
+            180,
+            180,
+            60,
+            180,
+            180,
+            180,
+            -60
+          ],
+          "atoms": 74,
+          "net_charge_e": -3.2926685267220535e-09,
+          "finite_potential_kJ_mol": -712.6178594019814,
+          "max_force_kJ_mol_nm": 9201.092055102567,
+          "molecular_point_charge_dipole_D": [
+            -0.955710518512333,
+            -8.340792264535915,
+            16.909695681491986
+          ],
+          "shared_charge_reference": "charge-reference.sdf",
+          "status": "finite_single_molecule_force_evaluation_only",
+          "crystal_validated": false,
+          "surface_validated": false,
+          "MD_steps": 0
+        }
+      ],
+      "commands": [
+        {
+          "argv": [
+            "/workspace/tools/ambertools/bin/antechamber",
+            "-i",
+            "charge-reference.sdf",
+            "-fi",
+            "sdf",
+            "-o",
+            "polymer.mol2",
+            "-fo",
+            "mol2",
+            "-at",
+            "gaff2",
+            "-c",
+            "bcc",
+            "-nc",
+            "0",
+            "-rn",
+            "PVF",
+            "-s",
+            "2"
+          ],
+          "returncode": 0,
+          "log": "antechamber.log"
+        },
+        {
+          "argv": [
+            "/workspace/tools/ambertools/bin/parmchk2",
+            "-i",
+            "polymer.mol2",
+            "-f",
+            "mol2",
+            "-o",
+            "polymer.frcmod",
+            "-s",
+            "gaff2"
+          ],
+          "returncode": 0,
+          "log": "parmchk2.log"
+        },
+        {
+          "argv": [
+            "/workspace/tools/ambertools/bin/tleap",
+            "-f",
+            "isolated.leap"
+          ],
+          "returncode": 0,
+          "log": "tleap.log"
+        }
+      ],
+      "elapsed_wall_seconds": 1027.026930186,
+      "limitations": [
+        "Finite oligomer, not a crystalline surface or validated polymer force field.",
+        "PVDF motif names identify starting torsions only; no lattice, packing, crystallographic face or domain has been validated.",
+        "PTFE trans starting candidate does not represent its bulk helical chain.",
+        "Shared PVDF atom mapping and charge set across all motifs.",
+        "Finite static energy/force and molecular point-charge dipole are technical diagnostics, not adsorption strength or bulk polarization."
+      ],
+      "sha256": {
+        "polymer.inpcrd": "f934357bd39b4bbaa3601b2a4748e4b653bd62b91400307754af061ea87b9c9d",
+        "leap.log": "7b94bd4ba95ea2ddde0703e33066e9b22e7a186835812069ea56002a58c4f747",
+        "ANTECHAMBER_AM1BCC.AC": "523817eddf720c150f296f4d855d6d813252047b870201b9c88ea95392b96c68",
+        "ATOMTYPE.INF": "77b59f91ca1fded9b4721b06dc780d7a22d9a34119d00aefad91034d70d62e98",
+        "charge-reference.sdf": "d4ff010b48a584e41783157a87d8c5a7e927ce65c1f0cb9a696322d87e74b916",
+        "sqm.pdb": "d8277ac1fcbb500e60e349e93b792435439b745b7ab6c2bf2cca988b32b03df5",
+        "ANTECHAMBER_BOND_TYPE.AC0": "59d8376f2a0ca4db1368d629d8f11c9f57e47f035bc20dfd529a13589bd36eac",
+        "polymer.mol2": "b1101a16c325ddf8d055ce324f26953ec11d6e810b0eee4b2e2532d74079e8ff",
+        "pvdf-alpha.sdf": "c1382f6b380db8fd2f309467aef1bdfecda325f95f9c05aacfaaad9501ae0622",
+        "ANTECHAMBER_BOND_TYPE.AC": "59d8376f2a0ca4db1368d629d8f11c9f57e47f035bc20dfd529a13589bd36eac",
+        "isolated.leap": "61a716438b4cc62047d469c08606729d6eab3dbad66e28b85f9453fbed6690e6",
+        "pvdf-beta.sdf": "d4ff010b48a584e41783157a87d8c5a7e927ce65c1f0cb9a696322d87e74b916",
+        "ANTECHAMBER_AC.AC0": "59d8376f2a0ca4db1368d629d8f11c9f57e47f035bc20dfd529a13589bd36eac",
+        "pvdf-gamma.sdf": "d87d872fc5a30b9244f26844a0da436273755a0e1cf3c9d8da6c6a22cc041f88",
+        "polymer.frcmod": "bf922808a85c35c2c11e49229322f906ba4bfc17fa247ee240d7221744a82dd5",
+        "sqm.in": "d5f887c1edee8d2a53be0b07e7ed1e38e501bef57e6e721d82c97da732ae973a",
+        "tleap.log": "5b3f9f2ff14fea325fb7d0a6e8aca93be32765c7047cea8f174b1fe7f8c682c4",
+        "ANTECHAMBER_AC.AC": "58e03584ac03f9dd983cddc579cbd821693427638a60759cd81f0d07125cf7fe",
+        "polymer.pdb": "5312b1b543f56e085ec3a0502697c4c8861751675d92ae93b7fa1110b901d33a",
+        "parmchk2.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "ANTECHAMBER_AM1BCC_PRE.AC": "fd8d257704a486a907e5ef7fe1e5bfbd6446818bf7049d0322ff53fe4f736f39",
+        "antechamber.log": "48eaab2c655cceb2a7df51e336c9ff21541296fa6f6db3c43378dbc3c00dde62",
+        "polymer.raw.mol2": "253f689275e675802d4593d70fd7ea055ed7a71afe4ce0259800d74a74b9a279",
+        "polymer.prmtop": "350e6eebdef0ead839689fdf57832efb40161bc61d4c3740145c77e7c3f8b186",
+        "sqm.out": "fe4cbdf3a688ea472b94df5f6fabbbb2a9a93ac8208ca1a8dd267782e4ec2302"
+      }
     }
   },
   "surface_models": {
@@ -239,7 +414,7 @@
   "stages": {
     "1": {
       "status": "running",
-      "detail": "Checkpoint continuation is active; original worker interruption is preserved separately."
+      "detail": "Executed MD; equilibrium and adsorption are not established"
     },
     "2": {
       "status": "implemented_and_engine_tested",
@@ -250,8 +425,8 @@
       "detail": "Experimental data will be connected later."
     },
     "4": {
-      "status": "preparing_molecular_candidates",
-      "detail": "PTFE/PVDF finite molecules first; phase-specific crystal surfaces still need construction and evidence."
+      "status": "finite_candidates_prepared_surfaces_pending",
+      "detail": "Candidate coordinates/parameter attempts preserved; crystal surfaces are not yet constructed or validated."
     },
     "5": {
       "status": "blocked_physical_validation",
@@ -263,11 +438,11 @@
     },
     "7": {
       "status": "blocked_model_and_preparation_gates",
-      "detail": "90-entry seed/orientation/material matrix is a queue, not executed replicas."
+      "detail": "Existing PE preparation evaluated; comparative surface validation and practical production resources remain prerequisites. No replica MD was launched."
     },
     "8": {
       "status": "blocked_validation_and_compute_budget",
-      "detail": "No production MD claimed; requires validated starts, pilots and practical GPU throughput."
+      "detail": "Common geometric analysis implemented and checked against real saved small-model MD; production comparison remains blocked by model validation and compute budget."
     },
     "9": {
       "status": "design_only_blocked",
@@ -285,28 +460,28 @@
       "stage": "NPT-density-block-1",
       "ensemble": "NPT",
       "stage_index": 4,
-      "stage_step": 200,
-      "context_step": 7300,
-      "context_time_ps": 7.500000000000662,
-      "additional_time_ps": 4.500000000000881,
+      "stage_step": 550,
+      "context_step": 7650,
+      "context_time_ps": 8.200000000000674,
+      "additional_time_ps": 5.200000000000894,
       "target_K": 310,
-      "temperature_K": 310.8246080157862,
-      "potential_kJ_mol": -6507283.380266627,
-      "kinetic_kJ_mol": 1534794.0530835993,
-      "volume_nm3": 6739.600889823218,
-      "density_g_cm3": 0.846519284469353,
+      "temperature_K": 310.9323229093653,
+      "potential_kJ_mol": -6498513.566674466,
+      "kinetic_kJ_mol": 1535325.9291765157,
+      "volume_nm3": 6735.457570633745,
+      "density_g_cm3": 0.8470400211169853,
       "restraint_scale": 0,
-      "CA_RMSD_from_pipeline_start_A": 0.596511552457299,
-      "max_relative_constraint_error": 6.038514133166473e-08,
-      "minimum_observed_protein_PE_nm": 0.60224289632822,
+      "CA_RMSD_from_pipeline_start_A": 0.6755852344894354,
+      "max_relative_constraint_error": 8.141835676604104e-08,
+      "minimum_observed_protein_PE_nm": 0.5945400287644377,
       "contact_native_residue_count": 0
     },
-    "elapsed_wall_seconds": 1120.250016153,
+    "elapsed_wall_seconds": 1426.427268963,
     "message": "Executed MD; equilibrium and adsorption are not established"
   },
   "resource_budget": {
-    "observed_current_process_simulated_ps": 1.40000000000029,
-    "observed_preparation_ns_per_wall_day": 0.10797589668010746,
+    "observed_current_process_simulated_ps": 2.1000000000003025,
+    "observed_preparation_ns_per_wall_day": 0.12719891434207609,
     "source": "Observed current preparation elapsed wall time, including reporting/control pauses. Not a production benchmark.",
     "GPU_throughput": "not measured; no GPU assumed",
     "pilot_matrix": {
@@ -321,7 +496,7 @@
       "ns_per_replica": 2,
       "replicas": 90,
       "total_ns": 180,
-      "estimated_current_CPU_days_at_observed_preparation_rate": 1667.0387145130478,
+      "estimated_current_CPU_days_at_observed_preparation_rate": 1415.1064176218197,
       "equilibrium_guaranteed": false
     },
     "PMF_scenario_only": {
@@ -330,11 +505,79 @@
       "relative_displacement_windows": 41,
       "suggested_sampling_ns_per_window": 10,
       "total_sampling_ns": 1230,
-      "estimated_current_CPU_days_at_observed_preparation_rate": 11391.43121583916,
+      "estimated_current_CPU_days_at_observed_preparation_rate": 9669.893853749101,
       "includes_window_preparation": false,
       "equilibrium_guaranteed": false
     },
     "interpretation": "Extrapolation only. Ensemble, timestep, barostat and hardware alter throughput. Actual planning must use a production benchmark; massive scenarios are not automatically launched on this CPU."
   },
-  "updated_utc": "2026-10-24T08:34:28.588562+00:00"
+  "updated_utc": "2026-10-24T08:39:41.811634+00:00",
+  "reference_lookup": {
+    "status": "unavailable",
+    "record": "artifacts/research-campaign/literature-search.json",
+    "note": "Network requests returned 403; no paper content, lattice or validated force-field parameters were retrieved."
+  },
+  "independent_molecular_checks": {
+    "PTFE": {
+      "status": "independent_candidate_mapping_charge_checks_passed",
+      "atoms": 74,
+      "element_counts": {
+        "F": 50,
+        "C": 24
+      },
+      "charge_e": -2.19511359089708e-09,
+      "Amber_graph_matches_reference": true,
+      "checks": [
+        {
+          "candidate": "ptfe",
+          "atom_graph_matches_Amber": true,
+          "minimum_nonexception_allatom_distance_nm": 0.2195865143855606,
+          "hard_overlap_pairs": 0,
+          "initial_geometry_hard_overlap_screen_passed": true
+        }
+      ],
+      "crystal_validated": false,
+      "surface_validated": false,
+      "production_MD_allowed": false,
+      "interpretation": "Checks molecular identity, common charge mapping and hard initial overlaps only; neither crystal structure nor polymer/water-interface accuracy is established."
+    },
+    "PVDF": {
+      "status": "independent_candidate_mapping_charge_checks_passed",
+      "atoms": 74,
+      "element_counts": {
+        "C": 24,
+        "F": 24,
+        "H": 26
+      },
+      "charge_e": -3.2926688181555974e-09,
+      "Amber_graph_matches_reference": true,
+      "checks": [
+        {
+          "candidate": "pvdf-alpha",
+          "atom_graph_matches_Amber": true,
+          "minimum_nonexception_allatom_distance_nm": 0.17586601803645863,
+          "hard_overlap_pairs": 0,
+          "initial_geometry_hard_overlap_screen_passed": true
+        },
+        {
+          "candidate": "pvdf-beta",
+          "atom_graph_matches_Amber": true,
+          "minimum_nonexception_allatom_distance_nm": 0.22707359798091892,
+          "hard_overlap_pairs": 0,
+          "initial_geometry_hard_overlap_screen_passed": true
+        },
+        {
+          "candidate": "pvdf-gamma",
+          "atom_graph_matches_Amber": true,
+          "minimum_nonexception_allatom_distance_nm": 0.18308218618970012,
+          "hard_overlap_pairs": 0,
+          "initial_geometry_hard_overlap_screen_passed": true
+        }
+      ],
+      "crystal_validated": false,
+      "surface_validated": false,
+      "production_MD_allowed": false,
+      "interpretation": "Checks molecular identity, common charge mapping and hard initial overlaps only; neither crystal structure nor polymer/water-interface accuracy is established."
+    }
+  }
 }

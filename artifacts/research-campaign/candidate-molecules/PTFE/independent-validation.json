@@ -1,0 +1,23 @@
+{
+  "status": "independent_candidate_mapping_charge_checks_passed",
+  "atoms": 74,
+  "element_counts": {
+    "F": 50,
+    "C": 24
+  },
+  "charge_e": -2.19511359089708e-09,
+  "Amber_graph_matches_reference": true,
+  "checks": [
+    {
+      "candidate": "ptfe",
+      "atom_graph_matches_Amber": true,
+      "minimum_nonexception_allatom_distance_nm": 0.2195865143855606,
+      "hard_overlap_pairs": 0,
+      "initial_geometry_hard_overlap_screen_passed": true
+    }
+  ],
+  "crystal_validated": false,
+  "surface_validated": false,
+  "production_MD_allowed": false,
+  "interpretation": "Checks molecular identity, common charge mapping and hard initial overlaps only; neither crystal structure nor polymer/water-interface accuracy is established."
+}
