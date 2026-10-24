@@ -39,7 +39,7 @@ def main():
     processes={}
     packing_process=None
     packing_attempt=int((RUN/'pc-packing-long').exists())
-    deadline=time.monotonic()+14400
+    deadline=time.monotonic()+int(os.environ.get('MD_WORKFLOW_WAIT_SECONDS','14400'))
     while time.monotonic()<deadline:
         summary={}
         for name in SOURCES:
@@ -98,7 +98,7 @@ def main():
             current['state']='three_stages_completed';current['stage3_MD_complete']=True
             current['result']=result;save(STATE,current);return
         time.sleep(15)
-    raise RuntimeError('Four-hour workflow wait limit reached; inspect active job logs without overwriting them')
+    raise RuntimeError('Workflow wait limit reached; inspect active job logs without overwriting them')
 
 if __name__=='__main__':
     try:main()
