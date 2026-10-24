@@ -1,8 +1,8 @@
 {
   "archive_name": "results-complete.zip",
-  "archive_bytes": 1311957357,
-  "archive_sha256": "049c11a5952412962a03261af909bf22cc2c9542be799f979295d43698e17433",
-  "snapshot_files": 693,
+  "archive_bytes": 1614479437,
+  "archive_sha256": "1fe613b5eaa1c80f1eb8d429848fac15b96112a3c2d0506ebf6eacf9fed0190f",
+  "snapshot_files": 750,
   "large_system_atoms": 577890,
   "scope": "All original inputs and attempts plus executed workbench jobs, current producing code and portable reports. See workbench state for actual completed length; no equilibrium claim."
 }

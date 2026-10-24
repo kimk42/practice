@@ -15,212 +15,45 @@
   "source_state_sha256": "d56c07c7793e2a0e9546fb6d76e102c638e0d54abc749c311b32daec6a3fbbc5",
   "source_checkpoint_sha256": "aa437f24784c2705d5c51fb03d0632290be9d76bbf8a5ea0f4efdfbef557ce4b",
   "prmtop_sha256": "40471f4ea100bc21d6b2026f028e61b36827f2038aa5a569a9c47065e49323c6",
-  "engine_sha256": "da4a66329297be2564c88d2021b0a22a576dc6baf138857950af5c4463cef447",
+  "engine_sha256": "9462772489cd7f805e062039c9511e97447efc196007003120a4a65764bc45ce",
   "openmm_platform": "CPU",
   "threads": 4,
   "plan": [
     {
-      "name": "warm-to-200K",
-      "ensemble": "NVT",
-      "dt_fs": 1,
-      "schedule": [
-        {
-          "target_K": 120,
-          "steps": 200,
-          "restraint_scale": 1
-        },
-        {
-          "target_K": 140,
-          "steps": 200,
-          "restraint_scale": 1
-        },
-        {
-          "target_K": 160,
-          "steps": 200,
-          "restraint_scale": 1
-        },
-        {
-          "target_K": 180,
-          "steps": 200,
-          "restraint_scale": 1
-        },
-        {
-          "target_K": 200,
-          "steps": 200,
-          "restraint_scale": 1
-        }
-      ]
-    },
-    {
-      "name": "warm-to-310K",
-      "ensemble": "NVT",
-      "dt_fs": 1,
-      "schedule": [
-        {
-          "target_K": 210,
-          "steps": 100,
-          "restraint_scale": 1
-        },
-        {
-          "target_K": 220,
-          "steps": 100,
-          "restraint_scale": 1
-        },
-        {
-          "target_K": 230,
-          "steps": 100,
-          "restraint_scale": 1
-        },
-        {
-          "target_K": 240,
-          "steps": 100,
-          "restraint_scale": 1
-        },
-        {
-          "target_K": 250,
-          "steps": 100,
-          "restraint_scale": 1
-        },
-        {
-          "target_K": 260,
-          "steps": 100,
-          "restraint_scale": 1
-        },
-        {
-          "target_K": 270,
-          "steps": 100,
-          "restraint_scale": 1
-        },
-        {
-          "target_K": 280,
-          "steps": 100,
-          "restraint_scale": 1
-        },
-        {
-          "target_K": 290,
-          "steps": 100,
-          "restraint_scale": 1
-        },
-        {
-          "target_K": 300,
-          "steps": 100,
-          "restraint_scale": 1
-        },
-        {
-          "target_K": 310,
-          "steps": 100,
-          "restraint_scale": 1
-        }
-      ]
-    },
-    {
-      "name": "310K-supported-check",
-      "ensemble": "NVT",
-      "dt_fs": 1,
-      "schedule": [
-        {
-          "target_K": 310,
-          "steps": 1000,
-          "restraint_scale": 1
-        }
-      ]
-    },
-    {
-      "name": "release-position-support",
-      "ensemble": "NVT",
-      "dt_fs": 1,
-      "schedule": [
-        {
-          "target_K": 310,
-          "steps": 250,
-          "restraint_scale": 0.1
-        },
-        {
-          "target_K": 310,
-          "steps": 250,
-          "restraint_scale": 0.01
-        },
-        {
-          "target_K": 310,
-          "steps": 500,
-          "restraint_scale": 0
-        }
-      ]
-    },
-    {
-      "name": "NPT-density-block-1",
+      "name": "continued-NPT-block-1",
       "ensemble": "NPT",
       "dt_fs": 2,
       "pressure_bar": 1,
       "schedule": [
         {
           "target_K": 310,
-          "steps": 1250,
+          "steps": 2500,
           "restraint_scale": 0
         }
       ]
     },
     {
-      "name": "NPT-density-block-2",
+      "name": "continued-NPT-block-2",
       "ensemble": "NPT",
       "dt_fs": 2,
       "pressure_bar": 1,
       "schedule": [
         {
           "target_K": 310,
-          "steps": 1250,
+          "steps": 2500,
           "restraint_scale": 0
         }
       ]
     },
     {
-      "name": "NPT-density-block-3",
+      "name": "continued-NPT-block-3",
       "ensemble": "NPT",
       "dt_fs": 2,
       "pressure_bar": 1,
       "schedule": [
         {
           "target_K": 310,
-          "steps": 1250,
-          "restraint_scale": 0
-        }
-      ]
-    },
-    {
-      "name": "NPT-density-block-4",
-      "ensemble": "NPT",
-      "dt_fs": 2,
-      "pressure_bar": 1,
-      "schedule": [
-        {
-          "target_K": 310,
-          "steps": 1250,
-          "restraint_scale": 0
-        }
-      ]
-    },
-    {
-      "name": "NPT-density-block-5",
-      "ensemble": "NPT",
-      "dt_fs": 2,
-      "pressure_bar": 1,
-      "schedule": [
-        {
-          "target_K": 310,
-          "steps": 1250,
-          "restraint_scale": 0
-        }
-      ]
-    },
-    {
-      "name": "NPT-density-block-6",
-      "ensemble": "NPT",
-      "dt_fs": 2,
-      "pressure_bar": 1,
-      "schedule": [
-        {
-          "target_K": 310,
-          "steps": 1250,
+          "steps": 2500,
           "restraint_scale": 0
         }
       ]

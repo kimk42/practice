@@ -1,0 +1,31 @@
+{
+  "status": "single_frame_solvent_region_geometry_audited",
+  "source_job": "6ce66315455240338927597da4bc6757",
+  "source_final_state_sha256": "200d3c95a98523828a9c343ee723430a2068788a16526e231515b35e9c06f7eb",
+  "context_time_ps": 29.59999999999574,
+  "whole_mixture_density_g_cm3": 0.8713199900061185,
+  "whole_cell_nm3": 6547.769118463703,
+  "water_molecules": 165535,
+  "domain_definition": "Points at least 0.8 nm from every non-water heavy atom, including ions; minimum-image periodic Euclidean distances. Water counted using its oxygen in the same domain.",
+  "statistics": {
+    "samples": 100000,
+    "seed": 1729,
+    "solute_heavy_exclusion_nm": 0.8,
+    "solvent_region_volume_nm3": 4539.240941374963,
+    "volume_MC_standard_error_nm3": 9.548399516854348,
+    "water_O_in_region": 130995,
+    "water_molecular_mass_Da": 18.016,
+    "solvent_region_water_density_g_cm3": 0.8633342178087207,
+    "density_geometry_MC_standard_error_g_cm3": 0.0018160437250796435,
+    "region_volume_fraction_with_nearest_water_O_over_0_4nm": 0.028243779300396683,
+    "region_volume_fraction_with_nearest_water_O_over_0_6nm": 0.00856833754056978,
+    "interpretation": "One frame. Monte Carlo errors describe geometric volume integration only, not MD sampling or thermodynamic uncertainty. Low-water-proximity regions are geometric diagnostics, not identified vapor phases."
+  },
+  "equilibrium_established": false,
+  "limitations": [
+    "Not a calibrated liquid-density or surface-validation test.",
+    "Single frame may include cavities and strong spatial heterogeneity; this is not necessarily thermodynamic bulk water.",
+    "No adsorption, phase or retention inference.",
+    "Whole-mixture density includes protein, PE and ions and must not be compared directly with pure-water density."
+  ]
+}

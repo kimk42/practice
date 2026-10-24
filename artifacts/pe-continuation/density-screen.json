@@ -1,0 +1,35 @@
+{
+  "blocks": [
+    {
+      "stage": "continued-NPT-block-1",
+      "observations": 101,
+      "observed_volume_changes": 4,
+      "mean_density_g_cm3": 0.8523491703673252,
+      "density_endpoint_change_percent": 0.19625404184162587,
+      "mean_temperature_K": 310.75566798612084,
+      "relative_potential_slope_percent_per_ps": -0.027004242937639773
+    },
+    {
+      "stage": "continued-NPT-block-2",
+      "observations": 100,
+      "observed_volume_changes": 20,
+      "mean_density_g_cm3": 0.8577938359236785,
+      "density_endpoint_change_percent": 0.9897384533092302,
+      "mean_temperature_K": 310.99191319028813,
+      "relative_potential_slope_percent_per_ps": -0.06077431216197454
+    },
+    {
+      "stage": "continued-NPT-block-3",
+      "observations": 100,
+      "observed_volume_changes": 26,
+      "mean_density_g_cm3": 0.8672038956232848,
+      "density_endpoint_change_percent": 1.0328145363816432,
+      "mean_temperature_K": 310.9490064965205,
+      "relative_potential_slope_percent_per_ps": -0.05091463634407317
+    }
+  ],
+  "screen_passed": false,
+  "equilibrium_established": false,
+  "interpretation": "Short descriptive continuation screen with barostat-activity check; not proof of equilibrium or physical density accuracy.",
+  "last_adjacent_density_mean_change_percent": 1.0970071485152832
+}

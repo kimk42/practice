@@ -4,7 +4,7 @@
   "created_utc": "2026-10-24T08:14:41.572836+00:00",
   "status": "blocked_at_scientific_and_resource_gates",
   "experimental_inputs": "deferred_by_user",
-  "current_PE_job": "5654118d6c7f48129395d353d5cf6387",
+  "current_PE_job": "6ce66315455240338927597da4bc6757",
   "defaults": {
     "temperature_K": 310,
     "pressure_bar": 1,
@@ -413,7 +413,7 @@
   },
   "stages": {
     "1": {
-      "status": "completed",
+      "status": "needs_review",
       "detail": "Executed preparation evaluated; physical equilibrium is not established"
     },
     "2": {
@@ -455,33 +455,34 @@
   },
   "execution_policy": "Continue independent preparation. Never fabricate crystals, equilibrated replicas, PMF values, experimental agreement or grant submission. Stop dependent production at failed scientific/resource gates.",
   "current_PE": {
-    "status": "completed",
+    "status": "needs_review",
     "last": {
-      "stage": "NPT-density-block-3",
+      "stage": "continued-NPT-block-3",
       "ensemble": "NPT",
-      "stage_index": 6,
-      "stage_step": 1250,
-      "context_step": 10850,
-      "context_time_ps": 14.600000000002812,
-      "additional_time_ps": 11.600000000003032,
+      "stage_index": 2,
+      "stage_step": 2500,
+      "context_step": 18350,
+      "context_time_ps": 29.59999999999574,
+      "additional_time_ps": 14.99999999999293,
       "target_K": 310,
-      "temperature_K": 310.7469898960285,
-      "potential_kJ_mol": -6512521.606068804,
-      "kinetic_kJ_mol": 1534410.7892571725,
-      "volume_nm3": 6695.918068652959,
-      "density_g_cm3": 0.8520418058236338,
+      "temperature_K": 311.1707089315472,
+      "potential_kJ_mol": -6562352.121366097,
+      "kinetic_kJ_mol": 1536503.0349774966,
+      "volume_nm3": 6547.769118463697,
+      "density_g_cm3": 0.8713199900061194,
       "restraint_scale": 0,
-      "CA_RMSD_from_pipeline_start_A": 0.9033376968613294,
-      "max_relative_constraint_error": 7.857403430286312e-08,
-      "minimum_observed_protein_PE_nm": 0.6176257890466758,
-      "contact_native_residue_count": 0
+      "CA_RMSD_from_pipeline_start_A": 1.0075143149026973,
+      "max_relative_constraint_error": 7.51103273518145e-08,
+      "minimum_observed_protein_PE_nm": 0.5343484057224495,
+      "contact_native_residue_count": 0,
+      "pressure_bar": null
     },
-    "elapsed_wall_seconds": 2459.4677684229973,
+    "elapsed_wall_seconds": 6310.145963641,
     "message": "Executed preparation evaluated; physical equilibrium is not established"
   },
   "resource_budget": {
-    "observed_current_process_simulated_ps": 5.7000000000019035,
-    "observed_preparation_ns_per_wall_day": 0.20023844439967636,
+    "observed_current_process_simulated_ps": 14.99999999999293,
+    "observed_preparation_ns_per_wall_day": 0.2053835216280144,
     "source": "Observed current preparation elapsed wall time, including reporting/control pauses. Not a production benchmark.",
     "GPU_throughput": "not measured; no GPU assumed",
     "pilot_matrix": {
@@ -496,7 +497,7 @@
       "ns_per_replica": 2,
       "replicas": 90,
       "total_ns": 180,
-      "estimated_current_CPU_days_at_observed_preparation_rate": 898.9282779320819,
+      "estimated_current_CPU_days_at_observed_preparation_rate": 876.4091616172186,
       "equilibrium_guaranteed": false
     },
     "PMF_scenario_only": {
@@ -505,13 +506,13 @@
       "relative_displacement_windows": 41,
       "suggested_sampling_ns_per_window": 10,
       "total_sampling_ns": 1230,
-      "estimated_current_CPU_days_at_observed_preparation_rate": 6142.676565869227,
+      "estimated_current_CPU_days_at_observed_preparation_rate": 5988.795937717661,
       "includes_window_preparation": false,
       "equilibrium_guaranteed": false
     },
     "interpretation": "Extrapolation only. Ensemble, timestep, barostat and hardware alter throughput. Different orientations may require larger solvent cells and more atoms. Actual planning must use a production benchmark; massive scenarios are not automatically launched on this CPU."
   },
-  "updated_utc": "2026-10-24T17:32:43.643212+00:00",
+  "updated_utc": "2026-10-24T21:47:23.987830+00:00",
   "reference_lookup": {
     "status": "unavailable",
     "record": "artifacts/research-campaign/literature-search.json",

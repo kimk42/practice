@@ -1,0 +1,15 @@
+{
+  "status": "saved_output_cross_checks_passed",
+  "trajectory_segments": [
+    {
+      "path": "trajectories/segment-01.dcd",
+      "frames": 30,
+      "context_step_offset": 10750,
+      "context_time_offset_ps": 14.400000000002812
+    }
+  ],
+  "observations": 301,
+  "source_model_atoms": 577890,
+  "native_CA_count": 1913,
+  "equilibrium_established": false
+}
