@@ -56,8 +56,12 @@ def publish(job):
    for a,b in zip(rows,rows[1:]):
     if a['stage']!=b['stage']:ax.axvline(b['additional_time_ps'],ls=':',color='gray',lw=.7)
   fig.suptitle(f'Executed {cfg["model_id"]}: {cfg["protocol_id"]}');fig.tight_layout(rect=(0,.03,1,.94));fig.savefig(job/'summary.png',dpi=140);plt.close(fig)
+ pressure_rows=[r for r in rows if r.get('pressure_bar') is not None]
+ if pressure_rows:
+  fig,ax=plt.subplots(figsize=(10,4));ax.plot([r['additional_time_ps'] for r in pressure_rows],[r['pressure_bar'] for r in pressure_rows],marker='o',ms=3);ax.axhline(1,color='orange',ls='--',label='Applied pressure: 1 bar');ax.set(xlabel='Additional time (ps)',ylabel='Instantaneous molecular-virial pressure (bar)',title='Sparse pressure diagnostics; no equilibrium claim');ax.grid(alpha=.2);ax.legend();fig.tight_layout();fig.savefig(job/'pressure.png',dpi=140);plt.close(fig)
  image=''
  if (job/'summary.png').exists():image='<img alt="실제 계산 중 기록한 온도, 전체 밀도, 에너지와 구조" src="data:image/png;base64,'+base64.b64encode((job/'summary.png').read_bytes()).decode()+'">'
+ if pressure_rows:image+='<img alt="실제로 계산한 순간 압력, 수렴 검증 아님" src="data:image/png;base64,'+base64.b64encode((job/'pressure.png').read_bytes()).decode()+'">'
  result=json.loads((job/'result.json').read_text()) if (job/'result.json').exists() else state
  stamp=datetime.fromtimestamp(state.get('updated_unix',cfg['created_unix']),timezone.utc).isoformat()
  status=html.escape(state['status']);body=f'<h1>실제 PE 계산 작업</h1><p>작업 {html.escape(cfg["id"])} · {html.escape(cfg["model_id"])} · {status}</p><p class="notice">기록된 실행과 검증 결과입니다. 실행 완료 또는 기술적 밀도 추세 검사 통과를 계면 평형·생산 계산 준비·결합 자유에너지 검증으로 해석하지 않습니다.</p>'
@@ -66,7 +70,7 @@ def publish(job):
  body+=image+'<h2>조건과 해석</h2><p>NVT의 평평한 밀도는 상자 고정의 결과입니다. NPT에서는 이 유한 PE 패치에 등방성 barostat를 사용하며 위치 억제를 모두 해제합니다. 이 방식을 무한 표면·막 모델에 그대로 적용하지 않습니다. 서로 다른 위치 억제·ensemble 구간의 총 에너지를 결합 세기로 비교하지 않습니다.</p><p>구간별 온도·전체 밀도·에너지 기울기는 상관된 짧은 표본의 기술 지표입니다. 결손 말단·당쇄 생략·중화 이온만 포함한 조건과 유한 올리고머 표면의 한계가 적용됩니다.</p>'
  body+='<h2>실제 결과</h2><pre>'+html.escape(json.dumps(result,ensure_ascii=False,indent=2))+'</pre><details><summary>고정 실행 설정</summary><pre>'+html.escape(json.dumps(cfg,ensure_ascii=False,indent=2))+'</pre></details>'
  downloads=[]
- for name in ['observables.csv','config.json','provenance.json','validation.json','density-screen.json','resume-provenance.json','trajectory-index.json']:
+ for name in ['observables.csv','config.json','provenance.json','validation.json','density-screen.json','resume-provenance.json','continuation-provenance.json','trajectory-index.json']:
   p=job/name
   if p.exists():downloads.append('<a download="'+name+'" href="data:application/octet-stream;base64,'+base64.b64encode(p.read_bytes()).decode()+'">'+name+'</a>')
  body+='<h2>주요 데이터 내려받기</h2><p>'+' · '.join(downloads)+'</p>'

@@ -6,6 +6,10 @@
 
 1–3단계인 입력 표준화, 실제 계산 제어, 화면 연결을 구현하고 실제 체크포인트 재시작을 검증했습니다. 4단계의 큰 PE 모델 가열·위치 억제 해제·NPT 기술 검사는 자동 순서로 실행합니다. 진행 상태는 실행 화면에서, 저장된 보고서는 [실행기 결과](artifacts/workbench/preparation/report.html)에서 확인합니다. 이 보고서의 상태가 실제 완료 여부의 기준입니다.
 
+## 추가 압력·용매 진단
+
+[추가 NPT 실행 현황](artifacts/pe-continuation/report.html)과 [14.6 ps 프레임의 용매 공간 점검](artifacts/solvent-audit01/report.html)을 분리해 기록합니다. 현재 추가 계획은 5 ps × 3블록이며 속도·RNG·barostat 상태를 checkpoint에서 이어갑니다. 순간 압력과 관측 체적 변화 횟수를 추가로 확인하며, 짧은 밀도 안정성을 계면 평형으로 해석하지 않습니다.
+
 ## 실험 입력을 미룬 후속 개발
 
 [후속 연구 상태 보고서](artifacts/research-campaign/report.html)에서 단계 1–10의 실제 상태를 확인합니다. PTFE/PVDF 유한 사슬 후보, 전하·힘장 기술 검사, 여섯 dry 단백질 배향, 반복 조건표, 공통 기하 분석, PMF 설계와 과제 논의 초안을 준비합니다. 후보 분자는 검증된 결정 표면이 아니며, 반복 MD와 PMF는 모델·준비·자원 검사를 통과하기 전에는 실행하지 않습니다. [작업 범위와 재현 방법](docs/RESEARCH_CAMPAIGN.md)에 한계와 파일 위치를 정리했습니다.

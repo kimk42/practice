@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "model_id": "pe-core",
+  "protocol_id": "continue-npt",
+  "threads": 4,
+  "observation_interval_steps": 25,
+  "trajectory_interval_steps": 250,
+  "checkpoint_interval_steps": 100,
+  "seed": 45,
+  "equilibrium_established": false,
+  "production_ready": false,
+  "continuation_from_job": "5654118d6c7f48129395d353d5cf6387",
+  "pressure_interval_steps": 250,
+  "plan": [
+    {
+      "name": "continued-NPT-block-1",
+      "ensemble": "NPT",
+      "dt_fs": 2,
+      "pressure_bar": 1,
+      "schedule": [
+        {
+          "target_K": 310,
+          "steps": 2500,
+          "restraint_scale": 0
+        }
+      ]
+    },
+    {
+      "name": "continued-NPT-block-2",
+      "ensemble": "NPT",
+      "dt_fs": 2,
+      "pressure_bar": 1,
+      "schedule": [
+        {
+          "target_K": 310,
+          "steps": 2500,
+          "restraint_scale": 0
+        }
+      ]
+    },
+    {
+      "name": "continued-NPT-block-3",
+      "ensemble": "NPT",
+      "dt_fs": 2,
+      "pressure_bar": 1,
+      "schedule": [
+        {
+          "target_K": 310,
+          "steps": 2500,
+          "restraint_scale": 0
+        }
+      ]
+    }
+  ],
+  "density_screen": {
+    "minimum_blocks": 3,
+    "block_time_ps": 5,
+    "maximum_adjacent_mean_density_change_percent": 0.5,
+    "maximum_last_block_density_drift_percent": 0.5,
+    "maximum_temperature_mean_deviation_K": 5,
+    "maximum_relative_potential_slope_percent_per_ps": 0.5,
+    "minimum_last_block_observed_volume_changes": 5,
+    "interpretation": "Short descriptive continuation screen with barostat-activity check; not proof of equilibrium or physical density accuracy."
+  },
+  "maximum_planned_steps": 7500,
+  "maximum_planned_time_ps": 15.0,
+  "stage_notes": [
+    "NVT keeps the original box and anchors; support is released before pressure adjustment.",
+    "Isotropic NPT is used only for this finite oligomer patch; all Cartesian support force constants must be zero.",
+    "No surface affinity, binding free energy, material ranking or interface-equilibrium conclusion."
+  ],
+  "id": "6ce66315455240338927597da4bc6757",
+  "created_unix": 1792872100.3969235
+}

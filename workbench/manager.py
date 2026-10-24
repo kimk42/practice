@@ -54,6 +54,11 @@ class Manager:
    cfg=make_config(request)
    if not self.runtime['ready']:raise ValueError(self.runtime.get('message','Scientific runtime unavailable'))
    if not availability(cfg['model_id'],self.root)['ready']:raise ValueError('Restore the validated raw dataset before running MD')
+   if cfg.get('continuation_from_job') and not resume_from:
+    parent=self.get(cfg['continuation_from_job'])
+    if parent['status'] not in {'completed','needs_review'} or parent['config']['model_id']!=cfg['model_id']:raise ValueError('Continuation requires a completed, compatible source with saved validation')
+    for name in ['validation.json','checkpoint.json','final-state.xml','result.json']:
+     if not (self.directory(parent['id'])/name).exists():raise ValueError('Continuation source bundle is incomplete')
    if resume_from:
     old=self.get(resume_from)
     if old['status'] not in {'cancelled','interrupted','failed'}:raise ValueError('Only stopped/interrupted jobs can be resumed into a new job')
@@ -80,7 +85,8 @@ class Manager:
   item=self.get(id)
   if action=='resume' and item['status'] in {'cancelled','interrupted','failed'}:
    c=item['config'];request={'model_id':c['model_id'],'protocol_id':c['protocol_id']}
-   if c['protocol_id']=='nvt-check':request['steps']=c['plan'][0]['schedule'][0]['steps']
+   if c['protocol_id']=='continue-npt':request.update(source_job_id=c['continuation_from_job'],blocks=len(c['plan']))
+   elif c['protocol_id']=='nvt-check':request['steps']=c['plan'][0]['schedule'][0]['steps']
    else:request['max_npt_blocks']=len(c['plan'])-4
    return self.start(request,resume_from=id)
   if item['status'] in TERMINAL:raise ValueError('Job has already stopped')

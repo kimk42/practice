@@ -19,7 +19,7 @@ sys.path.insert(0,str(ROOT))
 from workbench.config import TERMINAL,engine_python
 from workbench.manager import Manager,atomic,alive
 
-FILES=['report.html','summary.png','observables.csv','config.json','state.json','provenance.json','validation.json','result.json','density-screen.json','trajectory-index.json','resume-provenance.json']
+FILES=['report.html','summary.png','pressure.png','observables.csv','config.json','state.json','provenance.json','validation.json','result.json','density-screen.json','trajectory-index.json','resume-provenance.json','continuation-provenance.json']
 
 def export(job):
  from workbench.report import publish
@@ -40,7 +40,13 @@ def export(job):
     notice+='<p><a download="'+name+'" href="data:application/octet-stream;base64,'+__import__('base64').b64encode((out/name).read_bytes()).decode()+'">'+name+'</a></p>'
    report=(out/'report.html').read_text();(out/'report.html').write_text(report.replace('</body>',notice+'</body>'))
   except Exception as e:atomic(out/'geometry-analysis-error.json',{'status':'analysis_failed','error':str(e),'raw_MD_outputs_preserved':True})
+ if state['status'] in TERMINAL and (job/'final-state.xml').exists():
+  try:
+   from md.solvent_audit import audit
+   audit(job,out/'solvent-audit')
+  except Exception as e:atomic(out/'solvent-audit-error.json',{'status':'analysis_failed','error':str(e)})
  atomic(out/'location.json',{'job_id':job.name,'raw_directory':str(job.relative_to(ROOT)),'report_generated_unix':time.time()})
+ if json.loads((job/'config.json').read_text()).get('protocol_id')=='continue-npt':shutil.copytree(out,ROOT/'artifacts/pe-continuation',dirs_exist_ok=True)
  return out
 
 def snapshot():
@@ -82,7 +88,7 @@ def main():
   atomic(statusfile,{'status':'exporting','MD_status':s['status']});export(job)
   if a.archive:snapshot()
   if a.push:
-   paths=['artifacts/workbench','artifacts/research-campaign','artifacts/collected-results','docs/result-archive.json']
+   paths=['artifacts/workbench','artifacts/pe-continuation','artifacts/solvent-audit01','artifacts/research-campaign','artifacts/collected-results','docs/result-archive.json']
    if a.archive:paths.append('datasets/results-complete.zip')
    subprocess.run(['git','add','--',*paths],cwd=ROOT,check=True)
    subprocess.run([sys.executable,'scripts/check_repository.py'],cwd=ROOT,check=True)

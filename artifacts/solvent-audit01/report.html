@@ -1,0 +1,31 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>PE 용매 공간 진단</title><style>body{max-width:1000px;margin:auto;padding:24px;font:16px/1.7 system-ui}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style><body><h1>PE 준비 계산의 용매 공간 점검</h1><p>누적 14.6 ps의 저장된 한 프레임을 검사했습니다. 평형 검증이 아닙니다.</p><p>전체 혼합계 밀도와, 용질에서 떨어진 공간의 물 밀도를 구분합니다. 물이 드문 공간의 비율도 기하 지표로 기록합니다. 공간 적분의 Monte Carlo 오차를 MD의 통계 오차로 해석하지 않습니다.</p><pre>{
+  &quot;status&quot;: &quot;single_frame_solvent_region_geometry_audited&quot;,
+  &quot;source_job&quot;: &quot;5654118d6c7f48129395d353d5cf6387&quot;,
+  &quot;source_final_state_sha256&quot;: &quot;d7f8e01f111e16ceb8e0f5ff0b219c9bcd5b4632546db14ba9c53316bdcc2500&quot;,
+  &quot;context_time_ps&quot;: 14.600000000002812,
+  &quot;whole_mixture_density_g_cm3&quot;: 0.8520418058236335,
+  &quot;whole_cell_nm3&quot;: 6695.918068652961,
+  &quot;water_molecules&quot;: 165535,
+  &quot;domain_definition&quot;: &quot;Points at least 0.8 nm from every non-water heavy atom, including ions; minimum-image periodic Euclidean distances. Water counted using its oxygen in the same domain.&quot;,
+  &quot;statistics&quot;: {
+    &quot;samples&quot;: 100000,
+    &quot;seed&quot;: 1729,
+    &quot;solute_heavy_exclusion_nm&quot;: 0.8,
+    &quot;solvent_region_volume_nm3&quot;: 4667.858404019352,
+    &quot;volume_MC_standard_error_nm3&quot;: 9.729694419360074,
+    &quot;water_O_in_region&quot;: 131406,
+    &quot;water_molecular_mass_Da&quot;: 18.016,
+    &quot;solvent_region_water_density_g_cm3&quot;: 0.8421801338065149,
+    &quot;density_geometry_MC_standard_error_g_cm3&quot;: 0.0017554421404337005,
+    &quot;region_volume_fraction_with_nearest_water_O_over_0_4nm&quot;: 0.02163185678218958,
+    &quot;region_volume_fraction_with_nearest_water_O_over_0_6nm&quot;: 0.0032419095708056,
+    &quot;interpretation&quot;: &quot;One frame. Monte Carlo errors describe geometric volume integration only, not MD sampling or thermodynamic uncertainty. Low-water-proximity regions are geometric diagnostics, not identified vapor phases.&quot;
+  },
+  &quot;equilibrium_established&quot;: false,
+  &quot;limitations&quot;: [
+    &quot;Not a calibrated liquid-density or surface-validation test.&quot;,
+    &quot;Single frame may include cavities and strong spatial heterogeneity; this is not necessarily thermodynamic bulk water.&quot;,
+    &quot;No adsorption, phase or retention inference.&quot;,
+    &quot;Whole-mixture density includes protein, PE and ions and must not be compared directly with pure-water density.&quot;
+  ]
+}</pre></body></html>

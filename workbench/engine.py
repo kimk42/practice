@@ -24,12 +24,14 @@ def density_screen(rows,spec):
     stages=[]
     for name in dict.fromkeys(x['stage'] for x in rows if x['ensemble']=='NPT'):
         sample=[x for x in rows if x['stage']==name];t=np.array([x['context_time_ps'] for x in sample]);rho=np.array([x['density_g_cm3'] for x in sample]);u=np.array([x['potential_kJ_mol'] for x in sample])
-        stages.append({'stage':name,'observations':len(sample),'mean_density_g_cm3':float(rho.mean()),'density_endpoint_change_percent':float((rho[-1]/rho[0]-1)*100),'mean_temperature_K':float(np.mean([x['temperature_K'] for x in sample])),'relative_potential_slope_percent_per_ps':float(np.polyfit(t-t[0],u,1)[0]/max(abs(u.mean()),1)*100)})
+        stages.append({'stage':name,'observations':len(sample),'observed_volume_changes':int(np.count_nonzero(np.abs(np.diff([x['volume_nm3'] for x in sample]))>1e-6)) if 'volume_nm3' in sample[0] else None,'mean_density_g_cm3':float(rho.mean()),'density_endpoint_change_percent':float((rho[-1]/rho[0]-1)*100),'mean_temperature_K':float(np.mean([x['temperature_K'] for x in sample])),'relative_potential_slope_percent_per_ps':float(np.polyfit(t-t[0],u,1)[0]/max(abs(u.mean()),1)*100)})
     check={'blocks':stages,'screen_passed':False,'equilibrium_established':False,'interpretation':spec['interpretation']}
     if len(stages)<spec['minimum_blocks']:return check
     a,b=stages[-2:];change=abs(b['mean_density_g_cm3']/a['mean_density_g_cm3']-1)*100
     check['last_adjacent_density_mean_change_percent']=change
     check['screen_passed']=bool(change<spec['maximum_adjacent_mean_density_change_percent'] and abs(b['density_endpoint_change_percent'])<spec['maximum_last_block_density_drift_percent'] and abs(b['mean_temperature_K']-310)<spec['maximum_temperature_mean_deviation_K'] and abs(b['relative_potential_slope_percent_per_ps'])<spec['maximum_relative_potential_slope_percent_per_ps'])
+    if spec.get('minimum_last_block_observed_volume_changes',0):
+        check['screen_passed']=check['screen_passed'] and b['observed_volume_changes'] is not None and b['observed_volume_changes']>=spec['minimum_last_block_observed_volume_changes']
     return check
 
 
@@ -69,26 +71,34 @@ class Engine:
   self.mass=sum(original_system.getParticleMass(i).value_in_unit(unit.dalton) for i in range(m['atoms']));self.dof=3*m['atoms']-len(self.ia)-3
   provenance={'model':m,'source_system_sha256':fingerprint(source/'system.xml'),'source_state_sha256':fingerprint(source/'state.xml'),'source_checkpoint_sha256':fingerprint(source/'checkpoint.chk'),'prmtop_sha256':expected,'engine_sha256':fingerprint(Path(__file__)),'openmm_platform':'CPU','threads':4,'plan':self.cfg['plan']}
   atomic(self.job/'provenance.json',provenance);(self.job/'engine-source.py').write_bytes(Path(__file__).read_bytes())
-  resume=self.cfg.get('resume_from_job')
-  if resume:
-   parent=self.job.parent/resume;cursor=json.loads((parent/'checkpoint.json').read_text());self.stage_index=cursor['stage_index'];self.stage_step=cursor['stage_step']
+  resume=self.cfg.get('resume_from_job');continuation=self.cfg.get('continuation_from_job') if not resume else None
+  if resume or continuation:
+   parent=self.job.parent/(resume or continuation);cursor=json.loads((parent/'checkpoint.json').read_text());self.stage_index=cursor['stage_index'];self.stage_step=cursor['stage_step']
    for key in ['system','integrator']:
     obj=parent/cursor[key]
     if obj.parent!=parent/'objects' or fingerprint(obj)!=obj.stem.split('-')[-1]:raise ReviewRequired('Resume object checksum/path mismatch')
    self.system=XmlSerializer.deserialize((parent/cursor['system']).read_text());self.integrator=XmlSerializer.deserialize((parent/cursor['integrator']).read_text());cp=parent/cursor['checkpoint']
    if fingerprint(cp)!=cursor['sha256']:raise ReviewRequired('Resume checkpoint checksum mismatch')
    self.reference=np.load(parent/'reference.npy');self.origin_time=cursor['origin_time_ps'];self.origin_step=cursor['origin_context_step']
-   if (parent/'observations.jsonl').exists():
+   if not continuation and (parent/'observations.jsonl').exists():
     for line in (parent/'observations.jsonl').read_text().splitlines():
      try:row=json.loads(line)
      except ValueError:break
      if row['context_step']<=cursor['context_step']:self.rows.append(row)
-   atomic(self.job/'resume-provenance.json',{'parent_job':resume,'valid_parent_context_step':cursor['context_step'],'parent_trajectories':str(parent/'trajectories'),'note':'Parent files are preserved; observations after the saved checkpoint are not carried into this resumed lineage.'})
+   atomic(self.job/'resume-provenance.json',{'parent_job':resume or continuation,'valid_parent_context_step':cursor['context_step'],'parent_trajectories':str(parent/'trajectories'),'note':'Parent files are preserved; observations after the saved checkpoint are not carried into this resumed lineage.'})
+   if continuation:
+    parent_cfg=json.loads((parent/'config.json').read_text());v=json.loads((parent/'validation.json').read_text());parent_status=json.loads((parent/'state.json').read_text())['status']
+    if parent_status not in {'completed','needs_review'} or parent_cfg['model_id']!=self.cfg['model_id'] or v['status']!='saved_output_cross_checks_passed':raise ReviewRequired('Continuation source validation differs')
+    support=next(f for f in self.system.getForces() if isinstance(f,CustomExternalForce));bars=[f for f in self.system.getForces() if isinstance(f,MonteCarloBarostat)]
+    if any(abs(support.getParticleParameters(i)[1][0])>1e-12 for i in range(support.getNumParticles())) or len(bars)!=1:raise ReviewRequired('Continuation requires unrestrained NPT source')
+    if abs(self.integrator.getStepSize().value_in_unit(unit.femtosecond)-2)>1e-9 or abs(self.integrator.getTemperature().value_in_unit(unit.kelvin)-310)>1e-9 or abs(bars[0].getDefaultPressure().value_in_unit(unit.bar)-1)>1e-9:raise ReviewRequired('Continuation ensemble settings differ')
+    original_state=XmlSerializer.deserialize((parent/'final-state.xml').read_text());self.reference=original_state.getPositions(asNumpy=True).value_in_unit(unit.nanometer);self.origin_time=cursor['context_time_ps'];self.origin_step=cursor['context_step'];self.stage_index=0;self.stage_step=0
+    atomic(self.job/'continuation-provenance.json',{'parent_job':continuation,'parent_checkpoint_sha256':cursor['sha256'],'parent_final_state_sha256':fingerprint(parent/'final-state.xml'),'starting_context_step':self.origin_step,'starting_context_time_ps':self.origin_time,'velocities_reinitialized':False,'thermostat_or_barostat_RNG_reseeded':False,'reference_note':'New diagnostic reference at parent final state; original preparation reference retained in parent.'})
   else:
    self.system=original_system;cp=source/'checkpoint.chk';self.reference=original_state.getPositions(asNumpy=True).value_in_unit(unit.nanometer);self.origin_time=original_state.getTime().value_in_unit(unit.picosecond);self.origin_step=original_state.getStepCount()
   self.sim=Simulation(self.prm.topology,self.system,self.integrator,Platform.getPlatformByName('CPU'),{'Threads':'4'});self.sim.loadCheckpoint(str(cp))
   loaded=self.sim.context.getState(getPositions=True,getVelocities=True)
-  if resume and (loaded.getStepCount()!=cursor['context_step'] or abs(loaded.getTime().value_in_unit(unit.picosecond)-cursor['context_time_ps'])>1e-8):raise ReviewRequired('Resume checkpoint clock differs from saved cursor')
+  if (resume or continuation) and (loaded.getStepCount()!=cursor['context_step'] or abs(loaded.getTime().value_in_unit(unit.picosecond)-cursor['context_time_ps'])>1e-8):raise ReviewRequired('Resume checkpoint clock differs from saved cursor')
   if not resume:
    if not np.allclose(loaded.getPositions(asNumpy=True).value_in_unit(unit.nanometer),original_state.getPositions(asNumpy=True).value_in_unit(unit.nanometer),atol=1e-10,rtol=0) or not np.allclose(loaded.getVelocities(asNumpy=True).value_in_unit(unit.nanometer/unit.picosecond),original_state.getVelocities(asNumpy=True).value_in_unit(unit.nanometer/unit.picosecond),atol=1e-10,rtol=0):raise ReviewRequired('Checkpoint and reviewed state disagree')
   np.save(self.job/'reference.npy',self.reference)
@@ -140,6 +150,12 @@ class Engine:
   distances=cKDTree(np.mod(xyz[self.pe],lengths),boxsize=lengths).query(np.mod(xyz[self.ph],lengths))[0]
   if constraint>1e-4 or rms>20 or distances.min()<.15:raise ReviewRequired('Constraint, backbone displacement or protein/PE hard-overlap safety screen failed')
   row={'stage':stage['name'],'ensemble':stage['ensemble'],'stage_index':self.stage_index,'stage_step':self.stage_step,'context_step':self.sim.currentStep,'context_time_ps':s.getTime().value_in_unit(unit.picosecond),'additional_time_ps':s.getTime().value_in_unit(unit.picosecond)-self.origin_time,'target_K':spec['target_K'],'temperature_K':temp,'potential_kJ_mol':e,'kinetic_kJ_mol':ke,'volume_nm3':volume,'density_g_cm3':self.mass*1.66053906660e-3/volume,'restraint_scale':spec['restraint_scale'],'CA_RMSD_from_pipeline_start_A':rms,'max_relative_constraint_error':constraint,'minimum_observed_protein_PE_nm':float(distances.min()),'contact_native_residue_count':len({self.atoms[int(self.ph[i])].residue.index for i in np.flatnonzero(distances<.45)})}
+  if self.cfg.get('pressure_interval_steps'):
+   row['pressure_bar']=None
+   if not self.rows or self.sim.currentStep%self.cfg['pressure_interval_steps']==0:
+    bar=next(f for f in self.system.getForces() if isinstance(f,MonteCarloBarostat));pressure=bar.computeCurrentPressure(self.sim.context).value_in_unit(unit.bar)
+    if not math.isfinite(pressure):raise ReviewRequired('Nonfinite instantaneous pressure')
+    row['pressure_bar']=pressure
   self.rows.append(row)
   with (self.job/'observations.jsonl').open('a') as f:f.write(json.dumps(row)+'\n')
   self.state('running',stage=stage['name'],stage_index=self.stage_index,stage_step=self.stage_step,last=row,maximum_planned_steps=self.cfg['maximum_planned_steps'],message='Executed MD; equilibrium and adsorption are not established')
@@ -181,6 +197,9 @@ class Engine:
   if geo['nonexcluded_heavy_pairs_under_0_12nm'] or geo['nonexcluded_allatom_pairs_under_0_08nm']:raise ReviewRequired('Final nonexception hard-overlap screen failed')
   status='completed' if screen is None or screen['screen_passed'] else 'needs_review'
   result={'status':status,'model_id':self.cfg['model_id'],'atoms':n,'final':self.rows[-1],'observations':len(self.rows),'density_screen':screen,'geometry_after':geo,'additional_time_ps':self.rows[-1]['additional_time_ps'],'context_time_ps':final.getTime().value_in_unit(unit.picosecond),'context_step':self.sim.currentStep,'equilibrium_established':False,'production_ready':False,'preparation_screen_passed':status=='completed','elapsed_wall_seconds':time.monotonic()-self.started,'peak_process_RSS_GiB':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024**2,'scope':'Finite PE exploratory preparation. No 310 K/interface equilibrium, binding affinity or material ranking is inferred.'}
+  pressure=[r['pressure_bar'] for r in self.rows if r.get('pressure_bar') is not None]
+  if pressure:
+   result['pressure_diagnostics']={'samples':len(pressure),'mean_bar':float(np.mean(pressure)),'std_bar':float(np.std(pressure)),'minimum_bar':min(pressure),'maximum_bar':max(pressure),'method':'OpenMM MonteCarloBarostat.computeCurrentPressure molecular virial, sparse instantaneous samples','equilibrium_established':False,'interpretation':'Correlated, sparse short-preparation samples; no converged mean pressure or uncertainty inferred.'}
   atomic(self.job/'result.json',result)
   with (self.job/'observables.csv').open('w',newline='') as f:w=csv.DictWriter(f,fieldnames=list(self.rows[0]));w.writeheader();w.writerows(self.rows)
   return result

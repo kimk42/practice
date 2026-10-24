@@ -85,3 +85,31 @@ class EngineTransitionTests(unittest.TestCase):
    e.change_context(stage);now=e.sim.context.getState(getPositions=True,getVelocities=True)
    self.assertTrue(np.allclose(old.getPositions(asNumpy=True)._value,now.getPositions(asNumpy=True)._value));self.assertTrue(np.allclose(old.getVelocities(asNumpy=True)._value,now.getVelocities(asNumpy=True)._value))
    self.assertEqual(e.sim.currentStep,7100);self.assertAlmostEqual(now.getTime().value_in_unit(unit.picosecond),7.1);self.assertTrue(any(isinstance(f,MonteCarloBarostat) for f in e.system.getForces()));self.assertAlmostEqual(e.integrator.getStepSize().value_in_unit(unit.femtosecond),2)
+
+class ContinuationTests(unittest.TestCase):
+ def test_bounded_continuation_has_no_heating_or_restraints(self):
+  c=make_config({'model_id':'pe-core','protocol_id':'continue-npt','source_job_id':'a'*32})
+  self.assertEqual(c['maximum_planned_time_ps'],15)
+  self.assertEqual(c['pressure_interval_steps'],250)
+  self.assertTrue(all(s['ensemble']=='NPT' and s['schedule'][0]['restraint_scale']==0 for s in c['plan']))
+  for field,value in [('source_job_id','../other'),('blocks',4),('blocks',True)]:
+   req={'model_id':'pe-core','protocol_id':'continue-npt','source_job_id':'a'*32};req[field]=value
+   with self.assertRaises(ValueError):make_config(req)
+ def test_stationary_box_is_not_a_successful_pressure_sampling_screen(self):
+  from workbench.engine import density_screen
+  spec=make_config({'model_id':'pe-core','protocol_id':'continue-npt','source_job_id':'a'*32})['density_screen'];rows=[]
+  for block in range(3):
+   for i in range(20):rows.append({'stage':str(block),'ensemble':'NPT','context_time_ps':block*5+i*.25,'density_g_cm3':.9,'volume_nm3':1000.,'temperature_K':310.,'potential_kJ_mol':-10000.})
+  self.assertFalse(density_screen(rows,spec)['screen_passed'])
+  for i,r in enumerate(rows[-20:]):r['volume_nm3']=1000.+i*.01
+  self.assertTrue(density_screen(rows,spec)['screen_passed'])
+ def test_pressure_diagnostic_units_and_state_restoration(self):
+  import numpy as np
+  from openmm import System,NonbondedForce,MonteCarloBarostat,VerletIntegrator,Context,Platform,unit
+  system=System();nb=NonbondedForce();nb.setNonbondedMethod(nb.CutoffPeriodic);nb.setCutoffDistance(1)
+  for _ in range(2):system.addParticle(12);nb.addParticle(0,.3,0)
+  system.addForce(nb);bar=MonteCarloBarostat(1,310,25);system.addForce(bar);system.setDefaultPeriodicBoxVectors((3,0,0),(0,3,0),(0,0,3));integrator=VerletIntegrator(.002);context=Context(system,integrator,Platform.getPlatformByName('Reference'));context.setPositions([[.1,.1,.1],[.5,.1,.1]]);context.setVelocities([[.1,.1,.1],[.1,.1,.1]]);before=context.getState(getPositions=True,getVelocities=True,getEnergy=True);pressure=bar.computeCurrentPressure(context).value_in_unit(unit.bar);after=context.getState(getPositions=True,getVelocities=True)
+  # Two independent molecules, zero interaction: instantaneous P=2 KE/(3 V).
+  expected=2*before.getKineticEnergy().value_in_unit(unit.kilojoule_per_mole)/(3*27)*16.60539067173847
+  self.assertAlmostEqual(pressure,expected,places=5)
+  np.testing.assert_array_equal(before.getPositions(asNumpy=True)._value,after.getPositions(asNumpy=True)._value);np.testing.assert_array_equal(before.getVelocities(asNumpy=True)._value,after.getVelocities(asNumpy=True)._value)

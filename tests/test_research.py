@@ -45,3 +45,11 @@ class TrajectoryMetricTests(unittest.TestCase):
   from md.research_metrics import diagnostics
   xyz=np.array([[1.,1,1],[2,1,1],[3,1,1],[1,1,1.3],[2,1,1.3],[3,1,1.3]])
   d=diagnostics(xyz,[10,10,10],xyz,[10,10,10],[3,4,5],[3,4,5],[0,1,2],[],['A:1','A:2','A:3']);self.assertFalse(d['patch_plane_fit_usable']);self.assertIsNone(d['protein_axis_angle_to_fitted_patch_plane_deg'])
+
+class SolventRegionTests(unittest.TestCase):
+ def test_domain_volume_and_periodic_translation(self):
+  from md.solvent_audit import region_statistics
+  xyz=np.array([[5.,5,5],[1,1,1],[9,9,9]]);a=region_statistics(xyz,[10,10,10],[0],[1,2],18.016)
+  expected=1000-4*np.pi*.8**3/3
+  self.assertLess(abs(a['solvent_region_volume_nm3']-expected),6*a['volume_MC_standard_error_nm3']);self.assertEqual(a['water_O_in_region'],2)
+  xyz[1,0]+=10;b=region_statistics(xyz,[10,10,10],[0],[1,2],18.016);self.assertEqual(a,b)
