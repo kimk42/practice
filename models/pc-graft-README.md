@@ -1,0 +1,44 @@
+# Provisional BPA-PC and post-UV graft
+
+The user reports **PC grade unknown** and accepts BPA-PC as the initial modeling assumption. `scripts/build_pc_graft.py` constructs a finite four-BPA-unit carbonate oligomer with phenolic OH ends, plus one candidate covalent graft to the DP10 7/2/1 copolymer. This is a local chemical model, not an equilibrated bulk PC film.
+
+The phenolic terminal chemistry, oligomer DP, selected BPA methyl C-H attachment site and one reacted BPAA out of one in DP10 are explicit construction choices. They are not measured end-group chemistry, surface density or UV conversion. There is no inference that all experimental BPAA groups react.
+
+The reaction candidate follows the source mechanism: reduce benzophenone C=O to C-OH, remove one H from a PC methyl group and form a new bond from that carbon to the former ketone carbon. Total elemental composition and neutral formal charge are conserved and the graft is one connected molecule. No arbitrary attachment force or unparameterized bond is added to a running GROMACS system.
+
+```bash
+source scripts/activate.sh
+python scripts/build_pc_graft.py --pc-dp 4
+```
+
+Coordinates, connectivity and explicit assumptions are in `pc-graft/`. Force-field assignment must be done **after** the reaction, since changing a ketone and methyl to an alcohol and bonded methylene changes charges and bonded terms. Do not reuse the unreacted chain charges for this graft. A bulk slab requires packing and equilibration of longer PC chains and separate validation of density, roughness and end-group effects.
+
+## Force-field route
+
+GAFF2 / AM1-BCC via ACPYPE2026.10.15 (bundled AmberTools) is the executable **exploratory** route selected here. It is distinct from the previously considered CHARMM/CGenFF route. Future protein parameters and water/ion parameters must use compatible Amber conventions; do not combine GAFF topologies with CHARMM defaults. Automated analog terms and charge distributions require review before quantitative adsorption claims. Tool/topology generation or short stable trajectories alone do not validate zwitterionic-polymer hydration or protein-surface energetics.
+
+## Parameterization execution
+
+```bash
+bash scripts/parameterize_candidate.sh models/copolymer/cbaa1-bma-bpaa-dp10-seed2026.mol COP10 runs/parameterization-optimized/cop10
+bash scripts/parameterize_candidate.sh models/pc-graft/bpa-pc-dp4-phenolic-ends.mol PC4 runs/parameterization-optimized/pc4
+bash scripts/parameterize_candidate.sh models/pc-graft/cop10-graft-bpa-pc4-one-site.mol GRAFT runs/parameterization-optimized/graft
+```
+
+Each calculation has a30-minute SQM stage limit and must run in a new output directory; the script preserves existing outputs. It explicitly initializes the bundled AmberTools PATH so ACPYPE does not overwrite the optimized OpenBLAS library path, verifies dynamic-library resolution, and limits each job to one BLAS/OMP thread. Prior reference-BLAS attempts are retained in runs/parameterization and runs/parameterization-openblas as interrupted diagnostics, not completed charge assignments.
+
+The AM1-BCC calculations are not equivalent to the earlier generic MMFF geometry preparation. Retain the SQM convergence output, ACPYPE logs and generated frcmod files. Check parameter-review warnings, total charges and atom mapping before topology assembly or GROMACS startup. No missing/zero force constants may be filled by hand just to make the simulation run.
+
+`python scripts/pack_pc_patch.py` prepares a small finite PC patch around the trial graft, with a provisional0.6g/cm³ **low-density starting** PC mass/region-volume packing target. The initial1.2g/cm³ packing attempt did not converge and is preserved under runs/pc-packing-dense-attempt. The lower-density initializer is not a replacement for subsequent density/film equilibration. The measured experimental density and film thickness remain unknown; this is an initialization choice, not evidence of equilibration. Packing must report success before the patch is used. Its output is not a production trajectory.
+
+## Gated follow-up validation
+
+```bash
+source scripts/activate.sh
+python scripts/surface_validation.py             # read-only inspection of prerequisites
+python scripts/surface_validation.py --watch --max-wait 1800
+```
+
+Use --run for a one-shot execution after prerequisites are ready. A lock prevents duplicate watcher jobs. The watcher waits for PC4/GRAFT topologies and a successfully packed patch, then audits atom counts, charge totals, atom-index connectivity against the molecular inputs, required frcmod files and review flags. It stops on unresolved parameter warnings or conflicting atom types. Only after those checks does it prepare an Amber-compatible TIP3P-water system, demand minimization toFmax<1000kJ/mol/nm and attempt a400-step0.2ps initialization test at300K. No warning override is passed to grompp. This is a prerequisite check, not a physical validation of polymer hydration, bulk-PC density, crosslink fraction or adsorption. The MD branch of the watcher is not considered verified until actual result files report its completion.
+
+Read `runs/surface-validation-status.json` and the source logs under `runs/parameterization-optimized/`. Long-running processes exist only in the current runtime; a snapshot does not preserve them. A failed or pending calculation is not a completed force-field assignment. Check outputs before restarting in a new directory; do not overwrite existing calculation evidence.

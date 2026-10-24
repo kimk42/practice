@@ -1,7 +1,7 @@
 {
   "substrate": {
     "material": "polycarbonate",
-    "grade_and_repeat_structure": null
+    "grade_and_repeat_structure": "experimentally unknown; BPA-PC accepted as provisional initial model"
   },
   "coating": {
     "components": [
@@ -39,8 +39,8 @@
       "scope": "N-terminal domains 1\u20135 only; full protein unresolved"
     }
   ],
-  "status": "connected pre-UV DP10 and DP20 terpolymer geometry prototypes validated; not ready for production MD",
-  "force_field": "CHARMM-compatible route under investigation; no validated coating/PC parameters yet",
+  "status": "PC4 and one-site graft chemical geometry validated; GAFF2/AM1-BCC computation and patch packing in progress; no surface MD yet",
+  "force_field": "Exploratory GAFF2 + AM1-BCC using ACPYPE2026.10.15/bundled AmberTools; not mixed with CHARMM. Quantum assignment and physical validation pending.",
   "literature_reference_conditions": {
     "transfer_to_target": "Reference only: neither paper validates the user PC-supported 7:2:1 terpolymer. Do not auto-apply molecular weights or crosslink conversion.",
     "lin2020": {
@@ -156,5 +156,19 @@
     "production_force_field_present": false,
     "additional_validated_dp": 10,
     "outputs": "models/copolymer/"
+  },
+  "surface_prototype": {
+    "PC_oligomer_DP": 4,
+    "PC_end_groups": "phenolic OH",
+    "graft": "one DP10 7:2:1 chain bonded at one PC methyl site through reduced BPAA carbonyl",
+    "experimental_conversion": "unknown",
+    "test_graft_conversion": "1/1 BPAA solely for a local covalent-graft trial, not a measured conversion",
+    "bulk_PC_surface_validated": false,
+    "geometry_folder": "models/pc-graft",
+    "packing_target_density_g_cm3": 0.6,
+    "packing_status": "low-density initializer running; initial1.2g/cm3 rigid-oligomer packing did not converge and was retained as diagnostics",
+    "parameterization_folder": "runs/parameterization-optimized",
+    "parameterization_status": "AM1-BCC calculations in progress",
+    "followup_worker": "scripts/surface_validation.py --watch --max-wait 1800; prerequisites pending; MD branch not yet verified"
   }
 }

@@ -1,0 +1,30 @@
+{
+  "substrate_grade": "experimentally unknown; BPA-PC is a user-accepted provisional assumption",
+  "pc_dp": 4,
+  "pc_formula": "C63H58O11",
+  "pc_end_groups": "phenolic OH; finite-oligomer prototype",
+  "copolymer_counts": {
+    "CBAA1": 7,
+    "BMA": 2,
+    "BPAA": 1
+  },
+  "graft_formula": "C165H227N15O38",
+  "selected_attachment": "one BPA methyl C-H site; ketone C becomes alcohol-bearing C with new C-C bond",
+  "mapped_reaction_atoms_1based": {
+    "BPAA_C": 105,
+    "BPAA_O": 106,
+    "PC_C": 151
+  },
+  "crosslink_assumption": "one BPAA reacted in DP10 (1/1) solely to demonstrate one possible graft; not measured conversion",
+  "not_included": [
+    "bulk PC surface/film",
+    "interchain crosslinks",
+    "production force-field parameters",
+    "equilibration"
+  ],
+  "status": "chemical-graph/geometry candidates, not an equilibrated surface",
+  "smiles": {
+    "pc": "CC(C)(c1ccc(O)cc1)c1ccc(OC(=O)Oc2ccc(C(C)(C)c3ccc(OC(=O)Oc4ccc(C(C)(C)c5ccc(OC(=O)Oc6ccc(C(C)(C)c7ccc(O)cc7)cc6)cc5)cc4)cc3)cc2)cc1",
+    "graft": "CCCCOC(=O)[C@@](C)(C[C@H](C[C@H](C[C@@H](C[C@@H](C)C(=O)NCCC[N+](C)(C)CC(=O)[O-])C(=O)NCCC[N+](C)(C)CC(=O)[O-])C(=O)NCCC[N+](C)(C)CC(=O)[O-])C(=O)NCCC[N+](C)(C)CC(=O)[O-])C[C@@H](C[C@@](C)(C[C@H](C[C@@H](CCC(=O)NCCC[N+](C)(C)CC(=O)[O-])C(=O)NCCC[N+](C)(C)CC(=O)[O-])C(=O)Nc1ccc(C(O)(CC(C)(c2ccc(O)cc2)c2ccc(OC(=O)Oc3ccc(C(C)(C)c4ccc(OC(=O)Oc5ccc(C(C)(C)c6ccc(OC(=O)Oc7ccc(C(C)(C)c8ccc(O)cc8)cc7)cc6)cc5)cc4)cc3)cc2)c2ccccc2)cc1)C(=O)OCCCC)C(=O)NCCC[N+](C)(C)CC(=O)[O-]"
+  }
+}

@@ -20,7 +20,7 @@ APT::Get::List-Cleanup "false";
 APT
 APT_CONFIG="$MD_TOOLS_DIR/apt/apt.conf" /usr/bin/apt-get update
 # NoLocking is used only for downloading into our private cache; no dpkg installation.
-APT_CONFIG="$MD_TOOLS_DIR/apt/apt.conf" /usr/bin/apt-get -o Debug::NoLocking=true --download-only --no-install-recommends -y install gromacs=2025.2-1
+APT_CONFIG="$MD_TOOLS_DIR/apt/apt.conf" /usr/bin/apt-get -o Debug::NoLocking=true --download-only --no-install-recommends -y install gromacs=2025.2-1 packmol=1:21.0.2-2 libopenblas0-pthread=0.3.29+ds-3
 for package in "$MD_TOOLS_DIR"/apt/archives/*.deb; do
     dpkg-deb -x "$package" "$MD_TOOLS_DIR/root"
 done
@@ -34,7 +34,7 @@ exec "$tools_dir/root/usr/bin/gmx" "$@"
 GMX
 chmod +x "$MD_TOOLS_DIR/bin/gmx"
 python3 -m venv "$MD_TOOLS_DIR/chem-venv"
-"$MD_TOOLS_DIR/chem-venv/bin/python" -m pip install --disable-pip-version-check -r "$project_dir/config/requirements-chem.lock"
+"$MD_TOOLS_DIR/chem-venv/bin/python" -m pip install --disable-pip-version-check -r "$project_dir/config/requirements-chem.lock" -r "$project_dir/config/requirements-parameterization.lock"
 "$MD_TOOLS_DIR/bin/gmx" --version
 "$MD_TOOLS_DIR/chem-venv/bin/python" -c 'from rdkit import rdBase; print("RDKit", rdBase.rdkitVersion)'
 bash "$project_dir/scripts/smoke.sh"

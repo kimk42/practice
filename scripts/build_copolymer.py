@@ -177,6 +177,11 @@ def main():
     lines[1] = '     RDKit          3D'
     sdf.write_text('\n'.join(lines) + '\n')
     Chem.MolToPDBFile(mol, str(args.output / f'{stem}.pdb'))
+    mol_path = args.output / f'{stem}.mol'
+    Chem.MolToMolFile(mol, str(mol_path))
+    mdl_lines = mol_path.read_text().splitlines()
+    mdl_lines[1] = '     RDKit          3D'
+    mol_path.write_text('\n'.join(mdl_lines) + '\n')
     reloaded = Chem.SDMolSupplier(str(sdf), removeHs=False)[0]
     if reloaded is None or Chem.MolToSmiles(reloaded) != Chem.MolToSmiles(mol):
         raise ValueError('SDF round-trip changed molecular graph/stereochemistry')

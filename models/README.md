@@ -25,3 +25,7 @@ The builder independently checks elemental balance, neutral total formal charge,
 **This is a pre-UV isolated chain, not a finished PC-supported coating.** No partial charges, production atom types/torsions, surface bonds or crosslink fraction are assigned. The two BPAA sites are potential reaction sites; they are not two automatically reacted crosslinks. Next parameterize the unreacted and reacted components consistently, select an explicit PC repeat/substrate model, and construct candidate post-UV networks with documented attachment/crosslink assumptions. Larger chains, film loading and crosslink fractions require separate resource and sampling choices.
 
 Earlier CBAA homotrimer and DP100 sequence-only files remain historical comparators in `research/chemistry/`; the actual three-component 3D prototype is here.
+
+
+## Continuing to a substrate
+The user accepted BPA-PC as an initial assumption while reporting the experimental grade unknown. See ../models/pc-graft-README.md for PC4/graft graph generation, exploratory GAFF2/AM1-BCC assignment and the gated follow-up workflow. These steps do not turn the pre-UV chain into a validated experimental coating automatically.

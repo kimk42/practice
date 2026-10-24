@@ -36,6 +36,10 @@ The water smoke check performs solvation, PME preprocessing, minimization, 100 s
 
 The user approved directly constructing CBAA-1/BMA/BPAA at a 7:2:1 repeat-count ratio. `scripts/build_copolymer.py` builds an actual connected pre-UV chain; the default prototype uses DP20 (14/4/2), hydrogen end groups and seeded random backbone stereochemistry. These are explicit computational assumptions. See models/README.md for outputs and validation. The chemistry uses BPAA, not Nile blue. Identical formulation in a paper is not a prerequisite for building this model.
 
+## PC/graft preparation and running parameterization
+
+The user reports PC grade unknown and accepts BPA-PC as the initial assumption. `scripts/build_pc_graft.py` builds finite OH-ended PC4 and one DP10-to-PC4 covalent-graft geometry; this is not a bulk slab or measured UV conversion. See models/pc-graft-README.md. Exploratory force-field assignment now uses GAFF2/AM1-BCC through ACPYPE2026.10.15 with optimized OpenBLAS, replacing the earlier tentative CHARMM route; future proteins must use compatible Amber conventions. Quantum calculations, patch packing and a gated follow-up worker run in the current instance. Inspect runs/surface-validation-status.json and parameterization logs before claiming topology/MD completion. No surface MD result has yet been verified.
+
 ## Project map and current limits
 
 - `models/`: actual three-component graph/3D prototypes and assumptions.
