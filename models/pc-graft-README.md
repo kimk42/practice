@@ -25,7 +25,7 @@ bash scripts/parameterize_candidate.sh models/pc-graft/bpa-pc-dp4-phenolic-ends.
 bash scripts/parameterize_candidate.sh models/pc-graft/cop10-graft-bpa-pc4-one-site.mol GRAFT runs/parameterization-optimized/graft
 ```
 
-Each calculation has a30-minute SQM stage limit and must run in a new output directory; the script preserves existing outputs. It explicitly initializes the bundled AmberTools PATH so ACPYPE does not overwrite the optimized OpenBLAS library path, verifies dynamic-library resolution, and limits each job to one BLAS/OMP thread. Prior reference-BLAS attempts are retained in runs/parameterization and runs/parameterization-openblas as interrupted diagnostics, not completed charge assignments.
+New calculations now have a3-hour SQM stage limit (the original30-minute attempts timed out and were preserved) and must run in a new output directory; the script preserves existing outputs. It explicitly initializes the bundled AmberTools PATH so ACPYPE does not overwrite the optimized OpenBLAS library path, verifies dynamic-library resolution, and limits each job to one BLAS/OMP thread. Prior reference-BLAS attempts are retained in runs/parameterization and runs/parameterization-openblas as interrupted diagnostics, not completed charge assignments.
 
 The AM1-BCC calculations are not equivalent to the earlier generic MMFF geometry preparation. Retain the SQM convergence output, ACPYPE logs and generated frcmod files. Check parameter-review warnings, total charges and atom mapping before topology assembly or GROMACS startup. No missing/zero force constants may be filled by hand just to make the simulation run.
 
@@ -54,4 +54,8 @@ source scripts/activate.sh
 python scripts/pack_pc_patch.py --resume runs/pc-packing-shifted-diagnostic/recovered.restart --timeout 1800
 ```
 
-New runs write `runs/pc-packing/packing.restart` at coordinate checkpoints. `--timeout` controls only one Packmol subprocess, not the cloud lifetime or MD duration. The initial600s cap was a script choice; default is now1800s. Do not rerun into an existing active packing directory. The actual full-patch success and later MD remain pending until their result files say otherwise.
+New runs write `runs/pc-packing/packing.restart` at coordinate checkpoints. `--timeout` controls only one Packmol subprocess, not the cloud lifetime or MD duration. The initial600s cap was a script choice; default is now10800s (3hours). Do not rerun into an existing active packing directory. The actual full-patch success and later MD remain pending until their result files say otherwise.
+
+
+## Three-stage continuation requested by the user
+`python scripts/continue_three_stages.py` supervises the three stages: complete/audit the COP10,PC4,GRAFT force-field assignments; accept the corrected packing and solvate; then run force-converged minimization and the short initialization MD. Progress is in `runs/three-stage-status.json`; active parameterization directories are atomically recorded in `runs/workflow-active-parameters.json`. The script performs one fresh-directory retry only for a timeout, with the same scientific method/thresholds and a3-hour SQM limit; other calculation/parameter errors stop the workflow. A packing timeout can resume once from its saved checkpoint in a fresh run directory with a3-hour limit. The supervisor itself has a4-hour wait limit. These are resource guards, not simulation durations or evidence of completion. Do not start duplicate supervisors or overwrite active directories.

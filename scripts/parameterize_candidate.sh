@@ -27,4 +27,4 @@ fi
 export OPENBLAS_NUM_THREADS=1
 export OMP_NUM_THREADS=1
 cd "$output"
-acpype -i "$input" -b "$name" -a gaff2 -c bcc -n 0 -m 1 -s 1800 > "$name.log" 2>&1
+acpype -i "$input" -b "$name" -a gaff2 -c bcc -n 0 -m 1 -s "${MD_SQM_MAX_SECONDS:-10800}" > "$name.log" 2>&1

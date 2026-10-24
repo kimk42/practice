@@ -16,10 +16,10 @@ from rdkit.Chem import Descriptors
 ROOT=Path(__file__).resolve().parents[1]
 
 def main():
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--density',type=float,default=0.6);parser.add_argument('--resume',type=Path);parser.add_argument('--timeout',type=int,default=1800);args=parser.parse_args()
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--density',type=float,default=0.6);parser.add_argument('--resume',type=Path);parser.add_argument('--timeout',type=int,default=10800);parser.add_argument('--run-dir',type=Path,default=ROOT/'runs/pc-packing');args=parser.parse_args()
     if not 0.1 <= args.density <= 1.5: parser.error('Choose an explicitly provisional packing density between0.1 and1.5g/cm3')
     out=ROOT/'models/pc-patch';out.mkdir(parents=True,exist_ok=True)
-    run=ROOT/'runs/pc-packing';run.mkdir(parents=True,exist_ok=True)
+    run=args.run_dir.resolve();run.mkdir(parents=True,exist_ok=True)
     pc=Chem.SDMolSupplier(str(ROOT/'models/pc-graft/bpa-pc-dp4-phenolic-ends.sdf'),removeHs=False)[0]
     graft=Chem.SDMolSupplier(str(ROOT/'models/pc-graft/cop10-graft-bpa-pc4-one-site.sdf'),removeHs=False)[0]
     cop_heavy=Chem.RemoveHs(Chem.SDMolSupplier(str(ROOT/'models/copolymer/cbaa1-bma-bpaa-dp10-seed2026.sdf'),removeHs=False)[0]).GetNumAtoms()

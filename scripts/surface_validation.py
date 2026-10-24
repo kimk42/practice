@@ -19,6 +19,7 @@ ROOT=Path(__file__).resolve().parents[1]
 BASE=ROOT/'runs/parameterization-optimized'
 STATUS=ROOT/'runs/surface-validation-status.json'
 INPUTS={
+ 'COP10': ('cop10',ROOT/'models/copolymer/cbaa1-bma-bpaa-dp10-seed2026.mol',313),
  'PC4': ('pc4', ROOT/'models/pc-graft/bpa-pc-dp4-phenolic-ends.mol',132),
  'GRAFT': ('graft',ROOT/'models/pc-graft/cop10-graft-bpa-pc4-one-site.mol',445),
 }
@@ -31,10 +32,14 @@ def section_rows(text, section):
         elif active and value and not value.startswith('#'):yield value.split()
 
 def parameter_gate(name):
-    sub,input_path,natoms=INPUTS[name];folder=BASE/sub/(name+'.acpype')
+    sub,input_path,natoms=INPUTS[name]
+    active_file=ROOT/'runs/workflow-active-parameters.json'
+    active=json.loads(active_file.read_text()) if active_file.exists() else {}
+    base=ROOT/active[name] if name in active else BASE/sub
+    folder=base/(name+'.acpype')
     itp=folder/(name+'_GMX.itp');gro=folder/(name+'_GMX.gro')
     if not itp.exists() or not gro.exists():
-        log=BASE/sub/(name+'.log')
+        log=base/(name+'.log')
         if log.exists() and re.search(r'^.*(?:ERROR:|ACPYPE FAILED)',log.read_text(),re.M):
             raise ValueError(name+': parameterization reported an error; inspect '+str(log.relative_to(ROOT)))
         return None
