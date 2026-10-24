@@ -19,7 +19,7 @@
 - [실행 이력과 이전 명령](docs/EXPERIMENT_LOG.md)
 - [재현·대용량 데이터 복원](docs/REPRODUCING.md)
 
-HTML은 그림을 포함한 독립 파일입니다. GitHub에서 소스가 보이면 **원본 다운로드 후 브라우저로 열면** 됩니다. 보고서와 작은 입력은 Git으로 관리하고, 전체 좌표·궤적·재시작 파일은 별도 결과 ZIP으로 보존합니다. `artifacts/collected-results/FILES.json`은 그 원본 ZIP의 체크섬 색인이며 현재 Git 코드의 체크섬 목록이 아닙니다. 코드 정리 전 실제 계산에 쓴 스크립트도 원본 ZIP에 보존되어 있습니다.
+HTML은 그림을 포함한 독립 파일입니다. GitHub에서 소스가 보이면 **원본 다운로드 후 브라우저로 열면** 됩니다. 보고서와 작은 입력은 일반 Git으로, 전체 좌표·궤적·재시작 파일이 든 `datasets/results-complete.zip`은 **이 브랜치의 Git LFS**로 관리합니다. `artifacts/collected-results/FILES.json`은 그 원본 ZIP의 체크섬 색인이며 현재 Git 코드의 체크섬 목록이 아닙니다. 코드 정리 전 실제 계산에 쓴 스크립트도 원본 ZIP에 보존되어 있습니다.
 
 ## 화면 실행
 
@@ -52,10 +52,12 @@ CI는 작은 단위·엔진 검사만 실행합니다. 큰 MD, AmberTools 설치
 
 ## 대용량 결과 보존
 
-`runs/`와 준비된 큰 `data/` 모델, checkpoint·DCD·전체 결과 ZIP은 Git에 넣지 않습니다. 원본 자료는 채팅에서 제공한 전체 결과 ZIP을 다운로드해 복원합니다.
+`runs/`와 준비된 큰 `data/` 모델, 풀린 checkpoint·DCD는 일반 Git에 넣지 않고, 전체 원본 ZIP만 Git LFS로 보관합니다. 전체 원본 ZIP은 이 브랜치의 Git LFS에 포함했습니다. 먼저 LFS 데이터를 내려받은 뒤 작업용 디렉터리로 복원합니다. 채팅의 ZIP 링크도 같은 원본입니다.
 
 ```bash
-python scripts/restore_raw_results.py /path/to/results-complete.zip
+git lfs install --local
+git lfs pull
+python scripts/restore_raw_results.py
 ```
 
 복원기는 ZIP 내부 `FILES.json`의 SHA-256과 크기를 확인하며 **`data/`, `runs/`만** 복원합니다. README나 코드·설정을 덮어쓰지 않고, 내용이 다른 기존 데이터도 덮어쓰지 않습니다. 과거 환경의 절대 경로는 기록으로 유지하고, 코드에서는 현재 체크아웃의 대응 데이터 경로를 먼저 찾습니다.
@@ -70,7 +72,8 @@ python scripts/restore_raw_results.py /path/to/results-complete.zip
 | `data/3ghg-upload/` | 제공받은 원본 CIF·FASTA와 구조 점검 |
 | `data/pe-gaff2/model02/` | 보정 기록을 보존한 작은 PE 파라미터 번들 |
 | `artifacts/` | Git에 보관하는 작은 그래프·CSV·JSON·HTML |
-| `runs/` | 별도 ZIP에서 복원하는 계산 원본; Git 제외 |
+| `datasets/` | Git LFS로 관리하는 검증된 전체 원본 ZIP |
+| `runs/` | 원본 ZIP에서 복원한 작업용 계산 데이터; Git 제외 |
 | `docs/` | 실행 이력, 재현 방법, 결과 단계 설명 |
 | `scripts/` | 검증된 원본 복원과 Git 용량 검사 |
 | `environment/` | AmberTools Linux 패키지 고정 목록 |

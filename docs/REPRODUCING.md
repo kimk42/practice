@@ -6,11 +6,13 @@
 
 ## 복원
 
-전체 `results-complete.zip`을 별도로 다운로드합니다. 큰 모델 파일은 GitHub의 일반 Git 파일로 넣지 않습니다.
+전체 원본은 이 브랜치의 `datasets/results-complete.zip`에 Git LFS로 포함되어 있습니다. 일반 Git에는 작은 포인터가, LFS에는 실제 ZIP이 저장됩니다.
 
 ```bash
-python scripts/restore_raw_results.py /path/to/results-complete.zip --verify-only
-python scripts/restore_raw_results.py /path/to/results-complete.zip
+git lfs install --local
+git lfs pull
+python scripts/restore_raw_results.py --verify-only
+python scripts/restore_raw_results.py
 ```
 
 기본 복원 위치는 이 프로젝트 루트입니다. `--destination`으로 별도 디렉터리를 선택할 수 있습니다. 데이터 경로와 크기·SHA-256을 검사하며, 소스 코드·Git 메타데이터·README는 복원 대상으로 삼지 않습니다. 이미 있는 파일이 다르면 중단합니다. 중단 전에 복원한 파일은 각각 검증된 것이며 재실행은 같은 파일을 확인하고 건너뜁니다.

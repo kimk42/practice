@@ -7,3 +7,5 @@ artifacts/** -text
 # Keep source-code reviews and language statistics focused on maintained code.
 artifacts/** linguist-generated=true
 data/** linguist-vendored=true
+# Complete verified calculation originals, stored as one immutable LFS object.
+datasets/results-complete.zip filter=lfs diff=lfs merge=lfs -text

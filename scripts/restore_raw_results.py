@@ -17,6 +17,9 @@ def digest(path):
 
 
 def restore(archive, destination, verify_only=False):
+    with Path(archive).open('rb') as source:
+        if source.read(128).startswith(b'version https://git-lfs.github.com/spec/v1'):
+            raise ValueError('The archive is a Git LFS pointer. Run git lfs install --local and git lfs pull first.')
     destination = Path(destination).resolve()
     counts = {'verified': 0, 'restored': 0, 'already_present': 0}
     with zipfile.ZipFile(archive) as z:
@@ -72,7 +75,7 @@ def restore(archive, destination, verify_only=False):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('archive', type=Path)
+    parser.add_argument('archive', type=Path, nargs='?', default=Path(__file__).resolve().parents[1] / 'datasets/results-complete.zip')
     parser.add_argument('--destination', type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument('--verify-only', action='store_true')
     args = parser.parse_args()

@@ -37,6 +37,12 @@ class RepositoryToolsTest(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'integrity'):restore(root/'bad.zip',root/'checkout')
             self.assertFalse((root/'checkout/data/model.bin').exists())
 
+    def test_lfs_pointer_has_actionable_restore_error(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);pointer=root/'results-complete.zip'
+            pointer.write_bytes(b'version https://git-lfs.github.com/spec/v1\noid sha256:'+b'0'*64+b'\nsize 100\n')
+            with self.assertRaisesRegex(ValueError,'git lfs pull'):restore(pointer,root/'checkout')
+
     def test_existing_different_data_is_preserved(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);dest=root/'checkout';(dest/'data').mkdir(parents=True);(dest/'data/model.bin').write_bytes(b'user data')

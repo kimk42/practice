@@ -10,7 +10,7 @@ __pycache__/
 !.env.example
 .DS_Store
 
-# Immutable raw calculations are restored from the separately supplied archive.
+# Unpacked raw calculations are restored from the branch's Git LFS archive.
 /runs/
 /data/*
 !/data/3ghg-upload/
