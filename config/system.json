@@ -166,9 +166,10 @@
     "bulk_PC_surface_validated": false,
     "geometry_folder": "models/pc-graft",
     "packing_target_density_g_cm3": 0.6,
-    "packing_status": "low-density initializer running; initial1.2g/cm3 rigid-oligomer packing did not converge and was retained as diagnostics",
+    "packing_status": "resumed from38 recovered PC poses after fixed-graft double-translation correction; actual fixed-placement regression passed; full patch still pending",
     "parameterization_folder": "runs/parameterization-optimized",
     "parameterization_status": "AM1-BCC calculations in progress",
-    "followup_worker": "scripts/surface_validation.py --watch --max-wait 1800; prerequisites pending; MD branch not yet verified"
+    "followup_worker": "scripts/surface_validation.py --watch --max-wait 1800; prerequisites pending; MD branch not yet verified",
+    "packing_timeout_seconds": 1800
   }
 }

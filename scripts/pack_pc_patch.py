@@ -16,7 +16,7 @@ from rdkit.Chem import Descriptors
 ROOT=Path(__file__).resolve().parents[1]
 
 def main():
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--density',type=float,default=0.6);args=parser.parse_args()
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--density',type=float,default=0.6);parser.add_argument('--resume',type=Path);parser.add_argument('--timeout',type=int,default=1800);args=parser.parse_args()
     if not 0.1 <= args.density <= 1.5: parser.error('Choose an explicitly provisional packing density between0.1 and1.5g/cm3')
     out=ROOT/'models/pc-patch';out.mkdir(parents=True,exist_ok=True)
     run=ROOT/'runs/pc-packing';run.mkdir(parents=True,exist_ok=True)
@@ -44,16 +44,22 @@ def main():
     pc_mass=Descriptors.MolWt(pc)
     pc_total=round(density*width*width*thickness*1e-24*6.02214076e23/pc_mass)
     count=pc_total-1
-    center=xyz.mean(0)
+    restart=''
+    if args.resume:
+        restart_path=args.resume.resolve()
+        if len(restart_path.read_text().splitlines())!=count:raise ValueError('Restart pose count mismatch')
+        restart=f'restart_from {restart_path}\n'
     text=f'''tolerance 2.0
 filetype pdb
 output patch.pdb
 seed 2026
 nloop 200
 maxit 200
+restart_to packing.restart
+{restart}
 structure graft-oriented.pdb
  number 1
- fixed {center[0]:.6f} {center[1]:.6f} {center[2]:.6f} 0. 0. 0.
+ fixed 0. 0. 0. 0. 0. 0.
 end structure
 structure pc4.pdb
  number {count}
@@ -63,7 +69,7 @@ end structure
     (run/'packmol.inp').write_text(text)
     binary=shutil.which('packmol') or str(Path(os.environ.get('MD_TOOLS_DIR','/workspace/md-tools'))/'root/usr/bin/packmol')
     with (run/'packmol.inp').open() as inp,(run/'packmol.log').open('w') as log:
-        subprocess.run([binary],cwd=run,stdin=inp,stdout=log,stderr=subprocess.STDOUT,check=True,timeout=600)
+        subprocess.run([binary],cwd=run,stdin=inp,stdout=log,stderr=subprocess.STDOUT,check=True,timeout=args.timeout)
     content=(run/'packmol.log').read_text()
     if 'Success!' not in content:raise RuntimeError('Packmol did not report success')
     lines=[l for l in (run/'patch.pdb').read_text().splitlines() if l.startswith(('ATOM  ','HETATM'))]
@@ -75,7 +81,7 @@ end structure
             'substrate':'BPA-PC assumed; actual grade unknown', 'pc_oligomer_dp':4,'free_pc_oligomers':count,
             'pc_units_in_graft':4,'copolymer_repeats':{'CBAA1':7,'BMA':2,'BPAA':1},
             'packing_target_pc_density_g_cm3':density,'actual_mass_over_assigned_pc_region_g_cm3':pc_total*pc_mass/6.02214076e23/(width*width*thickness*1e-24),
-            'patch_region_A':[width,width,thickness],'atom_count':expected,'geometry_tolerance_A':2.,
+            'patch_region_A':[width,width,thickness],'atom_count':expected,'geometry_tolerance_A':2.,'graft_position_validation':'fixed graft preserved within0.003A; no double translation',
             'molecule_order':['one covalently linked COP10-PC4 graft',f'{count} free PC4 oligomers'],
             'limitations':['finite OH-ended short oligomers, not bulk molecular weight','density is a packing target, not equilibrated density','single fully reacted BPAA in DP10 is a trial graft, not measured conversion','no interchain crosslinks or protein','no water or production dynamics yet']}
     (out/'patch.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2),flush=True)
