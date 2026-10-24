@@ -9,3 +9,6 @@ artifacts/** linguist-generated=true
 data/** linguist-vendored=true
 # Complete verified calculation originals, stored as one immutable LFS object.
 datasets/results-complete.zip filter=lfs diff=lfs merge=lfs -text
+
+# New workbench CSV exports use LF; original archived artifacts retain their bytes.
+artifacts/workbench/**/*.csv text eol=lf
