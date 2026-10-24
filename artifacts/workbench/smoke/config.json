@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "model_id": "pe-fragment",
+  "protocol_id": "nvt-check",
+  "threads": 4,
+  "observation_interval_steps": 25,
+  "trajectory_interval_steps": 25,
+  "checkpoint_interval_steps": 25,
+  "seed": 42,
+  "equilibrium_established": false,
+  "production_ready": false,
+  "plan": [
+    {
+      "name": "prepared-fragment-NVT",
+      "ensemble": "NVT",
+      "dt_fs": 2,
+      "schedule": [
+        {
+          "target_K": 310,
+          "steps": 100,
+          "restraint_scale": 1
+        }
+      ]
+    }
+  ],
+  "maximum_planned_steps": 100,
+  "maximum_planned_time_ps": 0.2,
+  "stage_notes": [
+    "NVT keeps the original box and anchors; support is released before pressure adjustment.",
+    "Isotropic NPT is used only for this finite oligomer patch; all Cartesian support force constants must be zero.",
+    "No surface affinity, binding free energy, material ranking or interface-equilibrium conclusion."
+  ],
+  "id": "10fa91a3d48440d8b4088a6be4036008",
+  "created_unix": 1792824238.8577466
+}

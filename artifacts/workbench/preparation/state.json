@@ -1,0 +1,30 @@
+{
+  "status": "running",
+  "updated_unix": 1792825055.8016715,
+  "elapsed_wall_seconds": 597.4394860069733,
+  "stage": "warm-to-200K",
+  "stage_index": 0,
+  "stage_step": 375,
+  "last": {
+    "stage": "warm-to-200K",
+    "ensemble": "NVT",
+    "stage_index": 0,
+    "stage_step": 375,
+    "context_step": 3375,
+    "context_time_ps": 3.3749999999997393,
+    "additional_time_ps": 0.3749999999999587,
+    "target_K": 140,
+    "temperature_K": 128.51007073497138,
+    "potential_kJ_mol": -7911459.203603386,
+    "kinetic_kJ_mol": 634558.8066031421,
+    "volume_nm3": 6739.600889823218,
+    "density_g_cm3": 0.846519284469353,
+    "restraint_scale": 1,
+    "CA_RMSD_from_pipeline_start_A": 0.1744759609995915,
+    "max_relative_constraint_error": 2.865298459990745e-07,
+    "minimum_observed_protein_PE_nm": 0.6327624700729958,
+    "contact_native_residue_count": 0
+  },
+  "maximum_planned_steps": 11600,
+  "message": "Executed MD; equilibrium and adsorption are not established"
+}

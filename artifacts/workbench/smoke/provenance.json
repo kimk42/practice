@@ -1,0 +1,36 @@
+{
+  "model": {
+    "label": "PE + γ절편 + 물·중화이온",
+    "atoms": 43288,
+    "native_residues": 252,
+    "prmtop": "data/pe-protein-model04/complex.prmtop",
+    "manifest": "data/pe-protein-model04/manifest.json",
+    "source": "runs/pe-staged-preparation01/03-restrained-interface-NVT-check",
+    "source_parent": "runs/pe-staged-preparation01",
+    "temperature_K": 310,
+    "friction_per_ps": 1,
+    "dt_fs": 2,
+    "seed": 42
+  },
+  "source_system_sha256": "9214a2afc4d2e6f2fcb64351fa542a0fb0182aa36b6b686ba6fd34081e823881",
+  "source_state_sha256": "1a6385ce971b953836e631a0d1e59c9e3071c5b18c1c7e251cb8c27746e71c58",
+  "source_checkpoint_sha256": "c163796b18cffc063cb29bf90bdc3ba9ae25f2a9b9db5a202789d51b955eff0d",
+  "prmtop_sha256": "c630f76e14a4de7ef52abfcda0f75b4af3f517b6e892a85481fb247be60279ea",
+  "engine_sha256": "45631bdcff6dbf238599c969a164311856b2134279636434eb0ae5ee5bfb8f73",
+  "openmm_platform": "CPU",
+  "threads": 4,
+  "plan": [
+    {
+      "name": "prepared-fragment-NVT",
+      "ensemble": "NVT",
+      "dt_fs": 2,
+      "schedule": [
+        {
+          "target_K": 310,
+          "steps": 100,
+          "restraint_scale": 1
+        }
+      ]
+    }
+  ]
+}

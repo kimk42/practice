@@ -99,6 +99,12 @@ if hold_body.exists():
     row='<tr><td>큰 모델 100 K 유지</td><td>577,890원자</td><td>추가 2 ps, 큰 모델 MD 누적 3 ps. 압력·밀도 조정과 평형 미확립</td></tr>'
     sections[0]=sections[0].replace('</table>',row+'</table>',1)
     sections[0]=sections[0].replace('큰 모델의 위치 억제 최소화와 1 ps 저온 MD 검사도 실행했습니다.','큰 모델의 위치 억제 최소화, 1 ps 저온 시험과 추가 2 ps 100 K 유지(큰 모델 MD 누적 3 ps)도 실행했습니다.',1)
+# Embed the latest executed workbench report and downloadable CSV in the full snapshot.
+workbench_report=ROOT/'artifacts/workbench/preparation/report.html'
+if workbench_report.exists():
+    body=workbench_report.read_text().split('<body>',1)[-1].rsplit('</body>',1)[0]
+    sections.insert(1,'<hr><section id="workbench-preparation">'+body+'</section><hr>')
+    sections[0]=sections[0].replace('<nav>','<nav><a href="#workbench-preparation">실행기 기반 준비 계산 최신 상태</a> · ',1)
 guide=ROOT/'artifacts/data-guide.md'
 if guide.exists():
     sections.append('<h2>데이터·단위·파일 해설</h2><details open><summary>각 데이터와 지표를 읽는 방법</summary><pre style="white-space:pre-wrap;font-family:inherit">'+html.escape(guide.read_text())+'</pre></details>')
@@ -107,12 +113,12 @@ css='body{font-family:system-ui,sans-serif;line-height:1.75;max-width:1120px;mar
 (OUT/'report.tmp.html').replace(OUT/'report.html')
 # Preserve successful final bundles and all run/attempt records; omit environments and caches.
 paths=set()
-for dirname in ['artifacts','runs','data','md','environment','tests','schemas','docs','scripts','.github']:
+for dirname in ['artifacts','runs','data','md','environment','tests','schemas','docs','scripts','workbench','.github']:
     d=ROOT/dirname
     if d.exists():
         for p in d.rglob('*'):
-            if p.is_file() and OUT not in p.parents and '__pycache__' not in p.parts and p.suffix!='.pyc' and p.name!='archive-validation.json': paths.add(p)
-for name in ['README.md','requirements.txt','package.json','package-lock.json','index.html','app.mjs','simulation.mjs','model.mjs','styles.css','.gitignore','.gitattributes']:
+            if p.is_file() and OUT not in p.parents and '__pycache__' not in p.parts and p.suffix!='.pyc' and p.name not in {'archive-validation.json','result-archive.json'} and 'cache' not in p.parts and not p.is_symlink() and p.suffix!='.tmp' and p.name!='.active': paths.add(p)
+for name in ['README.md','requirements.txt','package.json','package-lock.json','index.html','app.mjs','simulation.mjs','workbench.mjs','model.mjs','styles.css','.gitignore','.gitattributes']:
     if (ROOT/name).is_file(): paths.add(ROOT/name)
 paths.add(OUT/'report.html')
 entries=[]

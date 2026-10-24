@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "model_id": "pe-core",
+  "protocol_id": "prepare-310",
+  "threads": 4,
+  "observation_interval_steps": 25,
+  "trajectory_interval_steps": 250,
+  "checkpoint_interval_steps": 100,
+  "seed": 45,
+  "equilibrium_established": false,
+  "production_ready": false,
+  "plan": [
+    {
+      "name": "warm-to-200K",
+      "ensemble": "NVT",
+      "dt_fs": 1,
+      "schedule": [
+        {
+          "target_K": 120,
+          "steps": 200,
+          "restraint_scale": 1
+        },
+        {
+          "target_K": 140,
+          "steps": 200,
+          "restraint_scale": 1
+        },
+        {
+          "target_K": 160,
+          "steps": 200,
+          "restraint_scale": 1
+        },
+        {
+          "target_K": 180,
+          "steps": 200,
+          "restraint_scale": 1
+        },
+        {
+          "target_K": 200,
+          "steps": 200,
+          "restraint_scale": 1
+        }
+      ]
+    },
+    {
+      "name": "warm-to-310K",
+      "ensemble": "NVT",
+      "dt_fs": 1,
+      "schedule": [
+        {
+          "target_K": 210,
+          "steps": 100,
+          "restraint_scale": 1
+        },
+        {
+          "target_K": 220,
+          "steps": 100,
+          "restraint_scale": 1
+        },
+        {
+          "target_K": 230,
+          "steps": 100,
+          "restraint_scale": 1
+        },
+        {
+          "target_K": 240,
+          "steps": 100,
+          "restraint_scale": 1
+        },
+        {
+          "target_K": 250,
+          "steps": 100,
+          "restraint_scale": 1
+        },
+        {
+          "target_K": 260,
+          "steps": 100,
+          "restraint_scale": 1
+        },
+        {
+          "target_K": 270,
+          "steps": 100,
+          "restraint_scale": 1
+        },
+        {
+          "target_K": 280,
+          "steps": 100,
+          "restraint_scale": 1
+        },
+        {
+          "target_K": 290,
+          "steps": 100,
+          "restraint_scale": 1
+        },
+        {
+          "target_K": 300,
+          "steps": 100,
+          "restraint_scale": 1
+        },
+        {
+          "target_K": 310,
+          "steps": 100,
+          "restraint_scale": 1
+        }
+      ]
+    },
+    {
+      "name": "310K-supported-check",
+      "ensemble": "NVT",
+      "dt_fs": 1,
+      "schedule": [
+        {
+          "target_K": 310,
+          "steps": 1000,
+          "restraint_scale": 1
+        }
+      ]
+    },
+    {
+      "name": "release-position-support",
+      "ensemble": "NVT",
+      "dt_fs": 1,
+      "schedule": [
+        {
+          "target_K": 310,
+          "steps": 250,
+          "restraint_scale": 0.1
+        },
+        {
+          "target_K": 310,
+          "steps": 250,
+          "restraint_scale": 0.01
+        },
+        {
+          "target_K": 310,
+          "steps": 500,
+          "restraint_scale": 0
+        }
+      ]
+    },
+    {
+      "name": "NPT-density-block-1",
+      "ensemble": "NPT",
+      "dt_fs": 2,
+      "pressure_bar": 1,
+      "schedule": [
+        {
+          "target_K": 310,
+          "steps": 1250,
+          "restraint_scale": 0
+        }
+      ]
+    },
+    {
+      "name": "NPT-density-block-2",
+      "ensemble": "NPT",
+      "dt_fs": 2,
+      "pressure_bar": 1,
+      "schedule": [
+        {
+          "target_K": 310,
+          "steps": 1250,
+          "restraint_scale": 0
+        }
+      ]
+    },
+    {
+      "name": "NPT-density-block-3",
+      "ensemble": "NPT",
+      "dt_fs": 2,
+      "pressure_bar": 1,
+      "schedule": [
+        {
+          "target_K": 310,
+          "steps": 1250,
+          "restraint_scale": 0
+        }
+      ]
+    },
+    {
+      "name": "NPT-density-block-4",
+      "ensemble": "NPT",
+      "dt_fs": 2,
+      "pressure_bar": 1,
+      "schedule": [
+        {
+          "target_K": 310,
+          "steps": 1250,
+          "restraint_scale": 0
+        }
+      ]
+    },
+    {
+      "name": "NPT-density-block-5",
+      "ensemble": "NPT",
+      "dt_fs": 2,
+      "pressure_bar": 1,
+      "schedule": [
+        {
+          "target_K": 310,
+          "steps": 1250,
+          "restraint_scale": 0
+        }
+      ]
+    },
+    {
+      "name": "NPT-density-block-6",
+      "ensemble": "NPT",
+      "dt_fs": 2,
+      "pressure_bar": 1,
+      "schedule": [
+        {
+          "target_K": 310,
+          "steps": 1250,
+          "restraint_scale": 0
+        }
+      ]
+    }
+  ],
+  "density_screen": {
+    "minimum_blocks": 3,
+    "block_time_ps": 2.5,
+    "maximum_adjacent_mean_density_change_percent": 0.5,
+    "maximum_last_block_density_drift_percent": 0.5,
+    "maximum_temperature_mean_deviation_K": 5,
+    "maximum_relative_potential_slope_percent_per_ps": 0.5,
+    "interpretation": "Descriptive preparation screen only; correlated short samples do not establish bulk or interface equilibrium."
+  },
+  "maximum_planned_steps": 11600,
+  "maximum_planned_time_ps": 19.1,
+  "stage_notes": [
+    "NVT keeps the original box and anchors; support is released before pressure adjustment.",
+    "Isotropic NPT is used only for this finite oligomer patch; all Cartesian support force constants must be zero.",
+    "No surface affinity, binding free energy, material ranking or interface-equilibrium conclusion."
+  ],
+  "id": "4bdbdd36b0984e948232ae503e35b10b",
+  "created_unix": 1792824457.8489177
+}

@@ -17,5 +17,5 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - run: python -m unittest discover -s tests -p 'test_*.py'
       - run: npm test
-      - run: python -m compileall -q md scripts
+      - run: python -m compileall -q md scripts workbench
       - run: python scripts/check_repository.py

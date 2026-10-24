@@ -1,4 +1,5 @@
 # Local environments, tool installations and credentials
+.venv
 .venv/
 .tools/
 node_modules/

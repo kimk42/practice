@@ -1,0 +1,24 @@
+{
+  "status": "real_MD_API_pause_resume_cancel_checkpoint_restart_passed",
+  "parent_job": "da182bb3772e4d84bdf350c2ef59ee0d",
+  "resumed_job": "656ef11d5b0040deb24e74547de66fe3",
+  "paused_context_step": 1050,
+  "restart_context_step": 1100,
+  "final_context_step": 2000,
+  "additional_time_ps": 1.9999999999997797,
+  "final_validation": {
+    "status": "saved_output_cross_checks_passed",
+    "trajectory_segments": [
+      {
+        "path": "trajectories/segment-01.dcd",
+        "frames": 36,
+        "context_step_offset": 1100,
+        "context_time_offset_ps": 2.1999999999999793
+      }
+    ],
+    "observations": 41,
+    "source_model_atoms": 43288,
+    "native_CA_count": 252,
+    "equilibrium_established": false
+  }
+}
