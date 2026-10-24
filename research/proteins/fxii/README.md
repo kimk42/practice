@@ -16,9 +16,11 @@ Organism and P00748 mapping were checked against RCSB polymer-entity metadata. M
 
 RCSB entry https://www.rcsb.org/structure/AF_AFP00748F1 is “Computed structure model of Coagulation factor XII”, source AlphaFoldDB (AF-P00748-F1). RCSB metadata reports615 residues, human origin and computational methodology; it is **not an experimental full-length structure**. The RCSB entity sequence is retained as P00748-reference.fasta. This is precursor sequence; mature-chain boundaries, confidence/domain orientation, glycans and disulfides still require preparation. A metadata disulfide count of0 is not evidence that physiological FXII has no disulfides.
 
-The standard files.rcsb.org/download endpoint returned404 for the computed ID. Its actual model-server coordinate endpoint is https://models.rcsb.org/v1/AF_AFP00748F1/full?encoding=cif. This request and direct AlphaFold downloads were blocked by runtime network policy403. RCSB metadata was retrieved successfully, but the full computed coordinate file was not downloaded. Added search.rcsb.org,models.rcsb.org and alphafold.ebi.ac.uk to the environment network draft while preserving existing rules; saving a draft is not runtime connectivity proof.
+The guessed RCSB model-server endpoint returned404. Network access is now verified and the official AlphaFold API supplies working versioned coordinate/PAE URLs. AF-P00748-F1 model_v6 and PAE were downloaded. The updated retrieval script resolves these URLs from the official API rather than guessing a computed-model coordinate endpoint.
 
-Experimental discovery used the PDBe UniProtP00748 best-structure mapping API and verified selected entries against RCSB, because RCSB's separate search domain was blocked. The returned list did not identify a full-length experimental zymogen; this is not an exhaustive proof that no such structure exists.
+An exact RCSB UniProtP00748 search returned19 polymer entities, all fragment references on inspection. This search did not establish an experimental full-length zymogen. Keyword hit9UFG is collagen typeXII and was rejected.
+
+The audited candidate removes signal peptide1–19 and retains mature20–615 as one596-residue zymogen chain. All20 UniProt disulfide annotations have plausible SG distances. It remains unglycosylated;28% of mature residues have pLDDT below70. See models/proteins/fxii-audit.json. Neither coordinate coverage nor successful topology generation validates its domain arrangement or a native glycoform.
 
 ## Sequence caution for8OS5
 
@@ -31,4 +33,4 @@ source scripts/activate.sh
 python scripts/fetch_fxii.py --include-computed
 ```
 
-The script reuses and validates existing coordinate files and records failures separately. Once model-server network settings apply, it can download the full computed candidate without asking the user to supply a protein file. No private credentials are required for these public structures.
+The script reuses and validates existing coordinate files and records failures separately. The official API download has been verified. No private credentials are required for these public structures.

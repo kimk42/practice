@@ -1,0 +1,23 @@
+[
+  {
+    "file": "3GHG.cif",
+    "url": "https://files.rcsb.org/download/3GHG.cif",
+    "sha256": "d2c5e5758a9a55d67c8186c227e2db596e237aa0d34e1ce7d0215b7b327545d2",
+    "bytes": 3464283,
+    "state": "reused"
+  },
+  {
+    "file": "3GHG-assembly1.cif",
+    "url": "https://files.rcsb.org/download/3GHG-assembly1.cif",
+    "sha256": "205d40db03e24ec8f938a1ff2c8a7293be73acac7b7b8df9a39239d41e1c1418",
+    "bytes": 1811005,
+    "state": "reused"
+  },
+  {
+    "file": "3GHG-entry.json",
+    "url": "https://data.rcsb.org/rest/v1/core/entry/3GHG",
+    "sha256": "a45114a68a0e2055f32d3dd899e9dc2d0994e44cf0a1a16ccf800c598269f424",
+    "bytes": 30342,
+    "state": "reused"
+  }
+]

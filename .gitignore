@@ -31,3 +31,5 @@ __pycache__/
 /research/*-main.txt
 # Retrieved protein coordinates and source API records.
 /research/proteins/fxii/raw/
+
+/research/proteins/fibrinogen/raw/

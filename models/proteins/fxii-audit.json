@@ -1,0 +1,278 @@
+{
+  "source": "AF-P00748-F1-model_v6, AlphaFoldDB via official API",
+  "method": "predicted structure; not experimentally validated conformation",
+  "source_sha256": "4344e25b94a11c78b20eeba9bd0a1fb69d29ca1e1535cccef4cfd9078a1ea5d7",
+  "official_sequence_checksum_verified": true,
+  "precursor_residues": 615,
+  "signal_peptide": [
+    1,
+    19
+  ],
+  "mature_range": [
+    20,
+    615
+  ],
+  "mature_residue_count": 596,
+  "zymogen_state": "single chain retained; no activation-site cleavage introduced",
+  "heavy_atom_count": 4608,
+  "coordinate_axis_extent_nm": [
+    10.123099999999999,
+    8.7333,
+    8.994200000000001
+  ],
+  "mean_mature_pLDDT": 77.48882565402344,
+  "mature_pLDDT_below50_ranges": [
+    [
+      20,
+      33
+    ],
+    [
+      245,
+      248
+    ],
+    [
+      299,
+      356
+    ],
+    [
+      365,
+      376
+    ],
+    [
+      509,
+      513
+    ]
+  ],
+  "mature_pLDDT_below70_fraction": 0.2802013422818792,
+  "disulfide_annotations": [
+    {
+      "residues": [
+        47,
+        73
+      ],
+      "SG_distance_A": 2.012656205118003,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        61,
+        88
+      ],
+      "SG_distance_A": 2.0165316759227956,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        98,
+        110
+      ],
+      "SG_distance_A": 2.037069218264317,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        104,
+        119
+      ],
+      "SG_distance_A": 2.029224975206051,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        121,
+        130
+      ],
+      "SG_distance_A": 2.0453129344919327,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        135,
+        163
+      ],
+      "SG_distance_A": 2.0458707192782244,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        161,
+        170
+      ],
+      "SG_distance_A": 2.046270265629643,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        178,
+        189
+      ],
+      "SG_distance_A": 2.027363312285197,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        183,
+        198
+      ],
+      "SG_distance_A": 2.0250256788495293,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        200,
+        209
+      ],
+      "SG_distance_A": 2.0452972889044765,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        217,
+        295
+      ],
+      "SG_distance_A": 2.0418229600041236,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        238,
+        277
+      ],
+      "SG_distance_A": 2.009034842903427,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        266,
+        290
+      ],
+      "SG_distance_A": 1.9999664997194326,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        359,
+        486
+      ],
+      "SG_distance_A": 2.046624782416158,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        397,
+        413
+      ],
+      "SG_distance_A": 2.037525459963629,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        405,
+        475
+      ],
+      "SG_distance_A": 2.043203856691739,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        436,
+        439
+      ],
+      "SG_distance_A": 2.0287607054554266,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        500,
+        569
+      ],
+      "SG_distance_A": 2.025451554592209,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        532,
+        548
+      ],
+      "SG_distance_A": 2.0013767761218757,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    },
+    {
+      "residues": [
+        559,
+        590
+      ],
+      "SG_distance_A": 2.021488807784996,
+      "geometry_close": true,
+      "annotation": "UniProt feature; chemistry must be retained during topology preparation"
+    }
+  ],
+  "glycosylation_annotations": [
+    {
+      "position": "109",
+      "description": "O-linked (Fuc) threonine"
+    },
+    {
+      "position": "249",
+      "description": "N-linked (GlcNAc...) asparagine"
+    },
+    {
+      "position": "299",
+      "description": "O-linked (GalNAc...) threonine"
+    },
+    {
+      "position": "305",
+      "description": "O-linked (GalNAc...) threonine"
+    },
+    {
+      "position": "308",
+      "description": "O-linked (GalNAc...) serine"
+    },
+    {
+      "position": "328",
+      "description": "O-linked (GalNAc...) threonine"
+    },
+    {
+      "position": "329",
+      "description": "O-linked (GalNAc...) threonine"
+    },
+    {
+      "position": "337",
+      "description": "O-linked (GalNAc...) threonine"
+    },
+    {
+      "position": "433",
+      "description": "N-linked (GlcNAc...) asparagine"
+    }
+  ],
+  "glycans_present_in_candidate": false,
+  "protein_force_field_assigned": false,
+  "ready_for_production_MD": false,
+  "remaining_work": [
+    "glycoform choice/modeling",
+    "low-confidence/PAE/domain-orientation assessment",
+    "disulfide topology and geometry checks",
+    "protonation/termini assignment",
+    "protein-only equilibration"
+  ],
+  "candidate_file": "models/proteins/fxii-mature-unglycosylated-af-candidate.pdb"
+}

@@ -1,0 +1,118 @@
+{
+  "source": "3GHG biological assembly1, RCSB",
+  "source_sha256": "205d40db03e24ec8f938a1ff2c8a7293be73acac7b7b8df9a39239d41e1c1418",
+  "scope": "experimental construct with extensive unmodeled regions; not full native fibrinogen",
+  "protein_chains": [
+    {
+      "chain": "A",
+      "entity_id": "1",
+      "declared_construct_residues": 562,
+      "observed_residues": 174,
+      "unmodeled_label_seq_ranges": [
+        [
+          1,
+          26
+        ],
+        [
+          201,
+          562
+        ]
+      ]
+    },
+    {
+      "chain": "B",
+      "entity_id": "2",
+      "declared_construct_residues": 461,
+      "observed_residues": 401,
+      "unmodeled_label_seq_ranges": [
+        [
+          1,
+          57
+        ],
+        [
+          459,
+          461
+        ]
+      ]
+    },
+    {
+      "chain": "C",
+      "entity_id": "3",
+      "declared_construct_residues": 411,
+      "observed_residues": 381,
+      "unmodeled_label_seq_ranges": [
+        [
+          1,
+          13
+        ],
+        [
+          395,
+          411
+        ]
+      ]
+    },
+    {
+      "chain": "D",
+      "entity_id": "1",
+      "declared_construct_residues": 562,
+      "observed_residues": 174,
+      "unmodeled_label_seq_ranges": [
+        [
+          1,
+          26
+        ],
+        [
+          201,
+          562
+        ]
+      ]
+    },
+    {
+      "chain": "E",
+      "entity_id": "2",
+      "declared_construct_residues": 461,
+      "observed_residues": 401,
+      "unmodeled_label_seq_ranges": [
+        [
+          1,
+          57
+        ],
+        [
+          459,
+          461
+        ]
+      ]
+    },
+    {
+      "chain": "F",
+      "entity_id": "3",
+      "declared_construct_residues": 411,
+      "observed_residues": 382,
+      "unmodeled_label_seq_ranges": [
+        [
+          1,
+          13
+        ],
+        [
+          396,
+          411
+        ]
+      ]
+    }
+  ],
+  "declared_construct_residues_total": 2868,
+  "observed_protein_residues_total": 1913,
+  "unmodeled_construct_residues_total": 955,
+  "observed_core_axis_extent_nm": [
+    43.513,
+    7.117900000000001,
+    16.5683
+  ],
+  "other_components": "bound peptides, glycans/ligands and ions remain in raw assembly; not silently removed for a simulation",
+  "ready_for_full_length_MD": false,
+  "remaining_work": [
+    "select full-length/disordered-region modeling strategy or explicitly scoped core construct",
+    "retain or justify glycan/ligand choices",
+    "handle internal gaps and disulfides without inventing missing loops"
+  ]
+}

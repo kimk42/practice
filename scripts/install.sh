@@ -34,7 +34,7 @@ exec "$tools_dir/root/usr/bin/gmx" "$@"
 GMX
 chmod +x "$MD_TOOLS_DIR/bin/gmx"
 python3 -m venv "$MD_TOOLS_DIR/chem-venv"
-"$MD_TOOLS_DIR/chem-venv/bin/python" -m pip install --disable-pip-version-check -r "$project_dir/config/requirements-chem.lock" -r "$project_dir/config/requirements-parameterization.lock"
+"$MD_TOOLS_DIR/chem-venv/bin/python" -m pip install --disable-pip-version-check -r "$project_dir/config/requirements-chem.lock" -r "$project_dir/config/requirements-parameterization.lock" -r "$project_dir/config/requirements-protein.lock"
 "$MD_TOOLS_DIR/bin/gmx" --version
 "$MD_TOOLS_DIR/chem-venv/bin/python" -c 'from rdkit import rdBase; print("RDKit", rdBase.rdkitVersion)'
 bash "$project_dir/scripts/smoke.sh"

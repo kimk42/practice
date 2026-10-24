@@ -1,0 +1,7 @@
+{
+  "source_file": "research/proteins/fxii/raw/AF-P00748-F1-predicted_aligned_error_v6.json",
+  "definition": "AlphaFold predicted aligned error in angstroms, not measured structural error",
+  "mature_offdiagonal_median_A": 23.0,
+  "mature_offdiagonal_fraction_above10A": 0.7477638035079803,
+  "interpretation": "Assess relative domain orientation and flexible regions before adopting a single rigid full-length starting conformation; this scalar summary does not validate domain poses."
+}

@@ -1,0 +1,12 @@
+{
+  "state": "PC4 water numerical control passed",
+  "PC4_atoms": 132,
+  "net_PC4_charge": -9.99999999945489e-07,
+  "EM": "configured force threshold met",
+  "MD_steps": 400,
+  "MD_dt_ps": 0.0005,
+  "MD_duration_ps": 0.2,
+  "temperature_K": 300,
+  "scope": "one PC4 oligomer in water; not the coating, substrate slab, adsorption or full proteins",
+  "limitations": "Numerical initialization only, not force-field accuracy or equilibrium validation"
+}
