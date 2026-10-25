@@ -1,0 +1,26 @@
+[
+  {
+    "molecule": "COP10",
+    "state": "parameter gate passed",
+    "atoms": 313,
+    "net_charge": 2.0469737016526324e-16,
+    "source": "/workspace/practice-md/runs/cop10-recovery-5ygz498b/COP10.acpype",
+    "scope": "graph/order, charge, masses and missing-term flags; not physical accuracy validation"
+  },
+  {
+    "molecule": "PC4",
+    "state": "parameter gate passed",
+    "atoms": 132,
+    "net_charge": -9.99999999945489e-07,
+    "source": "/workspace/practice-md/runs/parameterization-long/pc4/PC4.acpype",
+    "scope": "graph/order, charge, masses and missing-term flags; not physical accuracy validation"
+  },
+  {
+    "molecule": "GRAFT",
+    "state": "parameter gate passed",
+    "atoms": 445,
+    "net_charge": -9.999999996271672e-07,
+    "source": "/workspace/practice-md/runs/graft-completed-sqm-08tfya1h/GRAFT.acpype",
+    "scope": "graph/order, charge, masses and missing-term flags; not physical accuracy validation"
+  }
+]

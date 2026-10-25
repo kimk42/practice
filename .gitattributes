@@ -6,3 +6,6 @@
 *.mol text eol=lf whitespace=-blank-at-eol
 # Preserve the exact generated force-field audit, including its terminal separator.
 *.frcmod text eol=lf whitespace=-blank-at-eof
+# Preserve generated force-field artifacts byte-for-byte for SHA256 provenance.
+models/forcefield/*.itp whitespace=-blank-at-eol
+models/forcefield/*.mol2 whitespace=-blank-at-eol

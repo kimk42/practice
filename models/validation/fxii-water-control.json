@@ -1,0 +1,8 @@
+{
+  "state": "unglycosylated predicted FXII numerical pilot passed",
+  "duration_ps": 0.2,
+  "temperature_K": 300,
+  "scope": "predicted unglycosylated protein alone, neutralizing ions only; not native validation or surface adsorption",
+  "forcefield": "amber99sb-ildn / TIP3P",
+  "restart": "EM repeated from original TPR; interrupted output preserved"
+}

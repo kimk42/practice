@@ -1,0 +1,8 @@
+{
+  "state": "passed_initialization_check",
+  "output": "runs/surface-validation",
+  "em": "force threshold met",
+  "md": "400 steps x0.0005ps =0.2ps at300K",
+  "protein_present": false,
+  "limitation": "initialization only: low-density short-OH-ended BPA-PC patch, not an equilibrated experimental coating or validated adsorption model"
+}

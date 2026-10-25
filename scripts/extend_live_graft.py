@@ -14,6 +14,7 @@ def alive(pid):
     except FileNotFoundError:return False
 
 def main():
+    raise RuntimeError('Deprecated: pausing the wrapper may block its stdout pipe; recover completed SQM with finalize_completed_sqm.py instead')
     parent=21924;child=21996;sqm=22018;controller=21882
     active=json.loads((RUN/'workflow-active-parameters.json').read_text())
     directory=ROOT/active['GRAFT'];work=directory/'GRAFT.acpype'

@@ -1,0 +1,34 @@
+[
+  {
+    "candidate": "FXII predicted mature candidate",
+    "coordinate_extents_nm": [
+      10.123099999999999,
+      8.7333,
+      8.994200000000001
+    ],
+    "illustrative_box_nm": [
+      14,
+      12,
+      18
+    ],
+    "water_only_volume_atom_estimate": 302098,
+    "assumptions": "axis-aligned coordinates,1.2nm padding each side,3nm PC region plus2nm initial protein-surface gap; round dimensions up to2nm; water-only volume excludes neither substrate nor solute and is not total atom count",
+    "limitations": "not a prepared box or finite-size validation; molecular orientation, flexible extensions, density and equilibration alter requirements"
+  },
+  {
+    "candidate": "Fibrinogen observed 3GHG core only",
+    "coordinate_extents_nm": [
+      43.513,
+      7.117900000000001,
+      16.5683
+    ],
+    "illustrative_box_nm": [
+      46,
+      10,
+      24
+    ],
+    "water_only_volume_atom_estimate": 1102896,
+    "assumptions": "axis-aligned coordinates,1.2nm padding each side,3nm PC region plus2nm initial protein-surface gap; round dimensions up to2nm; water-only volume excludes neither substrate nor solute and is not total atom count",
+    "limitations": "not a prepared box or finite-size validation; molecular orientation, flexible extensions, density and equilibration alter requirements"
+  }
+]

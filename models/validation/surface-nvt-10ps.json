@@ -1,0 +1,9 @@
+{
+  "state": "10ps surface numerical follow-up completed",
+  "duration_ps": 10,
+  "atoms": 27826,
+  "energy_frames": 21,
+  "temperature_mean_K": 297.87156899999997,
+  "protein_present": false,
+  "scope": "fixed-volume low-density short-PC single-graft prototype; short numerical check, not equilibrated experimental coating or adsorption production"
+}

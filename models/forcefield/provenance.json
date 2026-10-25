@@ -1,0 +1,42 @@
+{
+  "PC4-PC4_GMX.itp": {
+    "sha256": "0ffd533c7d615e57abf4dfd5bd5abf0699256d8596339828feccc45ea3376ed1",
+    "source": "runs/parameterization-long/pc4/PC4.acpype/PC4_GMX.itp",
+    "net_charge": -9.99999999945489e-07
+  },
+  "PC4-PC4_GMX.gro": {
+    "sha256": "5efb7b26e85035c600015b63ca6600fa52b1fb89b66c675ce29e714ed6849723",
+    "source": "runs/parameterization-long/pc4/PC4.acpype/PC4_GMX.gro",
+    "net_charge": -9.99999999945489e-07
+  },
+  "PC4-PC4_bcc_gaff2.mol2": {
+    "sha256": "ab056a6c3b95c43e83ec6bc209e53c308c2be141eb31f780bef9f76d7bb277ac",
+    "source": "runs/parameterization-long/pc4/PC4.acpype/PC4_bcc_gaff2.mol2",
+    "net_charge": -9.99999999945489e-07
+  },
+  "PC4-PC4_AC.frcmod": {
+    "sha256": "36f8f86e3a10b4a9295a8a1a2ddb343a180491cc74007d456fff5f8456feffb6",
+    "source": "runs/parameterization-long/pc4/PC4.acpype/PC4_AC.frcmod",
+    "net_charge": -9.99999999945489e-07
+  },
+  "GRAFT-GRAFT_GMX.itp": {
+    "sha256": "44ec546bb5bec2b9fa287223d6f2c658177d65b65f39b644d2440e673452ae6f",
+    "source": "runs/graft-completed-sqm-08tfya1h/GRAFT.acpype/GRAFT_GMX.itp",
+    "net_charge": -9.999999996271672e-07
+  },
+  "GRAFT-GRAFT_GMX.gro": {
+    "sha256": "8edd892f4a7eda9fd2dabf48125bff6c7a0849a08b0f16d40d0b626a878a03f2",
+    "source": "runs/graft-completed-sqm-08tfya1h/GRAFT.acpype/GRAFT_GMX.gro",
+    "net_charge": -9.999999996271672e-07
+  },
+  "GRAFT-GRAFT_bcc_gaff2.mol2": {
+    "sha256": "a6139ecc08233635b46e4b95440521c84f8975cfe6f549b3c28356cab9fac3ba",
+    "source": "runs/graft-completed-sqm-08tfya1h/GRAFT.acpype/GRAFT_bcc_gaff2.mol2",
+    "net_charge": -9.999999996271672e-07
+  },
+  "GRAFT-GRAFT_AC.frcmod": {
+    "sha256": "a6eaa3879480f63b3dfd9ef97af52e9586dde1b47ea5054584cfe33c61997cfd",
+    "source": "runs/graft-completed-sqm-08tfya1h/GRAFT.acpype/GRAFT_AC.frcmod",
+    "net_charge": -9.999999996271672e-07
+  }
+}
