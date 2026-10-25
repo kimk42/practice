@@ -4,8 +4,8 @@
     {
       "path": "trajectories/segment-01.dcd",
       "frames": 30,
-      "context_step_offset": 10750,
-      "context_time_offset_ps": 14.400000000002812
+      "context_step_offset": 18250,
+      "context_time_offset_ps": 29.399999999995742
     }
   ],
   "observations": 301,

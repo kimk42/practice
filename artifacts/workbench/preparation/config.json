@@ -9,7 +9,7 @@
   "seed": 45,
   "equilibrium_established": false,
   "production_ready": false,
-  "continuation_from_job": "5654118d6c7f48129395d353d5cf6387",
+  "continuation_from_job": "6ce66315455240338927597da4bc6757",
   "pressure_interval_steps": 250,
   "plan": [
     {
@@ -69,6 +69,6 @@
     "Isotropic NPT is used only for this finite oligomer patch; all Cartesian support force constants must be zero.",
     "No surface affinity, binding free energy, material ranking or interface-equilibrium conclusion."
   ],
-  "id": "6ce66315455240338927597da4bc6757",
-  "created_unix": 1792872100.3969235
+  "id": "ac8abf0a76aa4a3eb11255f15216a7b1",
+  "created_unix": 1792902925.1885579
 }

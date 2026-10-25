@@ -1,6 +1,6 @@
 {
-  "parent_job": "5654118d6c7f48129395d353d5cf6387",
-  "valid_parent_context_step": 10850,
-  "parent_trajectories": "/workspace/practice-fibrinogen-pe-md/runs/workbench/5654118d6c7f48129395d353d5cf6387/trajectories",
+  "parent_job": "6ce66315455240338927597da4bc6757",
+  "valid_parent_context_step": 18350,
+  "parent_trajectories": "/workspace/practice-fibrinogen-pe-md/runs/workbench/6ce66315455240338927597da4bc6757/trajectories",
   "note": "Parent files are preserved; observations after the saved checkpoint are not carried into this resumed lineage."
 }

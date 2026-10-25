@@ -1,0 +1,19 @@
+{
+  "effective_context_parameters": {
+    "MonteCarloPressure": 1.0,
+    "MonteCarloTemperature": 310.0
+  },
+  "thermostat_temperature_K": 310.0,
+  "friction_per_ps": 5.0,
+  "timestep_fs": 2.0,
+  "thermostat_seed_in_serialized_integrator": 49,
+  "nonzero_positional_support_particles": 0,
+  "barostat_frequencies_steps": [
+    25
+  ],
+  "barostat_seeds_in_serialized_system": [
+    149
+  ],
+  "integration_force_groups": -1,
+  "note": "Seeds identify serialized objects; continued stochastic streams are loaded from the binary checkpoint, not initialized here."
+}

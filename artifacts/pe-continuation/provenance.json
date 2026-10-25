@@ -15,7 +15,7 @@
   "source_state_sha256": "d56c07c7793e2a0e9546fb6d76e102c638e0d54abc749c311b32daec6a3fbbc5",
   "source_checkpoint_sha256": "aa437f24784c2705d5c51fb03d0632290be9d76bbf8a5ea0f4efdfbef557ce4b",
   "prmtop_sha256": "40471f4ea100bc21d6b2026f028e61b36827f2038aa5a569a9c47065e49323c6",
-  "engine_sha256": "9462772489cd7f805e062039c9511e97447efc196007003120a4a65764bc45ce",
+  "engine_sha256": "adf0b699f2196bc2177863c4f59ed3c7ba2ae719b83a8bfa2b05de22fe2093a0",
   "openmm_platform": "CPU",
   "threads": 4,
   "plan": [
