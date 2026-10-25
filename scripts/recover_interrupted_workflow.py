@@ -18,15 +18,15 @@ def main():
         if (ROOT/active[name]/(name+'.acpype')/(name+'_GMX.itp')).exists():continue
         path=Path(tempfile.mkdtemp(prefix=name.lower()+'-recovery-',dir=ROOT/'runs'))
         active[name]=str(path.relative_to(ROOT))
-        env=os.environ.copy();env['MD_SQM_MAX_SECONDS']='43200'
+        env=os.environ.copy();env['MD_SQM_MAX_SECONDS']=os.environ.get('MD_SQM_MAX_SECONDS','86400')
         with (path/'launch.log').open('w') as log:
             proc=subprocess.Popen(['bash','scripts/parameterize_candidate.sh',source,name,str(path)],cwd=ROOT,env=env,stdout=log,stderr=subprocess.STDOUT)
         jobs.append({'name':name,'pid':proc.pid,'directory':active[name]})
     manifest.write_text(json.dumps(active,indent=2)+'\n')
-    (ROOT/'runs/recovery-manifest.json').write_text(json.dumps({'previous':previous,'active':active,'jobs':jobs,'quantum_seconds_limit':43200,'restart':'same chemical inputs/method, optimization starts afresh because no usable saved optimizer coordinates exist'},indent=2)+'\n')
+    (ROOT/'runs/recovery-manifest.json').write_text(json.dumps({'previous':previous,'active':active,'jobs':jobs,'quantum_seconds_limit':int(os.environ.get('MD_SQM_MAX_SECONDS','86400')),'restart':'same chemical inputs/method, optimization starts afresh because no usable saved optimizer coordinates exist'},indent=2)+'\n')
     with (ROOT/'runs/fxii-recovery-launch.log').open('w') as log:
         subprocess.Popen(['python','scripts/recover_fxii_control.py'],cwd=ROOT,stdout=log,stderr=subprocess.STDOUT)
-    # Give the quantum jobs their full 12-hour limit, then perform gated surface MD.
-    env=os.environ.copy();env['MD_WORKFLOW_WAIT_SECONDS']='46800'
+    # Give the quantum jobs their full configured limit, then perform gated surface MD.
+    env=os.environ.copy();env['MD_WORKFLOW_WAIT_SECONDS']=str(int(env['MD_SQM_MAX_SECONDS'])+3600)
     subprocess.run(['python','scripts/continue_three_stages.py'],cwd=ROOT,env=env,check=True)
 if __name__=='__main__':main()
