@@ -19,7 +19,7 @@ sys.path.insert(0,str(ROOT))
 from workbench.config import TERMINAL,engine_python
 from workbench.manager import Manager,atomic,alive
 
-FILES=['report.html','summary.png','pressure.png','observables.csv','config.json','state.json','provenance.json','validation.json','result.json','density-screen.json','trajectory-index.json','resume-provenance.json','continuation-provenance.json']
+FILES=['report.html','summary.png','pressure.png','observables.csv','config.json','state.json','provenance.json','validation.json','result.json','density-screen.json','trajectory-index.json','resume-provenance.json','continuation-provenance.json','runtime-conditions.json']
 
 def export(job):
  from workbench.report import publish
@@ -88,7 +88,7 @@ def main():
   atomic(statusfile,{'status':'exporting','MD_status':s['status']});export(job)
   if a.archive:snapshot()
   if a.push:
-   paths=['artifacts/workbench','artifacts/pe-continuation','artifacts/solvent-audit01','artifacts/research-campaign','artifacts/collected-results','docs/result-archive.json']
+   paths=['artifacts/npt-review01','artifacts/workbench','artifacts/pe-continuation','artifacts/solvent-audit01','artifacts/research-campaign','artifacts/collected-results','docs/result-archive.json']
    if a.archive:paths.append('datasets/results-complete.zip')
    subprocess.run(['git','add','--',*paths],cwd=ROOT,check=True)
    subprocess.run([sys.executable,'scripts/check_repository.py'],cwd=ROOT,check=True)

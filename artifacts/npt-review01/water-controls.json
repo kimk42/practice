@@ -1,0 +1,70 @@
+{
+  "status": "technical_controls_passed",
+  "source_conditions": {
+    "source_job": "6ce66315455240338927597da4bc6757",
+    "source_system_sha256": "416922c66dcded21e9a9d1bb0919c064d5edd67c62642269f032bf2fceacbb60",
+    "barostat_frequency_steps": 25,
+    "applied_pressure_bar": 1.0,
+    "barostat_temperature_K": 310.0,
+    "nonbonded_method": 4,
+    "cutoff_nm": 1.0,
+    "dispersion_correction": true,
+    "Ewald_error_tolerance": 0.0005,
+    "water_OHH_mass_Da": [
+      16.0,
+      1.008,
+      1.008
+    ],
+    "water_OHH_charge_e": [
+      -0.834,
+      0.417,
+      0.417
+    ],
+    "water_OHH_sigma_nm": [
+      0.315075240713007,
+      0.08908987181403394,
+      0.08908987181403394
+    ],
+    "water_OHH_epsilon_kJ_mol": [
+      0.6359679988330078,
+      0.0,
+      0.0
+    ]
+  },
+  "replicas": [
+    {
+      "status": "technical_control_passed",
+      "last_20ps_mean_density_g_cm3": 0.9758167507629217,
+      "last_adjacent_10ps_mean_density_change_percent": 0.10472832506933649,
+      "last_20ps_mean_temperature_K": 310.6633923474231,
+      "observed_volume_changes": 199,
+      "equilibrium_established": false,
+      "interpretation": "Wide implementation/sampler checks only. The liquid-like density band is not a calibrated TIP3P equation-of-state benchmark or a thermodynamic convergence test.",
+      "seed": 701,
+      "water_molecules": 512,
+      "atoms": 1536,
+      "NVT_ps": 5,
+      "NPT_ps": 100,
+      "source_nonbonded_parameters_matched": true,
+      "RNG_note": "Independent control seeds. NVT-to-NPT uses a new Context with documented thermostat/barostat seeds; protein trajectory is unaffected."
+    },
+    {
+      "status": "technical_control_passed",
+      "last_20ps_mean_density_g_cm3": 0.9697726773331495,
+      "last_adjacent_10ps_mean_density_change_percent": 0.11563925576749678,
+      "last_20ps_mean_temperature_K": 308.187764149781,
+      "observed_volume_changes": 199,
+      "equilibrium_established": false,
+      "interpretation": "Wide implementation/sampler checks only. The liquid-like density band is not a calibrated TIP3P equation-of-state benchmark or a thermodynamic convergence test.",
+      "seed": 709,
+      "water_molecules": 512,
+      "atoms": 1536,
+      "NVT_ps": 5,
+      "NPT_ps": 100,
+      "source_nonbonded_parameters_matched": true,
+      "RNG_note": "Independent control seeds. NVT-to-NPT uses a new Context with documented thermostat/barostat seeds; protein trajectory is unaffected."
+    }
+  ],
+  "equilibrium_established": false,
+  "scope": "Pure-water implementation controls only. Does not validate PE/PVDF/PTFE surfaces, whole-system pressure equilibration, adsorption or experimental retention."
+}

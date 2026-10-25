@@ -105,11 +105,20 @@ class ContinuationTests(unittest.TestCase):
   self.assertTrue(density_screen(rows,spec)['screen_passed'])
  def test_pressure_diagnostic_units_and_state_restoration(self):
   import numpy as np
-  from openmm import System,NonbondedForce,MonteCarloBarostat,VerletIntegrator,Context,Platform,unit
+  from openmm import System,NonbondedForce,MonteCarloBarostat,LangevinMiddleIntegrator,Context,Platform,unit
   system=System();nb=NonbondedForce();nb.setNonbondedMethod(nb.CutoffPeriodic);nb.setCutoffDistance(1)
   for _ in range(2):system.addParticle(12);nb.addParticle(0,.3,0)
-  system.addForce(nb);bar=MonteCarloBarostat(1,310,25);system.addForce(bar);system.setDefaultPeriodicBoxVectors((3,0,0),(0,3,0),(0,0,3));integrator=VerletIntegrator(.002);context=Context(system,integrator,Platform.getPlatformByName('Reference'));context.setPositions([[.1,.1,.1],[.5,.1,.1]]);context.setVelocities([[.1,.1,.1],[.1,.1,.1]]);before=context.getState(getPositions=True,getVelocities=True,getEnergy=True);pressure=bar.computeCurrentPressure(context).value_in_unit(unit.bar);after=context.getState(getPositions=True,getVelocities=True)
+  system.addForce(nb);bar=MonteCarloBarostat(1,310,25);system.addForce(bar);system.setDefaultPeriodicBoxVectors((3,0,0),(0,3,0),(0,0,3));integrator=LangevinMiddleIntegrator(310,5,.002);context=Context(system,integrator,Platform.getPlatformByName('Reference'));context.setPositions([[.1,.1,.1],[.5,.1,.1]]);context.setVelocities([[.1,.1,.1],[.1,.1,.1]]);before=context.getState(getPositions=True,getVelocities=True,getEnergy=True);pressure=bar.computeCurrentPressure(context).value_in_unit(unit.bar);after=context.getState(getPositions=True,getVelocities=True)
   # Two independent molecules, zero interaction: instantaneous P=2 KE/(3 V).
   expected=2*before.getKineticEnergy().value_in_unit(unit.kilojoule_per_mole)/(3*27)*16.60539067173847
   self.assertAlmostEqual(pressure,expected,places=5)
   np.testing.assert_array_equal(before.getPositions(asNumpy=True)._value,after.getPositions(asNumpy=True)._value);np.testing.assert_array_equal(before.getVelocities(asNumpy=True)._value,after.getVelocities(asNumpy=True)._value)
+
+  from types import SimpleNamespace
+  from workbench.engine import inspect_runtime,validate_continuation_runtime,ReviewRequired
+  context.setParameter(MonteCarloBarostat.Pressure(),7)
+  conditions=inspect_runtime(SimpleNamespace(context=context),system,integrator)
+  self.assertEqual(conditions['friction_per_ps'],5);self.assertEqual(conditions['effective_context_parameters'][MonteCarloBarostat.Pressure()],7)
+  self.assertEqual(bar.getDefaultPressure().value_in_unit(unit.bar),1)
+  with self.assertRaises(ReviewRequired):validate_continuation_runtime(conditions)
+  context.setParameter(MonteCarloBarostat.Pressure(),1);validate_continuation_runtime(inspect_runtime(SimpleNamespace(context=context),system,integrator))

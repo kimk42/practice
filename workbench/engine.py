@@ -35,6 +35,16 @@ def density_screen(rows,spec):
     return check
 
 
+def inspect_runtime(sim,system,integrator):
+ parameters={str(k):float(v) for k,v in sim.context.getParameters().items()};bars=[f for f in system.getForces() if isinstance(f,MonteCarloBarostat)];positive=sum(abs(f.getParticleParameters(i)[1][0])>1e-12 for f in system.getForces() if isinstance(f,CustomExternalForce) for i in range(f.getNumParticles()))
+ return {'effective_context_parameters':parameters,'thermostat_temperature_K':integrator.getTemperature().value_in_unit(unit.kelvin),'friction_per_ps':integrator.getFriction().value_in_unit(unit.picosecond**-1),'timestep_fs':integrator.getStepSize().value_in_unit(unit.femtosecond),'thermostat_seed_in_serialized_integrator':integrator.getRandomNumberSeed(),'nonzero_positional_support_particles':positive,'barostat_frequencies_steps':[b.getFrequency() for b in bars],'barostat_seeds_in_serialized_system':[b.getRandomNumberSeed() for b in bars],'integration_force_groups':int(integrator.getIntegrationForceGroups()),'note':'Seeds identify serialized objects; continued stochastic streams are loaded from the binary checkpoint, not initialized here.'}
+
+
+def validate_continuation_runtime(conditions):
+ p=conditions['effective_context_parameters']
+ if conditions['barostat_frequencies_steps']!=[25] or conditions['nonzero_positional_support_particles'] or abs(p.get(MonteCarloBarostat.Pressure(),float('inf'))-1)>1e-9 or abs(p.get(MonteCarloBarostat.Temperature(),float('inf'))-310)>1e-9:raise ReviewRequired('Effective checkpoint pressure/temperature/support settings differ from continuation protocol')
+
+
 class Engine:
  def __init__(self,job,root=ROOT):
   self.job=Path(job);self.root=Path(root);self.cfg=json.loads((self.job/'config.json').read_text());self.model=MODELS[self.cfg['model_id']];self.started=time.monotonic();self.rows=[];self.segments=[];self.sim=None;self.stage_index=0;self.stage_step=0;self.slot=0;self.system_path=None;self.base_k=None
@@ -101,6 +111,8 @@ class Engine:
   if (resume or continuation) and (loaded.getStepCount()!=cursor['context_step'] or abs(loaded.getTime().value_in_unit(unit.picosecond)-cursor['context_time_ps'])>1e-8):raise ReviewRequired('Resume checkpoint clock differs from saved cursor')
   if not resume:
    if not np.allclose(loaded.getPositions(asNumpy=True).value_in_unit(unit.nanometer),original_state.getPositions(asNumpy=True).value_in_unit(unit.nanometer),atol=1e-10,rtol=0) or not np.allclose(loaded.getVelocities(asNumpy=True).value_in_unit(unit.nanometer/unit.picosecond),original_state.getVelocities(asNumpy=True).value_in_unit(unit.nanometer/unit.picosecond),atol=1e-10,rtol=0):raise ReviewRequired('Checkpoint and reviewed state disagree')
+  conditions=inspect_runtime(self.sim,self.system,self.integrator);atomic(self.job/'runtime-conditions.json',conditions)
+  if self.cfg.get('continuation_from_job'):validate_continuation_runtime(conditions)
   np.save(self.job/'reference.npy',self.reference)
   with (self.job/'observations.jsonl').open('w') as f:
    for row in self.rows:f.write(json.dumps(row)+'\n')
