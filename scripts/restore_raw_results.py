@@ -16,14 +16,16 @@ def digest(path):
     return h.hexdigest()
 
 
-def restore(archive, destination, verify_only=False):
+def restore(archive, destination, verify_only=False, entries_override=None):
+    if Path(archive).suffix==".json":
+        return restore_index(archive,destination,verify_only)
     with Path(archive).open('rb') as source:
         if source.read(128).startswith(b'version https://git-lfs.github.com/spec/v1'):
             raise ValueError('The archive is a Git LFS pointer. Run git lfs install --local and git lfs pull first.')
     destination = Path(destination).resolve()
     counts = {'verified': 0, 'restored': 0, 'already_present': 0}
     with zipfile.ZipFile(archive) as z:
-        entries = json.loads(z.read('FILES.json'))['files']
+        entries = json.loads(z.read('FILES.json'))['files'] if entries_override is None else entries_override
         selected = []
         seen = set()
         for entry in entries:
@@ -73,10 +75,41 @@ def restore(archive, destination, verify_only=False):
     return counts
 
 
+def restore_index(index_path,destination,verify_only=False):
+    try:
+        from .archive_layers import load_index
+    except ImportError:
+        from archive_layers import load_index
+    index_path=Path(index_path);index=load_index(index_path);destination=Path(destination).resolve();groups={a['name']:[] for a in index['archives']}
+    for entry in index['files']:
+        path=PurePosixPath(entry['path'])
+        if path.parts[0] not in ('data','runs'):continue
+        target=destination.joinpath(*path.parts)
+        if not target.resolve().is_relative_to(destination):raise ValueError('Archive target escapes destination')
+        if target.exists() and (not target.is_file() or digest(target)!=entry['sha256']):raise ValueError(f'Existing file differs; refusing overwrite: {path}')
+        groups[entry['archive']].append({k:entry[k] for k in ['path','bytes','sha256']})
+    # Verify every archive identity before installing any data.
+    for archive in index['archives']:
+        path=index_path.parent/archive['name']
+        if not path.exists():raise ValueError('Archive missing; run git lfs pull: '+archive['name'])
+        with path.open('rb') as f:
+            if f.read(128).startswith(b'version https://git-lfs.github.com/spec/v1'):raise ValueError('Archive is an LFS pointer; run git lfs pull')
+        if path.stat().st_size!=archive['bytes'] or digest(path)!=archive['sha256']:raise ValueError('Archive integrity mismatch: '+archive['name'])
+    total={'verified':0,'restored':0,'already_present':0}
+    for name,entries in groups.items():
+        if not entries:continue
+        result=restore(index_path.parent/name,destination,verify_only,entries_override=entries)
+        for k in total:total[k]+=result[k]
+    return total
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('archive', type=Path, nargs='?', default=Path(__file__).resolve().parents[1] / 'datasets/results-complete.zip')
     parser.add_argument('--destination', type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument('--verify-only', action='store_true')
     args = parser.parse_args()
-    print(json.dumps(restore(args.archive, args.destination, args.verify_only), indent=2))
+    archive=args.archive
+    default=Path(__file__).resolve().parents[1]/'datasets/results-complete.zip'
+    if archive==default and default.with_name('results-index.json').exists():archive=default.with_name('results-index.json')
+    print(json.dumps(restore(archive, args.destination, args.verify_only), indent=2))

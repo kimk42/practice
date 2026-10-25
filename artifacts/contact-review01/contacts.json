@@ -1,0 +1,93 @@
+{
+  "status": "saved_preparation_contacts_described",
+  "source_job": "ac8abf0a76aa4a3eb11255f15216a7b1",
+  "heavy_atom_distance_cutoff_nm": 0.45,
+  "saved_frame_count": 30,
+  "saved_frame_time_range_ps": [
+    29.899999999995575,
+    44.40000000000956
+  ],
+  "first_any_contact_count_observation_ps": 30.049999999995492,
+  "identity_sampling_note": "Fine-step observations contain counts only; residue identities below come only from saved DCD frames. No interpolation of identity, contact lifetimes or off-rates.",
+  "contacts": [
+    {
+      "source_chain": "E",
+      "source_label_seq": 344,
+      "source_auth_seq": "344",
+      "residue_name": "LYS",
+      "saved_frames_with_contact": 2,
+      "total_saved_frames": 30,
+      "saved_frame_fraction": 0.06666666666666667,
+      "observed_context_times_ps": [
+        40.900000000005285,
+        41.90000000000651
+      ],
+      "model_residues_from_nearest_cap": 115
+    },
+    {
+      "source_chain": "E",
+      "source_label_seq": 361,
+      "source_auth_seq": "361",
+      "residue_name": "MET",
+      "saved_frames_with_contact": 1,
+      "total_saved_frames": 30,
+      "saved_frame_fraction": 0.03333333333333333,
+      "observed_context_times_ps": [
+        36.9000000000004
+      ],
+      "model_residues_from_nearest_cap": 98
+    },
+    {
+      "source_chain": "E",
+      "source_label_seq": 362,
+      "source_auth_seq": "362",
+      "residue_name": "GLY",
+      "saved_frames_with_contact": 3,
+      "total_saved_frames": 30,
+      "saved_frame_fraction": 0.1,
+      "observed_context_times_ps": [
+        39.40000000000345,
+        39.90000000000406,
+        41.400000000005896
+      ],
+      "model_residues_from_nearest_cap": 97
+    },
+    {
+      "source_chain": "E",
+      "source_label_seq": 366,
+      "source_auth_seq": "366",
+      "residue_name": "THR",
+      "saved_frames_with_contact": 17,
+      "total_saved_frames": 30,
+      "saved_frame_fraction": 0.5666666666666667,
+      "observed_context_times_ps": [
+        34.39999999999734,
+        34.89999999999795,
+        36.9000000000004,
+        37.40000000000101,
+        37.90000000000162,
+        38.40000000000223,
+        38.90000000000284,
+        39.40000000000345,
+        39.90000000000406,
+        40.400000000004674,
+        40.900000000005285,
+        41.400000000005896,
+        41.90000000000651,
+        42.40000000000712,
+        43.40000000000834,
+        43.90000000000895,
+        44.40000000000956
+      ],
+      "model_residues_from_nearest_cap": 93
+    }
+  ],
+  "equilibrium_established": false,
+  "binding_sites_identified": false,
+  "limitations": [
+    "One prepared starting orientation during changing box volume; not an equilibrium sample or material comparison.",
+    "Encounter frequency is a saved-frame fraction, not equilibrium occupancy, binding strength or residence probability.",
+    "Initial placement, thermal motion and volume adjustment can contribute to contacts.",
+    "Native observed residues only; missing tails/glycans and isotope labeling are not modeled."
+  ]
+}

@@ -15,3 +15,4 @@ artifacts/workbench/**/*.csv text eol=lf
 artifacts/research-campaign/**/*.csv text eol=lf
 artifacts/pe-continuation/**/*.csv text eol=lf
 artifacts/npt-review01/**/*.csv text eol=lf
+datasets/results-delta-*.zip filter=lfs diff=lfs merge=lfs -text

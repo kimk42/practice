@@ -41,12 +41,12 @@ def availability(model_id,root=ROOT):
 
 def make_config(request):
  if not isinstance(request,dict):raise ValueError('JSON object required')
- allowed={'model_id','protocol_id','steps','max_npt_blocks','source_job_id','blocks'}
+ allowed={'model_id','protocol_id','steps','max_npt_blocks','source_job_id','blocks','block_ps'}
  if set(request)-allowed:raise ValueError('Unsupported configuration fields: '+', '.join(sorted(set(request)-allowed)))
  model=request.get('model_id');protocol=request.get('protocol_id')
  if model not in MODELS:raise ValueError('원자 모델이 준비된 PE만 실행할 수 있습니다. PTFE/PVDF는 아직 실행할 수 없습니다.')
  cfg={'schema_version':1,'model_id':model,'protocol_id':protocol,'threads':4,'observation_interval_steps':25,'trajectory_interval_steps':250,'checkpoint_interval_steps':100,'seed':MODELS[model]['seed'],'equilibrium_established':False,'production_ready':False}
- if protocol!='continue-npt' and {'source_job_id','blocks'}&set(request):raise ValueError('Continuation fields require continue-npt')
+ if protocol!='continue-npt' and {'source_job_id','blocks','block_ps'}&set(request):raise ValueError('Continuation fields require continue-npt')
  if protocol=='nvt-check' and model=='pe-fragment':
   if 'max_npt_blocks' in request:raise ValueError('NPT options are not part of this protocol')
   steps=request.get('steps',100)
@@ -67,12 +67,13 @@ def make_config(request):
   cfg['density_screen']={'minimum_blocks':3,'block_time_ps':2.5,'maximum_adjacent_mean_density_change_percent':.5,'maximum_last_block_density_drift_percent':.5,'maximum_temperature_mean_deviation_K':5,'maximum_relative_potential_slope_percent_per_ps':.5,'interpretation':'Descriptive preparation screen only; correlated short samples do not establish bulk or interface equilibrium.'}
  elif protocol=='continue-npt' and model=='pe-core':
   if {'steps','max_npt_blocks'}&set(request):raise ValueError('Use bounded continuation blocks')
-  source=request.get('source_job_id','');blocks=request.get('blocks',3)
+  source=request.get('source_job_id','');blocks=request.get('blocks',3);block_ps=request.get('block_ps',5)
   if not isinstance(source,str) or not re.fullmatch(r'[0-9a-f]{32}',source):raise ValueError('A validated source job id is required')
   if type(blocks)is not int or not 1<=blocks<=3:raise ValueError('Continuation blocks must be 1..3')
+  if type(block_ps)is not int or block_ps not in (5,10):raise ValueError('block_ps must be 5 or 10')
   cfg.update(continuation_from_job=source,pressure_interval_steps=250)
-  cfg['plan']=[{'name':f'continued-NPT-block-{i+1}','ensemble':'NPT','dt_fs':2,'pressure_bar':1,'schedule':[{'target_K':310,'steps':2500,'restraint_scale':0}]} for i in range(blocks)]
-  cfg['density_screen']={'minimum_blocks':3,'block_time_ps':5,'maximum_adjacent_mean_density_change_percent':.5,'maximum_last_block_density_drift_percent':.5,'maximum_temperature_mean_deviation_K':5,'maximum_relative_potential_slope_percent_per_ps':.5,'minimum_last_block_observed_volume_changes':5,'interpretation':'Short descriptive continuation screen with barostat-activity check; not proof of equilibrium or physical density accuracy.'}
+  cfg['plan']=[{'name':f'continued-NPT-block-{i+1}','ensemble':'NPT','dt_fs':2,'pressure_bar':1,'schedule':[{'target_K':310,'steps':block_ps*500,'restraint_scale':0}]} for i in range(blocks)]
+  cfg['density_screen']={'minimum_blocks':3,'block_time_ps':block_ps,'maximum_adjacent_mean_density_change_percent':.5,'maximum_last_block_density_drift_percent':.5,'maximum_temperature_mean_deviation_K':5,'maximum_relative_potential_slope_percent_per_ps':.5,'minimum_last_block_observed_volume_changes':5,'interpretation':'Short descriptive continuation screen with barostat-activity check; not proof of equilibrium or physical density accuracy.'}
  else:raise ValueError('Protocol/model combination is not supported')
  cfg['maximum_planned_steps']=sum(x['steps'] for stage in cfg['plan'] for x in stage['schedule'])
  cfg['maximum_planned_time_ps']=sum(sum(x['steps'] for x in s['schedule'])*s['dt_fs']/1000 for s in cfg['plan'])

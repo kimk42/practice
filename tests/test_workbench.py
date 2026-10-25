@@ -122,3 +122,9 @@ class ContinuationTests(unittest.TestCase):
   self.assertEqual(bar.getDefaultPressure().value_in_unit(unit.bar),1)
   with self.assertRaises(ReviewRequired):validate_continuation_runtime(conditions)
   context.setParameter(MonteCarloBarostat.Pressure(),1);validate_continuation_runtime(inspect_runtime(SimpleNamespace(context=context),system,integrator))
+
+class LongerContinuationTests(unittest.TestCase):
+ def test_longer_blocks_are_bounded_and_explicit(self):
+  req={'model_id':'pe-core','protocol_id':'continue-npt','source_job_id':'a'*32,'blocks':3,'block_ps':10};c=make_config(req);self.assertEqual(c['maximum_planned_time_ps'],30);self.assertEqual(c['density_screen']['block_time_ps'],10)
+  for value in [True,0,20]:
+   with self.assertRaises(ValueError):make_config({**req,'block_ps':value})

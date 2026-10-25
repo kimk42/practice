@@ -85,7 +85,7 @@ class Manager:
   item=self.get(id)
   if action=='resume' and item['status'] in {'cancelled','interrupted','failed'}:
    c=item['config'];request={'model_id':c['model_id'],'protocol_id':c['protocol_id']}
-   if c['protocol_id']=='continue-npt':request.update(source_job_id=c['continuation_from_job'],blocks=len(c['plan']))
+   if c['protocol_id']=='continue-npt':request.update(source_job_id=c['continuation_from_job'],blocks=len(c['plan']),block_ps=c['plan'][0]['schedule'][0]['steps']//500)
    elif c['protocol_id']=='nvt-check':request['steps']=c['plan'][0]['schedule'][0]['steps']
    else:request['max_npt_blocks']=len(c['plan'])-4
    return self.start(request,resume_from=id)

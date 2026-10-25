@@ -64,3 +64,9 @@ NVT는 1 fs, LangevinMiddle 마찰 5/ps이며 기존 체크포인트의 RNG를 �
 `scripts/continue_after_review.py`는 이전의 검토 대상 NPT 기록을 요약하고 이 대조를 실행합니다. 두 대조가 통과하면 해당 큰 모델 checkpoint에서 같은 조건의 15 ps NPT를 이어갑니다. 실패하면 새 큰 계산을 시작하지 않고 검토 상태로 남깁니다. 이 단계의 원본은 `runs/npt-review01/`, 보고서는 `artifacts/npt-review01/`에 보존합니다. 기존 디렉터리를 덮어쓰는 재실행은 허용하지 않습니다.
 
 추가 연장을 시작할 때 `runtime-conditions.json`에 **실제 Context의** 압력·온도 매개변수, barostat 주기, 위치 억제 수, 적분기 조건을 기록합니다. System의 기본값이 1 bar이더라도 실제 Context가 다르면 진행을 막습니다. 단위 검사에서는 이 둘이 다른 경우를 포함해 검사합니다. 이 검사는 올바른 설정으로 계산하는지 확인하며 실제 평균 압력이 1 bar로 수렴했음을 뜻하지 않습니다.
+
+## 연속 30 ps 구간과 원본 증분 보관
+
+API의 `continue-npt`에 `block_ps: 10, blocks: 3`을 주면 같은 Context에서 10 ps × 3블록, 최대 30 ps를 실행합니다. 기본 UI의 연장은 기존 5 ps × 3블록입니다. 허용 블록 길이는 5 또는 10 ps이며 온도·압력·시간 간격·위치 억제는 바꾸지 않습니다. 재시작 시에도 원래 선택한 블록 길이를 유지합니다. 이 길이 자체가 수렴을 보장하지 않습니다.
+
+전체 ZIP이 계속 커져 단일 원본 보관 한도에 도달하지 않도록, 취합기는 기존 기준 ZIP을 보존하고 새 파일·변경 파일만 제한된 크기의 독립 LFS ZIP에 추가합니다. 최신 파일의 선택과 무결성은 `datasets/results-index.json`이 관리합니다. [증분 보관과 복원](ARCHIVE_LAYERS.md)을 확인하세요.

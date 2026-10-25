@@ -6,6 +6,10 @@
 
 1–3단계인 입력 표준화, 실제 계산 제어, 화면 연결을 구현하고 실제 체크포인트 재시작을 검증했습니다. 4단계의 큰 PE 모델 가열·위치 억제 해제·NPT 기술 검사는 자동 순서로 실행합니다. 진행 상태는 실행 화면에서, 저장된 보고서는 [실행기 결과](artifacts/workbench/preparation/report.html)에서 확인합니다. 이 보고서의 상태가 실제 완료 여부의 기준입니다.
 
+## 44.6 ps 이후 준비 계산
+
+큰 PE 모델은 누적 44.6 ps에서도 밀도·압력 조정이 더 필요해, 같은 조건의 연속 30 ps NPT를 이어갑니다. [준비 궤적에서 관찰한 접촉](artifacts/contact-review01/report.html)은 기하 기록이며 결합 부위나 흡착 세기 결과가 아닙니다. 최신 실행 상태는 실제 작업 화면과 각 보고서의 상태·기준 시각을 확인하세요.
+
 ## NPT 검토와 물 단독 대조
 
 [검토 및 물 단독 대조 보고서](artifacts/npt-review01/report.html)에 원본 조건 대조, 512분자 물의 두 반복, 실제 밀도·온도·순간 압력과 CSV를 모았습니다. 대조의 기술 검사 통과 후 큰 PE 모델은 29.6 ps 체크포인트에서 추가 15 ps NPT를 이어갑니다. 물 단독 계산 시간과 큰 단백질·PE 계산 시간을 구분하며, 실제 Context의 압력·온도·억제 조건을 점검합니다.
@@ -35,7 +39,7 @@
 - [실행 이력과 이전 명령](docs/EXPERIMENT_LOG.md)
 - [재현·대용량 데이터 복원](docs/REPRODUCING.md)
 
-HTML은 그림을 포함한 독립 파일입니다. GitHub에서 소스가 보이면 **원본 다운로드 후 브라우저로 열면** 됩니다. 보고서와 작은 입력은 일반 Git으로, 전체 좌표·궤적·재시작 파일이 든 `datasets/results-complete.zip`은 **이 브랜치의 Git LFS**로 관리합니다. `artifacts/collected-results/FILES.json`은 그 원본 ZIP의 체크섬 색인이며 현재 Git 코드의 체크섬 목록이 아닙니다. 코드 정리 전 실제 계산에 쓴 스크립트도 원본 ZIP에 보존되어 있습니다.
+HTML은 그림을 포함한 독립 파일입니다. GitHub에서 소스가 보이면 **원본 다운로드 후 브라우저로 열면** 됩니다. 보고서와 작은 입력은 일반 Git으로, 전체 좌표·궤적·재시작 원본은 **이 브랜치의 Git LFS**에서 기존 ZIP과 증분 ZIP으로 보관하고, `datasets/results-index.json`으로 최신 파일을 선택합니다. `artifacts/collected-results/FILES.json`은 그 원본 ZIP의 체크섬 색인이며 현재 Git 코드의 체크섬 목록이 아닙니다. 코드 정리 전 실제 계산에 쓴 스크립트도 원본 ZIP에 보존되어 있습니다.
 
 ## 화면 실행
 
@@ -72,7 +76,7 @@ CI는 작은 단위·엔진 검사만 실행합니다. 큰 MD, AmberTools 설치
 
 ## 대용량 결과 보존
 
-`runs/`와 준비된 큰 `data/` 모델, 풀린 checkpoint·DCD는 일반 Git에 넣지 않고, 전체 원본 ZIP만 Git LFS로 보관합니다. 전체 원본 ZIP은 이 브랜치의 Git LFS에 포함했습니다. 먼저 LFS 데이터를 내려받은 뒤 작업용 디렉터리로 복원합니다. 채팅의 ZIP 링크도 같은 원본입니다.
+`runs/`와 준비된 큰 `data/` 모델, 풀린 checkpoint·DCD는 일반 Git에 넣지 않고, 기존 원본 ZIP과 증분 ZIP을 Git LFS로 보관합니다. 최신 스냅샷의 파일·체크섬은 `datasets/results-index.json`에 있습니다. 먼저 LFS 데이터를 내려받은 뒤 작업용 디렉터리로 복원합니다. 채팅의 ZIP 링크도 같은 원본입니다.
 
 ```bash
 git lfs install --local
@@ -80,7 +84,7 @@ git lfs pull
 python scripts/restore_raw_results.py
 ```
 
-복원기는 ZIP 내부 `FILES.json`의 SHA-256과 크기를 확인하며 **`data/`, `runs/`만** 복원합니다. README나 코드·설정을 덮어쓰지 않고, 내용이 다른 기존 데이터도 덮어쓰지 않습니다. 과거 환경의 절대 경로는 기록으로 유지하고, 코드에서는 현재 체크아웃의 대응 데이터 경로를 먼저 찾습니다.
+복원기는 색인이 있으면 자동으로 읽고 ZIP 및 각 파일의 SHA-256과 크기를 확인하며 **`data/`, `runs/`만** 복원합니다. README나 코드·설정을 덮어쓰지 않고, 내용이 다른 기존 데이터도 덮어쓰지 않습니다. 과거 환경의 절대 경로는 기록으로 유지하고, 코드에서는 현재 체크아웃의 대응 데이터 경로를 먼저 찾습니다.
 
 새 실행은 새 출력 디렉터리에 저장하세요. 기존 실행을 재시도할 때에는 실패 기록·원본 입력·재시작 출처를 보존합니다.
 
@@ -92,7 +96,7 @@ python scripts/restore_raw_results.py
 | `data/3ghg-upload/` | 제공받은 원본 CIF·FASTA와 구조 점검 |
 | `data/pe-gaff2/model02/` | 보정 기록을 보존한 작은 PE 파라미터 번들 |
 | `artifacts/` | Git에 보관하는 작은 그래프·CSV·JSON·HTML |
-| `datasets/` | Git LFS로 관리하는 검증된 전체 원본 ZIP |
+| `datasets/` | 불변 기준 ZIP·증분 ZIP(Git LFS), 최신 파일의 SHA-256 색인 |
 | `runs/` | 원본 ZIP에서 복원한 작업용 계산 데이터; Git 제외 |
 | `docs/` | 실행 이력, 재현 방법, 결과 단계 설명 |
 | `scripts/` | 검증된 원본 복원과 Git 용량 검사 |
@@ -100,3 +104,5 @@ python scripts/restore_raw_results.py
 | `tests/` | 작은 물리·형상·경로·복원 검사 |
 
 두 입자 시험은 계산 엔진 검사이며 폴리머 연구 결과가 아닙니다. 총 퍼텐셜 에너지 감소나 짧은 거리·접촉을 결합 세기 또는 평형 흡착으로 해석하지 않습니다.
+
+[기준 ZIP·증분 ZIP과 최신 상태 복원 설명](docs/ARCHIVE_LAYERS.md)

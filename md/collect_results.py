@@ -115,6 +115,10 @@ for review_path in ['artifacts/npt-review01/report.html']:
     if review.exists():
         body=review.read_text().split('<body>',1)[-1].rsplit('</body>',1)[0]
         sections.insert(3,'<hr><section>'+body+'</section><hr>')
+contact_report=ROOT/'artifacts/contact-review01/report.html'
+if contact_report.exists():
+    body=contact_report.read_text().split('<body>',1)[-1].rsplit('</body>',1)[0]
+    sections.insert(3,'<hr><section>'+body+'</section><hr>')
 guide=ROOT/'artifacts/data-guide.md'
 if guide.exists():
     sections.append('<h2>데이터·단위·파일 해설</h2><details open><summary>각 데이터와 지표를 읽는 방법</summary><pre style="white-space:pre-wrap;font-family:inherit">'+html.escape(guide.read_text())+'</pre></details>')

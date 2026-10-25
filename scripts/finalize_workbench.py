@@ -28,6 +28,9 @@ def export(job):
  for name in FILES:
   if (job/name).exists():shutil.copy2(job/name,out/name)
   else:(out/name).unlink(missing_ok=True)
+ # Clear only generated solvent diagnostics before considering this new job.
+ for name in ['solvent-audit.json','report.html']:(out/'solvent-audit'/name).unlink(missing_ok=True)
+ (out/'solvent-audit-error.json').unlink(missing_ok=True)
  # Analyze only stopped, stable trajectories; never interpret preparation as production.
  for name in ['geometry-analysis.json','geometric-observables.csv','geometry-analysis-error.json']:(out/name).unlink(missing_ok=True)
  state=json.loads((job/'state.json').read_text())
@@ -46,7 +49,12 @@ def export(job):
    audit(job,out/'solvent-audit')
   except Exception as e:atomic(out/'solvent-audit-error.json',{'status':'analysis_failed','error':str(e)})
  atomic(out/'location.json',{'job_id':job.name,'raw_directory':str(job.relative_to(ROOT)),'report_generated_unix':time.time()})
- if json.loads((job/'config.json').read_text()).get('protocol_id')=='continue-npt':shutil.copytree(out,ROOT/'artifacts/pe-continuation',dirs_exist_ok=True)
+ shutil.copytree(out,job/'analysis',dirs_exist_ok=True)
+ if json.loads((job/'config.json').read_text()).get('protocol_id')=='continue-npt':
+  dest=ROOT/'artifacts/pe-continuation'
+  for name in FILES+['geometry-analysis.json','geometric-observables.csv','geometry-analysis-error.json','solvent-audit-error.json','solvent-audit/solvent-audit.json','solvent-audit/report.html']:
+   if not (out/name).exists():(dest/name).unlink(missing_ok=True)
+  shutil.copytree(out,dest,dirs_exist_ok=True)
  return out
 
 def snapshot():
@@ -59,8 +67,9 @@ def snapshot():
   for entry in manifest['files']:
    data=z.read(entry['path'])
    if len(data)!=entry['bytes'] or hashlib.sha256(data).hexdigest()!=entry['sha256']:raise ValueError('Archive member integrity failed: '+entry['path'])
- dest=ROOT/'datasets/results-complete.zip';shutil.copy2(src,dest.with_suffix('.zip.tmp'));dest.with_suffix('.zip.tmp').replace(dest)
- r={'archive_name':dest.name,'archive_bytes':dest.stat().st_size,'archive_sha256':h.hexdigest(),'snapshot_files':len(manifest['files']),'large_system_atoms':577890,'scope':'All original inputs and attempts plus executed workbench jobs, current producing code and portable reports. See workbench state for actual completed length; no equilibrium claim.'}
+ from scripts.archive_layers import publish_snapshot,digest
+ index=publish_snapshot(src,ROOT/'datasets')
+ r={'format':index['format'],'index_path':'datasets/results-index.json','index_sha256':digest(ROOT/'datasets/results-index.json'),'archives':index['archives'],'archives_total_bytes':sum(a['bytes'] for a in index['archives']),'snapshot_files':len(index['files']),'local_full_snapshot_sha256':h.hexdigest(),'local_full_snapshot_bytes':src.stat().st_size,'large_system_atoms':577890,'scope':'Complete latest snapshot selected by the SHA-256 index across an immutable baseline and incremental LFS ZIPs. No equilibrium claim.'}
  atomic(ROOT/'docs/result-archive.json',r);print(json.dumps(r),flush=True)
 
 def main():
@@ -86,10 +95,17 @@ def main():
    if research.get('current_PE_job')!=a.job or research.get('current_PE',{}).get('status')==s['status']:break
    time.sleep(5)
   atomic(statusfile,{'status':'exporting','MD_status':s['status']});export(job)
+  if json.loads((job/'config.json').read_text())['model_id']=='pe-core' and (ROOT/'artifacts/pe-continuation/geometry-analysis.json').exists():
+   try:
+    from md.contact_review import publish as publish_contacts
+    publish_contacts(job,ROOT/'artifacts/contact-review01')
+    shutil.copytree(ROOT/'artifacts/contact-review01',job/'contact-review',dirs_exist_ok=True)
+   except Exception as e:atomic(job/'contact-review-error.json',{'error':str(e)})
   if a.archive:snapshot()
   if a.push:
-   paths=['artifacts/npt-review01','artifacts/workbench','artifacts/pe-continuation','artifacts/solvent-audit01','artifacts/research-campaign','artifacts/collected-results','docs/result-archive.json']
-   if a.archive:paths.append('datasets/results-complete.zip')
+   paths=['artifacts/contact-review01','artifacts/npt-review01','artifacts/workbench','artifacts/pe-continuation','artifacts/solvent-audit01','artifacts/research-campaign','artifacts/collected-results','docs/result-archive.json']
+   if a.archive:
+    archive_index=json.loads((ROOT/'datasets/results-index.json').read_text());paths+=['datasets/results-index.json']+['datasets/'+a['name'] for a in archive_index['archives']]
    subprocess.run(['git','add','--',*paths],cwd=ROOT,check=True)
    subprocess.run([sys.executable,'scripts/check_repository.py'],cwd=ROOT,check=True)
    staged=subprocess.run(['git','diff','--cached','--quiet'],cwd=ROOT).returncode

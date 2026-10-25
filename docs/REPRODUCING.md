@@ -6,7 +6,7 @@
 
 ## 복원
 
-전체 원본은 이 브랜치의 `datasets/results-complete.zip`에 Git LFS로 포함되어 있습니다. 일반 Git에는 작은 포인터가, LFS에는 실제 ZIP이 저장됩니다.
+전체 원본은 이 브랜치의 기존 `datasets/results-complete.zip`과 이후 증분 ZIP에 Git LFS로 포함되어 있습니다. 최신 상태는 `datasets/results-index.json`이 선택하며 기본 복원기는 이를 자동으로 사용합니다. [보관·복원 구조](ARCHIVE_LAYERS.md)를 확인하세요. 일반 Git에는 작은 포인터가, LFS에는 실제 ZIP이 저장됩니다.
 
 ```bash
 git lfs install --local

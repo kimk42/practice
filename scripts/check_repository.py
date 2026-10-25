@@ -8,7 +8,7 @@ tracked=subprocess.check_output(['git','ls-files','-z'],cwd=root).decode().split
 problems=[]
 for name in filter(None,tracked):
     size=int(subprocess.check_output(['git','cat-file','-s',':'+name],cwd=root))
-    if name=='datasets/results-complete.zip':
+    if name=='datasets/results-complete.zip' or re.fullmatch(r'datasets/results-delta-[0-9]{4}-[0-9a-f]{12}\.zip',name):
         pointer=subprocess.check_output(['git','show',':'+name],cwd=root) if size<1024 else b''
         attr=subprocess.check_output(['git','check-attr','--cached','filter','--',name],cwd=root).decode().strip()
         if not re.fullmatch(rb'version https://git-lfs.github.com/spec/v1\noid sha256:[0-9a-f]{64}\nsize [0-9]+\n',pointer) or not attr.endswith('filter: lfs'):
