@@ -27,6 +27,6 @@ def main():
     with (ROOT/'runs/fxii-recovery-launch.log').open('w') as log:
         subprocess.Popen(['python','scripts/recover_fxii_control.py'],cwd=ROOT,stdout=log,stderr=subprocess.STDOUT)
     # Give the quantum jobs their full configured limit, then perform gated surface MD.
-    env=os.environ.copy();env['MD_WORKFLOW_WAIT_SECONDS']=str(int(env['MD_SQM_MAX_SECONDS'])+3600)
+    env=os.environ.copy();env['MD_WORKFLOW_WAIT_SECONDS']=str(int(env.get('MD_SQM_MAX_SECONDS','86400'))+3600)
     subprocess.run(['python','scripts/continue_three_stages.py'],cwd=ROOT,env=env,check=True)
 if __name__=='__main__':main()
