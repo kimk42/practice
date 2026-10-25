@@ -3,12 +3,12 @@
   "trajectory_segments": [
     {
       "path": "trajectories/segment-01.dcd",
-      "frames": 30,
-      "context_step_offset": 18250,
-      "context_time_offset_ps": 29.399999999995742
+      "frames": 60,
+      "context_step_offset": 25750,
+      "context_time_offset_ps": 44.400000000009804
     }
   ],
-  "observations": 301,
+  "observations": 601,
   "source_model_atoms": 577890,
   "native_CA_count": 1913,
   "equilibrium_established": false

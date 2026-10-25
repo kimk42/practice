@@ -9,7 +9,7 @@
   "seed": 45,
   "equilibrium_established": false,
   "production_ready": false,
-  "continuation_from_job": "6ce66315455240338927597da4bc6757",
+  "continuation_from_job": "ac8abf0a76aa4a3eb11255f15216a7b1",
   "pressure_interval_steps": 250,
   "plan": [
     {
@@ -20,7 +20,7 @@
       "schedule": [
         {
           "target_K": 310,
-          "steps": 2500,
+          "steps": 5000,
           "restraint_scale": 0
         }
       ]
@@ -33,7 +33,7 @@
       "schedule": [
         {
           "target_K": 310,
-          "steps": 2500,
+          "steps": 5000,
           "restraint_scale": 0
         }
       ]
@@ -46,7 +46,7 @@
       "schedule": [
         {
           "target_K": 310,
-          "steps": 2500,
+          "steps": 5000,
           "restraint_scale": 0
         }
       ]
@@ -54,7 +54,7 @@
   ],
   "density_screen": {
     "minimum_blocks": 3,
-    "block_time_ps": 5,
+    "block_time_ps": 10,
     "maximum_adjacent_mean_density_change_percent": 0.5,
     "maximum_last_block_density_drift_percent": 0.5,
     "maximum_temperature_mean_deviation_K": 5,
@@ -62,13 +62,13 @@
     "minimum_last_block_observed_volume_changes": 5,
     "interpretation": "Short descriptive continuation screen with barostat-activity check; not proof of equilibrium or physical density accuracy."
   },
-  "maximum_planned_steps": 7500,
-  "maximum_planned_time_ps": 15.0,
+  "maximum_planned_steps": 15000,
+  "maximum_planned_time_ps": 30.0,
   "stage_notes": [
     "NVT keeps the original box and anchors; support is released before pressure adjustment.",
     "Isotropic NPT is used only for this finite oligomer patch; all Cartesian support force constants must be zero.",
     "No surface affinity, binding free energy, material ranking or interface-equilibrium conclusion."
   ],
-  "id": "ac8abf0a76aa4a3eb11255f15216a7b1",
-  "created_unix": 1792902925.1885579
+  "id": "1b42c3f67f2d4541859b9f62c27699a5",
+  "created_unix": 1792917779.215773
 }

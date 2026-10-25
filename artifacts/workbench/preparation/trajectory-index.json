@@ -2,8 +2,8 @@
   {
     "path": "trajectories/segment-01.dcd",
     "dt_ps": 0.002,
-    "context_step_offset": 18250,
-    "context_time_offset_ps": 29.399999999995742,
+    "context_step_offset": 25750,
+    "context_time_offset_ps": 44.400000000009804,
     "reason": "source-continuation"
   }
 ]

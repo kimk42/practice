@@ -2,34 +2,34 @@
   "blocks": [
     {
       "stage": "continued-NPT-block-1",
-      "observations": 101,
-      "observed_volume_changes": 7,
-      "mean_density_g_cm3": 0.8726581413270258,
-      "density_endpoint_change_percent": 0.2695881582091664,
-      "mean_temperature_K": 310.9342845941562,
-      "relative_potential_slope_percent_per_ps": -0.025221269330816767
+      "observations": 201,
+      "observed_volume_changes": 19,
+      "mean_density_g_cm3": 0.8876186480733301,
+      "density_endpoint_change_percent": 0.6967677731055888,
+      "mean_temperature_K": 310.95053780656235,
+      "relative_potential_slope_percent_per_ps": -0.023736939002112472
     },
     {
       "stage": "continued-NPT-block-2",
-      "observations": 100,
-      "observed_volume_changes": 14,
-      "mean_density_g_cm3": 0.8748903385485799,
-      "density_endpoint_change_percent": 0.4493931688161368,
-      "mean_temperature_K": 310.96150140601003,
-      "relative_potential_slope_percent_per_ps": -0.01936770412052194
+      "observations": 200,
+      "observed_volume_changes": 52,
+      "mean_density_g_cm3": 0.8966832356497016,
+      "density_endpoint_change_percent": 1.2821342879988817,
+      "mean_temperature_K": 310.9770311304708,
+      "relative_potential_slope_percent_per_ps": -0.026868387019374596
     },
     {
       "stage": "continued-NPT-block-3",
-      "observations": 100,
-      "observed_volume_changes": 23,
-      "mean_density_g_cm3": 0.8813640715306197,
-      "density_endpoint_change_percent": 0.8117977095525752,
-      "mean_temperature_K": 310.7681793244758,
-      "relative_potential_slope_percent_per_ps": -0.029384702716126584
+      "observations": 200,
+      "observed_volume_changes": 43,
+      "mean_density_g_cm3": 0.9073427551724069,
+      "density_endpoint_change_percent": 0.88244193924778,
+      "mean_temperature_K": 310.8784137507342,
+      "relative_potential_slope_percent_per_ps": -0.015359378191238466
     }
   ],
   "screen_passed": false,
   "equilibrium_established": false,
   "interpretation": "Short descriptive continuation screen with barostat-activity check; not proof of equilibrium or physical density accuracy.",
-  "last_adjacent_density_mean_change_percent": 0.7399479336781312
+  "last_adjacent_density_mean_change_percent": 1.188772032186125
 }

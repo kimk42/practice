@@ -1,743 +1,1626 @@
 {
   "status": "executed_preparation_trajectory_geometry_analyzed",
-  "job_id": "ac8abf0a76aa4a3eb11255f15216a7b1",
+  "job_id": "1b42c3f67f2d4541859b9f62c27699a5",
   "model_id": "pe-core",
-  "frames": 30,
+  "frames": 60,
   "saved_frame_context_time_range_ps": [
-    29.899999999995575,
-    44.40000000000956
+    44.90000000001017,
+    74.40000000000927
   ],
   "contacts_ever_observed": [
+    "E:343",
     "E:344",
-    "E:361",
     "E:362",
-    "E:366"
+    "E:363",
+    "E:366",
+    "E:371",
+    "E:457",
+    "E:458"
   ],
   "last_frame": {
-    "minimum_protein_polymer_heavy_nm": 0.4222747948589297,
+    "minimum_protein_polymer_heavy_nm": 0.34137047630691675,
     "contact_residues": [
-      "E:366"
+      "E:343",
+      "E:344",
+      "E:362",
+      "E:363",
+      "E:366",
+      "E:457"
     ],
-    "contact_residue_count": 1,
-    "protein_axis_angle_to_fitted_patch_plane_deg": 0.006719365873057279,
+    "contact_residue_count": 6,
+    "protein_axis_angle_to_fitted_patch_plane_deg": 0.04571211888924041,
     "patch_PCA_normal": [
-      -0.0001684530374618821,
-      0.009472148103309652,
-      0.9999551240100144
+      0.0007238337831875048,
+      0.00452017595405485,
+      0.999989521982105
     ],
-    "patch_plane_fit_RMS_height_nm": 0.2569924677691277,
-    "patch_plane_PCA_separation_ratio": 0.08577706198731762,
+    "patch_plane_fit_RMS_height_nm": 0.26922291938123427,
+    "patch_plane_PCA_separation_ratio": 0.09111141004380899,
     "patch_plane_fit_usable": true,
     "protein_axis_fit_usable": true,
     "water_O_within_0_35nm_of_both_groups": 1,
     "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-    "context_step": 25750,
-    "context_time_ps": 44.40000000000956,
-    "additional_time_ps": 14.80000000001382,
+    "context_step": 40750,
+    "context_time_ps": 74.40000000000927,
+    "additional_time_ps": 29.799999999999464,
     "stage": "continued-NPT-block-3",
     "restraint_scale": 0
   },
   "trajectory_sha256": {
-    "trajectories/segment-01.dcd": "0d28f7ee56c33dfd6fc695444ee3787f085208a9d405d1ebe49166682c2c70dc"
+    "trajectories/segment-01.dcd": "08e41e50f4ba177b445d94cb953efa04c64f930e7772bb57c7e28cd12f2eb4c7"
   },
   "geometry_rows": [
     {
-      "minimum_protein_polymer_heavy_nm": 0.5112554156972812,
-      "contact_residues": [],
-      "contact_residue_count": 0,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.035147676134482726,
-      "patch_PCA_normal": [
-        -0.0004966185902756147,
-        0.004948064223158188,
-        0.9999876349387622
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.2474340085057469,
-      "patch_plane_PCA_separation_ratio": 0.08194783512904817,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 0,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 18500,
-      "context_time_ps": 29.899999999995575,
-      "additional_time_ps": 0.29999999999983373,
-      "stage": "continued-NPT-block-1",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.5339698191391401,
-      "contact_residues": [],
-      "contact_residue_count": 0,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.034527741540414096,
-      "patch_PCA_normal": [
-        -0.000510245780939662,
-        0.005626864604370896,
-        0.9999840388946051
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.24796680573046928,
-      "patch_plane_PCA_separation_ratio": 0.08208754651578493,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 0,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 18750,
-      "context_time_ps": 30.3999999999953,
-      "additional_time_ps": 0.7999999999995566,
-      "stage": "continued-NPT-block-1",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.601055967221273,
-      "contact_residues": [],
-      "contact_residue_count": 0,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.0377588531052957,
-      "patch_PCA_normal": [
-        -0.00044981919466535215,
-        0.00550283615210867,
-        0.9999847581123298
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.24771178736676688,
-      "patch_plane_PCA_separation_ratio": 0.08206793724304058,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 1,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 19000,
-      "context_time_ps": 30.89999999999502,
-      "additional_time_ps": 1.2999999999992795,
-      "stage": "continued-NPT-block-1",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.5273950340375383,
-      "contact_residues": [],
-      "contact_residue_count": 0,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.02905974563696815,
-      "patch_PCA_normal": [
-        -0.00035739304619613786,
-        0.005855392188041986,
-        0.99998279317823
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.2498378900353656,
-      "patch_plane_PCA_separation_ratio": 0.08277983348499642,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 1,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 19250,
-      "context_time_ps": 31.399999999994744,
-      "additional_time_ps": 1.7999999999990024,
-      "stage": "continued-NPT-block-1",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.5746428767416936,
-      "contact_residues": [],
-      "contact_residue_count": 0,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.040905358518923546,
-      "patch_PCA_normal": [
-        -0.0004814866184260109,
-        0.006264795686532709,
-        0.9999802600579886
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.2487394936823779,
-      "patch_plane_PCA_separation_ratio": 0.08247715990964752,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 0,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 19500,
-      "context_time_ps": 31.899999999994467,
-      "additional_time_ps": 2.2999999999987253,
-      "stage": "continued-NPT-block-1",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.587348722099878,
-      "contact_residues": [],
-      "contact_residue_count": 0,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.045912708434460006,
-      "patch_PCA_normal": [
-        -0.0004497988240595088,
-        0.006697927626575062,
-        0.999977467469406
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.24893960254767458,
-      "patch_plane_PCA_separation_ratio": 0.08252285757208783,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 0,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 19750,
-      "context_time_ps": 32.3999999999949,
-      "additional_time_ps": 2.799999999999155,
-      "stage": "continued-NPT-block-1",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.5679711813827883,
-      "contact_residues": [],
-      "contact_residue_count": 0,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.04046053994027434,
-      "patch_PCA_normal": [
-        -0.0003762422411848806,
-        0.007164115505948643,
-        0.9999742666142933
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.24956013402539456,
-      "patch_plane_PCA_separation_ratio": 0.08273414559192727,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 0,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 20000,
-      "context_time_ps": 32.89999999999551,
-      "additional_time_ps": 3.2999999999997662,
-      "stage": "continued-NPT-block-1",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.48795927357690433,
-      "contact_residues": [],
-      "contact_residue_count": 0,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.030533473482087826,
-      "patch_PCA_normal": [
-        -0.00030865308165080085,
-        0.007188377968710968,
-        0.9999741156427269
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.25012742295011714,
-      "patch_plane_PCA_separation_ratio": 0.08294818886520815,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 0,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 20250,
-      "context_time_ps": 33.39999999999612,
-      "additional_time_ps": 3.8000000000003773,
-      "stage": "continued-NPT-block-1",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.5338480102565754,
-      "contact_residues": [],
-      "contact_residue_count": 0,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.03585520198951756,
-      "patch_PCA_normal": [
-        -0.0003325821753358041,
-        0.007317894908398848,
-        0.9999731685416393
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.25007472128180963,
-      "patch_plane_PCA_separation_ratio": 0.08292333948123608,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 0,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 20500,
-      "context_time_ps": 33.89999999999673,
-      "additional_time_ps": 4.300000000000988,
-      "stage": "continued-NPT-block-1",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.40517009582501085,
+      "minimum_protein_polymer_heavy_nm": 0.44534647829714147,
       "contact_residues": [
         "E:366"
       ],
       "contact_residue_count": 1,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.0364328060424279,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.004537124158137453,
       "patch_PCA_normal": [
-        -0.0002874537736895585,
-        0.007581716977780428,
-        0.9999712170547695
+        -5.9076204218962855e-05,
+        0.009129068572010235,
+        0.9999583274402036
       ],
-      "patch_plane_fit_RMS_height_nm": 0.2505312319206995,
-      "patch_plane_PCA_separation_ratio": 0.0831187582447944,
+      "patch_plane_fit_RMS_height_nm": 0.2581166031916665,
+      "patch_plane_PCA_separation_ratio": 0.08619077676848678,
       "patch_plane_fit_usable": true,
       "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 1,
+      "water_O_within_0_35nm_of_both_groups": 0,
       "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 20750,
-      "context_time_ps": 34.39999999999734,
-      "additional_time_ps": 4.800000000001599,
+      "context_step": 26000,
+      "context_time_ps": 44.90000000001017,
+      "additional_time_ps": 0.30000000000036664,
       "stage": "continued-NPT-block-1",
       "restraint_scale": 0
     },
     {
-      "minimum_protein_polymer_heavy_nm": 0.3741349461083991,
+      "minimum_protein_polymer_heavy_nm": 0.3592111576514002,
       "contact_residues": [
         "E:366"
       ],
       "contact_residue_count": 1,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.04049138064403956,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.016732941503905183,
       "patch_PCA_normal": [
-        -0.00022567069836801657,
-        0.007066617378943096,
-        0.9999750056834198
+        -3.9208752742383434e-05,
+        0.008956509396214951,
+        0.9999598888966045
       ],
-      "patch_plane_fit_RMS_height_nm": 0.2514542313751736,
-      "patch_plane_PCA_separation_ratio": 0.08345111882926773,
+      "patch_plane_fit_RMS_height_nm": 0.25856107037789416,
+      "patch_plane_PCA_separation_ratio": 0.08629601583545987,
       "patch_plane_fit_usable": true,
       "protein_axis_fit_usable": true,
       "water_O_within_0_35nm_of_both_groups": 0,
       "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 21000,
-      "context_time_ps": 34.89999999999795,
-      "additional_time_ps": 5.3000000000022105,
-      "stage": "continued-NPT-block-2",
+      "context_step": 26250,
+      "context_time_ps": 45.400000000010785,
+      "additional_time_ps": 0.8000000000009777,
+      "stage": "continued-NPT-block-1",
       "restraint_scale": 0
     },
     {
-      "minimum_protein_polymer_heavy_nm": 0.5296747254671264,
-      "contact_residues": [],
-      "contact_residue_count": 0,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.03445980546926509,
-      "patch_PCA_normal": [
-        -0.00024280991981163647,
-        0.00733107213385209,
-        0.9999730978504927
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.25087578210330486,
-      "patch_plane_PCA_separation_ratio": 0.08332574678863715,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 0,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 21250,
-      "context_time_ps": 35.39999999999856,
-      "additional_time_ps": 5.800000000002822,
-      "stage": "continued-NPT-block-2",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.48031664443588107,
-      "contact_residues": [],
-      "contact_residue_count": 0,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.030570479594014117,
-      "patch_PCA_normal": [
-        -0.00026633141773610165,
-        0.006780695049943719,
-        0.9999769753560408
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.25209361953280063,
-      "patch_plane_PCA_separation_ratio": 0.08373905816759877,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 0,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 21500,
-      "context_time_ps": 35.899999999999174,
-      "additional_time_ps": 6.300000000003433,
-      "stage": "continued-NPT-block-2",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.4669189424968623,
-      "contact_residues": [],
-      "contact_residue_count": 0,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.032904638187675285,
-      "patch_PCA_normal": [
-        -0.0003695889395444338,
-        0.0062572122012669595,
-        0.9999803551567821
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.25166997909468736,
-      "patch_plane_PCA_separation_ratio": 0.08363223742980345,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 0,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 21750,
-      "context_time_ps": 36.399999999999785,
-      "additional_time_ps": 6.800000000004044,
-      "stage": "continued-NPT-block-2",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.40691377255149536,
+      "minimum_protein_polymer_heavy_nm": 0.39561314227642447,
       "contact_residues": [
-        "E:361",
+        "E:344",
+        "E:362",
         "E:366"
       ],
-      "contact_residue_count": 2,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.031349671053059455,
+      "contact_residue_count": 3,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.01818768731929768,
       "patch_PCA_normal": [
-        -0.0003756419617583576,
-        0.006740942376880388,
-        0.99997720903478
+        -4.4748127711557264e-05,
+        0.009556222145844062,
+        0.9999543372654094
       ],
-      "patch_plane_fit_RMS_height_nm": 0.2524705588458205,
-      "patch_plane_PCA_separation_ratio": 0.08390976515526549,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 0,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 22000,
-      "context_time_ps": 36.9000000000004,
-      "additional_time_ps": 7.300000000004655,
-      "stage": "continued-NPT-block-2",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.38332328756093365,
-      "contact_residues": [
-        "E:366"
-      ],
-      "contact_residue_count": 1,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.0316074895937763,
-      "patch_PCA_normal": [
-        -0.00030233438543875234,
-        0.006889409603797247,
-        0.9999762220319193
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.25265616154834486,
-      "patch_plane_PCA_separation_ratio": 0.08400255136993409,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 0,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 22250,
-      "context_time_ps": 37.40000000000101,
-      "additional_time_ps": 7.800000000005266,
-      "stage": "continued-NPT-block-2",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.3453544902330972,
-      "contact_residues": [
-        "E:366"
-      ],
-      "contact_residue_count": 1,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.020021333328807244,
-      "patch_PCA_normal": [
-        -0.00030018439506876915,
-        0.007426915707278714,
-        0.9999723750246334
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.2521095208274704,
-      "patch_plane_PCA_separation_ratio": 0.08378224137902955,
+      "patch_plane_fit_RMS_height_nm": 0.25904582275037813,
+      "patch_plane_PCA_separation_ratio": 0.08644778266102195,
       "patch_plane_fit_usable": true,
       "protein_axis_fit_usable": true,
       "water_O_within_0_35nm_of_both_groups": 1,
       "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 22500,
-      "context_time_ps": 37.90000000000162,
-      "additional_time_ps": 8.300000000005877,
-      "stage": "continued-NPT-block-2",
+      "context_step": 26500,
+      "context_time_ps": 45.900000000011396,
+      "additional_time_ps": 1.3000000000015888,
+      "stage": "continued-NPT-block-1",
       "restraint_scale": 0
     },
     {
-      "minimum_protein_polymer_heavy_nm": 0.38894708906317277,
+      "minimum_protein_polymer_heavy_nm": 0.3560842882197806,
       "contact_residues": [
+        "E:344",
+        "E:362",
         "E:366"
       ],
-      "contact_residue_count": 1,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.026662828541716237,
+      "contact_residue_count": 3,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.019453701940571364,
       "patch_PCA_normal": [
-        -0.000341348349549385,
-        0.007917068335610455,
-        0.9999686012621967
+        -8.755865568604171e-05,
+        0.009580245135461074,
+        0.9999541045651178
       ],
-      "patch_plane_fit_RMS_height_nm": 0.25210911040647477,
-      "patch_plane_PCA_separation_ratio": 0.08374927819761241,
+      "patch_plane_fit_RMS_height_nm": 0.2587433233518387,
+      "patch_plane_PCA_separation_ratio": 0.08639325859553983,
       "patch_plane_fit_usable": true,
       "protein_axis_fit_usable": true,
       "water_O_within_0_35nm_of_both_groups": 1,
       "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 22750,
-      "context_time_ps": 38.40000000000223,
-      "additional_time_ps": 8.800000000006488,
-      "stage": "continued-NPT-block-2",
+      "context_step": 26750,
+      "context_time_ps": 46.40000000001201,
+      "additional_time_ps": 1.8000000000021998,
+      "stage": "continued-NPT-block-1",
       "restraint_scale": 0
     },
     {
-      "minimum_protein_polymer_heavy_nm": 0.44054159704455176,
-      "contact_residues": [
-        "E:366"
-      ],
-      "contact_residue_count": 1,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.024232406893537676,
-      "patch_PCA_normal": [
-        -0.0003386888259883,
-        0.0077413643680666056,
-        0.9999699778331348
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.253884953505289,
-      "patch_plane_PCA_separation_ratio": 0.08443325546380778,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 1,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 23000,
-      "context_time_ps": 38.90000000000284,
-      "additional_time_ps": 9.300000000007099,
-      "stage": "continued-NPT-block-2",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.41156749241860835,
+      "minimum_protein_polymer_heavy_nm": 0.4133139688819017,
       "contact_residues": [
         "E:362",
         "E:366"
       ],
       "contact_residue_count": 2,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.024220099861406122,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.016524102779714066,
       "patch_PCA_normal": [
-        -0.00034682069295593966,
-        0.008059026635952593,
-        0.9999674653732931
+        -0.00014148510508664919,
+        0.009448477010050027,
+        0.9999553521353617
       ],
-      "patch_plane_fit_RMS_height_nm": 0.2535620560624293,
-      "patch_plane_PCA_separation_ratio": 0.08437921976472511,
+      "patch_plane_fit_RMS_height_nm": 0.2589869780582672,
+      "patch_plane_PCA_separation_ratio": 0.08652431564796134,
       "patch_plane_fit_usable": true,
       "protein_axis_fit_usable": true,
       "water_O_within_0_35nm_of_both_groups": 0,
       "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 23250,
-      "context_time_ps": 39.40000000000345,
-      "additional_time_ps": 9.80000000000771,
-      "stage": "continued-NPT-block-2",
+      "context_step": 27000,
+      "context_time_ps": 46.90000000001262,
+      "additional_time_ps": 2.300000000002811,
+      "stage": "continued-NPT-block-1",
       "restraint_scale": 0
     },
     {
-      "minimum_protein_polymer_heavy_nm": 0.422092284478595,
-      "contact_residues": [
-        "E:362",
-        "E:366"
-      ],
-      "contact_residue_count": 2,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.019034200145523553,
-      "patch_PCA_normal": [
-        -0.00030967085974671903,
-        0.008231301349696185,
-        0.9999660743155485
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.25303283768500556,
-      "patch_plane_PCA_separation_ratio": 0.08425946671069622,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 1,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 23500,
-      "context_time_ps": 39.90000000000406,
-      "additional_time_ps": 10.300000000008321,
-      "stage": "continued-NPT-block-3",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.4399895590255808,
+      "minimum_protein_polymer_heavy_nm": 0.42095342194928403,
       "contact_residues": [
         "E:366"
       ],
       "contact_residue_count": 1,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.014950307944558315,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.022497211948182372,
       "patch_PCA_normal": [
-        -0.0002721980196511768,
-        0.007846139870059887,
-        0.9999691815237994
+        -9.944367183265556e-05,
+        0.009431181828302937,
+        0.9999555204709245
       ],
-      "patch_plane_fit_RMS_height_nm": 0.25309793780178064,
-      "patch_plane_PCA_separation_ratio": 0.08431156582738128,
+      "patch_plane_fit_RMS_height_nm": 0.2598739417977607,
+      "patch_plane_PCA_separation_ratio": 0.08683237444428579,
       "patch_plane_fit_usable": true,
       "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 1,
+      "water_O_within_0_35nm_of_both_groups": 0,
       "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 23750,
-      "context_time_ps": 40.400000000004674,
-      "additional_time_ps": 10.800000000008932,
-      "stage": "continued-NPT-block-3",
+      "context_step": 27250,
+      "context_time_ps": 47.40000000001323,
+      "additional_time_ps": 2.800000000003422,
+      "stage": "continued-NPT-block-1",
       "restraint_scale": 0
     },
     {
-      "minimum_protein_polymer_heavy_nm": 0.3862037507750931,
+      "minimum_protein_polymer_heavy_nm": 0.40606934007619483,
       "contact_residues": [
         "E:344",
         "E:366"
       ],
       "contact_residue_count": 2,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.020193206627869775,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.018692281807777347,
       "patch_PCA_normal": [
-        -0.00026045117645880815,
-        0.007661042956811692,
-        0.9999706198614031
+        -0.00020114515729577521,
+        0.009206229636143592,
+        0.9999576015394415
       ],
-      "patch_plane_fit_RMS_height_nm": 0.25404692702118065,
-      "patch_plane_PCA_separation_ratio": 0.08465319774368378,
+      "patch_plane_fit_RMS_height_nm": 0.2599466161166258,
+      "patch_plane_PCA_separation_ratio": 0.0869276343982267,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 0,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 27500,
+      "context_time_ps": 47.90000000001384,
+      "additional_time_ps": 3.300000000004033,
+      "stage": "continued-NPT-block-1",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.4619463447447934,
+      "contact_residues": [],
+      "contact_residue_count": 0,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.011507327828731925,
+      "patch_PCA_normal": [
+        -0.0001744700283043067,
+        0.008870750154368778,
+        0.9999606389013062
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26054052953623347,
+      "patch_plane_PCA_separation_ratio": 0.08712978901658039,
       "patch_plane_fit_usable": true,
       "protein_axis_fit_usable": true,
       "water_O_within_0_35nm_of_both_groups": 1,
       "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 24000,
-      "context_time_ps": 40.900000000005285,
-      "additional_time_ps": 11.300000000009543,
-      "stage": "continued-NPT-block-3",
+      "context_step": 27750,
+      "context_time_ps": 48.40000000001445,
+      "additional_time_ps": 3.800000000004644,
+      "stage": "continued-NPT-block-1",
       "restraint_scale": 0
     },
     {
-      "minimum_protein_polymer_heavy_nm": 0.4039173178003837,
+      "minimum_protein_polymer_heavy_nm": 0.422555650633383,
       "contact_residues": [
-        "E:362",
-        "E:366"
-      ],
-      "contact_residue_count": 2,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.024048132305381716,
-      "patch_PCA_normal": [
-        -0.00020245288254882338,
-        0.008324804812000708,
-        0.9999653277177527
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.2526990679471789,
-      "patch_plane_PCA_separation_ratio": 0.08419855432098253,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 0,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 24250,
-      "context_time_ps": 41.400000000005896,
-      "additional_time_ps": 11.800000000010154,
-      "stage": "continued-NPT-block-3",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.40508239792553874,
-      "contact_residues": [
-        "E:344",
-        "E:366"
-      ],
-      "contact_residue_count": 2,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.018947459698187372,
-      "patch_PCA_normal": [
-        -0.00013429396811386212,
-        0.008970118033712837,
-        0.9999597586641129
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.25382761281469374,
-      "patch_plane_PCA_separation_ratio": 0.08457350903348018,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 0,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 24500,
-      "context_time_ps": 41.90000000000651,
-      "additional_time_ps": 12.300000000010765,
-      "stage": "continued-NPT-block-3",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.432964511494373,
-      "contact_residues": [
-        "E:366"
+        "E:344"
       ],
       "contact_residue_count": 1,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.01941678568810601,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.019844222226252553,
       "patch_PCA_normal": [
-        -0.00015528959293741824,
-        0.008862534807246858,
-        0.9999607149093072
+        -9.478880655505397e-05,
+        0.008718401405477638,
+        0.9999619895236095
       ],
-      "patch_plane_fit_RMS_height_nm": 0.25384670834197076,
-      "patch_plane_PCA_separation_ratio": 0.0846539431312699,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 0,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 24750,
-      "context_time_ps": 42.40000000000712,
-      "additional_time_ps": 12.800000000011376,
-      "stage": "continued-NPT-block-3",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.4693506565094817,
-      "contact_residues": [],
-      "contact_residue_count": 0,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.008758659751715851,
-      "patch_PCA_normal": [
-        -6.135907971882072e-05,
-        0.008847043805204735,
-        0.9999608622596048
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.2540948499848123,
-      "patch_plane_PCA_separation_ratio": 0.08475841282010867,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 0,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 25000,
-      "context_time_ps": 42.90000000000773,
-      "additional_time_ps": 13.300000000011988,
-      "stage": "continued-NPT-block-3",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.3671870354669663,
-      "contact_residues": [
-        "E:366"
-      ],
-      "contact_residue_count": 1,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.01228196667182846,
-      "patch_PCA_normal": [
-        -9.279304975566805e-05,
-        0.008646170869491598,
-        0.9999626168606233
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.25628526462811085,
-      "patch_plane_PCA_separation_ratio": 0.08553249498775833,
-      "patch_plane_fit_usable": true,
-      "protein_axis_fit_usable": true,
-      "water_O_within_0_35nm_of_both_groups": 0,
-      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 25250,
-      "context_time_ps": 43.40000000000834,
-      "additional_time_ps": 13.800000000012599,
-      "stage": "continued-NPT-block-3",
-      "restraint_scale": 0
-    },
-    {
-      "minimum_protein_polymer_heavy_nm": 0.4306368045254157,
-      "contact_residues": [
-        "E:366"
-      ],
-      "contact_residue_count": 1,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.014483112902856254,
-      "patch_PCA_normal": [
-        -0.00015821204604005192,
-        0.009483810467074028,
-        0.9999550151421678
-      ],
-      "patch_plane_fit_RMS_height_nm": 0.25627507040506375,
-      "patch_plane_PCA_separation_ratio": 0.08557412573475033,
+      "patch_plane_fit_RMS_height_nm": 0.26229547645667234,
+      "patch_plane_PCA_separation_ratio": 0.08773522132299291,
       "patch_plane_fit_usable": true,
       "protein_axis_fit_usable": true,
       "water_O_within_0_35nm_of_both_groups": 2,
       "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 25500,
-      "context_time_ps": 43.90000000000895,
-      "additional_time_ps": 14.30000000001321,
-      "stage": "continued-NPT-block-3",
+      "context_step": 28000,
+      "context_time_ps": 48.90000000001506,
+      "additional_time_ps": 4.300000000005255,
+      "stage": "continued-NPT-block-1",
       "restraint_scale": 0
     },
     {
-      "minimum_protein_polymer_heavy_nm": 0.4222747948589297,
+      "minimum_protein_polymer_heavy_nm": 0.39837778992308187,
+      "contact_residues": [
+        "E:362",
+        "E:366"
+      ],
+      "contact_residue_count": 2,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.02578179560148901,
+      "patch_PCA_normal": [
+        -4.043731994933544e-05,
+        0.008607975817006897,
+        0.9999629498722226
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.262682160644698,
+      "patch_plane_PCA_separation_ratio": 0.08788647415131588,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 0,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 28250,
+      "context_time_ps": 49.40000000001567,
+      "additional_time_ps": 4.800000000005866,
+      "stage": "continued-NPT-block-1",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.3672866613076429,
+      "contact_residues": [
+        "E:344",
+        "E:366"
+      ],
+      "contact_residue_count": 2,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.02483450364670391,
+      "patch_PCA_normal": [
+        -5.62151442885174e-05,
+        0.008978254694940735,
+        0.9999596930789212
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26304706289103874,
+      "patch_plane_PCA_separation_ratio": 0.08800194424534594,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 0,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 28500,
+      "context_time_ps": 49.900000000016284,
+      "additional_time_ps": 5.300000000006477,
+      "stage": "continued-NPT-block-1",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.41169414300286317,
       "contact_residues": [
         "E:366"
       ],
       "contact_residue_count": 1,
-      "protein_axis_angle_to_fitted_patch_plane_deg": 0.006719365873057279,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.02499685066573429,
       "patch_PCA_normal": [
-        -0.0001684530374618821,
-        0.009472148103309652,
-        0.9999551240100144
+        -5.229488018556782e-05,
+        0.008617495448762141,
+        0.9999628673293006
       ],
-      "patch_plane_fit_RMS_height_nm": 0.2569924677691277,
-      "patch_plane_PCA_separation_ratio": 0.08577706198731762,
+      "patch_plane_fit_RMS_height_nm": 0.26317317515269195,
+      "patch_plane_PCA_separation_ratio": 0.08806251175988133,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 0,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 28750,
+      "context_time_ps": 50.400000000016895,
+      "additional_time_ps": 5.800000000007088,
+      "stage": "continued-NPT-block-1",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.38391743223293123,
+      "contact_residues": [
+        "E:344",
+        "E:366"
+      ],
+      "contact_residue_count": 2,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.02533864455602611,
+      "patch_PCA_normal": [
+        -4.8350234114857996e-05,
+        0.008322449607094995,
+        0.9999653666476617
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2632917317340385,
+      "patch_plane_PCA_separation_ratio": 0.08809398282576265,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 0,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 29000,
+      "context_time_ps": 50.900000000017506,
+      "additional_time_ps": 6.300000000007699,
+      "stage": "continued-NPT-block-1",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.39412636990567934,
+      "contact_residues": [
+        "E:366"
+      ],
+      "contact_residue_count": 1,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.030298141574180235,
+      "patch_PCA_normal": [
+        2.2383203866486564e-05,
+        0.008217818899645596,
+        0.999966232905654
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26321173530665226,
+      "patch_plane_PCA_separation_ratio": 0.08813863412521582,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 3,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 29250,
+      "context_time_ps": 51.40000000001812,
+      "additional_time_ps": 6.8000000000083105,
+      "stage": "continued-NPT-block-1",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.3922291348435795,
+      "contact_residues": [
+        "E:344",
+        "E:366"
+      ],
+      "contact_residue_count": 2,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.03101476434471509,
+      "patch_PCA_normal": [
+        1.587984033749733e-05,
+        0.008416922112535585,
+        0.9999645769575951
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2631077977145474,
+      "patch_plane_PCA_separation_ratio": 0.08812461557286085,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 3,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 29500,
+      "context_time_ps": 51.90000000001873,
+      "additional_time_ps": 7.300000000008922,
+      "stage": "continued-NPT-block-1",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.42272323169592857,
+      "contact_residues": [
+        "E:344",
+        "E:458"
+      ],
+      "contact_residue_count": 2,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.029615399798625784,
+      "patch_PCA_normal": [
+        4.699280969768252e-05,
+        0.008051229897215184,
+        0.9999675872191149
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26278591366410153,
+      "patch_plane_PCA_separation_ratio": 0.08801757973554337,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 0,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 29750,
+      "context_time_ps": 52.40000000001934,
+      "additional_time_ps": 7.800000000009533,
+      "stage": "continued-NPT-block-1",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.4064654815430088,
+      "contact_residues": [
+        "E:344",
+        "E:366",
+        "E:458"
+      ],
+      "contact_residue_count": 3,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.04058400029309833,
+      "patch_PCA_normal": [
+        0.000184488340593704,
+        0.007620107319552982,
+        0.9999709495422806
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26222428094683364,
+      "patch_plane_PCA_separation_ratio": 0.08789993565149788,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 0,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 30000,
+      "context_time_ps": 52.90000000001995,
+      "additional_time_ps": 8.300000000010144,
+      "stage": "continued-NPT-block-1",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.41794857038833494,
+      "contact_residues": [
+        "E:344",
+        "E:366",
+        "E:458"
+      ],
+      "contact_residue_count": 3,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.030383926336083535,
+      "patch_PCA_normal": [
+        8.73764294495758e-05,
+        0.007565909437003415,
+        0.9999713742801595
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2629728603722952,
+      "patch_plane_PCA_separation_ratio": 0.08820907918036215,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 0,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 30250,
+      "context_time_ps": 53.40000000002056,
+      "additional_time_ps": 8.800000000010755,
+      "stage": "continued-NPT-block-1",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.4130718240674042,
+      "contact_residues": [
+        "E:344",
+        "E:458"
+      ],
+      "contact_residue_count": 2,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.024839639240995984,
+      "patch_PCA_normal": [
+        1.0356495984621667e-05,
+        0.007443746073369818,
+        0.9999722948847823
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2619562869611046,
+      "patch_plane_PCA_separation_ratio": 0.0879447253573402,
       "patch_plane_fit_usable": true,
       "protein_axis_fit_usable": true,
       "water_O_within_0_35nm_of_both_groups": 1,
       "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
-      "context_step": 25750,
-      "context_time_ps": 44.40000000000956,
-      "additional_time_ps": 14.80000000001382,
+      "context_step": 30500,
+      "context_time_ps": 53.90000000002117,
+      "additional_time_ps": 9.300000000011366,
+      "stage": "continued-NPT-block-1",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.4131902943930799,
+      "contact_residues": [
+        "E:344",
+        "E:366"
+      ],
+      "contact_residue_count": 2,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.027199747181017975,
+      "patch_PCA_normal": [
+        9.006797692001942e-05,
+        0.007247484058999942,
+        0.9999737325862986
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26230446442116045,
+      "patch_plane_PCA_separation_ratio": 0.08811952979702342,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 0,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 30750,
+      "context_time_ps": 54.400000000021784,
+      "additional_time_ps": 9.800000000011977,
+      "stage": "continued-NPT-block-1",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.40426610334199387,
+      "contact_residues": [
+        "E:344",
+        "E:366"
+      ],
+      "contact_residue_count": 2,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.025368237467649223,
+      "patch_PCA_normal": [
+        8.296976611665938e-05,
+        0.0071680967588797495,
+        0.999974305422331
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26300169876684687,
+      "patch_plane_PCA_separation_ratio": 0.08836405027401903,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 1,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 31000,
+      "context_time_ps": 54.900000000022395,
+      "additional_time_ps": 10.300000000012588,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.42630022230950393,
+      "contact_residues": [
+        "E:344",
+        "E:458"
+      ],
+      "contact_residue_count": 2,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.02742827961508444,
+      "patch_PCA_normal": [
+        0.00012773733037222694,
+        0.006890889485991258,
+        0.9999762493805873
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2630671894634005,
+      "patch_plane_PCA_separation_ratio": 0.08838807804944661,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 1,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 31250,
+      "context_time_ps": 55.400000000023006,
+      "additional_time_ps": 10.800000000013199,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.4128669978059733,
+      "contact_residues": [
+        "E:344",
+        "E:458"
+      ],
+      "contact_residue_count": 2,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.026549295504964404,
+      "patch_PCA_normal": [
+        0.00011242877749914356,
+        0.0065658623487436785,
+        0.9999784381732375
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2630274640030141,
+      "patch_plane_PCA_separation_ratio": 0.08839740156219046,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 0,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 31500,
+      "context_time_ps": 55.90000000002362,
+      "additional_time_ps": 11.30000000001381,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.35570255418195695,
+      "contact_residues": [
+        "E:344",
+        "E:458"
+      ],
+      "contact_residue_count": 2,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.03425397152142637,
+      "patch_PCA_normal": [
+        0.00019975392111286762,
+        0.006180297981550398,
+        0.999980881824863
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26361133565770944,
+      "patch_plane_PCA_separation_ratio": 0.08862751919717354,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 1,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 31750,
+      "context_time_ps": 56.40000000002423,
+      "additional_time_ps": 11.800000000014421,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.3446772130812381,
+      "contact_residues": [
+        "E:344",
+        "E:457",
+        "E:458"
+      ],
+      "contact_residue_count": 3,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.04372985826354212,
+      "patch_PCA_normal": [
+        0.00035937979844431577,
+        0.005831106587467216,
+        0.9999829343754452
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26353622047183994,
+      "patch_plane_PCA_separation_ratio": 0.08860726167320389,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 1,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 32000,
+      "context_time_ps": 56.90000000002484,
+      "additional_time_ps": 12.300000000015032,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.39494066076057227,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:458"
+      ],
+      "contact_residue_count": 3,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.048266905480593994,
+      "patch_PCA_normal": [
+        0.0004573123380587809,
+        0.006240381904130121,
+        0.9999804240579493
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2648763276168475,
+      "patch_plane_PCA_separation_ratio": 0.08909056317569339,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 1,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 32250,
+      "context_time_ps": 57.40000000002545,
+      "additional_time_ps": 12.800000000015643,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.417274673559686,
+      "contact_residues": [
+        "E:343",
+        "E:344"
+      ],
+      "contact_residue_count": 2,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.04900198519915146,
+      "patch_PCA_normal": [
+        0.0005246332426914526,
+        0.006499114893584457,
+        0.9999787429068482
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.264875537993318,
+      "patch_plane_PCA_separation_ratio": 0.08912187888429,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 1,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 32500,
+      "context_time_ps": 57.90000000002606,
+      "additional_time_ps": 13.300000000016254,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.4152744507246675,
+      "contact_residues": [
+        "E:344"
+      ],
+      "contact_residue_count": 1,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.04898943000847897,
+      "patch_PCA_normal": [
+        0.0005971144937108852,
+        0.0063649999768593535,
+        0.9999795649059914
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26507201983684087,
+      "patch_plane_PCA_separation_ratio": 0.08917666688165166,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 0,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 32750,
+      "context_time_ps": 58.40000000002667,
+      "additional_time_ps": 13.800000000016865,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.39907340247539275,
+      "contact_residues": [
+        "E:343",
+        "E:344"
+      ],
+      "contact_residue_count": 2,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.044295274358652055,
+      "patch_PCA_normal": [
+        0.0006218327169589977,
+        0.006431683826395362,
+        0.9999791231656935
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.265883930165387,
+      "patch_plane_PCA_separation_ratio": 0.0894694486707654,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 1,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 33000,
+      "context_time_ps": 58.90000000002728,
+      "additional_time_ps": 14.300000000017477,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.3767296638767919,
+      "contact_residues": [
+        "E:343",
+        "E:344"
+      ],
+      "contact_residue_count": 2,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.0421785085054379,
+      "patch_PCA_normal": [
+        0.0006239541113472557,
+        0.005891074217612147,
+        0.9999824528089626
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26676808700894467,
+      "patch_plane_PCA_separation_ratio": 0.08972846651388115,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 0,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 33250,
+      "context_time_ps": 59.400000000027894,
+      "additional_time_ps": 14.800000000018088,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.38839823101534754,
+      "contact_residues": [
+        "E:344"
+      ],
+      "contact_residue_count": 1,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.04532901403095504,
+      "patch_PCA_normal": [
+        0.0006675382591007709,
+        0.0054653643289277465,
+        0.9999848419778294
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26655000918750177,
+      "patch_plane_PCA_separation_ratio": 0.0896584343754522,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 0,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 33500,
+      "context_time_ps": 59.900000000028506,
+      "additional_time_ps": 15.300000000018699,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.40541618860161527,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:457"
+      ],
+      "contact_residue_count": 3,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.04138817176501746,
+      "patch_PCA_normal": [
+        0.0007284435307257956,
+        0.005289568367551456,
+        0.9999857448166487
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2671228974748089,
+      "patch_plane_PCA_separation_ratio": 0.08986841567545299,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 2,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 33750,
+      "context_time_ps": 60.40000000002912,
+      "additional_time_ps": 15.80000000001931,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.39817938257803864,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:457"
+      ],
+      "contact_residue_count": 3,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.03431301984070443,
+      "patch_PCA_normal": [
+        0.0007392177025580569,
+        0.005453560902153098,
+        0.9999848560006668
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2676236346469475,
+      "patch_plane_PCA_separation_ratio": 0.09015841362143404,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 0,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 34000,
+      "context_time_ps": 60.90000000002973,
+      "additional_time_ps": 16.30000000001992,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.39391063731157294,
+      "contact_residues": [
+        "E:344",
+        "E:457"
+      ],
+      "contact_residue_count": 2,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.03585135388045032,
+      "patch_PCA_normal": [
+        0.0007699460157591055,
+        0.005356228994028989,
+        0.999985358889867
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26686935156535385,
+      "patch_plane_PCA_separation_ratio": 0.08996061861114936,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 0,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 34250,
+      "context_time_ps": 61.40000000003034,
+      "additional_time_ps": 16.800000000020532,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.40687186139604814,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:366"
+      ],
+      "contact_residue_count": 3,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.029721417305162035,
+      "patch_PCA_normal": [
+        0.0007495991744347679,
+        0.005269106596454298,
+        0.999985837208084
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26680367476084527,
+      "patch_plane_PCA_separation_ratio": 0.09002927980250014,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 4,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 34500,
+      "context_time_ps": 61.90000000003095,
+      "additional_time_ps": 17.300000000021143,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.425220768832362,
+      "contact_residues": [
+        "E:344",
+        "E:362"
+      ],
+      "contact_residue_count": 2,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.0324172040641877,
+      "patch_PCA_normal": [
+        0.0008120380863450798,
+        0.004785744233750888,
+        0.9999882185537368
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2662780311493485,
+      "patch_plane_PCA_separation_ratio": 0.08986853944768533,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 2,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 34750,
+      "context_time_ps": 62.40000000003156,
+      "additional_time_ps": 17.800000000021754,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.3972160371729981,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:366"
+      ],
+      "contact_residue_count": 4,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.01976674613045369,
+      "patch_PCA_normal": [
+        0.0006521845773372809,
+        0.004465082888749583,
+        0.9999898187932087
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.266834730207326,
+      "patch_plane_PCA_separation_ratio": 0.09008828677913208,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 3,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 35000,
+      "context_time_ps": 62.90000000003217,
+      "additional_time_ps": 18.300000000022365,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.40791086561150147,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:366"
+      ],
+      "contact_residue_count": 4,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.014950190797263372,
+      "patch_PCA_normal": [
+        0.0006737435097056648,
+        0.004539282602083916,
+        0.999989470436135
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26711630927278107,
+      "patch_plane_PCA_separation_ratio": 0.0901962295679828,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 2,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 35250,
+      "context_time_ps": 63.40000000003278,
+      "additional_time_ps": 18.800000000022976,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.39925637250312485,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362"
+      ],
+      "contact_residue_count": 3,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.020698622101352034,
+      "patch_PCA_normal": [
+        0.0007069631637892919,
+        0.004570062070378134,
+        0.9999893073107122
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26662184664919725,
+      "patch_plane_PCA_separation_ratio": 0.09001491364617505,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 4,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 35500,
+      "context_time_ps": 63.900000000033394,
+      "additional_time_ps": 19.300000000023587,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.37805941443061925,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:366"
+      ],
+      "contact_residue_count": 5,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.030510687256822096,
+      "patch_PCA_normal": [
+        0.0008463103208345546,
+        0.0047956213272224435,
+        0.9999881428171669
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26771570935246114,
+      "patch_plane_PCA_separation_ratio": 0.09035873114550272,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 0,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 35750,
+      "context_time_ps": 64.40000000003258,
+      "additional_time_ps": 19.80000000002277,
+      "stage": "continued-NPT-block-2",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.36281571105674254,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:366"
+      ],
+      "contact_residue_count": 5,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.03357678161549139,
+      "patch_PCA_normal": [
+        0.0008406010581048027,
+        0.005227876632085349,
+        0.9999859812496277
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26806973965175895,
+      "patch_plane_PCA_separation_ratio": 0.09050371003816234,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 2,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 36000,
+      "context_time_ps": 64.90000000003141,
+      "additional_time_ps": 20.300000000021605,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.3784281048659779,
+      "contact_residues": [
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:366"
+      ],
+      "contact_residue_count": 4,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.041442363858718675,
+      "patch_PCA_normal": [
+        0.000899350818373253,
+        0.005496701260288561,
+        0.9999844886013785
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2698577055358194,
+      "patch_plane_PCA_separation_ratio": 0.09110311446303487,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 4,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 36250,
+      "context_time_ps": 65.40000000003025,
+      "additional_time_ps": 20.80000000002044,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.39210536128377926,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:457"
+      ],
+      "contact_residue_count": 5,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.03690120922003976,
+      "patch_PCA_normal": [
+        0.0009011822149548727,
+        0.005462195729008523,
+        0.9999846760268047
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2695629751607893,
+      "patch_plane_PCA_separation_ratio": 0.09106173121323857,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 2,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 36500,
+      "context_time_ps": 65.90000000002908,
+      "additional_time_ps": 21.300000000019274,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.3818301411038585,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:366",
+        "E:457",
+        "E:458"
+      ],
+      "contact_residue_count": 7,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.04037934584443677,
+      "patch_PCA_normal": [
+        0.0009121931500417864,
+        0.00568630642462864,
+        0.9999834167739493
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2688690437957742,
+      "patch_plane_PCA_separation_ratio": 0.09084524977601753,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 4,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 36750,
+      "context_time_ps": 66.40000000002792,
+      "additional_time_ps": 21.80000000001811,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.35979061418323965,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:366"
+      ],
+      "contact_residue_count": 5,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.04033658207429523,
+      "patch_PCA_normal": [
+        0.00094635033689138,
+        0.005277267455576773,
+        0.999985627331334
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2680203580125345,
+      "patch_plane_PCA_separation_ratio": 0.09060945350016243,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 1,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 37000,
+      "context_time_ps": 66.90000000002675,
+      "additional_time_ps": 22.300000000016944,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.3555854834694507,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:366",
+        "E:457"
+      ],
+      "contact_residue_count": 6,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.038873516342453805,
+      "patch_PCA_normal": [
+        0.0008449923767983542,
+        0.004895042115909742,
+        0.9999876621991725
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26853411460559307,
+      "patch_plane_PCA_separation_ratio": 0.09084706292271832,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 5,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 37250,
+      "context_time_ps": 67.40000000002559,
+      "additional_time_ps": 22.80000000001578,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.3765665211209823,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:366",
+        "E:457"
+      ],
+      "contact_residue_count": 6,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.046232186225688005,
+      "patch_PCA_normal": [
+        0.0008592345784324825,
+        0.004682858355525843,
+        0.9999886662125531
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.269032094658555,
+      "patch_plane_PCA_separation_ratio": 0.0910453411405046,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 1,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 37500,
+      "context_time_ps": 67.90000000002442,
+      "additional_time_ps": 23.300000000014613,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.382626026743489,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:366"
+      ],
+      "contact_residue_count": 5,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.04611282911960386,
+      "patch_PCA_normal": [
+        0.0008481724140198835,
+        0.004391844959797719,
+        0.9999899961006634
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2688435276331778,
+      "patch_plane_PCA_separation_ratio": 0.09100014336907106,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 4,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 37750,
+      "context_time_ps": 68.40000000002325,
+      "additional_time_ps": 23.800000000013448,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.4030516531690419,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:366",
+        "E:457"
+      ],
+      "contact_residue_count": 6,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.04226939758671449,
+      "patch_PCA_normal": [
+        0.0008577306213018688,
+        0.004398090107389119,
+        0.9999899605003985
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2679126709454507,
+      "patch_plane_PCA_separation_ratio": 0.09071230243664878,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 2,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 38000,
+      "context_time_ps": 68.90000000002209,
+      "additional_time_ps": 24.300000000012282,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.37582924769132503,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:366",
+        "E:457"
+      ],
+      "contact_residue_count": 6,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.048323916248422374,
+      "patch_PCA_normal": [
+        0.0008692388387480591,
+        0.0038053691141908264,
+        0.999992381765854
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2661786998613044,
+      "patch_plane_PCA_separation_ratio": 0.0901148915471496,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 1,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 38250,
+      "context_time_ps": 69.40000000002092,
+      "additional_time_ps": 24.800000000011117,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.3922977266219074,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:371"
+      ],
+      "contact_residue_count": 5,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.045010706057736334,
+      "patch_PCA_normal": [
+        0.0008104023551389169,
+        0.004463264484323104,
+        0.9999897112061531
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2670028958536428,
+      "patch_plane_PCA_separation_ratio": 0.09034651342186568,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 2,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 38500,
+      "context_time_ps": 69.90000000001976,
+      "additional_time_ps": 25.300000000009952,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.3857484264743735,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:366",
+        "E:371",
+        "E:457"
+      ],
+      "contact_residue_count": 7,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.045477461829584266,
+      "patch_PCA_normal": [
+        0.0008088550196662453,
+        0.004922478617806703,
+        0.999987557401498
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26888229053391516,
+      "patch_plane_PCA_separation_ratio": 0.09094465512295721,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 1,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 38750,
+      "context_time_ps": 70.4000000000186,
+      "additional_time_ps": 25.800000000008787,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.3566865834951363,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:457"
+      ],
+      "contact_residue_count": 5,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.04083471340059074,
+      "patch_PCA_normal": [
+        0.000800469599225274,
+        0.00526800556974405,
+        0.9999858035820994
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26879001133521035,
+      "patch_plane_PCA_separation_ratio": 0.09093015921667887,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 1,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 39000,
+      "context_time_ps": 70.90000000001743,
+      "additional_time_ps": 26.30000000000762,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.3612515791309581,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:366"
+      ],
+      "contact_residue_count": 5,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.03222413093556784,
+      "patch_PCA_normal": [
+        0.0007395291995096495,
+        0.0048405031926992415,
+        0.999988011240837
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26899936114864376,
+      "patch_plane_PCA_separation_ratio": 0.09105339990474833,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 2,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 39250,
+      "context_time_ps": 71.40000000001626,
+      "additional_time_ps": 26.800000000006456,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.33716447870494637,
+      "contact_residues": [
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:366"
+      ],
+      "contact_residue_count": 4,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.03618301494059015,
+      "patch_PCA_normal": [
+        0.0007290329277934485,
+        0.005068467950010036,
+        0.9999868894858719
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2693351520980508,
+      "patch_plane_PCA_separation_ratio": 0.0911747414830677,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 3,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 39500,
+      "context_time_ps": 71.9000000000151,
+      "additional_time_ps": 27.30000000000529,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.34474110086369714,
+      "contact_residues": [
+        "E:343",
+        "E:362",
+        "E:363",
+        "E:366"
+      ],
+      "contact_residue_count": 4,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.03482433496127023,
+      "patch_PCA_normal": [
+        0.0006723411623538773,
+        0.004578745463960421,
+        0.9999892914663326
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26961734790431185,
+      "patch_plane_PCA_separation_ratio": 0.0913207758299802,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 0,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 39750,
+      "context_time_ps": 72.40000000001393,
+      "additional_time_ps": 27.800000000004125,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.3464162770984591,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:366",
+        "E:457"
+      ],
+      "contact_residue_count": 6,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.032502170734809634,
+      "patch_PCA_normal": [
+        0.000660513243037947,
+        0.00418432576659078,
+        0.999991027529815
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.2698683187744108,
+      "patch_plane_PCA_separation_ratio": 0.09137544960747888,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 2,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 40000,
+      "context_time_ps": 72.90000000001277,
+      "additional_time_ps": 28.30000000000296,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.33705388324709384,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:366"
+      ],
+      "contact_residue_count": 5,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.04278073705302437,
+      "patch_PCA_normal": [
+        0.0007514804993640799,
+        0.004191838577090712,
+        0.9999909318420857
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.27027563695129425,
+      "patch_plane_PCA_separation_ratio": 0.09149953133360038,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 4,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 40250,
+      "context_time_ps": 73.4000000000116,
+      "additional_time_ps": 28.800000000001795,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.36002289889759737,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:366",
+        "E:457"
+      ],
+      "contact_residue_count": 6,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.048444794556728656,
+      "patch_PCA_normal": [
+        0.0007581157213136045,
+        0.0043833905642121085,
+        0.999990105524907
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.27058489607316144,
+      "patch_plane_PCA_separation_ratio": 0.09161707876394196,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 1,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 40500,
+      "context_time_ps": 73.90000000001044,
+      "additional_time_ps": 29.30000000000063,
+      "stage": "continued-NPT-block-3",
+      "restraint_scale": 0
+    },
+    {
+      "minimum_protein_polymer_heavy_nm": 0.34137047630691675,
+      "contact_residues": [
+        "E:343",
+        "E:344",
+        "E:362",
+        "E:363",
+        "E:366",
+        "E:457"
+      ],
+      "contact_residue_count": 6,
+      "protein_axis_angle_to_fitted_patch_plane_deg": 0.04571211888924041,
+      "patch_PCA_normal": [
+        0.0007238337831875048,
+        0.00452017595405485,
+        0.999989521982105
+      ],
+      "patch_plane_fit_RMS_height_nm": 0.26922291938123427,
+      "patch_plane_PCA_separation_ratio": 0.09111141004380899,
+      "patch_plane_fit_usable": true,
+      "protein_axis_fit_usable": true,
+      "water_O_within_0_35nm_of_both_groups": 1,
+      "interpretation": "Distance contacts and double-proximity water count only, not bonds, binding sites, affinity, residence/off-rate or experimental retention. Finite-patch PCA and reference-image reconstruction are short-preparation diagnostics only.",
+      "context_step": 40750,
+      "context_time_ps": 74.40000000000927,
+      "additional_time_ps": 29.799999999999464,
       "stage": "continued-NPT-block-3",
       "restraint_scale": 0
     }

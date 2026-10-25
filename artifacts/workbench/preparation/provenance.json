@@ -27,7 +27,7 @@
       "schedule": [
         {
           "target_K": 310,
-          "steps": 2500,
+          "steps": 5000,
           "restraint_scale": 0
         }
       ]
@@ -40,7 +40,7 @@
       "schedule": [
         {
           "target_K": 310,
-          "steps": 2500,
+          "steps": 5000,
           "restraint_scale": 0
         }
       ]
@@ -53,7 +53,7 @@
       "schedule": [
         {
           "target_K": 310,
-          "steps": 2500,
+          "steps": 5000,
           "restraint_scale": 0
         }
       ]

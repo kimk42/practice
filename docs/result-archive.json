@@ -1,8 +1,23 @@
 {
-  "archive_name": "results-complete.zip",
-  "archive_bytes": 1919188638,
-  "archive_sha256": "6dd5752bb686799a8ad882a0045f2a28f02fbade88d937f386451368f6aa6dfe",
-  "snapshot_files": 816,
+  "format": "codex-results-layers-v1",
+  "index_path": "datasets/results-index.json",
+  "index_sha256": "2fe920ae589df2aa10e014c5887814044ba49666abb17cbf53525e53116062a3",
+  "archives": [
+    {
+      "name": "results-complete.zip",
+      "bytes": 1919188638,
+      "sha256": "6dd5752bb686799a8ad882a0045f2a28f02fbade88d937f386451368f6aa6dfe"
+    },
+    {
+      "name": "results-delta-0001-af7f30558c51.zip",
+      "bytes": 492115706,
+      "sha256": "af7f30558c512f6a5b7110e73cc9f2a584b78403a8c1612e3fae22d7da7ae39e"
+    }
+  ],
+  "archives_total_bytes": 2411304344,
+  "snapshot_files": 901,
+  "local_full_snapshot_sha256": "0fb4cdb36c288fd884fa027dbdac62df1a2388b9bbdd72fc0e8ffa02547e05bc",
+  "local_full_snapshot_bytes": 2402526538,
   "large_system_atoms": 577890,
-  "scope": "All original inputs and attempts plus executed workbench jobs, current producing code and portable reports. See workbench state for actual completed length; no equilibrium claim."
+  "scope": "Complete latest snapshot selected by the SHA-256 index across an immutable baseline and incremental LFS ZIPs. No equilibrium claim."
 }
