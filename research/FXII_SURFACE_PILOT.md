@@ -1,0 +1,13 @@
+# Authorized unglycosylated FXII surface numerical pilot
+
+The user selected the unglycosylated FXII pilot option, specifically initial placement and numerical stability checks. No native-glycoform or adsorption conclusion is authorized by the model's current evidence.
+
+The18×12×18nm candidate is a3×2 translation of the small10ps coating pilot, with6 GRAFT,228 PC4 molecules,115779 waters and380103 atoms before protein insertion. Source molecules are made whole, direct covalent bond distances checked, and each copy translated without altering local chemistry. Translational copies are correlated initial structure, not independent replicas. The low-density short-PC, DP10/single-graft assumptions remain unchanged. Fresh water solvation is followed by a strict EM gate.
+
+`source scripts/activate.sh; python scripts/expand_surface.py` creates/minimizes this candidate. It refuses to overwrite an existing directory. `python scripts/prepare_fxii_surface_poses.py` builds three rigid orientations from the predicted mature unglycosylated FXII after its small water pilot. The0° pose fails1.2nm lateral-padding criteria and is rejected;120° and240° poses pass. No missing residues/glycans or new conformations are invented.
+
+`python scripts/run_fxii_surface_pilot.py` waits for expanded EM to pass. It then selects the first accepted pose, centers its bounding box laterally, places the protein2nm above the highest surface atom, checks actual periodic clearance, and reuses the minimized surface's water positions while excluding overlaps. The Amber protein topology retains the20 previously verified disulfides. Neutralizing ions are added without asserting physiological saline. All GROMACS preparation warnings/errors must be resolved rather than bypassed. The gate is Fmax below1000kJ/mol/nm followed by400×0.0005ps MD at300K, finite energy records and no LINCS warnings.
+
+Actual state is in runs/fxii-surface-pilot-status.json, with process output in runs/fxii-surface-pilot-launch.log. Only successful completion writes runs/fxii-surface-pilot/result.json. Background execution still depends on the environment remaining alive. All generated coordinates/trajectories stay ignored under runs/; durable small reports are copied to models/validation after verification.
+
+This pilot starts with a2nm gap and lasts only0.2ps. It cannot measure adsorption, equilibrium, glycoform effects, activation or coating efficacy. Further work requires representative density/DP/crosslinks, protein conformational and protonation/glycoform decisions, matched bare-PC controls, larger sampling and independent replicas. Fibrinogen remains a separate unresolved full-length modeling task; its incomplete3GHG core is not substituted for the native protein.

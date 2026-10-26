@@ -1,0 +1,44 @@
+{
+  "source": "predicted unglycosylated mature FXII after0.2ps water numerical pilot",
+  "source_sha256": "ba89aefae4378881ac106491941c10bf42c5562694b52c81c4920efd78660d82",
+  "protein_atoms": 8995,
+  "poses": [
+    {
+      "file": "pose-1.gro",
+      "rotation_about_principal_axis_degrees": 0,
+      "extents_nm": [
+        8.522721937293866,
+        9.971515745165433,
+        8.957906029556641
+      ],
+      "fits_lateral_padding_1_2nm": false
+    },
+    {
+      "file": "pose-2.gro",
+      "rotation_about_principal_axis_degrees": 120,
+      "extents_nm": [
+        8.522721937293866,
+        9.129926027040105,
+        9.755886219297187
+      ],
+      "fits_lateral_padding_1_2nm": true
+    },
+    {
+      "file": "pose-3.gro",
+      "rotation_about_principal_axis_degrees": 240,
+      "extents_nm": [
+        8.522721937293866,
+        9.470527988257745,
+        9.227820057756837
+      ],
+      "fits_lateral_padding_1_2nm": true
+    }
+  ],
+  "protein_glycans_present": false,
+  "status": "rigid orientation candidates only; placement/clashes/charge/EM still required",
+  "limitations": [
+    "correlated rigid orientations of one predicted conformation, not independent ensembles",
+    "no physiological glycoform, salt or protonation validation",
+    "not protein equilibrium or adsorption sampling"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "state": "mixed protein/coating topology preflight passed",
+  "dry_atoms": 41761,
+  "protein_residues": 596,
+  "forcefields": "Amber99sb-ildn protein; GAFF2/AM1-BCC coating; TIP3P definitions",
+  "scope": "grompp topology/coordinate and parameter compatibility only, no water/dynamics or physical validation",
+  "command": "gmx grompp -f preflight.mdp -c dry.gro -p topol.top -o preflight.tpr",
+  "warnings_bypassed": false
+}

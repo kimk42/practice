@@ -20,3 +20,7 @@ GRAFT SQM completed after its original12-hour limit was extended to24hours witho
 The present0.6g/cm³ starting PC patch, DP10 polymer, short OH-ended PC4 and single graft are provisional. Coating density, film loading/thickness, DP and graft/crosslink distributions need representative modeling. Both protein candidates exceed the6×6nm patch. Fibrinogen3GHG lacks955 declared-construct residues; FXII requires explicit glycoform, protonation and conformational-ensemble assessment. See models/proteins/README.md and PLAN_10_STEPS.md. No protein–surface adsorption MD, replicated production or adsorption free-energy result has been completed.
 
 Execution processes require the environment to remain alive; saved files alone do not resume interrupted jobs.
+
+## Expanded surface and authorized FXII pilot
+
+The user authorized an unglycosylated FXII–surface placement/numerical pilot. An18×12×18nm surface candidate with380103 atoms is now minimizing. It comprises6 correlated translated copies of the small coating candidate; it does not establish representative morphology. Three FXII orientations were prepared; two satisfy lateral-padding criteria. The pilot worker waits for expanded EM, then places the first accepted pose, neutralizes and attempts strict EM plus0.2ps MD. See research/FXII_SURFACE_PILOT.md and runs/fxii-surface-pilot-status.json. No protein–surface run success is claimed before that worker completes.

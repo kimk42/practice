@@ -31,11 +31,11 @@
     {
       "name": "fibrinogen",
       "candidate_structure": "3GHG",
-      "preparation_status": "assembly and missing regions unresolved"
+      "preparation_status": "3GHG biological assembly audited:1913 observed of2868 declared construct residues;955 unmodeled; full-native preparation unresolved"
     },
     {
       "name": "Factor XII",
-      "candidate_structure": null,
+      "candidate_structure": "AF-P00748-F1-model_v6 predicted mature residues20-615",
       "scope": "human full-length zymogen target; experimental domain references must not be substituted silently",
       "experimental_references_downloaded": [
         "8OS5",
@@ -47,14 +47,25 @@
         "source": "AlphaFoldDB",
         "residues": 615,
         "method": "computed, not experimental",
-        "coordinate_download": "blocked at model-server domain; network additions saved as draft"
+        "coordinate_download": "downloaded through official AlphaFold API; sequence checksum verified; not experimental"
       },
       "reference_sequence": "research/proteins/fxii/P00748-reference.fasta",
-      "sequence_caution": "8OS5 differs from the RCSB P00748 computed-model sequence at mapped precursor207 (referenceA, constructP); review before wild-type modeling"
+      "sequence_caution": "8OS5 differs from the RCSB P00748 computed-model sequence at mapped precursor207 (referenceA, constructP); review before wild-type modeling",
+      "pilot": {
+        "scope": "user authorized unglycosylated predicted mature zymogen surface numerical pilot",
+        "mature_residues": 596,
+        "disulfides_verified": 20,
+        "protein_only_check": "EM and0.2ps numerical MD passed",
+        "physiological_glycoform_validated": false,
+        "orientation_candidates": 3,
+        "lateral_padding_accepted_candidates": 2,
+        "selected_pose": "first accepted, pose-2.gro",
+        "status_file": "runs/fxii-surface-pilot-status.json"
+      }
     }
   ],
-  "status": "PC4 and one-site graft chemical geometry validated; GAFF2/AM1-BCC computation and patch packing in progress; no surface MD yet",
-  "force_field": "Exploratory GAFF2 + AM1-BCC using ACPYPE2026.10.15/bundled AmberTools; not mixed with CHARMM. Quantum assignment and physical validation pending.",
+  "status": "COP10/PC4/GRAFT parameter gates and small-surface10ps numerical follow-up passed; expanded surface EM and authorized unglycosylated FXII surface pilot in progress",
+  "force_field": "Exploratory GAFF2/AM1-BCC for polymer/PC with Amber99sb-ildn/TIP3P for protein/water; numerical parameter gates passed, physical accuracy and experimental coating validation pending; no CHARMM mixing",
   "literature_reference_conditions": {
     "transfer_to_target": "Reference only: neither paper validates the user PC-supported 7:2:1 terpolymer. Do not auto-apply molecular weights or crosslink conversion.",
     "lin2020": {
@@ -181,11 +192,11 @@
     "geometry_folder": "models/pc-graft",
     "packing_target_density_g_cm3": 0.6,
     "packing_status": "passed after checkpoint local polishing with unchanged2A distance requirement; graftpositionvalidated",
-    "parameterization_folder": "see runs/workflow-active-parameters.json; current3h attempts under runs/parameterization-long",
-    "parameterization_status": "original30-minute attempts timed out; allthree3-hour retries running with unchanged charge method and thresholds",
-    "followup_worker": "scripts/continue_three_stages.py supervises parameter audits, solvation, minimization and shortMD; currentstage1 still pending",
+    "parameterization_folder": "see runs/workflow-active-parameters.json; parameters archived under models/forcefield",
+    "parameterization_status": "COP10,PC4,GRAFT completed and parameter gates passed; see models/validation/parameter-gates.json",
+    "followup_worker": "small-surface10ps completed; scripts/run_fxii_surface_pilot.py waits for expanded EM then performs authorized numerical pilot",
     "packing_timeout_seconds": 10800,
-    "parameterization_timeout_seconds": 10800,
+    "parameterization_timeout_seconds": 86400,
     "packed_atoms": 5461,
     "solvated_atoms": 27826,
     "water_molecules": 7455,
@@ -194,7 +205,26 @@
       6,
       8
     ],
-    "solvation_status": "coordinate preparation and GROMACS reading passed; force-field/energy validation pending",
-    "bonded_coverage": "GAFF2 preflight produced no unassigned-revision flags; analog terms/penalties recorded in models/parameter-audit; quantum charges still pending"
+    "solvation_status": "small surface EM and0.2ps/10ps numerical MD passed; not equilibrium validation",
+    "bonded_coverage": "GAFF2 parameters generated with no unassigned-revision flags; analog-term physical accuracy remains unvalidated"
+  },
+  "expanded_surface_pilot": {
+    "builder": "scripts/expand_surface.py",
+    "box_nm": [
+      18,
+      12,
+      18
+    ],
+    "graft_molecules": 6,
+    "free_PC4_molecules": 228,
+    "water_molecules": 115779,
+    "total_atoms_before_protein": 380103,
+    "status": "solvated, EM running; see runs/surface-expanded-18x12/result.json when available",
+    "morphology": "correlated3x2 translations of the small10ps candidate, not independent replicas or measured coating",
+    "protein_pilot": "scripts/run_fxii_surface_pilot.py",
+    "salt": "neutralizing ions only; physiological salt unspecified",
+    "temperature_K": 300,
+    "target_duration_ps": 0.2,
+    "production_ready": false
   }
 }
