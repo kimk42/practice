@@ -14,7 +14,7 @@
       2,
       1
     ],
-    "ratio_basis": "not yet confirmed: molar/mass and feed/incorporated",
+    "ratio_basis": "user-confirmed synthesis molar ratio7:2:1; measured incorporated composition not reported",
     "attachment": "UV immobilization; possible surface attachment and interchain crosslinks",
     "bpaa_candidate": "N-(4-benzoylphenyl)acrylamide; identity confirmed for cited monomer by uploaded primary papers, target batch assumed to use same monomer",
     "degree_of_polymerization": null,
@@ -25,7 +25,23 @@
       2,
       1
     ],
-    "model_ratio_authorization": "User approved building the three-component model with a 7:2:1 repeat-count assumption; experimental feed/incorporated basis still unconfirmed."
+    "model_ratio_authorization": "7:2:1 repeat-count model remains user-authorized; synthesis molar ratio confirmed, measured incorporated ratio remains unreported",
+    "user_reported_process": {
+      "solution_concentration_wt_percent": 0.5,
+      "solvent": "water",
+      "surface_contact_min": 30,
+      "after_contact": [
+        "drain",
+        "dry"
+      ],
+      "UV_reported_dose_mJ_cm2": 9000,
+      "UV_irradiations": 3,
+      "UV_dose_basis": "pending confirmation:9000 per exposure versus total",
+      "UV_conditional_total_if_per_exposure_mJ_cm2": 27000,
+      "UV_wavelength_nm_reference": 312,
+      "UV_wavelength_status": "user followed cited-paper wavelength;312nm inferred from paper,not independently reported instrument setting",
+      "crosslink_conversion_from_dose": "not inferred; reacted fraction remains unknown"
+    }
   },
   "proteins": [
     {
@@ -240,5 +256,27 @@
     ],
     "velocity_pilot_duration_ps": 0.2,
     "final_all_stages_completed": false
+  },
+  "user_protein_experiment": {
+    "temperature": "room temperature;exact Celsius not reported",
+    "buffer_verbatim": "cPBSzI",
+    "buffer_composition_status": "pending exact name/composition or product",
+    "pH": 7.4,
+    "protein_concentration_verbatim": "1% plasma concentration",
+    "protein_concentration_interpretation": "pending:purified proteins at1% normal plasma concentration versus1% diluted plasma",
+    "absolute_protein_concentrations": null,
+    "contact_time_h": 2,
+    "contact_time_s": 7200,
+    "sample_context": "fibrinogen and Factor XII are targets;single-protein versus plasma-mixture assay requires clarification"
+  },
+  "experimental_mapping_status": {
+    "current_MD_temperature_K": 300,
+    "current_MD_temperature_status": "provisional baseline,not confirmed exact room temperature",
+    "current_MD_salt": "neutralizing ions only,not yet mapped to reported buffer",
+    "current_MD_protonation": "standard fixed protonation;not explicit constant-pH MD",
+    "experiment_exposure_vs_MD": "2h is experiment contact time;no claim of matching that elapsed time with atomistic MD",
+    "coating_solution_to_surface": "0.5wt% is solution concentration;surface loading/thickness/graft density need separate evidence",
+    "UV_to_crosslinks": "fluence does not uniquely establish reacted/grafted fraction",
+    "concentration_mapping": "single-protein periodic simulations require finite-size/concentration interpretation;no experimental1% mapping claimed"
   }
 }

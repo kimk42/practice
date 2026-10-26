@@ -33,3 +33,7 @@ The user authorized continuation through the latest ten-stage plan. Expanded EM 
 The current5-core host exposes no GPU; the short coupled pilot measured0.366ns/day on4 threads. Production lengths are deferred until model/relaxation and sampling/resource evidence support them. Glycosylation citations and explicit fibrinogen Alpha/Gamma-A sequence candidates were retrieved. The candidate six-chain sequence has2994 residues;1081 lack3GHG observed coordinates, compared with955 missing within the smaller declared construct. No missing loops/glycans/force-field terms were fabricated.
 
 Matched bare-PC EM and the corresponding FXII0.2ps pilot also passed. The worker has advanced to the second accepted orientation; longer preliminary controls and short velocity/gap sensitivity remain queued. These two initial successes do not establish a comparative adsorption effect.
+
+## User experiment conditions received
+
+Synthesis ratio7:2:1 is confirmed molar. The user reports0.5wt% aqueous coating solution,30min contact,drain/dry,9000mJ/cm² with three UV exposures using the cited-paper wavelength, and protein exposure for2h at room temperature,pH7.4. Buffer spelling `cPBSzI`,dose basis and meaning of `1% plasma concentration` await clarification. See research/USER_EXPERIMENT.md. Current300K/neutralizing-ion numerical controls continue as a provisional baseline; they are not relabeled as matched-buffer/2h adsorption simulations.
