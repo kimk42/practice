@@ -1,0 +1,25 @@
+{
+  "source_job": "1b42c3f67f2d4541859b9f62c27699a5",
+  "context_time_ps": 74.6,
+  "box_lengths_nm": [
+    51.750223610718294,
+    13.098880063872986,
+    9.242572977362919
+  ],
+  "protein_extent_nm": [
+    44.90811611280505,
+    7.052860088664456,
+    5.787525201633618
+  ],
+  "protein_nearest_periodic_self_image_heavy_nm": 4.249861204601148,
+  "nearest_image_shift": [
+    0,
+    0,
+    -1
+  ],
+  "short_reference_reconstruction_bonds_over_0_4nm": [],
+  "long_reconstructed_bond_count": 0,
+  "minimum_image_clearance_gate_nm": 2.0,
+  "geometry_gate_passed": true,
+  "interpretation": "Single final-frame finite protein self-image separation using short-preparation reference reconstruction; not general unwrapping, phase validation or equilibrium."
+}

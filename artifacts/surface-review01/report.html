@@ -1,0 +1,112 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>비교 표면 모델 검증</title><style>body{max-width:1000px;margin:auto;padding:24px;font:16px/1.7 system-ui}pre{white-space:pre-wrap}</style><body><h1>PE 준비 계산과 비교 표면 모델 검증</h1><p>1단계: 74.6 ps 최종 구조에서 단백질의 최근접 주기적 자기 복제본 거리는 4.250 nm. 짧은 준비 구간의 기준 이미지 재구성에서 0.4 nm를 넘는 결합은 없었습니다. 전체 궤적·장시간 구조 안정성을 보증하지 않습니다.</p><p>2단계: 30 ps 추가 NPT 작업을 제출했습니다. 목표 누적 104.6 ps. 계산 종료 후 밀도·부피·구조·접촉을 검사하고 보고서 및 LFS 원본을 보관합니다. 평형화 통과를 미리 가정하지 않습니다.</p><p>3단계: PE 6방향 × 독립 속도 시드 3개, 총 18개 반복의 설계가 있습니다. 실행한 생산 반복은 0개입니다. 먼저 평형화와 방향별 상자·용매화 검증이 필요합니다.</p><p>4단계: PTFE 및 PVDF α/β/γ 후보의 원자·결합 매핑, 전하 중성, 심한 초기 겹침 검사를 다시 통과했습니다. 결정 격자·분자 패킹·노출 결정면·사슬 극성 배열과 수화 계면은 아직 검증되지 않았습니다. Crossref 접근은 프록시 403으로 차단돼 문헌 원문과 결정 좌표를 확보하지 못했습니다. 임의의 격자값을 사용하지 않았습니다.</p><p><a href="stage-plan.json">stage-plan.json</a></p><p><a href="candidate-validation.json">candidate-validation.json</a></p><p><a href="boundary-audit.json">boundary-audit.json</a></p><p><a href="literature-metadata.json">literature-metadata.json</a></p><h2>재료별 검증 항목</h2><pre>[
+  {
+    &quot;material&quot;: &quot;PE&quot;,
+    &quot;phase&quot;: null,
+    &quot;current_candidate&quot;: &quot;finite C24H50 oligomer patch&quot;,
+    &quot;crystal_unit_cell&quot;: null,
+    &quot;fractional_coordinates_source&quot;: null,
+    &quot;miller_face&quot;: null,
+    &quot;surface_termination&quot;: null,
+    &quot;chain_polarity_order&quot;: null,
+    &quot;amorphous_fraction&quot;: null,
+    &quot;surface_roughness_nm&quot;: null,
+    &quot;temperature_K&quot;: 310,
+    &quot;validation_required&quot;: [
+      &quot;traceable crystal coordinates and chain packing&quot;,
+      &quot;force-field torsion and intermolecular validation&quot;,
+      &quot;bulk density and structural stability at target temperature&quot;,
+      &quot;specified exposed face, termination and polarity&quot;,
+      &quot;hydrated interface stability and box/periodic-image checks&quot;
+    ],
+    &quot;validated_crystal&quot;: false,
+    &quot;comparative_adsorption_enabled&quot;: false
+  },
+  {
+    &quot;material&quot;: &quot;PTFE&quot;,
+    &quot;phase&quot;: null,
+    &quot;current_candidate&quot;: &quot;finite C24F50 candidate; bulk helix unvalidated&quot;,
+    &quot;crystal_unit_cell&quot;: null,
+    &quot;fractional_coordinates_source&quot;: null,
+    &quot;miller_face&quot;: null,
+    &quot;surface_termination&quot;: null,
+    &quot;chain_polarity_order&quot;: null,
+    &quot;amorphous_fraction&quot;: null,
+    &quot;surface_roughness_nm&quot;: null,
+    &quot;temperature_K&quot;: 310,
+    &quot;validation_required&quot;: [
+      &quot;traceable crystal coordinates and chain packing&quot;,
+      &quot;force-field torsion and intermolecular validation&quot;,
+      &quot;bulk density and structural stability at target temperature&quot;,
+      &quot;specified exposed face, termination and polarity&quot;,
+      &quot;hydrated interface stability and box/periodic-image checks&quot;
+    ],
+    &quot;validated_crystal&quot;: false,
+    &quot;comparative_adsorption_enabled&quot;: false
+  },
+  {
+    &quot;material&quot;: &quot;PVDF&quot;,
+    &quot;phase&quot;: &quot;alpha&quot;,
+    &quot;current_candidate&quot;: &quot;T/G/T/G-prime candidate&quot;,
+    &quot;crystal_unit_cell&quot;: null,
+    &quot;fractional_coordinates_source&quot;: null,
+    &quot;miller_face&quot;: null,
+    &quot;surface_termination&quot;: null,
+    &quot;chain_polarity_order&quot;: null,
+    &quot;amorphous_fraction&quot;: null,
+    &quot;surface_roughness_nm&quot;: null,
+    &quot;temperature_K&quot;: 310,
+    &quot;validation_required&quot;: [
+      &quot;traceable crystal coordinates and chain packing&quot;,
+      &quot;force-field torsion and intermolecular validation&quot;,
+      &quot;bulk density and structural stability at target temperature&quot;,
+      &quot;specified exposed face, termination and polarity&quot;,
+      &quot;hydrated interface stability and box/periodic-image checks&quot;
+    ],
+    &quot;validated_crystal&quot;: false,
+    &quot;comparative_adsorption_enabled&quot;: false
+  },
+  {
+    &quot;material&quot;: &quot;PVDF&quot;,
+    &quot;phase&quot;: &quot;beta&quot;,
+    &quot;current_candidate&quot;: &quot;all-trans candidate&quot;,
+    &quot;crystal_unit_cell&quot;: null,
+    &quot;fractional_coordinates_source&quot;: null,
+    &quot;miller_face&quot;: null,
+    &quot;surface_termination&quot;: null,
+    &quot;chain_polarity_order&quot;: null,
+    &quot;amorphous_fraction&quot;: null,
+    &quot;surface_roughness_nm&quot;: null,
+    &quot;temperature_K&quot;: 310,
+    &quot;validation_required&quot;: [
+      &quot;traceable crystal coordinates and chain packing&quot;,
+      &quot;force-field torsion and intermolecular validation&quot;,
+      &quot;bulk density and structural stability at target temperature&quot;,
+      &quot;specified exposed face, termination and polarity&quot;,
+      &quot;hydrated interface stability and box/periodic-image checks&quot;
+    ],
+    &quot;validated_crystal&quot;: false,
+    &quot;comparative_adsorption_enabled&quot;: false
+  },
+  {
+    &quot;material&quot;: &quot;PVDF&quot;,
+    &quot;phase&quot;: &quot;gamma&quot;,
+    &quot;current_candidate&quot;: &quot;TTTG/TTTG-prime candidate&quot;,
+    &quot;crystal_unit_cell&quot;: null,
+    &quot;fractional_coordinates_source&quot;: null,
+    &quot;miller_face&quot;: null,
+    &quot;surface_termination&quot;: null,
+    &quot;chain_polarity_order&quot;: null,
+    &quot;amorphous_fraction&quot;: null,
+    &quot;surface_roughness_nm&quot;: null,
+    &quot;temperature_K&quot;: 310,
+    &quot;validation_required&quot;: [
+      &quot;traceable crystal coordinates and chain packing&quot;,
+      &quot;force-field torsion and intermolecular validation&quot;,
+      &quot;bulk density and structural stability at target temperature&quot;,
+      &quot;specified exposed face, termination and polarity&quot;,
+      &quot;hydrated interface stability and box/periodic-image checks&quot;
+    ],
+    &quot;validated_crystal&quot;: false,
+    &quot;comparative_adsorption_enabled&quot;: false
+  }
+]</pre></body></html>

@@ -1,0 +1,145 @@
+{
+  "stages": {
+    "1": {
+      "status": "final_frame_geometry_screen_passed",
+      "source_time_ps": 74.6
+    },
+    "2": {
+      "status": "running_preparation",
+      "job_id": "cf79381a5c56461188047bec0b27f186",
+      "additional_ps": 30,
+      "target_total_ps": 104.6,
+      "equilibrium_established": false
+    },
+    "3": {
+      "status": "waiting_for_equilibration_and_orientation_specific_boxes",
+      "replica_design": {
+        "PE_orientations": 6,
+        "independent_seeds_per_orientation": 3,
+        "planned_PE_replicas": 18,
+        "executed_production_replicas": 0
+      },
+      "gate": "Do not branch production replicas from an unrelaxed box; end-on orientations require new boxes and solvation."
+    },
+    "4": {
+      "status": "candidate_technical_checks_passed_crystal_surface_validation_pending",
+      "materials": [
+        {
+          "material": "PE",
+          "phase": null,
+          "current_candidate": "finite C24H50 oligomer patch",
+          "crystal_unit_cell": null,
+          "fractional_coordinates_source": null,
+          "miller_face": null,
+          "surface_termination": null,
+          "chain_polarity_order": null,
+          "amorphous_fraction": null,
+          "surface_roughness_nm": null,
+          "temperature_K": 310,
+          "validation_required": [
+            "traceable crystal coordinates and chain packing",
+            "force-field torsion and intermolecular validation",
+            "bulk density and structural stability at target temperature",
+            "specified exposed face, termination and polarity",
+            "hydrated interface stability and box/periodic-image checks"
+          ],
+          "validated_crystal": false,
+          "comparative_adsorption_enabled": false
+        },
+        {
+          "material": "PTFE",
+          "phase": null,
+          "current_candidate": "finite C24F50 candidate; bulk helix unvalidated",
+          "crystal_unit_cell": null,
+          "fractional_coordinates_source": null,
+          "miller_face": null,
+          "surface_termination": null,
+          "chain_polarity_order": null,
+          "amorphous_fraction": null,
+          "surface_roughness_nm": null,
+          "temperature_K": 310,
+          "validation_required": [
+            "traceable crystal coordinates and chain packing",
+            "force-field torsion and intermolecular validation",
+            "bulk density and structural stability at target temperature",
+            "specified exposed face, termination and polarity",
+            "hydrated interface stability and box/periodic-image checks"
+          ],
+          "validated_crystal": false,
+          "comparative_adsorption_enabled": false
+        },
+        {
+          "material": "PVDF",
+          "phase": "alpha",
+          "current_candidate": "T/G/T/G-prime candidate",
+          "crystal_unit_cell": null,
+          "fractional_coordinates_source": null,
+          "miller_face": null,
+          "surface_termination": null,
+          "chain_polarity_order": null,
+          "amorphous_fraction": null,
+          "surface_roughness_nm": null,
+          "temperature_K": 310,
+          "validation_required": [
+            "traceable crystal coordinates and chain packing",
+            "force-field torsion and intermolecular validation",
+            "bulk density and structural stability at target temperature",
+            "specified exposed face, termination and polarity",
+            "hydrated interface stability and box/periodic-image checks"
+          ],
+          "validated_crystal": false,
+          "comparative_adsorption_enabled": false
+        },
+        {
+          "material": "PVDF",
+          "phase": "beta",
+          "current_candidate": "all-trans candidate",
+          "crystal_unit_cell": null,
+          "fractional_coordinates_source": null,
+          "miller_face": null,
+          "surface_termination": null,
+          "chain_polarity_order": null,
+          "amorphous_fraction": null,
+          "surface_roughness_nm": null,
+          "temperature_K": 310,
+          "validation_required": [
+            "traceable crystal coordinates and chain packing",
+            "force-field torsion and intermolecular validation",
+            "bulk density and structural stability at target temperature",
+            "specified exposed face, termination and polarity",
+            "hydrated interface stability and box/periodic-image checks"
+          ],
+          "validated_crystal": false,
+          "comparative_adsorption_enabled": false
+        },
+        {
+          "material": "PVDF",
+          "phase": "gamma",
+          "current_candidate": "TTTG/TTTG-prime candidate",
+          "crystal_unit_cell": null,
+          "fractional_coordinates_source": null,
+          "miller_face": null,
+          "surface_termination": null,
+          "chain_polarity_order": null,
+          "amorphous_fraction": null,
+          "surface_roughness_nm": null,
+          "temperature_K": 310,
+          "validation_required": [
+            "traceable crystal coordinates and chain packing",
+            "force-field torsion and intermolecular validation",
+            "bulk density and structural stability at target temperature",
+            "specified exposed face, termination and polarity",
+            "hydrated interface stability and box/periodic-image checks"
+          ],
+          "validated_crystal": false,
+          "comparative_adsorption_enabled": false
+        }
+      ],
+      "literature_access": "Crossref metadata requests blocked by proxy 403; no crystal coordinates or lattice constants inferred."
+    }
+  },
+  "limits": [
+    "No affinity, experimental retention, equilibrium, crystal-phase validation or material ranking is claimed.",
+    "PVDF chain motif alone does not define a crystalline phase or exposed surface."
+  ]
+}
