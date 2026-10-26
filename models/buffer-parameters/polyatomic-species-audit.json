@@ -1,0 +1,62 @@
+{
+  "candidates": [
+    {
+      "name": "citrate3-",
+      "smiles": "O=C([O-])CC(O)(CC(=O)[O-])C(=O)[O-]",
+      "formal_charge": -3,
+      "formula": "C6H5O7-3",
+      "atoms": 18,
+      "partial_charges_assigned": false,
+      "topology_assigned": false,
+      "population_fraction": null
+    },
+    {
+      "name": "hydrogen_citrate2-",
+      "smiles": "O=C(O)CC(O)(CC(=O)[O-])C(=O)[O-]",
+      "formal_charge": -2,
+      "formula": "C6H6O7-2",
+      "atoms": 19,
+      "partial_charges_assigned": false,
+      "topology_assigned": false,
+      "population_fraction": null
+    },
+    {
+      "name": "dihydrogen_phosphate-",
+      "smiles": "O=P([O-])(O)O",
+      "formal_charge": -1,
+      "formula": "H2O4P-",
+      "atoms": 7,
+      "partial_charges_assigned": false,
+      "topology_assigned": false,
+      "population_fraction": null
+    },
+    {
+      "name": "hydrogen_phosphate2-",
+      "smiles": "O=P([O-])([O-])O",
+      "formal_charge": -2,
+      "formula": "HO4P-2",
+      "atoms": 6,
+      "partial_charges_assigned": false,
+      "topology_assigned": false,
+      "population_fraction": null
+    },
+    {
+      "name": "azide-",
+      "smiles": "[N-]=[N+]=[N-]",
+      "formal_charge": -1,
+      "formula": "N3-",
+      "atoms": 3,
+      "partial_charges_assigned": false,
+      "topology_assigned": false,
+      "population_fraction": null
+    }
+  ],
+  "hydrogen_citrate_caution": "single formal protonation microstate candidate,not a validated native microstate/population",
+  "speciation_status": "fractions atpH7.4 require sourced pKa/ionic-condition model or documented sensitivity;not selected here",
+  "finite_box": {
+    "volume_nm3": 3888,
+    "analytical_molecules_per_mM": 2.341408327488,
+    "interpretation": "rounding/sodium charge balance must follow accepted speciation;no final integer mixture assigned"
+  },
+  "buffer_ready_for_MD": false
+}

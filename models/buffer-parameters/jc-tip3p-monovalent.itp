@@ -1,0 +1,20 @@
+; Joung & Cheatham2008 Ewald/TIP3P,from Amber bundled frcmod
+[ atomtypes ]
+JC_NA 11 22.99 0 A 0.2439280690 0.3658460312
+JC_CL 17 35.45 0 A 0.4477656957 0.1489127440
+JC_I 53 126.9 0 A 0.5095940668 0.2246038144
+
+[ moleculetype ]
+NAJC 1
+[ atoms ]
+1 JC_NA 1 NAJC JC_NA 1 1 22.99
+
+[ moleculetype ]
+CLJC 1
+[ atoms ]
+1 JC_CL 1 CLJC JC_CL 1 -1 35.45
+
+[ moleculetype ]
+IJC 1
+[ atoms ]
+1 JC_I 1 IJC JC_I 1 -1 126.9

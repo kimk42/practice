@@ -55,6 +55,8 @@
       "electroneutrality and sodium/counterion accounting",
       "resolve phosphate hydration or carry explicit concentration sensitivity"
     ],
-    "current_running_controls": "300K,neutralizing ions only,unchanged preliminary baseline"
+    "current_running_controls": "300K,neutralizing ions only,unchanged preliminary baseline",
+    "monovalent_ion_candidate": "models/buffer-parameters/jc-tip3p-monovalent.itp;published JC/TIP3P Na/Cl/I converted and neutral ion-water EM passed;not yet applied to protein/coating baselines",
+    "polyatomic_candidates": "models/buffer-parameters/polyatomic-species-audit.json;formal graphs only,no partial charges or final speciation"
   }
 }

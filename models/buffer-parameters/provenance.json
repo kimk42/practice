@@ -1,0 +1,41 @@
+{
+  "source": "/workspace/md-tools/chem-venv/lib/python3.12/site-packages/acpype/amber_linux/dat/leap/parm/frcmod.ionsjc_tip3p",
+  "source_sha256": "eb7a1a59bf356581f89534287dd59d1bebbb2e5de7176d7c7dd69cb1d4928a55",
+  "citation": "Joung and Cheatham,J Phys Chem B2008,monovalent Ewald/TIP3P parameters",
+  "species": {
+    "Na+": {
+      "mass": 22.99,
+      "Rmin_half_A": 1.369,
+      "epsilon_kcal_mol": 0.0874393,
+      "sigma_nm": 0.24392806902682487,
+      "epsilon_kJ_mol": 0.3658460312,
+      "formal_charge": 1,
+      "atomtype": "JC_NA",
+      "molecule": "NAJC"
+    },
+    "Cl-": {
+      "mass": 35.45,
+      "Rmin_half_A": 2.513,
+      "epsilon_kcal_mol": 0.035591,
+      "sigma_nm": 0.44776569573733455,
+      "epsilon_kJ_mol": 0.14891274399999999,
+      "formal_charge": -1,
+      "atomtype": "JC_CL",
+      "molecule": "CLJC"
+    },
+    "I-": {
+      "mass": 126.9,
+      "Rmin_half_A": 2.86,
+      "epsilon_kcal_mol": 0.0536816,
+      "sigma_nm": 0.5095940667762741,
+      "epsilon_kJ_mol": 0.22460381440000002,
+      "formal_charge": -1,
+      "atomtype": "JC_I",
+      "molecule": "IJC"
+    }
+  },
+  "conversion": "sigma_nm=2*(Rmin/2 in A)*0.1/2^(1/6);epsilon_kJ=epsilon_kcal*4.184",
+  "scope": "consistent Na/Cl/I proposal for future buffer;not substituted into ongoing legacy-ion numerical baselines",
+  "full_buffer_ready": false,
+  "numerical_control": "neutral2Na/1Cl/1I water import and EM passed;not physical solvation validation or experimental buffer"
+}

@@ -1,0 +1,15 @@
+{
+  "source_title": "Intrinsic coagulation pathway-mediated thrombin generation in mouse whole blood",
+  "doi": "10.3389/fcvm.2022.1008410",
+  "pmcid": "PMC9742269",
+  "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9742269/fullTextXML",
+  "source_sha256": "46a1a07d0754a829ed7cdca0c997ead5316b1e7de20acaa76a356481caa66449",
+  "short_evidence": "human plasma-derived FXII at physiological concentration (375 nM)",
+  "context": "human FXII reconstitution of F12-deficient mouse whole blood;literature physiological reference,not clinical reference-interval determination or user assay measurement",
+  "physiological_reference_nM": 375,
+  "user_target_fraction": 0.01,
+  "provisional_1percent_target_nM": 3.75,
+  "mass_conversion_if_80kDa_ug_mL": 0.3,
+  "80kDa_status": "conditional glycoprotein-mass convention,not a mass measured by this source/user or the unglycosylated MD model",
+  "user_assay_measured_concentration": false
+}

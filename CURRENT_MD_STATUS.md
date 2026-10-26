@@ -41,3 +41,7 @@ Synthesis ratio7:2:1 is confirmed molar. The user reports0.5wt% aqueous coating 
 ## Uploaded SOP resolved assay details
 
 The uploaded SOP identifies cPBSzI1x containing NaCl,NaI,citrate,phosphate and azide;see config/experimental-buffer.json. User confirms9000mJ/cm² per exposure×3 and purified-protein1% plasma-reference concentration. Main SOP Fbg maps to0.03mg/mL;late0.3mg/mL Fbg-only entry is flagged as inconsistent. FXII concentration is absent. User room temperature overrides the SOP37°C reference. Existing neutralizing-ion numerical controls are not relabeled as matched-buffer simulations.
+
+## Matched-buffer preparation progress
+
+Published Joung–Cheatham/TIP3P Na/Cl/I parameters were converted with source hashes; a small neutral ion/water GROMACS import/EM control passed. Formal citrate/phosphate/azide graphs are prepared without invented partial charges or speciation fractions. Full cPBSzI MD remains gated on polyatomic parameters and charge/speciation accounting. A primary study's375nM physiological human-FXII reference gives a provisional1%=3.75nM assay mapping;this is not user-measured concentration. Existing numerical controls continue unchanged.

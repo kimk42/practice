@@ -270,7 +270,9 @@
       "fibrinogen_ug_mL": 30,
       "basis": "SOP main1x incubation recipe;consistent with user-confirmed1% plasma-reference convention",
       "FXII_mg_mL": null,
-      "FXII_status": "not specified in this SOP;normal-plasma reference must be independently sourced"
+      "FXII_status": "literature reference375nMx1%=3.75nM;not user-measured assay concentration;see research/proteins/modeling-evidence/fxii-plasma-reference.json",
+      "FXII_provisional_nM": 3.75,
+      "FXII_conditional_mass_ug_mL_if_80kDa": 0.3
     },
     "contact_time_h": 2,
     "contact_time_s": 7200,
