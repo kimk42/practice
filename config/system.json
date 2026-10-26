@@ -64,7 +64,7 @@
       }
     }
   ],
-  "status": "COP10/PC4/GRAFT parameter gates and small-surface10ps numerical follow-up passed; expanded surface EM and authorized unglycosylated FXII surface pilot in progress",
+  "status": "Expanded EM and coupled unglycosylated FXII/coating0.2ps numerical pilot passed; serial ten-stage preliminary controls and evidence report in progress; no production/adsorption conclusion",
   "force_field": "Exploratory GAFF2/AM1-BCC for polymer/PC with Amber99sb-ildn/TIP3P for protein/water; numerical parameter gates passed, physical accuracy and experimental coating validation pending; no CHARMM mixing",
   "literature_reference_conditions": {
     "transfer_to_target": "Reference only: neither paper validates the user PC-supported 7:2:1 terpolymer. Do not auto-apply molecular weights or crosslink conversion.",
@@ -219,12 +219,26 @@
     "free_PC4_molecules": 228,
     "water_molecules": 115779,
     "total_atoms_before_protein": 380103,
-    "status": "solvated, EM running; see runs/surface-expanded-18x12/result.json when available",
+    "status": "expanded EM passed;coupled380158-atom0.2ps numerical pilot passed",
     "morphology": "correlated3x2 translations of the small10ps candidate, not independent replicas or measured coating",
     "protein_pilot": "scripts/run_fxii_surface_pilot.py",
     "salt": "neutralizing ions only; physiological salt unspecified",
     "temperature_K": 300,
     "target_duration_ps": 0.2,
     "production_ready": false
+  },
+  "ten_stage_workflow": {
+    "plan": "PLAN_10_STEPS.md",
+    "worker": "scripts/advance_ten_stages.py",
+    "runtime_status": "runs/ten-stage-execution.json",
+    "report": "research/TEN_STAGE_PROGRESS.md",
+    "bounded_followups_ps": 100,
+    "velocity_pilot_seeds": [
+      2026,
+      2027,
+      2028
+    ],
+    "velocity_pilot_duration_ps": 0.2,
+    "final_all_stages_completed": false
   }
 }

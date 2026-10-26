@@ -1,0 +1,153 @@
+{
+  "source": "runs/fxii-surface-pilot",
+  "endpoint_sha256": "b4b2bbce9f4039802c1b2fb563444713de5ef67a7deda3403ccdd256e29a45d9",
+  "duration_ps": 0.2,
+  "protein_heavy_atom_fitted_RMSD_nm": 0.06581937684176743,
+  "RMSD_reference": "placed pre-EM coordinates versus post-EM/MD endpoint; includes minimization",
+  "endpoint_vertical_separation_lower_bound_including_z_periodicity_nm": 2.101,
+  "endpoint_contact_exclusion": "if vertical bound exceeds0.45nm, protein/surface contacts below0.45nm are excluded at this endpoint; not evidence of antifouling",
+  "annotated_disulfides": [
+    {
+      "precursor_residues": [
+        47,
+        73
+      ],
+      "endpoint_SG_distance_nm": 0.20259318843436033
+    },
+    {
+      "precursor_residues": [
+        61,
+        88
+      ],
+      "endpoint_SG_distance_nm": 0.20348464315520218
+    },
+    {
+      "precursor_residues": [
+        98,
+        110
+      ],
+      "endpoint_SG_distance_nm": 0.20219544999826275
+    },
+    {
+      "precursor_residues": [
+        104,
+        119
+      ],
+      "endpoint_SG_distance_nm": 0.2065429737367021
+    },
+    {
+      "precursor_residues": [
+        121,
+        130
+      ],
+      "endpoint_SG_distance_nm": 0.19801515093547767
+    },
+    {
+      "precursor_residues": [
+        135,
+        163
+      ],
+      "endpoint_SG_distance_nm": 0.19969476708216508
+    },
+    {
+      "precursor_residues": [
+        161,
+        170
+      ],
+      "endpoint_SG_distance_nm": 0.19834817871611524
+    },
+    {
+      "precursor_residues": [
+        178,
+        189
+      ],
+      "endpoint_SG_distance_nm": 0.20886598574205514
+    },
+    {
+      "precursor_residues": [
+        183,
+        198
+      ],
+      "endpoint_SG_distance_nm": 0.2054677590280287
+    },
+    {
+      "precursor_residues": [
+        200,
+        209
+      ],
+      "endpoint_SG_distance_nm": 0.20360255401148386
+    },
+    {
+      "precursor_residues": [
+        217,
+        295
+      ],
+      "endpoint_SG_distance_nm": 0.20507803392855103
+    },
+    {
+      "precursor_residues": [
+        238,
+        277
+      ],
+      "endpoint_SG_distance_nm": 0.2005816541959904
+    },
+    {
+      "precursor_residues": [
+        266,
+        290
+      ],
+      "endpoint_SG_distance_nm": 0.19927368115232844
+    },
+    {
+      "precursor_residues": [
+        359,
+        486
+      ],
+      "endpoint_SG_distance_nm": 0.2042865634347992
+    },
+    {
+      "precursor_residues": [
+        397,
+        413
+      ],
+      "endpoint_SG_distance_nm": 0.20059411756080955
+    },
+    {
+      "precursor_residues": [
+        405,
+        475
+      ],
+      "endpoint_SG_distance_nm": 0.20547019248543086
+    },
+    {
+      "precursor_residues": [
+        436,
+        439
+      ],
+      "endpoint_SG_distance_nm": 0.20323877582784278
+    },
+    {
+      "precursor_residues": [
+        500,
+        569
+      ],
+      "endpoint_SG_distance_nm": 0.2099999999999995
+    },
+    {
+      "precursor_residues": [
+        532,
+        548
+      ],
+      "endpoint_SG_distance_nm": 0.19986495440671898
+    },
+    {
+      "precursor_residues": [
+        559,
+        590
+      ],
+      "endpoint_SG_distance_nm": 0.19899246216879576
+    }
+  ],
+  "short_run_performance_ns_day": 0.366,
+  "scope": "Endpoint numerical/geometry QA only; not full trajectory convergence, adsorption, native structure validation or activation"
+}

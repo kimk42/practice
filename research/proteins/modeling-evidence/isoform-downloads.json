@@ -1,0 +1,28 @@
+[
+  {
+    "accession": "P02671-2",
+    "url": "https://rest.uniprot.org/uniprotkb/P02671-2.fasta",
+    "state": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "accession": "P02679-2",
+    "url": "https://rest.uniprot.org/uniprotkb/P02679-2.fasta",
+    "state": "unavailable",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "accession": "P02671-2",
+    "url": "https://www.ebi.ac.uk/Tools/dbfetch/dbfetch?db=uniprotkb&id=P02671-2&format=fasta&style=raw",
+    "state": "retrieved",
+    "length": 644,
+    "sha256": "97e1fb1f80024fb321fa2c95395f0d8267eff04b759cfa5db2e64d89407e3cf3"
+  },
+  {
+    "accession": "P02679-2",
+    "url": "https://www.ebi.ac.uk/Tools/dbfetch/dbfetch?db=uniprotkb&id=P02679-2&format=fasta&style=raw",
+    "state": "retrieved",
+    "length": 437,
+    "sha256": "116bccfdedb30d60e1daa7bb247254ef42a0aea20a37a2c53434ffc3e2f894fa"
+  }
+]

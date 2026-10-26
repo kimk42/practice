@@ -1,0 +1,15 @@
+{
+  "state": "surface candidate minimized",
+  "EM": "Fmax below1000kJ/mol/nm",
+  "dry_atoms": 30888,
+  "PC4_molecules": 234,
+  "graft_molecules": 0,
+  "total_atoms": 380562,
+  "water_molecules": 116558,
+  "box_nm": [
+    18,
+    12,
+    18
+  ],
+  "scope": "matched initial PC conformations, restored methyl H, original whole-PC4 charges; not bulk equilibrium or experimental validation"
+}

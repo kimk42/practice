@@ -1,0 +1,25 @@
+{
+  "state": "expanded solvated candidate minimized",
+  "source_sha256": "56ce91e0e191c3928e745ff37ed83fbe9a8c22dbb1481f559db34341b2d882b9",
+  "box_nm": [
+    18,
+    12,
+    18
+  ],
+  "tile_count": 6,
+  "graft_molecules": 6,
+  "free_PC4_molecules": 228,
+  "dry_atoms": 32766,
+  "water_molecules": 115779,
+  "total_atoms": 380103,
+  "source_max_direct_bond_length_nm": 0.16673931749890245,
+  "protein_present": false,
+  "limitations": [
+    "six correlated translations of one short pilot, not independent morphology/replicas",
+    "same provisional low-density PC and graft coverage, not measured coating",
+    "no experimental DP, crosslink distribution, glycans or physiological salt",
+    "new solvation requires EM before protein placement or dynamics"
+  ],
+  "EM": "Fmax below1000kJ/mol/nm",
+  "recovery_directory": "runs/expanded-em-recovery-ag3m7kwb"
+}

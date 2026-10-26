@@ -1,0 +1,14 @@
+{
+  "state": "bare-PC coordinates/topology prepared; not minimized",
+  "PC4_molecules": 234,
+  "dry_atoms": 30888,
+  "restored_methyl_hydrogens": 6,
+  "source": "/workspace/practice-md/runs/surface-expanded-18x12/dry.gro",
+  "chemistry": "whole PC4 topologies/AM1-BCC charges reused; graft polymer removed and missing methyl H restored along original attachment direction",
+  "scope": "same PC heavy-atom conformations at preparation, not independently equilibrated bulk PC",
+  "limitations": [
+    "PC4 chain length and low density remain provisional",
+    "restore/minimize again from accepted coated surface before matched adsorption comparisons",
+    "no adsorption or equilibrium result"
+  ]
+}

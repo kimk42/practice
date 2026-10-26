@@ -1,0 +1,384 @@
+{
+  "stages": [
+    {
+      "step": 1,
+      "work": "initial FXII/coating numerical analysis",
+      "state": "passed numerical pilot only",
+      "evidence": "runs/fxii-surface-pilot/result.json"
+    },
+    {
+      "step": 2,
+      "work": "coating relaxation/equilibration",
+      "state": "100ps preliminary control queued",
+      "gate": "stable density/hydration/structure and sufficient sampling; temperature alone is insufficient"
+    },
+    {
+      "step": 3,
+      "work": "surface model sensitivity",
+      "state": "0/3/6 graft coordinate candidates prepared and preprocessed; representative model unresolved",
+      "gate": "experimental DP, density, film thickness and crosslink distribution; sensitivity trajectories"
+    },
+    {
+      "step": 4,
+      "work": "FXII protein-only control",
+      "state": "0.2ps passed;100ps queued",
+      "gate": "conformational assessment, adequate relaxation and matched conditions"
+    },
+    {
+      "step": 5,
+      "work": "bare-PC versus coated-PC controls",
+      "state": "both short initial pilots available",
+      "gate": "matched physical models and converged sampling before efficacy comparison"
+    },
+    {
+      "step": 6,
+      "work": "orientation/starting-state sampling",
+      "state": "two accepted orientations;bare/coated PC;0.5/2nm gap subset;three velocity seeds queued;short numerical sensitivity only",
+      "gate": "rigid orientations of one predicted conformation are not an ensemble"
+    },
+    {
+      "step": 7,
+      "work": "replicated production MD",
+      "state": "blocked: no validated production model or converged pilot budget",
+      "gate": "relaxation/sampling criteria, independent conformations and suitable GPU/HPC resources; short velocity pilots do not satisfy this stage"
+    },
+    {
+      "step": 8,
+      "work": "glycosylated FXII comparison",
+      "state": "nine annotated sites and five citation records retrieved;glycoform/parameters unresolved",
+      "gate": "site-specific glycan structures/occupancy, reproducible glycan building and validated compatible force-field/1-4 treatment"
+    },
+    {
+      "step": 9,
+      "work": "full fibrinogen simulation",
+      "state": "Alpha/Gamma-A isoform sequence candidates aligned;955 construct residues unmodeled,1081 relative to this full-length candidate",
+      "gate": "select Alpha versus Alpha-E/gamma isoforms, full-length disordered-region ensembles and glycans; no arbitrary loop filling"
+    },
+    {
+      "step": 10,
+      "work": "integrated mechanism/uncertainty report",
+      "state": "interim evidence report generated;mechanistic comparison not yet supported",
+      "gate": "matched repeated adsorption trajectories and uncertainty; no activation or antifouling conclusion from initialization"
+    }
+  ],
+  "completed_outputs": {
+    "initial_FXII_coating_QA": {
+      "source": "runs/fxii-surface-pilot",
+      "endpoint_sha256": "b4b2bbce9f4039802c1b2fb563444713de5ef67a7deda3403ccdd256e29a45d9",
+      "duration_ps": 0.2,
+      "protein_heavy_atom_fitted_RMSD_nm": 0.06581937684176743,
+      "RMSD_reference": "placed pre-EM coordinates versus post-EM/MD endpoint; includes minimization",
+      "endpoint_vertical_separation_lower_bound_including_z_periodicity_nm": 2.101,
+      "endpoint_contact_exclusion": "if vertical bound exceeds0.45nm, protein/surface contacts below0.45nm are excluded at this endpoint; not evidence of antifouling",
+      "annotated_disulfides": [
+        {
+          "precursor_residues": [
+            47,
+            73
+          ],
+          "endpoint_SG_distance_nm": 0.20259318843436033
+        },
+        {
+          "precursor_residues": [
+            61,
+            88
+          ],
+          "endpoint_SG_distance_nm": 0.20348464315520218
+        },
+        {
+          "precursor_residues": [
+            98,
+            110
+          ],
+          "endpoint_SG_distance_nm": 0.20219544999826275
+        },
+        {
+          "precursor_residues": [
+            104,
+            119
+          ],
+          "endpoint_SG_distance_nm": 0.2065429737367021
+        },
+        {
+          "precursor_residues": [
+            121,
+            130
+          ],
+          "endpoint_SG_distance_nm": 0.19801515093547767
+        },
+        {
+          "precursor_residues": [
+            135,
+            163
+          ],
+          "endpoint_SG_distance_nm": 0.19969476708216508
+        },
+        {
+          "precursor_residues": [
+            161,
+            170
+          ],
+          "endpoint_SG_distance_nm": 0.19834817871611524
+        },
+        {
+          "precursor_residues": [
+            178,
+            189
+          ],
+          "endpoint_SG_distance_nm": 0.20886598574205514
+        },
+        {
+          "precursor_residues": [
+            183,
+            198
+          ],
+          "endpoint_SG_distance_nm": 0.2054677590280287
+        },
+        {
+          "precursor_residues": [
+            200,
+            209
+          ],
+          "endpoint_SG_distance_nm": 0.20360255401148386
+        },
+        {
+          "precursor_residues": [
+            217,
+            295
+          ],
+          "endpoint_SG_distance_nm": 0.20507803392855103
+        },
+        {
+          "precursor_residues": [
+            238,
+            277
+          ],
+          "endpoint_SG_distance_nm": 0.2005816541959904
+        },
+        {
+          "precursor_residues": [
+            266,
+            290
+          ],
+          "endpoint_SG_distance_nm": 0.19927368115232844
+        },
+        {
+          "precursor_residues": [
+            359,
+            486
+          ],
+          "endpoint_SG_distance_nm": 0.2042865634347992
+        },
+        {
+          "precursor_residues": [
+            397,
+            413
+          ],
+          "endpoint_SG_distance_nm": 0.20059411756080955
+        },
+        {
+          "precursor_residues": [
+            405,
+            475
+          ],
+          "endpoint_SG_distance_nm": 0.20547019248543086
+        },
+        {
+          "precursor_residues": [
+            436,
+            439
+          ],
+          "endpoint_SG_distance_nm": 0.20323877582784278
+        },
+        {
+          "precursor_residues": [
+            500,
+            569
+          ],
+          "endpoint_SG_distance_nm": 0.2099999999999995
+        },
+        {
+          "precursor_residues": [
+            532,
+            548
+          ],
+          "endpoint_SG_distance_nm": 0.19986495440671898
+        },
+        {
+          "precursor_residues": [
+            559,
+            590
+          ],
+          "endpoint_SG_distance_nm": 0.19899246216879576
+        }
+      ],
+      "short_run_performance_ns_day": 0.366,
+      "scope": "Endpoint numerical/geometry QA only; not full trajectory convergence, adsorption, native structure validation or activation"
+    },
+    "initial_FXII_bare_PC_QA": {
+      "source": "runs/fxii-bare-pc-pilot",
+      "endpoint_sha256": "4dc56797629127436ebc5d7d60b0edd846f65ba80634cc9d62080b359e8f215a",
+      "duration_ps": 0.2,
+      "protein_heavy_atom_fitted_RMSD_nm": 0.06558268872127007,
+      "RMSD_reference": "placed pre-EM coordinates versus post-EM/MD endpoint; includes minimization",
+      "endpoint_vertical_separation_lower_bound_including_z_periodicity_nm": 2.082,
+      "endpoint_contact_exclusion": "if vertical bound exceeds0.45nm, protein/surface contacts below0.45nm are excluded at this endpoint; not evidence of antifouling",
+      "annotated_disulfides": [
+        {
+          "precursor_residues": [
+            47,
+            73
+          ],
+          "endpoint_SG_distance_nm": 0.20111190914513127
+        },
+        {
+          "precursor_residues": [
+            61,
+            88
+          ],
+          "endpoint_SG_distance_nm": 0.20300985197768204
+        },
+        {
+          "precursor_residues": [
+            98,
+            110
+          ],
+          "endpoint_SG_distance_nm": 0.20601456259206521
+        },
+        {
+          "precursor_residues": [
+            104,
+            119
+          ],
+          "endpoint_SG_distance_nm": 0.2074536092720484
+        },
+        {
+          "precursor_residues": [
+            121,
+            130
+          ],
+          "endpoint_SG_distance_nm": 0.20593688353473746
+        },
+        {
+          "precursor_residues": [
+            135,
+            163
+          ],
+          "endpoint_SG_distance_nm": 0.2079567262677503
+        },
+        {
+          "precursor_residues": [
+            161,
+            170
+          ],
+          "endpoint_SG_distance_nm": 0.20337158110217846
+        },
+        {
+          "precursor_residues": [
+            178,
+            189
+          ],
+          "endpoint_SG_distance_nm": 0.20691302520624533
+        },
+        {
+          "precursor_residues": [
+            183,
+            198
+          ],
+          "endpoint_SG_distance_nm": 0.20244752406487862
+        },
+        {
+          "precursor_residues": [
+            200,
+            209
+          ],
+          "endpoint_SG_distance_nm": 0.20583974348992864
+        },
+        {
+          "precursor_residues": [
+            217,
+            295
+          ],
+          "endpoint_SG_distance_nm": 0.2062643934371618
+        },
+        {
+          "precursor_residues": [
+            238,
+            277
+          ],
+          "endpoint_SG_distance_nm": 0.2072438177606266
+        },
+        {
+          "precursor_residues": [
+            266,
+            290
+          ],
+          "endpoint_SG_distance_nm": 0.20139761666911676
+        },
+        {
+          "precursor_residues": [
+            359,
+            486
+          ],
+          "endpoint_SG_distance_nm": 0.2034453243503029
+        },
+        {
+          "precursor_residues": [
+            397,
+            413
+          ],
+          "endpoint_SG_distance_nm": 0.2015266731725601
+        },
+        {
+          "precursor_residues": [
+            405,
+            475
+          ],
+          "endpoint_SG_distance_nm": 0.2031624965390999
+        },
+        {
+          "precursor_residues": [
+            436,
+            439
+          ],
+          "endpoint_SG_distance_nm": 0.2061116202449532
+        },
+        {
+          "precursor_residues": [
+            500,
+            569
+          ],
+          "endpoint_SG_distance_nm": 0.20286448678859512
+        },
+        {
+          "precursor_residues": [
+            532,
+            548
+          ],
+          "endpoint_SG_distance_nm": 0.20538256985440617
+        },
+        {
+          "precursor_residues": [
+            559,
+            590
+          ],
+          "endpoint_SG_distance_nm": 0.20553831759552804
+        }
+      ],
+      "short_run_performance_ns_day": 0.377,
+      "scope": "Endpoint numerical/geometry QA only; not full trajectory convergence, adsorption, native structure validation or activation"
+    },
+    "coating10ps": {
+      "state": "10ps surface numerical follow-up completed",
+      "duration_ps": 10,
+      "atoms": 27826,
+      "energy_frames": 21,
+      "temperature_mean_K": 297.87156899999997,
+      "protein_present": false,
+      "scope": "fixed-volume low-density short-PC single-graft prototype; short numerical check, not equilibrated experimental coating or adsorption production"
+    },
+    "density_scope": "Short10ps descriptive profile of the provisional6x6nm cell, not equilibrated bulk density or validated brush height"
+  },
+  "all_ten_stages_completed": false,
+  "scope": "Interim numerical/model-preparation evidence only. No adsorption free energy, coating efficacy, native glycoform or FXII activation result."
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "accession": "P02671",
+    "canonical_precursor_residues": 866,
+    "signal_and_chain_annotations": [
+      {
+        "type": "SIGNAL",
+        "category": "MOLECULE_PROCESSING",
+        "description": "",
+        "begin": "1",
+        "end": "19",
+        "molecule": "",
+        "evidences": [
+          {
+            "code": "ECO:0000269",
+            "source": {
+              "name": "PubMed",
+              "id": "518846",
+              "url": "http://www.ncbi.nlm.nih.gov/pubmed/518846",
+              "alternativeUrl": "https://europepmc.org/abstract/MED/518846"
+            }
+          },
+          {
+            "code": "ECO:0000269",
+            "source": {
+              "name": "Citation",
+              "id": "Ref.10",
+              "url": "https://www.uniprot.org/uniprot/P02671#ref10"
+            }
+          },
+          {
+            "code": "ECO:0000269",
+            "source": {
+              "name": "Citation",
+              "id": "Ref.14",
+              "url": "https://www.uniprot.org/uniprot/P02671#ref14"
+            }
+          }
+        ]
+      },
+      {
+        "type": "CHAIN",
+        "category": "MOLECULE_PROCESSING",
+        "ftId": "PRO_0000009022",
+        "description": "Fibrinogen alpha chain",
+        "begin": "36",
+        "end": "866",
+        "molecule": ""
+      },
+      {
+        "type": "VAR_SEQ",
+        "category": "VARIANTS",
+        "ftId": "VSP_001531",
+        "begin": "631",
+        "end": "644",
+        "molecule": "",
+        "evidences": [
+          {
+            "code": "ECO:0000303",
+            "source": {
+              "name": "PubMed",
+              "id": "14702039",
+              "url": "http://www.ncbi.nlm.nih.gov/pubmed/14702039",
+              "alternativeUrl": "https://europepmc.org/abstract/MED/14702039"
+            }
+          },
+          {
+            "code": "ECO:0000303",
+            "source": {
+              "name": "PubMed",
+              "id": "15489334",
+              "url": "http://www.ncbi.nlm.nih.gov/pubmed/15489334",
+              "alternativeUrl": "https://europepmc.org/abstract/MED/15489334"
+            }
+          },
+          {
+            "code": "ECO:0000303",
+            "source": {
+              "name": "PubMed",
+              "id": "6575389",
+              "url": "http://www.ncbi.nlm.nih.gov/pubmed/6575389",
+              "alternativeUrl": "https://europepmc.org/abstract/MED/6575389"
+            }
+          }
+        ]
+      },
+      {
+        "type": "VAR_SEQ",
+        "category": "VARIANTS",
+        "ftId": "VSP_001532",
+        "begin": "645",
+        "end": "866",
+        "molecule": "",
+        "evidences": [
+          {
+            "code": "ECO:0000303",
+            "source": {
+              "name": "PubMed",
+              "id": "14702039",
+              "url": "http://www.ncbi.nlm.nih.gov/pubmed/14702039",
+              "alternativeUrl": "https://europepmc.org/abstract/MED/14702039"
+            }
+          },
+          {
+            "code": "ECO:0000303",
+            "source": {
+              "name": "PubMed",
+              "id": "15489334",
+              "url": "http://www.ncbi.nlm.nih.gov/pubmed/15489334",
+              "alternativeUrl": "https://europepmc.org/abstract/MED/15489334"
+            }
+          },
+          {
+            "code": "ECO:0000303",
+            "source": {
+              "name": "PubMed",
+              "id": "6575389",
+              "url": "http://www.ncbi.nlm.nih.gov/pubmed/6575389",
+              "alternativeUrl": "https://europepmc.org/abstract/MED/6575389"
+            }
+          }
+        ]
+      }
+    ],
+    "alternative_products": [
+      {
+        "type": "ALTERNATIVE_PRODUCTS",
+        "event": [
+          "Alternative splicing"
+        ],
+        "isoforms": [
+          {
+            "ids": [
+              "P02671-1"
+            ],
+            "name": {
+              "value": "1"
+            },
+            "synonyms": [
+              {
+                "value": "Alpha-E"
+              }
+            ],
+            "sequenceStatus": "displayed"
+          },
+          {
+            "ids": [
+              "P02671-2"
+            ],
+            "name": {
+              "value": "2"
+            },
+            "synonyms": [
+              {
+                "value": "Alpha"
+              }
+            ],
+            "sequenceStatus": "described",
+            "sequence": [
+              "VSP_001531",
+              "VSP_001532"
+            ]
+          }
+        ]
+      }
+    ],
+    "caution": "canonical sequence may not match the intended plasma isoform/experimental construct; do not fill missing structure blindly"
+  },
+  {
+    "accession": "P02675",
+    "canonical_precursor_residues": 491,
+    "signal_and_chain_annotations": [
+      {
+        "type": "SIGNAL",
+        "category": "MOLECULE_PROCESSING",
+        "description": "",
+        "begin": "1",
+        "end": "30",
+        "molecule": "",
+        "evidences": [
+          {
+            "code": "ECO:0000269",
+            "source": {
+              "name": "PubMed",
+              "id": "420779",
+              "url": "http://www.ncbi.nlm.nih.gov/pubmed/420779",
+              "alternativeUrl": "https://europepmc.org/abstract/MED/420779"
+            }
+          },
+          {
+            "code": "ECO:0000269",
+            "source": {
+              "name": "PubMed",
+              "id": "936108",
+              "url": "http://www.ncbi.nlm.nih.gov/pubmed/936108",
+              "alternativeUrl": "https://europepmc.org/abstract/MED/936108"
+            }
+          },
+          {
+            "code": "ECO:0000269",
+            "source": {
+              "name": "Citation",
+              "id": "Ref.11",
+              "url": "https://www.uniprot.org/uniprot/P02675#ref11"
+            }
+          },
+          {
+            "code": "ECO:0000269",
+            "source": {
+              "name": "Citation",
+              "id": "Ref.13",
+              "url": "https://www.uniprot.org/uniprot/P02675#ref13"
+            }
+          }
+        ]
+      },
+      {
+        "type": "CHAIN",
+        "category": "MOLECULE_PROCESSING",
+        "ftId": "PRO_0000009071",
+        "description": "Fibrinogen beta chain",
+        "begin": "45",
+        "end": "491",
+        "molecule": ""
+      }
+    ],
+    "alternative_products": [],
+    "caution": "canonical sequence may not match the intended plasma isoform/experimental construct; do not fill missing structure blindly"
+  },
+  {
+    "accession": "P02679",
+    "canonical_precursor_residues": 453,
+    "signal_and_chain_annotations": [
+      {
+        "type": "SIGNAL",
+        "category": "MOLECULE_PROCESSING",
+        "description": "",
+        "begin": "1",
+        "end": "26",
+        "molecule": "",
+        "evidences": [
+          {
+            "code": "ECO:0000269",
+            "source": {
+              "name": "PubMed",
+              "id": "8509453",
+              "url": "http://www.ncbi.nlm.nih.gov/pubmed/8509453",
+              "alternativeUrl": "https://europepmc.org/abstract/MED/8509453"
+            }
+          },
+          {
+            "code": "ECO:0000269",
+            "source": {
+              "name": "Citation",
+              "id": "Ref.9",
+              "url": "https://www.uniprot.org/uniprot/P02679#ref9"
+            }
+          }
+        ]
+      },
+      {
+        "type": "CHAIN",
+        "category": "MOLECULE_PROCESSING",
+        "ftId": "PRO_0000009099",
+        "description": "Fibrinogen gamma chain",
+        "begin": "27",
+        "end": "453",
+        "molecule": ""
+      },
+      {
+        "type": "VAR_SEQ",
+        "category": "VARIANTS",
+        "ftId": "VSP_001537",
+        "begin": "434",
+        "end": "453",
+        "molecule": "",
+        "evidences": [
+          {
+            "code": "ECO:0000303",
+            "source": {
+              "name": "PubMed",
+              "id": "14702039",
+              "url": "http://www.ncbi.nlm.nih.gov/pubmed/14702039",
+              "alternativeUrl": "https://europepmc.org/abstract/MED/14702039"
+            }
+          },
+          {
+            "code": "ECO:0000303",
+            "source": {
+              "name": "PubMed",
+              "id": "15489334",
+              "url": "http://www.ncbi.nlm.nih.gov/pubmed/15489334",
+              "alternativeUrl": "https://europepmc.org/abstract/MED/15489334"
+            }
+          },
+          {
+            "code": "ECO:0000303",
+            "source": {
+              "name": "PubMed",
+              "id": "2990550",
+              "url": "http://www.ncbi.nlm.nih.gov/pubmed/2990550",
+              "alternativeUrl": "https://europepmc.org/abstract/MED/2990550"
+            }
+          },
+          {
+            "code": "ECO:0000303",
+            "source": {
+              "name": "Citation",
+              "id": "Ref.4",
+              "url": "https://www.uniprot.org/uniprot/P02679#ref4"
+            }
+          },
+          {
+            "code": "ECO:0000303",
+            "source": {
+              "name": "Citation",
+              "id": "Ref.5",
+              "url": "https://www.uniprot.org/uniprot/P02679#ref5"
+            }
+          }
+        ]
+      }
+    ],
+    "alternative_products": [
+      {
+        "type": "ALTERNATIVE_PRODUCTS",
+        "event": [
+          "Alternative splicing"
+        ],
+        "isoforms": [
+          {
+            "ids": [
+              "P02679-1"
+            ],
+            "name": {
+              "value": "Gamma-B"
+            },
+            "synonyms": [
+              {
+                "value": "Gamma'"
+              }
+            ],
+            "sequenceStatus": "displayed"
+          },
+          {
+            "ids": [
+              "P02679-2"
+            ],
+            "name": {
+              "value": "Gamma-A"
+            },
+            "sequenceStatus": "described",
+            "sequence": [
+              "VSP_001537"
+            ]
+          }
+        ]
+      }
+    ],
+    "caution": "canonical sequence may not match the intended plasma isoform/experimental construct; do not fill missing structure blindly"
+  }
+]

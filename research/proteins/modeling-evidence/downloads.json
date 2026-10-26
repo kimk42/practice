@@ -1,0 +1,50 @@
+[
+  {
+    "file": "research/proteins/fxii/raw/pubmed-14760718.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:14760718%20AND%20SRC:MED&resultType=core&format=json",
+    "sha256": "7e21bd04ea13078e109b608d262eda098a2f649460db538c2e9a29eaf4fd00ef",
+    "state": "retrieved"
+  },
+  {
+    "file": "research/proteins/fxii/raw/pubmed-1544894.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:1544894%20AND%20SRC:MED&resultType=core&format=json",
+    "sha256": "1a7fdb69f43083049c87de63c44e65c887b9ba092f41b58f0e697dfc694158b8",
+    "state": "retrieved"
+  },
+  {
+    "file": "research/proteins/fxii/raw/pubmed-16335952.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:16335952%20AND%20SRC:MED&resultType=core&format=json",
+    "sha256": "c9d0dad5f7fb94a6ef02bdfcbbd18128d445754a49fac5bd8319263190e378e1",
+    "state": "retrieved"
+  },
+  {
+    "file": "research/proteins/fxii/raw/pubmed-3877053.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:3877053%20AND%20SRC:MED&resultType=core&format=json",
+    "sha256": "76a97fdee40f9a36932d788709e0162f5bcf9f29579e13732375c3d384566547",
+    "state": "retrieved"
+  },
+  {
+    "file": "research/proteins/fxii/raw/pubmed-3886654.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:3886654%20AND%20SRC:MED&resultType=core&format=json",
+    "sha256": "fbc3608c9e342dafead03b88a779ad0b8b1147dafa03fe6f5cd4153bfb2f1f98",
+    "state": "retrieved"
+  },
+  {
+    "file": "research/proteins/fibrinogen/raw/P02671-uniprot.json",
+    "url": "https://www.ebi.ac.uk/proteins/api/proteins/P02671",
+    "sha256": "96823eb1fdf97fc9aa6b8519108a759c715c338b80a48de9abbef1d861a4864f",
+    "state": "retrieved"
+  },
+  {
+    "file": "research/proteins/fibrinogen/raw/P02675-uniprot.json",
+    "url": "https://www.ebi.ac.uk/proteins/api/proteins/P02675",
+    "sha256": "f13a6c110c4961bbb10c98e78854d30d9bb15ab3e2a4f5d713bfe9bc564c34e0",
+    "state": "retrieved"
+  },
+  {
+    "file": "research/proteins/fibrinogen/raw/P02679-uniprot.json",
+    "url": "https://www.ebi.ac.uk/proteins/api/proteins/P02679",
+    "sha256": "c8c0cbce08c335e228b52d3b2bfcd0f49e49e9d5eec1d283ed76a063f54d48f1",
+    "state": "retrieved"
+  }
+]

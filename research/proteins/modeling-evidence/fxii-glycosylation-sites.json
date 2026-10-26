@@ -1,0 +1,68 @@
+[
+  {
+    "position": "109",
+    "annotation": "O-linked (Fuc) threonine",
+    "pubmed_ids": [
+      "1544894"
+    ]
+  },
+  {
+    "position": "249",
+    "annotation": "N-linked (GlcNAc...) asparagine",
+    "pubmed_ids": [
+      "16335952",
+      "3877053",
+      "3886654"
+    ]
+  },
+  {
+    "position": "299",
+    "annotation": "O-linked (GalNAc...) threonine",
+    "pubmed_ids": [
+      "3886654"
+    ]
+  },
+  {
+    "position": "305",
+    "annotation": "O-linked (GalNAc...) threonine",
+    "pubmed_ids": [
+      "3886654"
+    ]
+  },
+  {
+    "position": "308",
+    "annotation": "O-linked (GalNAc...) serine",
+    "pubmed_ids": [
+      "3886654"
+    ]
+  },
+  {
+    "position": "328",
+    "annotation": "O-linked (GalNAc...) threonine",
+    "pubmed_ids": [
+      "3886654"
+    ]
+  },
+  {
+    "position": "329",
+    "annotation": "O-linked (GalNAc...) threonine",
+    "pubmed_ids": [
+      "3886654"
+    ]
+  },
+  {
+    "position": "337",
+    "annotation": "O-linked (GalNAc...) threonine",
+    "pubmed_ids": [
+      "3886654"
+    ]
+  },
+  {
+    "position": "433",
+    "annotation": "N-linked (GlcNAc...) asparagine",
+    "pubmed_ids": [
+      "14760718",
+      "16335952"
+    ]
+  }
+]

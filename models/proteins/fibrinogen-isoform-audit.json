@@ -1,0 +1,57 @@
+{
+  "chains": [
+    {
+      "candidate_chain": "Aalpha",
+      "accession": "P02671-2",
+      "precursor_residues": 644,
+      "signal_removed_only": [
+        1,
+        19
+      ],
+      "mature_candidate_residues": 625,
+      "3GHG_entity": "1",
+      "construct_residues": 562,
+      "alignment_cigar": "562M63I",
+      "alignment_matches": 562,
+      "candidate_sequence_sha256": "470170d843e7c3c81e0f45a884863789f54888fee6c12ba5ebff7d1e87a644ff",
+      "caution": "isoform candidate, not sample-verified; sequence alignment adds no missing coordinates; fibrinopeptides retained because target is fibrinogen, not fibrin"
+    },
+    {
+      "candidate_chain": "Bbeta",
+      "accession": "P02675",
+      "precursor_residues": 491,
+      "signal_removed_only": [
+        1,
+        30
+      ],
+      "mature_candidate_residues": 461,
+      "3GHG_entity": "2",
+      "construct_residues": 461,
+      "alignment_cigar": "461M",
+      "alignment_matches": 461,
+      "candidate_sequence_sha256": "2c6592fa19eb049f63ae0c3869d3a839d7f6799350cfa6904c707831bf736aca",
+      "caution": "isoform candidate, not sample-verified; sequence alignment adds no missing coordinates; fibrinopeptides retained because target is fibrinogen, not fibrin"
+    },
+    {
+      "candidate_chain": "gammaA",
+      "accession": "P02679-2",
+      "precursor_residues": 437,
+      "signal_removed_only": [
+        1,
+        26
+      ],
+      "mature_candidate_residues": 411,
+      "3GHG_entity": "3",
+      "construct_residues": 411,
+      "alignment_cigar": "411M",
+      "alignment_matches": 411,
+      "candidate_sequence_sha256": "5f64160c07a2a0c3bd308a96d43feec2c8a78f3f8ca74518491e732043910aaa",
+      "caution": "isoform candidate, not sample-verified; sequence alignment adds no missing coordinates; fibrinopeptides retained because target is fibrinogen, not fibrin"
+    }
+  ],
+  "six_chain_candidate_residue_count": 2994,
+  "observed_3GHG_residues": 1913,
+  "gap_note": "955 unmodeled residues is relative to the3GHG declared construct, not necessarily this full-length isoform candidate",
+  "structure_model_built": false,
+  "scope": "provisional sequence references only, no reconstructed full-length structure"
+}

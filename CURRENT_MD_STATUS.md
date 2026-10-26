@@ -24,3 +24,12 @@ Execution processes require the environment to remain alive; saved files alone d
 ## Expanded surface and authorized FXII pilot
 
 The user authorized an unglycosylated FXII–surface placement/numerical pilot. An18×12×18nm surface candidate with380103 atoms is now minimizing. It comprises6 correlated translated copies of the small coating candidate; it does not establish representative morphology. Three FXII orientations were prepared; two satisfy lateral-padding criteria. The pilot worker waits for expanded EM, then places the first accepted pose, neutralizes and attempts strict EM plus0.2ps MD. See research/FXII_SURFACE_PILOT.md and runs/fxii-surface-pilot-status.json. No protein–surface run success is claimed before that worker completes.
+
+
+## Ten-stage autonomous workflow
+
+The user authorized continuation through the latest ten-stage plan. Expanded EM passed in2862 steps and the380158-atom unglycosylated mature FXII/coating0.2ps pilot passed. Endpoint QA is in models/analysis/initial-fxii-coating-QA.json; the initial2nm gap remains, so this is not adsorption evidence. Matched bare-PC EM, accepted orientation pilots, short0.5/2nm gap/velocity sensitivity tests and100ps preliminary coating/protein controls are queued sequentially. Runtime status is runs/ten-stage-execution.json and runs/velocity-queue-status.json. See PLAN_10_STEPS.md and research/TEN_STAGE_PROGRESS.md for actual scientific gates; stages7–9 and the final mechanistic interpretation are not claimed complete.
+
+The current5-core host exposes no GPU; the short coupled pilot measured0.366ns/day on4 threads. Production lengths are deferred until model/relaxation and sampling/resource evidence support them. Glycosylation citations and explicit fibrinogen Alpha/Gamma-A sequence candidates were retrieved. The candidate six-chain sequence has2994 residues;1081 lack3GHG observed coordinates, compared with955 missing within the smaller declared construct. No missing loops/glycans/force-field terms were fabricated.
+
+Matched bare-PC EM and the corresponding FXII0.2ps pilot also passed. The worker has advanced to the second accepted orientation; longer preliminary controls and short velocity/gap sensitivity remain queued. These two initial successes do not establish a comparative adsorption effect.

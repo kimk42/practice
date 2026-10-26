@@ -1,0 +1,12 @@
+{
+  "source": "runs/surface-nvt-10ps",
+  "trajectory_sha256": "69692bcd50878b784d66d7e1323cea354a3e4825431c3a3b31b09cf1ebcfd230",
+  "topology_sha256": "eae0d6821aae6cb0b00d63518f351d8d97ce8c4df8b10152950dce8dc1c6da27",
+  "groups_atoms": {
+    "Coating_polymer": 314,
+    "PC": 5147,
+    "Water": 22365
+  },
+  "bins": 80,
+  "scope": "descriptive profile only; not equilibrated bulk density or validated brush height"
+}

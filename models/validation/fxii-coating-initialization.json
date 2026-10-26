@@ -1,0 +1,30 @@
+{
+  "state": "unglycosylated_FXII_surface_initialization_passed",
+  "duration_ps": 0.2,
+  "protein_present": true,
+  "protein_model": "predicted mature FXII, glycans absent",
+  "box_nm": [
+    18,
+    12,
+    18
+  ],
+  "total_atoms": 380158,
+  "initial_pose": {
+    "file": "pose-2.gro",
+    "rotation_about_principal_axis_degrees": 120,
+    "extents_nm": [
+      8.522721937293866,
+      9.129926027040105,
+      9.755886219297187
+    ],
+    "fits_lateral_padding_1_2nm": true
+  },
+  "seed": 2026,
+  "surface_directory": "/workspace/practice-md/runs/surface-expanded-18x12",
+  "salt": "neutralizing ions only",
+  "limitations": [
+    "initialization only; not adsorption, equilibrium, native-glycoform validation or FXII activation",
+    "correlated tiled low-density short-PC coating",
+    "one rigid initial orientation sampled; others prepared but not simulated"
+  ]
+}
