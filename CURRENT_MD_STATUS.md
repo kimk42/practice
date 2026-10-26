@@ -37,3 +37,7 @@ Matched bare-PC EM and the corresponding FXII0.2ps pilot also passed. The worker
 ## User experiment conditions received
 
 Synthesis ratio7:2:1 is confirmed molar. The user reports0.5wt% aqueous coating solution,30min contact,drain/dry,9000mJ/cm² with three UV exposures using the cited-paper wavelength, and protein exposure for2h at room temperature,pH7.4. Buffer spelling `cPBSzI`,dose basis and meaning of `1% plasma concentration` await clarification. See research/USER_EXPERIMENT.md. Current300K/neutralizing-ion numerical controls continue as a provisional baseline; they are not relabeled as matched-buffer/2h adsorption simulations.
+
+## Uploaded SOP resolved assay details
+
+The uploaded SOP identifies cPBSzI1x containing NaCl,NaI,citrate,phosphate and azide;see config/experimental-buffer.json. User confirms9000mJ/cm² per exposure×3 and purified-protein1% plasma-reference concentration. Main SOP Fbg maps to0.03mg/mL;late0.3mg/mL Fbg-only entry is flagged as inconsistent. FXII concentration is absent. User room temperature overrides the SOP37°C reference. Existing neutralizing-ion numerical controls are not relabeled as matched-buffer simulations.

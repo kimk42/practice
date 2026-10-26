@@ -33,3 +33,6 @@ __pycache__/
 /research/proteins/fxii/raw/
 
 /research/proteins/fibrinogen/raw/
+
+# User-supplied SOP originals and full extracted text.
+/research/protocols/raw/

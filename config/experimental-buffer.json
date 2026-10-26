@@ -1,0 +1,60 @@
+{
+  "source_file": "RADIOlabeling action Sheet_V17_KH Kim.docx",
+  "source_sha256": "528d79ae4d91fc2921627e63f2c9c3e9577bee1c472f25a601206ea48684a638",
+  "source_location": "BUFFER RECIPES > cPBSzI >1 liter of1x,table0",
+  "target_pH": 7.4,
+  "final_volume_L": 1,
+  "components": [
+    {
+      "name": "NaCl",
+      "g_per_L": 6.43,
+      "molar_mass_g_mol": 58.44277,
+      "nominal_mM": 110.02216356274693
+    },
+    {
+      "name": "NaI",
+      "g_per_L": 1.5,
+      "molar_mass_g_mol": 149.89424,
+      "nominal_mM": 10.007055641364206
+    },
+    {
+      "name": "citric acid monohydrate,total citrate after pH adjustment",
+      "g_per_L": 2.1,
+      "molar_mass_g_mol": 210.138,
+      "nominal_total_mM": 9.993432886959999
+    },
+    {
+      "name": "sodium phosphate monobasic,total phosphate after pH adjustment",
+      "g_per_L": 1.38,
+      "hydration_state": "not specified in text/images",
+      "conditional_total_mM": {
+        "anhydrous": 11.50220458921293,
+        "monohydrate": 10.000579743753262,
+        "dihydrate": 8.845756921163792
+      },
+      "interpretation": "10mM if monohydrate;not independently confirmed"
+    },
+    {
+      "name": "sodium azide",
+      "g_per_L": 0.2,
+      "molar_mass_g_mol": 65.0099,
+      "nominal_mM": 3.0764545092362856
+    }
+  ],
+  "pH_adjustment": {
+    "reagent": "NaOH",
+    "approximate_g_per_L_in_SOP": 1.57,
+    "target_pH": 7.4,
+    "interpretation": "neutralization/pH adjustment,not39mM free hydroxide in the final solution"
+  },
+  "MD_mapping": {
+    "ready_for_matched_buffer_MD": false,
+    "remaining": [
+      "choose/document citrate and phosphate protonation/speciation at target conditions",
+      "audit compatible ion and polyatomic-solute force-field parameters",
+      "electroneutrality and sodium/counterion accounting",
+      "resolve phosphate hydration or carry explicit concentration sensitivity"
+    ],
+    "current_running_controls": "300K,neutralizing ions only,unchanged preliminary baseline"
+  }
+}

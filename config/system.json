@@ -36,11 +36,12 @@
       ],
       "UV_reported_dose_mJ_cm2": 9000,
       "UV_irradiations": 3,
-      "UV_dose_basis": "pending confirmation:9000 per exposure versus total",
-      "UV_conditional_total_if_per_exposure_mJ_cm2": 27000,
+      "UV_dose_basis": "user confirmed9000mJ/cm2 per exposure,three exposures",
       "UV_wavelength_nm_reference": 312,
       "UV_wavelength_status": "user followed cited-paper wavelength;312nm inferred from paper,not independently reported instrument setting",
-      "crosslink_conversion_from_dose": "not inferred; reacted fraction remains unknown"
+      "crosslink_conversion_from_dose": "not inferred; reacted fraction remains unknown",
+      "UV_total_fluence_mJ_cm2": 27000,
+      "UV_total_fluence_J_cm2": 27
     }
   },
   "proteins": [
@@ -260,19 +261,32 @@
   "user_protein_experiment": {
     "temperature": "room temperature;exact Celsius not reported",
     "buffer_verbatim": "cPBSzI",
-    "buffer_composition_status": "pending exact name/composition or product",
+    "buffer_composition_status": "cPBSzI1x recipe identified in uploaded SOP;see config/experimental-buffer.json",
     "pH": 7.4,
     "protein_concentration_verbatim": "1% plasma concentration",
-    "protein_concentration_interpretation": "pending:purified proteins at1% normal plasma concentration versus1% diluted plasma",
-    "absolute_protein_concentrations": null,
+    "protein_concentration_interpretation": "user confirmed purified proteins at1% normal plasma concentration,not1% whole plasma",
+    "absolute_protein_concentrations": {
+      "fibrinogen_mg_mL": 0.03,
+      "fibrinogen_ug_mL": 30,
+      "basis": "SOP main1x incubation recipe;consistent with user-confirmed1% plasma-reference convention",
+      "FXII_mg_mL": null,
+      "FXII_status": "not specified in this SOP;normal-plasma reference must be independently sourced"
+    },
     "contact_time_h": 2,
     "contact_time_s": 7200,
-    "sample_context": "fibrinogen and Factor XII are targets;single-protein versus plasma-mixture assay requires clarification"
+    "sample_context": "fibrinogen and Factor XII are targets;single-protein versus plasma-mixture assay requires clarification",
+    "buffer_recipe": "config/experimental-buffer.json",
+    "SOP_conditions_not_silently_transferred": {
+      "temperature_C": 37,
+      "user_experiment_temperature": "room temperature takes precedence",
+      "competitive_mixture": "SOP includes albumin+fibrinogen;not automatically added to current Fbg/FXII single-protein pilot scope",
+      "fibrinogen_typographic_conflict": "main recipe0.03mg/mL;late Fbg-only option contains0.3mg/mL"
+    }
   },
   "experimental_mapping_status": {
     "current_MD_temperature_K": 300,
     "current_MD_temperature_status": "provisional baseline,not confirmed exact room temperature",
-    "current_MD_salt": "neutralizing ions only,not yet mapped to reported buffer",
+    "current_MD_salt": "neutralizing ions only;identified cPBSzI recipe not yet force-field/speciation validated",
     "current_MD_protonation": "standard fixed protonation;not explicit constant-pH MD",
     "experiment_exposure_vs_MD": "2h is experiment contact time;no claim of matching that elapsed time with atomistic MD",
     "coating_solution_to_surface": "0.5wt% is solution concentration;surface loading/thickness/graft density need separate evidence",
