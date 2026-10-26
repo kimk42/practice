@@ -30,3 +30,6 @@ __pycache__/
 /artifacts/**/*.inpcrd
 /artifacts/**/*.tmp
 *.part
+
+# Machine-local GitHub authentication; never commit credentials.
+/.local-auth/
