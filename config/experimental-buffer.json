@@ -55,7 +55,7 @@
       "electroneutrality and sodium/counterion accounting",
       "resolve phosphate hydration or carry explicit concentration sensitivity"
     ],
-    "current_running_controls": "300K,neutralizing ions only,unchanged preliminary baseline",
+    "current_running_controls": "none;prior300K neutralizing-ion baseline controls/follow-ups completed",
     "monovalent_ion_candidate": "models/buffer-parameters/jc-tip3p-monovalent.itp;published JC/TIP3P Na/Cl/I converted and neutral ion-water EM passed;not yet applied to protein/coating baselines",
     "polyatomic_candidates": "models/buffer-parameters/polyatomic-species-audit.json;formal graphs only,no partial charges or final speciation",
     "latest_polyatomic_audit": {
@@ -71,9 +71,10 @@
       "audit": "models/buffer-parameters/charge-candidate-audit.json",
       "method": "computed gas-phaseAM1-BCC/GAFF2 candidates,not experimental or validated aqueous parameters",
       "citrate": "two protonation-state candidates pass quantum/net-charge/connectivity checks but remain unapproved",
-      "phosphate": "observed candidate net charge differs by-0.001e;no correction applied;not approved",
+      "phosphate": "-0.001e residual traced through3-decimal SQM atomic output and BCC input/output sums;no inferred digits,renormalization or accepted topology",
       "azide": "excluded from calculation due prior typing warning",
       "MD_topologies_exported": false
-    }
+    },
+    "charge_precision_audit": "models/buffer-parameters/charge-precision-audit.json"
   }
 }

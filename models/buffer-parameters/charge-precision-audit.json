@@ -1,0 +1,91 @@
+{
+  "state": "printed-charge precision chain inspected without new calculations",
+  "species": [
+    {
+      "species": "citrate3-",
+      "expected_integer_charge": -3,
+      "QM_reported_total": -3.0,
+      "printed_atomic_decimal_places": [
+        3
+      ],
+      "sum_printed_atomic_charges": -3.0,
+      "sum_BCC_input_after_equivalence_handling": -3.0,
+      "sum_BCC_output": -3.0000000000000004,
+      "maximum_sum_rounding_uncertainty_e": 0.009000000000000001,
+      "printed_total_residual_e": 0.0,
+      "pre_BCC_sum_matches_printed_sum": true,
+      "BCC_sum_matches_pre_BCC_sum": true,
+      "compatible_with_decimal_rounding": true,
+      "source_sqm_sha256": "6291e1777575b1d92aebf024935dec883ea30c8afad97f27d7c6c54e7b22f39d",
+      "charges_changed": false
+    },
+    {
+      "species": "hydrogen_citrate2-",
+      "expected_integer_charge": -2,
+      "QM_reported_total": -2.0,
+      "printed_atomic_decimal_places": [
+        3
+      ],
+      "sum_printed_atomic_charges": -2.0,
+      "sum_BCC_input_after_equivalence_handling": -1.9999999999999998,
+      "sum_BCC_output": -2.0,
+      "maximum_sum_rounding_uncertainty_e": 0.0095,
+      "printed_total_residual_e": 0.0,
+      "pre_BCC_sum_matches_printed_sum": true,
+      "BCC_sum_matches_pre_BCC_sum": true,
+      "compatible_with_decimal_rounding": true,
+      "source_sqm_sha256": "6ab235ed3ef2b57374e0e51c8923c45da01951b78f257d590d52768d65ed36c8",
+      "charges_changed": false
+    },
+    {
+      "species": "dihydrogen_phosphate-",
+      "expected_integer_charge": -1,
+      "QM_reported_total": -1.0,
+      "printed_atomic_decimal_places": [
+        3
+      ],
+      "sum_printed_atomic_charges": -1.0010000000000001,
+      "sum_BCC_input_after_equivalence_handling": -1.0010000000000001,
+      "sum_BCC_output": -1.001,
+      "maximum_sum_rounding_uncertainty_e": 0.0035,
+      "printed_total_residual_e": -0.001000000000000112,
+      "pre_BCC_sum_matches_printed_sum": true,
+      "BCC_sum_matches_pre_BCC_sum": true,
+      "compatible_with_decimal_rounding": true,
+      "source_sqm_sha256": "947d76a6b362d2b729e4cd19c2da5f87dc30f5978888da290f1e31d136d63af1",
+      "charges_changed": false
+    },
+    {
+      "species": "hydrogen_phosphate2-",
+      "expected_integer_charge": -2,
+      "QM_reported_total": -2.0,
+      "printed_atomic_decimal_places": [
+        3
+      ],
+      "sum_printed_atomic_charges": -2.001,
+      "sum_BCC_input_after_equivalence_handling": -2.001,
+      "sum_BCC_output": -2.001,
+      "maximum_sum_rounding_uncertainty_e": 0.003,
+      "printed_total_residual_e": -0.0009999999999998899,
+      "pre_BCC_sum_matches_printed_sum": true,
+      "BCC_sum_matches_pre_BCC_sum": true,
+      "compatible_with_decimal_rounding": true,
+      "source_sqm_sha256": "beb624f8588f5a5cb73485cfe8b6d67026779f1505dd686eec0ec1c24f2a51cc",
+      "charges_changed": false
+    }
+  ],
+  "interpretation": "phosphate net-charge residual is consistent with3-decimal SQM atomic-charge export propagated into charge-conserving BCC;not an independently verified high-precision electronic charge set",
+  "action": "preserve originals;recover higher-precision supported output or use a documented independently validated charge model before accepting phosphate topology",
+  "manual_renormalization_applied": false,
+  "MD_topology_exported": false,
+  "full_buffer_ready": false,
+  "upstream_format_corroboration": {
+    "url": "https://raw.githubusercontent.com/Amber-MD/AmberClassic/main/src/sqm/qm2_print_charges.F90",
+    "downloaded_sha256": "e41dfd22a143f2f34282073f8d39d6a3b097b73cf307f97fa554cb77b79fa4a5",
+    "atomic_charge_format": "F14.3",
+    "total_charge_format": "F12.3",
+    "interpretation": "inspected public upstream routine corroborates3-decimal output;not asserted as the exact source revision of bundled executable",
+    "higher_precision_runtime_flag_in_this_routine": false,
+    "executable_modified": false
+  }
+}

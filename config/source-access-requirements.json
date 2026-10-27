@@ -1,0 +1,17 @@
+{
+  "state": "environment configuration draft saved;not runtime-applied",
+  "purpose": "read original azide parameter sources and locate legal open copies;no paid access or credentials requested",
+  "required_custom_domain_additions": [
+    "pubs.aip.org",
+    "api.elsevier.com",
+    "api.openalex.org",
+    "api.semanticscholar.org"
+  ],
+  "observed_errors": "proxy Tunnel connection403 on original public-source requests",
+  "runtime_observation": "current observations available;HTTP policy stateunknown,so no enforced-ready claim",
+  "existing_custom_hosts_preserved": true,
+  "existing_presets_preserved": true,
+  "start_instructions_updated": "replace stale pre-MD guidance with current completed evidence and checkpoint-safe instructions",
+  "user_action": "review/save the environment draft and publish the environment configuration,then recheck runtime policy and actual source requests",
+  "automatic_runtime_change_or_publication_performed": false
+}

@@ -21,3 +21,9 @@ The open SI of DOI10.1021/acs.jpcb.5c02025 was inspected,including section2 and 
 ## Computed charge candidates
 
 The new candidate calculations exclude azide and are stored only under runs/. Initial requests for-j1 were automatically changed by Antechamber to-j4 for AM1-BCC;this explicit method warning and actual method are preserved in charge-candidate-audit.json. `scripts/review_buffer_charge_candidates.py` rereads existing outputs without recomputing. Citrate candidates pass numerical conservation/connectivity checks but need aqueous/charge-model validation. Both phosphate candidate outputs have a-0.001e net-charge residual;no arbitrary renormalization was applied and they remain blocked. The candidate generator now requests the actual supported-j4 method explicitly for any future fresh calculation. No MD topology was exported and no candidate is approved as an experimental-buffer model.
+
+## Charge-output precision tracing
+
+`scripts/audit_sqm_charge_precision.py` reads existing SQM/BCC outputs only. Both phosphate outputs sum to their3-decimal printed atomic-charge sum (-1.001/-2.001),while SQM reports the configured integer total (-1/-2). The pre-BCC sums match the printed sums and BCC preserves them. The inspected public upstream charge-print routine usesF14.3 for atomic values andF12.3 for totals,consistent with this loss of precision. This source is corroboration,not proven exact build provenance. No true extra digits were recovered,no charges renormalized and no executable modified. Higher-precision supported output or an independently validated charge route remains necessary.
+
+The public-source network additions are saved only as an environment configuration draft;config/source-access-requirements.json describes the pending review/application. Do not treat a saved draft orunknown runtime policy as current connectivity.
