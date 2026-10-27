@@ -1,0 +1,153 @@
+{
+  "state": "100ps numerical structural QA completed",
+  "duration_ps": 100,
+  "trajectory_sha256": "a9085180084c9eea139f5e3b0d118f64ebb5d566544495427fb6c2cd51ce7670",
+  "backbone_RMSD_endpoint_nm": 0.2415344,
+  "backbone_RMSD_max_nm": 0.2593606,
+  "radius_gyration_initial_nm": 3.1748517081205927,
+  "radius_gyration_endpoint_nm": 3.2262069953656507,
+  "annotated_disulfides": [
+    {
+      "residues": [
+        47,
+        73
+      ],
+      "distance_nm": 0.2021435133760166
+    },
+    {
+      "residues": [
+        61,
+        88
+      ],
+      "distance_nm": 0.2053996105156966
+    },
+    {
+      "residues": [
+        98,
+        110
+      ],
+      "distance_nm": 0.20386269889315187
+    },
+    {
+      "residues": [
+        104,
+        119
+      ],
+      "distance_nm": 0.2070024154448445
+    },
+    {
+      "residues": [
+        121,
+        130
+      ],
+      "distance_nm": 0.212044806585778
+    },
+    {
+      "residues": [
+        135,
+        163
+      ],
+      "distance_nm": 0.19977237046198318
+    },
+    {
+      "residues": [
+        161,
+        170
+      ],
+      "distance_nm": 0.21094549058939324
+    },
+    {
+      "residues": [
+        178,
+        189
+      ],
+      "distance_nm": 0.19984493989090735
+    },
+    {
+      "residues": [
+        183,
+        198
+      ],
+      "distance_nm": 0.20408331631958554
+    },
+    {
+      "residues": [
+        200,
+        209
+      ],
+      "distance_nm": 0.20426208654569247
+    },
+    {
+      "residues": [
+        217,
+        295
+      ],
+      "distance_nm": 0.20211630315241755
+    },
+    {
+      "residues": [
+        238,
+        277
+      ],
+      "distance_nm": 0.204572725454787
+    },
+    {
+      "residues": [
+        266,
+        290
+      ],
+      "distance_nm": 0.20140754702840657
+    },
+    {
+      "residues": [
+        359,
+        486
+      ],
+      "distance_nm": 0.21522546317757119
+    },
+    {
+      "residues": [
+        397,
+        413
+      ],
+      "distance_nm": 0.2027066846455725
+    },
+    {
+      "residues": [
+        405,
+        475
+      ],
+      "distance_nm": 0.2038626988931517
+    },
+    {
+      "residues": [
+        436,
+        439
+      ],
+      "distance_nm": 0.2051219149676605
+    },
+    {
+      "residues": [
+        500,
+        569
+      ],
+      "distance_nm": 0.20523644900455695
+    },
+    {
+      "residues": [
+        532,
+        548
+      ],
+      "distance_nm": 0.20083326417702818
+    },
+    {
+      "residues": [
+        559,
+        590
+      ],
+      "distance_nm": 0.19855729651664814
+    }
+  ],
+  "disulfide_geometry_flags": [],
+  "scope": "single predicted unglycosylated conformation;these short structural metrics are not equilibrium or native-conformation validation"
+}

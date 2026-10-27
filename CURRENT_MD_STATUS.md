@@ -1,5 +1,7 @@
 # Current MD status
 
+Latest verified state: both100ps controls and18 short pilots completed. FXII100ps backbone/SG geometry QA passed the stated numerical checks,without claiming native/equilibrium validation. Separate checkpointed10ps near-interface continuations for coated/bare PC are running sequentially;see runs/paired-interface-followup-status.json. Full cPBSzI is not approved: azide numeric source/compatibility and polyatomic-charge/speciation gates remain. Earlier in-progress descriptions below are retained as historical milestones.
+
 ## Completed
 
 - Connected7:2:1 copolymer, explicit single BPAA–PC graft, corrected5461-atom low-density PC/coating patch, and27826-atom water-solvated prototype.
@@ -49,3 +51,12 @@ Published Joung–Cheatham/TIP3P Na/Cl/I parameters were converted with source h
 ## Latest checkpoint-safe continuation
 
 Coating100ps follow-up completed:201 energy frames,mean sampled temperature300.0525K;density profile and trajectory/topology hashes are saved in models/analysis/coating100ps-density*. FXII100ps water follow-up is alive with saved checkpoints;no restart or duplicate worker was launched. Buffer-only diagnostic typing completed without charge assignment: azide produced an explicit bond-typing warning; citrate/phosphate changed bond-order representation. These findings block full-buffer topology approval. Analytical molecule-count alternatives and a charge-balance constraint are prepared in config/cpbszi-system-preparation.json without choosing unmeasured hydrate/speciation fractions. No new mandatory user input is needed for the running baseline/continued parameter research.
+
+
+## Completed controls and next paired baseline continuation
+
+Both100ps controls and all18 short orientation/gap/velocity pilots completed. The18 energy traces/seeds/final files were independently reread without restarting them. FXII water control mean temperature299.568K(second-half300.012K);backbone endpoint RMSD0.2415nm(max0.2594nm),Rg3.1749→3.2262nm,and no annotated disulfide geometry flags. These are short numerical structural metrics,not equilibrium/native validation. See models/analysis/fxii-water-100ps-QA.json.
+
+The accepted0.5nm-gap coated/bare interface states now have checkpointed10ps NVT continuations,one at a time,without reinitializing velocities or changing their source checkpoints. Status is runs/paired-interface-followup-status.json. These remain the legacy300K/neutralizing-ion baseline,not matched cPBSzI or adsorption evidence.
+
+For azide,the reviewed2025 SI identifies three original bonded/charge/LJ sources. Original numeric-value URLs returned proxy403;no purchase/access bypass was attempted. Published-model details and water/mixing-rule compatibility remain unverified,so no replacement azide parameters were exported. Source route is models/buffer-parameters/azide-published-model-route.json. No new user input is mandatory for ongoing baseline continuations or further parameter research.

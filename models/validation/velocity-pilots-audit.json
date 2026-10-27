@@ -1,0 +1,150 @@
+{
+  "state": "18 completed numerical pilots independently rechecked",
+  "records": [
+    {
+      "case": "fxii-surface-pilot",
+      "seed": 2026,
+      "duration_ps": 0.2,
+      "energy_frames": 21,
+      "endpoint_sha256": "b4b2bbce9f4039802c1b2fb563444713de5ef67a7deda3403ccdd256e29a45d9",
+      "state": "short numerical checks passed"
+    },
+    {
+      "case": "fxii-surface-pilot",
+      "seed": 2027,
+      "duration_ps": 0.2,
+      "energy_frames": 21,
+      "endpoint_sha256": "39c8eac6969a1a08754dfac9b9484e7c196367d10b1d9820414b9623785ea87f",
+      "state": "short numerical checks passed"
+    },
+    {
+      "case": "fxii-surface-pilot",
+      "seed": 2028,
+      "duration_ps": 0.2,
+      "energy_frames": 21,
+      "endpoint_sha256": "f29cdbd769e891683ba700f6c4f2bf6d9dca195b0d74163302b0070b60a56361",
+      "state": "short numerical checks passed"
+    },
+    {
+      "case": "fxii-bare-pc-pilot",
+      "seed": 2026,
+      "duration_ps": 0.2,
+      "energy_frames": 21,
+      "endpoint_sha256": "4dc56797629127436ebc5d7d60b0edd846f65ba80634cc9d62080b359e8f215a",
+      "state": "short numerical checks passed"
+    },
+    {
+      "case": "fxii-bare-pc-pilot",
+      "seed": 2027,
+      "duration_ps": 0.2,
+      "energy_frames": 21,
+      "endpoint_sha256": "98db6ecfbf892684ef8e6c3f45d094bfa690de82989dccf7e37c948ab1918a3c",
+      "state": "short numerical checks passed"
+    },
+    {
+      "case": "fxii-bare-pc-pilot",
+      "seed": 2028,
+      "duration_ps": 0.2,
+      "energy_frames": 21,
+      "endpoint_sha256": "15f1dd16628cab274f3a9b9e8013f8f8e7fa14f69bf1f0fae6e22d65cc8d7719",
+      "state": "short numerical checks passed"
+    },
+    {
+      "case": "fxii-coating-pose3-pilot",
+      "seed": 2026,
+      "duration_ps": 0.2,
+      "energy_frames": 21,
+      "endpoint_sha256": "ba23119eb82699d76d4079c79598d6594dad1a597f9911511c43b57c807c67c3",
+      "state": "short numerical checks passed"
+    },
+    {
+      "case": "fxii-coating-pose3-pilot",
+      "seed": 2027,
+      "duration_ps": 0.2,
+      "energy_frames": 21,
+      "endpoint_sha256": "0a31181888ba6a096c216778251fb684a28910277293c828916df36b34f5654c",
+      "state": "short numerical checks passed"
+    },
+    {
+      "case": "fxii-coating-pose3-pilot",
+      "seed": 2028,
+      "duration_ps": 0.2,
+      "energy_frames": 21,
+      "endpoint_sha256": "8129ec4f01c5c59cc7219b7ee4d06954d01805e62495ab4fccb4cdf693010c12",
+      "state": "short numerical checks passed"
+    },
+    {
+      "case": "fxii-bare-pc-pose3-pilot",
+      "seed": 2026,
+      "duration_ps": 0.2,
+      "energy_frames": 21,
+      "endpoint_sha256": "fdd6578733c71644ecbafc6332ffc93cd213ceadb8297d8acffe317653a8b28b",
+      "state": "short numerical checks passed"
+    },
+    {
+      "case": "fxii-bare-pc-pose3-pilot",
+      "seed": 2027,
+      "duration_ps": 0.2,
+      "energy_frames": 21,
+      "endpoint_sha256": "257cf90885bddd7aa05a9fd77020354063587797513333d79da340c0be87121b",
+      "state": "short numerical checks passed"
+    },
+    {
+      "case": "fxii-bare-pc-pose3-pilot",
+      "seed": 2028,
+      "duration_ps": 0.2,
+      "energy_frames": 21,
+      "endpoint_sha256": "38f68a788c3daf5ea1f242065f611651467cbda0c7562c335d2652c74e251b01",
+      "state": "short numerical checks passed"
+    },
+    {
+      "case": "fxii-coating-near-pilot",
+      "seed": 2026,
+      "duration_ps": 0.2,
+      "energy_frames": 21,
+      "endpoint_sha256": "0a105f80541dc9c55b46e67f757b9cf709395425e6730c951080ad2c093e1720",
+      "state": "short numerical checks passed"
+    },
+    {
+      "case": "fxii-coating-near-pilot",
+      "seed": 2027,
+      "duration_ps": 0.2,
+      "energy_frames": 21,
+      "endpoint_sha256": "8a7b5b9e56a087add768624f02e58ecbc209f68fed9672462a689e1db221f46d",
+      "state": "short numerical checks passed"
+    },
+    {
+      "case": "fxii-coating-near-pilot",
+      "seed": 2028,
+      "duration_ps": 0.2,
+      "energy_frames": 21,
+      "endpoint_sha256": "eeced1c079d91bdae7f45e9b8e626831f46fd75a6dc3713b0341caf33b133abe",
+      "state": "short numerical checks passed"
+    },
+    {
+      "case": "fxii-bare-near-pilot",
+      "seed": 2026,
+      "duration_ps": 0.2,
+      "energy_frames": 21,
+      "endpoint_sha256": "306c005932643505c1d9c0c2c5c825ae02ea66e4545a73bcab25655afa967332",
+      "state": "short numerical checks passed"
+    },
+    {
+      "case": "fxii-bare-near-pilot",
+      "seed": 2027,
+      "duration_ps": 0.2,
+      "energy_frames": 21,
+      "endpoint_sha256": "ad11a7e1d6b699c75fc70e1562ade0c4068929f3f5953301729aca303223c0fd",
+      "state": "short numerical checks passed"
+    },
+    {
+      "case": "fxii-bare-near-pilot",
+      "seed": 2028,
+      "duration_ps": 0.2,
+      "energy_frames": 21,
+      "endpoint_sha256": "65cfee5eedf9b6fcaa9f9fec636e082f6e8f52313b2951755d0bb5a544f0b0c4",
+      "state": "short numerical checks passed"
+    }
+  ],
+  "scope": "different velocities/orientations/gap subset,not independent morphology or converged adsorption replicas"
+}

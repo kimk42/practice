@@ -1,0 +1,23 @@
+[
+  {
+    "role": "bonded",
+    "doi": "10.1063/1.3598108",
+    "url": "https://pubs.aip.org/aip/jcp/article-pdf/doi/10.1063/1.3598108/15437737/214504_1_online.pdf",
+    "state": "unavailable_from_public_endpoint",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "role": "charges",
+    "doi": "10.1063/1.477170",
+    "url": "https://pubs.aip.org/aip/jcp/article-pdf/109/13/5511/19256359/5511_1_online.pdf",
+    "state": "unavailable_from_public_endpoint",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "role": "LJ",
+    "doi": "10.1016/0009-2614(93)89156-c",
+    "url": "https://api.elsevier.com/content/article/PII:000926149389156C?httpAccept=text/xml",
+    "state": "unavailable_from_public_endpoint",
+    "reason": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]

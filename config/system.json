@@ -81,7 +81,7 @@
       }
     }
   ],
-  "status": "Expanded EM and coupled unglycosylated FXII/coating0.2ps numerical pilot passed; serial ten-stage preliminary controls and evidence report in progress; no production/adsorption conclusion",
+  "status": "Coating and FXII100ps numerical controls plus18 short velocity/orientation/gap pilots completed;paired10ps baseline interface continuations running;cPBSzI force-field approval remains blocked",
   "force_field": "Exploratory GAFF2/AM1-BCC for polymer/PC with Amber99sb-ildn/TIP3P for protein/water; numerical parameter gates passed, physical accuracy and experimental coating validation pending; no CHARMM mixing",
   "literature_reference_conditions": {
     "transfer_to_target": "Reference only: neither paper validates the user PC-supported 7:2:1 terpolymer. Do not auto-apply molecular weights or crosslink conversion.",
@@ -256,7 +256,19 @@
       2028
     ],
     "velocity_pilot_duration_ps": 0.2,
-    "final_all_stages_completed": false
+    "final_all_stages_completed": false,
+    "paired_interface_followup": {
+      "worker": "scripts/continue_paired_interface.py",
+      "runtime_status": "runs/paired-interface-followup-status.json",
+      "duration_ps_per_case": 10,
+      "cases": [
+        "coated-PC near FXII",
+        "bare-PC near FXII"
+      ],
+      "conditions": "existing300K,neutralizing-ion baseline;not cPBSzI",
+      "starting_state": "accepted near-pilot positions/velocities/checkpoint in separate output directories",
+      "scope": "bounded numerical/initial relaxation only"
+    }
   },
   "user_protein_experiment": {
     "temperature": "room temperature;exact Celsius not reported",

@@ -1,0 +1,47 @@
+{
+  "state": "published azide model source chain identified;numeric model not approved",
+  "reviewed_source": {
+    "doi": "10.1021/acs.jpcb.5c02025",
+    "pmcid": "PMC12359107",
+    "SI_download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12359107/supplementaryFiles",
+    "SI_pdf_sha256": "518cd7e1900cc340b82dc75c046589713261eeb8a302ca07f2401c7602e01c44",
+    "locations": [
+      "SI section2,pagesS3-S4",
+      "SI references7-9,pageS20"
+    ]
+  },
+  "source_method": "LAMMPS/OPLS-AA DMSO simulations;separate older sources for azide bonded terms,charges andLJ",
+  "azide_original_sources": [
+    {
+      "role": "bonded",
+      "doi": "10.1063/1.3598108",
+      "title": "Vibrational relaxation of azide ions in liquid-to-supercritical water",
+      "numeric_parameters_verified": false
+    },
+    {
+      "role": "charges",
+      "doi": "10.1063/1.477170",
+      "title": "Vibrational relaxation of azide ion in water: The role of intramolecular charge fluctuation and solvent-induced vibrational coupling",
+      "numeric_parameters_verified": false
+    },
+    {
+      "role": "LJ",
+      "doi": "10.1016/0009-2614(93)89156-c",
+      "title": "Dynamical behavior of the azide ion in protic solvents",
+      "numeric_parameters_verified": false
+    }
+  ],
+  "source_access_report": "research/proteins/modeling-evidence/azide-primary-access.json",
+  "blocking_checks": [
+    "numeric original parameters not inspectable at attempted endpoints:proxy Tunnel connection403",
+    "determine source water-model and nonbonded mixing conventions before Amber/TIP3P use",
+    "verify complete bonded/charge/LJ definitions and net charge before numerical water controls",
+    "validate aqueous behavior rather than adopting DMSO-study success asTIP3P validation"
+  ],
+  "excluded_alternative": {
+    "doi": "10.1021/acs.jpcb.5c04390",
+    "reason": "azidoadamantane covalent azide probe,not free N3-;abstract inspected,not used as ion model"
+  },
+  "new_MD_parameters_exported": false,
+  "purchases_or_paid_access_used": false
+}

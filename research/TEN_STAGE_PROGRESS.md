@@ -7,9 +7,9 @@ This report follows the latest ten steps requested by the user. Prepared inputs,
 | 1 | initial FXII/coating numerical analysis | passed numerical pilot only |
 | 2 | coating relaxation/equilibration | 100ps preliminary control available; equilibrium unproven |
 | 3 | surface model sensitivity | 0/3/6 graft coordinate candidates prepared and preprocessed; representative model unresolved |
-| 4 | FXII protein-only control | 0.2ps passed;100ps queued |
+| 4 | FXII protein-only control | 100ps preliminary control available; equilibrium unproven |
 | 5 | bare-PC versus coated-PC controls | both short initial pilots available |
-| 6 | orientation/starting-state sampling | two accepted orientations;bare/coated PC;0.5/2nm gap subset;three velocity seeds queued;short numerical sensitivity only |
+| 6 | orientation/starting-state sampling | 18 short velocity/distance/orientation pilots passed;not production replicas |
 | 7 | replicated production MD | blocked: no validated production model or converged pilot budget |
 | 8 | glycosylated FXII comparison | nine annotated sites and five citation records retrieved;glycoform/parameters unresolved |
 | 9 | full fibrinogen simulation | Alpha/Gamma-A isoform sequence candidates aligned;955 construct residues unmodeled,1081 relative to this full-length candidate |

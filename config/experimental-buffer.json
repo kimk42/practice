@@ -65,6 +65,7 @@
       "partial_charges_approved": false,
       "full_buffer_simulation_started": false
     },
-    "analytical_preparation_manifest": "config/cpbszi-system-preparation.json"
+    "analytical_preparation_manifest": "config/cpbszi-system-preparation.json",
+    "published_azide_route": "models/buffer-parameters/azide-published-model-route.json;source chain found,numeric and TIP3P compatibility validation pending;public source requests received proxy403"
   }
 }

@@ -28,6 +28,10 @@ def main():
     if qa:metrics['initial_FXII_coating_QA']=qa
     bare_qa=read('models/analysis/initial-fxii-bare-pc-QA.json')
     if bare_qa:metrics['initial_FXII_bare_PC_QA']=bare_qa
+    water_qa=read('models/analysis/fxii-water-100ps-QA.json')
+    if water_qa:metrics['FXII100ps_structural_QA']=water_qa
+    paired=read('runs/paired-interface-followup-status.json')
+    if paired:metrics['paired_interface_followup_status_snapshot']=paired
     for key,path in [('coating10ps','runs/surface-nvt-10ps/result.json'),('coating100ps','runs/coating-control-100ps/result.json'),('protein100ps','runs/fxii-water-control-100ps/result.json')]:
         value=read(path)
         if value:metrics[key]=value

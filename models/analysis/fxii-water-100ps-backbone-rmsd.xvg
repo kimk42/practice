@@ -1,0 +1,39 @@
+# This file was created Tue Oct 27 04:51:40 2026
+# Created by:
+#               :-) GROMACS - gmx rms, 2025.2-Debian_2025.2_1 (-:
+# 
+# Executable:   /workspace/md-tools/root/usr/bin/gmx
+# Data prefix:  /workspace/md-tools/root/usr
+# Working dir:  /workspace/practice-md/runs/fxii-water-control-100ps
+# Command line:
+#   gmx rms -s nvt.tpr -f /workspace/practice-md/runs/fxii-water-control-100ps/structural-QA/whole.xtc -o /workspace/practice-md/runs/fxii-water-control-100ps/structural-QA/backbone-rmsd.xvg -tu ps
+# gmx rms is part of G R O M A C S:
+#
+# Guyana Rwanda Oman Macau Angola Cameroon Senegal
+#
+@    title "RMSD"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "RMSD (nm)"
+@TYPE xy
+@ subtitle "Backbone after lsq fit to Backbone"
+   0.0000000    0.0004978
+   5.0000000    0.1398943
+  10.0000000    0.1545968
+  15.0000000    0.1833930
+  20.0000000    0.1892425
+  25.0000000    0.1847417
+  30.0000000    0.2026347
+  35.0000000    0.2264719
+  40.0000000    0.2245188
+  45.0000000    0.2093125
+  50.0000000    0.2141572
+  55.0000000    0.2366253
+  60.0000000    0.2291005
+  65.0000000    0.2305433
+  70.0000000    0.2370852
+  75.0000000    0.2340406
+  80.0000000    0.2529603
+  85.0000000    0.2481799
+  90.0000000    0.2384977
+  95.0000000    0.2593606
+ 100.0000000    0.2415344

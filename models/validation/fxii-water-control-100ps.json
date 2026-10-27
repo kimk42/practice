@@ -1,0 +1,9 @@
+{
+  "state": "bounded numerical follow-up completed",
+  "duration_ps": 100,
+  "temperature_mean_K": 299.5679676766169,
+  "temperature_second_half_mean_K": 300.0115957920792,
+  "potential_first_half_mean_kJ_mol": -2826996.18,
+  "potential_second_half_mean_kJ_mol": -2823352.3044554456,
+  "scope": "preliminary relaxation monitoring only; no automatic equilibrium, sampling convergence or adsorption conclusion"
+}
