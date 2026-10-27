@@ -1,0 +1,169 @@
+{
+  "species": [
+    {
+      "name": "citrate3-",
+      "formal_charge": -3,
+      "source_sha256": "39ea2a0b11282824ca1ad43ac5a0182810548de98de6b60f51191b75e89ef5d6",
+      "scope": "typing and bonded lookup only;no force-field partial charges computed/approved;not an MD topology",
+      "state": "bond-order representation review required",
+      "typing_warnings": [],
+      "bond_order_changes": [
+        {
+          "atoms_1based": [
+            1,
+            2
+          ],
+          "source_order": "2",
+          "typed_order": "1"
+        },
+        {
+          "atoms_1based": [
+            8,
+            9
+          ],
+          "source_order": "2",
+          "typed_order": "1"
+        },
+        {
+          "atoms_1based": [
+            11,
+            12
+          ],
+          "source_order": "2",
+          "typed_order": "1"
+        }
+      ],
+      "atom_types": [
+        "c",
+        "c3",
+        "hc",
+        "ho",
+        "o",
+        "oh"
+      ],
+      "missing_or_revision_flags": [],
+      "analogy_notes": [
+        "c3-o -c -o          1.1          180.0         2.0          Using general improper torsional angle  X- o- c- o, penalty score=  3.0)"
+      ],
+      "frcmod_sha256": "9d98aa01596acf7fbe05df6c8718a29c51bea4363cbe77d6eb6f88b8c14b171b",
+      "physical_validation": false
+    },
+    {
+      "name": "hydrogen_citrate2-",
+      "formal_charge": -2,
+      "source_sha256": "166193106018101aa358ac4141c32733b4597f69c425ca2748b2a453336325c3",
+      "scope": "typing and bonded lookup only;no force-field partial charges computed/approved;not an MD topology",
+      "state": "bond-order representation review required",
+      "typing_warnings": [],
+      "bond_order_changes": [
+        {
+          "atoms_1based": [
+            8,
+            9
+          ],
+          "source_order": "2",
+          "typed_order": "1"
+        },
+        {
+          "atoms_1based": [
+            11,
+            12
+          ],
+          "source_order": "2",
+          "typed_order": "1"
+        }
+      ],
+      "atom_types": [
+        "c",
+        "c3",
+        "hc",
+        "ho",
+        "o",
+        "oh"
+      ],
+      "missing_or_revision_flags": [],
+      "analogy_notes": [
+        "c3-o -c -o          1.1          180.0         2.0          Using general improper torsional angle  X- o- c- o, penalty score=  3.0)"
+      ],
+      "frcmod_sha256": "9d98aa01596acf7fbe05df6c8718a29c51bea4363cbe77d6eb6f88b8c14b171b",
+      "physical_validation": false
+    },
+    {
+      "name": "dihydrogen_phosphate-",
+      "formal_charge": -1,
+      "source_sha256": "e5c4a509cdababe2c946b069458bf8c474cebfce4d016b485c2b0f9c7eb211e7",
+      "scope": "typing and bonded lookup only;no force-field partial charges computed/approved;not an MD topology",
+      "state": "bond-order representation review required",
+      "typing_warnings": [],
+      "bond_order_changes": [
+        {
+          "atoms_1based": [
+            1,
+            2
+          ],
+          "source_order": "2",
+          "typed_order": "1"
+        }
+      ],
+      "atom_types": [
+        "ho",
+        "o",
+        "oh",
+        "p5"
+      ],
+      "missing_or_revision_flags": [],
+      "analogy_notes": [],
+      "frcmod_sha256": "bf922808a85c35c2c11e49229322f906ba4bfc17fa247ee240d7221744a82dd5",
+      "physical_validation": false
+    },
+    {
+      "name": "hydrogen_phosphate2-",
+      "formal_charge": -2,
+      "source_sha256": "0d91c9aabf1ccd51324aee234d4a5dda53089e60634e4f73a3ea130d80e478d9",
+      "scope": "typing and bonded lookup only;no force-field partial charges computed/approved;not an MD topology",
+      "state": "bond-order representation review required",
+      "typing_warnings": [],
+      "bond_order_changes": [
+        {
+          "atoms_1based": [
+            1,
+            2
+          ],
+          "source_order": "2",
+          "typed_order": "1"
+        }
+      ],
+      "atom_types": [
+        "ho",
+        "o",
+        "oh",
+        "p5"
+      ],
+      "missing_or_revision_flags": [],
+      "analogy_notes": [],
+      "frcmod_sha256": "bf922808a85c35c2c11e49229322f906ba4bfc17fa247ee240d7221744a82dd5",
+      "physical_validation": false
+    },
+    {
+      "name": "azide-",
+      "formal_charge": -1,
+      "source_sha256": "18520316ba692ac7948e8b237622ffe8e7eb3d673d195ef4510da0bcbd2fb159",
+      "scope": "typing and bonded lookup only;no force-field partial charges computed/approved;not an MD topology",
+      "state": "blocked:typing warning",
+      "typing_warnings": [
+        "Warning: The assigned bond types may be wrong, please :"
+      ],
+      "bond_order_changes": [],
+      "atom_types": [
+        "n1"
+      ],
+      "missing_or_revision_flags": [],
+      "analogy_notes": [],
+      "frcmod_sha256": "bf922808a85c35c2c11e49229322f906ba4bfc17fa247ee240d7221744a82dd5",
+      "physical_validation": false
+    }
+  ],
+  "full_buffer_ready_for_MD": false,
+  "charges_assigned": false,
+  "limitations": "successful lookup does not validate highly charged/polyatomic ions,charge distribution,linear azide geometry,water interactions orpH speciation;diagnostic mol2 charge fields are never exported/used for MD"
+}

@@ -57,6 +57,14 @@
     ],
     "current_running_controls": "300K,neutralizing ions only,unchanged preliminary baseline",
     "monovalent_ion_candidate": "models/buffer-parameters/jc-tip3p-monovalent.itp;published JC/TIP3P Na/Cl/I converted and neutral ion-water EM passed;not yet applied to protein/coating baselines",
-    "polyatomic_candidates": "models/buffer-parameters/polyatomic-species-audit.json;formal graphs only,no partial charges or final speciation"
+    "polyatomic_candidates": "models/buffer-parameters/polyatomic-species-audit.json;formal graphs only,no partial charges or final speciation",
+    "latest_polyatomic_audit": {
+      "report": "models/buffer-parameters/bonded-coverage-audit.json",
+      "azide": "blocked:Antechamber warns assigned bond types may be wrong",
+      "citrate_and_phosphate": "input/typed bond-order representation changes require chemical/charge-model review",
+      "partial_charges_approved": false,
+      "full_buffer_simulation_started": false
+    },
+    "analytical_preparation_manifest": "config/cpbszi-system-preparation.json"
   }
 }

@@ -7,3 +7,9 @@ The assay recipe is config/experimental-buffer.json. This directory does not yet
 `scripts/prepare_buffer_species.py` creates formal chemical graphs for citrate3−,one hydrogen-citrate2− microstate,H2PO4−,HPO4²− and azide−. No force-field partial charges,validated topologies,protonation fractions or production coordinates are supplied for those polyatomic species. Speciation,phosphate hydration/counterions and parameters remain explicit gates. The assay's approximate NaOH amount must not be modeled as the same amount of free hydroxide atpH7.4.
 
 Ongoing neutralizing-ion numerical controls retain their original settings. A separately built matched-buffer model requires all gates above; partial ion support must not be advertised as complete cPBSzI MD.
+
+## Latest bonded diagnostics
+
+`scripts/audit_buffer_bonded.py` performs only typing/bonded lookup in ignored runs/. `--inspect-existing` rereads preserved outputs without rerunning jobs. The absence of parmchk2 missing-term flags is insufficient: azide emits an explicit assigned-bond-types warning and is blocked; citrate and phosphate show changed bond-order representations, which may involve resonance but require review before a charge/force-field model is approved. No diagnostic charge fields are exported for MD. The azide literature assessment supports a conditional pKa/speciation estimate only, not transferable atomistic parameters.
+
+config/cpbszi-system-preparation.json records analytical integer-count alternatives for the existing18×12×18nm box. Phosphate hydrate cases remain separate, species populations and the macromolecular counterion policy are unselected, and no final Na count or runnable matched-buffer topology is asserted.

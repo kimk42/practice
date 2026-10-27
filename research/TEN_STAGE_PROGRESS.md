@@ -5,7 +5,7 @@ This report follows the latest ten steps requested by the user. Prepared inputs,
 | Step | Work | Actual state |
 |---|---|---|
 | 1 | initial FXII/coating numerical analysis | passed numerical pilot only |
-| 2 | coating relaxation/equilibration | 100ps preliminary control queued |
+| 2 | coating relaxation/equilibration | 100ps preliminary control available; equilibrium unproven |
 | 3 | surface model sensitivity | 0/3/6 graft coordinate candidates prepared and preprocessed; representative model unresolved |
 | 4 | FXII protein-only control | 0.2ps passed;100ps queued |
 | 5 | bare-PC versus coated-PC controls | both short initial pilots available |

@@ -1,0 +1,77 @@
+{
+  "state": "analytical preparation alternatives;not a runnable matched-buffer system",
+  "source_recipe_sha256": "61abe65c269127e101b970a1a82f314be9aee8bb7da602586d47693b024da22d",
+  "box_nm": [
+    18,
+    12,
+    18
+  ],
+  "volume_nm3": 3888,
+  "formula_units_per_mM": 2.341408327488,
+  "fixed_analytical_counts": [
+    {
+      "component": "NaCl",
+      "target_analytical_mM": 110.02216356274693,
+      "nearest_formula_units": 258,
+      "rounded_analytical_mM": 110.19009242048674
+    },
+    {
+      "component": "NaI",
+      "target_analytical_mM": 10.007055641364206,
+      "nearest_formula_units": 23,
+      "rounded_analytical_mM": 9.82314777391936
+    },
+    {
+      "component": "citric acid monohydrate,total citrate after pH adjustment",
+      "target_analytical_mM": 9.993432886959999,
+      "nearest_formula_units": 23,
+      "rounded_analytical_mM": 9.82314777391936
+    },
+    {
+      "component": "sodium azide",
+      "target_analytical_mM": 3.0764545092362856,
+      "nearest_formula_units": 7,
+      "rounded_analytical_mM": 2.989653670323283
+    }
+  ],
+  "phosphate_alternatives": [
+    {
+      "hydration_hypothesis": "anhydrous",
+      "target_total_mM": 11.50220458921293,
+      "nearest_total_molecules": 27,
+      "rounded_total_mM": 11.531521299818378
+    },
+    {
+      "hydration_hypothesis": "monohydrate",
+      "target_total_mM": 10.000579743753262,
+      "nearest_total_molecules": 23,
+      "rounded_total_mM": 9.82314777391936
+    },
+    {
+      "hydration_hypothesis": "dihydrate",
+      "target_total_mM": 8.845756921163792,
+      "nearest_total_molecules": 21,
+      "rounded_total_mM": 8.96896101096985
+    }
+  ],
+  "unassigned_populations": [
+    "N_Cit3+N_HCit2=N_citrate_total",
+    "N_HPO4+N_H2PO4=N_phosphate_total"
+  ],
+  "charge_balance_constraint": "N_Na+Q_macromolecule=N_Cl+N_I+3*N_Cit3+2*N_HCit2+2*N_HPO4+N_H2PO4+N_azide",
+  "counterion_policy": "not selected;document whether protein-stock counterions are added versus adjusting buffer Na,then use matched policy across bare/coated systems",
+  "free_NaOH_added_as_species": false,
+  "finite_box_protein_density": {
+    "protein_count": 1,
+    "nominal_full_box_molarity_M": 0.0004270933814747548,
+    "experiment_reference_target_nM": 3.75,
+    "scope": "full-box count density only,not accessible-water-phase concentration and not a reproduction of the experimental dilute assay"
+  },
+  "ready_for_grompp": false,
+  "blocking_validation": [
+    "azide automatic bond-typing warning;no approved azide partial charges/topology",
+    "citrate/phosphate bond-order representation and charge/speciation review",
+    "species populations atpH7.4 not assigned",
+    "phosphate hydration alternatives not resolved as a single experimental value"
+  ]
+}

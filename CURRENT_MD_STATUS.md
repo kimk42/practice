@@ -45,3 +45,7 @@ The uploaded SOP identifies cPBSzI1x containing NaCl,NaI,citrate,phosphate and a
 ## Matched-buffer preparation progress
 
 Published Joung–Cheatham/TIP3P Na/Cl/I parameters were converted with source hashes; a small neutral ion/water GROMACS import/EM control passed. Formal citrate/phosphate/azide graphs are prepared without invented partial charges or speciation fractions. Full cPBSzI MD remains gated on polyatomic parameters and charge/speciation accounting. A primary study's375nM physiological human-FXII reference gives a provisional1%=3.75nM assay mapping;this is not user-measured concentration. Existing numerical controls continue unchanged.
+
+## Latest checkpoint-safe continuation
+
+Coating100ps follow-up completed:201 energy frames,mean sampled temperature300.0525K;density profile and trajectory/topology hashes are saved in models/analysis/coating100ps-density*. FXII100ps water follow-up is alive with saved checkpoints;no restart or duplicate worker was launched. Buffer-only diagnostic typing completed without charge assignment: azide produced an explicit bond-typing warning; citrate/phosphate changed bond-order representation. These findings block full-buffer topology approval. Analytical molecule-count alternatives and a charge-balance constraint are prepared in config/cpbszi-system-preparation.json without choosing unmeasured hydrate/speciation fractions. No new mandatory user input is needed for the running baseline/continued parameter research.

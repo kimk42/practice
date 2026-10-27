@@ -1,0 +1,15 @@
+{
+  "doi": "10.1007/s10930-023-10127-3",
+  "pmcid": "PMC10264542",
+  "title": "How Azide Ion/Hydrazoic Acid Passes Through Biological Membranes:An Experimental and Computational Study",
+  "source_sha256": "e48fefc2da26ff9424ae48693b218bd6a0ca78f3c7f9ae23e0f36aab4da7d79b",
+  "source_scope": "examined main text;not a transferable atomistic force-field parameter source identified in this inspection",
+  "reported_HN3_pKa": 4.65,
+  "source_status": "paper quotes pKa from its reference18;not measured in user buffer",
+  "conditional_ideal_Henderson_Hasselbalch_at_pH7_4": {
+    "N3_fraction": 0.9982248772541903,
+    "HN3_fraction": 0.0017751227458097578,
+    "limitations": "conditional ideal-solution estimate;no activity corrections or exact cPBSzI population measurement;does not resolve blocked azide force-field typing"
+  },
+  "force_field_parameters_approved": false
+}
