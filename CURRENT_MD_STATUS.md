@@ -1,6 +1,6 @@
 # Current MD status
 
-Latest verified state: both100ps controls and18 short pilots completed. FXII100ps backbone/SG geometry QA passed the stated numerical checks,without claiming native/equilibrium validation. Separate checkpointed10ps near-interface continuations for coated/bare PC are running sequentially;see runs/paired-interface-followup-status.json. Full cPBSzI is not approved: azide numeric source/compatibility and polyatomic-charge/speciation gates remain. Earlier in-progress descriptions below are retained as historical milestones.
+Latest verified state: both100ps controls and18 short pilots completed. FXII100ps backbone/SG geometry QA passed the stated numerical checks,without claiming native/equilibrium validation. Separate checkpointed10ps near-interface continuations for coated/bare PC are completed;see runs/paired-interface-followup-status.json. No MD process is currently active (verified at this review). Full cPBSzI is not approved: azide numeric source/compatibility and polyatomic-charge/speciation gates remain. Earlier in-progress descriptions below are retained as historical milestones.
 
 ## Completed
 
@@ -73,3 +73,7 @@ All repository changes remain local on md/cbaa-surface;no GitHub push,PR or new 
 ## Next-step precision/network diagnosis
 
 The phosphate0.001e deviation was traced read-only through printed3-decimal SQM atomic charges,pre-BCC input and BCC output. Integer QM totals are correct;no missing digits were invented or charges changed. The public upstream Fortran print routine corroborates fixed3-decimal output but is not claimed as the exact bundled build. Existing baseline MD remains complete with no active calculations. Original-parameter access is blocked at currently unlisted domains;an additive4-domain network draft and corrected startup guidance were saved for user review,not applied or published. Existing custom hosts,presets,repositories,credentials and install script were preserved.
+
+## Formal buffer bookkeeping review
+
+Enumerated3552 candidate population/macrocharge cases across three phosphate hydration hypotheses and formal macromolecule charges0/+6. Every case satisfies integer global charge balance with the conditional sodium count. This enumerates only the specified Cit3-/HCit2- and HPO4²-/H2PO4- basis, not pH7.4 speciation or a selected counterion policy. No partial charges were changed and no MD topology was exported. See models/buffer-parameters/formal-charge-balance-audit.json. Runtime revision6 still lacks the four requested source-access domains;the saved environment draft is not applied,so blocked original-source requests were not repeated. Existing checkpoints and completed runs remain untouched.
