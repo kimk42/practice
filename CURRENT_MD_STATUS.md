@@ -60,3 +60,12 @@ Both100ps controls and all18 short orientation/gap/velocity pilots completed. Th
 The accepted0.5nm-gap coated/bare interface states now have checkpointed10ps NVT continuations,one at a time,without reinitializing velocities or changing their source checkpoints. Status is runs/paired-interface-followup-status.json. These remain the legacy300K/neutralizing-ion baseline,not matched cPBSzI or adsorption evidence.
 
 For azide,the reviewed2025 SI identifies three original bonded/charge/LJ sources. Original numeric-value URLs returned proxy403;no purchase/access bypass was attempted. Published-model details and water/mixing-rule compatibility remain unverified,so no replacement azide parameters were exported. Source route is models/buffer-parameters/azide-published-model-route.json. No new user input is mandatory for ongoing baseline continuations or further parameter research.
+
+
+## Latest completed paired baseline and buffer charge-candidate review
+
+Both10ps near-interface follow-ups completed and were analyzed without restarting them. Only three structural frames were saved per case(0,5,10ps);none show heavy-atom contacts below0.45nm. Sampled minimum distances are1.078nm(coated) and1.322nm(bare). Sparse-frame noncontact is not evidence of antifouling or an adsorption probability. See models/analysis/paired-interface-10ps-summary.json.
+
+Four buffer AM1-BCC/GAFF2 charge candidates were computed in separate ignored directories;azide was excluded. Antechamber explicitly changed the requested prediction mode1 to4. That method override was retained and reviewed in the audit;the assumption of mode1 bond preservation was not fulfilled. The same preserved outputs were inspected without rerunning:two citrate candidates pass numerical charge/connectivity checks but are not physically approved;phosphate candidates have a-0.001e net-charge residual and remain blocked without ad-hoc correction. No candidate topology was exported or used as full cPBSzI MD. Source access and water/speciation/ion-behavior validation remain unresolved.
+
+All repository changes remain local on md/cbaa-surface;no GitHub push,PR or new publication was performed.

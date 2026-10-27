@@ -1,0 +1,160 @@
+{
+  "state": "preserved quantum candidates reviewed without rerunning",
+  "species": [
+    {
+      "species": "citrate3-",
+      "expected_charge": -3,
+      "directory": "runs/buffer-charge-candidates-g5tzm8pz/citrate3-",
+      "approved_for_MD": false,
+      "all_warnings_preserved": [
+        "Warning: the antechamber program automatically changes the prediction type from '1' to '4' for bcc/abcg2 calculations !"
+      ],
+      "requested_prediction_mode": 1,
+      "actual_prediction_mode": 4,
+      "method": "AM1-BCC/GAFF2 with full bond typing;isolated gas-phase candidate",
+      "method_override_review": "tool explicitly overrode requested mode1 to4;original mode-preservation assumption was not met;actual method is recorded,not suppressed",
+      "other_warnings": [],
+      "observed_net_partial_charge": -2.9999999999999996,
+      "net_charge_residual_e": 4.440892098500626e-16,
+      "coordinates_finite": true,
+      "state": "calculated candidate numerical checks passed;physical/representation validation pending",
+      "atoms": 18,
+      "net_partial_charge": -2.9999999999999996,
+      "partial_charge_range_e": [
+        -0.9078,
+        0.9146
+      ],
+      "bond_length_range_A": [
+        0.9879812751262039,
+        1.533446119040379
+      ],
+      "bond_order_representation_changes": [
+        {
+          "atoms_1based": [
+            1,
+            2
+          ],
+          "source_order": "2",
+          "output_order": "1"
+        },
+        {
+          "atoms_1based": [
+            8,
+            9
+          ],
+          "source_order": "2",
+          "output_order": "1"
+        },
+        {
+          "atoms_1based": [
+            11,
+            12
+          ],
+          "source_order": "2",
+          "output_order": "1"
+        }
+      ],
+      "candidate_mol2_sha256": "e9b7049a47dbf58ee7e3b37eb87db3b5f0d8c2adccbd1c8a91ac6b884d7b57ec",
+      "qm_output_sha256": "6291e1777575b1d92aebf024935dec883ea30c8afad97f27d7c6c54e7b22f39d",
+      "remaining": [
+        "source/output resonance representation and charge symmetry review",
+        "multi-anion gas-phase versus aqueous electrostatics validation",
+        "compatible nonbonded and ion-pairing behavior;no populations assigned"
+      ]
+    },
+    {
+      "species": "hydrogen_citrate2-",
+      "expected_charge": -2,
+      "directory": "runs/buffer-charge-candidates-g5tzm8pz/hydrogen_citrate2-",
+      "approved_for_MD": false,
+      "all_warnings_preserved": [
+        "Warning: the antechamber program automatically changes the prediction type from '1' to '4' for bcc/abcg2 calculations !"
+      ],
+      "requested_prediction_mode": 1,
+      "actual_prediction_mode": 4,
+      "method": "AM1-BCC/GAFF2 with full bond typing;isolated gas-phase candidate",
+      "method_override_review": "tool explicitly overrode requested mode1 to4;original mode-preservation assumption was not met;actual method is recorded,not suppressed",
+      "other_warnings": [],
+      "observed_net_partial_charge": -1.9999999999999998,
+      "net_charge_residual_e": 2.220446049250313e-16,
+      "coordinates_finite": true,
+      "state": "calculated candidate numerical checks passed;physical/representation validation pending",
+      "atoms": 19,
+      "net_partial_charge": -1.9999999999999998,
+      "partial_charge_range_e": [
+        -0.8753,
+        0.9126
+      ],
+      "bond_length_range_A": [
+        0.9847461601854561,
+        1.5261631629678394
+      ],
+      "bond_order_representation_changes": [
+        {
+          "atoms_1based": [
+            8,
+            9
+          ],
+          "source_order": "2",
+          "output_order": "1"
+        },
+        {
+          "atoms_1based": [
+            11,
+            12
+          ],
+          "source_order": "2",
+          "output_order": "1"
+        }
+      ],
+      "candidate_mol2_sha256": "a13c0b870e333c97c8dbd886e077ee1981265491cb8142ecdec7fc31a8af8d69",
+      "qm_output_sha256": "6ab235ed3ef2b57374e0e51c8923c45da01951b78f257d590d52768d65ed36c8",
+      "remaining": [
+        "source/output resonance representation and charge symmetry review",
+        "multi-anion gas-phase versus aqueous electrostatics validation",
+        "compatible nonbonded and ion-pairing behavior;no populations assigned"
+      ]
+    },
+    {
+      "species": "dihydrogen_phosphate-",
+      "expected_charge": -1,
+      "directory": "runs/buffer-charge-candidates-g5tzm8pz/dihydrogen_phosphate-",
+      "approved_for_MD": false,
+      "all_warnings_preserved": [
+        "Warning: the antechamber program automatically changes the prediction type from '1' to '4' for bcc/abcg2 calculations !"
+      ],
+      "requested_prediction_mode": 1,
+      "actual_prediction_mode": 4,
+      "method": "AM1-BCC/GAFF2 with full bond typing;isolated gas-phase candidate",
+      "method_override_review": "tool explicitly overrode requested mode1 to4;original mode-preservation assumption was not met;actual method is recorded,not suppressed",
+      "other_warnings": [],
+      "observed_net_partial_charge": -1.0010000000000001,
+      "net_charge_residual_e": -0.001000000000000112,
+      "coordinates_finite": true,
+      "state": "candidate blocked",
+      "reason": "Charge/finite mismatch"
+    },
+    {
+      "species": "hydrogen_phosphate2-",
+      "expected_charge": -2,
+      "directory": "runs/buffer-charge-candidates-g5tzm8pz/hydrogen_phosphate2-",
+      "approved_for_MD": false,
+      "all_warnings_preserved": [
+        "Warning: the antechamber program automatically changes the prediction type from '1' to '4' for bcc/abcg2 calculations !"
+      ],
+      "requested_prediction_mode": 1,
+      "actual_prediction_mode": 4,
+      "method": "AM1-BCC/GAFF2 with full bond typing;isolated gas-phase candidate",
+      "method_override_review": "tool explicitly overrode requested mode1 to4;original mode-preservation assumption was not met;actual method is recorded,not suppressed",
+      "other_warnings": [],
+      "observed_net_partial_charge": -2.001,
+      "net_charge_residual_e": -0.0009999999999998899,
+      "coordinates_finite": true,
+      "state": "candidate blocked",
+      "reason": "Charge/finite mismatch"
+    }
+  ],
+  "azide": "excluded;typing warning unresolved",
+  "full_buffer_ready": false,
+  "MD_topologies_exported": false
+}

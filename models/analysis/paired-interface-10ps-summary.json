@@ -1,0 +1,49 @@
+{
+  "cases": [
+    {
+      "case": "fxii-coating-near-10ps",
+      "state": "10ps baseline geometry/energy follow-up completed",
+      "duration_ps": 10,
+      "structure_frames": 3,
+      "sample_times_ps": [
+        0.0,
+        5.0,
+        10.0
+      ],
+      "sampled_minimum_distance_nm": 1.077939,
+      "endpoint_minimum_distance_nm": 1.338432,
+      "sampled_contact_counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "temperature_second_half_mean_K": 299.93252018181823,
+      "trajectory_sha256": "9fa1740e54a8e26e30e6d66c2f2df682badddb18397417b0bd0469d0cabbf874",
+      "conditions": "legacy300K,neutralizing ions only;not cPBSzI",
+      "limits": "sparse structural frames from one geometry/seed;not contact probabilities,adsorption kinetics,equilibrium or efficacy;raw total energies of differently sized systems are not adsorption free energies"
+    },
+    {
+      "case": "fxii-bare-near-10ps",
+      "state": "10ps baseline geometry/energy follow-up completed",
+      "duration_ps": 10,
+      "structure_frames": 3,
+      "sample_times_ps": [
+        0.0,
+        5.0,
+        10.0
+      ],
+      "sampled_minimum_distance_nm": 1.321821,
+      "endpoint_minimum_distance_nm": 1.321821,
+      "sampled_contact_counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "temperature_second_half_mean_K": 299.8823991818182,
+      "trajectory_sha256": "950540826f60347aa0bc32fe8bacde980ac6c3c1e59f1b7bf51bfc85f59dad22",
+      "conditions": "legacy300K,neutralizing ions only;not cPBSzI",
+      "limits": "sparse structural frames from one geometry/seed;not contact probabilities,adsorption kinetics,equilibrium or efficacy;raw total energies of differently sized systems are not adsorption free energies"
+    }
+  ],
+  "scope": "descriptive numerical follow-ups only;no comparative adsorption conclusion"
+}

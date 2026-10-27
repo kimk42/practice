@@ -17,3 +17,7 @@ config/cpbszi-system-preparation.json records analytical integer-count alternati
 ## Published azide route
 
 The open SI of DOI10.1021/acs.jpcb.5c02025 was inspected,including section2 and references7–9. It uses LAMMPS/OPLS-AA in DMSO and refers separately to original azide bonded,charge andLJ models. The source chain is recorded in azide-published-model-route.json. The original publisher endpoints returned proxy403 on this runtime;this is an access failure,not proof of a paywall. No numeric parameters were guessed. Water-model/mixing-rule compatibility and aqueous validation remain gates before any Amber/TIP3P adoption. A different article using covalent azidoadamantane was excluded as an ion-parameter source.
+
+## Computed charge candidates
+
+The new candidate calculations exclude azide and are stored only under runs/. Initial requests for-j1 were automatically changed by Antechamber to-j4 for AM1-BCC;this explicit method warning and actual method are preserved in charge-candidate-audit.json. `scripts/review_buffer_charge_candidates.py` rereads existing outputs without recomputing. Citrate candidates pass numerical conservation/connectivity checks but need aqueous/charge-model validation. Both phosphate candidate outputs have a-0.001e net-charge residual;no arbitrary renormalization was applied and they remain blocked. The candidate generator now requests the actual supported-j4 method explicitly for any future fresh calculation. No MD topology was exported and no candidate is approved as an experimental-buffer model.

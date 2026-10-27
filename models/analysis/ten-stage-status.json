@@ -522,12 +522,34 @@
       "scope": "single predicted unglycosylated conformation;these short structural metrics are not equilibrium or native-conformation validation"
     },
     "paired_interface_followup_status_snapshot": {
-      "state": "running",
-      "pid": 18036,
-      "job": "fxii-coating-near-10ps",
-      "completed": [],
-      "duration_ps": 10,
-      "conditions": "legacy300K,neutralizing ions only,unglycosylated predicted FXII;not cPBSzI"
+      "state": "paired10ps numerical follow-ups completed",
+      "completed": [
+        {
+          "case": "fxii-coating-near-10ps",
+          "result": {
+            "state": "bounded numerical follow-up completed",
+            "duration_ps": 10.0,
+            "temperature_mean_K": 296.26137438095236,
+            "temperature_second_half_mean_K": 299.93252018181823,
+            "potential_first_half_mean_kJ_mol": -4583086.2,
+            "potential_second_half_mean_kJ_mol": -4548146.909090909,
+            "scope": "preliminary relaxation monitoring only; no automatic equilibrium, sampling convergence or adsorption conclusion"
+          }
+        },
+        {
+          "case": "fxii-bare-near-10ps",
+          "result": {
+            "state": "bounded numerical follow-up completed",
+            "duration_ps": 10.0,
+            "temperature_mean_K": 296.3295993333333,
+            "temperature_second_half_mean_K": 299.8823991818182,
+            "potential_first_half_mean_kJ_mol": -4614285.6,
+            "potential_second_half_mean_kJ_mol": -4577549.909090909,
+            "scope": "preliminary relaxation monitoring only; no automatic equilibrium, sampling convergence or adsorption conclusion"
+          }
+        }
+      ],
+      "scope": "baseline initial relaxation only;not matched-buffer validation or adsorption comparison"
     },
     "coating10ps": {
       "state": "10ps surface numerical follow-up completed",

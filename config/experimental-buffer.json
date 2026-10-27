@@ -66,6 +66,14 @@
       "full_buffer_simulation_started": false
     },
     "analytical_preparation_manifest": "config/cpbszi-system-preparation.json",
-    "published_azide_route": "models/buffer-parameters/azide-published-model-route.json;source chain found,numeric and TIP3P compatibility validation pending;public source requests received proxy403"
+    "published_azide_route": "models/buffer-parameters/azide-published-model-route.json;source chain found,numeric and TIP3P compatibility validation pending;public source requests received proxy403",
+    "computed_charge_candidates": {
+      "audit": "models/buffer-parameters/charge-candidate-audit.json",
+      "method": "computed gas-phaseAM1-BCC/GAFF2 candidates,not experimental or validated aqueous parameters",
+      "citrate": "two protonation-state candidates pass quantum/net-charge/connectivity checks but remain unapproved",
+      "phosphate": "observed candidate net charge differs by-0.001e;no correction applied;not approved",
+      "azide": "excluded from calculation due prior typing warning",
+      "MD_topologies_exported": false
+    }
   }
 }
