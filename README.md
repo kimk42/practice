@@ -41,8 +41,9 @@ The user reports PC grade unknown and accepts BPA-PC as the initial assumption. 
 
 ## Project map and current limits
 
-PC8/PC16 whole-chain AM1-BCC work and a12-case periodic dry-packing screen have
-started in separate ignored directories. See
+PC8/PC16 whole-chain AM1-BCC jobs were interrupted before convergence;packing
+recovery uses saved rigid-body poses. See the
+[latest execution check](research/EXECUTION_CHECK_2026-10-28.md) and
 [PC length preparation](research/PC_LENGTH_PREPARATION_2026-10-28.md) for live-status
 paths, the recorded ACPYPE charge-balancing behavior, packing-boundary correction
 and gates before new substrate MD. These are exploratory finite-chain models;
