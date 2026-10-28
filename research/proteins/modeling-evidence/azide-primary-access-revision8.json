@@ -1,0 +1,140 @@
+{
+  "runtime_revision": 8,
+  "network_policy_state": "enforced",
+  "requests": [
+    {
+      "source": "azide-bonded-primary",
+      "url": "https://pubs.aip.org/aip/jcp/article-pdf/doi/10.1063/1.3598108/15437737/214504_1_online.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "azide-charge-primary",
+      "url": "https://pubs.aip.org/aip/jcp/article-pdf/109/13/5511/19256359/5511_1_online.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "azide-LJ-primary",
+      "url": "https://api.elsevier.com/content/article/PII:000926149389156C?httpAccept=text/xml",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "source": "azide-bonded-openalex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1063/1.3598108",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 18602,
+      "sha256": "73db23fd70bf141f041e0411f663532e6bcc38ea9dbd0b3b38d65470ed11f3b3",
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "landing_page_url": "https://doi.org/10.1063/1.3598108",
+          "pdf_url": null
+        },
+        {
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/21663364",
+          "pdf_url": null
+        }
+      ]
+    },
+    {
+      "source": "azide-charge-openalex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1063/1.477170",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 15457,
+      "sha256": "0ed0591830893b791bb1e96c95c703a0455be70ed4384a301ce6d9bf2f174e69",
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "landing_page_url": "https://doi.org/10.1063/1.477170",
+          "pdf_url": null
+        }
+      ]
+    },
+    {
+      "source": "azide-LJ-openalex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/0009-2614(93)89156-c",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 14683,
+      "sha256": "123fbbd7c4c97b3dc575374c0266932a4cbc471affe660bccfe8b28106e9d7fe",
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "http://hdl.handle.net/11380/741371",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "landing_page_url": "https://doi.org/10.1016/0009-2614(93)89156-c",
+          "pdf_url": null
+        },
+        {
+          "landing_page_url": "http://hdl.handle.net/11380/741371",
+          "pdf_url": null
+        }
+      ]
+    },
+    {
+      "source": "semantic-bonded",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1063/1.3598108?fields=title,openAccessPdf",
+      "status": 200,
+      "bytes": 297,
+      "metadata": {
+        "paperId": "0811bb21f36d00eeb07f929b9f1340fd4c74a768",
+        "title": "Vibrational relaxation of azide ions in liquid-to-supercritical water.",
+        "openAccessPdf": {
+          "url": "https://pubs.aip.org/aip/jcp/article-pdf/doi/10.1063/1.3598108/15437737/214504_1_online.pdf",
+          "status": "BRONZE",
+          "license": null
+        }
+      }
+    },
+    {
+      "source": "semantic-charge",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1063/1.477170?fields=title,openAccessPdf",
+      "status": 200,
+      "bytes": 268,
+      "metadata": {
+        "paperId": "4489893b8eb902943481c964b43da67c36c2b4f8",
+        "title": "Vibrational relaxation of azide ion in water: The role of intramolecular charge fluctuation and solvent-induced vibrational coupling",
+        "openAccessPdf": {
+          "url": "",
+          "status": "CLOSED",
+          "license": null
+        }
+      }
+    },
+    {
+      "source": "semantic-LJ",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/0009-2614(93)89156-C?fields=title,openAccessPdf",
+      "status": 200,
+      "bytes": 225,
+      "metadata": {
+        "paperId": "ab57d4d1142bb1ec409263f8333b38b78c5dc2dc",
+        "title": "Dynamical behavior of the azide ion in protic solvents",
+        "openAccessPdf": {
+          "url": "http://hdl.handle.net/11380/741371",
+          "status": "GREEN",
+          "license": "CCBY"
+        }
+      }
+    },
+    {
+      "source": "elsevier-canonical",
+      "url": "https://api.elsevier.com/content/article/pii/000926149389156C?httpAccept=text%2Fxml",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+  ],
+  "parameters_approved": false
+}

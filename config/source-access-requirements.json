@@ -1,17 +1,14 @@
 {
-  "state": "environment configuration draft saved;not runtime-applied",
+  "state": "original four domains applied in runtime revision8;additional discovered repository resolver saved as draft",
   "purpose": "read original azide parameter sources and locate legal open copies;no paid access or credentials requested",
   "required_custom_domain_additions": [
-    "pubs.aip.org",
-    "api.elsevier.com",
-    "api.openalex.org",
-    "api.semanticscholar.org"
+    "hdl.handle.net"
   ],
-  "observed_errors": "proxy Tunnel connection403 on original public-source requests",
-  "runtime_observation": "current observations available;HTTP policy stateunknown,so no enforced-ready claim",
+  "observed_errors": "AIP PDF HTTP403;Elsevier tunnel403 despite allowed host;no original numeric parameters recovered",
+  "runtime_observation": "current,enforced revision8;OpenAlex and Semantic Scholar requests returned200",
   "existing_custom_hosts_preserved": true,
   "existing_presets_preserved": true,
   "start_instructions_updated": "replace stale pre-MD guidance with current completed evidence and checkpoint-safe instructions",
-  "user_action": "review/save the environment draft and publish the environment configuration,then recheck runtime policy and actual source requests",
+  "user_action": "review/save added hdl.handle.net domain in environment settings and publish;then follow repository resolver",
   "automatic_runtime_change_or_publication_performed": false
 }

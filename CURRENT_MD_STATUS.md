@@ -77,3 +77,7 @@ The phosphate0.001e deviation was traced read-only through printed3-decimal SQM 
 ## Formal buffer bookkeeping review
 
 Enumerated3552 candidate population/macrocharge cases across three phosphate hydration hypotheses and formal macromolecule charges0/+6. Every case satisfies integer global charge balance with the conditional sodium count. This enumerates only the specified Cit3-/HCit2- and HPO4²-/H2PO4- basis, not pH7.4 speciation or a selected counterion policy. No partial charges were changed and no MD topology was exported. See models/buffer-parameters/formal-charge-balance-audit.json. Runtime revision6 still lacks the four requested source-access domains;the saved environment draft is not applied,so blocked original-source requests were not repeated. Existing checkpoints and completed runs remain untouched.
+
+## Source access after environment revision8
+
+The four requested hosts are now in the enforced runtime policy. OpenAlex and Semantic Scholar returned200. They identify a green-OA repository resolver for the1993 azide LJ paper:http://hdl.handle.net/11380/741371. Numeric parameters remain unread:the AIP PDFs returned HTTP403 and Elsevier returned tunnel403. Indexes disagree about OA status of the2011 bonded paper;neither index label proves retrievable full text. Saved an additive hdl.handle.net network draft;not runtime-applied. No MD started and no parameters changed. Request details:research/proteins/modeling-evidence/azide-primary-access-revision8.json.
