@@ -1,0 +1,127 @@
+{
+  "species": [
+    {
+      "species": "citrate3-",
+      "atoms": 18,
+      "formal_charge": -3,
+      "partial_charge_sum_e": -3.0000000000000004,
+      "carboxylates": [
+        {
+          "atoms_1based": [
+            3,
+            2,
+            1
+          ],
+          "equal_oxygen_charge_e": -0.9078
+        },
+        {
+          "atoms_1based": [
+            10,
+            8,
+            9
+          ],
+          "equal_oxygen_charge_e": -0.9078
+        },
+        {
+          "atoms_1based": [
+            13,
+            11,
+            12
+          ],
+          "equal_oxygen_charge_e": -0.8953
+        }
+      ],
+      "protonated_carboxyl_sites": [],
+      "changed_bond_orders_1based": [
+        [
+          1,
+          2
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          11,
+          12
+        ]
+      ],
+      "representation_decision": "consistent with equivalent GAFF carboxylate serialization;formal MOL graph remains chemistry authority",
+      "microstate_limit": null,
+      "QM_log_review": {
+        "last_printed_iteration": 160,
+        "last_printed_RMS_kcal_mol_A": 0.0028,
+        "final_gradient_numerically_certified": false,
+        "interpretation": "legacy trace prints every10iterations;last printed gradient need not be the final gradient. This does not establish failed convergence or satisfy a new explicit final-gradient gate."
+      },
+      "source_sha256": "39ea2a0b11282824ca1ad43ac5a0182810548de98de6b60f51191b75e89ef5d6",
+      "candidate_mol2_sha256": "e9b7049a47dbf58ee7e3b37eb87db3b5f0d8c2adccbd1c8a91ac6b884d7b57ec",
+      "sqm_sha256": "6291e1777575b1d92aebf024935dec883ea30c8afad97f27d7c6c54e7b22f39d",
+      "charges_modified": false,
+      "MD_started": false,
+      "approved_for_full_buffer_MD": false
+    },
+    {
+      "species": "hydrogen_citrate2-",
+      "atoms": 19,
+      "formal_charge": -2,
+      "partial_charge_sum_e": -2.0,
+      "carboxylates": [
+        {
+          "atoms_1based": [
+            10,
+            8,
+            9
+          ],
+          "equal_oxygen_charge_e": -0.8753
+        },
+        {
+          "atoms_1based": [
+            13,
+            11,
+            12
+          ],
+          "equal_oxygen_charge_e": -0.8543
+        }
+      ],
+      "protonated_carboxyl_sites": [
+        {
+          "carboxyl_carbon_1based": 2,
+          "site": "terminal"
+        }
+      ],
+      "changed_bond_orders_1based": [
+        [
+          8,
+          9
+        ],
+        [
+          11,
+          12
+        ]
+      ],
+      "representation_decision": "consistent with equivalent GAFF carboxylate serialization;formal MOL graph remains chemistry authority",
+      "microstate_limit": "hydrogen citrate candidate protonates one terminal carboxyl;central/terminal protonation populations not established",
+      "QM_log_review": {
+        "last_printed_iteration": 580,
+        "last_printed_RMS_kcal_mol_A": 0.0022,
+        "final_gradient_numerically_certified": false,
+        "interpretation": "legacy trace prints every10iterations;last printed gradient need not be the final gradient. This does not establish failed convergence or satisfy a new explicit final-gradient gate."
+      },
+      "source_sha256": "166193106018101aa358ac4141c32733b4597f69c425ca2748b2a453336325c3",
+      "candidate_mol2_sha256": "a13c0b870e333c97c8dbd886e077ee1981265491cb8142ecdec7fc31a8af8d69",
+      "sqm_sha256": "6ab235ed3ef2b57374e0e51c8923c45da01951b78f257d590d52768d65ed36c8",
+      "charges_modified": false,
+      "MD_started": false,
+      "approved_for_full_buffer_MD": false
+    }
+  ],
+  "method": "read existing formal graphs,MOL2,QM logs;no new QM or MD",
+  "resolved": "carboxylate bond-order serialization and within-group charge symmetry for the existing candidates",
+  "remaining": [
+    "explicit final-gradient evidence before any revised charge assignment",
+    "protonation microstate/speciation choices",
+    "aqueous electrostatics,hydration and ion-pairing validation"
+  ],
+  "full_buffer_ready": false
+}

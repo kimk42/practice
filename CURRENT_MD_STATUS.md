@@ -6,6 +6,8 @@ PC8/16 retained completed native coordinate checkpoints after another environmen
 
 All43 prior MD checkpoints and six additional PC4 checkpoint files were verified before continuation. The complete local backup remains `cbaa-surface-20261028T191757Z`; it predates these new results. Do not stop live work to create a full backup.
 
+A verified selective snapshot at `/workspace/md-backups/pc-continuation-20261028T214651Z` adds the completed PC4 results and selected accepted QM/packing checkpoints without stopping live work; it is not a full simultaneous backup. Citrate's existing carboxylate serialization and equal oxygen-pair charges were reviewed without changing parameters. Its protonation microstates and aqueous accuracy remain unresolved; see research/CITRATE_REPRESENTATION_REVIEW_2026-10-28.md.
+
 ## Historical milestones
 
 At19:15UTC, the original PC8/16 jobs had stopped without restart coordinates. Revision3 packing recovery was launched then; its optimizer stopping-floor failure was subsequently superseded by revision4's conservative generator margin. Those original outputs remain preserved. See research/EXECUTION_CHECK_2026-10-28.md for that earlier snapshot.

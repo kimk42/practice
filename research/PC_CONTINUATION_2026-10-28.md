@@ -40,3 +40,5 @@ Packing v3의 precision0.0001은 Packmol 내부 목적함수 정지 바닥과 �
 cPBSzI 조성은 업로드된 SOP에 이미 있다. 현재 차단점은 문서 부재가 아니다. 기판 밀도/사슬 길이/말단 효과와 완화, 이후 코팅 수화·접합 구조를 검토해야 한다. 버퍼에서는 citrate/phosphate/azide 수화·이온쌍 거동과 pH7.4 종 분포 및 정수 이온 수를 일관되게 준비해야 한다. 인산염 수화물 미상은 명시적 농도 민감도로 유지할 수 있다. 이번 PC 준비에 추가 사용자 입력은 필수가 아니다.
 
 최종 전체 시스템은 아직 만들거나 실행하지 않았으며, 기존 코팅100ps·FXII baseline 결과를 새 PC 또는 cPBSzI 결과로 바꾸어 해석하지 않는다.
+
+진행 중 독립적으로 수행한 citrate 표기 검토는 `CITRATE_REPRESENTATION_REVIEW_2026-10-28.md`에 기록했다. 기존 카복실레이트 표기와 전하 대칭은 확인됐지만, hydrogen citrate의 terminal/central 양성자화 분율과 수용액 검증은 아직 미정이다.

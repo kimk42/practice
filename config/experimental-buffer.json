@@ -70,7 +70,7 @@
     "computed_charge_candidates": {
       "audit": "models/buffer-parameters/charge-candidate-audit.json",
       "method": "computed gas-phaseAM1-BCC/GAFF2 candidates,not experimental or validated aqueous parameters",
-      "citrate": "two protonation-state candidates pass quantum/net-charge/connectivity checks but remain unapproved",
+      "citrate": "existing carboxylate serialization and oxygen-pair charge equality reviewed;hydrogen-citrate candidate is one terminal-protonated microstate;final-gradient evidence and aqueous/microstate validation remain;no new charges or MD",
       "phosphate": "separate constrained-charge candidates preserve original outputs;both neutral ion-water EM/2ps numerical controls passed;physical aqueous validation pending",
       "azide": "excluded from calculation due prior typing warning",
       "MD_topologies_exported": true,
@@ -78,6 +78,7 @@
     },
     "charge_precision_audit": "models/buffer-parameters/charge-precision-audit.json",
     "phosphate_projection_audit": "models/buffer-parameters/phosphate-charge-projection-audit.json",
-    "phosphate_numerical_audit": "models/buffer-parameters/projected-phosphate-water-audit.json"
+    "phosphate_numerical_audit": "models/buffer-parameters/projected-phosphate-water-audit.json",
+    "citrate_representation_review": "models/buffer-parameters/citrate-representation-review.json"
   }
 }
