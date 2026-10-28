@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-10-28T21:42:12.397103+00:00",
+  "state_before": {
+    "state": "blocked_preserved",
+    "reason": "setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (528,) + inhomogeneous part."
+  },
+  "failed_trial_output_sha256": "ad2830c2afb1c354a1f8912886e2f4259d2f6a97f33c49770f145144df67ed17",
+  "last_accepted_checkpoint_sha256": "738447427d6c3b27cc959a1d38eb215950b46a89fd4bb4f47a9ccb9944d031d7",
+  "max_trial_atom_displacement_A": 0.5734083692330779,
+  "finding": "SQM completed SCF but analytic gradient for atom301 contains field overflow; no gradient value inferred and trial never accepted",
+  "decision": "Continue identical AM1 model from last accepted coordinates with optimizer-coordinate scale0.125; preserve physical RMS criterion0.0005",
+  "validation": "scripts/test_pc_sqm_lbfgs.py: scaled water minimum,finite-difference derivatives,overflow rejection all pass"
+}

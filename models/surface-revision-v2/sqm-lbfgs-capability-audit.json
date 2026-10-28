@@ -1,0 +1,18 @@
+{
+  "scope": "installed SQM analytic-gradient optimizer capability,not PC physical validation",
+  "water_gradient_abs_error_kcal_mol_A": 5.149320628561327e-06,
+  "carbon_gradient_abs_error_kcal_mol_A": 7.334977437878365e-06,
+  "gradient_sign_and_units_validated": true,
+  "water_final_RMS": 0.00016673067208966436,
+  "water_final_energy_kcal_mol": -59.22877016023995,
+  "water_matches_native_reference_within_kcal_mol": 0.0001,
+  "full_precision_accepted_coordinates_saved": true,
+  "engine_sha256": "5259dbadd1db14e6da504ffe4a25c04f3a51435dbc31f753b9bd8c82692d07cc",
+  "scipy_version": "1.17.1",
+  "regression_tests": "scripts/test_pc_sqm_lbfgs.py",
+  "tested": [
+    "water and methanol analytic gradients against Cartesian finite differences",
+    "water optimized minimum matches native SQM",
+    "exact coordinate serialization and final output correspondence"
+  ]
+}

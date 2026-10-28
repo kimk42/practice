@@ -1,0 +1,52 @@
+{
+  "checked_utc": "2026-10-28T21:38:55.229269+00:00",
+  "completed_cases": [
+    {
+      "case": "pc4-rho0.6-seed2026",
+      "atoms": 6336,
+      "EM_Fmax_kJ_mol_nm": 695.65234,
+      "NVT_ps": 2.0,
+      "NPT_ps": 20.0,
+      "NPT_frames": 401,
+      "temperature_mean_K": 300.7501694862843,
+      "density_first5ps_kg_m3": 604.7633286435644,
+      "density_last5ps_kg_m3": 643.9638822574258,
+      "density_change_between_windows_percent": 6.481966044764165,
+      "final_density_kg_m3": 649.337097,
+      "endpoints_verified": true,
+      "hashes": {
+        "nvt.cpt": "6b49ae27e110298348db686f071a8f0ce1ae1edad744bea0db827ad8fffe59f5",
+        "npt.cpt": "74fb8206a331b9bfcd33bc4c15fe6f993a26c28ce26138b3bf81c10107f24c04",
+        "npt.edr": "6b68e5bf95c7aa731c0f150707e9ddae8e1a68423cb42d2cb46ee906acc836aa",
+        "npt.tpr": "c8ffaa23749044f447cc1a06489e37a863117628d3439f6fb2731eaae091935d",
+        "result.json": "df9aac5dcd69a77ef8aecd60e399a4f2476d7f6f4ed5ef21852d5600735021d2"
+      }
+    },
+    {
+      "case": "pc4-rho0.6-seed2027",
+      "atoms": 6336,
+      "EM_Fmax_kJ_mol_nm": 542.35852,
+      "NVT_ps": 2.0,
+      "NPT_ps": 20.0,
+      "NPT_frames": 401,
+      "temperature_mean_K": 300.4817750074813,
+      "density_first5ps_kg_m3": 604.832857960396,
+      "density_last5ps_kg_m3": 638.5324961089109,
+      "density_change_between_windows_percent": 5.571727412785754,
+      "final_density_kg_m3": 645.545471,
+      "endpoints_verified": true,
+      "hashes": {
+        "nvt.cpt": "c4c6becba61ec4b0dee7c3ebaa925f6550592eb2b092faadccf047dacbdc9c8b",
+        "npt.cpt": "c2c3c52e1ee4426ee86bd21f41a2d663d925ca7136233ce9d46a38ae5167e41d",
+        "npt.edr": "0f91f01d3990dc82bbed3b12bac49d7ddd003182eb3775325ddc1a44c1a0ef63",
+        "npt.tpr": "1fac2f2a7be3929edc85ebd15d82ff6e49c936d5a8d7dc54036f7a92360389ee",
+        "result.json": "4e01b806914767d9fffa26c53ff150530729ac89f5c906cebbebeee721534f22"
+      }
+    }
+  ],
+  "scope": "PC4 OH-ended dry numerical controls, starting density0.6g/cm3;not coating or experimental-buffer systems",
+  "interpretation": "Both numerical protocols completed. Density drift remains;no equilibrium or physical-density approval.",
+  "independence": "two packing/velocity seeds;one common intrachain conformer",
+  "original_runs_modified": false,
+  "physical_approval": false
+}

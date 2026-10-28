@@ -1,0 +1,34 @@
+{
+  "early_maxcyc_stop_rejected_despite_geometry_converged_text": true,
+  "full_control_passed": true,
+  "coordinate_restart_passed": true,
+  "restart_energy_difference_kcal_mol_printed": 0.0,
+  "scope": "installed SQM capability and acceptance test on neutral water;not PC forcefield validation",
+  "early_stop": {
+    "iterations": 2,
+    "heat_of_formation_kcal_mol_printed": -55.4631,
+    "rms_gradient_kcal_mol_A_printed": 40.9067,
+    "gradient_print_rounding_upper_bound": 40.90675,
+    "gradient_gate_passed": false,
+    "coordinate_precision_A": 0.0001,
+    "output_sha256": "bf469e6b8b31de370589505a87288265cdb7bb3eceaf4897e5ad8598cfc3c8c3"
+  },
+  "full": {
+    "iterations": 9,
+    "heat_of_formation_kcal_mol_printed": -59.2288,
+    "rms_gradient_kcal_mol_A_printed": 0.0002,
+    "gradient_print_rounding_upper_bound": 0.00025,
+    "gradient_gate_passed": true,
+    "coordinate_precision_A": 0.0001,
+    "output_sha256": "7bbfd278cbc5e5054587e7004b5f100c4d183a03cfe95b82b36dd0cbfb5b984a"
+  },
+  "coordinate_restart": {
+    "iterations": 13,
+    "heat_of_formation_kcal_mol_printed": -59.2288,
+    "rms_gradient_kcal_mol_A_printed": 0.0002,
+    "gradient_print_rounding_upper_bound": 0.00025,
+    "gradient_gate_passed": true,
+    "coordinate_precision_A": 0.0001,
+    "output_sha256": "1603b3d0b53d7253022b62d9c1d75b91c8922d1d1354b5bc5af79849dc19b673"
+  }
+}

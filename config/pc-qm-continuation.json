@@ -1,0 +1,11 @@
+{
+  "routes": {"4": "native", "8": "lbfgs", "16": "lbfgs"},
+  "optimizer_coordinate_scale": {"8": 1.0, "16": 0.125},
+  "PC16_step_review": "The first unscaled L-BFGS trial caused an SQM gradient-print overflow and was rejected. Resume the last accepted coordinates with an eightfold smaller optimizer-coordinate length scale; do not infer missing gradient digits.",
+  "reason": "PC4 native optimization completed. PC8/16 workers were lost during environment interruption; continue from their completed native coordinate checkpoints with full-precision accepted-coordinate storage.",
+  "Hamiltonian": "SQM AM1, neutral singlet, SCF threshold 1e-10",
+  "gradient_RMS_gate_kcal_mol_A": 0.0005,
+  "validation": "models/surface-revision-v2/sqm-lbfgs-capability-audit.json",
+  "restart_limit": "Coordinates are retained; optimizer history and SCF state restart. This is not a bitwise restart.",
+  "physical_approval": false
+}

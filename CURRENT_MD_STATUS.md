@@ -1,6 +1,14 @@
 # Current MD status
 
-Latest check2026-10-28 19:15UTC: all previous workers had stopped;old running states were stale. PC8/16 stopped without convergence or restart coordinates at recorded iterations440/60 and have not been restarted. Revision2 packing yielded two independent-distance rejections,one timeout,one interruption and eight unstarted cases. Revision3 packing recovery was launched from the four saved pose files with tighter optimizer precision and unchanged distance criteria. See research/EXECUTION_CHECK_2026-10-28.md. All43 MD checkpoints remain unchanged;new verified local backup is cbaa-surface-20261028T191757Z. No new substrate or full FXII/cPBSzI MD started.
+Latest continuation2026-10-28: the environment became usable again. PC4 native AM1 optimization passed the explicit gradient gate; two6336-atom dry PC4 controls each completed EM,2ps NVT and20ps NPT. Independent energy/checkpoint checks confirm completion, but density increases by5.57–6.48% between the first/last5ps windows, so neither case is an equilibrated substrate. See [the continuation report](research/PC_CONTINUATION_2026-10-28.md) and `models/surface-revision-v2/pc4-dry-controls-interim-audit.json`.
+
+PC8/16 retained completed native coordinate checkpoints after another environment interruption. Continuation now uses SQM analytic gradients with L-BFGS and exact accepted-coordinate storage; the first PC16 unscaled trial was rejected for gradient-print overflow, and a reviewed smaller optimizer step is selected. The unchanged physical RMS threshold is0.0005kcal/mol/A. Interrupted packing resumes in new attempt directories from saved poses with the unchanged independent distance gate. `runs/pc-completion-status.json`, per-chain status files and live processes are the runtime authorities. The supervisor advances accepted cases through strict parameter review and the same short dry controls; scientific failures are held. Full coating/FXII/cPBSzI MD is still not started.
+
+All43 prior MD checkpoints and six additional PC4 checkpoint files were verified before continuation. The complete local backup remains `cbaa-surface-20261028T191757Z`; it predates these new results. Do not stop live work to create a full backup.
+
+## Historical milestones
+
+At19:15UTC, the original PC8/16 jobs had stopped without restart coordinates. Revision3 packing recovery was launched then; its optimizer stopping-floor failure was subsequently superseded by revision4's conservative generator margin. Those original outputs remain preserved. See research/EXECUTION_CHECK_2026-10-28.md for that earlier snapshot.
 
 Previous launch: PC8/PC16 whole-chain AM1-BCC assignments started at2026-10-28 16:26UTC. The stronger PC4 audit records ACPYPE's existing -0.004e raw-charge residual redistribution;old parameters are unchanged. See research/PC_LENGTH_PREPARATION_2026-10-28.md for launch details and scientific gates.
 
