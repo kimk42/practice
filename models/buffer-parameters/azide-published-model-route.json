@@ -1,5 +1,5 @@
 {
-  "state": "published azide model source chain identified;numeric model not approved",
+  "state": "user-uploaded primary sources resolve numeric charge/LJ/geometry;MD implementation and compatibility not approved",
   "reviewed_source": {
     "doi": "10.1021/acs.jpcb.5c02025",
     "pmcid": "PMC12359107",
@@ -10,38 +10,39 @@
       "SI references7-9,pageS20"
     ]
   },
-  "source_method": "LAMMPS/OPLS-AA DMSO simulations;separate older sources for azide bonded terms,charges andLJ",
+  "source_method": "2025 LAMMPS/OPLS-AA DMSO study cites2011/1998/1993;this citation chain does not supply a complete transferable flexible bonded model",
   "azide_original_sources": [
     {
-      "role": "bonded",
+      "role": "geometry/model reference cited by2025;not verified as a harmonic bonded-constant source",
       "doi": "10.1063/1.3598108",
       "title": "Vibrational relaxation of azide ions in liquid-to-supercritical water",
-      "numeric_parameters_verified": false
+      "numeric_parameters_verified": true
     },
     {
       "role": "charges",
       "doi": "10.1063/1.477170",
       "title": "Vibrational relaxation of azide ion in water: The role of intramolecular charge fluctuation and solvent-induced vibrational coupling",
-      "numeric_parameters_verified": false
+      "numeric_parameters_verified": true
     },
     {
       "role": "LJ",
       "doi": "10.1016/0009-2614(93)89156-c",
       "title": "Dynamical behavior of the azide ion in protic solvents",
-      "numeric_parameters_verified": false
+      "numeric_parameters_verified": false,
+      "values_repeated_in_inspected_1998_and_2011_sources": true
     }
   ],
-  "source_access_report": "research/proteins/modeling-evidence/azide-primary-access.json",
+  "source_access_report": "research/proteins/modeling-evidence/azide-uploaded-sources.json",
   "blocking_checks": [
-    "numeric original parameters not inspectable at attempted endpoints:proxy Tunnel connection403",
-    "determine source water-model and nonbonded mixing conventions before Amber/TIP3P use",
-    "verify complete bonded/charge/LJ definitions and net charge before numerical water controls",
-    "validate aqueous behavior rather than adopting DMSO-study success asTIP3P validation"
+    "choose and numerically verify rigid linear GROMACS implementation or obtain full supported flexible bonded parameters",
+    "validate Amber/TIP3P/JC-sodium interactions;source aqueous models use SPC",
+    "full cPBSzI additionally requires phosphate charge/speciation approval"
   ],
   "excluded_alternative": {
     "doi": "10.1021/acs.jpcb.5c04390",
     "reason": "azidoadamantane covalent azide probe,not free N3-;abstract inspected,not used as ion model"
   },
   "new_MD_parameters_exported": false,
-  "purchases_or_paid_access_used": false
+  "purchases_or_paid_access_used": false,
+  "candidate_report": "models/buffer-parameters/published-azide-candidate.json"
 }

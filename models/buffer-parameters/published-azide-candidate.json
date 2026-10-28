@@ -1,0 +1,43 @@
+{
+  "state": "published numerical candidate;not approved for matched-buffer MD",
+  "source_inventory_sha256": "e82355f9a01fe49fc3354a5d34f8e5917e69c98b43ae39c5bf4c178eff97fb2c",
+  "atomic_order": [
+    "terminal N",
+    "central N",
+    "terminal N"
+  ],
+  "partial_charges_e": [
+    -0.9215,
+    0.843,
+    -0.9215
+  ],
+  "charge_sum_e": -1.0,
+  "charge_source": "Morita1998 p5515 sectionIII.C (uploaded PDF page6);independently repeated Olschewski2011 p214504-7 (PDF page8)",
+  "equal_NN_distance_nm": 0.11626000000000002,
+  "linear_angle_deg": 180,
+  "geometry_source": "Morita1998 p5514 sectionIII.A;Olschewski2011 p214504-7",
+  "all_N_sites_LJ": {
+    "sigma_nm": 0.332,
+    "epsilon_kJ_mol_from_1998": 0.3550124,
+    "epsilon_kJ_mol_2011_rounded": 0.355,
+    "source": "Morita1998 p5518 sectionIV.A (PDF page9),citing Ferrario;Olschewski2011 p214504-7 corroborates",
+    "sigma_interpretation": "explicit sigma in1998 resolves ambiguous word radius in2011;not Rmin or half sigma",
+    "cross_mixing": "arithmetic sigma,geometric epsilon;Morita1998 equation29",
+    "LJ_at_sigma_kJ_mol": 0.0,
+    "LJ_at_minimum_kJ_mol": -0.3550124
+  },
+  "source_model_limits": [
+    "1998 uses flexible SPC solvent,rigid solute distance/angle SHAKE,and field-dependent solute charges;fixed charges alone do not reproduce that full model",
+    "2011 uses SPC water and Ewald;does not provide a transferable table of harmonic azide bond/angle constants in the inspected MD-method passage",
+    "2025 uses OPLS-AA in DMSO;SI explicitly says neither bonds nor angles constrained,without an explicit azide bonded-constant table in section2"
+  ],
+  "remaining_gates": [
+    "choose and verify a nonsingular GROMACS representation of rigid linear azide,or obtain a complete supported flexible model",
+    "water/counterion interaction validation for Amber/TIP3P and Joung-Cheatham sodium;Lorentz-Berthelot form matching alone is not physical validation",
+    "numerical import/energy/geometry checks before any coupled-buffer use"
+  ],
+  "original_1993_pdf_required_to_read_these_repeated_values": false,
+  "harmonic_bond_or_angle_constants_invented": false,
+  "MD_topology_exported": false,
+  "approved_for_MD": false
+}

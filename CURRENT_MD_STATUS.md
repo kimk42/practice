@@ -1,6 +1,6 @@
 # Current MD status
 
-Latest verified state: both100ps controls and18 short pilots completed. FXII100ps backbone/SG geometry QA passed the stated numerical checks,without claiming native/equilibrium validation. Separate checkpointed10ps near-interface continuations for coated/bare PC are completed;see runs/paired-interface-followup-status.json. No MD process is currently active (verified at this review). Full cPBSzI is not approved: azide numeric source/compatibility and polyatomic-charge/speciation gates remain. Earlier in-progress descriptions below are retained as historical milestones.
+Latest verified state: both100ps controls and18 short pilots completed. FXII100ps backbone/SG geometry QA passed the stated numerical checks,without claiming native/equilibrium validation. Separate checkpointed10ps near-interface continuations for coated/bare PC are completed;see runs/paired-interface-followup-status.json. No MD process is currently active (verified at this review). Full cPBSzI is not approved: azide implementation/compatibility and polyatomic-charge/speciation gates remain. Earlier in-progress descriptions below are retained as historical milestones.
 
 ## Completed
 
@@ -85,3 +85,9 @@ The four requested hosts are now in the enforced runtime policy. OpenAlex and Se
 ## Repository access verified at revision17
 
 The iris.unimore.it host is now allowed in the enforced runtime policy. A browser-user-agent request returned200 and the actual repository metadata was read. It explicitly states “Non ci sono file associati a questo prodotto.” (no attached files). The green-OA index record therefore did not yield an original PDF or numeric LJ values. No further domain addition is presently justified. Azide source-value/water-model compatibility and phosphate charge-precision/physical-validation gates remain open. No MD process was active and no calculation/checkpoint was reset. See research/proteins/modeling-evidence/azide-repository-access-revision17.json.
+
+## Uploaded azide papers: numeric source gate resolved
+
+User supplied1998/2011/2025 PDFs;originals and complete text extraction are preserved privately in ignored raw/. Inspected parameter/method passages and visually verified1998 p5515 and2011 p214504-7. Published terminal/central charges are -0.9215/+0.8430e (sum -1),equal NN distance0.11626nm,and all-N LJ sigma0.332nm/epsilon0.3550124kJ/mol (1998 conversion;2011 rounds to0.355). Sigma is explicitly identified in1998,so2011 word“radius” is not interpreted as half-sigma. Units and LJ landmarks passed arithmetic checks. Values from1993 are independently repeated by the two uploaded primary studies;that original PDF is not required to read these values.
+
+Important correction:2011 is a geometry/model reference,not an established source of transferable harmonic azide force constants. The1998 bath simulation constrains linear solute geometry and includes field-dependent charges. The2025 DMSO SI says no bond/angle constraints but does not list a complete flexible azide bonded table in section2. No arbitrary harmonic constants or polarizable-to-fixed-charge equivalence was assumed. Next gate:choose/verify a nonsingular linear-ion GROMACS representation and assess aqueous Amber/TIP3P/JC compatibility. No topology exported or new MD started;phosphate and speciation gates also remain. See models/buffer-parameters/published-azide-candidate.json.

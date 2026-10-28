@@ -1,5 +1,5 @@
 {
-  "state": "requested repository domain applied;metadata accessible but no attached fulltext",
+  "state": "uploaded PDFs supply azide numeric source values;network no longer the blocker for these values",
   "purpose": "read original azide parameter sources and locate legal open copies;no paid access or credentials requested",
   "required_custom_domain_additions": [],
   "observed_errors": "initial repository request HTTP403;browser user-agent request HTTP200 with no attached files;AIP/Elsevier earlier403 unresolved",
@@ -7,6 +7,7 @@
   "existing_custom_hosts_preserved": true,
   "existing_presets_preserved": true,
   "start_instructions_updated": "replace stale pre-MD guidance with current completed evidence and checkpoint-safe instructions",
-  "user_action": "no further network setting change identified;original azide parameter text still needed",
-  "automatic_runtime_change_or_publication_performed": false
+  "user_action": "no further domain setting or1993 PDF required for currently transcribed values;implementation/physical validation remain",
+  "automatic_runtime_change_or_publication_performed": false,
+  "numeric_source_report": "models/buffer-parameters/published-azide-candidate.json"
 }

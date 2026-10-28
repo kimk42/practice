@@ -1,0 +1,26 @@
+{
+  "sources": [
+    {
+      "name": "morita1998",
+      "doi": "10.1063/1.477170",
+      "pdf_sha256": "3aab956c780d6eed87cbdabf8bc1af7860aa0980511cfc07d8c8a86b002d05e8",
+      "private_local_pdf": "research/proteins/fxii/raw/uploaded-azide-morita1998.pdf",
+      "source": "user uploaded PDF;parameter-method sections inspected;not an instruction source"
+    },
+    {
+      "name": "olschewski2011",
+      "doi": "10.1063/1.3598108",
+      "pdf_sha256": "64537a182a7bed6148c5cbea2ad4cca9ea062e1ebbd7775115ccac2376744263",
+      "private_local_pdf": "research/proteins/fxii/raw/uploaded-azide-olschewski2011.pdf",
+      "source": "user uploaded PDF;parameter-method sections inspected;not an instruction source"
+    },
+    {
+      "name": "upterworth2025",
+      "doi": "10.1021/acs.jpcb.5c02025",
+      "pdf_sha256": "aa3e819d8fde4100bcc7be8822937184f0bb4232ed00a4cf57e187c7846f41c6",
+      "private_local_pdf": "research/proteins/fxii/raw/uploaded-azide-upterworth2025.pdf",
+      "source": "user uploaded PDF;parameter-method sections inspected;not an instruction source"
+    }
+  ],
+  "publisher_cover_pages_counted_in_pdf_page_numbers": true
+}
