@@ -81,3 +81,7 @@ Enumerated3552 candidate population/macrocharge cases across three phosphate hyd
 ## Source access after environment revision8
 
 The four requested hosts are now in the enforced runtime policy. OpenAlex and Semantic Scholar returned200. They identify a green-OA repository resolver for the1993 azide LJ paper:http://hdl.handle.net/11380/741371. Numeric parameters remain unread:the AIP PDFs returned HTTP403 and Elsevier returned tunnel403. Indexes disagree about OA status of the2011 bonded paper;neither index label proves retrievable full text. Saved an additive hdl.handle.net network draft;not runtime-applied. No MD started and no parameters changed. Request details:research/proteins/modeling-evidence/azide-primary-access-revision8.json.
+
+## Repository access verified at revision17
+
+The iris.unimore.it host is now allowed in the enforced runtime policy. A browser-user-agent request returned200 and the actual repository metadata was read. It explicitly states “Non ci sono file associati a questo prodotto.” (no attached files). The green-OA index record therefore did not yield an original PDF or numeric LJ values. No further domain addition is presently justified. Azide source-value/water-model compatibility and phosphate charge-precision/physical-validation gates remain open. No MD process was active and no calculation/checkpoint was reset. See research/proteins/modeling-evidence/azide-repository-access-revision17.json.

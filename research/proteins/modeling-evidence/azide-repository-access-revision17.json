@@ -1,0 +1,13 @@
+{
+  "runtime_revision": 17,
+  "network_policy": "enforced",
+  "host_allowed": true,
+  "url": "https://iris.unimore.it/handle/11380/741371",
+  "parameters_retrieved": false,
+  "status": 200,
+  "user_agent": "Mozilla/5.0",
+  "response_bytes": 60454,
+  "response_sha256": "c350d9f7cff8f08f9db254d3bcddb0a5750e0147af5f0289af1547d61ce0ecad",
+  "repository_message": "Non ci sono file associati a questo prodotto.",
+  "interpretation": "repository metadata is accessible but lists no attached files;OA index label does not supply numeric parameters"
+}

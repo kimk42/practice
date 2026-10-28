@@ -1,14 +1,12 @@
 {
-  "state": "original four domains applied in runtime revision8;additional discovered repository resolver saved as draft",
+  "state": "requested repository domain applied;metadata accessible but no attached fulltext",
   "purpose": "read original azide parameter sources and locate legal open copies;no paid access or credentials requested",
-  "required_custom_domain_additions": [
-    "hdl.handle.net"
-  ],
-  "observed_errors": "AIP PDF HTTP403;Elsevier tunnel403 despite allowed host;no original numeric parameters recovered",
-  "runtime_observation": "current,enforced revision8;OpenAlex and Semantic Scholar requests returned200",
+  "required_custom_domain_additions": [],
+  "observed_errors": "initial repository request HTTP403;browser user-agent request HTTP200 with no attached files;AIP/Elsevier earlier403 unresolved",
+  "runtime_observation": "revision17 current and enforced;iris.unimore.it HTTP200 with browser user-agent",
   "existing_custom_hosts_preserved": true,
   "existing_presets_preserved": true,
   "start_instructions_updated": "replace stale pre-MD guidance with current completed evidence and checkpoint-safe instructions",
-  "user_action": "review/save added hdl.handle.net domain in environment settings and publish;then follow repository resolver",
+  "user_action": "no further network setting change identified;original azide parameter text still needed",
   "automatic_runtime_change_or_publication_performed": false
 }
