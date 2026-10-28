@@ -1,0 +1,28 @@
+[
+  {
+    "source": "models/analysis/initial-coating-density.csv",
+    "sha256": "2e64018a9e369b3adc8bda54b1a375b0837b759afe2619841cd3b116b0010068",
+    "PC_mass_5_to_95_percent_interval_bin_edges_nm": [
+      2.6,
+      5.3
+    ],
+    "PC_mean_in_interval_kg_m3": 610.9528888888889,
+    "water_mean_in_same_interval_kg_m3": 416.3717037037037,
+    "coating_mass_centroid_z_nm": 4.925798850832543,
+    "PC_mass_centroid_z_nm": 3.9445430176288707,
+    "scope": "xy/time-averaged profile descriptor;not local porosity,bulk density or an equilibrium/convergence test"
+  },
+  {
+    "source": "models/analysis/coating100ps-density.csv",
+    "sha256": "938b89fdba046227e4f3682160c62d12df31c79c4619a160edb3c819695c11a1",
+    "PC_mass_5_to_95_percent_interval_bin_edges_nm": [
+      2.7,
+      5.3
+    ],
+    "PC_mean_in_interval_kg_m3": 631.5881538461538,
+    "water_mean_in_same_interval_kg_m3": 421.6696153846154,
+    "coating_mass_centroid_z_nm": 4.875361498091241,
+    "PC_mass_centroid_z_nm": 3.9516260368894183,
+    "scope": "xy/time-averaged profile descriptor;not local porosity,bulk density or an equilibrium/convergence test"
+  }
+]

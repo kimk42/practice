@@ -1,0 +1,7 @@
+[ atomtypes ]
+;name   bond_type     mass     charge   ptype   sigma         epsilon       Amb
+PBUF_o PBUF_o 16.00000 0.00000 A 3.04812e-01 6.12119e-01
+PBUF_p5 PBUF_p5 30.97000 0.00000 A 3.69402e-01 9.60228e-01
+PBUF_oh PBUF_oh 16.00000 0.00000 A 3.24287e-01 3.89112e-01
+PBUF_ho PBUF_ho 1.00800 0.00000 A 5.37925e-02 1.96648e-02
+

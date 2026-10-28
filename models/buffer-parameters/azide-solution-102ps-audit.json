@@ -1,0 +1,80 @@
+{
+  "state": "checkpoint continuation and descriptive solution diagnostics completed",
+  "duration_total_ps": 102,
+  "continuation_duration_ps": 100,
+  "sampled_frames": 2001,
+  "temperature_mean_K": 300.04787920139927,
+  "temperature_second_half_mean_K": 300.3587985794206,
+  "maximum_NN_error_nm": 2.2242420885665304e-07,
+  "maximum_terminal_symmetry_error_nm": 2.7299267399865943e-07,
+  "water_RDF_windows": {
+    "terminal_n-first": {
+      "time_window_ps": [
+        2,
+        52
+      ],
+      "peak_search_interval_nm": [
+        0.2,
+        0.45
+      ],
+      "peak_r_nm": 0.27,
+      "peak_g_r": 3.051694,
+      "coordination_at_0_35nm": 4.012
+    },
+    "terminal_n-second": {
+      "time_window_ps": [
+        52,
+        102
+      ],
+      "peak_search_interval_nm": [
+        0.2,
+        0.45
+      ],
+      "peak_r_nm": 0.27,
+      "peak_g_r": 2.964215,
+      "coordination_at_0_35nm": 4.024
+    },
+    "central_n-first": {
+      "time_window_ps": [
+        2,
+        52
+      ],
+      "peak_search_interval_nm": [
+        0.2,
+        0.45
+      ],
+      "peak_r_nm": 0.34,
+      "peak_g_r": 2.478369,
+      "coordination_at_0_35nm": 4.328
+    },
+    "central_n-second": {
+      "time_window_ps": [
+        52,
+        102
+      ],
+      "peak_search_interval_nm": [
+        0.2,
+        0.45
+      ],
+      "peak_r_nm": 0.35,
+      "peak_g_r": 2.43089,
+      "coordination_at_0_35nm": 4.219
+    }
+  },
+  "terminal_N_to_Na_min_distance_range_nm": [
+    0.604543,
+    2.496214
+  ],
+  "fraction_saved_frames_below_0_35nm": 0.0,
+  "contact_threshold_scope": "0.35nm is a screening definition;not a validated ion-pair boundary or equilibrium probability",
+  "concentration_scope": "one ion pair in27nm3,about61.5mM each;not experimental3.08mM azide or full cPBSzI",
+  "sampling_limits": "one ion pair/trajectory;two50ps windows share their boundary frame;RDFs are descriptive,not independent replicates or a convergence proof",
+  "physical_force_field_approved": false,
+  "full_cpbszi_ready": false,
+  "source_sha256": {
+    "nvt.tpr": "a864ba4d2464596e88b075eff7d1aba18f3c1a9787231535187eae46371720fa",
+    "nvt.cpt": "6527572f42348b395696b8999af7420c244a72b05e3d8fd58c19a97281e48d47",
+    "nvt.part0002.trr": "88a6019742e330bea987bf1c3ec41f23dedb3d5a62aa635d9813d411911aed8b",
+    "source.cpt": "430775148b68841b6ceabe47246a1c2e6467b7f58789cff7b2ff8bbfc1a7c28e"
+  }
+}

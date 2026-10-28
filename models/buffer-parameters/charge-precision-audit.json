@@ -75,7 +75,7 @@
     }
   ],
   "interpretation": "phosphate net-charge residual is consistent with3-decimal SQM atomic-charge export propagated into charge-conserving BCC;not an independently verified high-precision electronic charge set",
-  "action": "preserve originals;recover higher-precision supported output or use a documented independently validated charge model before accepting phosphate topology",
+  "action": "preserve originals;higher-precision output or documented constrained-charge projection are distinct permissible numerical routes;physical validation remains separate",
   "manual_renormalization_applied": false,
   "MD_topology_exported": false,
   "full_buffer_ready": false,
@@ -87,5 +87,7 @@
     "interpretation": "inspected public upstream routine corroborates3-decimal output;not asserted as the exact source revision of bundled executable",
     "higher_precision_runtime_flag_in_this_routine": false,
     "executable_modified": false
-  }
+  },
+  "derived_projection_audit": "models/buffer-parameters/phosphate-charge-projection-audit.json",
+  "scope": "this audit traces unchanged original outputs;separate projected candidates are not recovered QM digits"
 }

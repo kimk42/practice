@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "purpose": "Decide which existing results can be reused and which changed models require new calculations",
+  "rules": [
+    {"change": "documentation or scientific interpretation", "action": "update report;no trajectory rerun", "reuse": "all unchanged numerical evidence"},
+    {"change": "analysis definition such as contact cutoff or profile reference", "action": "reanalyze saved trajectory into a separate analysis version", "limit": "events between unsaved frames cannot be recovered by reanalysis"},
+    {"change": "same model and protocol,longer observation", "action": "extend TPR and continue verified checkpoint;preserve velocities/state", "reuse": "existing trajectory is the preceding segment"},
+    {"change": "partial charges,LJ,bonded parameters or chemical connectivity", "action": "new model/version/output directory;validate topology and starting geometry;minimize/reequilibrate under new Hamiltonian as appropriate", "reuse": "old coordinates may seed the new model after checks;old statistics remain tied to old Hamiltonian"},
+    {"change": "coating morphology,chain length,graft/crosslink graph or protein conformer", "action": "rebuild affected coordinates/topology/placement/solvation;new EM and relaxation", "reuse": "unaffected parameters and independent control results retain their original scope"},
+    {"change": "buffer composition,speciation or counterion inventory", "action": "new mixture inventory and strict charge/clash/preprocessing checks;new EM/relaxation", "reuse": "legacy neutralizing-ion pilots remain separate baselines"},
+    {"change": "temperature or pressure target", "action": "new protocol version and equilibration;EM only if geometry/force changes warrant it", "reuse": "do not combine ensemble statistics without an explicit valid method"}
+  ],
+  "preservation": "No reset or overwrite of completed runs;record source coordinate/checkpoint and parameter hashes",
+  "current_decision": "retain all existing pilots;new phosphate controls use projected charges in separate systems;azide102ps continues the unchanged accepted2ps model"
+}

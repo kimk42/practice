@@ -1,0 +1,174 @@
+{
+  "state": "explicit constrained-charge candidates prepared;original quantum/BCC files preserved",
+  "method": "minimum equal-weight squared change with integer net charge and retained source-equivalence groups",
+  "precision_note": "12 decimal serialization is arithmetic;no claim of recovering hidden QM precision",
+  "species": [
+    {
+      "species": "dihydrogen_phosphate-",
+      "source_file": "runs/buffer-charge-candidates-g5tzm8pz/dihydrogen_phosphate-/candidate.mol2",
+      "source_sha256": "2f7037361f7fd86e21509b7c85fef13665677e22527dee2e38f3b16ab12faaca",
+      "source_QM_sha256": "947d76a6b362d2b729e4cd19c2da5f87dc30f5978888da290f1e31d136d63af1",
+      "expected_integer_charge_e": -1,
+      "original_sum_e": "-1.001000",
+      "projected_sum_e": "-1.000000000000",
+      "equivalence_groups_1based": [
+        [
+          1,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "equivalence_basis": "phosphate nonprotonated O resonance equivalence;OH O and H groups;unique P;source BCC already equal within groups",
+      "least_squares_equal_shift_e": "0.0001428571428571428571428571429",
+      "maximum_absolute_change_e": "0.000142857143",
+      "charges": [
+        {
+          "atom_id": 1,
+          "name": "O1",
+          "type": "o",
+          "original_e": "-0.849500",
+          "projected_e": "-0.849357142857"
+        },
+        {
+          "atom_id": 2,
+          "name": "P1",
+          "type": "p5",
+          "original_e": "1.426800",
+          "projected_e": "1.426942857142"
+        },
+        {
+          "atom_id": 3,
+          "name": "O2",
+          "type": "o",
+          "original_e": "-0.849500",
+          "projected_e": "-0.849357142857"
+        },
+        {
+          "atom_id": 4,
+          "name": "O3",
+          "type": "oh",
+          "original_e": "-0.784400",
+          "projected_e": "-0.784257142857"
+        },
+        {
+          "atom_id": 5,
+          "name": "O4",
+          "type": "oh",
+          "original_e": "-0.784400",
+          "projected_e": "-0.784257142857"
+        },
+        {
+          "atom_id": 6,
+          "name": "H1",
+          "type": "ho",
+          "original_e": "0.420000",
+          "projected_e": "0.420142857143"
+        },
+        {
+          "atom_id": 7,
+          "name": "H2",
+          "type": "ho",
+          "original_e": "0.420000",
+          "projected_e": "0.420142857143"
+        }
+      ],
+      "geometry_connectivity_atom_types_unchanged": true,
+      "aqueous_parameters_validated": false,
+      "derived_file": "runs/phosphate-charge-projection-v1/dihydrogen_phosphate-.mol2",
+      "derived_sha256": "7254a4e9daf505f98a04a133eae1e0e8730d9aab4e12b663ff47cb7ad374f3ba"
+    },
+    {
+      "species": "hydrogen_phosphate2-",
+      "source_file": "runs/buffer-charge-candidates-g5tzm8pz/hydrogen_phosphate2-/candidate.mol2",
+      "source_sha256": "abcb7cc06d38ba1552733cd3a7c5e43ea86a78316c134463d2bf6e1050ced288",
+      "source_QM_sha256": "beb624f8588f5a5cb73485cfe8b6d67026779f1505dd686eec0ec1c24f2a51cc",
+      "expected_integer_charge_e": -2,
+      "original_sum_e": "-2.001000",
+      "projected_sum_e": "-2.000000000000",
+      "equivalence_groups_1based": [
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          2
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ]
+      ],
+      "equivalence_basis": "phosphate nonprotonated O resonance equivalence;OH O and H groups;unique P;source BCC already equal within groups",
+      "least_squares_equal_shift_e": "0.0001666666666666666666666666667",
+      "maximum_absolute_change_e": "0.000166666667",
+      "charges": [
+        {
+          "atom_id": 1,
+          "name": "O1",
+          "type": "o",
+          "original_e": "-0.956500",
+          "projected_e": "-0.956333333333"
+        },
+        {
+          "atom_id": 2,
+          "name": "P1",
+          "type": "p5",
+          "original_e": "1.319900",
+          "projected_e": "1.320066666665"
+        },
+        {
+          "atom_id": 3,
+          "name": "O2",
+          "type": "o",
+          "original_e": "-0.956500",
+          "projected_e": "-0.956333333333"
+        },
+        {
+          "atom_id": 4,
+          "name": "O3",
+          "type": "o",
+          "original_e": "-0.956500",
+          "projected_e": "-0.956333333333"
+        },
+        {
+          "atom_id": 5,
+          "name": "O4",
+          "type": "oh",
+          "original_e": "-0.815400",
+          "projected_e": "-0.815233333333"
+        },
+        {
+          "atom_id": 6,
+          "name": "H1",
+          "type": "ho",
+          "original_e": "0.364000",
+          "projected_e": "0.364166666667"
+        }
+      ],
+      "geometry_connectivity_atom_types_unchanged": true,
+      "aqueous_parameters_validated": false,
+      "derived_file": "runs/phosphate-charge-projection-v1/hydrogen_phosphate2-.mol2",
+      "derived_sha256": "112ed4c85f83a79c52d73500d3c83251207dc785df25fbd137e6f41e3175113f"
+    }
+  ],
+  "MD_topologies_exported": false,
+  "physical_force_field_approved": false,
+  "remaining": [
+    "review phosphate resonance/type representation and bonded coverage",
+    "numerical solute-water and aqueous ion-pairing checks",
+    "pH populations/ionic-condition model or explicit sensitivity assumptions"
+  ]
+}

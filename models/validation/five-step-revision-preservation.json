@@ -1,0 +1,12 @@
+{
+  "previous_checkpoints_checked": 38,
+  "all_sha256_match": true,
+  "original_phosphate_charge_files_unchanged": true,
+  "water_reference_rounding_max_half_molecule_check": "passed",
+  "recipe_hash_matches_manifest": true,
+  "new_MD_directories": [
+    "runs/ph1-projected-water-control",
+    "runs/ph2-projected-water-control",
+    "runs/azide-rigid-water-102ps"
+  ]
+}

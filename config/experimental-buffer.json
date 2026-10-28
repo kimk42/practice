@@ -57,24 +57,27 @@
     ],
     "current_running_controls": "none;prior300K neutralizing-ion baseline controls/follow-ups completed",
     "monovalent_ion_candidate": "models/buffer-parameters/jc-tip3p-monovalent.itp;published JC/TIP3P Na/Cl/I converted and neutral ion-water EM passed;not yet applied to protein/coating baselines",
-    "polyatomic_candidates": "models/buffer-parameters/polyatomic-species-audit.json;formal graphs only,no partial charges or final speciation",
+    "polyatomic_candidates": "formal input graphs plus separately tracked computed/projected candidates;no final pH populations",
     "latest_polyatomic_audit": {
       "report": "models/buffer-parameters/bonded-coverage-audit.json",
-      "azide": "blocked:Antechamber warns assigned bond types may be wrong",
+      "azide": "automatic Antechamber route retained as failed historical branch;published rigid route passed2ps and102ps numerical/solution diagnostics",
       "citrate_and_phosphate": "input/typed bond-order representation changes require chemical/charge-model review",
       "partial_charges_approved": false,
       "full_buffer_simulation_started": false
     },
     "analytical_preparation_manifest": "config/cpbszi-system-preparation.json",
-    "published_azide_route": "models/buffer-parameters/azide-published-model-route.json;source chain found,numeric and TIP3P compatibility validation pending;public source requests received proxy403",
+    "published_azide_route": "models/buffer-parameters/azide-solution-102ps-audit.json;source and rigid implementation resolved;aqueous physical-transfer validation pending",
     "computed_charge_candidates": {
       "audit": "models/buffer-parameters/charge-candidate-audit.json",
       "method": "computed gas-phaseAM1-BCC/GAFF2 candidates,not experimental or validated aqueous parameters",
       "citrate": "two protonation-state candidates pass quantum/net-charge/connectivity checks but remain unapproved",
-      "phosphate": "-0.001e residual traced through3-decimal SQM atomic output and BCC input/output sums;no inferred digits,renormalization or accepted topology",
+      "phosphate": "separate constrained-charge candidates preserve original outputs;both neutral ion-water EM/2ps numerical controls passed;physical aqueous validation pending",
       "azide": "excluded from calculation due prior typing warning",
-      "MD_topologies_exported": false
+      "MD_topologies_exported": true,
+      "export_scope": "unapproved projected phosphate candidates for isolated numerical controls only"
     },
-    "charge_precision_audit": "models/buffer-parameters/charge-precision-audit.json"
+    "charge_precision_audit": "models/buffer-parameters/charge-precision-audit.json",
+    "phosphate_projection_audit": "models/buffer-parameters/phosphate-charge-projection-audit.json",
+    "phosphate_numerical_audit": "models/buffer-parameters/projected-phosphate-water-audit.json"
   }
 }

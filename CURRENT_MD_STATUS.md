@@ -1,6 +1,6 @@
 # Current MD status
 
-Latest verified state: both100ps controls and18 short pilots completed. FXII100ps backbone/SG geometry QA passed the stated numerical checks,without claiming native/equilibrium validation. Separate checkpointed10ps near-interface continuations for coated/bare PC are completed;see runs/paired-interface-followup-status.json. No MD process is currently active (verified at this review). Full cPBSzI is not approved: azide implementation/compatibility and polyatomic-charge/speciation gates remain. Earlier in-progress descriptions below are retained as historical milestones.
+Latest verified state: design-review follow-up completed through five bounded stages. PC8/PC16 geometries prepared;water-referenced cPBSzI count alternatives replace full-box planning;two separately charge-projected phosphate candidates passed EM/2ps numerical controls;unchanged rigid azide continued from2ps to102ps with hydration/distance diagnostics. These are not physical forcefield or adsorption approvals. Existing coating/FXII controls and all38 pre-existing checkpoints are preserved. See research/FIVE_STEP_REVISION_2026-10-28.md and config/model-revision-policy.json. Earlier descriptions below are historical milestones.
 
 ## Completed
 
@@ -101,3 +101,7 @@ A separate3nm cubic system with875 TIP3P waters,one JC Na andone azide (2631 coo
 Preparation initially failed because atomtype directives followed a molecule definition;split type/molecule includes corrected the order without maxwarn. A recovery command used a wrong cwd and accidentally replaced the initial failed-grompp stdout file before archival;that failure is recorded in representation provenance and conversation. No MD/checkpoint existed then. Successful preparation/run logs,trajectory andcheckpoint are retained under runs/azide-rigid-water-control. All pre-existing coating/protein trajectories/checkpoints remained untouched.
 
 Candidate ITP files and source/numerical audits are under models/buffer-parameters/azide-rigid-*. The physical model is NOT approved for full cPBSzI:hydration/ion-pair transfer to TIP3P/JC sodium and phosphate charge precision/speciation remain open. No full-buffer or new FXII calculation started.
+
+## Five-step design revision completed
+
+See research/FIVE_STEP_REVISION_2026-10-28.md for exact results,water-reference assumptions,charge projection,checkpoint continuation and remaining scientific limitations. New phosphate simulations and azide continuation have completed;no full cPBSzI/FXII or new surface MD has started.

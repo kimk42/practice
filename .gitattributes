@@ -9,3 +9,4 @@
 # Preserve generated force-field artifacts byte-for-byte for SHA256 provenance.
 models/forcefield/*.itp whitespace=-blank-at-eol
 models/forcefield/*.mol2 whitespace=-blank-at-eol
+models/buffer-parameters/projected-phosphate-candidates/*.itp whitespace=-blank-at-eol,-blank-at-eof

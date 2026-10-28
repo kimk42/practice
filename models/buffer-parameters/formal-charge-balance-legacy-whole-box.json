@@ -1,0 +1,85 @@
+{
+  "state": "formal integer bookkeeping only; no mixture selected",
+  "source_manifest_sha256": "91f1aec09f81f8f8f8b9f7450727a868dccb0cc76612e13b5b5127fe0fa88753",
+  "restricted_species_basis": [
+    "Cit3-",
+    "HCit2-",
+    "HPO4²-",
+    "H2PO4-",
+    "N3-"
+  ],
+  "scope": "all integer partitions within this restricted candidate basis; not exhaustive acid-base chemistry or predicted pH7.4 speciation",
+  "macrocharge_basis": "0 for neutral coating-only; +6 for the existing provisional FXII topology",
+  "sodium_policy": "conditional total for global neutrality; stock-counterion versus buffer adjustment policy remains unselected",
+  "alternatives": [
+    {
+      "phosphate_hydration_hypothesis": "anhydrous",
+      "phosphate_total": 27,
+      "macromolecule_formal_charge_e": 0,
+      "enumerated_population_pairs": 672,
+      "neutralizing_total_Na_count_range": [
+        361,
+        411
+      ],
+      "all_formal_charge_residuals_e": 0
+    },
+    {
+      "phosphate_hydration_hypothesis": "anhydrous",
+      "phosphate_total": 27,
+      "macromolecule_formal_charge_e": 6,
+      "enumerated_population_pairs": 672,
+      "neutralizing_total_Na_count_range": [
+        355,
+        405
+      ],
+      "all_formal_charge_residuals_e": 0
+    },
+    {
+      "phosphate_hydration_hypothesis": "monohydrate",
+      "phosphate_total": 23,
+      "macromolecule_formal_charge_e": 0,
+      "enumerated_population_pairs": 576,
+      "neutralizing_total_Na_count_range": [
+        357,
+        403
+      ],
+      "all_formal_charge_residuals_e": 0
+    },
+    {
+      "phosphate_hydration_hypothesis": "monohydrate",
+      "phosphate_total": 23,
+      "macromolecule_formal_charge_e": 6,
+      "enumerated_population_pairs": 576,
+      "neutralizing_total_Na_count_range": [
+        351,
+        397
+      ],
+      "all_formal_charge_residuals_e": 0
+    },
+    {
+      "phosphate_hydration_hypothesis": "dihydrate",
+      "phosphate_total": 21,
+      "macromolecule_formal_charge_e": 0,
+      "enumerated_population_pairs": 528,
+      "neutralizing_total_Na_count_range": [
+        355,
+        399
+      ],
+      "all_formal_charge_residuals_e": 0
+    },
+    {
+      "phosphate_hydration_hypothesis": "dihydrate",
+      "phosphate_total": 21,
+      "macromolecule_formal_charge_e": 6,
+      "enumerated_population_pairs": 528,
+      "neutralizing_total_Na_count_range": [
+        349,
+        393
+      ],
+      "all_formal_charge_residuals_e": 0
+    }
+  ],
+  "partial_charges_used": false,
+  "MD_topology_exported": false,
+  "ready_for_grompp": false
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "species": "dihydrogen_phosphate-",
+    "state": "neutral ion-water EM and2ps numerical control passed",
+    "duration_ps": 2,
+    "finite_energy_frames": 41,
+    "temperature_mean_K": 295.08670641463414,
+    "EM_Fmax_kJ_mol_nm": 848.48987,
+    "net_solute_charge_e": -1,
+    "sodium_ions": 1,
+    "charge_precision_policy": "GROMACS atom charges restored verbatim from projected mol2 after matching names/order;no second charge fit",
+    "typing_policy": "previously typed GAFF2 p5/o/oh/ho topology preserved;nonprotonated O are equivalent resonance sites",
+    "parameter_generation": "parmchk2 -s gaff2;tleap leaprc.gaff2;ACPYPE amb2gmx;source files preserved",
+    "tleap_warnings_reviewed": "two warnings that isolated anion is not neutral;expected integer charge and explicitly neutral MD box",
+    "source_mol2_sha256": "7254a4e9daf505f98a04a133eae1e0e8730d9aab4e12b663ff47cb7ad374f3ba",
+    "checkpoint_sha256": "89ab5ae814a4c962f60ebd0887a9e35b2a202225c42b9b26d9ec9c7c18bae661",
+    "prmtop_sha256": "5001b1bbc9075dcb8fb3a811209d9913ea1d99ec72408fc1a237a90c7e8091d0",
+    "types_sha256": "7cd5a37ad8aea3dcc1420c34ce2b0688365f8d890e2482e1166fda000db81d35",
+    "itp_sha256": "081ac643a5776f893610284fe97e80557b007e0d1bf32da972cc4b6cc0757cfb",
+    "run_directory": "runs/ph1-projected-water-control",
+    "physical_force_field_approved": false,
+    "full_buffer_ready": false,
+    "saved_frame_geometry": {
+      "frames": 41,
+      "bond_length_range_nm": [
+        0.09724988692322309,
+        0.1603391761705134
+      ],
+      "criterion": "all defined OH/PO bonds stay within broad0.07\u20130.20nm numerical envelope;not an equilibrium bond-distribution validation",
+      "trajectory_sha256": "c1fed0d8ee4529fba8485ce880226690113d5b1ae4a8a3a08be3772df31d431b"
+    }
+  },
+  {
+    "species": "hydrogen_phosphate2-",
+    "state": "neutral ion-water EM and2ps numerical control passed",
+    "duration_ps": 2,
+    "finite_energy_frames": 41,
+    "temperature_mean_K": 291.74307326829273,
+    "EM_Fmax_kJ_mol_nm": 836.34497,
+    "net_solute_charge_e": -2,
+    "sodium_ions": 2,
+    "charge_precision_policy": "GROMACS atom charges restored verbatim from projected mol2 after matching names/order;no second charge fit",
+    "typing_policy": "previously typed GAFF2 p5/o/oh/ho topology preserved;nonprotonated O are equivalent resonance sites",
+    "parameter_generation": "parmchk2 -s gaff2;tleap leaprc.gaff2;ACPYPE amb2gmx;source files preserved",
+    "tleap_warnings_reviewed": "two warnings that isolated anion is not neutral;expected integer charge and explicitly neutral MD box",
+    "source_mol2_sha256": "112ed4c85f83a79c52d73500d3c83251207dc785df25fbd137e6f41e3175113f",
+    "checkpoint_sha256": "257925c8f8d9323ceaf82080730661fdd7b7063c353b679e6ffb24c5673b1396",
+    "prmtop_sha256": "1eb5168e6d4517f47506645de9f4e9216184158f10c2d4e311da6f2043503396",
+    "types_sha256": "7cd5a37ad8aea3dcc1420c34ce2b0688365f8d890e2482e1166fda000db81d35",
+    "itp_sha256": "8279187fc8eef24396cf9ea3a5f37a00a7f27c6206c4da0ea3036e12c1720de4",
+    "run_directory": "runs/ph2-projected-water-control",
+    "physical_force_field_approved": false,
+    "full_buffer_ready": false,
+    "saved_frame_geometry": {
+      "frames": 41,
+      "bond_length_range_nm": [
+        0.09724990098421883,
+        0.16342719315024193
+      ],
+      "criterion": "all defined OH/PO bonds stay within broad0.07\u20130.20nm numerical envelope;not an equilibrium bond-distribution validation",
+      "trajectory_sha256": "e2592fa209178b636cec9e84d2e7cfb9a7071b6efb4fe59864210164bc8b1708"
+    }
+  }
+]

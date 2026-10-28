@@ -1,77 +1,147 @@
 {
-  "state": "analytical preparation alternatives;not a runnable matched-buffer system",
-  "source_recipe_sha256": "6fd6c6ac6e00b357767eace0c950fdb775ed4cfe51102c6ca855db39dc6b0c24",
-  "box_nm": [
-    18,
-    12,
-    18
-  ],
-  "volume_nm3": 3888,
-  "formula_units_per_mM": 2.341408327488,
-  "fixed_analytical_counts": [
+  "schema_version": 2,
+  "state": "provisional water-referenced count alternatives;not a runnable matched-buffer system",
+  "source_recipe_sha256": "dcaffa565ea9cde5a5c3b4025aaae47d053a96ce878142aad697d19089417892",
+  "cases": [
     {
-      "component": "NaCl",
-      "target_analytical_mM": 110.02216356274693,
-      "nearest_formula_units": 258,
-      "rounded_analytical_mM": 110.19009242048674
+      "reference_case": "fxii-coating-near-10ps",
+      "source_topology_sha256": "edf8d991614b390ea909eb796a45ac99d86d8c1c5dfb4c29174fab06a63f39a1",
+      "reference_water_count": 112801,
+      "water_reference_molarity_M": 55.5,
+      "water_equivalent_volume_nm3": 3374.9633750680555,
+      "formula_units_per_mM": 2.0324504504504506,
+      "macromolecule_charge_e": 6,
+      "legacy_ions": {
+        "CL": 6
+      },
+      "legacy_ion_policy": "do not add a new recipe on top of these ions;define final ion inventory separately",
+      "fixed_analytical_counts": [
+        {
+          "component": "NaCl",
+          "target_analytical_mM": 110.02216356274693,
+          "nearest_formula_units": 224,
+          "rounded_water_reference_mM": 110.21178890258065
+        },
+        {
+          "component": "NaI",
+          "target_analytical_mM": 10.007055641364206,
+          "nearest_formula_units": 20,
+          "rounded_water_reference_mM": 9.840338294873272
+        },
+        {
+          "component": "citric acid monohydrate,total citrate after pH adjustment",
+          "target_analytical_mM": 9.993432886959999,
+          "nearest_formula_units": 20,
+          "rounded_water_reference_mM": 9.840338294873272
+        },
+        {
+          "component": "sodium azide",
+          "target_analytical_mM": 3.0764545092362856,
+          "nearest_formula_units": 6,
+          "rounded_water_reference_mM": 2.9521014884619814
+        }
+      ],
+      "phosphate_alternatives": [
+        {
+          "hydration_hypothesis": "anhydrous",
+          "target_total_mM": 11.50220458921293,
+          "nearest_total_molecules": 23,
+          "rounded_water_reference_mM": 11.316389039104262
+        },
+        {
+          "hydration_hypothesis": "monohydrate",
+          "target_total_mM": 10.000579743753262,
+          "nearest_total_molecules": 20,
+          "rounded_water_reference_mM": 9.840338294873272
+        },
+        {
+          "hydration_hypothesis": "dihydrate",
+          "target_total_mM": 8.845756921163792,
+          "nearest_total_molecules": 18,
+          "rounded_water_reference_mM": 8.856304465385945
+        }
+      ]
     },
     {
-      "component": "NaI",
-      "target_analytical_mM": 10.007055641364206,
-      "nearest_formula_units": 23,
-      "rounded_analytical_mM": 9.82314777391936
-    },
-    {
-      "component": "citric acid monohydrate,total citrate after pH adjustment",
-      "target_analytical_mM": 9.993432886959999,
-      "nearest_formula_units": 23,
-      "rounded_analytical_mM": 9.82314777391936
-    },
-    {
-      "component": "sodium azide",
-      "target_analytical_mM": 3.0764545092362856,
-      "nearest_formula_units": 7,
-      "rounded_analytical_mM": 2.989653670323283
+      "reference_case": "fxii-bare-near-10ps",
+      "source_topology_sha256": "889c18f7cff5c2909363cc99b1f5a528c74b50a88b9d8746f1305dc9b56311e5",
+      "reference_water_count": 113579,
+      "water_reference_molarity_M": 55.5,
+      "water_equivalent_volume_nm3": 3398.2408416313215,
+      "formula_units_per_mM": 2.0464684684684684,
+      "macromolecule_charge_e": 6,
+      "legacy_ions": {
+        "CL": 6
+      },
+      "legacy_ion_policy": "do not add a new recipe on top of these ions;define final ion inventory separately",
+      "fixed_analytical_counts": [
+        {
+          "component": "NaCl",
+          "target_analytical_mM": 110.02216356274693,
+          "nearest_formula_units": 225,
+          "rounded_water_reference_mM": 109.94550048864667
+        },
+        {
+          "component": "NaI",
+          "target_analytical_mM": 10.007055641364206,
+          "nearest_formula_units": 20,
+          "rounded_water_reference_mM": 9.772933376768593
+        },
+        {
+          "component": "citric acid monohydrate,total citrate after pH adjustment",
+          "target_analytical_mM": 9.993432886959999,
+          "nearest_formula_units": 20,
+          "rounded_water_reference_mM": 9.772933376768593
+        },
+        {
+          "component": "sodium azide",
+          "target_analytical_mM": 3.0764545092362856,
+          "nearest_formula_units": 6,
+          "rounded_water_reference_mM": 2.931880013030578
+        }
+      ],
+      "phosphate_alternatives": [
+        {
+          "hydration_hypothesis": "anhydrous",
+          "target_total_mM": 11.50220458921293,
+          "nearest_total_molecules": 24,
+          "rounded_water_reference_mM": 11.727520052122312
+        },
+        {
+          "hydration_hypothesis": "monohydrate",
+          "target_total_mM": 10.000579743753262,
+          "nearest_total_molecules": 20,
+          "rounded_water_reference_mM": 9.772933376768593
+        },
+        {
+          "hydration_hypothesis": "dihydrate",
+          "target_total_mM": 8.845756921163792,
+          "nearest_total_molecules": 18,
+          "rounded_water_reference_mM": 8.795640039091733
+        }
+      ]
     }
   ],
-  "phosphate_alternatives": [
-    {
-      "hydration_hypothesis": "anhydrous",
-      "target_total_mM": 11.50220458921293,
-      "nearest_total_molecules": 27,
-      "rounded_total_mM": 11.531521299818378
-    },
-    {
-      "hydration_hypothesis": "monohydrate",
-      "target_total_mM": 10.000579743753262,
-      "nearest_total_molecules": 23,
-      "rounded_total_mM": 9.82314777391936
-    },
-    {
-      "hydration_hypothesis": "dihydrate",
-      "target_total_mM": 8.845756921163792,
-      "nearest_total_molecules": 21,
-      "rounded_total_mM": 8.96896101096985
-    }
+  "count_basis": "N_component=target_mM/(1000*55.5M)*N_water;55.5M is an explicit reference assumption",
+  "interpretation": "water-equivalent volume is not measured accessible or bulk-solution volume;accounts approximately for solvent inventory only",
+  "final_preparation_requirements": [
+    "recompute after final solvation/replacement because water count changes",
+    "measure a defined bulk-water region after relaxation and report local ion partitioning separately",
+    "state consistent counterion and protonation policies for coated/bare systems"
   ],
   "unassigned_populations": [
     "N_Cit3+N_HCit2=N_citrate_total",
     "N_HPO4+N_H2PO4=N_phosphate_total"
   ],
-  "charge_balance_constraint": "N_Na+Q_macromolecule=N_Cl+N_I+3*N_Cit3+2*N_HCit2+2*N_HPO4+N_H2PO4+N_azide",
-  "counterion_policy": "not selected;document whether protein-stock counterions are added versus adjusting buffer Na,then use matched policy across bare/coated systems",
+  "charge_balance_constraint": "N_Na+Q_macro=N_Cl+N_I+3*N_Cit3+2*N_HCit2+2*N_HPO4+N_H2PO4+N_azide",
+  "counterion_policy": "not selected;explicitly choose stock-counterions or buffer-Na adjustment",
   "free_NaOH_added_as_species": false,
-  "finite_box_protein_density": {
-    "protein_count": 1,
-    "nominal_full_box_molarity_M": 0.0004270933814747548,
-    "experiment_reference_target_nM": 3.75,
-    "scope": "full-box count density only,not accessible-water-phase concentration and not a reproduction of the experimental dilute assay"
-  },
   "ready_for_grompp": false,
   "blocking_validation": [
-    "azide automatic bond-typing warning;no approved azide partial charges/topology",
-    "citrate/phosphate bond-order representation and charge/speciation review",
-    "species populations atpH7.4 not assigned",
-    "phosphate hydration alternatives not resolved as a single experimental value"
-  ]
+    "citrate/phosphate representation and aqueous parameter review",
+    "choose sourced pH population model or explicit sensitivity scenarios",
+    "document hydrate sensitivity scenario;single measured hydrate not mandatory for exploratory comparison",
+    "assess azide and multianion aqueous transfer;source access and rigid azide implementation already resolved"
+  ],
+  "legacy_whole_box_reference": "models/buffer-parameters/cpbszi-whole-box-planning-legacy.json"
 }

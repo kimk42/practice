@@ -81,7 +81,7 @@
       }
     }
   ],
-  "status": "Coating and FXII100ps numerical controls plus18 short velocity/orientation/gap pilots completed;paired10ps baseline interface continuations completed;cPBSzI force-field approval remains blocked",
+  "status": "legacy coating/FXII numerical controls completed;PC8/16 geometry candidates prepared;projected phosphate2ps controls and rigid azide102ps completed;full cPBSzI/FXII remains unapproved",
   "force_field": "Exploratory GAFF2/AM1-BCC for polymer/PC with Amber99sb-ildn/TIP3P for protein/water; numerical parameter gates passed, physical accuracy and experimental coating validation pending; no CHARMM mixing",
   "literature_reference_conditions": {
     "transfer_to_target": "Reference only: neither paper validates the user PC-supported 7:2:1 terpolymer. Do not auto-apply molecular weights or crosslink conversion.",
@@ -306,5 +306,8 @@
     "coating_solution_to_surface": "0.5wt% is solution concentration;surface loading/thickness/graft density need separate evidence",
     "UV_to_crosslinks": "fluence does not uniquely establish reacted/grafted fraction",
     "concentration_mapping": "single-protein periodic simulations require finite-size/concentration interpretation;no experimental1% mapping claimed"
-  }
+  },
+  "model_revision_policy": "config/model-revision-policy.json",
+  "surface_revision_design": "config/surface-revision-design.json",
+  "latest_five_step_report": "research/FIVE_STEP_REVISION_2026-10-28.md"
 }

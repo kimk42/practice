@@ -1,0 +1,71 @@
+{
+  "state": "surface-revision inputs and baseline diagnostics prepared",
+  "purpose": "PC4/PC8/PC16 finite-chain-end sensitivity;not a measured PC molecular-weight distribution",
+  "legacy_PC4_OH_ends_per_BPA_unit": 0.5,
+  "new_candidates": [
+    {
+      "PC_BPA_units": 8,
+      "formula": "C127H114O23",
+      "atoms": 264,
+      "phenolic_ends": 2,
+      "OH_ends_per_BPA_unit": 0.25,
+      "bond_lengths_A": [
+        0.9709441740597896,
+        1.5526259060136887
+      ],
+      "coordinate_files": {
+        "models/surface-revision-v2/pc8/bpa-pc-dp8-phenolic-ends.mol": "502da879630bc7e9d306546cc43eb9ac9ac9aa99102434d9fbbf41247d7bc96d"
+      },
+      "state": "connected MMFF-relaxed geometry;no new MD forcefield assigned"
+    },
+    {
+      "PC_BPA_units": 16,
+      "formula": "C255H226O47",
+      "atoms": 528,
+      "phenolic_ends": 2,
+      "OH_ends_per_BPA_unit": 0.125,
+      "bond_lengths_A": [
+        0.9717397084539764,
+        1.5557649656736245
+      ],
+      "coordinate_files": {
+        "models/surface-revision-v2/pc16/bpa-pc-dp16-phenolic-ends.mol": "2db16cf6789cd9f092d4a169d2a3cf763d54209fa302ec6e30084b7ebe9ecdf1"
+      },
+      "state": "connected MMFF-relaxed geometry;no new MD forcefield assigned"
+    }
+  ],
+  "existing_profile_assessment": [
+    {
+      "source": "models/analysis/initial-coating-density.csv",
+      "sha256": "2e64018a9e369b3adc8bda54b1a375b0837b759afe2619841cd3b116b0010068",
+      "PC_mass_5_to_95_percent_interval_bin_edges_nm": [
+        2.6,
+        5.3
+      ],
+      "PC_mean_in_interval_kg_m3": 610.9528888888889,
+      "water_mean_in_same_interval_kg_m3": 416.3717037037037,
+      "coating_mass_centroid_z_nm": 4.925798850832543,
+      "PC_mass_centroid_z_nm": 3.9445430176288707,
+      "scope": "xy/time-averaged profile descriptor;not local porosity,bulk density or an equilibrium/convergence test"
+    },
+    {
+      "source": "models/analysis/coating100ps-density.csv",
+      "sha256": "938b89fdba046227e4f3682160c62d12df31c79c4619a160edb3c819695c11a1",
+      "PC_mass_5_to_95_percent_interval_bin_edges_nm": [
+        2.7,
+        5.3
+      ],
+      "PC_mean_in_interval_kg_m3": 631.5881538461538,
+      "water_mean_in_same_interval_kg_m3": 421.6696153846154,
+      "coating_mass_centroid_z_nm": 4.875361498091241,
+      "PC_mass_centroid_z_nm": 3.9516260368894183,
+      "scope": "xy/time-averaged profile descriptor;not local porosity,bulk density or an equilibrium/convergence test"
+    }
+  ],
+  "required_before_surface_MD": [
+    "derive/review consistent longer-PC parameters without copying terminal charges onto interior repeats",
+    "pack independent substrate realizations and assess density/chain-end/water response",
+    "choose boundary/support and coating scenarios explicitly"
+  ],
+  "full_FXII_runs_started": false
+}
