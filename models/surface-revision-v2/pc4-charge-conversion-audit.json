@@ -1,0 +1,95 @@
+{
+  "state": "assignment audited; charge-balancing review required",
+  "input": {
+    "PC_BPA_units": 4,
+    "source": "models/pc-graft/bpa-pc-dp4-phenolic-ends.mol",
+    "sha256": "a202a61955b2e0389decffe38c75fe55cb2f749b73c6c44996caaaa8908ec5ba",
+    "atoms": 132,
+    "formula": "C63H58O11",
+    "molecular_mass_g_mol": 991.1460000000018,
+    "phenolic_OH_ends": 2,
+    "carbonate_links": 3,
+    "bond_lengths_A": [
+      0.9707578740345087,
+      1.5513758635482249
+    ],
+    "charge_route": "whole-chain AM1-BCC/GAFF2; no PC4 charge transfer",
+    "scope": "single initial conformation and assumed OH termini; not experimental PC molecular weight/end chemistry"
+  },
+  "atoms": 132,
+  "net_charge_e": -1.000000000139778e-06,
+  "mol2_net_charge_e": -0.0039999999999995595,
+  "atom_type_counts": {
+    "oh": 2,
+    "ca": 48,
+    "c3": 12,
+    "os": 6,
+    "c": 3,
+    "o": 3,
+    "ho": 2,
+    "ha": 32,
+    "hc": 24
+  },
+  "OH_end_charge_diagnostics": [
+    {
+      "atoms_1based": [
+        1,
+        75
+      ],
+      "OH_charge_e": -0.0791
+    },
+    {
+      "atoms_1based": [
+        68,
+        128
+      ],
+      "OH_charge_e": -0.0791
+    }
+  ],
+  "charge_conversion": {
+    "method": "ACPYPE balanceCharges: residual distributed equally over atoms tied at largest absolute raw charge",
+    "balanced_atoms_1based": [
+      35,
+      54,
+      73
+    ],
+    "max_abs_change_e": 0.0013330000000000286,
+    "review_required_before_new_MD": true,
+    "no_files_modified_by_audit": true,
+    "precision_scope": "MOL2/ITP arithmetic and converter provenance, not recovered QM digits or physical accuracy"
+  },
+  "checks": [
+    "SQM completion",
+    "atom order/elements",
+    "connectivity/bond order",
+    "ITP bond graph",
+    "topology neutrality",
+    "ACPYPE charge-balancing reconstruction",
+    "masses",
+    "defined LJ types",
+    "frcmod revision flags"
+  ],
+  "outputs_sha256": {
+    "PC4_GMX.itp": "0ffd533c7d615e57abf4dfd5bd5abf0699256d8596339828feccc45ea3376ed1",
+    "PC4_GMX.gro": "5efb7b26e85035c600015b63ca6600fa52b1fb89b66c675ce29e714ed6849723",
+    "PC4_bcc_gaff2.mol2": "ab056a6c3b95c43e83ec6bc209e53c308c2be141eb31f780bef9f76d7bb277ac",
+    "sqm.out": "20298c609b413f7de93ef7744af8051bdcf9d4ee23833de17f0fdcc858813922",
+    "PC4_AC.frcmod": "36f8f86e3a10b4a9295a8a1a2ddb343a180491cc74007d456fff5f8456feffb6"
+  },
+  "physical_forcefield_approved": false,
+  "remaining": [
+    "strict GROMACS preprocessing",
+    "numerical MD control",
+    "condensed-phase and conformation assessment"
+  ],
+  "PC4_precision_trace": {
+    "sqm_printed_atom_count": 132,
+    "sqm_printed_3_decimal_charge_sum_e": -0.003999999999999872,
+    "sqm_reported_total": "-0.000",
+    "neutral_qmcharge_in_sqm_in": true,
+    "conversion_source_file": "/workspace/md-tools/chem-venv/lib/python3.12/site-packages/acpype/topol.py",
+    "conversion_source_sha256": "81470baacde3e6c8868f381c40beb8f2d9c5a9d268db336c28d8475537579a10",
+    "function": "balanceCharges, lines1806-1835 in installed ACPYPE2026.10.15",
+    "interpretation": "printed AM1 charges and BCC MOL2 share -0.004e residual; converter redistributes it, not an intentional charged PC model; existing parameters unchanged"
+  }
+}

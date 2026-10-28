@@ -1,12 +1,15 @@
 {
   "version": 2,
   "objective": "Assess how explicit coating/substrate scenarios affect hydration and initial FXII approach/contact;not reproduce two-hour assay adsorption amounts or activation",
-  "current_stage": "PC chain-length geometries prepared;new substrate MD has not started",
+  "current_stage": "PC8/PC16 whole-chain AM1-BCC jobs launched;periodic dry packing prepared separately;new substrate MD has not started",
   "substrate_screen": {
     "PC_BPA_units_per_chain": [4, 8, 16],
     "matched_total_BPA_units_example": 192,
     "chain_counts_for_example": [48, 24, 12],
     "lateral_area_nm2": 36,
+    "lateral_area_scope": "later slab comparison;dry bulk-preparation cells are cubic at matched total BPA count and starting density",
+    "dry_packing_plan": "models/surface-revision-v2/dry-packing-plan-v2.json",
+    "new_parameter_runtime": "runs/pc-length-parameters-v1/pc{8,16}/status.json;verify live process and SQM log before claiming running",
     "comparison_basis": "same BPA-unit count per area;chain-end and carbonate-link counts differ,so mass must also be reported",
     "end_group_assumption": "phenolic OH;not user-measured PC end chemistry",
     "independent_packing_seeds_planned": [2026, 2027],

@@ -81,7 +81,7 @@
       }
     }
   ],
-  "status": "legacy coating/FXII numerical controls completed;PC8/16 geometry candidates prepared;projected phosphate2ps controls and rigid azide102ps completed;full cPBSzI/FXII remains unapproved",
+  "status": "legacy coating/FXII numerical controls completed;PC8/16 whole-chain charge assignments launched and revised periodic dry-packing queue started;inspect live logs;projected phosphate2ps and rigid azide102ps completed;no new substrate or full cPBSzI/FXII MD started",
   "force_field": "Exploratory GAFF2/AM1-BCC for polymer/PC with Amber99sb-ildn/TIP3P for protein/water; numerical parameter gates passed, physical accuracy and experimental coating validation pending; no CHARMM mixing",
   "literature_reference_conditions": {
     "transfer_to_target": "Reference only: neither paper validates the user PC-supported 7:2:1 terpolymer. Do not auto-apply molecular weights or crosslink conversion.",

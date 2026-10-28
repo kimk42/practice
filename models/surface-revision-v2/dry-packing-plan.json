@@ -1,0 +1,278 @@
+{
+  "state": "superseded before acceptance; all-atom box restraints replaced by reference-atom restraint in v2",
+  "cases": [
+    {
+      "name": "pc4-rho0.6-seed2026",
+      "DP": 4,
+      "chains": 48,
+      "BPA_units": 192,
+      "atoms": 6336,
+      "phenolic_ends": 96,
+      "carbonate_links": 144,
+      "molecular_mass_g_mol": 991.1460000000018,
+      "cell_molecular_mass_sum_Da": 47575.00800000009,
+      "starting_density_g_cm3": 0.6,
+      "box_nm": [
+        5.087357283570074,
+        5.087357283570074,
+        5.087357283570074
+      ],
+      "seed": 2026,
+      "source_sha256": "a202a61955b2e0389decffe38c75fe55cb2f749b73c6c44996caaaa8908ec5ba",
+      "input_sha256": "989ae8014fbf3368a95215e47a15104089547dd29d6ef5bdea0256278653a007",
+      "initial_PDB_sha256": "7e122d78b359fbf8502e853593753135ccf2b9a497f6104a4f8497de27c1d7e5",
+      "density_basis": "RDKit standard atomic weights; recompute using actual topology masses before MD"
+    },
+    {
+      "name": "pc4-rho0.6-seed2027",
+      "DP": 4,
+      "chains": 48,
+      "BPA_units": 192,
+      "atoms": 6336,
+      "phenolic_ends": 96,
+      "carbonate_links": 144,
+      "molecular_mass_g_mol": 991.1460000000018,
+      "cell_molecular_mass_sum_Da": 47575.00800000009,
+      "starting_density_g_cm3": 0.6,
+      "box_nm": [
+        5.087357283570074,
+        5.087357283570074,
+        5.087357283570074
+      ],
+      "seed": 2027,
+      "source_sha256": "a202a61955b2e0389decffe38c75fe55cb2f749b73c6c44996caaaa8908ec5ba",
+      "input_sha256": "c10c8f7b1e075375b3f6e61995e25e9536df1b09f9aff8657ce27dc67f8b3664",
+      "initial_PDB_sha256": "7e122d78b359fbf8502e853593753135ccf2b9a497f6104a4f8497de27c1d7e5",
+      "density_basis": "RDKit standard atomic weights; recompute using actual topology masses before MD"
+    },
+    {
+      "name": "pc4-rho1.0-seed2026",
+      "DP": 4,
+      "chains": 48,
+      "BPA_units": 192,
+      "atoms": 6336,
+      "phenolic_ends": 96,
+      "carbonate_links": 144,
+      "molecular_mass_g_mol": 991.1460000000018,
+      "cell_molecular_mass_sum_Da": 47575.00800000009,
+      "starting_density_g_cm3": 1.0,
+      "box_nm": [
+        4.290843313023775,
+        4.290843313023775,
+        4.290843313023775
+      ],
+      "seed": 2026,
+      "source_sha256": "a202a61955b2e0389decffe38c75fe55cb2f749b73c6c44996caaaa8908ec5ba",
+      "input_sha256": "725a04ad8b8e2bdaa22de89c41c4b5be5c1c6181456861b35c7ab500a5ccd9d2",
+      "initial_PDB_sha256": "7e122d78b359fbf8502e853593753135ccf2b9a497f6104a4f8497de27c1d7e5",
+      "density_basis": "RDKit standard atomic weights; recompute using actual topology masses before MD"
+    },
+    {
+      "name": "pc4-rho1.0-seed2027",
+      "DP": 4,
+      "chains": 48,
+      "BPA_units": 192,
+      "atoms": 6336,
+      "phenolic_ends": 96,
+      "carbonate_links": 144,
+      "molecular_mass_g_mol": 991.1460000000018,
+      "cell_molecular_mass_sum_Da": 47575.00800000009,
+      "starting_density_g_cm3": 1.0,
+      "box_nm": [
+        4.290843313023775,
+        4.290843313023775,
+        4.290843313023775
+      ],
+      "seed": 2027,
+      "source_sha256": "a202a61955b2e0389decffe38c75fe55cb2f749b73c6c44996caaaa8908ec5ba",
+      "input_sha256": "c21ff5dce637d7b813867a48492a4ae46e11cd231b7258f7a5f7badc35f1b91e",
+      "initial_PDB_sha256": "7e122d78b359fbf8502e853593753135ccf2b9a497f6104a4f8497de27c1d7e5",
+      "density_basis": "RDKit standard atomic weights; recompute using actual topology masses before MD"
+    },
+    {
+      "name": "pc8-rho0.6-seed2026",
+      "DP": 8,
+      "chains": 24,
+      "BPA_units": 192,
+      "atoms": 6336,
+      "phenolic_ends": 48,
+      "carbonate_links": 168,
+      "molecular_mass_g_mol": 2008.286000000002,
+      "cell_molecular_mass_sum_Da": 48198.86400000005,
+      "starting_density_g_cm3": 0.6,
+      "box_nm": [
+        5.109497800842922,
+        5.109497800842922,
+        5.109497800842922
+      ],
+      "seed": 2026,
+      "source_sha256": "502da879630bc7e9d306546cc43eb9ac9ac9aa99102434d9fbbf41247d7bc96d",
+      "input_sha256": "8d2f7841334621812ff8fb0bd5d267c8e36a20cf3365d3ae110f629578380df7",
+      "initial_PDB_sha256": "48915f45c4f45417b5f44fb0be16b91008b0531f89c4d8f76342a128a7a94d54",
+      "density_basis": "RDKit standard atomic weights; recompute using actual topology masses before MD"
+    },
+    {
+      "name": "pc8-rho0.6-seed2027",
+      "DP": 8,
+      "chains": 24,
+      "BPA_units": 192,
+      "atoms": 6336,
+      "phenolic_ends": 48,
+      "carbonate_links": 168,
+      "molecular_mass_g_mol": 2008.286000000002,
+      "cell_molecular_mass_sum_Da": 48198.86400000005,
+      "starting_density_g_cm3": 0.6,
+      "box_nm": [
+        5.109497800842922,
+        5.109497800842922,
+        5.109497800842922
+      ],
+      "seed": 2027,
+      "source_sha256": "502da879630bc7e9d306546cc43eb9ac9ac9aa99102434d9fbbf41247d7bc96d",
+      "input_sha256": "f2a8a0651be87935bc9c68e39044a347e92de40323f20c7fa18463544cfddaba",
+      "initial_PDB_sha256": "48915f45c4f45417b5f44fb0be16b91008b0531f89c4d8f76342a128a7a94d54",
+      "density_basis": "RDKit standard atomic weights; recompute using actual topology masses before MD"
+    },
+    {
+      "name": "pc8-rho1.0-seed2026",
+      "DP": 8,
+      "chains": 24,
+      "BPA_units": 192,
+      "atoms": 6336,
+      "phenolic_ends": 48,
+      "carbonate_links": 168,
+      "molecular_mass_g_mol": 2008.286000000002,
+      "cell_molecular_mass_sum_Da": 48198.86400000005,
+      "starting_density_g_cm3": 1.0,
+      "box_nm": [
+        4.309517348518372,
+        4.309517348518372,
+        4.309517348518372
+      ],
+      "seed": 2026,
+      "source_sha256": "502da879630bc7e9d306546cc43eb9ac9ac9aa99102434d9fbbf41247d7bc96d",
+      "input_sha256": "d26c66ad60282a6af2979607ae476939ee56709b07d4959dc57eac5d33794170",
+      "initial_PDB_sha256": "48915f45c4f45417b5f44fb0be16b91008b0531f89c4d8f76342a128a7a94d54",
+      "density_basis": "RDKit standard atomic weights; recompute using actual topology masses before MD"
+    },
+    {
+      "name": "pc8-rho1.0-seed2027",
+      "DP": 8,
+      "chains": 24,
+      "BPA_units": 192,
+      "atoms": 6336,
+      "phenolic_ends": 48,
+      "carbonate_links": 168,
+      "molecular_mass_g_mol": 2008.286000000002,
+      "cell_molecular_mass_sum_Da": 48198.86400000005,
+      "starting_density_g_cm3": 1.0,
+      "box_nm": [
+        4.309517348518372,
+        4.309517348518372,
+        4.309517348518372
+      ],
+      "seed": 2027,
+      "source_sha256": "502da879630bc7e9d306546cc43eb9ac9ac9aa99102434d9fbbf41247d7bc96d",
+      "input_sha256": "1ba9a50c0e362fa480819598e64e3a6da88a0f238474bee252f3ab134323a8f6",
+      "initial_PDB_sha256": "48915f45c4f45417b5f44fb0be16b91008b0531f89c4d8f76342a128a7a94d54",
+      "density_basis": "RDKit standard atomic weights; recompute using actual topology masses before MD"
+    },
+    {
+      "name": "pc16-rho0.6-seed2026",
+      "DP": 16,
+      "chains": 12,
+      "BPA_units": 192,
+      "atoms": 6336,
+      "phenolic_ends": 24,
+      "carbonate_links": 180,
+      "molecular_mass_g_mol": 4042.565999999946,
+      "cell_molecular_mass_sum_Da": 48510.791999999354,
+      "starting_density_g_cm3": 0.6,
+      "box_nm": [
+        5.120496466401853,
+        5.120496466401853,
+        5.120496466401853
+      ],
+      "seed": 2026,
+      "source_sha256": "2db16cf6789cd9f092d4a169d2a3cf763d54209fa302ec6e30084b7ebe9ecdf1",
+      "input_sha256": "39e2750a279d10ca0e677b8b531d0e711a754ae54739f2c55e0d5e072163af81",
+      "initial_PDB_sha256": "24eac66aa5b6d92fd35dab43d2a8ed1f4a2494db4ddaeb0d5fdc9a7b3004e20d",
+      "density_basis": "RDKit standard atomic weights; recompute using actual topology masses before MD"
+    },
+    {
+      "name": "pc16-rho0.6-seed2027",
+      "DP": 16,
+      "chains": 12,
+      "BPA_units": 192,
+      "atoms": 6336,
+      "phenolic_ends": 24,
+      "carbonate_links": 180,
+      "molecular_mass_g_mol": 4042.565999999946,
+      "cell_molecular_mass_sum_Da": 48510.791999999354,
+      "starting_density_g_cm3": 0.6,
+      "box_nm": [
+        5.120496466401853,
+        5.120496466401853,
+        5.120496466401853
+      ],
+      "seed": 2027,
+      "source_sha256": "2db16cf6789cd9f092d4a169d2a3cf763d54209fa302ec6e30084b7ebe9ecdf1",
+      "input_sha256": "fd21f9947b96d33f53e208218115ee01c909a5dd90e92222321664ce1167d7c9",
+      "initial_PDB_sha256": "24eac66aa5b6d92fd35dab43d2a8ed1f4a2494db4ddaeb0d5fdc9a7b3004e20d",
+      "density_basis": "RDKit standard atomic weights; recompute using actual topology masses before MD"
+    },
+    {
+      "name": "pc16-rho1.0-seed2026",
+      "DP": 16,
+      "chains": 12,
+      "BPA_units": 192,
+      "atoms": 6336,
+      "phenolic_ends": 24,
+      "carbonate_links": 180,
+      "molecular_mass_g_mol": 4042.565999999946,
+      "cell_molecular_mass_sum_Da": 48510.791999999354,
+      "starting_density_g_cm3": 1.0,
+      "box_nm": [
+        4.318793982325505,
+        4.318793982325505,
+        4.318793982325505
+      ],
+      "seed": 2026,
+      "source_sha256": "2db16cf6789cd9f092d4a169d2a3cf763d54209fa302ec6e30084b7ebe9ecdf1",
+      "input_sha256": "d35ffa47b629313fe310dbf0ba07d50ad14663caf6070b90e9861e8e254bb946",
+      "initial_PDB_sha256": "24eac66aa5b6d92fd35dab43d2a8ed1f4a2494db4ddaeb0d5fdc9a7b3004e20d",
+      "density_basis": "RDKit standard atomic weights; recompute using actual topology masses before MD"
+    },
+    {
+      "name": "pc16-rho1.0-seed2027",
+      "DP": 16,
+      "chains": 12,
+      "BPA_units": 192,
+      "atoms": 6336,
+      "phenolic_ends": 24,
+      "carbonate_links": 180,
+      "molecular_mass_g_mol": 4042.565999999946,
+      "cell_molecular_mass_sum_Da": 48510.791999999354,
+      "starting_density_g_cm3": 1.0,
+      "box_nm": [
+        4.318793982325505,
+        4.318793982325505,
+        4.318793982325505
+      ],
+      "seed": 2027,
+      "source_sha256": "2db16cf6789cd9f092d4a169d2a3cf763d54209fa302ec6e30084b7ebe9ecdf1",
+      "input_sha256": "909d68b0445fc1d86ac26efabeb576bbcb6a64191a27872916a72e744514a8d0",
+      "initial_PDB_sha256": "24eac66aa5b6d92fd35dab43d2a8ed1f4a2494db4ddaeb0d5fdc9a7b3004e20d",
+      "density_basis": "RDKit standard atomic weights; recompute using actual topology masses before MD"
+    }
+  ],
+  "matched_basis": "192 BPA units per dry cubic cell; chain-end/carbonate counts and cell mass differ",
+  "boundary": "three-dimensional periodic dry cubic bulk-preparation cells; no slab/free interface yet",
+  "later_slab_area_nm2": 36,
+  "limitations": [
+    "0.6 and 1.0 g/cm3 are starting hypotheses, not experimental or equilibrium densities",
+    "independent packing seeds share one intrachain conformer per length; not independent conformational ensembles",
+    "PC8/16 forcefield assignments pending; all new MD requires parameter/charge review",
+    "room-temperature short MD alone cannot establish equilibration of glassy polymer"
+  ]
+}

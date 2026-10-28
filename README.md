@@ -41,6 +41,13 @@ The user reports PC grade unknown and accepts BPA-PC as the initial assumption. 
 
 ## Project map and current limits
 
+PC8/PC16 whole-chain AM1-BCC work and a12-case periodic dry-packing screen have
+started in separate ignored directories. See
+[PC length preparation](research/PC_LENGTH_PREPARATION_2026-10-28.md) for live-status
+paths, the recorded ACPYPE charge-balancing behavior, packing-boundary correction
+and gates before new substrate MD. These are exploratory finite-chain models;
+forcefield assignment or packing alone does not validate bulk PC.
+
 - `models/`: actual three-component graph/3D prototypes and assumptions.
 - `config/system.json`: confirmed user target versus unresolved experimental inputs.
 - `research/COATING.md`: current coating evidence and primary/secondary source distinctions.

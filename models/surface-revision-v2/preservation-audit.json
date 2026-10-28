@@ -1,0 +1,10 @@
+{
+  "checked_utc": "2026-10-28T16:39:20.028025+00:00",
+  "preexisting_checkpoint_count": 43,
+  "all_checkpoint_hashes_unchanged": true,
+  "archived_forcefield_hashes_unchanged": true,
+  "new_MD_started": false,
+  "raw_checkpoint_hash_inventory": "runs/pc-length-preservation-before.json",
+  "previous_verified_backup": "/workspace/md-backups/cbaa-surface-20261028T160117Z",
+  "backup_of_current_active_runs_complete": false
+}

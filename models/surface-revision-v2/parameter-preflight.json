@@ -1,0 +1,50 @@
+[
+  {
+    "PC_BPA_units": 4,
+    "source": "models/pc-graft/bpa-pc-dp4-phenolic-ends.mol",
+    "sha256": "a202a61955b2e0389decffe38c75fe55cb2f749b73c6c44996caaaa8908ec5ba",
+    "atoms": 132,
+    "formula": "C63H58O11",
+    "molecular_mass_g_mol": 991.1460000000018,
+    "phenolic_OH_ends": 2,
+    "carbonate_links": 3,
+    "bond_lengths_A": [
+      0.9707578740345087,
+      1.5513758635482249
+    ],
+    "charge_route": "whole-chain AM1-BCC/GAFF2; no PC4 charge transfer",
+    "scope": "single initial conformation and assumed OH termini; not experimental PC molecular weight/end chemistry"
+  },
+  {
+    "PC_BPA_units": 8,
+    "source": "models/surface-revision-v2/pc8/bpa-pc-dp8-phenolic-ends.mol",
+    "sha256": "502da879630bc7e9d306546cc43eb9ac9ac9aa99102434d9fbbf41247d7bc96d",
+    "atoms": 264,
+    "formula": "C127H114O23",
+    "molecular_mass_g_mol": 2008.286000000002,
+    "phenolic_OH_ends": 2,
+    "carbonate_links": 7,
+    "bond_lengths_A": [
+      0.971030535050262,
+      1.5526037002403412
+    ],
+    "charge_route": "whole-chain AM1-BCC/GAFF2; no PC4 charge transfer",
+    "scope": "single initial conformation and assumed OH termini; not experimental PC molecular weight/end chemistry"
+  },
+  {
+    "PC_BPA_units": 16,
+    "source": "models/surface-revision-v2/pc16/bpa-pc-dp16-phenolic-ends.mol",
+    "sha256": "2db16cf6789cd9f092d4a169d2a3cf763d54209fa302ec6e30084b7ebe9ecdf1",
+    "atoms": 528,
+    "formula": "C255H226O47",
+    "molecular_mass_g_mol": 4042.565999999946,
+    "phenolic_OH_ends": 2,
+    "carbonate_links": 15,
+    "bond_lengths_A": [
+      0.9717450951767137,
+      1.5557571982799896
+    ],
+    "charge_route": "whole-chain AM1-BCC/GAFF2; no PC4 charge transfer",
+    "scope": "single initial conformation and assumed OH termini; not experimental PC molecular weight/end chemistry"
+  }
+]

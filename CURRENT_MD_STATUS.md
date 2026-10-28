@@ -1,6 +1,8 @@
 # Current MD status
 
-Latest verified state: design-review follow-up completed through five bounded stages. PC8/PC16 geometries prepared;water-referenced cPBSzI count alternatives replace full-box planning;two separately charge-projected phosphate candidates passed EM/2ps numerical controls;unchanged rigid azide continued from2ps to102ps with hydration/distance diagnostics. These are not physical forcefield or adsorption approvals. Existing coating/FXII controls and all38 pre-existing checkpoints are preserved. See research/FIVE_STEP_REVISION_2026-10-28.md and config/model-revision-policy.json. Earlier descriptions below are historical milestones.
+Latest launch: PC8/PC16 whole-chain AM1-BCC assignments started at2026-10-28 16:26UTC;12 periodic dry-packing cases prepared and revision2 queue started. Inspect live processes and logs before claiming they remain active. No new substrate or full FXII/cPBSzI MD started. The stronger PC4 audit records ACPYPE's existing -0.004e raw-charge residual redistribution;old parameters are unchanged. See research/PC_LENGTH_PREPARATION_2026-10-28.md for the correction of the initial packing boundary constraint, preserved restart, scientific gates and actual paths. All43 previous checkpoints remain unchanged.
+
+Previously completed: design-review follow-up through five bounded stages. PC8/PC16 geometries prepared;water-referenced cPBSzI count alternatives replace full-box planning;two separately charge-projected phosphate candidates passed EM/2ps numerical controls;unchanged rigid azide continued from2ps to102ps with hydration/distance diagnostics. These are not physical forcefield or adsorption approvals. See research/FIVE_STEP_REVISION_2026-10-28.md and config/model-revision-policy.json. Earlier descriptions below are historical milestones.
 
 ## Completed
 
