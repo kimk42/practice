@@ -1,5 +1,5 @@
 {
-  "state": "user-uploaded primary sources resolve numeric charge/LJ/geometry;MD implementation and compatibility not approved",
+  "state": "published values extracted;separate rigid candidate passed2ps numerical control;physical transfer unapproved",
   "reviewed_source": {
     "doi": "10.1021/acs.jpcb.5c02025",
     "pmcid": "PMC12359107",
@@ -34,15 +34,16 @@
   ],
   "source_access_report": "research/proteins/modeling-evidence/azide-uploaded-sources.json",
   "blocking_checks": [
-    "choose and numerically verify rigid linear GROMACS implementation or obtain full supported flexible bonded parameters",
-    "validate Amber/TIP3P/JC-sodium interactions;source aqueous models use SPC",
+    "validate hydration/ion pairing for rigid fixed-charge candidate in TIP3P/JC sodium",
     "full cPBSzI additionally requires phosphate charge/speciation approval"
   ],
   "excluded_alternative": {
     "doi": "10.1021/acs.jpcb.5c04390",
     "reason": "azidoadamantane covalent azide probe,not free N3-;abstract inspected,not used as ion model"
   },
-  "new_MD_parameters_exported": false,
+  "new_MD_parameters_exported": true,
   "purchases_or_paid_access_used": false,
-  "candidate_report": "models/buffer-parameters/published-azide-candidate.json"
+  "candidate_report": "models/buffer-parameters/published-azide-candidate.json",
+  "export_scope": "explicitly unapproved rigid fixed-charge numerical candidate only",
+  "numerical_control": "models/buffer-parameters/azide-rigid-water-control-audit.json"
 }

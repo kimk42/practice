@@ -1,0 +1,37 @@
+{
+  "state": "numerical-control candidate only",
+  "published_candidate_sha256": "d3e856a33df075dd5fc4c819d34c50db12ff092295dcb88a3cd4d867b6586f05",
+  "mass_convention_N_Da": 14.0067,
+  "carrier_mass_Da": 21.01005,
+  "carrier_positions_from_COM_nm": [
+    -0.09492589249865745,
+    0.09492589249865745
+  ],
+  "linear_virtual_site_coefficients": [
+    -0.11237243569579447,
+    0.5,
+    1.1123724356957945
+  ],
+  "virtual_site_rule": "x_s=(1-a)*x_1+a*x_2;GROMACS2025.2 local reference manual,interaction-methods eq284",
+  "total_mass_Da": 42.0201,
+  "physical_transverse_inertia_Da_nm2": 0.3786399723938401,
+  "carrier_transverse_inertia_Da_nm2": 0.3786399723938401,
+  "longitudinal_inertia_Da_nm2": 0,
+  "COM_offset_nm": 0,
+  "intramolecular_interactions": "all ten atom pairs explicitly excluded;only carrier-carrier distance constrained",
+  "no_harmonic_azide_terms": true,
+  "limitations": [
+    "fixed published reference charges;not polarizable1998 model",
+    "TIP3P/JC sodium transfer unvalidated;not a reproduction of SPC or DMSO studies",
+    "2ps300K NVT is only a numerical check,not experimental temperature/calibration or hydration validation"
+  ],
+  "azide_itp_sha256": "d567bb3952073fb42c5c6c21cd0f6b95d186ca5f863b097cc22985095f7ecad6",
+  "approved_for_matched_buffer_MD": false,
+  "azide_types_sha256": "70ee9956d753d053716f432d64daef4ef74803b1f0b680ebc3cb769312a58647",
+  "preparation_corrections": [
+    "atomtypes must precede all molecule definitions;split azide types include before JC molecules",
+    "recovery working-directory error corrected;original grompp directive-error text retained in conversation,stdout file accidentally replaced before backup;no MD/checkpoint existed"
+  ],
+  "candidate_only_not_approved": true,
+  "numerical_audit": "models/buffer-parameters/azide-rigid-water-control-audit.json"
+}

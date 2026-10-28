@@ -1,0 +1,4 @@
+; Exploratory fixed-charge rigid ion; not a full reproduction of1998 polarization
+[ atomtypes ]
+AZMC 0 0 0 A 0 0
+AZN 7 14.0067 0 A 0.332000000000 0.355012400000

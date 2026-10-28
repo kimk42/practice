@@ -1,0 +1,49 @@
+{
+  "state": "2ps rigid-azide/TIP3P/JC-sodium numerical control completed",
+  "run_directory": "runs/azide-rigid-water-control",
+  "water_molecules": 875,
+  "azide_ions": 1,
+  "sodium_ions": 1,
+  "total_coordinate_sites_including_mass_carriers": 2631,
+  "duration_ps": 2.0,
+  "saved_frames_checked": 41,
+  "EM_Fmax_kJ_mol_nm": 818.00098,
+  "temperature_mean_K": 306.9462704390244,
+  "temperature_endpoint_K": 300.078735,
+  "potential_range_kJ_mol": [
+    -35423.351562,
+    -32271.03125
+  ],
+  "max_NN_length_error_nm": 1.9636281932411404e-07,
+  "NNN_angle_range_deg": [
+    179.99989932346924,
+    179.99998699570727
+  ],
+  "max_carrier_constraint_error_nm": 1.4855023669491096e-07,
+  "max_virtual_site_construction_error_nm": 7.159929449329638e-08,
+  "max_COM_vs_central_site_error_nm": 1.0305944867213943e-07,
+  "constraint_warning_detected": false,
+  "input_and_output_sha256": {
+    "md.tpr": "43dbc8630faf99f5ba587d29481f2f8e6fad6c6551a5febb0412d3a7196447cf",
+    "md.trr": "dedcd1520ca7f315399f9510d3f715337291280bc380929bfaaf9212c9834969",
+    "md.edr": "6ee36b8b4df205afabdcf9db4c338eb9e82e204322e0d325b54d03a313164448",
+    "md.cpt": "430775148b68841b6ceabe47246a1c2e6467b7f58789cff7b2ff8bbfc1a7c28e",
+    "md.gro": "0872f79729bbb36a7391623086444456482815e723c2c949171dd0e3a94602d3",
+    "md.mdp": "64db231f49e1b68983c526e1b6596fde416b23054c0cb36c5779094d39df1631",
+    "em.log": "beae138b3700e0282563349cb1ad68bcc98d55386490aaeb69496d0959bf1711",
+    "md.log": "97b9a237731fe5ed1407f14fdd8db6b44adabb7d12d7f802b739b1e8293284c2",
+    "azide.itp": "d567bb3952073fb42c5c6c21cd0f6b95d186ca5f863b097cc22985095f7ecad6",
+    "azide-types.itp": "70ee9956d753d053716f432d64daef4ef74803b1f0b680ebc3cb769312a58647",
+    "representation.json": "2d2f34b9dea28c63003fe4b3bf50833bdcf6571c1e3f1c1c07b2bc8db01c0a72",
+    "sites.g96": "cf61ff980b1280ca69cf2a8bda6cd1a2c90d12ecee1b0c3a3014a8c53383c41d"
+  },
+  "interpretation": "finite energy and saved-frame rigid geometry passed;does not validate hydration,ion pairing,concentration,polarization or protein interaction accuracy",
+  "physical_force_field_approved": false,
+  "full_cpbszi_ready": false,
+  "preexisting_checkpoint_preservation": {
+    "reference_backup_head": "52283f19570870c4230a2c18717bff9167c8b08e",
+    "reference_manifest_sha256": "e8a0674bb80d5e947d51dc97bb384f19702973a866398cd7f8aaf9943047b88f",
+    "checkpoints_checked": 37,
+    "all_match": true
+  }
+}
