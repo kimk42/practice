@@ -31,7 +31,7 @@ def validate_coordinates(path, xyz, elements):
     """Match SQM's rounded final table to the exact evaluated coordinates."""
     text = path.read_text().rsplit('Final Structure', 1)[-1]
     rows = re.findall(r'^\s*QMMM:\s+(\d+)\s+(\d+)\s+([A-Z][a-z]?)\s+([-\d.]+)\s+([-\d.]+)\s+([-\d.]+)', text, re.M)
-    symbols = {1:'H',6:'C',8:'O'}
+    symbols = {1:'H',6:'C',8:'O',15:'P'}
     if [int(r[0]) for r in rows] != list(range(1,len(elements)+1)) or [r[2] for r in rows] != [symbols[z] for z in elements]:
         raise ValueError('SQM final atom order/elements differ')
     rounded = np.array([[float(v) for v in r[3:6]] for r in rows])
@@ -63,8 +63,10 @@ def parse_singlepoint(path,natoms):
 
 
 class Evaluator:
-    def __init__(self,out,elements,names,lock_fd=None):
+    def __init__(self,out,elements,names,lock_fd=None,qmcharge=0):
         self.out=out;self.elements=elements;self.names=names;self.env=amber_environment();self.cache={};self.lock_fd=lock_fd
+        if not isinstance(qmcharge,int):raise ValueError('QM charge must be an explicit integer')
+        self.qmcharge=qmcharge
         self.count=max([int(p.name.split('-')[1]) for p in out.glob('evaluation-*')]+[0])
 
     @staticmethod
@@ -79,7 +81,7 @@ class Evaluator:
             raise RuntimeError('Less than2GiB free; evaluated coordinates and outputs preserved')
         self.count+=1;folder=self.out/f'evaluation-{self.count:06d}';folder.mkdir()
         text=("AM1 analytic-gradient evaluation\n &qmmm\n"
-              " qm_theory='AM1', qmcharge=0, scfconv=1.d-10, ndiis_attempts=700,\n"
+              f" qm_theory='AM1', qmcharge={self.qmcharge}, scfconv=1.d-10, ndiis_attempts=700,\n"
               " maxcyc=0, verbosity=4, diag_routine=6, pseudo_diag=0,\n /\n")
         text+=''.join(f'{z:3d} {name:5s} '+ ' '.join(f'{v:.17g}' for v in row)+'\n'
                       for z,name,row in zip(self.elements,self.names,xyz))
@@ -93,8 +95,12 @@ class Evaluator:
                            cwd=folder,env=self.env,stdout=log,stderr=subprocess.STDOUT,check=True,timeout=7200,**kwargs)
         energy,gradient,info=parse_singlepoint(folder/'sqm.out',len(xyz))
         validate_coordinates(folder/'sqm.out',xyz,self.elements)
+        totals=re.findall(r'Total Mulliken Charge\s*=\s*('+NUMBER+')',(folder/'sqm.out').read_text())
+        if not totals or abs(float(totals[-1])-self.qmcharge)>.0005:
+            raise ValueError('Reported total QM charge differs from requested integer')
         record={'coordinates_A':xyz.tolist(),'energy_kcal_mol':energy,'gradient_kcal_mol_A':gradient.tolist(),
-                'evaluation':folder.name,'input_coordinate_sha256':sha(folder/'input-coordinates.npy'),**info}
+                'evaluation':folder.name,'input_coordinate_sha256':sha(folder/'input-coordinates.npy'),
+                'qmcharge':self.qmcharge,**info}
         write_json(folder/'evaluation.json',record)
         if len(self.cache) >= 100:
             self.cache.pop(next(iter(self.cache)))
@@ -102,10 +108,10 @@ class Evaluator:
         return energy,gradient.ravel()
 
 
-def optimize(out,elements,names,xyz,mol=None,lock_fd=None,coordinate_scale=1.):
+def optimize(out,elements,names,xyz,mol=None,lock_fd=None,coordinate_scale=1.,qmcharge=0):
     if not 0 < coordinate_scale <= 1:
         raise ValueError('Invalid optimizer coordinate scale')
-    evaluator=Evaluator(out,elements,names,lock_fd)
+    evaluator=Evaluator(out,elements,names,lock_fd,qmcharge)
     accepted=0
     def save_accepted(x):
         nonlocal accepted

@@ -1,0 +1,36 @@
+{
+  "checked_utc": "2026-10-29T07:47:04.991271+00:00",
+  "cases": [
+    {
+      "state": "periodic packing geometry audit passed",
+      "case": "pc16-rho0.6-seed2026",
+      "atoms": 6336,
+      "minimum_interchain_distance_A": 2.037086154289992,
+      "minimum_chain_to_own_periodic_image_distance_A": 22.30189879069117,
+      "max_bond_length_difference_from_source_A": 0.0020066837592236375,
+      "tolerance_A": 2.0,
+      "PDB_serialization_allowance_A": 0.002,
+      "packed_sha256": "08d432d995b652438c5bf3d7b25303cbd757361f79943924cf592e310384c590",
+      "MD_started": false,
+      "scope": "starting geometry only; no forcefield, density-equilibration or physical approval",
+      "generator_binary": "/workspace/md-tools/packmol-anchor-pbc-v1/packmol",
+      "generator_sha256": "51174fd45b3c463e549f3f09cb2ff0b0f440b87ba4795849eb75b1bf383c626e"
+    },
+    {
+      "state": "periodic packing geometry audit passed",
+      "case": "pc16-rho0.6-seed2027",
+      "atoms": 6336,
+      "minimum_interchain_distance_A": 2.0061146527554214,
+      "minimum_chain_to_own_periodic_image_distance_A": 23.63542084516851,
+      "max_bond_length_difference_from_source_A": 0.002031478896264982,
+      "tolerance_A": 2.0,
+      "PDB_serialization_allowance_A": 0.002,
+      "packed_sha256": "de0265ed97b3fd09f9d85c834fc797220c44a47dd3373c8cb76f23d279137dce",
+      "MD_started": false,
+      "scope": "starting geometry only; no forcefield, density-equilibration or physical approval",
+      "generator_binary": "/workspace/md-tools/packmol-anchor-pbc-v1/packmol",
+      "generator_sha256": "51174fd45b3c463e549f3f09cb2ff0b0f440b87ba4795849eb75b1bf383c626e"
+    }
+  ],
+  "scope": "snapshot of independently accepted starting geometries;not MD or physical approval"
+}

@@ -15,6 +15,7 @@ import subprocess
 from pc_length_parameters import ROOT, audit, preflight, sha
 from run_pc_sqm_checkpointed import BASE as QM_BASE, amber_environment, parse_completed, write_json
 from pc_qm_route import route
+from sqm_antechamber_view import write_view
 
 BASE = ROOT/'runs/pc-length-forcefield-v2'
 
@@ -52,11 +53,12 @@ def finalize(dp):
             raise RuntimeError('Partial postprocessing preserved; inspect before recovery')
         out.mkdir(); name=f'PC{dp}'; env=amber_environment()
         shutil.copy2(sqm, out/'accepted-sqm.out')
+        write_view(sqm,out/'accepted-sqm-antechamber.out',mol.GetNumAtoms())
         write_json(out/'source.json', {'accepted_QM': str(sqm.relative_to(ROOT)), 'sha256': sha(sqm), 'input': source})
         def run(command, label):
             with (out/f'{label}.log').open('x') as log:
                 subprocess.run(command, cwd=out, env=env, stdout=log, stderr=subprocess.STDOUT, check=True, timeout=1800)
-        run(['antechamber','-i','accepted-sqm.out','-fi','sqmout','-o',f'{name}_bcc_gaff2.mol2',
+        run(['antechamber','-i','accepted-sqm-antechamber.out','-fi','sqmout','-o',f'{name}_bcc_gaff2.mol2',
              '-fo','mol2','-c','bcc','-at','gaff2','-nc','0','-m','1','-dr','no','-pf','n','-s','2'], 'bcc')
         run(['parmchk2','-i',f'{name}_bcc_gaff2.mol2','-f','mol2','-o',f'{name}_AC.frcmod','-s','gaff2'], 'parmchk')
         if re.search(r'ATTN|need\s+revision', (out/f'{name}_AC.frcmod').read_text(), re.I):

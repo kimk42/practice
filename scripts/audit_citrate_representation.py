@@ -7,7 +7,7 @@ from pc_length_parameters import ROOT, sha
 from run_pc_sqm_checkpointed import write_json
 
 
-def review(name, candidate=None):
+def review(name, candidate=None, sqm_output=None):
     source=ROOT/f'models/buffer-parameters/{name}.mol'
     folder=ROOT/'runs/buffer-charge-candidates-g5tzm8pz'/name
     candidate=Path(candidate) if candidate else folder/'candidate.mol2'
@@ -58,16 +58,24 @@ def review(name, candidate=None):
         locations.append({'carboxyl_carbon_1based':c+1,'site':'central' if central else 'terminal'})
     if len(groups)!=(-expected) or len(acids)!=(3+expected):
         raise ValueError('Citrate protonation counts differ')
-    sqm=folder/'sqm.out';text=sqm.read_text()
+    sqm=Path(sqm_output) if sqm_output else folder/'sqm.out';text=sqm.read_text()
     progress=re.findall(r'^xmin\s+(\d+)\s+([-\d.]+) kcal/mol\s+([-\d.]+) kcal/\(mol\*A\)',text,re.M)
+    if sqm_output is not None:
+        from pc_sqm_lbfgs import parse_singlepoint
+        _,_,gradient=parse_singlepoint(sqm,n)
+        qm_review={'final_gradient_numerically_certified':gradient['gradient_gate_passed'],
+                   'final_RMS_kcal_mol_A':gradient['rms_gradient_kcal_mol_A'],
+                   'interpretation':'actual analytic derivative at the retained evaluated coordinates;not physical validation'}
+    else:
+        qm_review={'last_printed_iteration':int(progress[-1][0]),'last_printed_RMS_kcal_mol_A':float(progress[-1][2]),
+                   'final_gradient_numerically_certified':False,
+                   'interpretation':'legacy trace prints every10iterations;last printed gradient need not be the final gradient. This does not establish failed convergence or satisfy a new explicit final-gradient gate.'}
     return {'species':name,'atoms':n,'formal_charge':expected,'partial_charge_sum_e':sum(charges),
             'carboxylates':checked,'protonated_carboxyl_sites':locations,
             'changed_bond_orders_1based':changes,
             'representation_decision':'consistent with equivalent GAFF carboxylate serialization;formal MOL graph remains chemistry authority',
             'microstate_limit':'hydrogen citrate candidate protonates one terminal carboxyl;central/terminal protonation populations not established' if acids else None,
-            'QM_log_review':{'last_printed_iteration':int(progress[-1][0]),'last_printed_RMS_kcal_mol_A':float(progress[-1][2]),
-                'final_gradient_numerically_certified':False,
-                'interpretation':'legacy trace prints every10iterations;last printed gradient need not be the final gradient. This does not establish failed convergence or satisfy a new explicit final-gradient gate.'},
+            'QM_log_review':qm_review,
             'source_sha256':sha(source),'candidate_mol2_sha256':sha(candidate),'sqm_sha256':sha(sqm),
             'charges_modified':False,'MD_started':False,'approved_for_full_buffer_MD':False}
 

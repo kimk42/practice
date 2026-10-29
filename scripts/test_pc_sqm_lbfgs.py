@@ -62,5 +62,17 @@ class AnalyticGradientTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'gradient overflow'):
             parse_singlepoint(path,1)
 
+    def test_charged_carboxylate_gradient_and_total_charge(self):
+        mol=Chem.AddHs(Chem.MolFromSmiles('CC(=O)[O-]'))
+        self.assertEqual(AllChem.EmbedMolecule(mol,randomSeed=2026),0)
+        out=self.root/'anion';out.mkdir()
+        ev=Evaluator(out,[a.GetAtomicNum() for a in mol.GetAtoms()],
+                     [a.GetSymbol()+str(a.GetIdx()+1) for a in mol.GetAtoms()],qmcharge=-1)
+        x=mol.GetConformer().GetPositions().ravel();_,gradient=ev.evaluate(x)
+        h=1e-4;p=x.copy();m=x.copy();p[6]+=h;m[6]-=h
+        finite=(ev.evaluate(p)[0]-ev.evaluate(m)[0])/(2*h)
+        self.assertLess(abs(finite-gradient[6]),2e-4)
+        self.assertIn('qmcharge=-1',(out/'evaluation-000001/sqm.in').read_text())
+
 
 if __name__=='__main__':unittest.main()

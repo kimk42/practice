@@ -1,0 +1,19 @@
+{
+  "state": "variant executable geometry probes passed",
+  "original_rod_exit": 173,
+  "original_rod_success": false,
+  "unmodified_same_version_rod_exit": 173,
+  "unmodified_same_version_rod_success": false,
+  "source_version": "21.2.3",
+  "reference_binary_sha256": "df301a44ab448ad16d9c316e7032cb8dfc593211580402d8ace867a8e4701016",
+  "variant_rod_exit": 0,
+  "variant_rod_distance_A": 30.0,
+  "variant_rod_crosses_primary_cell": true,
+  "initial_periodic_pair_distance_A": 1.0,
+  "final_periodic_pair_distance_A": 4.3260000000000005,
+  "binary_sha256": "51174fd45b3c463e549f3f09cb2ff0b0f440b87ba4795849eb75b1bf383c626e",
+  "original_binary_unchanged": true,
+  "probe_directory": "runs/packmol-anchor-validation-tntffjk5",
+  "scope": "geometry implementation tests;no physical substrate validation",
+  "remaining": "every real PC output must independently pass periodic interchain,self-image and bond checks"
+}

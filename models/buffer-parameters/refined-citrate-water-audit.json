@@ -1,0 +1,60 @@
+{
+  "species": [
+    {
+      "species": "citrate3-",
+      "state": "refined candidate neutral-water EM and2ps numerical control completed",
+      "duration_ps": 2.0,
+      "energy_frames": 41,
+      "geometry_frames": 41,
+      "temperature_mean_K": 296.12352102439024,
+      "EM_Fmax_kJ_mol_nm": 778.34698,
+      "bond_length_range_nm": [
+        0.09724118211951144,
+        0.16709313629530098
+      ],
+      "solute_charge_e": -3,
+      "sodium_ions": 3,
+      "nominal_solute_concentration_mM": 61.50144693236469,
+      "charge_conversion": "verbatim source charges retained;no projection or hidden ACPYPE balancing",
+      "warnings_reviewed": "only two expected isolated-anion TLEaP charge warnings;strict GROMACS without warning override",
+      "source_mol2_sha256": "05785c2a456f6d9a82c5ac6067d092e0383ed2c3407307fba8f670afbb187bcb",
+      "checkpoint_sha256": "d10dfdb9141d9cba75de3204fb419c60f2af7ecb56a55ae6981e4695e5a20e2c",
+      "itp_sha256": "ec367e8198e64d2b510be5d0391c9acc4e01bfd9a3f6c3f686e4954cb99133d9",
+      "types_sha256": "61728eb946f3165a9b36dc6cecf9a206361f5039ce0b2752240a2fbcba5cf77d",
+      "topology_sha256": "5cfc536c29a3af59d74aed797f632596ed0e02ca66ba2e665e57aa7ba4d0f0b2",
+      "scope": "fixed microstate,300K,small TIP3P/JC-Na neutral box;concentration differs from10mM citrate in cPBSzI",
+      "physical_approval": false,
+      "full_buffer_ready": false,
+      "run_directory": "runs/citrate-refined-controls-v2/CIT3"
+    },
+    {
+      "species": "hydrogen_citrate2-",
+      "state": "refined candidate neutral-water EM and2ps numerical control completed",
+      "duration_ps": 2.0,
+      "energy_frames": 41,
+      "geometry_frames": 41,
+      "temperature_mean_K": 295.00265063414633,
+      "EM_Fmax_kJ_mol_nm": 762.29315,
+      "bond_length_range_nm": [
+        0.0972444889338207,
+        0.16789652368348784
+      ],
+      "solute_charge_e": -2,
+      "sodium_ions": 2,
+      "nominal_solute_concentration_mM": 61.50144693236469,
+      "charge_conversion": "verbatim source charges retained;no projection or hidden ACPYPE balancing",
+      "warnings_reviewed": "only two expected isolated-anion TLEaP charge warnings;strict GROMACS without warning override",
+      "source_mol2_sha256": "6d102bb9ff042f24f99c2deeeede0b6604266e9153b47125e28029f120c7e167",
+      "checkpoint_sha256": "dd76c19270caf6cb3b5386399ef251043e3559808fec8123ac9e68ad07851a08",
+      "itp_sha256": "295a49b29151d4689ea01b627b1e53d2c1dcef6d69f8c7b2418481dc024f1d98",
+      "types_sha256": "4b93a042d35df142f59c38409106f5d8a2afba620fc684414ed55c93bf2588cf",
+      "topology_sha256": "db9ecec61f704b37ef8a53ec8c78883670782d3040f34cea5f6ff9af5d2a47e9",
+      "scope": "fixed microstate,300K,small TIP3P/JC-Na neutral box;concentration differs from10mM citrate in cPBSzI",
+      "physical_approval": false,
+      "full_buffer_ready": false,
+      "run_directory": "runs/citrate-refined-controls-v2/HCIT2"
+    }
+  ],
+  "physical_approval": false,
+  "full_buffer_ready": false
+}

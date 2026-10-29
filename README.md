@@ -44,9 +44,21 @@ The user reports PC grade unknown and accepts BPA-PC as the initial assumption. 
 PC4 gradient-checked AM1-BCC and two dry EM/2ps NVT/20ps NPT controls completed.
 Density still drifts; these are numerical controls. PC8/16 continuation retains
 completed coordinate checkpoints, and packing retains saved rigid-body poses.
-See the [current continuation report](research/PC_CONTINUATION_2026-10-28.md)
+See the [current continuation report](research/CONTINUATION_2026-10-29.md)
 for active routes, recovery commands and validation. The original interrupted
 jobs and all legacy coating/FXII trajectories remain separate and unchanged.
+
+The earlier packing inputs did not remove Packmol's internal whole-molecule box
+constraint. Unfinished cases now use a separately validated anchor-only21.2.3
+variant; the original installed executable is preserved. On a fresh environment,
+run `bash scripts/install_packmol_anchor.sh` after base setup. The variant is a
+geometry generator; every output still requires independent periodic clash and
+bond checks. Existing PC4 controls retain their original packing bias.
+
+Two fixed citrate protonation candidates also passed explicit AM1 gradient and
+isolated neutral-water EM/2ps controls. Their small topologies are archived under
+`models/buffer-parameters/refined-citrate-candidates/`; hydration/ion pairing and
+pH microstate populations remain unvalidated.
 
 After inspecting live process/lock state, the authorized dry-screen workers can
 be resumed with the following commands in the activated environment. Existing
@@ -65,6 +77,7 @@ coating/FXII/cPBSzI production. Recovery/gradient regression checks are:
 
 ```bash
 PYTHONPATH=scripts python -m unittest test_pc_parameter_audit test_sqm_checkpointed test_pc_sqm_lbfgs test_pc_packing_recovery
+PYTHONPATH=scripts python -m unittest test_sqm_antechamber_view test_citrate_representation
 ```
 
 - `models/`: actual three-component graph/3D prototypes and assumptions.

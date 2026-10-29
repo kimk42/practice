@@ -1,0 +1,49 @@
+{
+  "species": [
+    {
+      "species": "citrate3-",
+      "state": "explicit AM1 gradient accepted;new BCC candidate retained for review",
+      "qmcharge": -3,
+      "RMS_gradient_kcal_mol_A": 0.0004979771962270237,
+      "energy_kcal_mol": -200.02942716692633,
+      "evaluations": 36,
+      "raw_BCC_net_charge_e": -2.9999999999999996,
+      "raw_charge_residual_e": 4.440892098500626e-16,
+      "candidate_mol2": "runs/citrate-gradient-refinement-v2/citrate3-/bcc-compatible-v2/candidate.mol2",
+      "candidate_mol2_sha256": "05785c2a456f6d9a82c5ac6067d092e0383ed2c3407307fba8f670afbb187bcb",
+      "accepted_sqm_sha256": "f1fb204639dec94ad76d865eb2271d5131d69a736a39a55ce050d1cd7b2b7a51",
+      "original_bcc_unchanged": true,
+      "MD_topology_exported": false,
+      "physical_approval": false,
+      "pH_population_assigned": false,
+      "remaining": [
+        "new candidate bond-order/charge symmetry review and integer-charge serialization",
+        "bonded topology and isolated numerical water control",
+        "aqueous interactions and protonation microstate/speciation assessment"
+      ]
+    },
+    {
+      "species": "hydrogen_citrate2-",
+      "state": "explicit AM1 gradient accepted;new BCC candidate retained for review",
+      "qmcharge": -2,
+      "RMS_gradient_kcal_mol_A": 0.0004522198342267606,
+      "energy_kcal_mol": -324.2139936276799,
+      "evaluations": 15,
+      "raw_BCC_net_charge_e": -1.9999999999999998,
+      "raw_charge_residual_e": 2.220446049250313e-16,
+      "candidate_mol2": "runs/citrate-gradient-refinement-v2/hydrogen_citrate2-/bcc-compatible-v2/candidate.mol2",
+      "candidate_mol2_sha256": "6d102bb9ff042f24f99c2deeeede0b6604266e9153b47125e28029f120c7e167",
+      "accepted_sqm_sha256": "b6d5dd13104abfa808facbdca2c19a0517a4012ba016c1e4b199565565026081",
+      "original_bcc_unchanged": true,
+      "MD_topology_exported": false,
+      "physical_approval": false,
+      "pH_population_assigned": false,
+      "remaining": [
+        "new candidate bond-order/charge symmetry review and integer-charge serialization",
+        "bonded topology and isolated numerical water control",
+        "aqueous interactions and protonation microstate/speciation assessment"
+      ]
+    }
+  ],
+  "full_buffer_ready": false
+}

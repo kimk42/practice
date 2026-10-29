@@ -1,0 +1,94 @@
+{
+  "cases": [
+    {
+      "case": "pc8-rho0.6-seed2026",
+      "attempt_directory": "runs/pc-dry-packing-v4/pc8-rho0.6-seed2026/anchor-0001",
+      "previous_state": "blocked_preserved",
+      "restart": {
+        "source": "runs/pc-dry-packing-v4/pc8-rho0.6-seed2026/resume-0002/packing.restart",
+        "sha256": "51abb52e25cff41d81ed6c870e62e7655f29b2dfc69fcee2ffe883e0e65a6a60",
+        "scope": "continue last saved poses;no coordinate reset"
+      }
+    },
+    {
+      "case": "pc8-rho0.6-seed2027",
+      "attempt_directory": "runs/pc-dry-packing-v4/pc8-rho0.6-seed2027/anchor-0001",
+      "previous_state": "blocked_preserved",
+      "restart": {
+        "source": "runs/pc-dry-packing-v4/pc8-rho0.6-seed2027/resume-0002/packing.restart",
+        "sha256": "93389123821766225971a92958ed4cd88285a497b4f8a0c789d74e8ab86f2d1d",
+        "scope": "continue last saved poses;no coordinate reset"
+      }
+    },
+    {
+      "case": "pc16-rho0.6-seed2026",
+      "attempt_directory": "runs/pc-dry-packing-v4/pc16-rho0.6-seed2026/anchor-0001",
+      "previous_state": "blocked_preserved",
+      "restart": {
+        "source": "runs/pc-dry-packing-v4/pc16-rho0.6-seed2026/resume-0001/packing.restart",
+        "sha256": "a83f33d8f0b094cfa17cfce38db65729ac4e707c455106b846c4fa96137dcdcf",
+        "scope": "continue last saved poses;no coordinate reset"
+      }
+    },
+    {
+      "case": "pc16-rho0.6-seed2027",
+      "attempt_directory": "runs/pc-dry-packing-v4/pc16-rho0.6-seed2027/anchor-0001",
+      "previous_state": "blocked_preserved",
+      "restart": {
+        "source": "runs/pc-dry-packing-v4/pc16-rho0.6-seed2027/resume-0001/packing.restart",
+        "sha256": "6e5145de4c6fd26c0593ed311b785e9d12041987d7438e1970f4b86892e1626a",
+        "scope": "continue last saved poses;no coordinate reset"
+      }
+    },
+    {
+      "case": "pc4-rho1.0-seed2026",
+      "attempt_directory": "runs/pc-dry-packing-v4/pc4-rho1.0-seed2026/anchor-0001",
+      "previous_state": "interrupted_preserved",
+      "restart": {
+        "source": "runs/pc-dry-packing-v4/pc4-rho1.0-seed2026/resume-0001/packing.restart",
+        "sha256": "c7cd56646efcc9d7c16ef0777582075cc452edf30f8e463645acb6fe21aec3df",
+        "scope": "continue last saved poses;no coordinate reset"
+      }
+    },
+    {
+      "case": "pc4-rho1.0-seed2027",
+      "attempt_directory": "runs/pc-dry-packing-v4/pc4-rho1.0-seed2027/anchor-0001",
+      "previous_state": "interrupted_preserved",
+      "restart": {
+        "source": "runs/pc-dry-packing-v4/pc4-rho1.0-seed2027/resume-0001/source.restart",
+        "sha256": "62477a5027fc7cce30dc4a2c41e7243c7996bc64a58f2eacc040ad8197e49c1c",
+        "scope": "continue last saved poses;no coordinate reset"
+      }
+    },
+    {
+      "case": "pc8-rho1.0-seed2026",
+      "attempt_directory": "runs/pc-dry-packing-v4/pc8-rho1.0-seed2026/anchor-0001",
+      "previous_state": "prepared",
+      "restart": null
+    },
+    {
+      "case": "pc8-rho1.0-seed2027",
+      "attempt_directory": "runs/pc-dry-packing-v4/pc8-rho1.0-seed2027/anchor-0001",
+      "previous_state": "prepared",
+      "restart": null
+    },
+    {
+      "case": "pc16-rho1.0-seed2026",
+      "attempt_directory": "runs/pc-dry-packing-v4/pc16-rho1.0-seed2026/anchor-0001",
+      "previous_state": "prepared",
+      "restart": null
+    },
+    {
+      "case": "pc16-rho1.0-seed2027",
+      "attempt_directory": "runs/pc-dry-packing-v4/pc16-rho1.0-seed2027/anchor-0001",
+      "previous_state": "prepared",
+      "restart": null
+    }
+  ],
+  "binary_sha256": "51174fd45b3c463e549f3f09cb2ff0b0f440b87ba4795849eb75b1bf383c626e",
+  "completed_PC4_cases_preserved": 2,
+  "independent_distance_gate_A": 2.0,
+  "PDB_rounding_allowance_A": 0.002,
+  "physical_approval": false,
+  "supersedes": "v2-v4 claim that selecting atom1 in the input removed whole-molecule containment;upstream automatic restriction persisted"
+}

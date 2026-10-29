@@ -61,7 +61,7 @@
     "latest_polyatomic_audit": {
       "report": "models/buffer-parameters/bonded-coverage-audit.json",
       "azide": "automatic Antechamber route retained as failed historical branch;published rigid route passed2ps and102ps numerical/solution diagnostics",
-      "citrate_and_phosphate": "input/typed bond-order representation changes require chemical/charge-model review",
+      "citrate_and_phosphate": "separate graph/charge representation reviews and isolated numerical controls recorded;physical hydration/ion-pairing and speciation validation remain",
       "partial_charges_approved": false,
       "full_buffer_simulation_started": false
     },
@@ -70,15 +70,17 @@
     "computed_charge_candidates": {
       "audit": "models/buffer-parameters/charge-candidate-audit.json",
       "method": "computed gas-phaseAM1-BCC/GAFF2 candidates,not experimental or validated aqueous parameters",
-      "citrate": "existing carboxylate serialization and oxygen-pair charge equality reviewed;hydrogen-citrate candidate is one terminal-protonated microstate;final-gradient evidence and aqueous/microstate validation remain;no new charges or MD",
+      "citrate": "explicit final-gradient refinement and neutral-water EM/2ps controls completed for citrate3- and one terminal-protonated hydrogen-citrate2- microstate;exported charges identical to original candidates;aqueous accuracy and populations not approved",
       "phosphate": "separate constrained-charge candidates preserve original outputs;both neutral ion-water EM/2ps numerical controls passed;physical aqueous validation pending",
       "azide": "excluded from calculation due prior typing warning",
       "MD_topologies_exported": true,
-      "export_scope": "unapproved projected phosphate candidates for isolated numerical controls only"
+      "export_scope": "unapproved projected phosphate and refined citrate candidates for isolated numerical controls only"
     },
     "charge_precision_audit": "models/buffer-parameters/charge-precision-audit.json",
     "phosphate_projection_audit": "models/buffer-parameters/phosphate-charge-projection-audit.json",
     "phosphate_numerical_audit": "models/buffer-parameters/projected-phosphate-water-audit.json",
-    "citrate_representation_review": "models/buffer-parameters/citrate-representation-review.json"
+    "citrate_representation_review": "models/buffer-parameters/citrate-representation-review.json",
+    "citrate_refinement_audit": "models/buffer-parameters/citrate-gradient-refinement-audit.json",
+    "citrate_numerical_audit": "models/buffer-parameters/refined-citrate-water-audit.json"
   }
 }

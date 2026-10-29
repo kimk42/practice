@@ -1,0 +1,10 @@
+{
+  "checked_utc": "2026-10-29T07:47:04.987424+00:00",
+  "legacy_checkpoints_unchanged": 43,
+  "additional_PC4_checkpoints_unchanged": 6,
+  "new_citrate_checkpoints": {
+    "runs/citrate-refined-controls-v2/CIT3/md.cpt": "d10dfdb9141d9cba75de3204fb419c60f2af7ecb56a55ae6981e4695e5a20e2c",
+    "runs/citrate-refined-controls-v2/HCIT2/md.cpt": "dd76c19270caf6cb3b5386399ef251043e3559808fec8123ac9e68ad07851a08"
+  },
+  "original_forcefields_not_overwritten": true
+}

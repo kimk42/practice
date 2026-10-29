@@ -98,10 +98,20 @@ def recover_attempt(root, state, case):
     shutil.copy2(source/'molecule.pdb',out/'molecule.pdb')
     shutil.copy2(checkpoint,out/'source.restart')
     text=re.sub(r'^restart_from .*\n','',(source/'packmol.inp').read_text(),flags=re.M)
+    if state.get('recovery_method') == 'local_polish':
+        # Continue the saved placement without Packmol's molecule-relocation
+        # heuristic. The target distance, box and molecule count do not change.
+        text=re.sub(r'^maxit .*$', 'maxit 1000',text,flags=re.M)
+        if not re.search(r'^disable_movebad\s*$',text,re.M):
+            text='disable_movebad\n'+text
+    elif state.get('recovery_method') == 'resume_with_relocation':
+        text=re.sub(r'^disable_movebad\s*\n','',text,flags=re.M)
     (out/'packmol.inp').write_text('restart_from source.restart\n'+text)
-    resumed=dict(case,input_sha256=sha(out/'packmol.inp'),restart={
+    source_case=json.loads((source/'case.json').read_text()) if (source/'case.json').exists() else case
+    resumed=dict(source_case,input_sha256=sha(out/'packmol.inp'),restart={
         'source':str(checkpoint.relative_to(ROOT)), 'sha256':sha(checkpoint),
-        'scope':'saved rigid-body poses; optimizer/RNG state not retained'})
+        'scope':'saved rigid-body poses; optimizer/RNG state not retained',
+        'method':state.get('recovery_method','interruption_resume')})
     write_json(out/'case.json',resumed)
     return out,resumed
 
@@ -111,26 +121,37 @@ def run_case(case, queue_fd=None):
     with (root/'case.lock').open('a') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         state = json.loads((root/'status.json').read_text())
-        if state['state'] not in ('prepared','running'):
+        if state['state'] not in ('prepared','running','reviewed_local_polish','prepared_anchor_variant','reviewed_relocation'):
             return
-        if state['state']=='running':
+        method=state.get('recovery_method','interruption_resume')
+        if state['state'] in ('running','reviewed_local_polish','reviewed_relocation'):
             rows=subprocess.run(['ps','-C','packmol','-o','ppid=,stat='],capture_output=True,text=True).stdout.splitlines()
             if any(r.split()[0]=='1' and not r.split()[1].startswith('Z') for r in rows):
                 raise RuntimeError('Orphan Packmol process requires inspection before recovery')
             out,case=recover_attempt(root,state,case)
             if out is None:return
+        elif state['state']=='prepared_anchor_variant':
+            out=root/state['attempt_directory'];case=json.loads((out/'case.json').read_text())
+            if (out/'packmol.log').exists():raise RuntimeError('Existing variant output preserved')
         else:
             out=root
             if (out/'packmol.log').exists():raise RuntimeError('Existing output preserved')
         state = {'state': 'running', 'started_utc': datetime.now(timezone.utc).isoformat(), 'MD_started': False,
-                 'attempt_directory':str(out.relative_to(root))}
+                 'attempt_directory':str(out.relative_to(root)), 'recovery_method':method}
         write_json(root/'status.json', state)
         try:
+            binary=Path(case.get('generator_binary',shutil.which('packmol') or '/workspace/md-tools/root/usr/bin/packmol'))
+            if 'generator_sha256' in case:
+                verified=json.loads((ROOT/'models/surface-revision-v2/packmol-anchor-validation.json').read_text())
+                if sha(binary)!=case['generator_sha256'] or verified['binary_sha256']!=case['generator_sha256']:
+                    raise ValueError('Variant binary differs from validated executable')
             with (out/'packmol.inp').open() as inp, (out/'packmol.log').open('x') as log:
-                subprocess.run([shutil.which('packmol') or '/workspace/md-tools/root/usr/bin/packmol'],
+                subprocess.run([str(binary)],
                                cwd=out, stdin=inp, stdout=log, stderr=subprocess.STDOUT, check=True, timeout=10800,
                                pass_fds=tuple(fd for fd in (lock.fileno(),queue_fd) if fd is not None))
-            result = audit(out, case); write_json(out/'geometry-audit.json', result)
+            result = audit(out, case)
+            result.update(generator_binary=str(binary),generator_sha256=sha(binary))
+            write_json(out/'geometry-audit.json', result)
             state['state'] = 'geometry_passed'
             state['accepted_directory'] = str(out.relative_to(root))
         except Exception as error:
@@ -143,6 +164,9 @@ def run():
     with (BASE/'queue.lock').open('a') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         plan = json.loads(PLAN.read_text())
+        # Reviewed recoveries can be prioritized without changing the scientific
+        # case definitions or restarting completed conditions.
+        plan['cases'].sort(key=lambda c:json.loads((BASE/c['name']/'status.json').read_text()).get('recovery_priority',100))
         with ThreadPoolExecutor(max_workers=2) as pool:
             list(pool.map(lambda case:run_case(case,lock.fileno()), plan['cases']))
 

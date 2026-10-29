@@ -1,0 +1,32 @@
+{
+  "source_directory": "/workspace/md-tools/packmol-source",
+  "source_main_sha256": "8d539bae69e3c639c16a1b559b8e76306c3e33d9e7bdf416bd4fbad4b33c21fe",
+  "modified_main_sha256": "46c94894d48daed6c8b3626383bb72fcdaedee3d7b275b497217695f3bcc2e05",
+  "binary": "/workspace/md-tools/packmol-anchor-pbc-v1/packmol",
+  "binary_sha256": "51174fd45b3c463e549f3f09cb2ff0b0f440b87ba4795849eb75b1bf383c626e",
+  "original_binary_sha256": "be4e84c80e97b2dbaf286d742289d5c219a8752e1384cd89ecc24a86fb925f08",
+  "compiler": "GNU Fortran (Debian 14.2.0-19) 14.2.0",
+  "build_command": [
+    "make",
+    "-j2",
+    "FORTRAN=/workspace/md-tools/root/usr/bin/x86_64-linux-gnu-gfortran-14",
+    "FLAGS=-O2 -B/usr/lib/gcc/x86_64-linux-gnu/14/"
+  ],
+  "patch": "automatic PBC restraint assignment changes using_pbc to using_pbc .and. iatom==1;diagnostic label updated",
+  "physical_approval": false,
+  "requires": "boundary-crossing and periodic-distance regression probes before PC use",
+  "source_version": "21.2.3",
+  "source_git_commit": "14e50c65fa9120b58e1ba33ad482c7c7260f72b2",
+  "unmodified_reference_binary": "/workspace/md-tools/packmol-reference-21.2.3/packmol",
+  "unmodified_reference_sha256": "df301a44ab448ad16d9c316e7032cb8dfc593211580402d8ace867a8e4701016",
+  "unchanged_relative_to_source21.2.3": "PBC cell/distance kernels,geometry,atom radii,target tolerance and optimizer",
+  "source_changes": [
+    "app/packmol.f90"
+  ],
+  "source_repository": "https://github.com/m3g/packmol.git",
+  "compiler_debs_sha256": {
+    "gfortran-14-x86-64-linux-gnu_14.2.0-19_amd64.deb": "520b3283edc193b75644d655654834662f56f9006a78751d91feb882b74ca684",
+    "libgfortran-14-dev_14.2.0-19_amd64.deb": "8460dfd941d9f60e92516e5c4e3f8bb08e60983e7526f376a7c87969a8a2dbfb",
+    "gfortran-14_14.2.0-19_amd64.deb": "843ad332a9ffbc0b6093e9cb5cfc25424fb6e756f270ed180299367dfc3ef533"
+  }
+}

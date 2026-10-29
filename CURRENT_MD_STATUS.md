@@ -1,5 +1,11 @@
 # Current MD status
 
+Latest continuation2026-10-29: PC8/16 QM resumed from verified accepted coordinates after an environment interruption. Two isolated citrate candidates completed explicit final-gradient checks and neutral-water EM/2ps controls;the exported charges match their original candidates. Full coating/FXII/cPBSzI MD remains unstarted.
+
+Packing correction: Packmol's automatic PBC constraint had still confined every atom to the primary box,despite the input selecting atom1. Prior v2-v4 claims that chains could cross the boundary were incorrect. A separately built21.2.3 anchor-only variant passed boundary-crossing and minimum-image tests against unmodified executables. Unfinished cases now use this variant in new attempt folders with saved poses and unchanged independent distance/bond checks. See [the latest report](research/CONTINUATION_2026-10-29.md) and `runs/pc-completion-status.json`;physical and equilibrium gates remain.
+
+## Earlier continuation snapshots
+
 Latest continuation2026-10-28: the environment became usable again. PC4 native AM1 optimization passed the explicit gradient gate; two6336-atom dry PC4 controls each completed EM,2ps NVT and20ps NPT. Independent energy/checkpoint checks confirm completion, but density increases by5.57–6.48% between the first/last5ps windows, so neither case is an equilibrated substrate. See [the continuation report](research/PC_CONTINUATION_2026-10-28.md) and `models/surface-revision-v2/pc4-dry-controls-interim-audit.json`.
 
 PC8/16 retained completed native coordinate checkpoints after another environment interruption. Continuation now uses SQM analytic gradients with L-BFGS and exact accepted-coordinate storage; the first PC16 unscaled trial was rejected for gradient-print overflow, and a reviewed smaller optimizer step is selected. The unchanged physical RMS threshold is0.0005kcal/mol/A. Interrupted packing resumes in new attempt directories from saved poses with the unchanged independent distance gate. `runs/pc-completion-status.json`, per-chain status files and live processes are the runtime authorities. The supervisor advances accepted cases through strict parameter review and the same short dry controls; scientific failures are held. Full coating/FXII/cPBSzI MD is still not started.

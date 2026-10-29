@@ -1,0 +1,39 @@
+{
+  "cases": [
+    {
+      "case": "pc8-rho0.6-seed2026",
+      "output_sha256": "32be7ce94c2a92d0e526ccc6807bc13b6083ba51dd023b0a207bb66dd7caeb9b",
+      "minimum_interchain_A": 0.6782057210021161,
+      "interchain_pairs_below1.998A": 422,
+      "minimum_self_image_A": 24.573891292555633,
+      "scope": "rejected packing diagnostic only;not an accepted MD start"
+    },
+    {
+      "case": "pc8-rho0.6-seed2027",
+      "output_sha256": "15400f93d31a1970e30f35ff82afde4a8ad53253aca2031e09d9ae21dfcec9db",
+      "minimum_interchain_A": 0.5237795337735166,
+      "interchain_pairs_below1.998A": 402,
+      "minimum_self_image_A": 25.543713124378634,
+      "scope": "rejected packing diagnostic only;not an accepted MD start"
+    },
+    {
+      "case": "pc16-rho0.6-seed2026",
+      "output_sha256": "20db3067c7010b03c83e676f0844640f81f6dad4031df22ae37091bc6dc17622",
+      "minimum_interchain_A": 0.8884486479251338,
+      "interchain_pairs_below1.998A": 171,
+      "minimum_self_image_A": 22.344379906324022,
+      "scope": "rejected packing diagnostic only;not an accepted MD start"
+    },
+    {
+      "case": "pc16-rho0.6-seed2027",
+      "output_sha256": "10ceeafc01e9f767b2d9fa52dbb0aa4b5a25bbadac2729c53696c8e43715e1e4",
+      "minimum_interchain_A": 1.7243332044590418,
+      "interchain_pairs_below1.998A": 78,
+      "minimum_self_image_A": 23.822463371497072,
+      "scope": "rejected packing diagnostic only;not an accepted MD start"
+    }
+  ],
+  "distance_gate_A": 2.0,
+  "PDB_allowance_A": 0.002,
+  "MD_started": false
+}

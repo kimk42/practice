@@ -21,6 +21,21 @@ from pc_qm_route import route
 STATUS=ROOT/'runs/pc-completion-status.json'
 
 
+def packing_ready_or_launch():
+    base=ROOT/'runs/pc-dry-packing-v4'
+    with (base/'queue.lock').open('a') as lock:
+        try:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+        except BlockingIOError:return 'running'
+        ready={'prepared','running','reviewed_local_polish','prepared_anchor_variant','reviewed_relocation'}
+        states=[json.loads(p.read_text())['state'] for p in base.glob('*/status.json')]
+        if not any(state in ready for state in states):return 'idle_completed_or_held'
+    stamp=datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
+    with (ROOT/'runs'/f'pc-packing-auto-{stamp}.log').open('x') as log:
+        subprocess.Popen([sys.executable,'-u',str(ROOT/'scripts/run_pc_packing_margin.py'),'run'],
+                         cwd=ROOT,stdin=subprocess.DEVNULL,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
+    return 'launched_ready_or_explicitly_reviewed_cases'
+
+
 def qm_ready_or_launch(dp):
     active_base, worker = route(dp)
     folder=active_base/f'pc{dp}'
@@ -52,6 +67,7 @@ def main(watch):
         started=time.monotonic()
         cases=json.loads((ROOT/'models/surface-revision-v2/dry-packing-margin-v4.json').read_text())['cases']
         while True:
+            packing_queue=packing_ready_or_launch()
             quantum={str(dp):qm_ready_or_launch(dp) for dp in (4,8,16)}
             for dp in (4,8,16):
                 key=f'parameters-PC{dp}'
@@ -81,6 +97,7 @@ def main(watch):
             state={'state':'completed_numerical_screen' if len(completed)==len(cases) else 'awaiting_audited_prerequisites',
                    'quantum':quantum,'packing':packing,'completed_controls':completed,'target_controls':len(cases),
                    'held_failures':failures,'updated_utc':datetime.now(timezone.utc).isoformat(),
+                   'packing_queue':packing_queue,
                    'scope':'PC4/8/16 dry EM/2ps NVT/20ps NPT screen only;not full coating/FXII/cPBSzI or physical approval'}
             write_json(STATUS,state)
             if len(completed)==len(cases):

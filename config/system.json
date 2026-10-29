@@ -81,7 +81,7 @@
       }
     }
   ],
-  "status": "PC4 gradient-checked AM1-BCC and two dry EM/2ps NVT/20ps NPT numerical controls completed;PC8/16 continue from saved coordinates with explicit gradient gate;v4 packing recovery retains saved poses;full coating/FXII/cPBSzI MD not started",
+  "status": "PC8/16 quantum optimization resumed from verified accepted coordinates;PBC automatic whole-atom confinement corrected with separately validated anchor-only generator;two citrate EM/2ps neutral-water controls completed;full coating/FXII/cPBSzI MD not started",
   "force_field": "Exploratory GAFF2/AM1-BCC for polymer/PC with Amber99sb-ildn/TIP3P for protein/water; numerical parameter gates passed, physical accuracy and experimental coating validation pending; no CHARMM mixing",
   "literature_reference_conditions": {
     "transfer_to_target": "Reference only: neither paper validates the user PC-supported 7:2:1 terpolymer. Do not auto-apply molecular weights or crosslink conversion.",
@@ -310,5 +310,5 @@
   "model_revision_policy": "config/model-revision-policy.json",
   "surface_revision_design": "config/surface-revision-design.json",
   "latest_five_step_report": "research/FIVE_STEP_REVISION_2026-10-28.md",
-  "latest_PC_continuation_report": "research/PC_CONTINUATION_2026-10-28.md"
+  "latest_PC_continuation_report": "research/CONTINUATION_2026-10-29.md"
 }

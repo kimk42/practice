@@ -1,0 +1,73 @@
+{
+  "cases": [
+    {
+      "case": "pc16-rho0.6-seed2027",
+      "previous_status": {
+        "state": "reviewed_local_polish",
+        "started_utc": "2026-10-28T22:52:55.516268+00:00",
+        "MD_started": false,
+        "attempt_directory": ".",
+        "reason": "Command '['/workspace/md-tools/root/usr/bin/packmol']' returned non-zero exit status 173.",
+        "finished_utc": "2026-10-29T00:03:02.374511+00:00",
+        "recovery_method": "local_polish",
+        "recovery_priority": 0
+      },
+      "source_restart_sha256": "b2635c07309f4000a149b0070a959b0d5686394fa32d8478964bc6f2a136273e",
+      "source_output_sha256": "10ceeafc01e9f767b2d9fa52dbb0aa4b5a25bbadac2729c53696c8e43715e1e4",
+      "decision": "resume saved rigid poses with disable_movebad,maxit1000; preserve box,chains,distance criterion; no MD before independent geometry audit",
+      "diagnostic": "models/surface-revision-v2/rejected-packing-diagnostics-v4.json"
+    },
+    {
+      "case": "pc8-rho0.6-seed2027",
+      "previous_status": {
+        "state": "reviewed_local_polish",
+        "started_utc": "2026-10-28T21:37:26.369887+00:00",
+        "MD_started": false,
+        "attempt_directory": "resume-0001",
+        "reason": "Command '['/workspace/md-tools/root/usr/bin/packmol']' returned non-zero exit status 173.",
+        "finished_utc": "2026-10-28T22:52:30.555205+00:00",
+        "recovery_method": "local_polish",
+        "recovery_priority": 1
+      },
+      "source_restart_sha256": "fe5a849a5fa1493570b524948fc55f9edcd02c6f8cd88f6d3fefc30b01e9ccf9",
+      "source_output_sha256": "15400f93d31a1970e30f35ff82afde4a8ad53253aca2031e09d9ae21dfcec9db",
+      "decision": "resume saved rigid poses with disable_movebad,maxit1000; preserve box,chains,distance criterion; no MD before independent geometry audit",
+      "diagnostic": "models/surface-revision-v2/rejected-packing-diagnostics-v4.json"
+    },
+    {
+      "case": "pc16-rho0.6-seed2026",
+      "previous_status": {
+        "state": "reviewed_local_polish",
+        "started_utc": "2026-10-28T22:52:30.556156+00:00",
+        "MD_started": false,
+        "attempt_directory": ".",
+        "reason": "Command '['/workspace/md-tools/root/usr/bin/packmol']' returned non-zero exit status 173.",
+        "finished_utc": "2026-10-29T00:02:57.001824+00:00",
+        "recovery_method": "local_polish",
+        "recovery_priority": 2
+      },
+      "source_restart_sha256": "54229d9a3175a5e07137138011432e7d7414c578bc5d9e0e9042a5107634e84b",
+      "source_output_sha256": "20db3067c7010b03c83e676f0844640f81f6dad4031df22ae37091bc6dc17622",
+      "decision": "resume saved rigid poses with disable_movebad,maxit1000; preserve box,chains,distance criterion; no MD before independent geometry audit",
+      "diagnostic": "models/surface-revision-v2/rejected-packing-diagnostics-v4.json"
+    },
+    {
+      "case": "pc8-rho0.6-seed2026",
+      "previous_status": {
+        "state": "reviewed_local_polish",
+        "started_utc": "2026-10-28T21:37:26.369979+00:00",
+        "MD_started": false,
+        "attempt_directory": "resume-0001",
+        "reason": "Command '['/workspace/md-tools/root/usr/bin/packmol']' returned non-zero exit status 173.",
+        "finished_utc": "2026-10-28T22:52:55.515283+00:00",
+        "recovery_method": "local_polish",
+        "recovery_priority": 3
+      },
+      "source_restart_sha256": "2aba2fe24c459896c6a5116f0a5426592bfe9f37f830b4eaa189729f94e9a250",
+      "source_output_sha256": "32be7ce94c2a92d0e526ccc6807bc13b6083ba51dd023b0a207bb66dd7caeb9b",
+      "decision": "resume saved rigid poses with disable_movebad,maxit1000; preserve box,chains,distance criterion; no MD before independent geometry audit",
+      "diagnostic": "models/surface-revision-v2/rejected-packing-diagnostics-v4.json"
+    }
+  ],
+  "MD_started": false
+}

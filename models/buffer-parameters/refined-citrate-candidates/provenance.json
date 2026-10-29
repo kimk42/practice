@@ -1,0 +1,24 @@
+{
+  "molecules": [
+    {
+      "species": "citrate3-",
+      "itp": "models/buffer-parameters/refined-citrate-candidates/CIT3.itp",
+      "sha256": "d66f2b727792275bfbd58f7892e815e15ee712af9ca172fb443fbfc3e9e0697d",
+      "charges_identical_to_legacy_at_exported_precision": true,
+      "source_control_itp_sha256": "ec367e8198e64d2b510be5d0391c9acc4e01bfd9a3f6c3f686e4954cb99133d9"
+    },
+    {
+      "species": "hydrogen_citrate2-",
+      "itp": "models/buffer-parameters/refined-citrate-candidates/HCIT2.itp",
+      "sha256": "b2f793f7b2499887de8caec5d0e01fafe3d82698ef916387d3d3bf49170034f8",
+      "charges_identical_to_legacy_at_exported_precision": true,
+      "source_control_itp_sha256": "295a49b29151d4689ea01b627b1e53d2c1dcef6d69f8c7b2418481dc024f1d98"
+    }
+  ],
+  "types_sha256": "3a3d2451b6d21ff493365940826c216652cd42368797d78d9b97587790bcdf95",
+  "source_audit": "models/buffer-parameters/refined-citrate-water-audit.json",
+  "parameters_changed_by_archiving": false,
+  "physical_approval": false,
+  "full_buffer_ready": false,
+  "archive_formatting": "trailing whitespace removed;all topology tokens unchanged;source run files preserved"
+}
