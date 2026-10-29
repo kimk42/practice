@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-10-29T15:36:29.621344+00:00",
+  "DP": 8,
+  "prior_stop": {
+    "message": "ABNORMAL: ",
+    "status": 2,
+    "success": false
+  },
+  "accepted_evaluation": "evaluation-008140",
+  "accepted_checkpoint_sha256": "63724ecb0390206f9a09c2ddc9e999fe029c8e345ca799a48734594d45e9756a",
+  "raw_output_sha256": "32090c5d60876430114f5536620f0706e04d1cc56a067d5119c224e58f9ab84e",
+  "rms_gradient_kcal_mol_A": 0.002022835533588682,
+  "required_gradient_kcal_mol_A": 0.0005,
+  "bond_range_A": [
+    0.9681376749785683,
+    1.5298271584919811
+  ],
+  "decision": "One reviewed continuation from unchanged accepted coordinates with fresh L-BFGS memory and unchanged optimizer/AM1/SCF/gradient settings. Any further abnormal stop is held for review.",
+  "diagnostic": "L-BFGS-B status2 ABNORMAL after3914 accepted callbacks;not a timeout or success. Late tiny trial displacements have energy differences comparable to electronic/numerical variability;root cause not established.",
+  "preserved_records": "runs/pc-length-sqm-lbfgs-v3/pc8/line-search-review-20261029T153629Z",
+  "physical_approval": false
+}

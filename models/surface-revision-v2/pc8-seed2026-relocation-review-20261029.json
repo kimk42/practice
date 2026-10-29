@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-10-29T15:36:29.623177+00:00",
+  "prior_status": {
+    "state": "blocked_preserved",
+    "started_utc": "2026-10-29T07:30:28.269014+00:00",
+    "MD_started": false,
+    "attempt_directory": "anchor-0001",
+    "recovery_method": "validated_anchor_only_PBC_generator",
+    "reason": "Command '['/workspace/md-tools/packmol-anchor-pbc-v1/packmol']' timed out after 10799.999987481002 seconds",
+    "finished_utc": "2026-10-29T10:30:28.275302+00:00"
+  },
+  "source_checkpoint_sha256": "3bf403b673fa5589d843b900af17bd101802c4a8c9695815930c7c440c49347e",
+  "source_checkpoint": "runs/pc-dry-packing-v4/pc8-rho0.6-seed2026/anchor-0001/packing.restart",
+  "reason": "Corrected PBC variant timed out in local polishing with inherited disable_movebad;late objective approximately324.79. Same reviewed relocation recovery passed independently for pc8-rho0.6-seed2027.",
+  "decision": "Retain saved poses,seed,binary,box,and distance gate;restore standard Packmol movebad heuristic for one explicitly reviewed recovery;future failure remains held."
+}

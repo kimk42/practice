@@ -1,0 +1,116 @@
+{
+  "checked_utc": "2026-10-29T15:37:31.185288+00:00",
+  "checkpoint_hashes_verified": 51,
+  "packing_pc8_seed2027_reaudit": {
+    "state": "periodic packing geometry audit passed",
+    "case": "pc8-rho0.6-seed2027",
+    "atoms": 6336,
+    "minimum_interchain_distance_A": 2.0009380300249213,
+    "minimum_chain_to_own_periodic_image_distance_A": 24.914203422620933,
+    "max_bond_length_difference_from_source_A": 0.002122456205042811,
+    "tolerance_A": 2.0,
+    "PDB_serialization_allowance_A": 0.002,
+    "packed_sha256": "25fe56ee13b37b63dbf3b90e363c67baf5df72e65661f24c1ec0d78561b712ed",
+    "MD_started": false,
+    "scope": "starting geometry only; no forcefield, density-equilibration or physical approval"
+  },
+  "PC8_prior_line_search_trials": [
+    {
+      "evaluation": "evaluation-008166",
+      "max_atom_displacement_from_accepted_A": 9.23374565323033e-14,
+      "energy_kcal_mol": -459.74418883246835
+    },
+    {
+      "evaluation": "evaluation-008167",
+      "max_atom_displacement_from_accepted_A": 4.616872826615165e-14,
+      "energy_kcal_mol": -459.74418705923017
+    },
+    {
+      "evaluation": "evaluation-008177",
+      "max_atom_displacement_from_accepted_A": 2.7755575615628914e-17,
+      "energy_kcal_mol": -459.74418886599597
+    }
+  ],
+  "supervisor_snapshot": {
+    "state": "awaiting_audited_prerequisites",
+    "quantum": {
+      "4": "gradient_passed",
+      "8": "running",
+      "16": "running"
+    },
+    "packing": {
+      "pc4-rho0.6-seed2026": "geometry_passed",
+      "pc4-rho0.6-seed2027": "geometry_passed",
+      "pc8-rho0.6-seed2026": "running",
+      "pc8-rho0.6-seed2027": "geometry_passed",
+      "pc16-rho0.6-seed2026": "geometry_passed",
+      "pc16-rho0.6-seed2027": "geometry_passed",
+      "pc4-rho1.0-seed2026": "blocked_preserved",
+      "pc4-rho1.0-seed2027": "blocked_preserved",
+      "pc8-rho1.0-seed2026": "blocked_preserved",
+      "pc8-rho1.0-seed2027": "blocked_preserved",
+      "pc16-rho1.0-seed2026": "blocked_preserved",
+      "pc16-rho1.0-seed2027": "blocked_preserved"
+    },
+    "completed_controls": [
+      "pc4-rho0.6-seed2026",
+      "pc4-rho0.6-seed2027"
+    ],
+    "target_controls": 12,
+    "held_failures": {},
+    "updated_utc": "2026-10-29T15:37:10.295521+00:00",
+    "packing_queue": "running",
+    "scope": "PC4/8/16 dry EM/2ps NVT/20ps NPT screen only;not full coating/FXII/cPBSzI or physical approval"
+  },
+  "quantum": {
+    "8": {
+      "state": "running",
+      "worker_pid": 43602,
+      "accepted_iteration_this_session": 1,
+      "evaluations_total": 8178,
+      "rms_gradient_kcal_mol_A": 0.002022835533588682,
+      "updated_utc": "2026-10-29T15:36:44.399448+00:00"
+    },
+    "16": {
+      "state": "running",
+      "worker_pid": 17446,
+      "accepted_iteration_this_session": 1122,
+      "evaluations_total": 1690,
+      "rms_gradient_kcal_mol_A": 0.04619657857569688,
+      "updated_utc": "2026-10-29T15:37:28.638490+00:00"
+    }
+  },
+  "full_FXII_cPBSzI_started": false,
+  "scope": "Runtime and preservation check;geometry pass and short controls do not establish physical equilibrium or adsorption",
+  "recovery_followup": {
+    "checked_utc": "2026-10-29T15:39:39.734437+00:00",
+    "PC8_status": {
+      "state": "blocked_preserved",
+      "reason": "Optimizer stopped before the explicit AM1 gradient criterion"
+    },
+    "PC8_optimizer_stop": {
+      "message": "ABNORMAL: ",
+      "status": 2,
+      "success": false
+    },
+    "PC8_accepted_evaluation": "evaluation-008178",
+    "PC8_accepted_coordinate_sha256": "86c9fbfe95f535ec259e8b33fadc527bf56dcbcd4c37d9f340b59e7d721ba53f",
+    "PC8_gradient_RMS_kcal_mol_A": 0.002022835533588682,
+    "decision": "One bounded continuation failed with the same line-search status before any new accepted step;hold pending energy/gradient numerical diagnostics. No further retry scheduled.",
+    "PC16_status": {
+      "state": "running",
+      "worker_pid": 17446,
+      "accepted_iteration_this_session": 1127,
+      "evaluations_total": 1695,
+      "rms_gradient_kcal_mol_A": 0.04961303114798181,
+      "updated_utc": "2026-10-29T15:39:18.648944+00:00"
+    },
+    "PC8_low_density_seed2026_packing": {
+      "state": "running",
+      "started_utc": "2026-10-29T15:36:40.552316+00:00",
+      "MD_started": false,
+      "attempt_directory": "resume-0003",
+      "recovery_method": "resume_with_relocation"
+    }
+  }
+}
