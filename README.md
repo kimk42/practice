@@ -41,6 +41,12 @@ The user reports PC grade unknown and accepts BPA-PC as the initial assumption. 
 
 ## Project map and current limits
 
+The [PC8 recovery and controls](research/PC8_BCC_RECOVERY_2026-10-30.md)
+record full-path charge-equivalence validation, installed-PC4 BCC output parity,
+and two completed PC8 EM/2ps NVT/20ps NPT controls. Four of twelve dry controls
+are complete; PC16 QM continues and high-density packing remains held. Density
+drift persists. New parameter/MD audit files are under `models/surface-revision-v2/`.
+
 The [2026-10-30 continuation](research/CONTINUATION_2026-10-30.md) records
 PC8's independently reviewed force-polished endpoint, six accepted low-density
 packings, held high-density clashes, and checkpoint continuations of citrate
@@ -91,6 +97,7 @@ coating/FXII/cPBSzI production. Recovery/gradient regression checks are:
 ```bash
 PYTHONPATH=scripts python -m unittest test_pc_parameter_audit test_sqm_checkpointed test_pc_sqm_lbfgs test_pc_packing_recovery
 PYTHONPATH=scripts python -m unittest test_sqm_antechamber_view test_citrate_representation
+PYTHONPATH=scripts python -m unittest test_managed_subprocess test_pc_ac_fields test_pc_recovery_inputs
 ```
 
 - `models/`: actual three-component graph/3D prototypes and assumptions.

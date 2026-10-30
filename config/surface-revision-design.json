@@ -1,7 +1,7 @@
 {
   "version": 2,
   "objective": "Assess how explicit coating/substrate scenarios affect hydration and initial FXII approach/contact;not reproduce two-hour assay adsorption amounts or activation",
-  "current_stage": "PC8 reviewed endpoint in strict parameter postprocessing;PC16 continues accepted coordinates;6/12 packings accepted,6 high-density cases held;2/12 dry controls complete;physical substrate review remains",
+  "current_stage": "PC8 whole-chain parameters audited for numerical controls;both PC8 dry controls complete,with density drift. PC16 QM continues;6/12 packings accepted,6 high-density cases held;4/12 dry controls complete;physical substrate review remains.",
   "substrate_screen": {
     "PC_BPA_units_per_chain": [
       4,

@@ -1,0 +1,139 @@
+{
+  "checked_utc": "2026-10-30T15:35:55.582377+00:00",
+  "completed_cases": [
+    {
+      "case": "pc8-rho0.6-seed2026",
+      "EM_Fmax_kJ_mol_nm": 919.85028,
+      "stages": {
+        "nvt": {
+          "duration_ps": 2.0,
+          "finite_energy_frames": 41,
+          "temperature_mean_K": 290.9044754878049,
+          "temperature_final_K": 299.9505
+        },
+        "npt": {
+          "duration_ps": 20.0,
+          "finite_energy_frames": 401,
+          "temperature_mean_K": 300.8292319551122,
+          "temperature_final_K": 299.132965,
+          "density_first_5ps_kg_m3": 604.5486806831683,
+          "density_last_5ps_kg_m3": 637.1092982376239,
+          "density_window_change_percent": 5.385938071630658
+        }
+      },
+      "NPT_coordinate_frames": 201,
+      "result_sha256": "2d89ed1440f660eb4741700f214f644518106211cd47c9fbcef76a347173bdc9",
+      "outputs_sha256": {
+        "npt.cpt": "8e58b7b48cc03009ca26742b45a22330d1dc5a54271af1b248fcaecef9956cb9",
+        "nvt.xtc": "925e5c5f2340b94b67d905546f75d06baba9ea838762471464cea26399cdec33",
+        "npt.tpr": "e65c00178ed31eae410cc1223bdcdd66ca43dd40621d60314f92435cb694a2f0",
+        "npt_prev.cpt": "a5e864187430dc02989baab563db2335070905ec483157ca378654a73901c089",
+        "npt.edr": "5ecfe38bb12a39d17a67d3d33710a95b372bc2e350aa4ead887d185c35882326",
+        "nvt.edr": "1f34ccf106b4cccd2f57090af84637aea55952734eb70db15e57ed012263a8d9",
+        "npt.xtc": "71a43dd96d72f66a34a11375b3e7c2501e4353c2611a70f374652d76a516f4cc",
+        "em.edr": "3b22ebf6f7b6fcd0cc3723b784adb54fc5d3bf88824ad40fd90932307d3f410b",
+        "nvt.tpr": "5b2d4c886d17b39654c142db61f2756b49a25d9740d32277f639838732271405",
+        "nvt.cpt": "6c556bfc18def822f477601b5cf2f39fd66c31ae8eb660923eb21baaa4038771",
+        "em.tpr": "19f44b35a75d59bd471cec8ee9447fa4e6de3ce77af69fa85255f230c2e192d0"
+      }
+    },
+    {
+      "case": "pc8-rho0.6-seed2027",
+      "EM_Fmax_kJ_mol_nm": 871.3349,
+      "stages": {
+        "nvt": {
+          "duration_ps": 2.0,
+          "finite_energy_frames": 41,
+          "temperature_mean_K": 288.25731309756105,
+          "temperature_final_K": 301.801025
+        },
+        "npt": {
+          "duration_ps": 20.0,
+          "finite_energy_frames": 401,
+          "temperature_mean_K": 300.1377259925187,
+          "temperature_final_K": 295.607635,
+          "density_first_5ps_kg_m3": 607.2690525940594,
+          "density_last_5ps_kg_m3": 657.1142910297029,
+          "density_window_change_percent": 8.208097913555878
+        }
+      },
+      "NPT_coordinate_frames": 201,
+      "result_sha256": "d2662ab5c403fce794724296c3a4e16c79e65e70dcb290a18d1f2f91d0d3bc56",
+      "outputs_sha256": {
+        "npt.cpt": "caa576a61c08de8579b82b557a831b3dc5b9e76efd6a8c289f7afe7c711427c3",
+        "nvt.xtc": "a467e89bbed819cd6b74b1d7454782f43843df90177219407822382f2d58f969",
+        "npt.tpr": "0d5b9fe01d3ee1a844a6d04128d5c9e4afeccb59dab64ce453e23749b471e8b1",
+        "npt_prev.cpt": "c6509e1443dbb79c8005e672d920df83f1a70215bb8f3642047930ad1ba7521f",
+        "npt.edr": "be677622bf790b6b188195c21464452781559dae56204377926e7f67dc79e01f",
+        "nvt.edr": "d4b2d66b9a8f1a83dbfca797cbd5ece3bcd6893d95fd29ca70ff3cc5008cb16e",
+        "npt.xtc": "36c22727d74b8eb2c609770bd07cb19d1d9b8d73c38db5d1c1167aeef68a515c",
+        "em.edr": "9f6f429bceca724a4a5af1eb1370395ec979f6fdb1389212b7bf8166cf7358c9",
+        "nvt.tpr": "fd2f5c76a057db440cef8fde877d9b63f6040686a38155a5abc94c7c64d60bc6",
+        "nvt.cpt": "c0d00bc4ebba4a6fc63002a51a07b18bf3f126d649c0e1fb78a6ae1064aea83d",
+        "em.tpr": "574fcaeec953af15077e3df00b7ec9714838fe536e4f3c090221394b5289c3c4"
+      }
+    }
+  ],
+  "parameter_audit_sha256": "7927b761b732f6e190972a0fbd3e2419ced3699891bfc809cb4d03bd6cd80f2e",
+  "independently_bound_to_original_QM_and_graph": true,
+  "installed_PC4_BCC_parity": true,
+  "preserved_prior_checkpoints": 51,
+  "preserved_checkpoint_sha256": {
+    "runs/azide-rigid-water-102ps/nvt.cpt": "6527572f42348b395696b8999af7420c244a72b05e3d8fd58c19a97281e48d47",
+    "runs/azide-rigid-water-102ps/nvt_prev.cpt": "e96400414d382fdde80ab336ea1279e95c61cfa0d32374a95a6134c7349a6d88",
+    "runs/azide-rigid-water-102ps/source.cpt": "430775148b68841b6ceabe47246a1c2e6467b7f58789cff7b2ff8bbfc1a7c28e",
+    "runs/azide-rigid-water-control/md.cpt": "430775148b68841b6ceabe47246a1c2e6467b7f58789cff7b2ff8bbfc1a7c28e",
+    "runs/coating-control-100ps/nvt.cpt": "eb72447925b7e019fce6fdb758e80bf43ad9a7dba30f8c8a72d6e628d8d20f62",
+    "runs/coating-control-100ps/nvt_prev.cpt": "ff631f25b8852ba7fc73c693afc6d6cdec72a0801d60f4a40957f2187d5cf647",
+    "runs/coating-control-100ps/source.cpt": "384f09699fa9dbd62ea6f6bc79497d15846be5563e89dec3bc8b901538d1a1b9",
+    "runs/fxii-bare-near-10ps/nvt.cpt": "94efba2c1d6e96f4a89420e5323b09d1378046a81f5738aa2283ad7e562412ec",
+    "runs/fxii-bare-near-10ps/nvt_prev.cpt": "95f39e93d7d85436fc5e1bf5f00e087a7e4ce01005522422ad53739bb2d6b309",
+    "runs/fxii-bare-near-10ps/source.cpt": "156f84ecca330d1f118cab76160df63d447fa997bd4e44b2b3323cbb1da2e11f",
+    "runs/fxii-bare-near-pilot/md.cpt": "156f84ecca330d1f118cab76160df63d447fa997bd4e44b2b3323cbb1da2e11f",
+    "runs/fxii-bare-pc-pilot/md.cpt": "8ad521285cd8696c1cf4698f61f585555b06d3272ad633a075db2aab197cdba2",
+    "runs/fxii-bare-pc-pose3-pilot/md.cpt": "f22ab729319ccbda28a50b85743b39470be95749cb57ed4c827d8814f74db29b",
+    "runs/fxii-coating-near-10ps/nvt.cpt": "b7d85f77f4b895f1c398342937b835bdbf0c2546a5647918625ce74223232668",
+    "runs/fxii-coating-near-10ps/nvt_prev.cpt": "530127c8b1a2c8be62bb006883a8af9c16a23a2d73e041762ae7b2913d696c28",
+    "runs/fxii-coating-near-10ps/source.cpt": "8432a491f2269b2597aeb80fc445febf5c82cfa7ed4577de6fdff702b67086de",
+    "runs/fxii-coating-near-pilot/md.cpt": "8432a491f2269b2597aeb80fc445febf5c82cfa7ed4577de6fdff702b67086de",
+    "runs/fxii-coating-pose3-pilot/md.cpt": "1263cfc895bd11b301f36b76d792bf888892de1fde1274293b86b451970bc6f1",
+    "runs/fxii-surface-pilot/md.cpt": "e05c198ad0d7ee0eaf40fc75044287ffa99b0dfea55d42695f023d88e7f90ac6",
+    "runs/fxii-unglycosylated-topology/md-recovery.cpt": "fe2b37ed7849d9b0d96faa1f7b242fbf21df4c44b17e363b5625b18f04ede063",
+    "runs/fxii-water-control-100ps/nvt.cpt": "3b7efaf4a78405e4d66eb570cde496af7db6843d9036778904f98fb9cb6f2f3c",
+    "runs/fxii-water-control-100ps/nvt_prev.cpt": "32b2251b09b543d2fe52c6152fd90f096e25bf574c8c6143babd2fe003d3e87e",
+    "runs/fxii-water-control-100ps/source.cpt": "fe2b37ed7849d9b0d96faa1f7b242fbf21df4c44b17e363b5625b18f04ede063",
+    "runs/pc4-water-control/md.cpt": "ee2656857745f681299a1745d2b3c3b877dcc1568f82730199334c3cb42f3184",
+    "runs/ph1-projected-water-control/md.cpt": "89ab5ae814a4c962f60ebd0887a9e35b2a202225c42b9b26d9ec9c7c18bae661",
+    "runs/ph2-projected-water-control/md.cpt": "257925c8f8d9323ceaf82080730661fdd7b7063c353b679e6ffb24c5673b1396",
+    "runs/surface-nvt-10ps/check.cpt": "75b46d505a01cb129338fe9a456143ee5cfc9fb4e64566af843290e0ba7e22ab",
+    "runs/surface-nvt-10ps/nvt.cpt": "384f09699fa9dbd62ea6f6bc79497d15846be5563e89dec3bc8b901538d1a1b9",
+    "runs/surface-validation/check.cpt": "75b46d505a01cb129338fe9a456143ee5cfc9fb4e64566af843290e0ba7e22ab",
+    "runs/velocity-pilots/fxii-bare-near-pilot-2027/md.cpt": "51e55668ff376c777c2673c82be0176fb0f38259f238ab23e63dafae2ff0eb34",
+    "runs/velocity-pilots/fxii-bare-near-pilot-2028/md.cpt": "37a3b61007d4a724b4155a889a367093b2986e25aa7d6cac41eff055c397219d",
+    "runs/velocity-pilots/fxii-bare-pc-pilot-2027/md.cpt": "8321c93c2798d57a8ac2716f9b798b9eddedf17e86e9ddd495dbab4bafd98588",
+    "runs/velocity-pilots/fxii-bare-pc-pilot-2028/md.cpt": "cdb91f6ba87b9803b920351074e2b7c0009b6c45571dce5694a269d761e86aa4",
+    "runs/velocity-pilots/fxii-bare-pc-pose3-pilot-2027/md.cpt": "b291e0fac9891cc03e4801fdb7b7b7f8f44af289e7205382f4e0a5d239583199",
+    "runs/velocity-pilots/fxii-bare-pc-pose3-pilot-2028/md.cpt": "4eb1aac8efadd58ad3e2259d56aea236c9a84a9c08493c2d834229b0d883138e",
+    "runs/velocity-pilots/fxii-coating-near-pilot-2027/md.cpt": "c15fe9e4b23ed4c7054bfe310060e0804fb7ac80b8cda44738fb4ecbd03c7148",
+    "runs/velocity-pilots/fxii-coating-near-pilot-2028/md.cpt": "50326d18b131a8f8a37779b7318c94ceacd0136aef66d8e3a75fd60f29d905fe",
+    "runs/velocity-pilots/fxii-coating-pose3-pilot-2027/md.cpt": "caced8e06c7c6527269e8cf491f346d9819c4cb0c3150771f0a091599d448aed",
+    "runs/velocity-pilots/fxii-coating-pose3-pilot-2028/md.cpt": "a2df029396f7ee446c2aed3b32c1d3ba3fb9d3df74dafa231db305ed4af9917e",
+    "runs/velocity-pilots/fxii-surface-pilot-2027/md.cpt": "c2c9f2a2b4e866fa0d1d6181804d0b25e101791b66e23b821bbaf5366b40d113",
+    "runs/velocity-pilots/fxii-surface-pilot-2028/md.cpt": "2179b6c7f61e97d4707d4ac6d39b33ebb2a5731a432645abd5504f0490bd3c7a",
+    "runs/water-smoke.NPQtxf/md.cpt": "97ff1b48c62761645e51ae1d25f9d07ecd884c96973a33685cc698a1f77b9567",
+    "runs/water-smoke.hhwz6E/md.cpt": "f044c9ebe9f24be0658119461aaddcc10a9b412e0a7e0ec4f69bd07dc50ab2fd",
+    "runs/pc-bulk-controls-v2/pc4-rho0.6-seed2026/npt.cpt": "74fb8206a331b9bfcd33bc4c15fe6f993a26c28ce26138b3bf81c10107f24c04",
+    "runs/pc-bulk-controls-v2/pc4-rho0.6-seed2026/npt_prev.cpt": "b5892458c6d1307bee2c8fa0d6e62480e6314e9db0f7a1dabad6d69f91594b59",
+    "runs/pc-bulk-controls-v2/pc4-rho0.6-seed2026/nvt.cpt": "6b49ae27e110298348db686f071a8f0ce1ae1edad744bea0db827ad8fffe59f5",
+    "runs/pc-bulk-controls-v2/pc4-rho0.6-seed2027/npt.cpt": "c2c3c52e1ee4426ee86bd21f41a2d663d925ca7136233ce9d46a38ae5167e41d",
+    "runs/pc-bulk-controls-v2/pc4-rho0.6-seed2027/npt_prev.cpt": "3187dc2469ffe59fdbf5783b641c223a68ce40527652db67975c6e0fdf83a3e5",
+    "runs/pc-bulk-controls-v2/pc4-rho0.6-seed2027/nvt.cpt": "c4c6becba61ec4b0dee7c3ebaa925f6550592eb2b092faadccf047dacbdc9c8b",
+    "runs/citrate-refined-controls-v2/CIT3/md.cpt": "d10dfdb9141d9cba75de3204fb419c60f2af7ecb56a55ae6981e4695e5a20e2c",
+    "runs/citrate-refined-controls-v2/HCIT2/md.cpt": "dd76c19270caf6cb3b5386399ef251043e3559808fec8123ac9e68ad07851a08"
+  },
+  "scope": "PC8 OH-ended dry numerical controls,initial density0.6g/cm3,300K;not coating/FXII/cPBSzI",
+  "interpretation": "Both protocols complete;density drift remains.No equilibrium or physical forcefield approval.",
+  "independence": "two packing/velocity seeds;one common intrachain conformer;PC4 initial packing used a different boundary constraint",
+  "physical_approval": false,
+  "original_simulations_modified": false
+}
