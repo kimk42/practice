@@ -78,6 +78,12 @@ def calculate(dp,out,lock_fd=None):
     expected=json.loads((source/'source.json').read_text())['sha256']
     if sha(raw)!=expected:
         raise ValueError('Accepted QM source changed')
+    return apply_reviewed_bcc(dp,out,record,raw,typed,validation,lock_fd,
+                             'full-path equivalence with qsort,upstream averaging,installed am1bcc -j1;no path truncation or new QM')
+
+
+def apply_reviewed_bcc(dp,out,record,raw,typed,validation,lock_fd,charge_route):
+    """Apply the installed BCC table to explicitly reviewed full-path classes."""
     averaged=validate_equivalence_input(dp,record,raw,typed)
     out.mkdir()
     shutil.copy2(raw,out/'accepted-sqm.out')
@@ -110,12 +116,13 @@ def calculate(dp,out,lock_fd=None):
         raise ValueError('Conversion changed BCC charges')
     result={'source_QM_sha256':sha(raw),'source_typed_AC_sha256':sha(typed),
             'equivalence_review_sha256':sha(validation),'molecule':record['molecule'],
-            'charge_route':'full-path equivalence with qsort,upstream averaging,installed am1bcc -j1;no path truncation or new QM',
+            'charge_route':charge_route,
             'raw_printed_QM_sum_e':record['raw_QM_sum_e'],'mol2_charge_sum_e':float(sum(charges)),
             'serialized_preBCC_sum_e':float(sum(float(r[8]) for r in ac_rows(out/'full-path-averaged.ac'))),
             'BCC_parameters_sha256':sha(Path(env['AMBERHOME'])/'dat/antechamber/BCCPARM.DAT'),
             'outputs_sha256':{p.name:sha(p) for p in [out/'full-path-averaged.ac',out/'bcc.ac',out/name]}}
     if dp==4:
+        source=ROOT/'runs/pc-length-forcefield-v2/pc4'
         reference=mol2_sections(source/name)
         if sections['BOND']!=reference['BOND']:
             raise ValueError('PC4 reference bond table differs')

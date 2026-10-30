@@ -1,0 +1,50 @@
+{
+  "checked_utc": "2026-10-30T21:40:25.648890+00:00",
+  "cases": {
+    "4": {
+      "phenolic_O_end_indices_1based": [
+        1,
+        68
+      ],
+      "disjoint_simple_rings": 8,
+      "rings_on_end_to_end_path": 8,
+      "end_to_end_simple_paths_lower_bound": 256,
+      "score_array_bytes_lower_bound_for_one_atom": 2048,
+      "exceeds_signed_int32_path_counter": false,
+      "proof": "contracted graph is a tree;each simple disjoint ring on the end-to-end route admits two distinct internal paths;their independent choices multiply",
+      "molecule_sha256": "a202a61955b2e0389decffe38c75fe55cb2f749b73c6c44996caaaa8908ec5ba",
+      "actual_full_path_count_for_first_end_O": 7225
+    },
+    "8": {
+      "phenolic_O_end_indices_1based": [
+        1,
+        144
+      ],
+      "disjoint_simple_rings": 16,
+      "rings_on_end_to_end_path": 16,
+      "end_to_end_simple_paths_lower_bound": 65536,
+      "score_array_bytes_lower_bound_for_one_atom": 524288,
+      "exceeds_signed_int32_path_counter": false,
+      "proof": "contracted graph is a tree;each simple disjoint ring on the end-to-end route admits two distinct internal paths;their independent choices multiply",
+      "molecule_sha256": "502da879630bc7e9d306546cc43eb9ac9ac9aa99102434d9fbbf41247d7bc96d",
+      "actual_full_path_count_for_first_end_O": 1856825
+    },
+    "16": {
+      "phenolic_O_end_indices_1based": [
+        1,
+        296
+      ],
+      "disjoint_simple_rings": 32,
+      "rings_on_end_to_end_path": 32,
+      "end_to_end_simple_paths_lower_bound": 4294967296,
+      "score_array_bytes_lower_bound_for_one_atom": 34359738368,
+      "exceeds_signed_int32_path_counter": true,
+      "proof": "contracted graph is a tree;each simple disjoint ring on the end-to-end route admits two distinct internal paths;their independent choices multiply",
+      "molecule_sha256": "2db16cf6789cd9f092d4a169d2a3cf763d54209fa302ec6e30084b7ebe9ecdf1"
+    }
+  },
+  "method_scope": "graph lower bound only;no charge assignment,no path truncation,no QM interruption",
+  "installed_build_caveat": "pinned upstream identifies int counters and retained double arrays;exact installed binary source is not established",
+  "decision": "Hold automatic unrestricted PC16 equivalence;keep existing QM running. PC4/PC8 existing validated candidates unchanged.",
+  "pinned_equatom_source_sha256": "adb494465273e3442b0b9df97ae55015befcdb15fb53e07b70ef0323a247223e"
+}

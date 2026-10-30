@@ -1,0 +1,20 @@
+{
+  "cases": {
+    "4": {
+      "final_MOL2_fields_and_bonds_identical": true,
+      "reference_MOL2_sha256": "957c1a7be7db841c346d7de929de089329ff1ae5513993d010d5195c71051cdc",
+      "generated_MOL2_sha256": "b51b8269bc9209606612e28fa92166473f6c66f37f43e45b2568dbc391e7335b",
+      "typed_without_new_QM": true
+    },
+    "8": {
+      "final_MOL2_fields_and_bonds_identical": true,
+      "reference_MOL2_sha256": "f945ae8775b048c3beb48a2a4ff929a935ed301bd2a1c30b993e89e2b0ae4e4c",
+      "generated_MOL2_sha256": "f945ae8775b048c3beb48a2a4ff929a935ed301bd2a1c30b993e89e2b0ae4e4c",
+      "typed_without_new_QM": true
+    }
+  },
+  "path_validation_sha256": "6b2f85fd387ec88d8d5719cdb37609f40f9d61c6a3646a824b225a07f6282eb9",
+  "decision": "Exact compressed full-path route may prepare PC16 numerical candidates only after its unchanged QM gradient gate passes;physical approval remains false.",
+  "physical_approval": false,
+  "PC16_charge_assigned": false
+}

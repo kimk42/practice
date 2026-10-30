@@ -81,7 +81,7 @@
       }
     }
   ],
-  "status": "PC8 full-path AM1-BCC recovery and both low-density EM/2ps NVT/20ps NPT controls complete;density still drifts. PC16 QM continues. Six packings accepted,six high-density packings held;4/12 dry controls complete. Four102ps citrate/phosphate controls complete. Full coating/FXII/cPBSzI not started.",
+  "status": "Four original PC4/PC8 dry controls complete;their20-to100ps NPT extensions are running/queued with source states unchanged. PC16 QM resumed verified evaluation004338;exact compressed full-path BCC route validated on PC4/PC8,awaiting PC16 convergence. Six high-density packings held. Four102ps buffer controls remain complete. Full coating/FXII/cPBSzI not started.",
   "force_field": "Exploratory GAFF2/AM1-BCC for polymer/PC with Amber99sb-ildn/TIP3P for protein/water; numerical parameter gates passed, physical accuracy and experimental coating validation pending; no CHARMM mixing",
   "literature_reference_conditions": {
     "transfer_to_target": "Reference only: neither paper validates the user PC-supported 7:2:1 terpolymer. Do not auto-apply molecular weights or crosslink conversion.",
@@ -310,5 +310,5 @@
   "model_revision_policy": "config/model-revision-policy.json",
   "surface_revision_design": "config/surface-revision-design.json",
   "latest_five_step_report": "research/FIVE_STEP_REVISION_2026-10-28.md",
-  "latest_PC_continuation_report": "research/PC8_BCC_RECOVERY_2026-10-30.md"
+  "latest_PC_continuation_report": "research/PC_CONTINUATION_LATE_2026-10-30.md"
 }

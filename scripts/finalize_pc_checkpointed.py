@@ -55,10 +55,33 @@ def finalize(dp):
             return ROOT/result['topology_folder']
         if out.exists():
             raise RuntimeError('Partial postprocessing preserved; inspect before recovery')
+        settings=json.loads((ROOT/'config/pc-qm-continuation.json').read_text())
+        compressed=dp==16 and settings.get('postprocessing_equivalence',{}).get('16')=='validated_compressed_full_path'
+        if compressed:
+            from pc_bcc_compressed import reviewed_classes
+            reviewed_classes(dp)
+        else:
+            from pc_equivalence_scalability import require_supported_full_path_count
+            require_supported_full_path_count(dp)
         out.mkdir(); name=f'PC{dp}'; env=amber_environment()
         shutil.copy2(sqm, out/'accepted-sqm.out')
         write_view(sqm,out/'accepted-sqm-antechamber.out',mol.GetNumAtoms())
         write_json(out/'source.json', {'accepted_QM': str(sqm.relative_to(ROOT)), 'sha256': sha(sqm), 'input': source})
+        if compressed:
+            from pc_bcc_compressed import calculate,VALIDATION,PARITY
+            candidate=out/'compressed-full-path-v1'
+            calculate(dp,out,candidate,lock.fileno())
+            folder=finish_candidate(dp,candidate,sqm,convergence,lock.fileno())
+            result=json.loads((candidate/'parameter-audit.json').read_text())
+            result['postprocessing_equivalence']={
+                'method':'exact compressed unrestricted path-score multiplicities',
+                'path_validation_sha256':sha(VALIDATION),'PC4_PC8_BCC_parity_sha256':sha(PARITY),
+                'BCC_route_audit':str((candidate/'bcc-route-audit.json').relative_to(ROOT)),
+                'BCC_route_audit_sha256':sha(candidate/'bcc-route-audit.json'),
+                'paths_truncated':False,'new_QM_performed':False}
+            write_json(candidate/'parameter-audit.json',result)
+            write_json(out/'parameter-audit.json',result)
+            return folder
         def run(command, label):
             with (out/f'{label}.log').open('x') as log:
                 run_group(command,cwd=out,env=env,log=log,timeout=1800,pass_fds=(lock.fileno(),))

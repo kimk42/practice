@@ -1,7 +1,7 @@
 {
   "version": 2,
   "objective": "Assess how explicit coating/substrate scenarios affect hydration and initial FXII approach/contact;not reproduce two-hour assay adsorption amounts or activation",
-  "current_stage": "PC8 whole-chain parameters audited for numerical controls;both PC8 dry controls complete,with density drift. PC16 QM continues;6/12 packings accepted,6 high-density cases held;4/12 dry controls complete;physical substrate review remains.",
+  "current_stage": "PC16 resumed verified evaluation004338;QM convergence pending. Four accepted PC4/PC8 dry cases have20-to100ps NPT continuations running/queued;4/12 original short controls complete. Six high-density packings held. Exact compressed full-path PC16 postprocessing prepared after PC4/PC8 parity;physical substrate review remains.",
   "substrate_screen": {
     "PC_BPA_units_per_chain": [
       4,
@@ -30,7 +30,24 @@
     ],
     "density_scope": "algorithmic starting-density hypotheses only;neither is an asserted experimental or equilibrium PC density",
     "stage_order": "consistent long-PC parameter audit,dry substrate packing/relaxation and density review,then hydrated slab preparation",
-    "new_parameter_assignment_complete": false
+    "new_parameter_assignment_complete": false,
+    "dry_relaxation_followup": {
+      "worker": "scripts/continue_pc_npt100.py",
+      "runtime": "runs/pc-dry-npt100-v1",
+      "PC_DP": [
+        4,
+        8
+      ],
+      "seeds": [
+        2026,
+        2027
+      ],
+      "source_NPT_ps": 20,
+      "target_NPT_ps": 100,
+      "reason": "density drift in initial short controls",
+      "protocol": "only nsteps extends;checkpoint coordinates,velocities and thermostat/barostat state retained",
+      "physical_approval": false
+    }
   },
   "coating_followup": {
     "candidate_DP": [

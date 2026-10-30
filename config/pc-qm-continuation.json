@@ -20,5 +20,11 @@
     "completed": "runs/pc-length-sqm-reviewed-v4/pc8/completed.json",
     "decision": "Accepted only as a numerical AM1-BCC candidate under the unchanged RMS criterion. Native minimum/Hessian and physical forcefield accuracy remain unvalidated.",
     "historical_lbfgs_outputs_preserved": true
+  },
+  "postprocessing_equivalence": {
+    "16": "validated_compressed_full_path",
+    "review": "models/surface-revision-v2/pc-compressed-path-validation.json",
+    "BCC_parity": "models/surface-revision-v2/pc-compressed-bcc-parity.json",
+    "decision": "After unchanged QM convergence only: retain unrestricted exact path scores and integer multiplicities using validated disjoint-ring/tree compression. Do not enumerate/truncate billions of paths. No physical forcefield approval."
   }
 }
