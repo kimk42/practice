@@ -1,27 +1,53 @@
 {
   "version": 2,
   "objective": "Assess how explicit coating/substrate scenarios affect hydration and initial FXII approach/contact;not reproduce two-hour assay adsorption amounts or activation",
-  "current_stage": "PC8/PC16 QM interrupted without restart coordinates;revision3 packing recovery launched from saved poses with stricter optimizer precision;new substrate MD has not started",
+  "current_stage": "PC8 reviewed endpoint in strict parameter postprocessing;PC16 continues accepted coordinates;6/12 packings accepted,6 high-density cases held;2/12 dry controls complete;physical substrate review remains",
   "substrate_screen": {
-    "PC_BPA_units_per_chain": [4, 8, 16],
+    "PC_BPA_units_per_chain": [
+      4,
+      8,
+      16
+    ],
     "matched_total_BPA_units_example": 192,
-    "chain_counts_for_example": [48, 24, 12],
+    "chain_counts_for_example": [
+      48,
+      24,
+      12
+    ],
     "lateral_area_nm2": 36,
     "lateral_area_scope": "later slab comparison;dry bulk-preparation cells are cubic at matched total BPA count and starting density",
-    "dry_packing_plan": "models/surface-revision-v2/dry-packing-recovery-v3.json",
-    "new_parameter_runtime": "runs/pc-length-parameters-v1/pc{8,16}/status.json;verify live process and SQM log before claiming running",
+    "dry_packing_plan": "models/surface-revision-v2/dry-packing-margin-v4.json",
+    "new_parameter_runtime": "config/pc-qm-continuation.json selects current endpoint routes;verify live workers,parameter-audit.json and runs/pc-completion-status.json timestamps",
     "comparison_basis": "same BPA-unit count per area;chain-end and carbonate-link counts differ,so mass must also be reported",
     "end_group_assumption": "phenolic OH;not user-measured PC end chemistry",
-    "independent_packing_seeds_planned": [2026, 2027],
-    "initial_packing_density_sensitivity_g_cm3": [0.6, 1.0],
+    "independent_packing_seeds_planned": [
+      2026,
+      2027
+    ],
+    "initial_packing_density_sensitivity_g_cm3": [
+      0.6,
+      1.0
+    ],
     "density_scope": "algorithmic starting-density hypotheses only;neither is an asserted experimental or equilibrium PC density",
     "stage_order": "consistent long-PC parameter audit,dry substrate packing/relaxation and density review,then hydrated slab preparation",
     "new_parameter_assignment_complete": false
   },
   "coating_followup": {
-    "candidate_DP": [10, 20],
-    "repeat_molar_ratio": [7, 2, 1],
-    "compare_separately": ["chain length", "repeat count per area", "number and location of substrate anchors", "interchain crosslinks"],
+    "candidate_DP": [
+      10,
+      20
+    ],
+    "repeat_molar_ratio": [
+      7,
+      2,
+      1
+    ],
+    "compare_separately": [
+      "chain length",
+      "repeat count per area",
+      "number and location of substrate anchors",
+      "interchain crosslinks"
+    ],
     "matching_requirements": "when isolating length effects,match repeat count/area and define anchor and reacted-BPAA counts;do not confound coverage with crosslink conversion",
     "UV_to_conversion": "no conversion inferred from27J/cm2",
     "network_parameters_complete": false
@@ -34,7 +60,13 @@
   ],
   "FXII_comparison_preparation": {
     "use_relaxed_input_snapshots": true,
-    "record": ["actual nearest heavy-atom distance", "orientation and protein domain arrangement", "lateral position relative to coating", "surface reference plane", "source hashes"],
+    "record": [
+      "actual nearest heavy-atom distance",
+      "orientation and protein domain arrangement",
+      "lateral position relative to coating",
+      "surface reference plane",
+      "source hashes"
+    ],
     "trajectory_cadence": "choose from contact/solvation observables before running;three frames per10ps is insufficient for contact kinetics",
     "independent_replicas": "distinct morphology/approach configurations;velocity seeds alone are not independent structural samples"
   },

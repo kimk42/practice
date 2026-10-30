@@ -1,0 +1,136 @@
+{
+  "default_and_energy_threshold_diagnostics": {
+    "checked_utc": "2026-10-30T14:11:56.995461+00:00",
+    "finite_difference": {
+      "10": [
+        {
+          "step_norm_A": 0.0001,
+          "central_difference": 0.06260350346565247,
+          "analytic": 0.056927637997651145,
+          "absolute_error": 0.00567586546800132,
+          "descent_energy_change": 1.0663643479347229e-05
+        },
+        {
+          "step_norm_A": 0.001,
+          "central_difference": 0.05787797272205353,
+          "analytic": 0.056927637997651145,
+          "absolute_error": 0.0009503347244023824,
+          "descent_energy_change": 0.001585615798830986
+        },
+        {
+          "step_norm_A": 0.01,
+          "central_difference": 0.12381719425320625,
+          "analytic": 0.056927637997651145,
+          "absolute_error": 0.06688955625555511,
+          "descent_energy_change": 0.1627285797148943
+        }
+      ],
+      "12": [
+        {
+          "step_norm_A": 0.0001,
+          "central_difference": 0.06260350346565247,
+          "analytic": 0.0569086657482552,
+          "absolute_error": 0.005694837717397268,
+          "descent_energy_change": 1.0648742318153381e-05
+        },
+        {
+          "step_norm_A": 0.001,
+          "central_difference": 0.05787890404462814,
+          "analytic": 0.0569086657482552,
+          "absolute_error": 0.0009702382963729453,
+          "descent_energy_change": 0.001585599035024643
+        },
+        {
+          "step_norm_A": 0.01,
+          "central_difference": 0.12381719425320625,
+          "analytic": 0.0569086657482552,
+          "absolute_error": 0.06690852850495105,
+          "descent_energy_change": 0.1627285648137331
+        }
+      ]
+    },
+    "spec": {
+      "source_checkpoint_sha256": "fab8c952c4b49a89edf03ce141a7cc9ff1bfe820a68dd837fc4c16f8cf0ef827",
+      "source_evaluation": "evaluation-008178",
+      "source_output_sha256": "32090c5d60876430114f5536620f0706e04d1cc56a067d5119c224e58f9ab84e",
+      "direction": "unit Euclidean norm of original analytic gradient",
+      "displacement_norms_A": [
+        0.0,
+        0.0001,
+        -0.0001,
+        0.001,
+        -0.001,
+        0.01,
+        -0.01
+      ],
+      "scf_energy_thresholds": [
+        1e-10,
+        1e-12
+      ],
+      "engine_sha256": "5259dbadd1db14e6da504ffe4a25c04f3a51435dbc31f753b9bd8c82692d07cc",
+      "scope": "diagnostic single points only; original optimizer state unchanged"
+    },
+    "physical_approval": false
+  },
+  "tight_density_diagnostic": {
+    "checked_utc": "2026-10-30T14:15:24.190493+00:00",
+    "finite_difference": {
+      "10": [
+        {
+          "step_norm_A": 1e-05,
+          "central_difference": -0.10328367352485655,
+          "analytic": 0.0569086657482552,
+          "absolute_error": 0.16019233927311174,
+          "descent_energy_change": 2.469867467880249e-06
+        },
+        {
+          "step_norm_A": 3e-05,
+          "central_difference": 0.05305434266726176,
+          "analytic": 0.0569086657482552,
+          "absolute_error": 0.003854323080993441,
+          "descent_energy_change": 1.3615936040878296e-06
+        },
+        {
+          "step_norm_A": 0.0001,
+          "central_difference": 0.06261281669139862,
+          "analytic": 0.0569086657482552,
+          "absolute_error": 0.005704150943143423,
+          "descent_energy_change": 1.064687967300415e-05
+        }
+      ]
+    },
+    "spec": {
+      "source_checkpoint_sha256": "fab8c952c4b49a89edf03ce141a7cc9ff1bfe820a68dd837fc4c16f8cf0ef827",
+      "source_evaluation": "evaluation-008178",
+      "source_output_sha256": "32090c5d60876430114f5536620f0706e04d1cc56a067d5119c224e58f9ab84e",
+      "direction": "unit Euclidean norm of original analytic gradient",
+      "displacement_norms_A": [
+        0.0,
+        1e-05,
+        -1e-05,
+        3e-05,
+        -3e-05,
+        0.0001,
+        -0.0001
+      ],
+      "scf_energy_thresholds": [
+        1e-10
+      ],
+      "density_threshold": 1e-10,
+      "engine_sha256": "5259dbadd1db14e6da504ffe4a25c04f3a51435dbc31f753b9bd8c82692d07cc",
+      "scope": "diagnostic single points only; original optimizer state unchanged"
+    },
+    "physical_approval": false
+  },
+  "unsupported_input_probe": {
+    "folder": "runs/pc8-density-gradient-diagnostic-20261030",
+    "outcome": "density_conv is not an accepted SQM input namelist variable;failed attempt retained;no optimizer checkpoint changed"
+  },
+  "public_source_provenance": {
+    "url": "https://raw.githubusercontent.com/Amber-MD/AmberClassic/76b00b2e9d7dc41ab1ce7c7aa2fe52b3608ec002/src/sqm/qm2_read_nm_and_alloc.F90",
+    "commit": "76b00b2e9d7dc41ab1ce7c7aa2fe52b3608ec002",
+    "sha256": "29ae8171eefec894481a32540e99d1c86b017e858ad57262109453d0dcd66a3f",
+    "scope": "public upstream source;not established as exact installed binary source"
+  },
+  "conclusion": "Tighter SCF criteria did not cure tiny-step energy differences;separate bounded force polishing and independent endpoint review recorded separately"
+}

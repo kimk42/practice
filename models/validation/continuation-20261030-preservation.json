@@ -1,0 +1,40 @@
+{
+  "checked_utc": "2026-10-30T14:33:40.252539+00:00",
+  "original_MD_checkpoints_verified": 51,
+  "new_completed_control_hashes": {
+    "CIT3": {
+      "runs/citrate-solution-102ps-v1/CIT3/nvt.tpr": "ed6f28e39836e08bc5e853acee55c04d3435afad32fea118ea1a3ef3adfa8438",
+      "runs/citrate-solution-102ps-v1/CIT3/nvt.cpt": "64e06959402965986a85d44496f00bb139accc907b77b0bd8349781fbab28d82",
+      "runs/citrate-solution-102ps-v1/CIT3/nvt.part0002.trr": "00370f8ec6f2cc1691d23a4a4257a4a109c40fc9b2cbaa2e25d33fae3245d56b",
+      "runs/citrate-solution-102ps-v1/CIT3/source.cpt": "d10dfdb9141d9cba75de3204fb419c60f2af7ecb56a55ae6981e4695e5a20e2c"
+    },
+    "HCIT2": {
+      "runs/citrate-solution-102ps-v1/HCIT2/nvt.tpr": "ed65e66597643115356d4e31f44d066db2dde4a1cccdd357847b695e1b7e7c57",
+      "runs/citrate-solution-102ps-v1/HCIT2/nvt.cpt": "b6c6bf8b12085431a5d34cfdb4a5489aa6a2fa9f55837d385551ad736a8eda31",
+      "runs/citrate-solution-102ps-v1/HCIT2/nvt.part0002.trr": "366adcc37c1217e990ea9ca689abf092c02a2247cfdcff6eb1c27ab0ce4ad639",
+      "runs/citrate-solution-102ps-v1/HCIT2/source.cpt": "dd76c19270caf6cb3b5386399ef251043e3559808fec8123ac9e68ad07851a08"
+    },
+    "PH1": {
+      "runs/phosphate-solution-102ps-v1/PH1/nvt.tpr": "48a5e13df50e89b207ddc3376aa1d8381a34cef9da5cef4810f450e50477c6df",
+      "runs/phosphate-solution-102ps-v1/PH1/nvt.cpt": "1cab8433d51d7faec0d77cdcadd855cf906c88ed0139330606c3b9c467451a54",
+      "runs/phosphate-solution-102ps-v1/PH1/nvt.part0002.trr": "a6c5bea95604b1e9ce6fbf8b9a4cafec211e6266d8a5d7184ab0c4064472ded2",
+      "runs/phosphate-solution-102ps-v1/PH1/source.cpt": "89ab5ae814a4c962f60ebd0887a9e35b2a202225c42b9b26d9ec9c7c18bae661"
+    },
+    "PH2": {
+      "runs/phosphate-solution-102ps-v1/PH2/nvt.tpr": "f1d7ee4750c7a3fb53d1fe44067ad6913d9b8a1c83a719770c255e3ccfecf0a2",
+      "runs/phosphate-solution-102ps-v1/PH2/nvt.cpt": "bbaf0e94ca9cf237b98cc475a466dce87e4652eececd066bd81a8f26ececad18",
+      "runs/phosphate-solution-102ps-v1/PH2/nvt.part0002.trr": "f87e58cded8d8a77e98c87eadd6bc148260432ba0d6e9c49222453c2cbb68ef9",
+      "runs/phosphate-solution-102ps-v1/PH2/source.cpt": "257925c8f8d9323ceaf82080730661fdd7b7063c353b679e6ffb24c5673b1396"
+    }
+  },
+  "PC8_route": "reviewed endpoint;strict postprocessing still active",
+  "PC16": {
+    "state": "running",
+    "worker_pid": 40617,
+    "accepted_iteration_this_session": 101,
+    "evaluations_total": 2452,
+    "rms_gradient_kcal_mol_A": 0.037926771854359026,
+    "updated_utc": "2026-10-30T14:33:37.167035+00:00"
+  },
+  "physical_and_full_buffer_approval": false
+}

@@ -41,6 +41,19 @@ The user reports PC grade unknown and accepts BPA-PC as the initial assumption. 
 
 ## Project map and current limits
 
+The [2026-10-30 continuation](research/CONTINUATION_2026-10-30.md) records
+PC8's independently reviewed force-polished endpoint, six accepted low-density
+packings, held high-density clashes, and checkpoint continuations of citrate
+and phosphate water controls. These remain numerical candidates; the full
+coating/FXII/cPBSzI system is not physically approved or running.
+
+`continue_citrate_solution.py` and `continue_phosphate_solution.py` retain the
+original2ps state and append100ps in separate run directories. They hold a shared
+per-family worker lock, inherit it into GROMACS, and preserve partial outputs
+for inspection. Completed results are reused. Their four102ps controls are now
+complete. PC8's reviewed endpoint is validated by `pc_sqm_reviewed.py`; its
+original L-BFGS failure and independent diagnostic records remain preserved.
+
 PC4 gradient-checked AM1-BCC and two dry EM/2ps NVT/20ps NPT controls completed.
 Density still drifts; these are numerical controls. PC8/16 continuation retains
 completed coordinate checkpoints, and packing retains saved rigid-body poses.

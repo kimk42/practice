@@ -1,0 +1,63 @@
+{
+  "species": "hydrogen_citrate2-",
+  "state": "102ps continuation and descriptive diagnostics completed",
+  "continuation_duration_ps": 100.0,
+  "total_duration_ps": 102.0,
+  "sampled_frames": 2001,
+  "temperature_mean_K": 300.2868250689655,
+  "temperature_second_half_mean_K": 300.48655215084915,
+  "bond_range_nm": [
+    0.09724978031740159,
+    0.17172858057322143
+  ],
+  "carboxylate_oxygen_indices_1based": [
+    9,
+    10,
+    12,
+    13
+  ],
+  "water_RDF_windows": {
+    "first": {
+      "saved_time_window_ps": [
+        2.0,
+        51.95
+      ],
+      "peak_search_nm": [
+        0.2,
+        0.45
+      ],
+      "peak_r_nm": 0.27,
+      "peak_g_r": 2.581135,
+      "water_O_coordination_at_0_35nm": 3.671
+    },
+    "second": {
+      "saved_time_window_ps": [
+        52.0,
+        102.0
+      ],
+      "peak_search_nm": [
+        0.2,
+        0.45
+      ],
+      "peak_r_nm": 0.27,
+      "peak_g_r": 2.692502,
+      "water_O_coordination_at_0_35nm": 3.651
+    }
+  },
+  "carboxylate_O_to_Na_minimum_distance_range_nm": [
+    0.9318657,
+    1.613968
+  ],
+  "fraction_saved_frames_with_any_O_Na_below_0_35nm": 0.0,
+  "contact_scope": "minimum over all selected O/Na sites;0.35nm is a descriptive cutoff,not validated ion-pair equilibrium",
+  "concentration_mM": 61.50144693236469,
+  "limitations": "one fixed protonation microstate and trajectory per species;correlated windows,not independent replicates;not10mM citrate or the full cPBSzI mixture",
+  "physical_approval": false,
+  "full_buffer_ready": false,
+  "source_sha256": {
+    "runs/citrate-solution-102ps-v1/HCIT2/nvt.tpr": "ed65e66597643115356d4e31f44d066db2dde4a1cccdd357847b695e1b7e7c57",
+    "runs/citrate-solution-102ps-v1/HCIT2/nvt.cpt": "b6c6bf8b12085431a5d34cfdb4a5489aa6a2fa9f55837d385551ad736a8eda31",
+    "runs/citrate-solution-102ps-v1/HCIT2/nvt.part0002.trr": "366adcc37c1217e990ea9ca689abf092c02a2247cfdcff6eb1c27ab0ce4ad639",
+    "runs/citrate-solution-102ps-v1/HCIT2/source.cpt": "dd76c19270caf6cb3b5386399ef251043e3559808fec8123ac9e68ad07851a08"
+  }
+}

@@ -30,11 +30,14 @@ def finalize(dp):
     sqm = ROOT/completed['final_output']
     if sha(sqm) != completed['output_sha256']:
         raise ValueError('Accepted QM output hash changed')
-    if worker == 'pc_sqm_lbfgs.py':
+    if worker in ('pc_sqm_lbfgs.py', 'pc_sqm_reviewed.py'):
+        if worker == 'pc_sqm_reviewed.py':
+            from pc_sqm_reviewed import validate
+            validate(dp)
         from pc_sqm_lbfgs import parse_singlepoint, validate_coordinates
         _, _, convergence = parse_singlepoint(sqm, mol.GetNumAtoms())
         validate_coordinates(sqm, completed['coordinates_A'], [a.GetAtomicNum() for a in mol.GetAtoms()])
-        convergence['optimizer'] = 'SQM analytic gradient with SciPy L-BFGS-B'
+        convergence['optimizer'] = completed.get('optimizer','SQM analytic gradient with SciPy L-BFGS-B')
     else:
         _, convergence = parse_completed(sqm, [a.GetAtomicNum() for a in mol.GetAtoms()])
     if not convergence['gradient_gate_passed']:

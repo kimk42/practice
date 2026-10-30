@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-10-30T14:28:07.354044+00:00",
+  "independent_reaudit": {
+    "state": "periodic packing geometry audit passed",
+    "case": "pc8-rho0.6-seed2026",
+    "atoms": 6336,
+    "minimum_interchain_distance_A": 2.002204784731073,
+    "minimum_chain_to_own_periodic_image_distance_A": 24.90587197391827,
+    "max_bond_length_difference_from_source_A": 0.0021750864434788575,
+    "tolerance_A": 2.0,
+    "PDB_serialization_allowance_A": 0.002,
+    "packed_sha256": "c2b2af910e6333d911e8161221ddb36284f325b7464c8eb4ac5af43f7d746e17",
+    "MD_started": false,
+    "scope": "starting geometry only; no forcefield, density-equilibration or physical approval"
+  },
+  "source_sha256": {
+    "case.json": "33fdb7f67653163297c55d470bf8ec7ef0abebb9044953b8aa6bb8c67ed984bc",
+    "packmol.inp": "01537812af7ab532e5b84c50b93b471bb7d16d74171f80c0c1700348c87eefb8",
+    "packed.pdb": "c2b2af910e6333d911e8161221ddb36284f325b7464c8eb4ac5af43f7d746e17",
+    "packing.restart": "8d2eafbec70934958fdcf440e69a0d4d29e7ecb30c5037e37ba6d84e4dcf069a"
+  }
+}

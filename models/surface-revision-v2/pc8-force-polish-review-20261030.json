@@ -1,0 +1,41 @@
+{
+  "checked_utc": "2026-10-30T14:20:59.838922+00:00",
+  "numerical_endpoint_robustness_passed": true,
+  "original_RMS_gradient": 0.00047984206265601397,
+  "tight_density_RMS_gradient": 0.00047984206265601397,
+  "rotated_RMS_gradient": 0.00047984804135958384,
+  "gradient_rotation_RMS_difference": 1.4211731048415886e-07,
+  "rotation_energy_difference_kcal_mol": -9.313225746154785e-09,
+  "finite_difference_diagnostics": [
+    {
+      "step_norm_A": 0.0005,
+      "central_difference": 0.01430511474609375,
+      "projected_tight_gradient": 0.013503952637447698
+    },
+    {
+      "step_norm_A": 0.001,
+      "central_difference": 0.013881362974643707,
+      "projected_tight_gradient": 0.013503952637447698
+    }
+  ],
+  "accepted_output": "runs/pc8-force-polish-v4/evaluation-000039/sqm.out",
+  "accepted_output_sha256": "bc2f71ed2f0bf886c0c80f30ff2a35f37ace09d18da3b6184e7aa53fc8fd028b",
+  "molecule_source": {
+    "PC_BPA_units": 8,
+    "source": "models/surface-revision-v2/pc8/bpa-pc-dp8-phenolic-ends.mol",
+    "sha256": "502da879630bc7e9d306546cc43eb9ac9ac9aa99102434d9fbbf41247d7bc96d",
+    "atoms": 264,
+    "formula": "C127H114O23",
+    "molecular_mass_g_mol": 2008.286000000002,
+    "phenolic_OH_ends": 2,
+    "carbonate_links": 7,
+    "bond_lengths_A": [
+      0.971030535050262,
+      1.5526037002403412
+    ],
+    "charge_route": "whole-chain AM1-BCC/GAFF2; no PC4 charge transfer",
+    "scope": "single initial conformation and assumed OH termini; not experimental PC molecular weight/end chemistry"
+  },
+  "limitations": "Finite-difference precision at tiny displacements remains limited;no Hessian/minimum,physical-PC or equilibrium approval. Only numerical parameter candidates may be considered after explicit review.",
+  "physical_approval": false
+}

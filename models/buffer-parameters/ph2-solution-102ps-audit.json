@@ -1,0 +1,63 @@
+{
+  "species": "hydrogen_phosphate2-",
+  "state": "102ps continuation and descriptive diagnostics completed",
+  "continuation_duration_ps": 100.0,
+  "total_duration_ps": 102.0,
+  "sampled_frames": 2001,
+  "temperature_mean_K": 300.0409691334333,
+  "temperature_second_half_mean_K": 299.9143901738262,
+  "bond_range_nm": [
+    0.09724989459516994,
+    0.16437898969291193
+  ],
+  "nonprotonated_phosphate_oxygen_indices_1based": [
+    1,
+    3,
+    4
+  ],
+  "water_RDF_windows": {
+    "first": {
+      "saved_time_window_ps": [
+        2.0,
+        51.95
+      ],
+      "peak_search_nm": [
+        0.2,
+        0.45
+      ],
+      "peak_r_nm": 0.26,
+      "peak_g_r": 3.71789,
+      "water_O_coordination_at_0_35nm": 4.973
+    },
+    "second": {
+      "saved_time_window_ps": [
+        52.0,
+        102.0
+      ],
+      "peak_search_nm": [
+        0.2,
+        0.45
+      ],
+      "peak_r_nm": 0.26,
+      "peak_g_r": 3.745407,
+      "water_O_coordination_at_0_35nm": 4.922
+    }
+  },
+  "nonprotonated_phosphate_O_to_Na_minimum_distance_range_nm": [
+    0.5196753,
+    1.71994
+  ],
+  "fraction_saved_frames_with_any_O_Na_below_0_35nm": 0.0,
+  "contact_scope": "minimum over all selected O/Na sites;0.35nm is a descriptive cutoff,not validated ion-pair equilibrium",
+  "concentration_mM": 61.50144693236469,
+  "limitations": "one fixed protonation microstate and trajectory per species;correlated windows,not independent replicates;not the experimental concentration or full cPBSzI mixture",
+  "physical_approval": false,
+  "full_buffer_ready": false,
+  "source_sha256": {
+    "runs/phosphate-solution-102ps-v1/PH2/nvt.tpr": "f1d7ee4750c7a3fb53d1fe44067ad6913d9b8a1c83a719770c255e3ccfecf0a2",
+    "runs/phosphate-solution-102ps-v1/PH2/nvt.cpt": "bbaf0e94ca9cf237b98cc475a466dce87e4652eececd066bd81a8f26ececad18",
+    "runs/phosphate-solution-102ps-v1/PH2/nvt.part0002.trr": "f87e58cded8d8a77e98c87eadd6bc148260432ba0d6e9c49222453c2cbb68ef9",
+    "runs/phosphate-solution-102ps-v1/PH2/source.cpt": "257925c8f8d9323ceaf82080730661fdd7b7063c353b679e6ffb24c5673b1396"
+  },
+  "charge_model_scope": "unchanged previously projected phosphate charges;not a new charge fit"
+}

@@ -73,6 +73,9 @@ def main(watch):
                 key=f'parameters-PC{dp}'
                 if quantum[str(dp)]=='gradient_passed' and key not in failures:
                     if not (ROOT/f'runs/pc-length-forcefield-v2/pc{dp}/parameter-audit.json').exists():
+                        write_json(STATUS,{'state':'finalizing_parameters','active_DP':dp,'quantum':quantum,
+                                           'held_failures':failures,'updated_utc':datetime.now(timezone.utc).isoformat(),
+                                           'scope':'strict AM1-BCC/GAFF2 postprocessing;no physical or full-buffer approval'})
                         with (ROOT/f'runs/pc{dp}-automatic-finalization.log').open('a') as log:
                             result=subprocess.run([sys.executable,str(ROOT/'scripts/finalize_pc_checkpointed.py'),'--dp',str(dp)],
                                                   cwd=ROOT,stdout=log,stderr=subprocess.STDOUT)

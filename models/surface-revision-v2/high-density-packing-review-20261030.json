@@ -1,0 +1,97 @@
+{
+  "checked_utc": "2026-10-30T14:29:50.380613+00:00",
+  "cases": [
+    {
+      "case": "pc16-rho1.0-seed2026",
+      "interchain_pairs_below_1_998A": 1475,
+      "shortest_interchain_clash_A": 0.295954908748012,
+      "last_objective_values": [
+        4898.5,
+        4898.3,
+        5076.5,
+        5076.3,
+        4027.2
+      ],
+      "saved_pose_file_sha256": "1a75197303c577e9c1f29d7d5a1bb66ef7e420f956c5a53f71dd06c5ffd65831",
+      "packed_PDB_sha256": "8dd08e2dfb3011e3506327236c2e7522faec9ab4592d74010987c8ed69559ec8",
+      "decision": "retain failed rigid packing;no MD,no criterion relaxation,no identical automatic retry"
+    },
+    {
+      "case": "pc16-rho1.0-seed2027",
+      "interchain_pairs_below_1_998A": 1460,
+      "shortest_interchain_clash_A": 0.2244085487432876,
+      "last_objective_values": [
+        5666.2,
+        5665.6,
+        5589.7,
+        5587.4,
+        5814.5
+      ],
+      "saved_pose_file_sha256": "92f40c595d4e3ddbb03323f0bb3b05fa76c2d06f15386918adf41cc0fc29b272",
+      "packed_PDB_sha256": "8ae674b98a1c39c5cfd23e7dd4ae89284be5b95bf989435c391097891348d9e6",
+      "decision": "retain failed rigid packing;no MD,no criterion relaxation,no identical automatic retry"
+    },
+    {
+      "case": "pc4-rho1.0-seed2026",
+      "interchain_pairs_below_1_998A": 1065,
+      "shortest_interchain_clash_A": 0.84752744386517,
+      "last_objective_values": [
+        999.86,
+        1454.8,
+        1454.3,
+        1758.6,
+        1741.6
+      ],
+      "saved_pose_file_sha256": "0e466333f9683a44cba382430d12b5273aa4e4b260185367e28506f035749602",
+      "packed_PDB_sha256": "fdb34ff8dcb19e7a9ba5f3ddd6d2925c14d020c135d63971cae92756b8c5b14f",
+      "decision": "retain failed rigid packing;no MD,no criterion relaxation,no identical automatic retry"
+    },
+    {
+      "case": "pc4-rho1.0-seed2027",
+      "interchain_pairs_below_1_998A": 1164,
+      "shortest_interchain_clash_A": 0.7605262658853651,
+      "last_objective_values": [
+        901.54,
+        1323.3,
+        1323.3,
+        1187.2,
+        1186.4
+      ],
+      "saved_pose_file_sha256": "2c4e7437a305446ea3b518c11ac37766feca4d7dd4901a5c3d256b1139eff4d9",
+      "packed_PDB_sha256": "095b76ae8fbf1d09615ae311b2e3fc4e84821691d6c5ae6323d0668dc0c1c99e",
+      "decision": "retain failed rigid packing;no MD,no criterion relaxation,no identical automatic retry"
+    },
+    {
+      "case": "pc8-rho1.0-seed2026",
+      "interchain_pairs_below_1_998A": 1502,
+      "shortest_interchain_clash_A": 0.43297344029397783,
+      "last_objective_values": [
+        5198.4,
+        5198.4,
+        3979.2,
+        3979.2,
+        3874.1
+      ],
+      "saved_pose_file_sha256": "76517c2da16af5c056ec16ec0c92c30f6f3700a9d72cac4d0c17bb1c45e8941d",
+      "packed_PDB_sha256": "fd87d05fd8ebe4aea2a82280bf7d08cf5dc7971f57e1a4c797b7ae14b60cbd52",
+      "decision": "retain failed rigid packing;no MD,no criterion relaxation,no identical automatic retry"
+    },
+    {
+      "case": "pc8-rho1.0-seed2027",
+      "interchain_pairs_below_1_998A": 1665,
+      "shortest_interchain_clash_A": 0.5068145617481838,
+      "last_objective_values": [
+        4597.3,
+        4591.4,
+        4986.7,
+        4972.4,
+        4676.3
+      ],
+      "saved_pose_file_sha256": "5854423f38f0455eaae1ccbe59c76b40c7b8632051b40cee86edaa99bfe5f587",
+      "packed_PDB_sha256": "9be7ff11867f35b495869c70b997261bc4a72d65f9b7d855543697f710c45043",
+      "decision": "retain failed rigid packing;no MD,no criterion relaxation,no identical automatic retry"
+    }
+  ],
+  "scope": "diagnostics on failed geometry only;not accepted substrates",
+  "next_method_review": "consider flexible-chain packing or documented staged compression as a separate preparation protocol;do not relabel it as the original direct high-density packing"
+}

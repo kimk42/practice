@@ -1,0 +1,83 @@
+{
+  "checked_utc": "2026-10-30T14:33:40.252207+00:00",
+  "completed": [
+    {
+      "name": "CIT3",
+      "species": "citrate3-",
+      "duration_ps": 102.0,
+      "frames": 2001,
+      "mean_T_K": 299.65470112093954,
+      "bond_range_nm": [
+        0.09724984216746473,
+        0.17059708447792507
+      ],
+      "water_O_coordination_first_second": [
+        4.234,
+        4.195
+      ],
+      "fraction_any_O_Na_below0_35nm": 0.0,
+      "audit": "models/buffer-parameters/cit3-solution-102ps-audit.json",
+      "audit_sha256": "d50af4e3e34da886f84be9289f30692be54923eb16a4614904eb88827a87d6af"
+    },
+    {
+      "name": "HCIT2",
+      "species": "hydrogen_citrate2-",
+      "duration_ps": 102.0,
+      "frames": 2001,
+      "mean_T_K": 300.2868250689655,
+      "bond_range_nm": [
+        0.09724978031740159,
+        0.17172858057322143
+      ],
+      "water_O_coordination_first_second": [
+        3.671,
+        3.651
+      ],
+      "fraction_any_O_Na_below0_35nm": 0.0,
+      "audit": "models/buffer-parameters/hcit2-solution-102ps-audit.json",
+      "audit_sha256": "bf91484808e64b8140b3dd5f327ed5e8600bbb3d5f16634f9506563ec70f3db2"
+    },
+    {
+      "name": "PH1",
+      "species": "dihydrogen_phosphate-",
+      "duration_ps": 102.0,
+      "frames": 2001,
+      "mean_T_K": 300.3838865027486,
+      "bond_range_nm": [
+        0.09724986932854003,
+        0.1649016962497364
+      ],
+      "water_O_coordination_first_second": [
+        3.852,
+        3.861
+      ],
+      "fraction_any_O_Na_below0_35nm": 0.0,
+      "audit": "models/buffer-parameters/ph1-solution-102ps-audit.json",
+      "audit_sha256": "18853f829472f81cd97378a9a30da3c7e9804096ff0ced664da9da3ce1b7f069"
+    },
+    {
+      "name": "PH2",
+      "species": "hydrogen_phosphate2-",
+      "duration_ps": 102.0,
+      "frames": 2001,
+      "mean_T_K": 300.0409691334333,
+      "bond_range_nm": [
+        0.09724989459516994,
+        0.16437898969291193
+      ],
+      "water_O_coordination_first_second": [
+        4.973,
+        4.922
+      ],
+      "fraction_any_O_Na_below0_35nm": 0.0,
+      "audit": "models/buffer-parameters/ph2-solution-102ps-audit.json",
+      "audit_sha256": "554db29b2e14cce14e6b2a516f42af4c8209d7ed6be6b46909a6ddd22bcabb18"
+    }
+  ],
+  "same_saved_velocities_and_Hamiltonian": true,
+  "nominal_solute_concentration_mM": 61.50144693236469,
+  "experimental_recipe_matched": false,
+  "physical_approval": false,
+  "full_cpbszi_started": false,
+  "conclusion": "Numerically stable short trajectories with descriptive hydration diagnostics;no saved O-Na contacts below0.35nm,so ion-pair equilibrium remains unassessed"
+}

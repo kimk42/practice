@@ -55,7 +55,7 @@
       "electroneutrality and sodium/counterion accounting",
       "resolve phosphate hydration or carry explicit concentration sensitivity"
     ],
-    "current_running_controls": "none;prior300K neutralizing-ion baseline controls/follow-ups completed",
+    "current_running_controls": "none for isolated buffer controls;two citrate and two phosphate102ps continuations and descriptive diagnostics completed;PC preparation runs separately",
     "monovalent_ion_candidate": "models/buffer-parameters/jc-tip3p-monovalent.itp;published JC/TIP3P Na/Cl/I converted and neutral ion-water EM passed;not yet applied to protein/coating baselines",
     "polyatomic_candidates": "formal input graphs plus separately tracked computed/projected candidates;no final pH populations",
     "latest_polyatomic_audit": {
@@ -70,8 +70,8 @@
     "computed_charge_candidates": {
       "audit": "models/buffer-parameters/charge-candidate-audit.json",
       "method": "computed gas-phaseAM1-BCC/GAFF2 candidates,not experimental or validated aqueous parameters",
-      "citrate": "explicit final-gradient refinement and neutral-water EM/2ps controls completed for citrate3- and one terminal-protonated hydrogen-citrate2- microstate;exported charges identical to original candidates;aqueous accuracy and populations not approved",
-      "phosphate": "separate constrained-charge candidates preserve original outputs;both neutral ion-water EM/2ps numerical controls passed;physical aqueous validation pending",
+      "citrate": "Both unchanged refined candidates completed102ps checkpoint continuations and descriptive hydration/Na-distance diagnostics;no aqueous physical or pH-population approval",
+      "phosphate": "Both unchanged projected candidates completed102ps checkpoint continuations and descriptive hydration/Na-distance diagnostics;physical aqueous validation and pH populations remain unresolved",
       "azide": "excluded from calculation due prior typing warning",
       "MD_topologies_exported": true,
       "export_scope": "unapproved projected phosphate and refined citrate candidates for isolated numerical controls only"
@@ -81,6 +81,16 @@
     "phosphate_numerical_audit": "models/buffer-parameters/projected-phosphate-water-audit.json",
     "citrate_representation_review": "models/buffer-parameters/citrate-representation-review.json",
     "citrate_refinement_audit": "models/buffer-parameters/citrate-gradient-refinement-audit.json",
-    "citrate_numerical_audit": "models/buffer-parameters/refined-citrate-water-audit.json"
+    "citrate_numerical_audit": "models/buffer-parameters/refined-citrate-water-audit.json",
+    "citrate_solution_audits": [
+      "models/buffer-parameters/cit3-solution-102ps-audit.json",
+      "models/buffer-parameters/hcit2-solution-102ps-audit.json"
+    ],
+    "phosphate_solution_runtime": "runs/phosphate-solution-102ps-v1/status.json",
+    "phosphate_solution_audits": [
+      "models/buffer-parameters/ph1-solution-102ps-audit.json",
+      "models/buffer-parameters/ph2-solution-102ps-audit.json"
+    ],
+    "solution_control_summary": "models/buffer-parameters/buffer-solution-controls-20261030.json"
   }
 }
